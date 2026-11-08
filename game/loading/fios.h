@@ -114,6 +114,18 @@ static_assert(offsetof(ThreadAllocatorHolder, allocator) == 0x58);
 
 /**
  *
+ * The allocator vtable prefix up to its sized free slot, which sits at 0x18.
+ *
+ * Only the sized free slot is named here; the shared allocator header leaves that slot unnamed.
+ */
+struct AllocatorSizedFreeVtable {
+    uint8_t unknown_0x00[0x18];
+    void (*free_sized)(engine::Allocator *allocator, void *block, uint32_t size);
+};
+static_assert(offsetof(AllocatorSizedFreeVtable, free_sized) == 0x18);
+
+/**
+ *
  * The thread's allocator, read again on each call as the originals do.
  */
 inline engine::Allocator *thread_allocator()

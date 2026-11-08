@@ -1,4 +1,5 @@
 address,replacement,system,returns
+0x0084d5a0,bb_loading_fios_directory_delete,loading,void
 0x00857cd0,bb_loading_fios_open_with_mode,loading,i64
 0x0085cda0,bb_loading_fios_open_default,loading,i64
 0x00fbc3e0,bb_render_yebis_get_recursive_sample_parameters,render,void

@@ -1,5 +1,6 @@
 address,size,name,system,status,notes
 0x004632d0,67,frame_timing_get_time_us,frame_timing,original,dead in the stock game: only unwind entries refer to it; the community frame-rate patches overwrite it as a code cave (gettimeofday in microseconds)
+0x0084d5a0,158,loading_fios_directory_delete,loading,edge-verified,Deleting destructor of a Fios directory object; closes its directory handle; releases its block and two tagged slots; frees the object by its size tag
 0x00857cd0,176,loading_fios_open_with_mode,loading,edge-verified,Fios open with the caller's 16-bit mode (sceFiosFHOpenSync); on success a 0x18-byte file object from the thread allocator; null on failure
 0x0085cda0,174,loading_fios_open_default,loading,edge-verified,Fios open with fixed flag 1 (sceFiosFHOpenSync); on success a 0x18-byte file object from the thread allocator and valid when the handle is not negative; null on failure
 0x00fbc3e0,670,render_yebis_get_recursive_sample_parameters,render,verified,"YEBIS GPUTexUtil_GetRecursiveSampleParameters: blur pass count, last-pass samples and scale; the FPS patches drop its first assertion"
