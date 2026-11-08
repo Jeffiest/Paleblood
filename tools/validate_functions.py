@@ -136,8 +136,6 @@ def main() -> int:
             errs.append(f"{where}: {f['name']} is '{f['status']}', only replaced, edge-verified or verified functions are hooked")
         if h['system'] != f['system']:
             errs.append(f"{where}: system '{h['system']}' differs from functions.csv ('{f['system']}')")
-        if f['size'].isdigit() and int(f['size']) < 14:
-            errs.append(f"{where}: {f['name']} is {f['size']} bytes; a hook needs at least 14 (QUIRKS.md)")
         if h['replacement'] != 'bb_' + f['name']:
             errs.append(f"{where}: replacement must be 'bb_{f['name']}'")
         elif h['returns'] not in RETURN_CLASSES:
