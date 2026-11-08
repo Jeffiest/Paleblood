@@ -60,4 +60,12 @@ RT_ORIGINAL(0x02fbf3f8, kernel_open, int32_t(const char *path, uint32_t flags, u
  */
 RT_ORIGINAL(0x02fbf408, kernel_read, int64_t(uint32_t descriptor, void *buffer, uint64_t size));
 
+/**
+ *
+ * Writes to a kernel descriptor (sceKernelWrite, FreeBSD write(2)).
+ *
+ * The result is the byte count written, or negative on failure.
+ */
+RT_ORIGINAL(0x02fbf418, kernel_write, int64_t(uint32_t descriptor, const void *buffer, uint64_t size));
+
 }  // namespace loading::files

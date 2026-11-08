@@ -283,3 +283,4 @@ render_yebis_get_recursive_sample_parameters,edge,30,23,23,0,0,6e6f0aa41d5607ce,
 render_yebis_get_recursive_sample_parameters,edge,60,23,23,0,0,6e6f0aa41d5607ce,2026-10-07
 render_yebis_get_recursive_sample_parameters,edge,uncapped,23,23,0,0,6e6f0aa41d5607ce,2026-10-07
 loading_file_handle_read,edge,,29,29,0,0,74d4f9ead3f26b42,2026-11-08
+loading_file_handle_write,edge,,28,28,0,0,2160f139bf7c2a82,2026-11-08
