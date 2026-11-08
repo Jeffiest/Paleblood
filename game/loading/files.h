@@ -68,4 +68,12 @@ RT_ORIGINAL(0x02fbf408, kernel_read, int64_t(uint32_t descriptor, void *buffer, 
  */
 RT_ORIGINAL(0x02fbf418, kernel_write, int64_t(uint32_t descriptor, const void *buffer, uint64_t size));
 
+/**
+ *
+ * Moves a kernel descriptor's position (sceKernelLseek, FreeBSD lseek(2)).
+ *
+ * Origin is the whence value. The result is the new position, or negative on failure.
+ */
+RT_ORIGINAL(0x02fbf428, kernel_seek, int64_t(uint32_t descriptor, uint64_t offset, uint32_t origin));
+
 }  // namespace loading::files

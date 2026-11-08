@@ -151,6 +151,7 @@ address,size,name,system,status,notes
 0x02a70890,141,loading_file_handle_open,loading,edge-verified,Translate game mode bits to FreeBSD open flags and permissions; store descriptor and set the open bit on success; -1 on failure
 0x02a70920,46,loading_file_handle_read,loading,edge-verified,Read up to size bytes from the descriptor into the buffer and publish the count; descriptor low 32 bits zero-extended; no open-bit check; -1 on a negative kernel result
 0x02a70950,46,loading_file_handle_write,loading,edge-verified,Write up to size bytes from the buffer to the descriptor and publish the count; descriptor low 32 bits zero-extended; no open-bit check; -1 on a negative kernel result
+0x02a70980,53,loading_file_handle_seek,loading,edge-verified,Move the descriptor to an offset relative to origin and publish the new position; origin low 32 bits zero-extended; no open-bit check; -1 on a negative kernel result
 0x02a8c420,108,input_initialize_mouse_for_initial_user,input,original,"Initializes or reinitializes mouse input for the initial user, closing a previous connection if necessary."
 0x02aaddc0,393,render_allocate_shader_upload,render,edge-verified,"Allocate one shader-upload slice of at most 64 KiB. If no suitable block exists, acquire once, reclaim, then retry once. Preserve zero-size requests and delegate block policy to the original manager."
 0x02aafb30,509,render_command_submit_present,render,edge-verified,"Prepare and delegate a present submission, preserving capacity-failure returns and resetting begin markers to the live cursor."
