@@ -4,7 +4,9 @@
 namespace {
 
 /**
+ *
  * The game's own file open mode bits. Bits 0x04 and 0x20 are never read.
+ *
  */
 enum OpenMode : uint32_t {
     open_mode_read = 0x01,             /**< Open for reading. */
@@ -16,7 +18,9 @@ enum OpenMode : uint32_t {
 };
 
 /**
+ *
  * FreeBSD open(2) flags used by the translation.
+ *
  */
 enum KernelOpenFlag : uint32_t {
     kernel_open_read_only = 0x000,  /**< O_RDONLY. */
@@ -28,7 +32,9 @@ enum KernelOpenFlag : uint32_t {
 };
 
 /**
+ *
  * Permission bits given to a file the open creates.
+ *
  */
 enum CreatePermissions : uint32_t {
     create_permissions_none = 0,           /**< No access. */
@@ -40,7 +46,9 @@ enum CreatePermissions : uint32_t {
 constexpr int32_t open_failed = -1;
 
 /**
+ *
  * Picks the read/write access flags for an open mode.
+ *
  */
 uint32_t access_flags(uint32_t mode)
 {
@@ -50,10 +58,12 @@ uint32_t access_flags(uint32_t mode)
 }
 
 /**
+ *
  * Picks the permissions for a file the open may create.
  *
  * A read-only mode still asks for r-x and a mode with neither access bit asks for none,
  * though the kernel uses them only when the file is created.
+ *
  */
 uint32_t creation_permissions(uint32_t mode)
 {
@@ -62,9 +72,11 @@ uint32_t creation_permissions(uint32_t mode)
 }
 
 /**
+ *
  * Picks the create and truncate flags for an open mode.
  *
  * Only the first creation bit set counts, in this order of precedence.
+ *
  */
 uint32_t creation_flags(uint32_t mode)
 {
@@ -78,10 +90,12 @@ uint32_t creation_flags(uint32_t mode)
 }  // namespace
 
 /**
+ *
  * Opens a file into a FileHandle using the game's own open mode bits.
  *
  * Its one caller opens the start-up cache file temp:/cache.bin with read, write and
  * create_truncate. Returns 0 and marks the handle open, or -1 with the handle untouched.
+ *
  */
 extern "C" int32_t bb_loading_file_handle_open(loading::files::FileHandle *handle, const char *path, uint32_t mode)
 {

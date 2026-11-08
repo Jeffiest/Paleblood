@@ -177,11 +177,14 @@ kernel_semaphore_destroy,edge,,22,22,0,0,2c49f7b010f80cfb,2026-11-03
 kernel_semaphore_signal,edge,,22,22,0,0,9cc58f3ea5f03052,2026-11-03
 kernel_semaphore_wait,edge,,22,22,0,0,ce742838186d2510,2026-11-03
 kernel_thread_self,edge,,7,7,0,0,75626151a8bb5eab,2026-10-31
-loading_close_file_streams,edge,,11,11,0,0,36c1939de5711759,2026-11-08
-loading_file_handle_open,edge,,79,79,0,0,80892470896491ec,2026-11-08
+loading_close_file_streams,edge,,11,11,0,0,699d24cc736bbbb3,2026-11-08
+loading_file_handle_open,edge,,79,79,0,0,64ee8fc0427da075,2026-11-08
+loading_file_handle_read,edge,,29,29,0,0,715a1a3deab84918,2026-11-08
+loading_file_handle_seek,edge,,33,33,0,0,18e2d29ef87d475b,2026-11-08
+loading_file_handle_write,edge,,28,28,0,0,c136d1dfc7e4bcbf,2026-11-08
 loading_fios_directory_delete,edge,,20,20,0,0,5cad0c5d584713c7,2026-11-08
-loading_fios_open_default,edge,,18,18,0,0,4391bb73d4fdc9bf,2026-11-08
-loading_fios_open_with_mode,edge,,37,37,0,0,ecaf3584f894941a,2026-11-08
+loading_fios_open_default,edge,,18,18,0,0,d10a211bac268c7a,2026-11-08
+loading_fios_open_with_mode,edge,,37,37,0,0,566c29c843013a83,2026-11-08
 physics_instance_construct_01c0c2b0,recorded,,119,119,0,0,ca3412adb293c909,2026-10-07
 physics_instance_construct_01c0c2b0,recorded,30,119,119,0,0,ca3412adb293c909,2026-10-07
 physics_instance_construct_01c0c2b0,recorded,60,119,119,0,0,ca3412adb293c909,2026-10-07
@@ -287,6 +290,3 @@ render_yebis_get_recursive_sample_parameters,edge,,23,23,0,0,6e6f0aa41d5607ce,20
 render_yebis_get_recursive_sample_parameters,edge,30,23,23,0,0,6e6f0aa41d5607ce,2026-10-07
 render_yebis_get_recursive_sample_parameters,edge,60,23,23,0,0,6e6f0aa41d5607ce,2026-10-07
 render_yebis_get_recursive_sample_parameters,edge,uncapped,23,23,0,0,6e6f0aa41d5607ce,2026-10-07
-loading_file_handle_read,edge,,29,29,0,0,74d4f9ead3f26b42,2026-11-08
-loading_file_handle_seek,edge,,33,33,0,0,8dd56d13e29c21d5,2026-11-08
-loading_file_handle_write,edge,,28,28,0,0,2160f139bf7c2a82,2026-11-08
