@@ -148,6 +148,7 @@ address,replacement,system,returns
 0x025b2fb0,bb_render_swap_chain_present,render,void
 0x02a44140,bb_engine_wide_string_destroy,engine,void
 0x02a70890,bb_loading_file_handle_open,loading,i32
+0x02a70920,bb_loading_file_handle_read,loading,i32
 0x02aaddc0,bb_render_allocate_shader_upload,render,i64
 0x02aafb30,bb_render_command_submit_present,render,i32
 0x02ab0ce0,bb_render_command_submit_batch,render,void

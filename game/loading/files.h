@@ -52,4 +52,12 @@ RT_ORIGINAL(0x02fbe7b8, close_stream, int32_t(Stream *));
  */
 RT_ORIGINAL(0x02fbf3f8, kernel_open, int32_t(const char *path, uint32_t flags, uint32_t permissions));
 
+/**
+ *
+ * Reads from a kernel descriptor (sceKernelRead, FreeBSD read(2)).
+ *
+ * The buffer receives up to size bytes and the result is the byte count, or negative on failure.
+ */
+RT_ORIGINAL(0x02fbf408, kernel_read, int64_t(uint32_t descriptor, void *buffer, uint64_t size));
+
 }  // namespace loading::files
