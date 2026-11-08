@@ -149,6 +149,7 @@ address,size,name,system,status,notes
 0x025b2fb0,768,render_swap_chain_present,render,verified,"GXSwapChainCtrl present: waits for the present interval in 60 Hz vblanks, maps it to a flip mode, presents (Uncap: mode 0)"
 0x02a44140,59,engine_wide_string_destroy,engine,edge-verified,WideString destructor; unsigned capacity >=8 frees even null; ignores owns; callback before capacity and size reset and two-byte terminator
 0x02a70890,141,loading_file_handle_open,loading,edge-verified,Translate game mode bits to FreeBSD open flags and permissions; store descriptor and set the open bit on success; -1 on failure
+0x02a8c210,164,input_mouse_construct,input,edge-verified,"Constructs a mouse input object: base part, vtable, cleared state, libSceMouse load and init, then the object's virtual method at +0x100; clears the handle slot on failure."
 0x02a8c420,108,input_initialize_mouse_for_initial_user,input,original,"Initializes or reinitializes mouse input for the initial user, closing a previous connection if necessary."
 0x02a9c790,84,input_pad_set_vibration,input,edge-verified,"Sets a pad output's large and small motor speeds through scePadSetVibration; false when vibration is disabled or the call fails."
 0x02aaddc0,393,render_allocate_shader_upload,render,edge-verified,"Allocate one shader-upload slice of at most 64 KiB. If no suitable block exists, acquire once, reclaim, then retry once. Preserve zero-size requests and delegate block policy to the original manager."
