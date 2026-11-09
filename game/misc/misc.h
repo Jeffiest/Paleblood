@@ -118,4 +118,59 @@ struct ChildOwner {
 static_assert(offsetof(ChildOwner, child) == 0x38);
 static_assert(offsetof(ChildOwner, counter_78) == 0x78);
 
+/**
+ *
+ * A record that the lookup hands out, and which the caller releases when done.
+ *
+ */
+struct LookupRecord {
+    uint8_t unknown_0x00[0x10];
+    uint64_t tagged_word_10; /**< Pointer-like word whose low two bits are tag bits. */
+};
+static_assert(offsetof(LookupRecord, tagged_word_10) == 0x10);
+
+/** Record id that the payload lookup asks for. */
+constexpr int32_t lookup_record_id = 0x15;
+
+/** Low bits of a tagged word that are cleared before use. */
+constexpr uint64_t tag_bits_mask = 0x3;
+
+/** Offset added to a tag-cleared word to form the payload. */
+constexpr uint64_t payload_offset = 0xc;
+
+/**
+ *
+ * An opaque table of records, of which only the lookup vtable slot is used.
+ *
+ */
+struct LookupTable;
+
+/**
+ *
+ * The vtable of a LookupTable, of which only the find slot is used.
+ *
+ */
+struct LookupTableVtable {
+    uint8_t unknown_0x00[0x20];
+    LookupRecord *(*find)(LookupTable *table, int32_t id); /**< Slot at 0x20. Null when no record has the id. */
+};
+static_assert(offsetof(LookupTableVtable, find) == 0x20);
+
+/**
+ *
+ * The first word of a LookupTable is its vtable pointer.
+ *
+ */
+struct LookupTable {
+    const LookupTableVtable *vtable; /**< Dispatch table for the table's methods. */
+};
+static_assert(offsetof(LookupTable, vtable) == 0x00);
+
+/**
+ *
+ * Releases a record that the lookup handed out (0x0045a4c0).
+ *
+ */
+RT_ORIGINAL(0x0045a4c0, release_record, void(LookupRecord *record));
+
 }  // namespace misc
