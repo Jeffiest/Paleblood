@@ -2,6 +2,7 @@ address,size,name,system,status,notes
 0x004034f0,3,auto_return_constant_004034f0,auto,edge-verified,Generated from the return constant template
 0x00405d10,163,misc_scratch_value_48,misc,edge-verified,Builds a default scratch block then runs the block builder on it and returns the double at offset 0x48 of its result
 0x00405dc0,163,misc_scratch_value_18,misc,edge-verified,Builds a default scratch block then runs the block builder on it and returns the double at offset 0x18 of its result
+0x00405e70,163,misc_scratch_value_50,misc,edge-verified,Builds a default scratch block then runs the block builder on it and returns the double at offset 0x50 of its result
 0x00406600,1,auto_empty_00406600,auto,edge-verified,Generated from the empty template
 0x00409fd0,1,auto_empty_00409fd0,auto,edge-verified,Generated from the empty template
 0x0040c4c0,3,auto_return_zero_0040c4c0,auto,edge-verified,Generated from the return zero template
