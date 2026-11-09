@@ -18656,6 +18656,7 @@ address,replacement,system,returns
 0x02b3e300,bb_misc_alloc_block_with_value,misc,i64
 0x02b3e5f0,bb_auto_empty_02b3e5f0,auto,void
 0x02b3e610,bb_auto_empty_02b3e610,auto,void
+0x02b3e810,bb_misc_set_tail_value_40,misc,void
 0x02b3e820,bb_auto_return_field_02b3e820,auto,i64
 0x02b3e830,bb_auto_return_field_02b3e830,auto,i64
 0x02b3e840,bb_auto_return_field_02b3e840,auto,i32
