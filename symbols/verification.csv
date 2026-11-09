@@ -22921,6 +22921,7 @@ misc_init_child_holder,edge,,4,4,0,0,129ed90552350e0f,2026-11-09
 misc_init_record_block,edge,,3,3,0,0,7bd22e5e16029ce2,2026-11-09
 misc_item_set_apply,edge,,7,7,0,0,3e64a8b3cef8e8af,2026-11-09
 misc_keyed_pool_append,edge,,10,10,0,0,a4f064fdb0d9e5e5,2026-11-09
+misc_linked_object_free,edge,,8,8,0,0,e4f391884bebee5f,2026-11-09
 misc_linked_object_init,edge,,5,5,0,0,1c8b766b4b95638e,2026-11-09
 misc_linked_object_release,edge,,5,5,0,0,6e0d2a1684aae932,2026-11-09
 misc_list_all_exceed_one,edge,,12,12,0,0,9d15f22d0f823a8a,2026-11-09
