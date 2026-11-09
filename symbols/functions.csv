@@ -18665,6 +18665,7 @@ address,size,name,system,status,notes
 0x02b3ea30,19,misc_element_key_at,misc,edge-verified,Returns the leading 32-bit key of the table element at a signed index by passing the element to its key callee
 0x02b3ea50,71,misc_element_table_call_each,misc,edge-verified,Passes every element of a table to a callee in index order and rereads the element count after each call
 0x02b3f260,25,misc_query_owned_child,misc,edge-verified,Returns the 64-bit answer of the child an owner holds through its query slot or zero when it holds none
+0x02b3f280,399,misc_task_object_construct,misc,edge-verified,Builds a task object from a source word a flag byte and two values and attaches the shared object created on first use
 0x02b3f410,28,misc_run_teardown_then_release,misc,edge-verified,Runs the object teardown routine then tail-calls the library release with the same object and returns its result
 0x02b3f5c0,72,misc_release_holder_node,misc,edge-verified,Releases the node a holder owns through its allocator and clears the holder reference to it
 0x02b3f870,5,auto_return_field_02b3f870,auto,edge-verified,Generated from the return field template
