@@ -18438,6 +18438,7 @@ address,replacement,system,returns
 0x02b3a6d0,bb_misc_set_u32_word_160,misc,void
 0x02b3abb0,bb_auto_return_field_02b3abb0,auto,i32
 0x02b3abc0,bb_misc_slot_matches_unset,misc,i8
+0x02b3ac20,bb_misc_int_queue_push_source,misc,void
 0x02b3aca0,bb_auto_return_zero_02b3aca0,auto,i64
 0x02b3b290,bb_auto_empty_02b3b290,auto,void
 0x02b3b2a0,bb_auto_empty_02b3b2a0,auto,void
