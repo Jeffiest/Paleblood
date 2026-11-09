@@ -12889,6 +12889,7 @@ address,replacement,system,returns
 0x02244000,bb_misc_member_owner_destroy_02244000,misc,i64
 0x02244030,bb_misc_build_block_object_02244030,misc,i64
 0x022441c0,bb_misc_forward_when_flagged_022441c0,misc,i64
+0x022442a0,bb_engine_initialize_static_wide_string_022442a0,engine,void
 0x022447b0,bb_auto_return_field_022447b0,auto,i64
 0x022447c0,bb_auto_return_field_022447c0,auto,i64
 0x02244810,bb_auto_return_zero_02244810,auto,i64

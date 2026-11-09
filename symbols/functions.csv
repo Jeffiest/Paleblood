@@ -12890,6 +12890,7 @@ address,size,name,system,status,notes
 0x02244000,42,misc_member_owner_destroy_02244000,misc,edge-verified,Destructor of an owner with a member at 0x68: stores its vtable destroys the member then returns the result of destroying the base part
 0x02244030,387,misc_build_block_object_02244030,misc,edge-verified,Builds a table from the flag heap and binds it to the member when the member returns it copies the source block into a heap buffer and sets the entry ranges
 0x022441c0,80,misc_forward_when_flagged_022441c0,misc,edge-verified,Forwards a flagged object: notifies it and returns its target forward result otherwise returns the check result with its low byte flipped
+0x022442a0,205,engine_initialize_static_wide_string_022442a0,engine,edge-verified,Duplicate of the guarded static wide string initializer at 0x0217ffb0 with identical code; forwards to that replacement
 0x022447b0,5,auto_return_field_022447b0,auto,edge-verified,Generated from the return field template
 0x022447c0,5,auto_return_field_022447c0,auto,edge-verified,Generated from the return field template
 0x02244810,3,auto_return_zero_02244810,auto,edge-verified,Generated from the return zero template
