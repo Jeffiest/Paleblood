@@ -10,6 +10,9 @@ namespace misc {
 /** Number of size classes, and so of entries in each table. */
 constexpr uint64_t size_class_count = 5;
 
+/** Number of scaled classes, and so of entries in the scaled table. */
+constexpr uint64_t scaled_class_count = 8;
+
 /** Largest request size in the first size class. */
 constexpr uint32_t size_class_first_bound = 2;
 
@@ -59,7 +62,9 @@ inline uint64_t size_class_for(uint32_t size)
 
 /**
  *
- * The holder: five tables of one entry per size class, at +0x310, +0x338, +0x360, +0x3c8 and +0x3f0.
+ * The holder: five tables of one entry per size class at +0x310, +0x338, +0x360, +0x3c8 and +0x3f0,
+ *
+ * and an eight-entry scaled table at +0x388.
  *
  */
 struct SizeClassHolder {
@@ -67,13 +72,14 @@ struct SizeClassHolder {
     uint64_t table_0x310[size_class_count]; /**< First table, one entry per size class. */
     uint64_t table_0x338[size_class_count]; /**< Second table, one entry per size class. */
     uint64_t table_0x360[size_class_count]; /**< Third table, one entry per size class. */
-    uint8_t unknown_0x0388[0x40];
+    uint64_t table_0x388[scaled_class_count];               /**< Scaled table, one entry per scaled class. */
     uint64_t table_0x3c8[size_class_count]; /**< Fourth table, one entry per size class. */
     uint64_t table_0x3f0[size_class_count]; /**< Fifth table, one entry per size class. */
 };
 static_assert(offsetof(SizeClassHolder, table_0x310) == 0x310);
 static_assert(offsetof(SizeClassHolder, table_0x338) == 0x338);
 static_assert(offsetof(SizeClassHolder, table_0x360) == 0x360);
+static_assert(offsetof(SizeClassHolder, table_0x388) == 0x388);
 static_assert(offsetof(SizeClassHolder, table_0x3c8) == 0x3c8);
 static_assert(offsetof(SizeClassHolder, table_0x3f0) == 0x3f0);
 
