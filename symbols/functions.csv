@@ -15063,6 +15063,7 @@ address,size,name,system,status,notes
 0x026f3990,1,auto_empty_026f3990,auto,edge-verified,Generated from the empty template
 0x026f39b0,28,misc_call_then_forward,misc,edge-verified,Runs an object routine on the object then returns the result of the library routine it tail-forwards to
 0x026f39d0,22,misc_clear_flagged_tag,misc,edge-verified,Gives a flagged object the base vtable and clears the tag bit of its flag word
+0x026f3a00,40,misc_forward_member_call,misc,edge-verified,Forwards a call through a member record to a function or a vtable slot of the adjusted object when the forward bit is set
 0x026f3a30,22,misc_clear_flagged_tag_alt,misc,edge-verified,Gives a second flagged object the base vtable and clears the tag bit of its flag word
 0x026f3a90,1,auto_empty_026f3a90,auto,edge-verified,Generated from the empty template
 0x026f3ab0,3,auto_return_zero_026f3ab0,auto,edge-verified,Generated from the return zero template
