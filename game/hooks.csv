@@ -5092,6 +5092,7 @@ address,replacement,system,returns
 0x01888650,bb_misc_forward_tagged_request,misc,i64
 0x01888a00,bb_misc_init_shared_record_once_guarded,misc,void
 0x01888b10,bb_auto_empty_01888b10,auto,void
+0x01888b30,bb_misc_tail_call_offset_member_thunk,misc,i64
 0x01888b80,bb_misc_release_after_empty_call_01888b80,misc,i64
 0x01888ba0,bb_misc_forward_record_to_slot_90,misc,i64
 0x01888bd0,bb_misc_call_then_release_01888bd0,misc,i64

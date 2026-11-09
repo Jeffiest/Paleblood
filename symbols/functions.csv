@@ -5093,6 +5093,7 @@ address,size,name,system,status,notes
 0x01888650,30,misc_forward_tagged_request,misc,edge-verified,Forwards a tagged request payload with a table and a holder count to a library routine when the 32-bit tag equals 2; otherwise returns without a call
 0x01888a00,205,misc_init_shared_record_once_guarded,misc,edge-verified,Guarded copy of misc_init_shared_record_once with the same setup and flag query; the stack guard is left to the compiler and the copy after its failure call is omitted
 0x01888b10,1,auto_empty_01888b10,auto,edge-verified,Generated from the empty template
+0x01888b30,50,misc_tail_call_offset_member_thunk,misc,edge-verified,Tail calls the target of a member thunk on its object adjusted by +0x18 with the second record value and 32-bit argument; a zero target or null object returns without a call
 0x01888b80,28,misc_release_after_empty_call_01888b80,misc,edge-verified,Same body as misc_release_after_empty_call at 0x01887f20: calls the empty routine then tail calls the release routine with the object
 0x01888ba0,31,misc_forward_record_to_slot_90,misc,edge-verified,Passes the record value and the 32-bit mode behind its pointer with the object to its vtable slot at +0x90 and returns that result
 0x01888bd0,28,misc_call_then_release_01888bd0,misc,edge-verified,Calls the routine 0x01402180 with the object then tail calls the release routine 0x02fbe588 with the same object and returns its result
