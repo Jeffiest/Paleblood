@@ -1436,6 +1436,7 @@ address,size,name,system,status,notes
 0x00b680a0,6,auto_return_constant_00b680a0,auto,edge-verified,Generated from the return constant template
 0x00b680c0,1,auto_empty_00b680c0,auto,edge-verified,Generated from the empty template
 0x00b68770,60,misc_slot_pool_total,misc,edge-verified,Returns the 32-bit total that the child computation of a slot pool stores for a scale and drops its changed flag
+0x00b687b0,387,misc_slot_pool_reassign,misc,edge-verified,Gives the slots of a pool a value spread across count steps when its child computation changed the pool and otherwise visits its children
 0x00b68940,313,misc_slot_pool_take,misc,edge-verified,Claims the first unclaimed slot of a lock-guarded pool and returns its value or zero when none is free
 0x00b697c0,1,auto_empty_00b697c0,auto,edge-verified,Generated from the empty template
 0x00b6a020,7,auto_return_field_00b6a020,auto,edge-verified,Generated from the return field template

@@ -19,7 +19,10 @@ constexpr size_t slot_pool_lock_bytes = sizeof(uint64_t);
  *
  */
 struct SlotPool {
-    uint8_t unknown_0x00[0x50];
+    uint8_t unknown_0x00[0x10];
+    void **children;          /**< Child objects, visited in order when the pool is not changed. */
+    int32_t child_count;      /**< Number of child objects. */
+    uint8_t unknown_0x1c[0x34];
     uint64_t *values;         /**< One 64-bit value per slot. */
     int32_t slot_count;       /**< Number of slots in values and in used. */
     uint32_t values_capacity; /**< Allocated slots in values; the top two bits are flags. */
@@ -29,6 +32,8 @@ struct SlotPool {
     uint8_t lock[slot_pool_lock_bytes];  /**< The lock guarding the pool, passed to the lock calls by address. */
     uint32_t spin_count;      /**< Try-lock attempts made before blocking on the lock. */
 };
+static_assert(offsetof(SlotPool, children) == 0x10);
+static_assert(offsetof(SlotPool, child_count) == 0x18);
 static_assert(offsetof(SlotPool, values) == 0x50);
 static_assert(offsetof(SlotPool, slot_count) == 0x58);
 static_assert(offsetof(SlotPool, values_capacity) == 0x5c);
