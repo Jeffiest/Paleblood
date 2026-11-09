@@ -1,0 +1,29 @@
+// SPDX-License-Identifier: GPL-2.0-or-later
+// Misc: the context a pair record points to, with its flags and the two values bound into it.
+#pragma once
+
+#include <cstddef>
+#include <cstdint>
+
+namespace misc {
+
+/** The flag bits a pair binding sets in its context. */
+constexpr uint64_t pair_context_flag_bits = 0xc0000000;
+
+/**
+ *
+ * The context: its flags at +0x1968 and the two values the binding stores at +0xd218 and +0xd220.
+ *
+ */
+struct PairContext {
+    uint8_t unknown_0x0000[0x1968];
+    uint64_t flags_0x1968;
+    uint8_t unknown_0x1970[0xb8a8];
+    uint64_t first_value_0xd218;  /**< First value stored by the binding. */
+    uint64_t second_value_0xd220; /**< Second value stored by the binding. */
+};
+static_assert(offsetof(PairContext, flags_0x1968) == 0x1968);
+static_assert(offsetof(PairContext, first_value_0xd218) == 0xd218);
+static_assert(offsetof(PairContext, second_value_0xd220) == 0xd220);
+
+}  // namespace misc
