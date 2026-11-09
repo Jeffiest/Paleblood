@@ -2897,6 +2897,7 @@ address,replacement,system,returns
 0x0139ae30,bb_misc_bind_vtable_56b4890_alt,misc,void
 0x0139ae60,bb_misc_bind_vtable_56b47f0_alt,misc,void
 0x0139ae90,bb_misc_copy_block_58b3300,misc,void
+0x0139b0e0,bb_misc_take_slot_item,misc,i32
 0x0139b4f0,bb_auto_empty_0139b4f0,auto,void
 0x0139d9d0,bb_auto_return_zero_0139d9d0,auto,i64
 0x0139ea10,bb_auto_return_zero_0139ea10,auto,i64
