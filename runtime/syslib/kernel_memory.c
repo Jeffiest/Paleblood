@@ -88,7 +88,7 @@ static uint64_t align_up(uint64_t value, uint64_t alignment) { return (value + a
 /* Where a map goes when the title lets the system pick the address. The GPU reaches memory through
    40-bit addresses: AMD's public register formats keep a buffer's base as a 32-bit field holding
    the address shifted right by 8, and the engine stores addresses of memory it mapped that way (a
-   render target's buffers, 0x01472830 read by 0x0257a210). A host address above 2^40, where Linux
+   render target's buffers among them). A host address above 2^40, where Linux
    puts maps of its own choosing, loses its top bits there, so the runtime places every map it
    picks an address for inside this window below 2^40, clear of the executable and modules (from
    0x800000000), the thread objects (0xf000000000) and the tessellation ring (0xfe00000000). The

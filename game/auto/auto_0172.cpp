@@ -21,3 +21,39 @@ extern "C" uint64_t bb_auto_return_zero_0172f890()
 {
     return 0;
 }
+
+/**
+ *
+ * Does nothing.
+ *
+ */
+extern "C" void bb_auto_empty_017212c0()
+{
+}
+
+/**
+ *
+ * Does nothing.
+ *
+ */
+extern "C" void bb_auto_empty_017212d0()
+{
+}
+
+/**
+ *
+ * Does nothing.
+ *
+ */
+extern "C" void bb_auto_empty_017212e0()
+{
+}
+
+/**
+ *
+ * Does nothing.
+ *
+ */
+extern "C" void bb_auto_empty_017266d0()
+{
+}

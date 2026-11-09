@@ -400,3 +400,213 @@ extern "C" uint64_t bb_auto_return_zero_01793d30()
 {
     return 0;
 }
+
+/**
+ *
+ * Does nothing.
+ *
+ */
+extern "C" void bb_auto_empty_017919d0()
+{
+}
+
+/**
+ *
+ * Returns a fixed value whose meaning is unknown.
+ *
+ */
+constexpr uint32_t value_017919f0 = 0x3;
+
+extern "C" uint32_t bb_auto_return_constant_017919f0()
+{
+    return value_017919f0;
+}
+
+/**
+ *
+ * Does nothing.
+ *
+ */
+extern "C" void bb_auto_empty_01792080()
+{
+}
+
+/**
+ *
+ * Returns a fixed value whose meaning is unknown.
+ *
+ */
+constexpr uint32_t value_017920a0 = 0x4;
+
+extern "C" uint32_t bb_auto_return_constant_017920a0()
+{
+    return value_017920a0;
+}
+
+/**
+ *
+ * Does nothing.
+ *
+ */
+extern "C" void bb_auto_empty_01792530()
+{
+}
+
+/**
+ *
+ * Returns a fixed value whose meaning is unknown.
+ *
+ */
+constexpr uint32_t value_01792550 = 0x2;
+
+extern "C" uint32_t bb_auto_return_constant_01792550()
+{
+    return value_01792550;
+}
+
+/**
+ *
+ * Does nothing.
+ *
+ */
+extern "C" void bb_auto_empty_01792b30()
+{
+}
+
+/**
+ *
+ * Returns a fixed value whose meaning is unknown.
+ *
+ */
+constexpr uint32_t value_01792b50 = 0x3;
+
+extern "C" uint32_t bb_auto_return_constant_01792b50()
+{
+    return value_01792b50;
+}
+
+/**
+ *
+ * Does nothing.
+ *
+ */
+extern "C" void bb_auto_empty_01793040()
+{
+}
+
+/**
+ *
+ * Returns a fixed value whose meaning is unknown.
+ *
+ */
+constexpr uint32_t value_01793060 = 0x2;
+
+extern "C" uint32_t bb_auto_return_constant_01793060()
+{
+    return value_01793060;
+}
+
+/**
+ *
+ * Does nothing.
+ *
+ */
+extern "C" void bb_auto_empty_01793510()
+{
+}
+
+/**
+ *
+ * Returns a fixed value whose meaning is unknown.
+ *
+ */
+constexpr uint32_t value_01793530 = 0x2;
+
+extern "C" uint32_t bb_auto_return_constant_01793530()
+{
+    return value_01793530;
+}
+
+/**
+ *
+ * Does nothing.
+ *
+ */
+extern "C" void bb_auto_empty_01793910()
+{
+}
+
+/**
+ *
+ * Returns a fixed value whose meaning is unknown.
+ *
+ */
+constexpr uint32_t value_01793930 = 0x1;
+
+extern "C" uint32_t bb_auto_return_constant_01793930()
+{
+    return value_01793930;
+}
+
+/**
+ *
+ * Does nothing.
+ *
+ */
+extern "C" void bb_auto_empty_01793b60()
+{
+}
+
+/**
+ *
+ * The part of the object that auto_return_field_01793cd0 reads.
+ *
+ */
+struct Object01793cd0 {
+    uint8_t unknown_0x0000[0x40];
+    uint64_t value_0x0040; /**< Read by auto_return_field_01793cd0; meaning unknown. */
+};
+static_assert(offsetof(Object01793cd0, value_0x0040) == 0x40);
+
+/**
+ *
+ * Returns a field of its object.
+ *
+ */
+extern "C" uint64_t bb_auto_return_field_01793cd0(const Object01793cd0 *self)
+{
+    return self->value_0x0040;
+}
+
+/**
+ *
+ * The part of the object that auto_return_field_01793ce0 reads.
+ *
+ */
+struct Object01793ce0 {
+    uint8_t unknown_0x0000[0x48];
+    uint64_t value_0x0048; /**< Read by auto_return_field_01793ce0; meaning unknown. */
+};
+static_assert(offsetof(Object01793ce0, value_0x0048) == 0x48);
+
+/**
+ *
+ * Returns a field of its object.
+ *
+ */
+extern "C" uint64_t bb_auto_return_field_01793ce0(const Object01793ce0 *self)
+{
+    return self->value_0x0048;
+}
+
+/**
+ *
+ * Returns a fixed value whose meaning is unknown.
+ *
+ */
+constexpr uint32_t value_01793dd0 = 0x30;
+
+extern "C" uint32_t bb_auto_return_constant_01793dd0()
+{
+    return value_01793dd0;
+}
