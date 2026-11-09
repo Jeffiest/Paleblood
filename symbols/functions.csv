@@ -5025,8 +5025,18 @@ address,size,name,system,status,notes
 0x01884ce0,3,auto_return_constant_01884ce0,auto,edge-verified,Generated from the return constant template
 0x018852b0,1,auto_empty_018852b0,auto,edge-verified,Generated from the empty template
 0x01886740,1,auto_empty_01886740,auto,edge-verified,Generated from the empty template
+0x018867e0,205,engine_initialize_static_wide_string_018867e0,engine,edge-verified,Same guarded static empty wide string as engine_initialize_static_wide_string_0217ffb0; byte-only entry test; captured allocator; destructor registration before full guard publication
+0x018868f0,143,engine_block_holder_destroy_tail,engine,edge-verified,Sets a block holder vtable then releases its block if set and returns the base destructor result by tail call; the cached or reported allocator frees it
+0x01886980,144,engine_block_holder_release,engine,edge-verified,Sets a block holder vtable then releases its block if set through the cached or reported allocator and clears the block pointer
+0x01886a10,229,engine_block_holder_assign_sized,engine,edge-verified,Releases a block holder old block then allocates a sized block with flag and count and copies the source into it; returns false when the allocation fails
+0x01886b00,204,engine_block_holder_assign_copy,engine,edge-verified,Releases a block holder old block then allocates a block of the count size and copies the source into it; returns false when the allocation fails
+0x01886bd0,206,engine_block_holder_allocate_sized,engine,edge-verified,Releases a block holder old block then allocates a sized block for the count stores it and returns its payload or null
+0x01886d30,205,engine_initialize_static_wide_string_01886d30,engine,edge-verified,Same guarded static empty wide string as engine_initialize_static_wide_string_0217ffb0; byte-only entry test; captured allocator; destructor registration before full guard publication
 0x01887300,181,misc_drain_object_queue,misc,edge-verified,Two-pass drain of a queue ring: first pass marks each object; second pass destroys and frees marked objects and unlinks their nodes
 0x01887680,47,misc_notify_unflagged_record,misc,edge-verified,Hands a holder record to the notifier at 0x018873c0 when its flag byte is clear then returns the holder
+0x01887870,79,misc_insert_keyed_record,misc,edge-verified,Gets the registry record table and tail calls the insert of a 32-bit key into its ring of child queues; the registry must exist
+0x018878d0,138,misc_has_marked_record,misc,edge-verified,Reports whether a marked record with the given key is in the record ring of the registry table; an empty table or a null record never matches
+0x01887cd0,205,engine_initialize_static_wide_string_01887cd0,engine,edge-verified,Same guarded static empty wide string as engine_initialize_static_wide_string_0217ffb0; byte-only entry test; captured allocator; destructor registration before full guard publication
 0x01887de0,1,auto_empty_01887de0,auto,edge-verified,Generated from the empty template
 0x01887eb0,1,auto_empty_01887eb0,auto,edge-verified,Generated from the empty template
 0x01888200,1,auto_empty_01888200,auto,edge-verified,Generated from the empty template
