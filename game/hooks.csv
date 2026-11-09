@@ -1509,6 +1509,7 @@ address,replacement,system,returns
 0x00be6e40,bb_misc_dual_held_member_object_free,misc,i64
 0x00be6e90,bb_misc_dual_held_member_object_release,misc,void
 0x00be6f70,bb_misc_record_link_address_00be6f70,misc,i64
+0x00be6f80,bb_misc_dual_held_pair_report,misc,i64
 0x00be7010,bb_misc_dispatch_by_kind,misc,i64
 0x00be9890,bb_auto_return_field_00be9890,auto,i64
 0x00be98a0,bb_auto_return_field_00be98a0,auto,i64

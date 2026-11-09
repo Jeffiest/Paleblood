@@ -22969,6 +22969,7 @@ misc_drain_pool_entries,edge,,10,10,0,0,4df4693bc373f5fd,2026-11-09
 misc_dual_held_member_object_free,edge,,6,6,0,0,83a8412b7f229ab7,2026-11-09
 misc_dual_held_member_object_init,edge,,2,2,0,0,752fe02dae89e67f,2026-11-09
 misc_dual_held_member_object_release,edge,,9,9,0,0,a3923c2f8d574c42,2026-11-09
+misc_dual_held_pair_report,edge,,9,9,0,0,08199fc412c01de0,2026-11-09
 misc_entry_for_key,edge,,9,9,0,0,05562ce18d85b046,2026-11-09
 misc_entry_ref_accept,edge,,15,15,0,0,37f92aa1e32c3463,2026-11-09
 misc_fill_item_table,edge,,10,10,0,0,121719f0b60da0e7,2026-11-09
