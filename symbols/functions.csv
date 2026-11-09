@@ -12876,6 +12876,7 @@ address,size,name,system,status,notes
 0x02242b90,31,misc_base_init_02242b90,misc,edge-verified,Runs the setup step on the object then stores the other class vtable in it
 0x02242bb0,75,misc_sized_delete_02242bb0,misc,edge-verified,Runs the release step then frees the object through the thread allocator with its size tag or the default 0x130 size and returns the free result
 0x02242c30,24,misc_forward_index_02242c30,misc,edge-verified,Stores the value then forwards the inner object index value and mode zero to the forwarding function and returns its result
+0x02242df0,167,misc_id_owner_construct_02242df0,misc,edge-verified,Constructs an id owner: stores its vtable reports an invalid id heap through the fatal error then reserves the initial ids from the heap
 0x02242ea0,52,misc_held_block_delete_02242ea0,misc,edge-verified,Deleting destructor of an owner holding one block: stores its virtual table releases the held block through its allocator when one is held then returns the library result of the owner
 0x02242ee0,72,misc_held_block_destroy_02242ee0,misc,edge-verified,Destructor of an owner holding one block: stores its virtual table and when a block is held releases it through the owner allocator then clears the held block and the two words after it
 0x022430f0,89,misc_clear_id_list_022430f0,misc,edge-verified,Hands each 32-bit id of a list to the physics world id handler then empties the list by setting its end to its first id

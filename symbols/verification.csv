@@ -22985,6 +22985,7 @@ misc_holder_search_first,edge,,4,4,0,0,31fcf9ab170c684b,2026-11-09
 misc_holder_search_fourth,edge,,4,4,0,0,2806de0558515fb4,2026-11-09
 misc_holder_search_second,edge,,4,4,0,0,8ea756833cdd18bc,2026-11-09
 misc_holder_search_third,edge,,4,4,0,0,e21c971d8e58be79,2026-11-09
+misc_id_owner_construct_02242df0,edge,,8,8,0,0,627eb0aab7bf21ee,2026-11-09
 misc_init_child_holder,edge,,4,4,0,0,129ed90552350e0f,2026-11-09
 misc_init_item_table,edge,,11,11,0,0,a01f279af0fefd7b,2026-11-09
 misc_init_keyed_handle,edge,,5,5,0,0,5baab1272f6a7e05,2026-11-09
