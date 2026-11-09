@@ -1514,7 +1514,20 @@ address,size,name,system,status,notes
 0x00be3380,221,misc_find_third_link_index,misc,edge-verified,Returns the index of the first third list entry whose link address matches the argument and reports a miss giving minus one
 0x00be35d0,7,auto_return_field_00be35d0,auto,edge-verified,Generated from the return field template
 0x00be35e0,7,auto_return_field_00be35e0,auto,edge-verified,Generated from the return field template
+0x00be42e0,269,misc_held_member_object_init,misc,edge-verified,Builds a held member object around a reference item by taking its own count and zeroing its members and setting its scale fields
+0x00be43f0,75,misc_held_member_object_free,misc,edge-verified,Deleting destructor of a held member object that releases it then frees its block through the thread allocator with its size
+0x00be4440,161,misc_held_member_object_release,misc,edge-verified,Releases a held member object by destroying its four members then dropping its held reference and destroying its tail member
+0x00be44f0,9,misc_record_link_address,misc,edge-verified,Returns the address held in a lookup record tagged link with its flag bit cleared
 0x00be4500,6,auto_return_constant_00be4500,auto,edge-verified,Generated from the return constant template
+0x00be6dc0,123,misc_dual_held_member_object_init,misc,edge-verified,Builds a dual held member object with no held items by initialising its first member with a name and zeroing its words
+0x00be6e40,75,misc_dual_held_member_object_free,misc,edge-verified,Deleting destructor of a dual held member object that releases it then frees its block through the thread allocator with its size
+0x00be6e90,209,misc_dual_held_member_object_release,misc,edge-verified,Releases a dual held member object by destroying its members and dropping its two held references
+0x00be6f70,9,misc_record_link_address_00be6f70,misc,edge-verified,Returns the address held in a lookup record tagged link with its flag bit cleared
+0x00be6f80,141,misc_dual_held_pair_report,misc,edge-verified,Reports the two held items of a dual held member object in the order its kind word gives and returns zero
+0x00be7010,28,misc_dispatch_by_kind,misc,edge-verified,Forwards a call to one of two target functions by the object kind word and returns one for any other kind
+0x00be9280,285,misc_bounded_range_object_init,misc,edge-verified,Builds a bounded range object with its two vtables and zeroed and lowest-value range slots
+0x00be93a0,75,misc_bounded_range_object_free,misc,edge-verified,Deleting destructor of a bounded range object that releases it then frees its block through the thread allocator with its size
+0x00be93f0,81,misc_bounded_range_object_free_secondary,misc,edge-verified,Deleting destructor entered through the secondary base that steps back to the object then releases it and frees its block with its size
 0x00be9890,5,auto_return_field_00be9890,auto,edge-verified,Generated from the return field template
 0x00be98a0,5,auto_return_field_00be98a0,auto,edge-verified,Generated from the return field template
 0x00be9910,4,auto_return_field_00be9910,auto,edge-verified,Generated from the return field template
