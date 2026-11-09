@@ -23,7 +23,7 @@ struct VirtualObjectVtable {
         uint64_t (*slot_28)(VirtualObject *object);                       /**< Called with the object only. */
         uint64_t (*slot_28_value)(VirtualObject *object, uint32_t value); /**< Called with a 32-bit value too. */
     };
-    uint64_t (*slot_30)(VirtualObject *object);
+    VirtualObject *(*slot_30)(VirtualObject *object);
     uint64_t (*slot_38)(VirtualObject *object);
     uint64_t (*slot_40)(VirtualObject *object);
 };
