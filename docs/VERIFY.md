@@ -133,6 +133,30 @@ reused run ID and case number cannot silently replace an existing recording.
   reject the fixture before execution; callback access errors make the result fail.
   A `BadInput` raised while an import or stub callback runs is recorded as a case
   failure, rather than being discarded by the native callback bridge.
+- Stub and import `writes` (and `argmem` reads) may target the caller's stack, for a callee
+  that fills a record the caller placed in its frame (`LEA RDI,[RSP+0x20]; CALL fn`, then the
+  caller reads the record). The access must lie wholly inside the live stack of the function
+  under test: from the scripted call's first stack-argument slot (the entry RSP the native
+  bridge saves, plus 8) up to the top of the stack the harness set up, excluding the function's
+  own return address. Anything else (past the top, over a return address, below the callee's
+  frame) is refused and recorded as an error, as for an access outside a declared buffer. The
+  offset is relative to the pointer argument, so a case written for the original also holds
+  for a replacement whose frame differs. Stack bytes are not compared: the record matters only
+  through what the function does with it.
+- `rdx`: a second return register for a stub or import, beside `ret`, for a callee whose result
+  the caller also reads from RDX (a 128-bit return, a hash helper returning two words):
+  `{"address": "0x0XXXXXXX", "argc": 2, "ret": "0x1234", "rdx": "0x5678"}`. It takes the
+  same values as `ret` (a number, `buf:` or `guest:`). Without it RDX is whatever the bridge's
+  call into Python left there, as before: unspecified, so a case whose function reads RDX after
+  the call must script it.
+- `noreturn: true` on a stub or import marks a call that never returns (an abort, a longjmp, a
+  fatal-error routine): `{"name": "_ZSt14_Xlength_errorPKc", "argc": 1, "noreturn": true}`. The call is
+  recorded with its arguments (and its `writes` made) like any other; then the case ends there,
+  without returning into the function: the bridge continues in the trampoline's epilogue, and
+  the result carries `"ended_in": {"import": "_ZSt14_Xlength_errorPKc"}` (or
+  `{"call": "0x0XXXXXXX"}` for a stub) instead of
+  `ret`, `preserved` and `registers`. Writes, calls and errors up to that point are reported as
+  usual. A `series` entry cannot be `noreturn` or script `rdx`.
 - `stack`: stack arguments, in order (the 7th integer argument first), as numbers, `buf:` or
   `guest:` values; the harness pushes them before the call and pops them after.
 - `gs`: the guest thread pointer (`buf:NAME+off`), for code that uses thread-local storage. As
@@ -148,7 +172,10 @@ balanced), `writes` (`addr` is a PS4 address, or `buf:NAME+off`), `calls`, `erro
 when the process crashed. Two results match when the return registers, the preserved
 registers, the final value of every written byte, and the library calls with their recorded
 arguments are equal. Pointer arguments into the stack are recorded as `stack`, since frames
-differ. Write order is not compared.
+differ. Write order is not compared. A case that ended in a `noreturn` call (`ended_in`) has
+no return or preserved registers: two results match when both ended in the same call, with
+equal recorded calls (so equal arguments to the last one) and equal writes. If one side
+returns and the other ends in a noreturn call, they differ.
 
 ## Limits
 

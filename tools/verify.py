@@ -100,7 +100,13 @@ def compare_case(orig: dict, repl: dict) -> list[str]:
             diffs.append(f'{side}: {e}')
     if any('fault' in d for d in (orig, repl)):
         return diffs
-    for group, regs in (('ret', RETURN_REGS), ('preserved', CALLEE_SAVED)):
+    # A case that ended in a noreturn call has no return or callee-saved registers: both sides
+    # must end in the same call (its recorded arguments are compared with the calls below).
+    ended = (orig.get('ended_in'), repl.get('ended_in'))
+    if ended[0] != ended[1]:
+        how = lambda e: f'ended in {e}' if e else 'returned'
+        diffs.append(f'ended_in: original {how(ended[0])} replacement {how(ended[1])}')
+    for group, regs in (() if any(ended) else (('ret', RETURN_REGS), ('preserved', CALLEE_SAVED))):
         for r in regs:
             a = orig.get(group, {}).get(r)
             b = repl.get(group, {}).get(r)
@@ -110,7 +116,7 @@ def compare_case(orig: dict, repl: dict) -> list[str]:
     replacement_observed = set(repl.get('observed_registers', []))
     if original_observed != replacement_observed:
         diffs.append('registers: compared-register declarations differ')
-    for reg in sorted(original_observed & replacement_observed):
+    for reg in sorted(original_observed & replacement_observed if not any(ended) else ()):
         a = orig.get('registers', {}).get(reg)
         b = repl.get('registers', {}).get(reg)
         if a != b:
@@ -361,9 +367,13 @@ def self_test() -> int:
     bad_call = compare(res(case('a', calls=[{'target': '0x1', 'args': []}])), res(case('a')))
     missing = compare(res(case('a'), case('b')), res(case('a')))
     fault = compare(res(case('a')), res(dict(case('a'), fault='signal 11')))
+    end = lambda c: {k: v for k, v in dict(c, ended_in={'call': '0x2'}).items() if k not in ('ret', 'preserved')}
+    calls = [{'call': '0x2', 'args': ['0x1']}]
+    ended = compare(res(end(case('a', calls=calls))), res(end(case('a', calls=calls))))
+    ended_vs_returned = compare(res(end(case('a', calls=calls))), res(case('a', calls=calls)))
     checks = [ok['failed'] == 0, ok2['failed'] == 0, bad_ret['failed'] == 1,
               bad_mem['failed'] == 1, bad_call['failed'] == 1, missing['failed'] == 1,
-              fault['failed'] == 1]
+              fault['failed'] == 1, ended['failed'] == 0, ended_vs_returned['failed'] == 1]
     if not all(checks):
         print(f'verify: self-test failed {checks}', file=sys.stderr)
         return 1

@@ -14,10 +14,11 @@ function at ADDRESS (a PS4 virtual address) runs; with it, SYMBOL from LIB runs 
 bbgame_init (given a loader that installs no hooks). Both see the same memory and the same
 scripted library calls. Design and file formats: docs/VERIFY.md.
 
-Prints one JSON object: return value, callee-saved registers, every changed byte of writable
-memory, every library call. With --cases, the image is mapped once and every case runs in a
-fork of it (a crash or a hang loses only that case); prints {file stem: result}. Runs at low
-priority (BB_NICE, default 10). Exits 0, or 3 on bad input.
+Prints one JSON object: return value, callee-saved registers (or `ended_in`, when a scripted
+noreturn call ended the case), every changed byte of writable memory, every library call. With
+--cases, the image is mapped once and every case runs in a fork of it (a crash or a hang loses
+only that case); prints {file stem: result}. Runs at low priority (BB_NICE, default 10). Exits 0,
+or 3 on bad input.
 """
 from __future__ import annotations
 
@@ -66,7 +67,9 @@ ARG_REGS = ('rdi', 'rsi', 'rdx', 'rcx', 'r8', 'r9')
 STACK_SLOTS = 0x800                         # offset in CODE: count, pointer, bytes
 
 
-def _stack_trampoline(base: bytes) -> bytes:
+def _stack_trampoline(base: bytes) -> tuple[bytes, int]:
+    """The trampoline with stack-argument setup, and the offset of its epilogue: the code after
+    the call and the stack-argument pop, entered with rsp at block[19] (the noreturn resume)."""
     call = bytes.fromhex('31c041ffd2')      # xor eax, eax; call r10
     at = base.index(call)
 
@@ -88,7 +91,7 @@ def _stack_trampoline(base: bytes) -> bytes:
     # observations only; comparisons opt in explicitly and otherwise ignore unspecified values.
     observed = bytes.fromhex('4989bba80000004989b3b000000049898bb80000004d8983c00000004d898bc80000004d8993d00000004d899bd8000000')
     suffix = suffix[:restore_at] + observed + suffix[restore_at:]
-    return bytes(code) + suffix
+    return bytes(code) + suffix, len(code)
 # Native stub for series entries (a wait that polls the clock calls it hundreds of thousands of
 # times): copies the next 16-byte value to *arg, counts the call, returns the scripted value;
 # when the series is used up it jumps to the Python dispatcher. State block: 0 remaining,
@@ -101,15 +104,19 @@ SERIES_STUB = {
                      '498343081049ff4310498b4320c3498b4318ffe0'),
 }
 SERIES = 0x930000000        # per-case native series stubs and their state
-# Internal-function stubs enter through a native prologue that saves xmm0 and xmm1 (float
-# arguments, compared with "argf32") at +64, then jumps to the Python dispatcher.
+# Internal-function stubs and library imports enter through the same native bridge
+# (callback_wrapper, XSTUB_SIZE / IMPSTUB_SIZE bytes each). It saves xmm0 and xmm1 (float
+# arguments, compared with "argf32") and the entry rsp in its save area at +BRIDGE_SAVE, calls
+# the Python dispatcher and copies its result into xmm0 too, so a float return is scripted as
+# its bit pattern ("ret": "0x3f800000"). Save area: 0 xmm0, 16 xmm1, 32 entry rsp, 40 rdx flag,
+# 48 rdx value (loaded into rdx when the flag is set: a scripted "rdx"), 56 resume rsp and
+# 64 resume address (when the resume rsp is nonzero, a "noreturn" call: the bridge does not
+# return into the function but continues in the trampoline's epilogue).
 XSTUB = 0x940000000
-# Library imports enter through a native wrapper (IMPSTUB_SIZE bytes each): it saves xmm0 and
-# xmm1 at +64 (float arguments, compared with "argf32"), calls the Python dispatcher and copies
-# its result into xmm0 too, so a float return is scripted as its bit pattern ("ret": "0x3f800000").
 IMPSTUB = 0x950000000
-IMPSTUB_SIZE = 128
-XSTUB_SIZE = 128
+IMPSTUB_SIZE = 256
+XSTUB_SIZE = 256
+BRIDGE_SAVE = 128
 ARCH_SET_GS, SYS_ARCH_PRCTL = 0x1001, 158
 NID_SALT = bytes.fromhex('518d64a635ded8c1e6b039b1c3e55230')
 
@@ -189,14 +196,22 @@ STUB_SLOTS = 64             # internal-function stubs per case
 
 
 def callback_wrapper(callback, save: int) -> bytes:
-    """Save incoming SSE arguments and entry RSP before aligning for Python."""
+    """Save incoming SSE arguments and entry RSP before aligning for Python; afterwards load a
+    scripted rdx, and leave through the trampoline's epilogue for a noreturn call."""
     code = (b'\x49\xbb' + struct.pack('<Q', save) +
             b'\xf3\x41\x0f\x7f\x03' + b'\xf3\x41\x0f\x7f\x4b\x10' +
             b'\x49\x89\x63\x20' +  # mov [r11+32], rsp: overflow slot zero is [rsp+8]
             b'\x48\x83\xec\x08' + b'\x48\xb8' +
             struct.pack('<Q', ctypes.cast(callback, ctypes.c_void_p).value) +
-            b'\xff\xd0' + b'\x48\x83\xc4\x08' + b'\x66\x48\x0f\x6e\xc0' + b'\xc3')
-    assert len(code) <= 64
+            b'\xff\xd0' + b'\x48\x83\xc4\x08' + b'\x66\x48\x0f\x6e\xc0' +
+            b'\x49\xbb' + struct.pack('<Q', save) +   # mov r11, save (the call clobbered it)
+            b'\x41\x80\x7b\x28\x00' + b'\x74\x04' +     # cmp byte [r11+40], 0; je +4
+            b'\x49\x8b\x53\x30' +                       # mov rdx, [r11+48]
+            b'\x49\x83\x7b\x38\x00' + b'\x75\x01' +     # cmp qword [r11+56], 0; jne +1
+            b'\xc3' +                                   # ret
+            b'\x49\x8b\x63\x38' +                       # mov rsp, [r11+56]
+            b'\x41\xff\x63\x40')                        # jmp [r11+64]
+    assert len(code) <= BRIDGE_SAVE
     return code
 
 
@@ -215,9 +230,10 @@ class Machine:
         names = b['names']
         mmap_fixed(DATA, max(1, len(names)) * PAGE)
         mmap_fixed(CODE, PAGE + 16 * (max(1, len(names)) + STUB_SLOTS))
-        code = _stack_trampoline(TRAMPOLINE)
+        code, resume = _stack_trampoline(TRAMPOLINE)
         assert len(code) < STACK_SLOTS
         ctypes.memmove(CODE, code, len(code))
+        self.resume = CODE + resume
         self.proto = ctypes.CFUNCTYPE(ctypes.c_uint64, *[ctypes.c_uint64] * 6)
         mmap_fixed(IMPSTUB, max(1, len(names)) * IMPSTUB_SIZE)
         for i in range(len(names)):
@@ -225,7 +241,7 @@ class Machine:
                             self.current.callback(self.current.dispatch, i, (a, b_, c, d, e, f)))
             self.callbacks.append(cb)
             wrapper = IMPSTUB + IMPSTUB_SIZE * i
-            save = wrapper + 64
+            save = wrapper + BRIDGE_SAVE
             code = callback_wrapper(cb, save)
             ctypes.memmove(wrapper, code, len(code))
             stub = b'\x48\xb8' + struct.pack('<Q', wrapper) + b'\xff\xe0'
@@ -257,6 +273,14 @@ class Run:
                     required_arguments(entry)
                 except ArgumentError as error:
                     raise BadInput(f'{field}[{index}]: {error}') from error
+                if not isinstance(entry.get('noreturn', False), bool):
+                    raise BadInput(f'{field}[{index}]: noreturn must be true or false')
+                if 'series' in entry and ('rdx' in entry or entry.get('noreturn')):
+                    raise BadInput(f'{field}[{index}]: a series entry cannot script rdx or noreturn')
+        self.ended_in: dict | None = None      # the noreturn call that ended the case
+        self.stack_floor: int | None = None    # lowest live stack byte during a scripted call
+        self.resume = 0
+        self.stack_count = 0                   # stack-argument qwords the trampoline pushed
         self.scripts: dict[str, list] = {}
         for entry in case.get('imports', []):
             self.scripts.setdefault(nid(entry['name']), []).append(entry)
@@ -274,6 +298,7 @@ class Run:
     def setup(self, machine: 'Machine') -> None:
         """Lay out this case on a mapped machine: buffers, stubs, memory presets."""
         machine.current = self
+        self.resume = machine.resume
         names = self.boot['names']
         proto = machine.proto
         series_imports = []
@@ -326,7 +351,7 @@ class Run:
                 raise BadInput(f'cannot install guard page after buffer {name}: errno {ctypes.get_errno()}')
             off += (payload_pages + 1) * PAGE
         for i, address in enumerate(sorted(self.stub_scripts)):
-            save = XSTUB + XSTUB_SIZE * i + 64
+            save = XSTUB + XSTUB_SIZE * i + BRIDGE_SAVE
             cb = proto(lambda a, b_, c, d, e, f, address=address, save=save:
                        self.callback(self.dispatch_stub, address, (a, b_, c, d, e, f), save))
             self.callbacks.append(cb)
@@ -386,12 +411,22 @@ class Run:
                                               "source": source, "region": self.describe(start)})
                 return
         stack_top = self.block[19]
-        if stack_top and stack_top - STACK_WINDOW <= address and address + size <= stack_top:
-            if source != "fixture_setup":
-                self.access_trace.append({"access": "write" if write else "read",
+        direction = 'write' if write else 'read'
+        if stack_top and stack_top - STACK_WINDOW <= address < stack_top:
+            # The live stack of the function under test, during a scripted call: from the
+            # callee's first argument slot (its entry rsp + 8) to the top the trampoline set up,
+            # without the function's own return address. Below it lie the bridge and Python.
+            floor = self.stack_floor
+            return_slot = stack_top - 8 * self.stack_count - 8
+            if (floor is not None and floor <= address and address + size <= stack_top and
+                    not (address < return_slot + 8 and return_slot < address + size)):
+                self.access_trace.append({"access": direction,
                                           "address": self.describe(address), "size": size,
                                           "source": source, "region": "stack"})
-            return
+                return
+            raise BadInput(f'scripted {direction} 0x{address:x}+0x{size:x} is outside the live stack of '
+                           'the function under test (from the scripted call\'s first argument slot '
+                           'to the stack top, without the return address)')
         required_flag = 2 if write else 4
         for vaddr, memsz, flags in self.boot['loads']:
             if flags & required_flag and IMAGE + vaddr <= address and address + size <= IMAGE + vaddr + memsz:
@@ -400,7 +435,6 @@ class Run:
                                               "address": self.describe(address), "size": size,
                                               "source": source, "region": "guest_image"})
                 return
-        direction = 'write' if write else 'read'
         raise BadInput(f'scripted {direction} 0x{address:x}+0x{size:x} is outside declared readable/writable regions')
 
     def describe(self, v: int) -> str:
@@ -422,6 +456,23 @@ class Run:
         except Exception as error:
             self.errors.append(f'scripted callback: {type(error).__name__}: {error}')
             return 0
+        finally:
+            self.stack_floor = None
+
+    def enter_bridge(self, save: int) -> None:
+        """A scripted call begins: by default the bridge leaves rdx as the dispatcher left it
+        and returns into the function; the live stack starts at the callee's first argument slot."""
+        ctypes.memmove(save + 40, bytes(32), 32)
+        self.stack_floor = ctypes.c_uint64.from_address(save + 32).value + 8
+
+    def script_bridge(self, entry: dict, save: int, identity: dict) -> None:
+        """Apply the entry's rdx and noreturn to the native bridge, before its arguments are
+        read and its writes made, so a failing access still ends a noreturn call."""
+        if entry.get('noreturn'):
+            self.ended_in = dict(identity)
+            ctypes.memmove(save + 56, struct.pack('<QQ', self.block[19], self.resume), 16)
+        if 'rdx' in entry:
+            ctypes.memmove(save + 40, struct.pack('<QQ', 1, self.value(entry['rdx'])), 16)
 
     def call_arguments(self, entry: dict, args: tuple, save: int) -> tuple:
         count = required_arguments(entry)
@@ -459,6 +510,8 @@ class Run:
 
     def dispatch(self, index: int, args: tuple) -> int:
         self.finish_series(index)
+        save = IMPSTUB + IMPSTUB_SIZE * index + BRIDGE_SAVE
+        self.enter_bridge(save)
         raw = self.boot['names'][index]
         key = raw.split('#')[0]
         queue = self.scripts.get(key)
@@ -481,7 +534,7 @@ class Run:
                 queue.pop(0)
         else:
             queue.pop(0)
-        save = IMPSTUB + IMPSTUB_SIZE * index + 64
+        self.script_bridge(entry, save, {'import': entry['name']})
         args = self.call_arguments(entry, args, save)
         self.calls.append(self.call_record(entry, args, save, {'import': entry['name']}))
         if series:
@@ -512,14 +565,16 @@ class Run:
             ctypes.memmove(address, data, len(data))
         return self.value(entry.get('ret', 0)) & 0xffffffffffffffff
 
-    def dispatch_stub(self, address: int, args: tuple, save: int = 0) -> int:
+    def dispatch_stub(self, address: int, args: tuple, save: int) -> int:
         queue = self.stub_scripts.get(address)
         name = f'0x{address:08x}'
+        self.enter_bridge(save)
         if not queue:
             self.errors.append(f'unscripted call to stubbed function {name}')
             self.calls.append({'call': name, 'args': []})
             return 0
         entry = queue.pop(0)
+        self.script_bridge(entry, save, {'call': name})
         args = self.call_arguments(entry, args, save)
         self.calls.append(self.call_record(entry, args, save, {'call': name}))
         for w in entry.get('writes', []):
@@ -557,6 +612,7 @@ class Run:
         stack = [self.value(v) for v in self.case.get('stack', [])]
         if len(stack) % 2:
             stack.append(0)
+        self.stack_count = len(stack)
         self.stack = (ctypes.c_uint64 * max(1, len(stack)))(*stack)
         ctypes.memmove(CODE + STACK_SLOTS, struct.pack('<QQQ', len(stack), ctypes.addressof(self.stack),
                                                        8 * len(stack)), 24)
@@ -594,10 +650,15 @@ class Run:
                'void': {}}.get(returns)
         if ret is None:
             raise BadInput(f'unknown returns type {returns}')
-        out['ret'] = ret
         regs = dict(zip(SENTINELS, self.block[13:19]))
-        out['preserved'] = {r: 'kept' if regs[r] == SENTINELS[r] else f'0x{regs[r]:x}' for r in SENTINELS}
-        out['preserved']['rsp'] = 'kept' if self.block[20] == self.block[19] else 'unbalanced'
+        if self.ended_in is None:
+            out['ret'] = ret
+            out['preserved'] = {r: 'kept' if regs[r] == SENTINELS[r] else f'0x{regs[r]:x}' for r in SENTINELS}
+            out['preserved']['rsp'] = 'kept' if self.block[20] == self.block[19] else 'unbalanced'
+        else:
+            # A noreturn call ended the case: the function never returned, so there are no
+            # return or callee-saved registers to compare.
+            out['ended_in'] = self.ended_in
         register_values = {
             'rdi': f'0x{self.block[21]:x}', 'rsi': f'0x{self.block[22]:x}',
             'rdx': f'0x{self.block[8]:x}',
@@ -606,7 +667,8 @@ class Run:
             'r11': f'0x{self.block[27]:x}',
         }
         out['observed_registers'] = sorted(set(observed))
-        out['registers'] = {reg: register_values[reg] for reg in out['observed_registers']}
+        if self.ended_in is None:
+            out['registers'] = {reg: register_values[reg] for reg in out['observed_registers']}
         writes = []
         for start, old in before.items():
             new = after[start]
