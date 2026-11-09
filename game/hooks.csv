@@ -41,6 +41,7 @@ address,replacement,system,returns
 0x0040e020,bb_misc_keyed_pool_append,misc,i64
 0x0040e1a0,bb_misc_append_indexed_node,misc,void
 0x0040e680,bb_misc_take_pending_node,misc,i64
+0x0040f0b0,bb_misc_replace_holder_object,misc,i8
 0x00410100,bb_auto_return_field_00410100,auto,i64
 0x00410290,bb_auto_empty_00410290,auto,void
 0x004102a0,bb_auto_empty_004102a0,auto,void

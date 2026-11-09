@@ -41,6 +41,7 @@ address,size,name,system,status,notes
 0x0040e020,379,misc_keyed_pool_append,misc,edge-verified,Appends a keyed node to a pool after the pool append with a retained shared object and releases the binding or the shared object
 0x0040e1a0,90,misc_append_indexed_node,misc,edge-verified,Numbers a node with the next holder index counts it keeps the first node once and appends it to the chain tail
 0x0040e680,260,misc_take_pending_node,misc,edge-verified,Takes a 0x38 byte node from the holder pool from the cursor or the slow allocator and moves the holders pending words into it then clears them and returns the node or null
+0x0040f0b0,435,misc_replace_holder_object,misc,edge-verified,Builds a new object from the accepted object that the table or a lookup gives and stores it in the holder in place of the old one returning true when stored
 0x00410100,5,auto_return_field_00410100,auto,edge-verified,Generated from the return field template
 0x00410290,1,auto_empty_00410290,auto,edge-verified,Generated from the empty template
 0x004102a0,1,auto_empty_004102a0,auto,edge-verified,Generated from the empty template
