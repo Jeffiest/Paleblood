@@ -60,6 +60,7 @@ address,replacement,system,returns
 0x00410fb0,bb_misc_remove_value_locked,misc,i64
 0x00413f60,bb_misc_assign_text,misc,void
 0x00413fc0,bb_misc_assign_text_narrow_capacity,misc,void
+0x00414b70,bb_misc_init_release_chain,misc,void
 0x00418d80,bb_auto_return_field_00418d80,auto,i64
 0x0041cac0,bb_auto_empty_0041cac0,auto,void
 0x0041d010,bb_auto_return_constant_0041d010,auto,i8
