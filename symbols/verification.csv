@@ -23019,6 +23019,7 @@ misc_mark_keyed_handle_active,edge,,5,5,0,0,9767443fdd5d87fc,2026-11-09
 misc_member_call_02242a10,edge,,9,9,0,0,80b23b0b5221eb2b,2026-11-09
 misc_member_call_02242ac0,edge,,9,9,0,0,53599044460601a9,2026-11-09
 misc_member_call_02242b70,edge,,9,9,0,0,eb98a1cbd0eca137,2026-11-09
+misc_member_owner_delete_02243fc0,edge,,4,4,0,0,cc87480956e57b0d,2026-11-09
 misc_notify_unflagged_record,edge,,16,16,0,0,4939877d9dfa9721,2026-11-09
 misc_owned_list_delete,edge,,14,14,0,0,c7deca20fab5bf74,2026-11-09
 misc_owned_list_destroy,edge,,7,7,0,0,cd166f7ae2655669,2026-11-09
