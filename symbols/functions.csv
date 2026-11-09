@@ -18534,6 +18534,7 @@ address,size,name,system,status,notes
 0x02b3d700,21,misc_span_forward,misc,edge-verified,Forwards two arguments to a callee with the first entry and entry count of a run then returns its result
 0x02b3d720,5,auto_return_field_02b3d720,auto,edge-verified,Generated from the return field template
 0x02b3d730,8,misc_span_end,misc,edge-verified,Returns the first entry address plus the entry count of a run as a 64-bit address past its end
+0x02b3d920,132,misc_find_leaf_index,misc,edge-verified,Finds the position of a target node among the leaves below a tree node or negative one when it is not below the node
 0x02b3d9b0,80,misc_count_subtree_leaves,misc,edge-verified,Counts the leaves below a tree node where a leaf counts one and a group sums the counts of its children
 0x02b3de50,4,auto_return_field_02b3de50,auto,edge-verified,Generated from the return field template
 0x02b3dfc0,5,auto_return_member_address_02b3dfc0,auto,edge-verified,Generated from the return member address template
