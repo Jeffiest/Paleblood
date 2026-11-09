@@ -8422,6 +8422,7 @@ address,replacement,system,returns
 0x01e53ba0,bb_auto_return_zero_01e53ba0,auto,i64
 0x01e53e20,bb_auto_return_constant_01e53e20,auto,i32
 0x01e54040,bb_auto_empty_01e54040,auto,void
+0x01e540e0,bb_engine_initialize_static_wide_string_01e540e0,engine,void
 0x01e54660,bb_auto_return_field_01e54660,auto,i64
 0x01e54670,bb_auto_return_field_01e54670,auto,i64
 0x01e546c0,bb_auto_return_zero_01e546c0,auto,i64

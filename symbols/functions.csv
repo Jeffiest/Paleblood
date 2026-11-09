@@ -8423,6 +8423,7 @@ address,size,name,system,status,notes
 0x01e53ba0,3,auto_return_zero_01e53ba0,auto,edge-verified,Generated from the return zero template
 0x01e53e20,6,auto_return_constant_01e53e20,auto,edge-verified,Generated from the return constant template
 0x01e54040,1,auto_empty_01e54040,auto,edge-verified,Generated from the empty template
+0x01e540e0,205,engine_initialize_static_wide_string_01e540e0,engine,edge-verified,Duplicate of the guarded static wide string initializer at 0x0217ffb0 with identical code; forwards to that replacement
 0x01e54660,5,auto_return_field_01e54660,auto,edge-verified,Generated from the return field template
 0x01e54670,5,auto_return_field_01e54670,auto,edge-verified,Generated from the return field template
 0x01e546c0,3,auto_return_zero_01e546c0,auto,edge-verified,Generated from the return zero template
