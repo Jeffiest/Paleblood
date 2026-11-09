@@ -12763,6 +12763,7 @@ address,size,name,system,status,notes
 0x02242980,15,misc_base_init_02242980,misc,edge-verified,Stores the base class vtable address point in a base object and nothing else
 0x022429e0,45,misc_pair_matches_022429e0,misc,edge-verified,Reports whether a two word pair of size 0x10 matches the owner two keys
 0x02242a30,15,misc_base_init_02242a30,misc,edge-verified,Stores the base class vtable address point in a base object and nothing else
+0x02242a90,45,misc_pair_matches_02242a90,misc,edge-verified,Reports whether a two word pair of size 0x10 matches the owner two keys
 0x02242ae0,15,misc_base_init_02242ae0,misc,edge-verified,Stores the base class vtable address point in a base object and nothing else
 0x02242b90,31,misc_base_init_02242b90,misc,edge-verified,Runs the setup step on the object then stores the other class vtable in it
 0x02242bb0,75,misc_sized_delete_02242bb0,misc,edge-verified,Runs the release step then frees the object through the thread allocator with its size tag or the default 0x130 size and returns the free result

@@ -12762,6 +12762,7 @@ address,replacement,system,returns
 0x02242980,bb_misc_base_init_02242980,misc,void
 0x022429e0,bb_misc_pair_matches_022429e0,misc,i8
 0x02242a30,bb_misc_base_init_02242a30,misc,void
+0x02242a90,bb_misc_pair_matches_02242a90,misc,i8
 0x02242ae0,bb_misc_base_init_02242ae0,misc,void
 0x02242b90,bb_misc_base_init_02242b90,misc,void
 0x02242bb0,bb_misc_sized_delete_02242bb0,misc,i64
