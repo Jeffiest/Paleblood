@@ -1473,6 +1473,7 @@ address,replacement,system,returns
 0x00be0ca0,bb_auto_return_field_00be0ca0,auto,i64
 0x00be0e70,bb_auto_return_constant_00be0e70,auto,i8
 0x00be16a0,bb_misc_plain_type_address,misc,i64
+0x00be16b0,bb_misc_register_plain_type,misc,void
 0x00be1740,bb_auto_empty_00be1740,auto,void
 0x00be1750,bb_auto_empty_00be1750,auto,void
 0x00be2dd0,bb_auto_return_field_00be2dd0,auto,i32
