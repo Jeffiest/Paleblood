@@ -18550,6 +18550,7 @@ address,size,name,system,status,notes
 0x02b3e1a0,21,misc_object_slot_28_is_set,misc,edge-verified,Reports whether the virtual routine in the object slot at +0x28 returns a non-zero value for the object
 0x02b3e1c0,12,misc_call_object_slot_40,misc,edge-verified,Forwards a reference object to the virtual routine in its slot at +0x40 and returns that result
 0x02b3e1d0,12,misc_forward_object_slot_28,misc,edge-verified,Forwards a reference object to the virtual routine in its slot at +0x28 and returns that result
+0x02b3e1e0,149,misc_build_object_block,misc,edge-verified,Builds a 0x140 byte block for an object from its slot answer and stores the answer routine value in it or returns zero
 0x02b3e280,58,misc_destroy_node_slot_00_and_free,misc,edge-verified,Releases what a node holds through its first vtable slot then frees the node through its allocator; a null node does nothing
 0x02b3e2c0,9,misc_forward_object_slot_20,misc,edge-verified,Forwards a reference object to the virtual routine in its slot at +0x20 and returns that result
 0x02b3e2d0,35,misc_forward_object_slot_30_result,misc,edge-verified,Asks an object for a second object through its slot at +0x30 and forwards to that object slot at +0x28 or returns all ones

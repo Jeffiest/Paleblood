@@ -18548,6 +18548,7 @@ address,replacement,system,returns
 0x02b3e1a0,bb_misc_object_slot_28_is_set,misc,i8
 0x02b3e1c0,bb_misc_call_object_slot_40,misc,i64
 0x02b3e1d0,bb_misc_forward_object_slot_28,misc,i64
+0x02b3e1e0,bb_misc_build_object_block,misc,i64
 0x02b3e280,bb_misc_destroy_node_slot_00_and_free,misc,void
 0x02b3e2c0,bb_misc_forward_object_slot_20,misc,i64
 0x02b3e2d0,bb_misc_forward_object_slot_30_result,misc,i64
