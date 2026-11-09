@@ -2899,6 +2899,7 @@ address,size,name,system,status,notes
 0x0139ae60,41,misc_bind_vtable_56b47f0_alt,misc,edge-verified,Publishes the address of the static vtable block at 0x056b47f0 into a global pointer once and sets a qword flag
 0x0139ae90,49,misc_copy_block_58b3300,misc,edge-verified,Copies a 48-byte constant block at 0x04cb8b40 over the global block at 0x058b3300 word by word
 0x0139aed0,159,misc_init_item_table,misc,edge-verified,Stores the first value then allocates two item lists and two flag arrays for a count records the counts and runs the fill step
+0x0139af70,187,misc_fill_item_table,misc,edge-verified,Clears the flag and item lists of an item table stores a running sequence from the first value and records the remaining capacity for both halves
 0x0139b0e0,57,misc_take_slot_item,misc,edge-verified,Takes the last item of a slot list if it has room marks its flag byte and returns the item or -1
 0x0139b120,62,misc_release_slot_item,misc,edge-verified,Clears the flag of an item below the next slot limit and appends it back to the end of the slot list
 0x0139b4f0,1,auto_empty_0139b4f0,auto,edge-verified,Generated from the empty template
