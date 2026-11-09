@@ -162,29 +162,12 @@ REVIEW_HEADER = ['address', 'name', 'date', 'reviewer', 'verdict', 'notes']
 def replacement_return_type(root: str, replacement: str) -> str | None:
     """The return type of `extern "C" TYPE replacement(` under game/ ('pointer' for any pointer),
     or None when no such definition is found."""
-    pattern = re.compile(r'extern "C"\s+([\w ]+?)\s*(\*?)\s*\b' + re.escape(replacement) + r'\s*\(')
-    for dp, _, fns in os.walk(os.path.join(root, 'game')):
-        for fn in fns:
-            if fn.endswith(('.c', '.cc', '.cpp')):
-                with open(os.path.join(dp, fn), errors='replace') as f:
-                    m = pattern.search(f.read())
-                if m:
-                    return 'pointer' if m.group(2) else ' '.join(m.group(1).split()).replace('const ', '')
-    return None
+    return verification.game_index(root)[1].get(replacement)
 
 
 def defining_files(root: str, name: str) -> list[str]:
     """Files under game/ that define the replacement bb_<name>."""
-    out = []
-    pattern = re.compile(rf'\bbb_{re.escape(name)}\s*\(')
-    for dp, _, fns in os.walk(os.path.join(root, 'game')):
-        for fn in fns:
-            if fn.endswith(('.c', '.cc', '.cpp')):
-                path = os.path.join(dp, fn)
-                with open(path, errors='replace') as f:
-                    if pattern.search(f.read()):
-                        out.append(os.path.relpath(path, root).replace(os.sep, '/'))
-    return out
+    return verification.defining_files(root, name)
 
 
 def check_reviews(root: str, funcs: list[dict]) -> list[str]:

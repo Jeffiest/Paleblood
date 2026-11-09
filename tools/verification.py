@@ -40,18 +40,41 @@ SOURCE_HASH_LENGTH = 16
 INCLUDE = re.compile(r'^\s*#\s*include\s*"([^"]+)"', re.M)
 
 
+DEFINITION = re.compile(r'\bbb_(\w+)\s*\(')
+REPLACEMENT = re.compile(r'extern "C"\s+([\w ]+?)\s*(\*?)\s*\b(bb_\w+)\s*\(')
+_indexes: dict[str, tuple[dict[str, list[str]], dict[str, str]]] = {}
+
+
+def game_index(root: str) -> tuple[dict[str, list[str]], dict[str, str]]:
+    """One pass over the C and C++ sources under game/, kept for the process:
+    bb_ name (without the prefix) -> the files mentioning `bb_<name>(`, sorted, and
+    replacement -> the return type of its first `extern "C" TYPE replacement(` ('pointer' for any pointer)."""
+    key = os.path.abspath(root)
+    if key not in _indexes:
+        files: dict[str, list[str]] = {}
+        returns: dict[str, str] = {}
+        for dp, _, fns in os.walk(os.path.join(root, 'game')):
+            for fn in sorted(fns):
+                if not fn.endswith(('.c', '.cc', '.cpp')):
+                    continue
+                path = os.path.join(dp, fn)
+                rel = os.path.relpath(path, root).replace(os.sep, '/')
+                with open(path, errors='replace') as f:
+                    text = f.read()
+                for name in set(DEFINITION.findall(text)):
+                    files.setdefault(name, []).append(rel)
+                for m in REPLACEMENT.finditer(text):
+                    returns.setdefault(m.group(3), 'pointer' if m.group(2)
+                                       else ' '.join(m.group(1).split()).replace('const ', ''))
+        for v in files.values():
+            v.sort()
+        _indexes[key] = (files, returns)
+    return _indexes[key]
+
+
 def defining_files(root: str, name: str) -> list[str]:
     """Files under game/ that define the replacement bb_<name>."""
-    out = []
-    pattern = re.compile(rf'\bbb_{re.escape(name)}\s*\(')
-    for dp, _, fns in os.walk(os.path.join(root, 'game')):
-        for fn in sorted(fns):
-            if fn.endswith(('.c', '.cc', '.cpp')):
-                path = os.path.join(dp, fn)
-                with open(path, errors='replace') as f:
-                    if pattern.search(f.read()):
-                        out.append(os.path.relpath(path, root).replace(os.sep, '/'))
-    return sorted(out)
+    return list(game_index(root)[0].get(name, []))
 
 
 def source_files(root: str, name: str) -> list[str]:
