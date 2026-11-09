@@ -23106,6 +23106,7 @@ misc_resolve_request_target,edge,,7,7,0,0,03a93f3371a9f3c2,2026-11-09
 misc_resolve_then_forward,edge,,9,9,0,0,3b101394d12e99ca,2026-11-09
 misc_run_four_stages,edge,,9,9,0,0,50f8c01a90988cfc,2026-11-09
 misc_run_stages_for_pair,edge,,10,10,0,0,818830b9ec64b42f,2026-11-09
+misc_run_teardown_then_release,edge,,6,6,0,0,056dbbb53788e822,2026-11-09
 misc_scaled_size_class_entry,edge,,19,19,0,0,e87a6b25cae9306d,2026-11-09
 misc_scope_attach_root,edge,,6,6,0,0,ea7ac037fc7853fe,2026-11-09
 misc_scratch_value_18,edge,,15,15,0,0,78d59daf53f9216d,2026-11-09
