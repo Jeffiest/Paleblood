@@ -6,6 +6,7 @@ address,size,name,system,status,notes
 0x00410100,5,auto_return_field_00410100,auto,edge-verified,Generated from the return field template
 0x00410290,1,auto_empty_00410290,auto,edge-verified,Generated from the empty template
 0x004102a0,1,auto_empty_004102a0,auto,edge-verified,Generated from the empty template
+0x00418d80,8,auto_return_field_00418d80,auto,edge-verified,Generated from the return field template
 0x0041cac0,1,auto_empty_0041cac0,auto,edge-verified,Generated from the empty template
 0x0041d010,3,auto_return_constant_0041d010,auto,edge-verified,Generated from the return constant template
 0x004261a0,5,auto_return_field_004261a0,auto,edge-verified,Generated from the return field template
@@ -14,6 +15,7 @@ address,size,name,system,status,notes
 0x0042d830,5,auto_return_field_0042d830,auto,edge-verified,Generated from the return field template
 0x0042e650,4,auto_return_field_0042e650,auto,edge-verified,Generated from the return field template
 0x00431870,3,auto_return_zero_00431870,auto,edge-verified,Generated from the return zero template
+0x00431880,3,auto_return_zero_00431880,auto,edge-verified,Generated from the return zero template
 0x00433a50,1,auto_empty_00433a50,auto,edge-verified,Generated from the empty template
 0x00433cd0,1,auto_empty_00433cd0,auto,edge-verified,Generated from the empty template
 0x00436ff0,1,auto_empty_00436ff0,auto,edge-verified,Generated from the empty template
@@ -24,12 +26,210 @@ address,size,name,system,status,notes
 0x00439610,1,auto_empty_00439610,auto,edge-verified,Generated from the empty template
 0x00439930,1,auto_empty_00439930,auto,edge-verified,Generated from the empty template
 0x00439e20,5,auto_return_field_00439e20,auto,edge-verified,Generated from the return field template
+0x00439fa0,1,auto_empty_00439fa0,auto,edge-verified,Generated from the empty template
 0x0043a9e0,1,auto_empty_0043a9e0,auto,edge-verified,Generated from the empty template
+0x0043ac10,1,auto_empty_0043ac10,auto,edge-verified,Generated from the empty template
 0x0043ad40,1,auto_empty_0043ad40,auto,edge-verified,Generated from the empty template
 0x0043b0d0,1,auto_empty_0043b0d0,auto,edge-verified,Generated from the empty template
 0x0043cc30,8,auto_return_member_address_0043cc30,auto,edge-verified,Generated from the return member address template
 0x0043fed0,1,auto_empty_0043fed0,auto,edge-verified,Generated from the empty template
+0x004401b0,5,auto_return_field_004401b0,auto,edge-verified,Generated from the return field template
+0x004409f0,1,auto_empty_004409f0,auto,edge-verified,Generated from the empty template
+0x00440a80,1,auto_empty_00440a80,auto,edge-verified,Generated from the empty template
+0x00442180,1,auto_empty_00442180,auto,edge-verified,Generated from the empty template
+0x00443e00,1,auto_empty_00443e00,auto,edge-verified,Generated from the empty template
+0x00446880,8,auto_return_field_00446880,auto,edge-verified,Generated from the return field template
+0x0044bf40,3,auto_return_constant_0044bf40,auto,edge-verified,Generated from the return constant template
+0x00450a30,5,auto_return_member_address_00450a30,auto,edge-verified,Generated from the return member address template
+0x00450ba0,5,auto_return_field_00450ba0,auto,edge-verified,Generated from the return field template
+0x004510e0,1,auto_empty_004510e0,auto,edge-verified,Generated from the empty template
+0x004510f0,1,auto_empty_004510f0,auto,edge-verified,Generated from the empty template
+0x00451100,3,auto_return_constant_00451100,auto,edge-verified,Generated from the return constant template
+0x00451500,3,auto_return_zero_00451500,auto,edge-verified,Generated from the return zero template
+0x00452710,1,auto_empty_00452710,auto,edge-verified,Generated from the empty template
+0x00452720,1,auto_empty_00452720,auto,edge-verified,Generated from the empty template
+0x00452730,1,auto_empty_00452730,auto,edge-verified,Generated from the empty template
+0x00452860,1,auto_empty_00452860,auto,edge-verified,Generated from the empty template
+0x00452870,1,auto_empty_00452870,auto,edge-verified,Generated from the empty template
+0x00452880,1,auto_empty_00452880,auto,edge-verified,Generated from the empty template
+0x00452890,1,auto_empty_00452890,auto,edge-verified,Generated from the empty template
+0x00454130,1,auto_empty_00454130,auto,edge-verified,Generated from the empty template
+0x00454140,1,auto_empty_00454140,auto,edge-verified,Generated from the empty template
+0x00454530,1,auto_empty_00454530,auto,edge-verified,Generated from the empty template
+0x00454c70,5,auto_return_field_00454c70,auto,edge-verified,Generated from the return field template
+0x00454c90,1,auto_empty_00454c90,auto,edge-verified,Generated from the empty template
+0x00454ca0,1,auto_empty_00454ca0,auto,edge-verified,Generated from the empty template
+0x00454cb0,3,auto_return_zero_00454cb0,auto,edge-verified,Generated from the return zero template
+0x00454cc0,1,auto_empty_00454cc0,auto,edge-verified,Generated from the empty template
+0x00454cf0,1,auto_empty_00454cf0,auto,edge-verified,Generated from the empty template
+0x00454d20,3,auto_return_zero_00454d20,auto,edge-verified,Generated from the return zero template
+0x00454d30,3,auto_return_zero_00454d30,auto,edge-verified,Generated from the return zero template
+0x00454d40,1,auto_empty_00454d40,auto,edge-verified,Generated from the empty template
+0x00454d50,1,auto_empty_00454d50,auto,edge-verified,Generated from the empty template
+0x00454d60,1,auto_empty_00454d60,auto,edge-verified,Generated from the empty template
+0x00455130,5,auto_return_field_00455130,auto,edge-verified,Generated from the return field template
+0x00455410,5,auto_return_field_00455410,auto,edge-verified,Generated from the return field template
+0x00457230,5,auto_return_field_00457230,auto,edge-verified,Generated from the return field template
+0x00457700,5,auto_return_field_00457700,auto,edge-verified,Generated from the return field template
+0x004616b0,3,auto_return_constant_004616b0,auto,edge-verified,Generated from the return constant template
+0x00461760,3,auto_return_constant_00461760,auto,edge-verified,Generated from the return constant template
+0x00461770,3,auto_return_constant_00461770,auto,edge-verified,Generated from the return constant template
+0x00461780,3,auto_return_constant_00461780,auto,edge-verified,Generated from the return constant template
+0x00461790,3,auto_return_constant_00461790,auto,edge-verified,Generated from the return constant template
+0x00462320,4,auto_return_field_00462320,auto,edge-verified,Generated from the return field template
+0x00462330,5,auto_return_member_address_00462330,auto,edge-verified,Generated from the return member address template
+0x00462400,3,auto_return_constant_00462400,auto,edge-verified,Generated from the return constant template
+0x00462410,3,auto_return_constant_00462410,auto,edge-verified,Generated from the return constant template
+0x00462650,4,auto_return_field_00462650,auto,edge-verified,Generated from the return field template
+0x00462660,4,auto_return_field_00462660,auto,edge-verified,Generated from the return field template
+0x00462b30,3,auto_return_constant_00462b30,auto,edge-verified,Generated from the return constant template
+0x00462b40,3,auto_return_constant_00462b40,auto,edge-verified,Generated from the return constant template
+0x00462ba0,5,auto_return_member_address_00462ba0,auto,edge-verified,Generated from the return member address template
+0x00463040,5,auto_return_member_address_00463040,auto,edge-verified,Generated from the return member address template
 0x004632d0,67,frame_timing_get_time_us,frame_timing,original,dead in the stock game: only unwind entries refer to it; the community frame-rate patches overwrite it as a code cave (gettimeofday in microseconds)
+0x00463320,6,auto_return_constant_00463320,auto,edge-verified,Generated from the return constant template
+0x004634a0,1,auto_empty_004634a0,auto,edge-verified,Generated from the empty template
+0x00464d60,4,auto_return_field_00464d60,auto,edge-verified,Generated from the return field template
+0x00464ef0,4,auto_return_field_00464ef0,auto,edge-verified,Generated from the return field template
+0x00465480,3,auto_return_constant_00465480,auto,edge-verified,Generated from the return constant template
+0x00465ad0,3,auto_return_constant_00465ad0,auto,edge-verified,Generated from the return constant template
+0x00465ae0,3,auto_return_constant_00465ae0,auto,edge-verified,Generated from the return constant template
+0x00466230,1,auto_empty_00466230,auto,edge-verified,Generated from the empty template
+0x00466360,3,auto_return_zero_00466360,auto,edge-verified,Generated from the return zero template
+0x00466740,3,auto_return_zero_00466740,auto,edge-verified,Generated from the return zero template
+0x00466840,6,auto_return_constant_00466840,auto,edge-verified,Generated from the return constant template
+0x004749c0,7,auto_return_field_004749c0,auto,edge-verified,Generated from the return field template
+0x00478dd0,1,auto_empty_00478dd0,auto,edge-verified,Generated from the empty template
+0x0047aa30,1,auto_empty_0047aa30,auto,edge-verified,Generated from the empty template
+0x00480d10,3,auto_return_zero_00480d10,auto,edge-verified,Generated from the return zero template
+0x00481e60,1,auto_empty_00481e60,auto,edge-verified,Generated from the empty template
+0x00481e70,1,auto_empty_00481e70,auto,edge-verified,Generated from the empty template
+0x00481e80,1,auto_empty_00481e80,auto,edge-verified,Generated from the empty template
+0x00482ca0,1,auto_empty_00482ca0,auto,edge-verified,Generated from the empty template
+0x00484490,1,auto_empty_00484490,auto,edge-verified,Generated from the empty template
+0x00486fe0,3,auto_return_zero_00486fe0,auto,edge-verified,Generated from the return zero template
+0x0048b340,1,auto_empty_0048b340,auto,edge-verified,Generated from the empty template
+0x0048be10,1,auto_empty_0048be10,auto,edge-verified,Generated from the empty template
+0x00491d50,4,auto_return_field_00491d50,auto,edge-verified,Generated from the return field template
+0x004921c0,4,auto_return_field_004921c0,auto,edge-verified,Generated from the return field template
+0x00494b80,5,auto_return_member_address_00494b80,auto,edge-verified,Generated from the return member address template
+0x00498070,1,auto_empty_00498070,auto,edge-verified,Generated from the empty template
+0x00498080,1,auto_empty_00498080,auto,edge-verified,Generated from the empty template
+0x00498090,1,auto_empty_00498090,auto,edge-verified,Generated from the empty template
+0x004980a0,1,auto_empty_004980a0,auto,edge-verified,Generated from the empty template
+0x004980b0,1,auto_empty_004980b0,auto,edge-verified,Generated from the empty template
+0x004980c0,1,auto_empty_004980c0,auto,edge-verified,Generated from the empty template
+0x004980d0,1,auto_empty_004980d0,auto,edge-verified,Generated from the empty template
+0x004980e0,1,auto_empty_004980e0,auto,edge-verified,Generated from the empty template
+0x004987f0,3,auto_return_zero_004987f0,auto,edge-verified,Generated from the return zero template
+0x00498ad0,1,auto_empty_00498ad0,auto,edge-verified,Generated from the empty template
+0x00498ae0,1,auto_empty_00498ae0,auto,edge-verified,Generated from the empty template
+0x004a43c0,1,auto_empty_004a43c0,auto,edge-verified,Generated from the empty template
+0x004a7990,8,auto_return_member_address_004a7990,auto,edge-verified,Generated from the return member address template
+0x004ad350,1,auto_empty_004ad350,auto,edge-verified,Generated from the empty template
+0x004bb150,1,auto_empty_004bb150,auto,edge-verified,Generated from the empty template
+0x004bb210,5,auto_return_field_004bb210,auto,edge-verified,Generated from the return field template
+0x004bb390,1,auto_empty_004bb390,auto,edge-verified,Generated from the empty template
+0x004c5810,5,auto_return_field_004c5810,auto,edge-verified,Generated from the return field template
+0x004d7130,1,auto_empty_004d7130,auto,edge-verified,Generated from the empty template
+0x004d9be0,1,auto_empty_004d9be0,auto,edge-verified,Generated from the empty template
+0x004dd3a0,1,auto_empty_004dd3a0,auto,edge-verified,Generated from the empty template
+0x004de370,3,auto_return_zero_004de370,auto,edge-verified,Generated from the return zero template
+0x004e8550,8,auto_return_member_address_004e8550,auto,edge-verified,Generated from the return member address template
+0x004ea8a0,5,auto_return_field_004ea8a0,auto,edge-verified,Generated from the return field template
+0x004ef270,5,auto_return_field_004ef270,auto,edge-verified,Generated from the return field template
+0x004ef2d0,1,auto_empty_004ef2d0,auto,edge-verified,Generated from the empty template
+0x004ef2e0,3,auto_return_zero_004ef2e0,auto,edge-verified,Generated from the return zero template
+0x004f3d40,1,auto_empty_004f3d40,auto,edge-verified,Generated from the empty template
+0x00503c50,7,auto_return_field_00503c50,auto,edge-verified,Generated from the return field template
+0x00503de0,5,auto_return_field_00503de0,auto,edge-verified,Generated from the return field template
+0x005049c0,4,auto_return_field_005049c0,auto,edge-verified,Generated from the return field template
+0x00504b50,5,auto_return_field_00504b50,auto,edge-verified,Generated from the return field template
+0x005057a0,6,auto_return_constant_005057a0,auto,edge-verified,Generated from the return constant template
+0x00508090,8,auto_return_field_00508090,auto,edge-verified,Generated from the return field template
+0x0050af70,3,auto_return_zero_0050af70,auto,edge-verified,Generated from the return zero template
+0x0050b380,3,auto_return_zero_0050b380,auto,edge-verified,Generated from the return zero template
+0x0050b420,3,auto_return_constant_0050b420,auto,edge-verified,Generated from the return constant template
+0x0050b4b0,3,auto_return_zero_0050b4b0,auto,edge-verified,Generated from the return zero template
+0x0050b4c0,3,auto_return_zero_0050b4c0,auto,edge-verified,Generated from the return zero template
+0x0050b690,1,auto_empty_0050b690,auto,edge-verified,Generated from the empty template
+0x0050b6a0,1,auto_empty_0050b6a0,auto,edge-verified,Generated from the empty template
+0x0050dac0,1,auto_empty_0050dac0,auto,edge-verified,Generated from the empty template
+0x00513710,1,auto_empty_00513710,auto,edge-verified,Generated from the empty template
+0x0051c360,1,auto_empty_0051c360,auto,edge-verified,Generated from the empty template
+0x00523060,1,auto_empty_00523060,auto,edge-verified,Generated from the empty template
+0x00523070,1,auto_empty_00523070,auto,edge-verified,Generated from the empty template
+0x005230e0,3,auto_return_zero_005230e0,auto,edge-verified,Generated from the return zero template
+0x005230f0,3,auto_return_zero_005230f0,auto,edge-verified,Generated from the return zero template
+0x00523100,6,auto_return_constant_00523100,auto,edge-verified,Generated from the return constant template
+0x00523110,6,auto_return_constant_00523110,auto,edge-verified,Generated from the return constant template
+0x00523120,6,auto_return_constant_00523120,auto,edge-verified,Generated from the return constant template
+0x00523130,6,auto_return_constant_00523130,auto,edge-verified,Generated from the return constant template
+0x0052c8c0,1,auto_empty_0052c8c0,auto,edge-verified,Generated from the empty template
+0x0053fe30,3,auto_return_zero_0053fe30,auto,edge-verified,Generated from the return zero template
+0x00547e30,1,auto_empty_00547e30,auto,edge-verified,Generated from the empty template
+0x0054e830,1,auto_empty_0054e830,auto,edge-verified,Generated from the empty template
+0x00552860,1,auto_empty_00552860,auto,edge-verified,Generated from the empty template
+0x00568290,1,auto_empty_00568290,auto,edge-verified,Generated from the empty template
+0x0056de70,6,auto_return_constant_0056de70,auto,edge-verified,Generated from the return constant template
+0x0056de80,6,auto_return_constant_0056de80,auto,edge-verified,Generated from the return constant template
+0x005720e0,6,auto_return_constant_005720e0,auto,edge-verified,Generated from the return constant template
+0x00574830,1,auto_empty_00574830,auto,edge-verified,Generated from the empty template
+0x00574a10,1,auto_empty_00574a10,auto,edge-verified,Generated from the empty template
+0x00574ee0,1,auto_empty_00574ee0,auto,edge-verified,Generated from the empty template
+0x00579240,1,auto_empty_00579240,auto,edge-verified,Generated from the empty template
+0x00579250,1,auto_empty_00579250,auto,edge-verified,Generated from the empty template
+0x0057bb00,6,auto_return_constant_0057bb00,auto,edge-verified,Generated from the return constant template
+0x00586d30,1,auto_empty_00586d30,auto,edge-verified,Generated from the empty template
+0x005876b0,3,auto_return_constant_005876b0,auto,edge-verified,Generated from the return constant template
+0x005876c0,3,auto_return_constant_005876c0,auto,edge-verified,Generated from the return constant template
+0x00587950,6,auto_return_constant_00587950,auto,edge-verified,Generated from the return constant template
+0x00592ba0,1,auto_empty_00592ba0,auto,edge-verified,Generated from the empty template
+0x005a9880,1,auto_empty_005a9880,auto,edge-verified,Generated from the empty template
+0x005abdc0,3,auto_return_zero_005abdc0,auto,edge-verified,Generated from the return zero template
+0x005abfd0,3,auto_return_zero_005abfd0,auto,edge-verified,Generated from the return zero template
+0x005abfe0,3,auto_return_zero_005abfe0,auto,edge-verified,Generated from the return zero template
+0x005abff0,3,auto_return_zero_005abff0,auto,edge-verified,Generated from the return zero template
+0x005ac000,1,auto_empty_005ac000,auto,edge-verified,Generated from the empty template
+0x005ac010,3,auto_return_zero_005ac010,auto,edge-verified,Generated from the return zero template
+0x005ac020,3,auto_return_zero_005ac020,auto,edge-verified,Generated from the return zero template
+0x005ac030,3,auto_return_zero_005ac030,auto,edge-verified,Generated from the return zero template
+0x005c84a0,1,auto_empty_005c84a0,auto,edge-verified,Generated from the empty template
+0x005d6ed0,1,auto_empty_005d6ed0,auto,edge-verified,Generated from the empty template
+0x005e7de0,1,auto_empty_005e7de0,auto,edge-verified,Generated from the empty template
+0x005e8150,1,auto_empty_005e8150,auto,edge-verified,Generated from the empty template
+0x005e8310,1,auto_empty_005e8310,auto,edge-verified,Generated from the empty template
+0x005e85a0,1,auto_empty_005e85a0,auto,edge-verified,Generated from the empty template
+0x005e8770,1,auto_empty_005e8770,auto,edge-verified,Generated from the empty template
+0x005e8840,1,auto_empty_005e8840,auto,edge-verified,Generated from the empty template
+0x005e88e0,1,auto_empty_005e88e0,auto,edge-verified,Generated from the empty template
+0x005e8a00,1,auto_empty_005e8a00,auto,edge-verified,Generated from the empty template
+0x005e8d00,1,auto_empty_005e8d00,auto,edge-verified,Generated from the empty template
+0x005efb80,1,auto_empty_005efb80,auto,edge-verified,Generated from the empty template
+0x005f9980,1,auto_empty_005f9980,auto,edge-verified,Generated from the empty template
+0x005fb280,1,auto_empty_005fb280,auto,edge-verified,Generated from the empty template
+0x005ffd70,8,auto_return_field_005ffd70,auto,edge-verified,Generated from the return field template
+0x005ffdf0,8,auto_return_field_005ffdf0,auto,edge-verified,Generated from the return field template
+0x00605d80,1,auto_empty_00605d80,auto,edge-verified,Generated from the empty template
+0x00609ed0,1,auto_empty_00609ed0,auto,edge-verified,Generated from the empty template
+0x0060ad90,8,auto_return_field_0060ad90,auto,edge-verified,Generated from the return field template
+0x00612230,1,auto_empty_00612230,auto,edge-verified,Generated from the empty template
+0x0061f020,1,auto_empty_0061f020,auto,edge-verified,Generated from the empty template
+0x0061f030,1,auto_empty_0061f030,auto,edge-verified,Generated from the empty template
+0x00625cd0,3,auto_return_zero_00625cd0,auto,edge-verified,Generated from the return zero template
+0x00626ff0,3,auto_return_zero_00626ff0,auto,edge-verified,Generated from the return zero template
+0x00628070,3,auto_return_zero_00628070,auto,edge-verified,Generated from the return zero template
+0x006284d0,1,auto_empty_006284d0,auto,edge-verified,Generated from the empty template
+0x00629720,3,auto_return_zero_00629720,auto,edge-verified,Generated from the return zero template
+0x0063efc0,1,auto_empty_0063efc0,auto,edge-verified,Generated from the empty template
+0x00642e60,1,auto_empty_00642e60,auto,edge-verified,Generated from the empty template
+0x0064fd90,1,auto_empty_0064fd90,auto,edge-verified,Generated from the empty template
+0x00653000,5,auto_return_member_address_00653000,auto,edge-verified,Generated from the return member address template
+0x0065d5c0,1,auto_empty_0065d5c0,auto,edge-verified,Generated from the empty template
+0x00661460,1,auto_empty_00661460,auto,edge-verified,Generated from the empty template
+0x00676d00,1,auto_empty_00676d00,auto,edge-verified,Generated from the empty template
+0x0067be10,1,auto_empty_0067be10,auto,edge-verified,Generated from the empty template
+0x0067cfb0,1,auto_empty_0067cfb0,auto,edge-verified,Generated from the empty template
 0x0084d5a0,158,loading_fios_directory_delete,loading,edge-verified,Deleting destructor of a Fios directory object; closes its directory handle; releases its block and two tagged slots; frees the object by its size tag
 0x00857cd0,176,loading_fios_open_with_mode,loading,edge-verified,Fios open with the caller's 16-bit mode (sceFiosFHOpenSync); on success a 0x18-byte file object from the thread allocator; null on failure
 0x0085cda0,174,loading_fios_open_default,loading,edge-verified,Fios open with fixed flag 1 (sceFiosFHOpenSync); on success a 0x18-byte file object from the thread allocator and valid when the handle is not negative; null on failure

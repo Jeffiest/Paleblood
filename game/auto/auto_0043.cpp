@@ -183,3 +183,31 @@ extern "C" void *bb_auto_return_member_address_0043cc30(Object0043cc30 *self)
 extern "C" void bb_auto_empty_0043fed0()
 {
 }
+
+/**
+ *
+ * Returns zero.
+ *
+ */
+extern "C" uint64_t bb_auto_return_zero_00431880()
+{
+    return 0;
+}
+
+/**
+ *
+ * Does nothing.
+ *
+ */
+extern "C" void bb_auto_empty_00439fa0()
+{
+}
+
+/**
+ *
+ * Does nothing.
+ *
+ */
+extern "C" void bb_auto_empty_0043ac10()
+{
+}
