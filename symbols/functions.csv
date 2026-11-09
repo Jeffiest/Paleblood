@@ -18430,6 +18430,7 @@ address,size,name,system,status,notes
 0x02b39370,5,auto_return_field_02b39370,auto,edge-verified,Generated from the return field template
 0x02b393a0,8,auto_return_field_02b393a0,auto,edge-verified,Generated from the return field template
 0x02b393b0,8,auto_return_field_02b393b0,auto,edge-verified,Generated from the return field template
+0x02b3a4a0,82,misc_remove_value_from_vector,misc,edge-verified,Removes the first stored value equal to the argument from the owner vector
 0x02b3a500,8,misc_set_value_word_130,misc,edge-verified,Stores a 64-bit value into the owner word at +0x130
 0x02b3a510,29,misc_forward_value_to_child,misc,edge-verified,Stores a value at +0x138 then returns the result of the child handler slot
 0x02b3a6b0,8,misc_set_value_word_148,misc,edge-verified,Stores a 64-bit value into the owner word at +0x148
