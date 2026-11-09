@@ -12880,6 +12880,7 @@ address,size,name,system,status,notes
 0x02242ea0,52,misc_held_block_delete_02242ea0,misc,edge-verified,Deleting destructor of an owner holding one block: stores its virtual table releases the held block through its allocator when one is held then returns the library result of the owner
 0x02242ee0,72,misc_held_block_destroy_02242ee0,misc,edge-verified,Destructor of an owner holding one block: stores its virtual table and when a block is held releases it through the owner allocator then clears the held block and the two words after it
 0x02242f30,216,misc_collect_motion_types_02242f30,misc,edge-verified,Collects the motion types of the listed bodies into the owner id vector when a type is listed and not held yet reading the physics world tables
+0x02243010,216,misc_collect_motion_types_02243010,misc,edge-verified,Collects the motion types of the listed bodies into the owner id vector when a type is listed and not held yet reading the physics world tables
 0x022430f0,89,misc_clear_id_list_022430f0,misc,edge-verified,Hands each 32-bit id of a list to the physics world id handler then empties the list by setting its end to its first id
 0x022447b0,5,auto_return_field_022447b0,auto,edge-verified,Generated from the return field template
 0x022447c0,5,auto_return_field_022447c0,auto,edge-verified,Generated from the return field template

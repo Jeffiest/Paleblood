@@ -12879,6 +12879,7 @@ address,replacement,system,returns
 0x02242ea0,bb_misc_held_block_delete_02242ea0,misc,i64
 0x02242ee0,bb_misc_held_block_destroy_02242ee0,misc,void
 0x02242f30,bb_misc_collect_motion_types_02242f30,misc,void
+0x02243010,bb_misc_collect_motion_types_02243010,misc,void
 0x022430f0,bb_misc_clear_id_list_022430f0,misc,void
 0x022447b0,bb_auto_return_field_022447b0,auto,i64
 0x022447c0,bb_auto_return_field_022447c0,auto,i64
