@@ -22957,6 +22957,7 @@ misc_remove_stored_value_if_present,edge,,7,7,0,0,29c24ad785ad10db,2026-11-09
 misc_remove_value_from_vector,edge,,10,10,0,0,bb5afec1a13ffc37,2026-11-09
 misc_reset_listed_members,edge,,7,7,0,0,05d746a0ec655de6,2026-11-09
 misc_reset_then_release,edge,,4,4,0,0,69e09939e2f1c051,2026-11-09
+misc_resolve_key_slot,edge,,5,5,0,0,7bc17f5e32e7cd8b,2026-11-09
 misc_resolve_request_target,edge,,7,7,0,0,03a93f3371a9f3c2,2026-11-09
 misc_resolve_then_forward,edge,,9,9,0,0,3b101394d12e99ca,2026-11-09
 misc_scaled_size_class_entry,edge,,19,19,0,0,e87a6b25cae9306d,2026-11-09
