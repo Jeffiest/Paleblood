@@ -18430,6 +18430,7 @@ address,size,name,system,status,notes
 0x02b39370,5,auto_return_field_02b39370,auto,edge-verified,Generated from the return field template
 0x02b393a0,8,auto_return_field_02b393a0,auto,edge-verified,Generated from the return field template
 0x02b393b0,8,auto_return_field_02b393b0,auto,edge-verified,Generated from the return field template
+0x02b3a500,8,misc_set_value_word_130,misc,edge-verified,Stores a 64-bit value into the owner word at +0x130
 0x02b3a6c0,7,auto_return_field_02b3a6c0,auto,edge-verified,Generated from the return field template
 0x02b3abb0,7,auto_return_field_02b3abb0,auto,edge-verified,Generated from the return field template
 0x02b3aca0,3,auto_return_zero_02b3aca0,auto,edge-verified,Generated from the return zero template
