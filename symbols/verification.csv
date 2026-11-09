@@ -22926,6 +22926,7 @@ misc_finish_tracked_update,edge,,15,15,0,0,70fff57b72b6f567,2026-11-09
 misc_held_block_has_value,edge,,7,7,0,0,5c0d4438fe9f6cf2,2026-11-09
 misc_init_child_holder,edge,,4,4,0,0,129ed90552350e0f,2026-11-09
 misc_init_keyed_handle,edge,,5,5,0,0,5baab1272f6a7e05,2026-11-09
+misc_init_keyed_handle_variant,edge,,6,6,0,0,b7d0651b14eb1306,2026-11-09
 misc_init_record_block,edge,,3,3,0,0,7bd22e5e16029ce2,2026-11-09
 misc_keyed_pool_append,edge,,10,10,0,0,a4f064fdb0d9e5e5,2026-11-09
 misc_list_all_exceed_one,edge,,12,12,0,0,9d15f22d0f823a8a,2026-11-09
@@ -22936,6 +22937,7 @@ misc_notify_unflagged_record,edge,,16,16,0,0,4939877d9dfa9721,2026-11-09
 misc_pool_append_node,edge,,10,10,0,0,2715d63d147a09e3,2026-11-09
 misc_prepare_forward,edge,,6,6,0,0,543c3d001ccdac0f,2026-11-09
 misc_quantized_span,edge,,23,23,0,0,84373e71f9548e5c,2026-11-09
+misc_read_probe_flag,edge,,5,5,0,0,15634ecc6ad354d8,2026-11-09
 misc_read_source_word,edge,,5,5,0,0,c4b6dac915b6330a,2026-11-09
 misc_refresh_cached_indices,edge,,15,15,0,0,d82ad67834f69cf7,2026-11-09
 misc_release_held_block,edge,,2,2,0,0,12b79404f2903b0d,2026-11-09

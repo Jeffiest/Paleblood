@@ -8414,7 +8414,9 @@ address,size,name,system,status,notes
 0x01e531e0,5,auto_return_field_01e531e0,auto,edge-verified,Generated from the return field template
 0x01e53230,3,auto_return_zero_01e53230,auto,edge-verified,Generated from the return zero template
 0x01e532d0,6,auto_return_constant_01e532d0,auto,edge-verified,Generated from the return constant template
+0x01e534c0,27,misc_init_keyed_handle_variant,misc,edge-verified,Sets up a keyed handle of the second class with the target stored and the id set to minus one then the active flag added and the class virtual table stored last
 0x01e534f0,1,auto_empty_01e534f0,auto,edge-verified,Generated from the empty template
+0x01e53500,41,misc_read_probe_flag,misc,edge-verified,Reports the flag byte of the probe detail for the holder source zero-extended; zero when the probe reports no detail
 0x01e53b40,5,auto_return_field_01e53b40,auto,edge-verified,Generated from the return field template
 0x01e53b50,5,auto_return_field_01e53b50,auto,edge-verified,Generated from the return field template
 0x01e53ba0,3,auto_return_zero_01e53ba0,auto,edge-verified,Generated from the return zero template

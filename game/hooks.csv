@@ -8413,7 +8413,9 @@ address,replacement,system,returns
 0x01e531e0,bb_auto_return_field_01e531e0,auto,i64
 0x01e53230,bb_auto_return_zero_01e53230,auto,i64
 0x01e532d0,bb_auto_return_constant_01e532d0,auto,i32
+0x01e534c0,bb_misc_init_keyed_handle_variant,misc,void
 0x01e534f0,bb_auto_empty_01e534f0,auto,void
+0x01e53500,bb_misc_read_probe_flag,misc,i32
 0x01e53b40,bb_auto_return_field_01e53b40,auto,i64
 0x01e53b50,bb_auto_return_field_01e53b50,auto,i64
 0x01e53ba0,bb_auto_return_zero_01e53ba0,auto,i64
