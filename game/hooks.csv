@@ -29,6 +29,7 @@ address,replacement,system,returns
 0x0040bfa0,bb_misc_teardown_record,misc,i64
 0x0040bfd0,bb_misc_teardown_record_entries,misc,i64
 0x0040c0e0,bb_misc_insert_scaled_entry,misc,i8
+0x0040c240,bb_misc_insert_scaled_entry_alt,misc,i8
 0x0040c4c0,bb_auto_return_zero_0040c4c0,auto,i64
 0x0040d150,bb_misc_value_unless_flagged,misc,i64
 0x0040d170,bb_misc_read_source_word,misc,i64
