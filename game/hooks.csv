@@ -2924,6 +2924,7 @@ address,replacement,system,returns
 0x0139b120,bb_misc_release_slot_item,misc,void
 0x0139b160,bb_misc_attach_two_objects,misc,void
 0x0139b410,bb_misc_bind_vtable_56b4840_alt2,misc,void
+0x0139b440,bb_misc_bind_vtable_56b4890_alt2,misc,void
 0x0139b4f0,bb_auto_empty_0139b4f0,auto,void
 0x0139d9d0,bb_auto_return_zero_0139d9d0,auto,i64
 0x0139ea10,bb_auto_return_zero_0139ea10,auto,i64
