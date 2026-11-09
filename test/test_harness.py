@@ -572,15 +572,26 @@ class Harness(unittest.TestCase):
         self.assertFalse(trace['control_flow_coverage']['feedback_eligible'])
         self.assertTrue(any('instruction memory bounds violation' in diff for diff in verify.compare_case(result, result)))
 
-    def test_vex_and_evex_memory_operands_fail_before_execution(self):
-        self._assert_incomplete_instruction('0x00400a30', 'vex_evex_memory', 'vmovdqu')
+    def test_evex_memory_operands_fail_before_execution(self):
         self._assert_incomplete_instruction('0x00400a40', 'vex_evex_memory', 'vmovdqu8')
+
+    def _memory_events(self, address):
+        trace = self._unsupported_instruction_case(address)['instruction_trace']
+        self.assertTrue(trace['complete'], trace)
+        return [event for event in trace['events'] if event['region'] == 'buf:memory']
+
+    def test_vex_load_is_traced_as_one_read_of_its_width(self):
+        events = self._memory_events('0x00400a30')
+        self.assertEqual([(e['mnemonic'], e['access'], e['width']) for e in events], [('vmovdqu', 'read', 32)])
+
+    def test_lock_read_modify_write_is_traced_as_one_read_write(self):
+        events = self._memory_events('0x00400a80')
+        self.assertEqual([(e['mnemonic'], e['access'], e['width']) for e in events], [('lock xadd', 'read_write', 4)])
 
     def test_system_and_special_implicit_memory_operations_fail_closed(self):
         self._assert_incomplete_instruction('0x00400a50', 'system_instruction', 'syscall')
         self._assert_incomplete_instruction('0x00400a60', 'special_memory_operation', 'xlatb')
         self._assert_incomplete_instruction('0x00400a70', 'special_memory_operation', 'fxsave')
-        self._assert_incomplete_instruction('0x00400a80', 'atomic_memory', 'lock xadd')
         self._assert_incomplete_instruction('0x00400ac0', 'special_memory_operation', 'maskmovdqu')
         self._assert_incomplete_instruction('0x00400ad0', 'special_memory_operation', 'movdir64b')
         self._assert_incomplete_instruction('0x00400ae0', 'special_memory_operation', 'cldemote')

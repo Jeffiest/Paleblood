@@ -4,8 +4,9 @@
 
 The tracer single-steps only declared guest/replacement executable ranges. It uses Capstone's
 operand access metadata to record supported explicit memory operands and models selected implicit
-stack effects. Known unsupported string, vector-memory, system, atomic, and special-memory forms
-are rejected before execution. Calls into uninstrumented host code are stepped over with a
+stack effects. Known unsupported string, EVEX and element-wise vector-memory, system, multi-word atomic, and
+special-memory forms are rejected before execution; plain VEX loads and stores and LOCK
+read-modify-writes are traced as the single reads and writes they are on one thread. Calls into uninstrumented host code are stepped over with a
 temporary return breakpoint and make coverage incomplete.
 """
 from __future__ import annotations
@@ -32,6 +33,13 @@ MAX_CFG_STEPS = 100_000
 MAX_IMPORT_OBSERVATIONS = 32
 MAX_IMPORT_SNAPSHOT_BYTES = 4096
 MAX_IMPORT_STACK_BYTES = 512
+# VEX forms that touch memory element by element (gathers, scatters, masked moves) stay rejected;
+# every other VEX memory operand is one load or store of the width Capstone reports.
+VEX_ELEMENTWISE_PREFIXES = ("vgather", "vpgather", "vscatter", "vpscatter", "vmaskmov", "vpmaskmov")
+# Read-modify-write instructions whose LOCK form has, on the harness's single thread, the effect of
+# the same instruction without the prefix: one read and one write of the memory operand.
+LOCKABLE_MNEMONICS = {"add", "adc", "sub", "sbb", "and", "or", "xor", "inc", "dec", "neg", "not",
+                      "xadd", "cmpxchg", "btc", "btr", "bts", "xchg"}
 STRING_MEMORY_MNEMONICS = {
     "movsb", "movsw", "movsq", "stosb", "stosw", "stosd", "stosq",
     "lodsb", "lodsw", "lodsd", "lodsq", "scasb", "scasw", "scasd", "scasq",
@@ -311,12 +319,11 @@ def _instruction_support_issue(insn: dict) -> tuple[str, str] | None:
             return "repeat_string_memory", f"REP/REPE/REPNE string operation {insn['mnemonic']} is not traced"
         return "string_memory", f"implicit string memory operation {insn['mnemonic']} is not traced"
 
-    if insn["vex_or_evex"] and operands:
-        return "vex_evex_memory", "VEX/EVEX memory access semantics are not traced"
-    if 0xF0 in prefixes and operands:
+    evex = insn["bytes"][:2].lower() == "62"
+    if insn["vex_or_evex"] and operands and (evex or mnemonic.startswith(VEX_ELEMENTWISE_PREFIXES)):
+        return "vex_evex_memory", "EVEX and element-wise VEX memory access semantics are not traced"
+    if 0xF0 in prefixes and operands and mnemonic not in LOCKABLE_MNEMONICS:
         return "atomic_memory", "LOCK-prefixed memory operation has unmodeled atomic semantics"
-    if mnemonic == "xchg" and operands:
-        return "atomic_memory", "memory XCHG has implicit atomic semantics"
     if mnemonic in SYSTEM_INSTRUCTIONS:
         return "system_instruction", f"system/control instruction {insn['mnemonic']} has opaque effects"
     if mnemonic in NONDETERMINISTIC_INSTRUCTIONS:
