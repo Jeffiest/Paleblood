@@ -48,6 +48,7 @@ address,size,name,system,status,notes
 0x0040fc50,193,misc_emit_through_fresh_sink,misc,edge-verified,Emits a value through the emitter of the lookup for id 0x0c to a sink the lookup opens then releases the emitter and the sink otherwise reports the failure to the sink
 0x0040fd20,19,misc_begin_configure_holder,misc,edge-verified,Gives a holder its vtable and configures it through the full configuration which returns the configuration result
 0x0040fd40,302,misc_configure_holder,misc,edge-verified,Configures a holder from its flags and first word by building its source and detail blocks then a record and returns the result of the final configuration
+0x0040fe70,199,misc_configure_from_retained_pair,misc,edge-verified,Gives a holder its vtable retains the objects of two slots configures the holder with them then drops each reference that was taken
 0x00410100,5,auto_return_field_00410100,auto,edge-verified,Generated from the return field template
 0x00410290,1,auto_empty_00410290,auto,edge-verified,Generated from the empty template
 0x004102a0,1,auto_empty_004102a0,auto,edge-verified,Generated from the empty template

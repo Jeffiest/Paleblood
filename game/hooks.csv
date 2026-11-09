@@ -48,6 +48,7 @@ address,replacement,system,returns
 0x0040fc50,bb_misc_emit_through_fresh_sink,misc,i64
 0x0040fd20,bb_misc_begin_configure_holder,misc,i64
 0x0040fd40,bb_misc_configure_holder,misc,i64
+0x0040fe70,bb_misc_configure_from_retained_pair,misc,void
 0x00410100,bb_auto_return_field_00410100,auto,i64
 0x00410290,bb_auto_empty_00410290,auto,void
 0x004102a0,bb_auto_empty_004102a0,auto,void
