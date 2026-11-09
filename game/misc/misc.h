@@ -356,4 +356,26 @@ static_assert(offsetof(RecordObject, block_0x10) == 0x10);
  */
 RT_ORIGINAL(0x0040bfd0, fn_0040bfd0, void(RecordObject *record));
 
+/**
+ *
+ * An object whose word at 0x20 is read through a holder.
+ *
+ */
+struct WordSource {
+    uint8_t unknown_0x0000[0x20];
+    uint64_t word_0x20; /**< Read by the word lookups; meaning unknown. */
+};
+static_assert(offsetof(WordSource, word_0x20) == 0x20);
+
+/**
+ *
+ * An object that holds a pointer to a WordSource at 0x10.
+ *
+ */
+struct WordHolder {
+    uint8_t unknown_0x0000[0x10];
+    const WordSource *source_0x10; /**< The source whose word is read. */
+};
+static_assert(offsetof(WordHolder, source_0x10) == 0x10);
+
 }  // namespace misc
