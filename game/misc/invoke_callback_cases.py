@@ -63,9 +63,9 @@ CASES = [
     case('armed_direct_argument_zero', ARMED, 0x00400300, 0x0, 0, 0),
     case('armed_direct_argument_negative', ARMED, 0x00400300, 0x8, -2, MASK64),
     case('armed_direct_argument_high_bit', ARMED, 0x00400300, 0x8, 0x80000000, 0x8000000000000001),
-    case('armed_virtual_slot', ARMED, 0x41, 0x0, 3, 0x55),
-    case('armed_virtual_adjusted', ARMED, 0x21, 0x8, 3, 0x56),
-    case('armed_virtual_high_slot', ARMED, 0x81, 0x10, 0x80000001, MASK64),
+    case('armed_virtual_slot', ARMED, 0x41, 0x0, 3, 0x55, virtual=True),
+    case('armed_virtual_adjusted', ARMED, 0x21, 0x8, 3, 0x56, virtual=True),
+    case('armed_virtual_high_slot', ARMED, 0x81, 0x10, 0x80000001, MASK64, virtual=True),
     case('armed_result_zero', ARMED, 0x00400300, 0x0, 7, 0),
     case('armed_other_flags', ARMED | 0x3, 0x00400300, 0x18, 8, 0x1234),
 ]
