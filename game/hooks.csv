@@ -12787,6 +12787,7 @@ address,replacement,system,returns
 0x02242a90,bb_misc_pair_matches_02242a90,misc,i8
 0x02242ac0,bb_misc_member_call_02242ac0,misc,i64
 0x02242ae0,bb_misc_base_init_02242ae0,misc,void
+0x02242af0,bb_misc_base_delete_02242af0,misc,i64
 0x02242b40,bb_misc_pair_matches_02242b40,misc,i8
 0x02242b70,bb_misc_member_call_02242b70,misc,i64
 0x02242b90,bb_misc_base_init_02242b90,misc,void
