@@ -1441,6 +1441,7 @@ address,size,name,system,status,notes
 0x00b68940,313,misc_slot_pool_take,misc,edge-verified,Claims the first unclaimed slot of a lock-guarded pool and returns its value or zero when none is free
 0x00b697c0,1,auto_empty_00b697c0,auto,edge-verified,Generated from the empty template
 0x00b69990,329,misc_ref_holder_hold,misc,edge-verified,Holds a reference item in a holder by counting it appending it to the held list and notifying the children of its branch leaves and of the item itself
+0x00b69ae0,377,misc_ref_holder_release,misc,edge-verified,Releases a reference item from a holder by closing its held slot notifying the children of the item and of its branch leaves and dropping one reference
 0x00b69c60,213,misc_ref_holder_attach,misc,edge-verified,Attaches an item to a reference holder unless already attached then raises its count and tells each child
 0x00b69d40,209,misc_ref_holder_detach,misc,edge-verified,Detaches an item from a reference holder by moving the last attached item into its place then tells each child and lowers the count destroying the item at zero
 0x00b69e20,70,misc_ref_holder_add_child,misc,edge-verified,Adds a child to a reference holder child list growing the list when it is full
