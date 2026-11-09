@@ -2887,6 +2887,7 @@ address,replacement,system,returns
 0x01398930,bb_misc_bind_vtable_56b47f0,misc,void
 0x01398960,bb_misc_copy_block_58b3240,misc,void
 0x013989a0,bb_misc_init_vtable_subobject,misc,void
+0x01398f50,bb_misc_clear_pending_four_keys,misc,void
 0x01399850,bb_auto_empty_01399850,auto,void
 0x01399860,bb_auto_return_constant_01399860,auto,i32
 0x0139a380,bb_auto_empty_0139a380,auto,void
