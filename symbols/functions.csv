@@ -14939,6 +14939,7 @@ address,size,name,system,status,notes
 0x026f1c80,49,misc_size_class_entry_second,misc,edge-verified,Returns the entry of the second size table for the size class of the request size.
 0x026f1cc0,49,misc_size_class_entry_third,misc,edge-verified,Returns the entry of the third size table for the size class of the request size.
 0x026f1d70,49,misc_size_class_entry_fourth,misc,edge-verified,Returns the entry of the fourth size table for the size class of the request size.
+0x026f1db0,49,misc_size_class_entry_fifth,misc,edge-verified,Returns the entry of the fifth size table for the size class of the request size.
 0x026f2860,8,auto_return_field_026f2860,auto,edge-verified,Generated from the return field template
 0x026f2870,8,auto_return_field_026f2870,auto,edge-verified,Generated from the return field template
 0x026f3990,1,auto_empty_026f3990,auto,edge-verified,Generated from the empty template
