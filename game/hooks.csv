@@ -53,6 +53,7 @@ address,replacement,system,returns
 0x00410100,bb_auto_return_field_00410100,auto,i64
 0x00410290,bb_auto_empty_00410290,auto,void
 0x004102a0,bb_auto_empty_004102a0,auto,void
+0x00410d90,bb_misc_init_member_and_push,misc,i64
 0x00410e60,bb_misc_push_front_locked,misc,i64
 0x00410ee0,bb_misc_prepare_then_release,misc,i64
 0x00410f10,bb_misc_remove_member_from_list,misc,i64

@@ -22933,6 +22933,7 @@ misc_holder_search_first,edge,,4,4,0,0,31fcf9ab170c684b,2026-11-09
 misc_holder_search_second,edge,,4,4,0,0,8ea756833cdd18bc,2026-11-09
 misc_init_child_holder,edge,,4,4,0,0,129ed90552350e0f,2026-11-09
 misc_init_keyed_handle,edge,,5,5,0,0,5baab1272f6a7e05,2026-11-09
+misc_init_member_and_push,edge,,2,2,0,0,530234fd5d8fb0dd,2026-11-09
 misc_init_record_block,edge,,3,3,0,0,7bd22e5e16029ce2,2026-11-09
 misc_insert_scaled_entry,edge,,14,14,0,0,0c099f6f95dec14a,2026-11-09
 misc_insert_scaled_entry_alt,edge,,14,14,0,0,69bbb208c531a58e,2026-11-09
