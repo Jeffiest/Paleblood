@@ -18472,6 +18472,7 @@ address,replacement,system,returns
 0x02b3be00,bb_auto_empty_02b3be00,auto,void
 0x02b3be10,bb_auto_empty_02b3be10,auto,void
 0x02b3c570,bb_misc_find_record_index,misc,i32
+0x02b3d330,bb_misc_release_entries_then_forward,misc,i64
 0x02b3d3f0,bb_misc_release_entries_and_clear,misc,void
 0x02b3d6e0,bb_auto_empty_02b3d6e0,auto,void
 0x02b3d6f0,bb_auto_empty_02b3d6f0,auto,void

@@ -18474,6 +18474,7 @@ address,size,name,system,status,notes
 0x02b3be00,1,auto_empty_02b3be00,auto,edge-verified,Generated from the empty template
 0x02b3be10,1,auto_empty_02b3be10,auto,edge-verified,Generated from the empty template
 0x02b3c570,44,misc_find_record_index,misc,edge-verified,Finds the index of a record in a table of 24-byte records by counting down from the record address
+0x02b3d330,168,misc_release_entries_then_forward,misc,edge-verified,Releases each counted entry of an array frees its storage then forwards the array to a final release routine returning its result
 0x02b3d3f0,189,misc_release_entries_and_clear,misc,edge-verified,Releases each counted entry of an array then frees its storage and clears its begin end and word
 0x02b3d6e0,1,auto_empty_02b3d6e0,auto,edge-verified,Generated from the empty template
 0x02b3d6f0,1,auto_empty_02b3d6f0,auto,edge-verified,Generated from the empty template
