@@ -8529,11 +8529,23 @@ address,size,name,system,status,notes
 0x01e54670,5,auto_return_field_01e54670,auto,edge-verified,Generated from the return field template
 0x01e546c0,3,auto_return_zero_01e546c0,auto,edge-verified,Generated from the return zero template
 0x01e54940,6,auto_return_constant_01e54940,auto,edge-verified,Generated from the return constant template
+0x01e54b60,87,misc_forward_renderer_resource,misc,edge-verified,Forwards the renderer child resource to a callee when its query kind is 6 otherwise returns the kind; the override renderer is used when set
+0x01e54bc0,214,misc_query_each_table_item,misc,edge-verified,Runs a query for every entry of the global item table using the value of the request source and returns at once for a null source
+0x01e54ca0,214,misc_query_each_table_item_kind7,misc,edge-verified,Runs a kind 7 query for every entry of the global item table using the value of the request source and returns at once for a null source
+0x01e54d80,214,misc_query_each_table_item_kind1,misc,edge-verified,Runs a kind 1 query for every entry of the global item table using the value of the request source and returns at once for a null source
+0x01e54e60,214,misc_query_each_table_item_kind3_packed,misc,edge-verified,Runs a kind 3 query for every entry of the global item table with a packed byte in the record built from the second and first byte arguments
+0x01e54f40,48,misc_enable_owner_target,misc,edge-verified,Sets the enable byte of the target that a node owner refers to when the node owner and target all exist
+0x01e55660,205,engine_initialize_static_wide_string_01e55660,engine,edge-verified,Guarded static wide string initializer that runs the same initializer as 0x0217ffb0 since its instructions match apart from branch targets
 0x01e55be0,5,auto_return_field_01e55be0,auto,edge-verified,Generated from the return field template
 0x01e55bf0,5,auto_return_field_01e55bf0,auto,edge-verified,Generated from the return field template
 0x01e55c40,3,auto_return_zero_01e55c40,auto,edge-verified,Generated from the return zero template
 0x01e55ec0,6,auto_return_constant_01e55ec0,auto,edge-verified,Generated from the return constant template
 0x01e57770,9,auto_return_float_field_01e57770,auto,edge-verified,Generated from the return float field template
+0x01e577d0,353,misc_chain_ready_or_group_bit,misc,edge-verified,Answers whether the owner child is ready or its chains hold a matching node and otherwise the group bit of the child holder
+0x01e57940,172,misc_child_ready_after_checks,misc,edge-verified,Answers whether the owner child is ready after the registry and latch globals are checked and reports a missing registry by name
+0x01e579f0,34,misc_apply_child_unless_flagged,misc,edge-verified,Answers true when the owner skip flag is set otherwise returns the child answer to the low byte of the value
+0x01e57a20,172,misc_dispatch_stages_0_to_8,misc,edge-verified,Runs the stage callee for stages 0 to 7 then returns the stage 8 result and returns 0 for a null target
+0x01e583f0,76,misc_registry_latch_answer,misc,edge-verified,Answers true when the owner answer flag is set otherwise whether the latch byte is set after a missing registry is reported by name
 0x01e58830,7,auto_return_field_01e58830,auto,edge-verified,Generated from the return field template
 0x01e58840,7,auto_return_field_01e58840,auto,edge-verified,Generated from the return field template
 0x01e58850,1,auto_empty_01e58850,auto,edge-verified,Generated from the empty template
