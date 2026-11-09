@@ -23042,6 +23042,7 @@ misc_take_pending_node,edge,,10,10,0,0,9cd062ecd03f968a,2026-11-09
 misc_take_slot_item,edge,,13,13,0,0,4db22f8d952d6440,2026-11-09
 misc_teardown_record,edge,,5,5,0,0,4344b708ae9c9edf,2026-11-09
 misc_teardown_record_entries,edge,,17,17,0,0,414367481204d094,2026-11-09
+misc_test_and_set_flag,edge,,6,6,0,0,7aa9c6c0213a07af,2026-11-09
 misc_unpack_and_release,edge,,7,7,0,0,c3f850c037c90982,2026-11-09
 misc_update_owned_entries,edge,,11,11,0,0,2649a9fa3292b49e,2026-11-09
 misc_value_unless_flagged,edge,,10,10,0,0,f8e45a1ee3d584de,2026-11-09
