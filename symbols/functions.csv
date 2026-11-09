@@ -1473,6 +1473,7 @@ address,size,name,system,status,notes
 0x00bdfd00,6,auto_return_constant_00bdfd00,auto,edge-verified,Generated from the return constant template
 0x00be0ca0,5,auto_return_field_00be0ca0,auto,edge-verified,Generated from the return field template
 0x00be0e70,3,auto_return_constant_00be0e70,auto,edge-verified,Generated from the return constant template
+0x00be16a0,8,misc_plain_type_address,misc,edge-verified,Returns the address of the plain type static object
 0x00be1740,1,auto_empty_00be1740,auto,edge-verified,Generated from the empty template
 0x00be1750,1,auto_empty_00be1750,auto,edge-verified,Generated from the empty template
 0x00be2dd0,4,auto_return_field_00be2dd0,auto,edge-verified,Generated from the return field template
