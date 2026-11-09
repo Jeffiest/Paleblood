@@ -5099,6 +5099,7 @@ address,size,name,system,status,notes
 0x01888bd0,28,misc_call_then_release_01888bd0,misc,edge-verified,Calls the routine 0x01402180 with the object then tail calls the release routine 0x02fbe588 with the same object and returns its result
 0x01888ee0,64,misc_free_flagged_payload_then_release,misc,edge-verified,Sets the release vtable then frees a flagged payload through the shared allocator slot at +0x70 and tail calls the library release with the object
 0x01888f20,65,misc_free_flagged_payload_and_clear,misc,edge-verified,Sets the release vtable then frees a flagged payload through the shared allocator slot at +0x70 and clears the payload pointer
+0x01888f70,91,misc_bump_allocate_block,misc,edge-verified,Stores the offset of the pending block from the cursor then allocates an aligned eight-byte block from the arena with two 16-bit tags and returns the aligned cursor
 0x01888fd0,29,misc_finish_pending_block_offset,misc,edge-verified,Stores the record limit minus the pending block address plus eight in the block offset word then clears the pending block; no pending block changes nothing
 0x01889310,6,auto_return_constant_01889310,auto,edge-verified,Generated from the return constant template
 0x0188b7c0,6,auto_return_constant_0188b7c0,auto,edge-verified,Generated from the return constant template

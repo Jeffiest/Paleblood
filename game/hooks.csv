@@ -5098,6 +5098,7 @@ address,replacement,system,returns
 0x01888bd0,bb_misc_call_then_release_01888bd0,misc,i64
 0x01888ee0,bb_misc_free_flagged_payload_then_release,misc,i64
 0x01888f20,bb_misc_free_flagged_payload_and_clear,misc,void
+0x01888f70,bb_misc_bump_allocate_block,misc,i64
 0x01888fd0,bb_misc_finish_pending_block_offset,misc,void
 0x01889310,bb_auto_return_constant_01889310,auto,i32
 0x0188b7c0,bb_auto_return_constant_0188b7c0,auto,i32
