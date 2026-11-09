@@ -1480,3 +1480,858 @@ extern "C" uint64_t bb_auto_return_zero_028a2620()
 {
     return 0;
 }
+
+/**
+ *
+ * Returns a fixed value whose meaning is unknown.
+ *
+ */
+constexpr uint8_t value_028a26d0 = 0x1;
+
+extern "C" uint8_t bb_auto_return_constant_028a26d0()
+{
+    return value_028a26d0;
+}
+
+/**
+ *
+ * Returns a fixed value whose meaning is unknown.
+ *
+ */
+constexpr uint8_t value_028a26e0 = 0x1;
+
+extern "C" uint8_t bb_auto_return_constant_028a26e0()
+{
+    return value_028a26e0;
+}
+
+/**
+ *
+ * Does nothing.
+ *
+ */
+extern "C" void bb_auto_empty_028a26f0()
+{
+}
+
+/**
+ *
+ * Does nothing.
+ *
+ */
+extern "C" void bb_auto_empty_028a2700()
+{
+}
+
+/**
+ *
+ * Does nothing.
+ *
+ */
+extern "C" void bb_auto_empty_028a2720()
+{
+}
+
+/**
+ *
+ * Returns zero.
+ *
+ */
+extern "C" uint64_t bb_auto_return_zero_028a2730()
+{
+    return 0;
+}
+
+/**
+ *
+ * Returns a fixed value whose meaning is unknown.
+ *
+ */
+constexpr uint8_t value_028a2740 = 0x1;
+
+extern "C" uint8_t bb_auto_return_constant_028a2740()
+{
+    return value_028a2740;
+}
+
+/**
+ *
+ * Returns a fixed value whose meaning is unknown.
+ *
+ */
+constexpr uint8_t value_028a2750 = 0x1;
+
+extern "C" uint8_t bb_auto_return_constant_028a2750()
+{
+    return value_028a2750;
+}
+
+/**
+ *
+ * Returns zero.
+ *
+ */
+extern "C" uint64_t bb_auto_return_zero_028a27b0()
+{
+    return 0;
+}
+
+/**
+ *
+ * Does nothing.
+ *
+ */
+extern "C" void bb_auto_empty_028a27c0()
+{
+}
+
+/**
+ *
+ * Does nothing.
+ *
+ */
+extern "C" void bb_auto_empty_028a27d0()
+{
+}
+
+/**
+ *
+ * Does nothing.
+ *
+ */
+extern "C" void bb_auto_empty_028a27e0()
+{
+}
+
+/**
+ *
+ * The part of the object that auto_return_field_028a27f0 reads.
+ *
+ */
+struct Object028a27f0 {
+    uint8_t unknown_0x0000[0x48];
+    uint64_t value_0x0048; /**< Read by auto_return_field_028a27f0; meaning unknown. */
+};
+static_assert(offsetof(Object028a27f0, value_0x0048) == 0x48);
+
+/**
+ *
+ * Returns a field of its object.
+ *
+ */
+extern "C" uint64_t bb_auto_return_field_028a27f0(const Object028a27f0 *self)
+{
+    return self->value_0x0048;
+}
+
+/**
+ *
+ * The part of the object that auto_return_field_028a2880 reads.
+ *
+ */
+struct Object028a2880 {
+    uint8_t unknown_0x0000[0xc8];
+    uint64_t value_0x00c8; /**< Read by auto_return_field_028a2880; meaning unknown. */
+};
+static_assert(offsetof(Object028a2880, value_0x00c8) == 0xc8);
+
+/**
+ *
+ * Returns a field of its object.
+ *
+ */
+extern "C" uint64_t bb_auto_return_field_028a2880(const Object028a2880 *self)
+{
+    return self->value_0x00c8;
+}
+
+/**
+ *
+ * Returns zero.
+ *
+ */
+extern "C" uint64_t bb_auto_return_zero_028a28b0()
+{
+    return 0;
+}
+
+/**
+ *
+ * Does nothing.
+ *
+ */
+extern "C" void bb_auto_empty_028a29e0()
+{
+}
+
+/**
+ *
+ * Returns zero.
+ *
+ */
+extern "C" uint64_t bb_auto_return_zero_028a29f0()
+{
+    return 0;
+}
+
+/**
+ *
+ * Returns a fixed value whose meaning is unknown.
+ *
+ */
+constexpr uint32_t value_028a2a00 = 0x1;
+
+extern "C" uint32_t bb_auto_return_constant_028a2a00()
+{
+    return value_028a2a00;
+}
+
+/**
+ *
+ * Returns a fixed value whose meaning is unknown.
+ *
+ */
+constexpr uint32_t value_028a2a10 = 0x1;
+
+extern "C" uint32_t bb_auto_return_constant_028a2a10()
+{
+    return value_028a2a10;
+}
+
+/**
+ *
+ * Returns zero.
+ *
+ */
+extern "C" uint64_t bb_auto_return_zero_028a2af0()
+{
+    return 0;
+}
+
+/**
+ *
+ * Returns a fixed value whose meaning is unknown.
+ *
+ */
+constexpr uint32_t value_028a2b00 = 0x1;
+
+extern "C" uint32_t bb_auto_return_constant_028a2b00()
+{
+    return value_028a2b00;
+}
+
+/**
+ *
+ * Returns zero.
+ *
+ */
+extern "C" uint64_t bb_auto_return_zero_028a2c40()
+{
+    return 0;
+}
+
+/**
+ *
+ * Returns zero.
+ *
+ */
+extern "C" uint64_t bb_auto_return_zero_028a2c50()
+{
+    return 0;
+}
+
+/**
+ *
+ * The part of the object that auto_return_member_address_028a2c60 reads.
+ *
+ */
+struct Object028a2c60 {
+    uint8_t unknown_0x0000[0x48];
+    uint8_t member_0x0048; /**< Read by auto_return_member_address_028a2c60; meaning unknown. */
+};
+static_assert(offsetof(Object028a2c60, member_0x0048) == 0x48);
+
+/**
+ *
+ * Returns the address of a member of its object.
+ *
+ */
+extern "C" void *bb_auto_return_member_address_028a2c60(Object028a2c60 *self)
+{
+    return &self->member_0x0048;
+}
+
+/**
+ *
+ * Returns zero.
+ *
+ */
+extern "C" uint64_t bb_auto_return_zero_028a2c70()
+{
+    return 0;
+}
+
+/**
+ *
+ * Returns zero.
+ *
+ */
+extern "C" uint64_t bb_auto_return_zero_028a2c90()
+{
+    return 0;
+}
+
+/**
+ *
+ * Returns a fixed value whose meaning is unknown.
+ *
+ */
+constexpr uint8_t value_028a2cc0 = 0x1;
+
+extern "C" uint8_t bb_auto_return_constant_028a2cc0()
+{
+    return value_028a2cc0;
+}
+
+/**
+ *
+ * Returns zero.
+ *
+ */
+extern "C" uint64_t bb_auto_return_zero_028a2ce0()
+{
+    return 0;
+}
+
+/**
+ *
+ * Does nothing.
+ *
+ */
+extern "C" void bb_auto_empty_028a2cf0()
+{
+}
+
+/**
+ *
+ * Does nothing.
+ *
+ */
+extern "C" void bb_auto_empty_028a2d00()
+{
+}
+
+/**
+ *
+ * Returns zero.
+ *
+ */
+extern "C" uint64_t bb_auto_return_zero_028a2d10()
+{
+    return 0;
+}
+
+/**
+ *
+ * Does nothing.
+ *
+ */
+extern "C" void bb_auto_empty_028a2d30()
+{
+}
+
+/**
+ *
+ * Returns a fixed value whose meaning is unknown.
+ *
+ */
+constexpr uint8_t value_028a2d80 = 0x1;
+
+extern "C" uint8_t bb_auto_return_constant_028a2d80()
+{
+    return value_028a2d80;
+}
+
+/**
+ *
+ * Returns zero.
+ *
+ */
+extern "C" uint64_t bb_auto_return_zero_028a2db0()
+{
+    return 0;
+}
+
+/**
+ *
+ * Does nothing.
+ *
+ */
+extern "C" void bb_auto_empty_028a2dc0()
+{
+}
+
+/**
+ *
+ * Returns zero.
+ *
+ */
+extern "C" uint64_t bb_auto_return_zero_028a2ec0()
+{
+    return 0;
+}
+
+/**
+ *
+ * Returns zero.
+ *
+ */
+extern "C" uint64_t bb_auto_return_zero_028a2ed0()
+{
+    return 0;
+}
+
+/**
+ *
+ * The part of the object that auto_return_member_address_028a2ee0 reads.
+ *
+ */
+struct Object028a2ee0 {
+    uint8_t unknown_0x0000[0x10];
+    uint8_t member_0x0010; /**< Read by auto_return_member_address_028a2ee0; meaning unknown. */
+};
+static_assert(offsetof(Object028a2ee0, member_0x0010) == 0x10);
+
+/**
+ *
+ * Returns the address of a member of its object.
+ *
+ */
+extern "C" void *bb_auto_return_member_address_028a2ee0(Object028a2ee0 *self)
+{
+    return &self->member_0x0010;
+}
+
+/**
+ *
+ * Returns zero.
+ *
+ */
+extern "C" uint64_t bb_auto_return_zero_028a2ef0()
+{
+    return 0;
+}
+
+/**
+ *
+ * Returns zero.
+ *
+ */
+extern "C" uint64_t bb_auto_return_zero_028a2f10()
+{
+    return 0;
+}
+
+/**
+ *
+ * Returns a fixed value whose meaning is unknown.
+ *
+ */
+constexpr uint8_t value_028a2f40 = 0x1;
+
+extern "C" uint8_t bb_auto_return_constant_028a2f40()
+{
+    return value_028a2f40;
+}
+
+/**
+ *
+ * Returns zero.
+ *
+ */
+extern "C" uint64_t bb_auto_return_zero_028a2f50()
+{
+    return 0;
+}
+
+/**
+ *
+ * Returns zero.
+ *
+ */
+extern "C" uint64_t bb_auto_return_zero_028a2f60()
+{
+    return 0;
+}
+
+/**
+ *
+ * Does nothing.
+ *
+ */
+extern "C" void bb_auto_empty_028a2f70()
+{
+}
+
+/**
+ *
+ * Does nothing.
+ *
+ */
+extern "C" void bb_auto_empty_028a2f80()
+{
+}
+
+/**
+ *
+ * Does nothing.
+ *
+ */
+extern "C" void bb_auto_empty_028a2fa0()
+{
+}
+
+/**
+ *
+ * Returns a fixed value whose meaning is unknown.
+ *
+ */
+constexpr uint8_t value_028a2ff0 = 0x1;
+
+extern "C" uint8_t bb_auto_return_constant_028a2ff0()
+{
+    return value_028a2ff0;
+}
+
+/**
+ *
+ * Returns zero.
+ *
+ */
+extern "C" uint64_t bb_auto_return_zero_028a3110()
+{
+    return 0;
+}
+
+/**
+ *
+ * Returns zero.
+ *
+ */
+extern "C" uint64_t bb_auto_return_zero_028a3120()
+{
+    return 0;
+}
+
+/**
+ *
+ * Returns zero.
+ *
+ */
+extern "C" uint64_t bb_auto_return_zero_028a3140()
+{
+    return 0;
+}
+
+/**
+ *
+ * Returns zero.
+ *
+ */
+extern "C" uint64_t bb_auto_return_zero_028a3160()
+{
+    return 0;
+}
+
+/**
+ *
+ * Returns a fixed value whose meaning is unknown.
+ *
+ */
+constexpr uint8_t value_028a3190 = 0x1;
+
+extern "C" uint8_t bb_auto_return_constant_028a3190()
+{
+    return value_028a3190;
+}
+
+/**
+ *
+ * Returns zero.
+ *
+ */
+extern "C" uint64_t bb_auto_return_zero_028a31a0()
+{
+    return 0;
+}
+
+/**
+ *
+ * Returns zero.
+ *
+ */
+extern "C" uint64_t bb_auto_return_zero_028a31b0()
+{
+    return 0;
+}
+
+/**
+ *
+ * Does nothing.
+ *
+ */
+extern "C" void bb_auto_empty_028a31c0()
+{
+}
+
+/**
+ *
+ * Does nothing.
+ *
+ */
+extern "C" void bb_auto_empty_028a31d0()
+{
+}
+
+/**
+ *
+ * Does nothing.
+ *
+ */
+extern "C" void bb_auto_empty_028a31f0()
+{
+}
+
+/**
+ *
+ * Returns a fixed value whose meaning is unknown.
+ *
+ */
+constexpr uint8_t value_028a3240 = 0x1;
+
+extern "C" uint8_t bb_auto_return_constant_028a3240()
+{
+    return value_028a3240;
+}
+
+/**
+ *
+ * Returns zero.
+ *
+ */
+extern "C" uint64_t bb_auto_return_zero_028a3270()
+{
+    return 0;
+}
+
+/**
+ *
+ * Does nothing.
+ *
+ */
+extern "C" void bb_auto_empty_028a3280()
+{
+}
+
+/**
+ *
+ * Returns a fixed value whose meaning is unknown.
+ *
+ */
+constexpr uint32_t value_028a3320 = 0xfff;
+
+extern "C" uint32_t bb_auto_return_constant_028a3320()
+{
+    return value_028a3320;
+}
+
+/**
+ *
+ * Does nothing.
+ *
+ */
+extern "C" void bb_auto_empty_028a3330()
+{
+}
+
+/**
+ *
+ * The part of the object that auto_return_field_028a33e0 reads.
+ *
+ */
+struct Object028a33e0 {
+    uint8_t unknown_0x0000[0x6c];
+    uint8_t value_0x006c; /**< Read by auto_return_field_028a33e0; meaning unknown. */
+};
+static_assert(offsetof(Object028a33e0, value_0x006c) == 0x6c);
+
+/**
+ *
+ * Returns a field of its object.
+ *
+ */
+extern "C" uint8_t bb_auto_return_field_028a33e0(const Object028a33e0 *self)
+{
+    return self->value_0x006c;
+}
+
+/**
+ *
+ * The part of the object that auto_return_field_028a33f0 reads.
+ *
+ */
+struct Object028a33f0 {
+    uint8_t unknown_0x0000[0x60];
+    uint64_t value_0x0060; /**< Read by auto_return_field_028a33f0; meaning unknown. */
+};
+static_assert(offsetof(Object028a33f0, value_0x0060) == 0x60);
+
+/**
+ *
+ * Returns a field of its object.
+ *
+ */
+extern "C" uint64_t bb_auto_return_field_028a33f0(const Object028a33f0 *self)
+{
+    return self->value_0x0060;
+}
+
+/**
+ *
+ * The part of the object that auto_return_field_028a3410 reads.
+ *
+ */
+struct Object028a3410 {
+    uint8_t unknown_0x0000[0x68];
+    uint32_t value_0x0068; /**< Read by auto_return_field_028a3410; meaning unknown. */
+};
+static_assert(offsetof(Object028a3410, value_0x0068) == 0x68);
+
+/**
+ *
+ * Returns a field of its object.
+ *
+ */
+extern "C" uint32_t bb_auto_return_field_028a3410(const Object028a3410 *self)
+{
+    return self->value_0x0068;
+}
+
+/**
+ *
+ * Returns a fixed value whose meaning is unknown.
+ *
+ */
+constexpr uint8_t value_028a3610 = 0x1;
+
+extern "C" uint8_t bb_auto_return_constant_028a3610()
+{
+    return value_028a3610;
+}
+
+/**
+ *
+ * Returns a fixed value whose meaning is unknown.
+ *
+ */
+constexpr uint8_t value_028a3620 = 0x1;
+
+extern "C" uint8_t bb_auto_return_constant_028a3620()
+{
+    return value_028a3620;
+}
+
+/**
+ *
+ * The part of the object that auto_return_field_028a3630 reads.
+ *
+ */
+struct Object028a3630 {
+    uint8_t unknown_0x0000[0x28];
+    uint32_t value_0x0028; /**< Read by auto_return_field_028a3630; meaning unknown. */
+};
+static_assert(offsetof(Object028a3630, value_0x0028) == 0x28);
+
+/**
+ *
+ * Returns a field of its object.
+ *
+ */
+extern "C" uint32_t bb_auto_return_field_028a3630(const Object028a3630 *self)
+{
+    return self->value_0x0028;
+}
+
+/**
+ *
+ * The part of the object that auto_return_field_028a3650 reads.
+ *
+ */
+struct Object028a3650 {
+    uint8_t unknown_0x0000[0x18];
+    uint32_t value_0x0018; /**< Read by auto_return_field_028a3650; meaning unknown. */
+};
+static_assert(offsetof(Object028a3650, value_0x0018) == 0x18);
+
+/**
+ *
+ * Returns a field of its object.
+ *
+ */
+extern "C" uint32_t bb_auto_return_field_028a3650(const Object028a3650 *self)
+{
+    return self->value_0x0018;
+}
+
+/**
+ *
+ * Returns zero.
+ *
+ */
+extern "C" uint64_t bb_auto_return_zero_028a3670()
+{
+    return 0;
+}
+
+/**
+ *
+ * Returns a fixed value whose meaning is unknown.
+ *
+ */
+constexpr uint8_t value_028a3680 = 0x1;
+
+extern "C" uint8_t bb_auto_return_constant_028a3680()
+{
+    return value_028a3680;
+}
+
+/**
+ *
+ * Returns zero.
+ *
+ */
+extern "C" uint64_t bb_auto_return_zero_028a3690()
+{
+    return 0;
+}
+
+/**
+ *
+ * Returns a fixed value whose meaning is unknown.
+ *
+ */
+constexpr uint8_t value_028a36a0 = 0x1;
+
+extern "C" uint8_t bb_auto_return_constant_028a36a0()
+{
+    return value_028a36a0;
+}
+
+/**
+ *
+ * Does nothing.
+ *
+ */
+extern "C" void bb_auto_empty_028a46a0()
+{
+}

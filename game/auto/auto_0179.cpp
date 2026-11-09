@@ -380,3 +380,23 @@ extern "C" void bb_auto_empty_0179eaf0()
 extern "C" void bb_auto_empty_0179eb50()
 {
 }
+
+/**
+ *
+ * Returns zero.
+ *
+ */
+extern "C" uint64_t bb_auto_return_zero_01793b80()
+{
+    return 0;
+}
+
+/**
+ *
+ * Returns zero.
+ *
+ */
+extern "C" uint64_t bb_auto_return_zero_01793d30()
+{
+    return 0;
+}
