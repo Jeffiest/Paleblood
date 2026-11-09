@@ -14,8 +14,8 @@ import struct
 import sys
 
 ADDRESS = '0x02242b70'
-DIRECT = '0x00500d00'
-VIRTUAL = '0x00500e00'
+DIRECT = '0x00400020'
+VIRTUAL = '0x00400300'
 SLOT = 0x18
 MASK64 = (1 << 64) - 1
 
@@ -30,12 +30,12 @@ def case(cid, virtual=False, adjustment=0, object_offset=0, result=0x1234):
     target_stub = VIRTUAL if virtual else DIRECT
     object_pointer = 'obj' if object_offset == 0 else f'obj+{object_offset}'
     memory = [{'addr': 'buf:thunk+16', 'pointer': object_pointer},
-              {'addr': 'buf:thunk+24', 'bytes': word(target_value)},
+              ({'addr': 'buf:thunk+24', 'guest': DIRECT} if not virtual else {'addr': 'buf:thunk+24', 'bytes': word(target_value)}),
               {'addr': 'buf:thunk+32', 'bytes': word(adjustment)}]
     buffers = {'thunk': {'size': 0x28, 'bytes': 'ee' * 0x28}, 'obj': {'size': 0x40, 'bytes': '55' * 0x40}}
     if virtual:
         buffers['vt'] = {'size': 0x40}
-        memory += [{'addr': 'buf:obj+0', 'pointer': 'vt'},
+        memory += [{'addr': f'buf:obj+{object_offset + adjustment}', 'pointer': 'vt'},
                    {'addr': f'buf:vt+{SLOT:#x}', 'guest': VIRTUAL}]
     return {'schema': 1, 'address': ADDRESS, 'id': cid, 'returns': 'i64',
             'args': {'rdi': 'buf:thunk'}, 'buffers': buffers, 'memory': memory, 'imports': [],
