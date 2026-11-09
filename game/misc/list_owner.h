@@ -33,10 +33,11 @@ constexpr size_t list_lock_size = 0x10;
 struct ListOwner {
     uint8_t unknown_0x0000[0x30];
     ListNode *head;    /**< The first node of the list, which is never null. */
-    uint8_t unknown_0x0038[0x08];
+    ListNode *tail;   /**< The last node, where a removal walk starts. */
     uint8_t lock[list_lock_size]; /**< The lock; its address is given to the lock calls. */
 };
 static_assert(offsetof(ListOwner, head) == 0x30);
+static_assert(offsetof(ListOwner, tail) == 0x38);
 static_assert(offsetof(ListOwner, lock) == 0x40);
 
 }  // namespace misc
