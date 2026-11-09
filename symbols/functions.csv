@@ -5050,6 +5050,7 @@ address,size,name,system,status,notes
 0x018882a0,205,misc_init_shared_record_once,misc,edge-verified,Creates the shared object on first use checks its flag query bit reports a missing bit as fatal and registers the teardown record once
 0x018883b0,26,misc_init_value_record,misc,edge-verified,Sets the record vtable stores the 32-bit value clears the flag byte at 0x0c and clears the trailing word at 0x10
 0x018883d0,168,misc_release_handle_record,misc,edge-verified,Sets the record vtable frees its handle registers the record with the registry when one exists then releases the record and returns the release result
+0x01888480,155,misc_register_handle_record,misc,edge-verified,Sets the record vtable frees its handle and registers the record with the registry when one exists using a scratch handle
 0x01888520,15,misc_test_and_set_flag,misc,edge-verified,Reports whether the record flag byte at 0x0c was already set and sets it when it was clear
 0x01888650,30,misc_forward_tagged_request,misc,edge-verified,Forwards a tagged request payload with a table and a holder count to a library routine when the 32-bit tag equals 2; otherwise returns without a call
 0x01888b10,1,auto_empty_01888b10,auto,edge-verified,Generated from the empty template

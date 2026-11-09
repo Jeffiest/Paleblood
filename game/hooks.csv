@@ -5049,6 +5049,7 @@ address,replacement,system,returns
 0x018882a0,bb_misc_init_shared_record_once,misc,void
 0x018883b0,bb_misc_init_value_record,misc,void
 0x018883d0,bb_misc_release_handle_record,misc,i64
+0x01888480,bb_misc_register_handle_record,misc,void
 0x01888520,bb_misc_test_and_set_flag,misc,i8
 0x01888650,bb_misc_forward_tagged_request,misc,i64
 0x01888b10,bb_auto_empty_01888b10,auto,void
