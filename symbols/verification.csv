@@ -22948,6 +22948,7 @@ misc_bind_vtable_56b4890_alt2,edge,,14,14,0,0,183e11799c56024d,2026-11-09
 misc_bind_vtable_56b4890_alt3,edge,,14,14,0,0,318d15a68235467c,2026-11-09
 misc_build_object_block,edge,,5,5,0,0,a29a195f36f9bfda,2026-11-09
 misc_bump_allocate_block,edge,,11,11,0,0,51b5523399a9cd0b,2026-11-09
+misc_call_member_with_flagged_record,edge,,7,7,0,0,37a1098f00e8f653,2026-11-09
 misc_call_member_with_record,edge,,7,7,0,0,413c4b47c8db8320,2026-11-09
 misc_call_object_slot_38,edge,,4,4,0,0,6c7e909d98891c21,2026-11-09
 misc_call_object_slot_40,edge,,4,4,0,0,380340cc65ea56b3,2026-11-09
