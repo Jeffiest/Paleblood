@@ -2952,6 +2952,7 @@ address,replacement,system,returns
 0x0139b610,bb_misc_destroy_then_release,misc,i64
 0x0139b630,bb_misc_destroy_owned_block_pair,misc,i64
 0x0139bc10,bb_misc_child_call_with_flag,misc,i64
+0x0139bc30,bb_misc_call_child_with_record,misc,i64
 0x0139bc90,bb_misc_child_call_or_zero,misc,i64
 0x0139bcb0,bb_misc_forward_child_tail,misc,i64
 0x0139bcc0,bb_misc_select_pair_table_entry,misc,i64

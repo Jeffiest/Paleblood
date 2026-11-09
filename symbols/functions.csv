@@ -2953,6 +2953,7 @@ address,size,name,system,status,notes
 0x0139b610,28,misc_destroy_then_release,misc,edge-verified,Runs the object destruction routine then returns the result of the library release on the same object
 0x0139b630,263,misc_destroy_owned_block_pair,misc,edge-verified,Destroys an object owning a plain block and an owned node: releases both and returns the stack guard word
 0x0139bc10,27,misc_child_call_with_flag,misc,edge-verified,Calls the child of an owner with a flag byte through the library call and returns its result or zero
+0x0139bc30,82,misc_call_child_with_record,misc,edge-verified,Passes an owner child a second argument and a record of three words to a library call and returns the stack guard word
 0x0139bc90,24,misc_child_call_or_zero,misc,edge-verified,Returns the result of the library call on an owner child or zero when the owner has no child
 0x0139bcb0,15,misc_forward_child_tail,misc,edge-verified,Tail-calls the library function on an owner child and returns zero when there is no child
 0x0139bcc0,28,misc_select_pair_table_entry,misc,edge-verified,Returns one word of a two-word row in the pair table chosen by the inverted low bit of a flag byte
