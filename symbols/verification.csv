@@ -22945,6 +22945,7 @@ misc_bind_vtable_56b4890_alt,edge,,14,14,0,0,4b0780e0c9604eee,2026-11-09
 misc_bind_vtable_56b4890_alt2,edge,,14,14,0,0,183e11799c56024d,2026-11-09
 misc_bind_vtable_56b4890_alt3,edge,,14,14,0,0,318d15a68235467c,2026-11-09
 misc_bounded_range_object_free,edge,,6,6,0,0,e82238cfcc9961e6,2026-11-09
+misc_bounded_range_object_free_secondary,edge,,6,6,0,0,7f6ef649f264032c,2026-11-09
 misc_bounded_range_object_init,edge,,2,2,0,0,0cdb501f7c0fa1b2,2026-11-09
 misc_chain_contains,edge,,9,9,0,0,8b4669a2c9b3075e,2026-11-09
 misc_chain_leaf_flag,edge,,6,6,0,0,1e265fb6c6640d38,2026-11-09
