@@ -12882,6 +12882,7 @@ address,replacement,system,returns
 0x02243010,bb_misc_collect_motion_types_02243010,misc,void
 0x022430f0,bb_misc_clear_id_list_022430f0,misc,void
 0x022431e0,bb_engine_initialize_static_wide_string_022431e0,engine,void
+0x02243c20,bb_engine_initialize_static_wide_string_02243c20,engine,void
 0x022447b0,bb_auto_return_field_022447b0,auto,i64
 0x022447c0,bb_auto_return_field_022447c0,auto,i64
 0x02244810,bb_auto_return_zero_02244810,auto,i64
