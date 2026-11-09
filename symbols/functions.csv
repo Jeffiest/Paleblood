@@ -15068,6 +15068,7 @@ address,size,name,system,status,notes
 0x026f3a60,40,misc_forward_member_call_alt,misc,edge-verified,Forwards a call through a second member record to a function or a vtable slot of the adjusted object when the forward bit is set
 0x026f3a90,1,auto_empty_026f3a90,auto,edge-verified,Generated from the empty template
 0x026f3ab0,3,auto_return_zero_026f3ab0,auto,edge-verified,Generated from the return zero template
+0x026f3ac0,221,misc_record_probe_values,misc,edge-verified,Records three probe values from the holder pair into the owner words and the pair context then clamps two counts
 0x026f3ba0,1,auto_empty_026f3ba0,auto,edge-verified,Generated from the empty template
 0x026f3bb0,124,misc_destroy_chain_node,misc,edge-verified,Destroys a chain of tree nodes by destroying each left child first then freeing the buffer and the node
 0x026f3c30,124,misc_destroy_chain_node_3c30,misc,edge-verified,Destroys a chain of tree nodes by destroying each left child first then freeing the buffer and the node

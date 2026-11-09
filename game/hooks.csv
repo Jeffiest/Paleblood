@@ -15067,6 +15067,7 @@ address,replacement,system,returns
 0x026f3a60,bb_misc_forward_member_call_alt,misc,i64
 0x026f3a90,bb_auto_empty_026f3a90,auto,void
 0x026f3ab0,bb_auto_return_zero_026f3ab0,auto,i64
+0x026f3ac0,bb_misc_record_probe_values,misc,void
 0x026f3ba0,bb_auto_empty_026f3ba0,auto,void
 0x026f3bb0,bb_misc_destroy_chain_node,misc,void
 0x026f3c30,bb_misc_destroy_chain_node_3c30,misc,void
