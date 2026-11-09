@@ -11,11 +11,23 @@ struct PoolEntry;
 
 /**
  *
- * A pool entry: its reference count, kind word, link to the next entry and flags.
+ * The entry's virtual table: the slot at +0x0 destroys the entry and the slot at +0x18 says whether it is kept.
+ *
+ */
+struct PoolEntryVtable {
+    void (*destroy)(PoolEntry *entry);      /**< Runs before an entry that is not kept is freed. */
+    uint8_t unknown_0x0008[0x10];
+    bool (*is_retained)(PoolEntry *entry);  /**< True when the entry stays in the pool. */
+};
+static_assert(offsetof(PoolEntryVtable, is_retained) == 0x18);
+
+/**
+ *
+ * A pool entry: its virtual table, reference count, kind word, link to the next entry and flags.
  *
  */
 struct PoolEntry {
-    uint8_t unknown_0x00[0x8];
+    const PoolEntryVtable *vtable; /**< Virtual table of the entry. */
     uint32_t references_0x08;  /**< Zero while the entry is idle. */
     uint16_t kind_0x0c;        /**< The low 15 bits hold the kind. */
     uint8_t unknown_0x0e[0x2];

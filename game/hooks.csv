@@ -8407,6 +8407,7 @@ address,replacement,system,returns
 0x01e50ad0,bb_misc_refresh_cached_indices,misc,void
 0x01e50c20,bb_misc_chain_leaf_flag,misc,i32
 0x01e50c70,bb_misc_select_idle_pool_entry,misc,i64
+0x01e52cc0,bb_misc_drain_pool_entries,misc,void
 0x01e53190,bb_auto_return_zero_01e53190,auto,i64
 0x01e531d0,bb_auto_return_field_01e531d0,auto,i64
 0x01e531e0,bb_auto_return_field_01e531e0,auto,i64

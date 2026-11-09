@@ -8408,6 +8408,7 @@ address,size,name,system,status,notes
 0x01e50ad0,332,misc_refresh_cached_indices,misc,edge-verified,Refreshes the cache first index from a masked-key lookup and a node list match then the second index from a second lookup and the provider tag lookup sign extended
 0x01e50c20,73,misc_chain_leaf_flag,misc,edge-verified,Returns the flag byte of the leaf of the holder owner chain or zero when the owner has no link or the link has no leaf
 0x01e50c70,74,misc_select_idle_pool_entry,misc,edge-verified,Selects the first idle entry of the pool list and clears its flag bit; a nonzero flag byte hands the pool sub-object to the other selection instead
+0x01e52cc0,137,misc_drain_pool_entries,misc,edge-verified,Drains the pool list: each entry the virtual test keeps goes back on the list with its idle bit set; the others are destroyed and freed through their allocator
 0x01e53190,3,auto_return_zero_01e53190,auto,edge-verified,Generated from the return zero template
 0x01e531d0,5,auto_return_field_01e531d0,auto,edge-verified,Generated from the return field template
 0x01e531e0,5,auto_return_field_01e531e0,auto,edge-verified,Generated from the return field template
