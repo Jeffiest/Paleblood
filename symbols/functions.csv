@@ -18439,6 +18439,7 @@ address,size,name,system,status,notes
 0x02b3a6c0,7,auto_return_field_02b3a6c0,auto,edge-verified,Generated from the return field template
 0x02b3a6d0,7,misc_set_u32_word_160,misc,edge-verified,Stores the low 32 bits of a value into the owner word at +0x160
 0x02b3abb0,7,auto_return_field_02b3abb0,auto,edge-verified,Generated from the return field template
+0x02b3abc0,90,misc_slot_matches_unset,misc,edge-verified,Reports whether a float or integer slot holds the unset number and whether its reference or child accepts it
 0x02b3aca0,3,auto_return_zero_02b3aca0,auto,edge-verified,Generated from the return zero template
 0x02b3b290,1,auto_empty_02b3b290,auto,edge-verified,Generated from the empty template
 0x02b3b2a0,1,auto_empty_02b3b2a0,auto,edge-verified,Generated from the empty template
