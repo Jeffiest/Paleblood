@@ -13,12 +13,14 @@ namespace misc {
  *
  */
 struct RecordMemberThunk {
-    uint8_t unknown_0x00[0x50];
+    uint8_t unknown_0x00[0x48];
+    const uint16_t *text_0x48;            /**< Text whose first unit decides whether its length is measured. */
     uintptr_t object_0x50;                /**< The object the member lives in, before the adjustment. */
     uint64_t target_0x58;                 /**< Function address, or the virtual slot offset plus the virtual bit. */
     uint64_t adjustment_0x60;             /**< Added to the object to give the object the target is called on. */
     uint32_t argument_0x68;               /**< The 32-bit argument passed to the target. */
 };
+static_assert(offsetof(RecordMemberThunk, text_0x48) == 0x48);
 static_assert(offsetof(RecordMemberThunk, object_0x50) == 0x50);
 static_assert(offsetof(RecordMemberThunk, target_0x58) == 0x58);
 static_assert(offsetof(RecordMemberThunk, adjustment_0x60) == 0x60);
