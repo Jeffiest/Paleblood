@@ -22973,6 +22973,7 @@ misc_copy_block_58b3300,edge,,7,7,0,0,0b4f1e1dcdda3b95,2026-11-09
 misc_copy_constant_to_058b3340,edge,,5,5,0,0,f68aa2684e2c9da8,2026-11-09
 misc_copy_constant_to_058b3380,edge,,5,5,0,0,42e623b70f340588,2026-11-09
 misc_copy_pair_00be9930,edge,,8,8,0,0,14565f665a62f2f7,2026-11-09
+misc_copy_pair_00be99e0,edge,,8,8,0,0,99d5fc8f075c504d,2026-11-09
 misc_count_subtree_leaves,edge,,10,10,0,0,76ae6fa4641c1b40,2026-11-09
 misc_create_checked,edge,,7,7,0,0,3d08f8a7d8cf56ae,2026-11-09
 misc_descriptor_type_address,edge,,1,1,0,0,43e00eb2669c1418,2026-11-09

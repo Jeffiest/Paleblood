@@ -1532,6 +1532,7 @@ address,replacement,system,returns
 0x00be9910,bb_auto_return_field_00be9910,auto,i32
 0x00be9920,bb_auto_return_field_00be9920,auto,i32
 0x00be9930,bb_misc_copy_pair_00be9930,misc,i32
+0x00be99e0,bb_misc_copy_pair_00be99e0,misc,i32
 0x00be9eb0,bb_auto_return_field_00be9eb0,auto,i32
 0x00be9ec0,bb_auto_return_field_00be9ec0,auto,i32
 0x00beaf60,bb_auto_return_zero_00beaf60,auto,i64
