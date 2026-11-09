@@ -12756,6 +12756,7 @@ address,replacement,system,returns
 0x0223e4a0,bb_auto_return_field_0223e4a0,auto,i32
 0x0223f740,bb_auto_empty_0223f740,auto,void
 0x02240db0,bb_misc_owned_list_init,misc,void
+0x02240de0,bb_misc_owned_list_delete,misc,i64
 0x02240e80,bb_misc_owned_list_destroy,misc,void
 0x022447b0,bb_auto_return_field_022447b0,auto,i64
 0x022447c0,bb_auto_return_field_022447c0,auto,i64
