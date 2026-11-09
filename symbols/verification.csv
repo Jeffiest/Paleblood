@@ -23032,6 +23032,7 @@ misc_push_value_to_vector,edge,,5,5,0,0,f5d4eb32773697fb,2026-11-09
 misc_quantized_span,edge,,23,23,0,0,84373e71f9548e5c,2026-11-09
 misc_query_each_table_item,edge,,8,8,0,0,31388ee2e4ae3036,2026-11-09
 misc_query_each_table_item_kind1,edge,,8,8,0,0,ae3bf906451f892b,2026-11-09
+misc_query_each_table_item_kind3_packed,edge,,11,11,0,0,ed5061e3d459720a,2026-11-09
 misc_query_each_table_item_kind7,edge,,8,8,0,0,9389258c9ce6aab9,2026-11-09
 misc_read_probe_flag,edge,,5,5,0,0,15634ecc6ad354d8,2026-11-09
 misc_read_source_word,edge,,5,5,0,0,c4b6dac915b6330a,2026-11-09
