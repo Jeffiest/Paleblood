@@ -1,6 +1,7 @@
 address,replacement,system,returns
 0x004034f0,bb_auto_return_constant_004034f0,auto,i8
 0x00405d10,bb_misc_scratch_value_48,misc,f64
+0x00405dc0,bb_misc_scratch_value_18,misc,f64
 0x00406600,bb_auto_empty_00406600,auto,void
 0x00409fd0,bb_auto_empty_00409fd0,auto,void
 0x0040c4c0,bb_auto_return_zero_0040c4c0,auto,i64
