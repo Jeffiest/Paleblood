@@ -22939,6 +22939,7 @@ misc_release_held_block,edge,,2,2,0,0,12b79404f2903b0d,2026-11-09
 misc_release_owner_nodes,edge,,10,10,0,0,c6fdd3a722ed1f6e,2026-11-09
 misc_release_owner_with_holder,edge,,14,14,0,0,68b66dbc58e955be,2026-11-09
 misc_release_pair,edge,,8,8,0,0,35af01fa31edbc2e,2026-11-09
+misc_release_resource_holder,edge,,13,13,0,0,83eb76bd2da027c8,2026-11-09
 misc_resolve_request_target,edge,,7,7,0,0,03a93f3371a9f3c2,2026-11-09
 misc_resolve_then_forward,edge,,9,9,0,0,3b101394d12e99ca,2026-11-09
 misc_scratch_value_18,edge,,15,15,0,0,78d59daf53f9216d,2026-11-09

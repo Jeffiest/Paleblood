@@ -31,4 +31,32 @@ struct PackedCountObject {
 };
 static_assert(offsetof(PackedCountObject, packed_count) == 0x8);
 
+/** The gate of the packed count: releases happen only while its high half is nonzero. */
+constexpr uint32_t packed_count_gate = 0x10000;
+
+/** The high half of the packed count, which a release leaves unchanged. */
+constexpr uint32_t packed_count_high_mask = 0xffff0000;
+
+/**
+ *
+ * Releases one count from the low half of the packed count, leaving the high half unchanged.
+ *
+ * The caller checks the gate first. The result is true when the low half reached zero, which is
+ * when the object must be destroyed.
+ *
+ */
+inline bool release_packed_count(PackedCountObject *counted)
+{
+    uint32_t observed = 0;
+    uint32_t expected = 0;
+    uint32_t desired = 0;
+    do {
+        observed = counted->packed_count;
+        desired = (observed & packed_count_high_mask) | static_cast<uint16_t>(observed - 1);
+        expected = observed;
+    } while (!__atomic_compare_exchange_n(&counted->packed_count, &expected, desired, false,
+                                          __ATOMIC_SEQ_CST, __ATOMIC_SEQ_CST));
+    return static_cast<uint16_t>(observed - 1) == 0;
+}
+
 }  // namespace misc

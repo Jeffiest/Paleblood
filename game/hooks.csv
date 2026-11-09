@@ -8389,6 +8389,7 @@ address,replacement,system,returns
 0x01e48b20,bb_auto_return_field_01e48b20,auto,i64
 0x01e48b70,bb_auto_return_zero_01e48b70,auto,i64
 0x01e48df0,bb_auto_return_constant_01e48df0,auto,i32
+0x01e49400,bb_misc_release_resource_holder,misc,void
 0x01e4d3b0,bb_auto_return_member_address_01e4d3b0,auto,i64
 0x01e4f110,bb_auto_empty_01e4f110,auto,void
 0x01e50040,bb_auto_empty_01e50040,auto,void

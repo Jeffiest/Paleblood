@@ -8390,6 +8390,7 @@ address,size,name,system,status,notes
 0x01e48b20,5,auto_return_field_01e48b20,auto,edge-verified,Generated from the return field template
 0x01e48b70,3,auto_return_zero_01e48b70,auto,edge-verified,Generated from the return zero template
 0x01e48df0,6,auto_return_constant_01e48df0,auto,edge-verified,Generated from the return constant template
+0x01e49400,207,misc_release_resource_holder,misc,edge-verified,Releases a holder counted object with one count and destroy at zero then its block then its two buffers each destroyed and freed; pointers cleared after release
 0x01e4d3b0,8,auto_return_member_address_01e4d3b0,auto,edge-verified,Generated from the return member address template
 0x01e4f110,1,auto_empty_01e4f110,auto,edge-verified,Generated from the empty template
 0x01e50040,1,auto_empty_01e50040,auto,edge-verified,Generated from the empty template
