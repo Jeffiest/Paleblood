@@ -12883,6 +12883,7 @@ address,replacement,system,returns
 0x022430f0,bb_misc_clear_id_list_022430f0,misc,void
 0x022431e0,bb_engine_initialize_static_wide_string_022431e0,engine,void
 0x02243c20,bb_engine_initialize_static_wide_string_02243c20,engine,void
+0x02243d30,bb_misc_setup_static_objects_02243d30,misc,void
 0x02243f10,bb_misc_construct_member_owner_02243f10,misc,void
 0x02243fc0,bb_misc_member_owner_delete_02243fc0,misc,i64
 0x02244000,bb_misc_member_owner_destroy_02244000,misc,i64

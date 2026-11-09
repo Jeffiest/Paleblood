@@ -12884,6 +12884,7 @@ address,size,name,system,status,notes
 0x022430f0,89,misc_clear_id_list_022430f0,misc,edge-verified,Hands each 32-bit id of a list to the physics world id handler then empties the list by setting its end to its first id
 0x022431e0,205,engine_initialize_static_wide_string_022431e0,engine,edge-verified,Duplicate of the guarded static wide string initializer at 0x0217ffb0 with identical code; forwards to that replacement
 0x02243c20,205,engine_initialize_static_wide_string_02243c20,engine,edge-verified,Duplicate of the guarded static wide string initializer at 0x0217ffb0 with identical code; forwards to that replacement
+0x02243d30,472,misc_setup_static_objects_02243d30,misc,edge-verified,Once-only setup of two static objects: the first is built in place unless its probe accepts it and the second is built around the target and published last
 0x02243f10,164,misc_construct_member_owner_02243f10,misc,edge-verified,Constructs an owner with a member at 0x68: builds its base part first then stores its vtable then builds the member from a record holding the flag heap and the capacity
 0x02243fc0,50,misc_member_owner_delete_02243fc0,misc,edge-verified,Deleting destructor of an owner with a member at 0x68: stores its vtable destroys the member and the base part then returns the library release result for the owner
 0x02244000,42,misc_member_owner_destroy_02244000,misc,edge-verified,Destructor of an owner with a member at 0x68: stores its vtable destroys the member then returns the result of destroying the base part
