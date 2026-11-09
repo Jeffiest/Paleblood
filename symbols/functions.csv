@@ -14916,6 +14916,17 @@ address,size,name,system,status,notes
 0x026dde00,1,auto_empty_026dde00,auto,edge-verified,Generated from the empty template
 0x026dde10,1,auto_empty_026dde10,auto,edge-verified,Generated from the empty template
 0x026e2e70,1,auto_empty_026e2e70,auto,edge-verified,Generated from the empty template
+0x026e3860,455,misc_release_owned_state,misc,edge-verified,Releases owned items packed reference held object and node list then resets counters and flags and returns the base reset result
+0x026e6f30,43,misc_forward_with_mode,misc,edge-verified,Passes two 32-bit arguments with the resource manager mode and all ones to the request routine and returns its result
+0x026e6f60,111,misc_reset_listed_members,misc,edge-verified,Resets the member object then every value in each group list of the owned state in list order
+0x026e6fe0,254,misc_update_owned_entries,misc,edge-verified,Updates entries from the group values with a running index then calls the follow-up with the item and the array
+0x026e70e0,92,misc_entry_for_key,misc,edge-verified,Looks up a copy of the key in the table and returns the entry address at the index the lookup gives
+0x026e79d0,207,misc_prepare_listed_values,misc,edge-verified,Calls the resource manager prepare routine for each listed value with the mode then clears value and element flags
+0x026e82e0,22,misc_disarm_callback,misc,edge-verified,Points the callback at its vtable and clears its armed bit
+0x026e8310,40,misc_invoke_callback,misc,edge-verified,Calls an armed callback target on its adjusted object with its argument directly or through a vtable slot
+0x026ebcf0,28,misc_reset_then_release,misc,edge-verified,Resets the object then passes it to the library routine and returns its result
+0x026ef4c0,38,misc_holder_search_first,misc,edge-verified,Searches the holder first table for a key and returns the result
+0x026ef680,38,misc_holder_search_second,misc,edge-verified,Searches the holder second table for a key and returns the result
 0x026efe20,1,auto_empty_026efe20,auto,edge-verified,Generated from the empty template
 0x026f2860,8,auto_return_field_026f2860,auto,edge-verified,Generated from the return field template
 0x026f2870,8,auto_return_field_026f2870,auto,edge-verified,Generated from the return field template
