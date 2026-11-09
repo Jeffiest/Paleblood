@@ -1505,6 +1505,7 @@ address,replacement,system,returns
 0x00be4440,bb_misc_held_member_object_release,misc,void
 0x00be44f0,bb_misc_record_link_address,misc,i64
 0x00be4500,bb_auto_return_constant_00be4500,auto,i32
+0x00be6dc0,bb_misc_dual_held_member_object_init,misc,void
 0x00be6f70,bb_misc_record_link_address_00be6f70,misc,i64
 0x00be7010,bb_misc_dispatch_by_kind,misc,i64
 0x00be9890,bb_auto_return_field_00be9890,auto,i64
