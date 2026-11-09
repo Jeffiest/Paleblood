@@ -8509,6 +8509,7 @@ address,size,name,system,status,notes
 0x01e54d80,214,misc_query_each_table_item_kind1,misc,edge-verified,Runs a kind 1 query for every entry of the global item table using the value of the request source and returns at once for a null source
 0x01e54e60,214,misc_query_each_table_item_kind3_packed,misc,edge-verified,Runs a kind 3 query for every entry of the global item table with a packed byte in the record built from the second and first byte arguments
 0x01e54f40,48,misc_enable_owner_target,misc,edge-verified,Sets the enable byte of the target that a node owner refers to when the node owner and target all exist
+0x01e55660,205,engine_initialize_static_wide_string_01e55660,engine,edge-verified,Guarded static wide string initializer that runs the same initializer as 0x0217ffb0 since its instructions match apart from branch targets
 0x01e55be0,5,auto_return_field_01e55be0,auto,edge-verified,Generated from the return field template
 0x01e55bf0,5,auto_return_field_01e55bf0,auto,edge-verified,Generated from the return field template
 0x01e55c40,3,auto_return_zero_01e55c40,auto,edge-verified,Generated from the return zero template
