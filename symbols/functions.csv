@@ -2953,6 +2953,7 @@ address,size,name,system,status,notes
 0x0139b610,28,misc_destroy_then_release,misc,edge-verified,Runs the object destruction routine then returns the result of the library release on the same object
 0x0139b630,263,misc_destroy_owned_block_pair,misc,edge-verified,Destroys an object owning a plain block and an owned node: releases both and returns the stack guard word
 0x0139bc10,27,misc_child_call_with_flag,misc,edge-verified,Calls the child of an owner with a flag byte through the library call and returns its result or zero
+0x0139bc90,24,misc_child_call_or_zero,misc,edge-verified,Returns the result of the library call on an owner child or zero when the owner has no child
 0x0139bce0,41,misc_bind_vtable_56b4840_0139bce0,misc,edge-verified,Publishes the address of the static vtable block at 0x056b4840 into a global pointer once and sets a qword flag
 0x0139bd10,41,misc_bind_vtable_56b4890_0139bd10,misc,edge-verified,Publishes the address of the static vtable block at 0x056b4890 into a global pointer once and sets a qword flag
 0x0139bd40,41,misc_bind_vtable_56b47f0_0139bd40,misc,edge-verified,Publishes the address of the static vtable block at 0x056b47f0 into a global pointer once and sets a qword flag
