@@ -22937,6 +22937,7 @@ misc_store_pair,edge,,9,0,9,0,d8cc4e7f9a84080a,2026-11-09
 misc_store_request,edge,,14,14,0,0,371c37c37b2f52f7,2026-11-09
 misc_submit_request,edge,,8,8,0,0,6b2878ba4d6b1578,2026-11-09
 misc_teardown_record,edge,,5,5,0,0,4344b708ae9c9edf,2026-11-09
+misc_teardown_record_entries,edge,,17,17,0,0,414367481204d094,2026-11-09
 misc_unpack_and_release,edge,,7,7,0,0,c3f850c037c90982,2026-11-09
 misc_value_unless_flagged,edge,,10,10,0,0,f8e45a1ee3d584de,2026-11-09
 physics_instance_construct_01c0c2b0,recorded,,119,119,0,0,ca3412adb293c909,2026-10-07
