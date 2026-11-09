@@ -431,4 +431,34 @@ static_assert(offsetof(Dispatch, route_0x10) == 0x10);
  */
 RT_ORIGINAL(0x0040f580, fn_0040f580, uint64_t(uint64_t first, uint64_t second));
 
+/** A node that keeps a tagged word at 0x48. */
+struct SubmitNode {
+    uint8_t unknown_0x0000[0x48];
+    uint64_t tagged_word_0x48; /**< Pointer-like word whose low bits are tag bits (see tag_bits_mask). */
+};
+static_assert(offsetof(SubmitNode, tagged_word_0x48) == 0x48);
+
+/** A request that keeps its node at 0x40. */
+struct SubmitRequest {
+    uint8_t unknown_0x0000[0x40];
+    const SubmitNode *node_0x40; /**< The node whose tagged word names the queue entry. */
+};
+static_assert(offsetof(SubmitRequest, node_0x40) == 0x40);
+
+/** An object with a queue embedded at 0x70, whose size is not known; only its address is passed on. */
+struct SubmitOwner {
+    uint8_t unknown_0x0000[0x70];
+    uint8_t queue_0x70[1]; /**< Address of the embedded queue. */
+};
+static_assert(offsetof(SubmitOwner, queue_0x70) == 0x70);
+
+/** Called with the queue and the untagged payload address (0x0045d5a0); its result is not read. */
+RT_ORIGINAL(0x0045d5a0, fn_0045d5a0, void(void *queue, uint64_t entry));
+
+/** Called with the queue (0x0040fa50); the submit tests only its low byte. */
+RT_ORIGINAL(0x0040fa50, fn_0040fa50, uint64_t(void *queue));
+
+/** Called with the queue as a tail call (0x0045dfc0); its result is the submit's result. */
+RT_ORIGINAL(0x0045dfc0, fn_0045dfc0, uint64_t(void *queue));
+
 }  // namespace misc

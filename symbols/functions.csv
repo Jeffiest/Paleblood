@@ -15,6 +15,7 @@ address,size,name,system,status,notes
 0x0040c4c0,3,auto_return_zero_0040c4c0,auto,edge-verified,Generated from the return zero template
 0x0040d150,18,misc_value_unless_flagged,misc,edge-verified,Returns zero when the flags byte has bit 0x80 otherwise the word at 0x20 of the holder source
 0x0040d170,9,misc_read_source_word,misc,edge-verified,Returns the word at offset 0x20 of the holder source with no check on the pointer
+0x0040d180,70,misc_submit_request,misc,edge-verified,Adds the request node entry to the owner queue then returns the flag word when its low byte is set or hands the queue on when it is clear
 0x0040d270,33,misc_dispatch_request,misc,edge-verified,Hands the two request words to the route handler handle slot or to the game when the route has no handler and returns the result
 0x00410100,5,auto_return_field_00410100,auto,edge-verified,Generated from the return field template
 0x00410290,1,auto_empty_00410290,auto,edge-verified,Generated from the empty template
