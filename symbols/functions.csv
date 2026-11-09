@@ -11,6 +11,7 @@ address,size,name,system,status,notes
 0x00409fd0,1,auto_empty_00409fd0,auto,edge-verified,Generated from the empty template
 0x0040be60,54,misc_lookup_record_payload,misc,edge-verified,Looks up record 0x15 and returns its tag-cleared word plus 12 then releases the record; zero when missing
 0x0040bf40,92,misc_init_record_block,misc,edge-verified,Initializes a record with the record vtable and kind then takes a zeroed 8-byte block from the scratch service and returns it
+0x0040bfa0,42,misc_teardown_record,misc,edge-verified,Tears down the record then gives it to the scratch service release slot and returns the slot result
 0x0040c4c0,3,auto_return_zero_0040c4c0,auto,edge-verified,Generated from the return zero template
 0x00410100,5,auto_return_field_00410100,auto,edge-verified,Generated from the return field template
 0x00410290,1,auto_empty_00410290,auto,edge-verified,Generated from the empty template

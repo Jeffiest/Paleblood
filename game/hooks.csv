@@ -11,6 +11,7 @@ address,replacement,system,returns
 0x00409fd0,bb_auto_empty_00409fd0,auto,void
 0x0040be60,bb_misc_lookup_record_payload,misc,i64
 0x0040bf40,bb_misc_init_record_block,misc,i64
+0x0040bfa0,bb_misc_teardown_record,misc,i64
 0x0040c4c0,bb_auto_return_zero_0040c4c0,auto,i64
 0x00410100,bb_auto_return_field_00410100,auto,i64
 0x00410290,bb_auto_empty_00410290,auto,void
