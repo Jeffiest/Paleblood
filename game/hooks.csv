@@ -5038,6 +5038,7 @@ address,replacement,system,returns
 0x01887cd0,bb_engine_initialize_static_wide_string_01887cd0,engine,void
 0x01887de0,bb_auto_empty_01887de0,auto,void
 0x01887eb0,bb_auto_empty_01887eb0,auto,void
+0x01887ed0,bb_misc_relay_member_call,misc,i64
 0x01887f20,bb_misc_release_after_empty_call,misc,i64
 0x01887f40,bb_misc_tail_call_member_target,misc,i64
 0x018881b0,bb_misc_set_vtable_after_call,misc,void
