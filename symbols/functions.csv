@@ -12757,6 +12757,7 @@ address,size,name,system,status,notes
 0x0223e4a0,4,auto_return_field_0223e4a0,auto,edge-verified,Generated from the return field template
 0x0223f740,1,auto_empty_0223f740,auto,edge-verified,Generated from the empty template
 0x02240db0,38,misc_owned_list_init,misc,edge-verified,Constructor of an owned list; sets the size tag and vtable; stores the argument; clears the list head and the word at 0x20
+0x02240e80,94,misc_owned_list_destroy,misc,edge-verified,Destructor of an owned list; sets the vtable; frees every node through its allocator; clears the word at 0x20 and the list head
 0x022447b0,5,auto_return_field_022447b0,auto,edge-verified,Generated from the return field template
 0x022447c0,5,auto_return_field_022447c0,auto,edge-verified,Generated from the return field template
 0x02244810,3,auto_return_zero_02244810,auto,edge-verified,Generated from the return zero template
