@@ -1454,6 +1454,7 @@ address,replacement,system,returns
 0x00b6d530,bb_auto_empty_00b6d530,auto,void
 0x00b6e2a0,bb_misc_item_set_apply,misc,void
 0x00b70250,bb_auto_return_constant_00b70250,auto,i32
+0x00b70260,bb_misc_entry_ref_accept,misc,i8
 0x00b703b0,bb_auto_empty_00b703b0,auto,void
 0x00b70920,bb_auto_return_zero_00b70920,auto,i64
 0x00b70930,bb_auto_return_zero_00b70930,auto,i64
