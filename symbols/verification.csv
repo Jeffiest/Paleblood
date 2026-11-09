@@ -23015,6 +23015,7 @@ misc_slot_pool_measure,edge,,17,17,0,0,8e439df8d4ab786a,2026-11-09
 misc_slot_pool_reassign,edge,,15,15,0,0,1419ecc1fda5c910,2026-11-09
 misc_slot_pool_take,edge,,19,19,0,0,dcc1aacd2c9a0f9d,2026-11-09
 misc_slot_pool_total,edge,,6,6,0,0,e46c25952fa7a639,2026-11-09
+misc_span_end,edge,,9,9,0,0,9d09d4146689b0a5,2026-11-09
 misc_store_pair,edge,,9,0,9,0,d8cc4e7f9a84080a,2026-11-09
 misc_store_request,edge,,14,14,0,0,371c37c37b2f52f7,2026-11-09
 misc_submit_request,edge,,8,8,0,0,6b2878ba4d6b1578,2026-11-09

@@ -18530,6 +18530,7 @@ address,replacement,system,returns
 0x02b3d6e0,bb_auto_empty_02b3d6e0,auto,void
 0x02b3d6f0,bb_auto_empty_02b3d6f0,auto,void
 0x02b3d720,bb_auto_return_field_02b3d720,auto,i64
+0x02b3d730,bb_misc_span_end,misc,i64
 0x02b3de50,bb_auto_return_field_02b3de50,auto,i32
 0x02b3dfc0,bb_auto_return_member_address_02b3dfc0,auto,i64
 0x02b3e130,bb_auto_empty_02b3e130,auto,void

@@ -18532,6 +18532,7 @@ address,size,name,system,status,notes
 0x02b3d6e0,1,auto_empty_02b3d6e0,auto,edge-verified,Generated from the empty template
 0x02b3d6f0,1,auto_empty_02b3d6f0,auto,edge-verified,Generated from the empty template
 0x02b3d720,5,auto_return_field_02b3d720,auto,edge-verified,Generated from the return field template
+0x02b3d730,8,misc_span_end,misc,edge-verified,Returns the first entry address plus the entry count of a run as a 64-bit address past its end
 0x02b3de50,4,auto_return_field_02b3de50,auto,edge-verified,Generated from the return field template
 0x02b3dfc0,5,auto_return_member_address_02b3dfc0,auto,edge-verified,Generated from the return member address template
 0x02b3e130,1,auto_empty_02b3e130,auto,edge-verified,Generated from the empty template
