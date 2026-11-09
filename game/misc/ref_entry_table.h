@@ -11,12 +11,12 @@ namespace misc {
  * The table of entries that an entry reference selects from.
  *
  */
-struct TableEntry;
+struct RefTableEntry;
 
-struct EntryTable {
+struct RefEntryTable {
     uint8_t unknown_0x00[0x20];
-    TableEntry **entries; /**< The entries, indexed by an entry reference's index. */
+    RefTableEntry **entries; /**< The entries, indexed by an entry reference's index. */
 };
-static_assert(offsetof(EntryTable, entries) == 0x20);
+static_assert(offsetof(RefEntryTable, entries) == 0x20);
 
 }  // namespace misc

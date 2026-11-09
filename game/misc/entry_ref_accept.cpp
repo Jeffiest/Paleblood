@@ -2,10 +2,10 @@
 #include <cstdint>
 
 #include "entry_ref.h"
-#include "entry_table.h"
+#include "ref_entry_table.h"
 #include "runtime/original.h"
 #include "table_child.h"
-#include "table_entry.h"
+#include "ref_table_entry.h"
 #include "table_info.h"
 #include "table_object.h"
 #include "table_owner.h"
@@ -40,14 +40,14 @@ bool objects_allowed(misc::TableObject *const *objects, int32_t count)
  * A negative child index is skipped. A reference with no child indices visits every child of the entry's
  * owner. The one-time flag is initialised on the first call that finds it clear.
  */
-extern "C" bool bb_misc_entry_ref_accept(misc::EntryRef *ref, misc::EntryTable *table)
+extern "C" bool bb_misc_entry_ref_accept(misc::EntryRef *ref, misc::RefEntryTable *table)
 {
     if (init_flag.get() == 0) {
         init_once(init_flag.address());
         if (init_flag.get() == 0) return false;
     }
 
-    misc::TableEntry *entry = table->entries[ref->entry_index];
+    misc::RefTableEntry *entry = table->entries[ref->entry_index];
     if (entry->size > max_entry_size) return false;
     if (!objects_allowed(entry->first_list, entry->first_count)) return false;
     if (!objects_allowed(entry->second_list, entry->second_count)) return false;
