@@ -174,6 +174,98 @@ RT_ORIGINAL(0x004de9c0, fn_004de9c0, Lookup *(uint64_t, uint32_t));
 /** The key that the record lookup is requested with. */
 constexpr uint32_t record_key = 2;
 
+/**
+ *
+ * The source a tracked object reads its value from.
+ *
+ */
+struct Source {
+    uint8_t unknown_0x0000[0x10];
+    void *value; /**< The value the pending update passes on. */
+};
+static_assert(offsetof(Source, value) == 0x10);
+
+/**
+ *
+ * The target a tracked object dispatches once; its flag selects the first dispatch.
+ *
+ */
+struct Target {
+    uint8_t unknown_0x0000[0x30];
+    uint8_t flag; /**< Nonzero selects the first dispatch. */
+};
+static_assert(offsetof(Target, flag) == 0x30);
+
+/**
+ *
+ * A tracked object: a source, a target, and a flag byte whose top bit marks a pending update.
+ *
+ */
+struct Tracked {
+    uint8_t unknown_0x0000[0x20];
+    Source *source;  /**< The source the pending update reads. */
+    uint8_t unknown_0x0028[0x38];
+    Target *target;  /**< The target, cleared once the update has dispatched it. */
+    uint8_t unknown_0x0068[0x03];
+    uint8_t flags;   /**< Bit 0x80 marks a pending update; the update clears it. */
+};
+static_assert(offsetof(Tracked, source) == 0x20);
+static_assert(offsetof(Tracked, target) == 0x60);
+static_assert(offsetof(Tracked, flags) == 0x6b);
+
+/** Top bit of Tracked::flags: a pending update. */
+constexpr uint8_t pending_flag = 0x80;
+
+/** Offset of the subobject inside the owner that the update also refreshes. */
+constexpr size_t owned_subobject_offset = 0xd8;
+
+/**
+ *
+ * A reference-counted object; it is destroyed when its count reaches zero.
+ *
+ */
+struct RefCounted {
+    uint8_t unknown_0x0000[0x08];
+    int64_t count; /**< The reference count. */
+};
+static_assert(offsetof(RefCounted, count) == 0x08);
+
+/**
+ *
+ * The three slots that the pending-update helper fills in, in order.
+ *
+ */
+struct Pending {
+    RefCounted *first; /**< A reference-counted object. */
+    void *second;      /**< An owned object, released after the third. */
+    void *third;       /**< An owned object whose subobject is refreshed first. */
+};
+static_assert(offsetof(Pending, third) == 0x10);
+
+RT_ORIGINAL(0x004de620, fn_004de620, void(RefCounted *));
+RT_ORIGINAL(0x004de720, fn_004de720, void(RefCounted *));
+RT_ORIGINAL(0x004de6a0, fn_004de6a0, void(RefCounted *, Target *));
+RT_ORIGINAL(0x004deb80, fn_004deb80, void(RefCounted *, uint64_t));
+RT_ORIGINAL(0x0042b850, fn_0042b850, void(Pending *, void *value, Tracked *));
+RT_ORIGINAL(0x004f3e80, fn_004f3e80, int64_t(void *subobject, Tracked *));
+RT_ORIGINAL(0x004f4410, fn_004f4410, void(void *subobject, void *owner, int64_t));
+RT_ORIGINAL(0x0045a510, fn_0045a510, void(void *));
+RT_ORIGINAL(0x00482790, fn_00482790, void(RefCounted *));
+
+struct Dispatcher;
+
+struct DispatcherVtable {
+    uint8_t unknown_0x0000[0x68];
+    void (*slot_0x68)(Dispatcher *self, Target *target);
+};
+static_assert(offsetof(DispatcherVtable, slot_0x68) == 0x68);
+
+struct Dispatcher {
+    const DispatcherVtable *vtable;
+};
+
+RT_GLOBAL(0x057e7320, pending_dispatcher, Dispatcher *);
+
 /** Constant added to the span's width before it is rounded down. */
 RT_GLOBAL(0x04b3b7a8, span_bias, const double);
 
