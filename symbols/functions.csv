@@ -2964,6 +2964,7 @@ address,size,name,system,status,notes
 0x0139b0e0,57,misc_take_slot_item,misc,edge-verified,Takes the last item of a slot list if it has room marks its flag byte and returns the item or -1
 0x0139b120,62,misc_release_slot_item,misc,edge-verified,Clears the flag of an item below the next slot limit and appends it back to the end of the slot list
 0x0139b160,279,misc_attach_two_objects,misc,edge-verified,Looks up an object from a source makes two child objects and registers the holder fields with it or does nothing for a null source
+0x0139b280,396,misc_write_indexed_field_pairs,misc,edge-verified,Writes two field pairs of a record into an owner entry named by an index after an allocator flag check
 0x0139b410,41,misc_bind_vtable_56b4840_alt2,misc,edge-verified,Publishes the address of the static vtable block at 0x056b4840 into a global pointer once and sets a qword flag
 0x0139b440,41,misc_bind_vtable_56b4890_alt2,misc,edge-verified,Publishes the address of the static vtable block at 0x056b4890 into a global pointer once and sets a qword flag
 0x0139b470,41,misc_bind_vtable_56b47f0_alt2,misc,edge-verified,Publishes the address of the static vtable block at 0x056b47f0 into a global pointer once and sets a qword flag
@@ -2976,6 +2977,20 @@ address,size,name,system,status,notes
 0x0139b590,49,misc_copy_constant_to_058b3380,misc,edge-verified,Copies the 48-byte constant block from the read-only image into the writable global at 0x058b3380
 0x0139b5d0,51,misc_construct_serial_object,misc,edge-verified,Gives a new serial object its static vtable clears two words and takes the next value from the serial counter
 0x0139b610,28,misc_destroy_then_release,misc,edge-verified,Runs the object destruction routine then returns the result of the library release on the same object
+0x0139b630,263,misc_destroy_owned_block_pair,misc,edge-verified,Destroys an object owning a plain block and an owned node: releases both and returns the stack guard word
+0x0139bc10,27,misc_child_call_with_flag,misc,edge-verified,Calls the child of an owner with a flag byte through the library call and returns its result or zero
+0x0139bc30,82,misc_call_child_with_record,misc,edge-verified,Passes an owner child a second argument and a record of three words to a library call and returns the stack guard word
+0x0139bc90,24,misc_child_call_or_zero,misc,edge-verified,Returns the result of the library call on an owner child or zero when the owner has no child
+0x0139bcb0,15,misc_forward_child_tail,misc,edge-verified,Tail-calls the library function on an owner child and returns zero when there is no child
+0x0139bcc0,28,misc_select_pair_table_entry,misc,edge-verified,Returns one word of a two-word row in the pair table chosen by the inverted low bit of a flag byte
+0x0139bce0,41,misc_bind_vtable_56b4840_0139bce0,misc,edge-verified,Publishes the address of the static vtable block at 0x056b4840 into a global pointer once and sets a qword flag
+0x0139bd10,41,misc_bind_vtable_56b4890_0139bd10,misc,edge-verified,Publishes the address of the static vtable block at 0x056b4890 into a global pointer once and sets a qword flag
+0x0139bd40,41,misc_bind_vtable_56b47f0_0139bd40,misc,edge-verified,Publishes the address of the static vtable block at 0x056b47f0 into a global pointer once and sets a qword flag
+0x0139bd70,49,misc_copy_default_blocks,misc,edge-verified,Copies three 16-byte default blocks from the executable data into three globals
+0x0139bf20,103,misc_destroy_flagged_pair_then_release,misc,edge-verified,Destroys a flagged owned pair then tail-calls the library release on the object and returns its result
+0x0139bf90,95,misc_destroy_flagged_pair_tail,misc,edge-verified,Destroys a flagged owned pair then tail-calls the owned pair destructor and returns its result
+0x0139bff0,218,misc_call_receiver_with_name,misc,edge-verified,Calls a name formatter then hands the formatted name text to a receiver and returns the stack guard word
+0x0139c0d0,41,misc_bind_vtable_56b4840_0139c0d0,misc,edge-verified,Publishes the address of the static vtable block at 0x056b4840 into a global pointer once and sets a qword flag
 0x0139d9d0,3,auto_return_zero_0139d9d0,auto,edge-verified,Generated from the return zero template
 0x0139ea10,3,auto_return_zero_0139ea10,auto,edge-verified,Generated from the return zero template
 0x013a7610,6,auto_return_constant_013a7610,auto,edge-verified,Generated from the return constant template
