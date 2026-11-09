@@ -14929,6 +14929,7 @@ address,replacement,system,returns
 0x026ef840,bb_misc_holder_search_third,misc,i64
 0x026efa00,bb_misc_holder_search_fourth,misc,i64
 0x026efbc0,bb_misc_holder_search_fifth,misc,i64
+0x026efbf0,bb_misc_bind_selected_pair,misc,void
 0x026efd30,bb_misc_scope_attach_root,misc,void
 0x026efe20,bb_auto_empty_026efe20,auto,void
 0x026f2860,bb_auto_return_field_026f2860,auto,i64
