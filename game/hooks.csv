@@ -15060,6 +15060,7 @@ address,replacement,system,returns
 0x026f2860,bb_auto_return_field_026f2860,auto,i64
 0x026f2870,bb_auto_return_field_026f2870,auto,i64
 0x026f3990,bb_auto_empty_026f3990,auto,void
+0x026f39d0,bb_misc_clear_flagged_tag,misc,void
 0x026f3a90,bb_auto_empty_026f3a90,auto,void
 0x026f3ab0,bb_auto_return_zero_026f3ab0,auto,i64
 0x026f3ba0,bb_auto_empty_026f3ba0,auto,void
