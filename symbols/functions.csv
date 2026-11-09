@@ -2951,6 +2951,7 @@ address,size,name,system,status,notes
 0x0139b590,49,misc_copy_constant_to_058b3380,misc,edge-verified,Copies the 48-byte constant block from the read-only image into the writable global at 0x058b3380
 0x0139b5d0,51,misc_construct_serial_object,misc,edge-verified,Gives a new serial object its static vtable clears two words and takes the next value from the serial counter
 0x0139b610,28,misc_destroy_then_release,misc,edge-verified,Runs the object destruction routine then returns the result of the library release on the same object
+0x0139b630,263,misc_destroy_owned_block_pair,misc,edge-verified,Destroys an object owning a plain block and an owned node: releases both and returns the stack guard word
 0x0139d9d0,3,auto_return_zero_0139d9d0,auto,edge-verified,Generated from the return zero template
 0x0139ea10,3,auto_return_zero_0139ea10,auto,edge-verified,Generated from the return zero template
 0x013a7610,6,auto_return_constant_013a7610,auto,edge-verified,Generated from the return constant template
