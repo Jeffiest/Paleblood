@@ -8394,6 +8394,7 @@ address,size,name,system,status,notes
 0x01e50410,6,auto_return_constant_01e50410,auto,edge-verified,Generated from the return constant template
 0x01e509f0,27,misc_init_keyed_handle,misc,edge-verified,Sets a keyed handle to its class vtable the target with no id and adds the active flag to its flags
 0x01e50a20,1,auto_empty_01e50a20,auto,edge-verified,Generated from the empty template
+0x01e50a30,5,misc_mark_keyed_handle_active,misc,edge-verified,Adds the active bit to a keyed handle flags and changes nothing else
 0x01e53190,3,auto_return_zero_01e53190,auto,edge-verified,Generated from the return zero template
 0x01e531d0,5,auto_return_field_01e531d0,auto,edge-verified,Generated from the return field template
 0x01e531e0,5,auto_return_field_01e531e0,auto,edge-verified,Generated from the return field template

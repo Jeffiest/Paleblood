@@ -8393,6 +8393,7 @@ address,replacement,system,returns
 0x01e50410,bb_auto_return_constant_01e50410,auto,i32
 0x01e509f0,bb_misc_init_keyed_handle,misc,void
 0x01e50a20,bb_auto_empty_01e50a20,auto,void
+0x01e50a30,bb_misc_mark_keyed_handle_active,misc,void
 0x01e53190,bb_auto_return_zero_01e53190,auto,i64
 0x01e531d0,bb_auto_return_field_01e531d0,auto,i64
 0x01e531e0,bb_auto_return_field_01e531e0,auto,i64
