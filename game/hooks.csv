@@ -1440,7 +1440,16 @@ address,replacement,system,returns
 0x00b68050,bb_auto_empty_00b68050,auto,void
 0x00b680a0,bb_auto_return_constant_00b680a0,auto,i32
 0x00b680c0,bb_auto_empty_00b680c0,auto,void
+0x00b685f0,bb_misc_slot_pool_measure,misc,void
+0x00b68770,bb_misc_slot_pool_total,misc,i32
+0x00b687b0,bb_misc_slot_pool_reassign,misc,i64
+0x00b68940,bb_misc_slot_pool_take,misc,i64
 0x00b697c0,bb_auto_empty_00b697c0,auto,void
+0x00b69990,bb_misc_ref_holder_hold,misc,void
+0x00b69ae0,bb_misc_ref_holder_release,misc,void
+0x00b69c60,bb_misc_ref_holder_attach,misc,void
+0x00b69d40,bb_misc_ref_holder_detach,misc,void
+0x00b69e20,bb_misc_ref_holder_add_child,misc,void
 0x00b6a020,bb_auto_return_field_00b6a020,auto,i8
 0x00b6afa0,bb_auto_return_constant_00b6afa0,auto,i32
 0x00b6bc00,bb_auto_empty_00b6bc00,auto,void
@@ -1449,7 +1458,9 @@ address,replacement,system,returns
 0x00b6c7d0,bb_auto_return_constant_00b6c7d0,auto,i32
 0x00b6cac0,bb_auto_return_constant_00b6cac0,auto,i32
 0x00b6d530,bb_auto_empty_00b6d530,auto,void
+0x00b6e2a0,bb_misc_item_set_apply,misc,void
 0x00b70250,bb_auto_return_constant_00b70250,auto,i32
+0x00b70260,bb_misc_entry_ref_accept,misc,i8
 0x00b703b0,bb_auto_empty_00b703b0,auto,void
 0x00b70920,bb_auto_return_zero_00b70920,auto,i64
 0x00b70930,bb_auto_return_zero_00b70930,auto,i64
@@ -1457,6 +1468,9 @@ address,replacement,system,returns
 0x00b70cf0,bb_auto_return_constant_00b70cf0,auto,i32
 0x00b71ef0,bb_auto_return_constant_00b71ef0,auto,i8
 0x00b71f00,bb_auto_return_constant_00b71f00,auto,i32
+0x00bdd420,bb_misc_linked_object_init,misc,void
+0x00bdd5a0,bb_misc_linked_object_release,misc,void
+0x00bdd630,bb_misc_tagged_link_address,misc,i64
 0x00bdd640,bb_auto_return_constant_00bdd640,auto,i32
 0x00bdec70,bb_auto_return_field_00bdec70,auto,i64
 0x00bdfd00,bb_auto_return_constant_00bdfd00,auto,i32

@@ -1441,7 +1441,16 @@ address,size,name,system,status,notes
 0x00b68050,1,auto_empty_00b68050,auto,edge-verified,Generated from the empty template
 0x00b680a0,6,auto_return_constant_00b680a0,auto,edge-verified,Generated from the return constant template
 0x00b680c0,1,auto_empty_00b680c0,auto,edge-verified,Generated from the empty template
+0x00b685f0,373,misc_slot_pool_measure,misc,edge-verified,Measures each entry of a slot pool from its descriptor children extras and records then sets the changed flag and total against the largest entry sum scaled
+0x00b68770,60,misc_slot_pool_total,misc,edge-verified,Returns the 32-bit total that the child computation of a slot pool stores for a scale and drops its changed flag
+0x00b687b0,387,misc_slot_pool_reassign,misc,edge-verified,Gives the slots of a pool a value spread across count steps when its child computation changed the pool and otherwise visits its children
+0x00b68940,313,misc_slot_pool_take,misc,edge-verified,Claims the first unclaimed slot of a lock-guarded pool and returns its value or zero when none is free
 0x00b697c0,1,auto_empty_00b697c0,auto,edge-verified,Generated from the empty template
+0x00b69990,329,misc_ref_holder_hold,misc,edge-verified,Holds a reference item in a holder by counting it appending it to the held list and notifying the children of its branch leaves and of the item itself
+0x00b69ae0,377,misc_ref_holder_release,misc,edge-verified,Releases a reference item from a holder by closing its held slot notifying the children of the item and of its branch leaves and dropping one reference
+0x00b69c60,213,misc_ref_holder_attach,misc,edge-verified,Attaches an item to a reference holder unless already attached then raises its count and tells each child
+0x00b69d40,209,misc_ref_holder_detach,misc,edge-verified,Detaches an item from a reference holder by moving the last attached item into its place then tells each child and lowers the count destroying the item at zero
+0x00b69e20,70,misc_ref_holder_add_child,misc,edge-verified,Adds a child to a reference holder child list growing the list when it is full
 0x00b6a020,7,auto_return_field_00b6a020,auto,edge-verified,Generated from the return field template
 0x00b6afa0,6,auto_return_constant_00b6afa0,auto,edge-verified,Generated from the return constant template
 0x00b6bc00,1,auto_empty_00b6bc00,auto,edge-verified,Generated from the empty template
@@ -1450,7 +1459,9 @@ address,size,name,system,status,notes
 0x00b6c7d0,6,auto_return_constant_00b6c7d0,auto,edge-verified,Generated from the return constant template
 0x00b6cac0,6,auto_return_constant_00b6cac0,auto,edge-verified,Generated from the return constant template
 0x00b6d530,1,auto_empty_00b6d530,auto,edge-verified,Generated from the empty template
+0x00b6e2a0,179,misc_item_set_apply,misc,edge-verified,Applies an enabled item set to each item in order with the set scale in four lanes calling the callback for the first or second item kind
 0x00b70250,6,auto_return_constant_00b70250,auto,edge-verified,Generated from the return constant template
+0x00b70260,318,misc_entry_ref_accept,misc,edge-verified,Checks an entry reference against its table entry: size and limited objects first then every named or all children must accept the entry
 0x00b703b0,1,auto_empty_00b703b0,auto,edge-verified,Generated from the empty template
 0x00b70920,3,auto_return_zero_00b70920,auto,edge-verified,Generated from the return zero template
 0x00b70930,3,auto_return_zero_00b70930,auto,edge-verified,Generated from the return zero template
@@ -1458,6 +1469,9 @@ address,size,name,system,status,notes
 0x00b70cf0,6,auto_return_constant_00b70cf0,auto,edge-verified,Generated from the return constant template
 0x00b71ef0,3,auto_return_constant_00b71ef0,auto,edge-verified,Generated from the return constant template
 0x00b71f00,6,auto_return_constant_00b71f00,auto,edge-verified,Generated from the return constant template
+0x00bdd420,192,misc_linked_object_init,misc,edge-verified,Builds a linked object around a reference item by taking its own count and zeroing its members and values
+0x00bdd5a0,129,misc_linked_object_release,misc,edge-verified,Releases a linked object by taking its vtable destroying two members dropping its held reference and destroying its last member
+0x00bdd630,9,misc_tagged_link_address,misc,edge-verified,Returns the address held in a tagged link with its flag bit cleared
 0x00bdd640,6,auto_return_constant_00bdd640,auto,edge-verified,Generated from the return constant template
 0x00bdec70,5,auto_return_field_00bdec70,auto,edge-verified,Generated from the return field template
 0x00bdfd00,6,auto_return_constant_00bdfd00,auto,edge-verified,Generated from the return constant template
