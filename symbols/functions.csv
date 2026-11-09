@@ -1,8 +1,23 @@
 address,size,name,system,status,notes
+0x00400e40,67,misc_resolve_request_target,misc,edge-verified,Returns the pending request if one is held else the payload of the handle target else the fallback record for a zero handle
+0x00400e90,130,misc_store_request,misc,edge-verified,Stores the request in the pending request and sets its flag or hands it to the game when none is held then returns the result of the tail call
 0x004034f0,3,auto_return_constant_004034f0,auto,edge-verified,Generated from the return constant template
+0x00405d10,163,misc_scratch_value_48,misc,edge-verified,Builds a default scratch block then runs the block builder on it and returns the double at offset 0x48 of its result
+0x00405dc0,163,misc_scratch_value_18,misc,edge-verified,Builds a default scratch block then runs the block builder on it and returns the double at offset 0x18 of its result
+0x00405e70,163,misc_scratch_value_50,misc,edge-verified,Builds a default scratch block then runs the block builder on it and returns the double at offset 0x50 of its result
+0x00405f20,163,misc_scratch_value_58,misc,edge-verified,Builds a default scratch block then runs the block builder on it and returns the double at offset 0x58 of its result
 0x00406600,1,auto_empty_00406600,auto,edge-verified,Generated from the empty template
+0x00409b30,41,misc_child_idle,misc,edge-verified,Asks the owned child for its query result and reports idle when it is zero or the owner counter is zero
 0x00409fd0,1,auto_empty_00409fd0,auto,edge-verified,Generated from the empty template
+0x0040be60,54,misc_lookup_record_payload,misc,edge-verified,Looks up record 0x15 and returns its tag-cleared word plus 12 then releases the record; zero when missing
+0x0040bf40,92,misc_init_record_block,misc,edge-verified,Initializes a record with the record vtable and kind then takes a zeroed 8-byte block from the scratch service and returns it
+0x0040bfa0,42,misc_teardown_record,misc,edge-verified,Tears down the record then gives it to the scratch service release slot and returns the slot result
 0x0040c4c0,3,auto_return_zero_0040c4c0,auto,edge-verified,Generated from the return zero template
+0x0040d150,18,misc_value_unless_flagged,misc,edge-verified,Returns zero when the flags byte has bit 0x80 otherwise the word at 0x20 of the holder source
+0x0040d170,9,misc_read_source_word,misc,edge-verified,Returns the word at offset 0x20 of the holder source with no check on the pointer
+0x0040d180,70,misc_submit_request,misc,edge-verified,Adds the request node entry to the owner queue then returns the flag word when its low byte is set or hands the queue on when it is clear
+0x0040d1d0,151,misc_dispatch_to_target,misc,edge-verified,Calls the held target handle slot with the value and a second word or reports the value to the context sink when there is no target
+0x0040d270,33,misc_dispatch_request,misc,edge-verified,Hands the two request words to the route handler handle slot or to the game when the route has no handler and returns the result
 0x00410100,5,auto_return_field_00410100,auto,edge-verified,Generated from the return field template
 0x00410290,1,auto_empty_00410290,auto,edge-verified,Generated from the empty template
 0x004102a0,1,auto_empty_004102a0,auto,edge-verified,Generated from the empty template
@@ -2565,7 +2580,7 @@ address,size,name,system,status,notes
 0x011c4840,38,audio_fmod_string_copy_counted,audio,edge-verified,FMOD bounded string copy uses low32 count; stops at NUL or count without padding; zero count accesses neither pointer
 0x011c4870,51,engine_string_append,engine,edge-verified,NUL-terminated string append returns original destination; includes prefixes beyond four bytes and finite aliases
 0x011c48b0,60,engine_string_append_counted,engine,edge-verified,Bounded string append uses low32 count; zero count touches neither pointer; appends NUL after count bytes when needed
-0x011c48f0,18,engine_ascii_to_lower,engine,edge-verified,"ASCII lowercase of the low input byte; sign-extend the result byte to 32 bits; the upper 32 bits of RAX are zero"
+0x011c48f0,18,engine_ascii_to_lower,engine,edge-verified,ASCII lowercase of the low input byte; sign-extend the result byte to 32 bits; the upper 32 bits of RAX are zero
 0x011c4910,44,engine_ascii_to_upper_in_place,engine,edge-verified,Convert ASCII a-z to A-Z in place through NUL; retain all other bytes and return original pointer; caller 0x01127ca0
 0x011c4940,44,engine_ascii_to_lower_in_place,engine,edge-verified,Convert ASCII A-Z to a-z in place through NUL; retain all other bytes and return original pointer; caller 0x01127ca0
 0x011c4970,29,engine_compare_signed_strings,engine,edge-verified,Compare zero-terminated strings by signed bytes and return their first differing byte subtraction
@@ -17934,7 +17949,7 @@ address,size,name,system,status,notes
 0x02a9bad0,1,auto_empty_02a9bad0,auto,edge-verified,Generated from the empty template
 0x02a9bf90,1,auto_empty_02a9bf90,auto,edge-verified,Generated from the empty template
 0x02a9c780,1,auto_empty_02a9c780,auto,edge-verified,Generated from the empty template
-0x02a9c790,84,input_pad_set_vibration,input,edge-verified,"Sets a pad output's large and small motor speeds through scePadSetVibration; false when vibration is disabled or the call fails."
+0x02a9c790,84,input_pad_set_vibration,input,edge-verified,Sets a pad output's large and small motor speeds through scePadSetVibration; false when vibration is disabled or the call fails.
 0x02a9c870,4,auto_return_field_02a9c870,auto,edge-verified,Generated from the return field template
 0x02a9ca00,5,auto_return_field_02a9ca00,auto,edge-verified,Generated from the return field template
 0x02a9ca10,5,auto_return_field_02a9ca10,auto,edge-verified,Generated from the return field template
