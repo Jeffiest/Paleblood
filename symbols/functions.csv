@@ -1,4 +1,5 @@
 address,size,name,system,status,notes
+0x004009f0,67,engine_handle_payload_alt,engine,edge-verified,Same lookup as engine_handle_payload with a second fallback global: cached payload when set otherwise the payload of the handle entry and a zero handle gives that global
 0x00400e40,67,engine_handle_payload,engine,edge-verified,Cached payload pointer when set; otherwise the payload of the entry named by the handle at +0x48 found through its page record and table slot; zero handle gives the address of a global
 0x004034f0,3,auto_return_constant_004034f0,auto,edge-verified,Generated from the return constant template
 0x00406600,1,auto_empty_00406600,auto,edge-verified,Generated from the empty template
