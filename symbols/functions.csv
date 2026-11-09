@@ -2955,6 +2955,7 @@ address,size,name,system,status,notes
 0x0139bc10,27,misc_child_call_with_flag,misc,edge-verified,Calls the child of an owner with a flag byte through the library call and returns its result or zero
 0x0139bc90,24,misc_child_call_or_zero,misc,edge-verified,Returns the result of the library call on an owner child or zero when the owner has no child
 0x0139bcb0,15,misc_forward_child_tail,misc,edge-verified,Tail-calls the library function on an owner child and returns zero when there is no child
+0x0139bcc0,28,misc_select_pair_table_entry,misc,edge-verified,Returns one word of a two-word row in the pair table chosen by the inverted low bit of a flag byte
 0x0139bce0,41,misc_bind_vtable_56b4840_0139bce0,misc,edge-verified,Publishes the address of the static vtable block at 0x056b4840 into a global pointer once and sets a qword flag
 0x0139bd10,41,misc_bind_vtable_56b4890_0139bd10,misc,edge-verified,Publishes the address of the static vtable block at 0x056b4890 into a global pointer once and sets a qword flag
 0x0139bd40,41,misc_bind_vtable_56b47f0_0139bd40,misc,edge-verified,Publishes the address of the static vtable block at 0x056b47f0 into a global pointer once and sets a qword flag

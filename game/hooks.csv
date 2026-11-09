@@ -2954,6 +2954,7 @@ address,replacement,system,returns
 0x0139bc10,bb_misc_child_call_with_flag,misc,i64
 0x0139bc90,bb_misc_child_call_or_zero,misc,i64
 0x0139bcb0,bb_misc_forward_child_tail,misc,i64
+0x0139bcc0,bb_misc_select_pair_table_entry,misc,i64
 0x0139bce0,bb_misc_bind_vtable_56b4840_0139bce0,misc,void
 0x0139bd10,bb_misc_bind_vtable_56b4890_0139bd10,misc,void
 0x0139bd40,bb_misc_bind_vtable_56b47f0_0139bd40,misc,void
