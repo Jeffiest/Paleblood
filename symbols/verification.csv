@@ -23035,6 +23035,7 @@ misc_quantized_span,edge,,23,23,0,0,84373e71f9548e5c,2026-11-09
 misc_read_probe_flag,edge,,5,5,0,0,15634ecc6ad354d8,2026-11-09
 misc_read_source_word,edge,,5,5,0,0,c4b6dac915b6330a,2026-11-09
 misc_record_link_address,edge,,7,7,0,0,1dca8e757c8cb165,2026-11-09
+misc_record_link_address_00be6f70,edge,,7,7,0,0,c46bb8dc2c032d2f,2026-11-09
 misc_ref_holder_add_child,edge,,6,6,0,0,394137bdb7c43a92,2026-11-09
 misc_ref_holder_attach,edge,,9,9,0,0,33afa17235b90ca2,2026-11-09
 misc_ref_holder_detach,edge,,9,9,0,0,079ca90ad72427c9,2026-11-09
