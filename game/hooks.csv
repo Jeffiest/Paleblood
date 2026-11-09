@@ -16,6 +16,7 @@ address,replacement,system,returns
 0x0040d150,bb_misc_value_unless_flagged,misc,i64
 0x0040d170,bb_misc_read_source_word,misc,i64
 0x0040d180,bb_misc_submit_request,misc,i64
+0x0040d1d0,bb_misc_dispatch_to_target,misc,i64
 0x0040d270,bb_misc_dispatch_request,misc,i64
 0x00410100,bb_auto_return_field_00410100,auto,i64
 0x00410290,bb_auto_empty_00410290,auto,void

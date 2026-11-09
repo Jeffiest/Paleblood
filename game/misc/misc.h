@@ -461,4 +461,58 @@ RT_ORIGINAL(0x0040fa50, fn_0040fa50, uint64_t(void *queue));
 /** Called with the queue as a tail call (0x0045dfc0); its result is the submit's result. */
 RT_ORIGINAL(0x0045dfc0, fn_0045dfc0, uint64_t(void *queue));
 
+/** Message that the dispatch reports when it has a context but no target (the game's string at 0x04b3b8d0). */
+RT_GLOBAL(0x04b3b8d0, dispatch_report_message, const char);
+
+/** Reports a message and a value to a sink (0x0278ad30); its result is not read. */
+RT_ORIGINAL(0x0278ad30, fn_0278ad30, void(void *sink, const char *message, uint64_t value));
+
+/** Called with the dispatch and the value, and returns a word that the dispatch passes on (0x00454320). */
+RT_ORIGINAL(0x00454320, fn_00454320, uint64_t(const void *dispatch, uint64_t value, uint64_t zero));
+
+/**
+ *
+ * The vtable of a DispatchTarget, of which only the handle slot at 0x20 is used.
+ *
+ */
+struct DispatchTargetVtable {
+    uint8_t unknown_0x0000[0x20];
+    uint64_t (*handle)(const void *target, uint64_t value, uint64_t second, uint32_t fourth, uint32_t fifth); /**< Slot at 0x20. */
+};
+static_assert(offsetof(DispatchTargetVtable, handle) == 0x20);
+
+/** An object whose first word is its vtable pointer. */
+struct DispatchTarget {
+    const DispatchTargetVtable *vtable; /**< Dispatch table for the target's methods. */
+};
+static_assert(offsetof(DispatchTarget, vtable) == 0x00);
+
+/** A holder that keeps its target at 0x10. */
+struct DispatchHolder {
+    uint8_t unknown_0x0000[0x10];
+    DispatchTarget *target_0x10; /**< The target, or null when none is held. */
+};
+static_assert(offsetof(DispatchHolder, target_0x10) == 0x10);
+
+/** Size of the address-only sink that a context keeps at 0x10. */
+constexpr uint64_t dispatch_sink_size = 0x8;
+
+/** A context with a sink at 0x10 and a word at 0x18. */
+struct DispatchContext {
+    uint8_t unknown_0x0000[0x10];
+    uint8_t report_sink[dispatch_sink_size]; /**< Address-only sink that the report is given. */
+    uint64_t value_0x18;                     /**< Zero asks the dispatch to call the helper. */
+};
+static_assert(offsetof(DispatchContext, report_sink) == 0x10);
+static_assert(offsetof(DispatchContext, value_0x18) == 0x18);
+
+/** A dispatcher with a holder at 0x10 and a context at 0x18. */
+struct TargetDispatch {
+    uint8_t unknown_0x0000[0x10];
+    DispatchHolder *holder_0x10;   /**< Holder of the target. */
+    DispatchContext *context_0x18; /**< Context whose word is read when the flag is clear. */
+};
+static_assert(offsetof(TargetDispatch, holder_0x10) == 0x10);
+static_assert(offsetof(TargetDispatch, context_0x18) == 0x18);
+
 }  // namespace misc
