@@ -2880,6 +2880,7 @@ address,replacement,system,returns
 0x01395950,bb_auto_empty_01395950,auto,void
 0x01397280,bb_auto_empty_01397280,auto,void
 0x013988d0,bb_misc_bind_vtable_56b4840,misc,void
+0x01398900,bb_misc_bind_vtable_56b4890,misc,void
 0x01399850,bb_auto_empty_01399850,auto,void
 0x01399860,bb_auto_return_constant_01399860,auto,i32
 0x0139a380,bb_auto_empty_0139a380,auto,void
