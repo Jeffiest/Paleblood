@@ -4989,6 +4989,7 @@ address,replacement,system,returns
 0x01886980,bb_engine_block_holder_release,engine,void
 0x01886a10,bb_engine_block_holder_assign_sized,engine,i8
 0x01886b00,bb_engine_block_holder_assign_copy,engine,i8
+0x01886bd0,bb_engine_block_holder_allocate_sized,engine,i64
 0x01887300,bb_misc_drain_object_queue,misc,void
 0x01887680,bb_misc_notify_unflagged_record,misc,i64
 0x01887de0,bb_auto_empty_01887de0,auto,void

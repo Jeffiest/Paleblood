@@ -22746,6 +22746,7 @@ character_frame_update_01cbdb20,edge,uncapped,39,39,0,0,b243fddb1ca6589a,2026-10
 engine_ascii_to_lower,edge,,291,291,0,0,576118df340da7d3,2026-11-05
 engine_ascii_to_lower_in_place,edge,,30,30,0,0,9e3258c3efe48d76,2026-11-03
 engine_ascii_to_upper_in_place,edge,,30,30,0,0,3eff33a1b86e2555,2026-11-03
+engine_block_holder_allocate_sized,edge,,9,9,0,0,fe46ef8f2c9fb445,2026-11-09
 engine_block_holder_assign_copy,edge,,9,9,0,0,da1b366c5a286b33,2026-11-09
 engine_block_holder_assign_sized,edge,,11,11,0,0,cbaa282c424a5140,2026-11-09
 engine_block_holder_destroy_tail,edge,,9,9,0,0,881a5fe034af2052,2026-11-09
