@@ -14914,6 +14914,7 @@ address,replacement,system,returns
 0x026e82e0,bb_misc_disarm_callback,misc,void
 0x026e8310,bb_misc_invoke_callback,misc,i64
 0x026ebcf0,bb_misc_reset_then_release,misc,i64
+0x026ef4c0,bb_misc_holder_search_first,misc,i64
 0x026efe20,bb_auto_empty_026efe20,auto,void
 0x026f2860,bb_auto_return_field_026f2860,auto,i64
 0x026f2870,bb_auto_return_field_026f2870,auto,i64
