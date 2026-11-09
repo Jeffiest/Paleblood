@@ -5097,6 +5097,7 @@ address,size,name,system,status,notes
 0x01888b80,28,misc_release_after_empty_call_01888b80,misc,edge-verified,Same body as misc_release_after_empty_call at 0x01887f20: calls the empty routine then tail calls the release routine with the object
 0x01888ba0,31,misc_forward_record_to_slot_90,misc,edge-verified,Passes the record value and the 32-bit mode behind its pointer with the object to its vtable slot at +0x90 and returns that result
 0x01888bd0,28,misc_call_then_release_01888bd0,misc,edge-verified,Calls the routine 0x01402180 with the object then tail calls the release routine 0x02fbe588 with the same object and returns its result
+0x01888c90,102,misc_call_member_with_record,misc,edge-verified,Calls the member thunk target with the adjusted object a kind-zero record on the stack holding two values and the thunk 32-bit argument; a zero target makes no call
 0x01888ee0,64,misc_free_flagged_payload_then_release,misc,edge-verified,Sets the release vtable then frees a flagged payload through the shared allocator slot at +0x70 and tail calls the library release with the object
 0x01888f20,65,misc_free_flagged_payload_and_clear,misc,edge-verified,Sets the release vtable then frees a flagged payload through the shared allocator slot at +0x70 and clears the payload pointer
 0x01888f70,91,misc_bump_allocate_block,misc,edge-verified,Stores the offset of the pending block from the cursor then allocates an aligned eight-byte block from the arena with two 16-bit tags and returns the aligned cursor

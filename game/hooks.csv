@@ -5096,6 +5096,7 @@ address,replacement,system,returns
 0x01888b80,bb_misc_release_after_empty_call_01888b80,misc,i64
 0x01888ba0,bb_misc_forward_record_to_slot_90,misc,i64
 0x01888bd0,bb_misc_call_then_release_01888bd0,misc,i64
+0x01888c90,bb_misc_call_member_with_record,misc,void
 0x01888ee0,bb_misc_free_flagged_payload_then_release,misc,i64
 0x01888f20,bb_misc_free_flagged_payload_and_clear,misc,void
 0x01888f70,bb_misc_bump_allocate_block,misc,i64
