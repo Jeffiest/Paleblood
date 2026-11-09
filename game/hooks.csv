@@ -14927,6 +14927,7 @@ address,replacement,system,returns
 0x026ef4c0,bb_misc_holder_search_first,misc,i64
 0x026ef680,bb_misc_holder_search_second,misc,i64
 0x026ef840,bb_misc_holder_search_third,misc,i64
+0x026efa00,bb_misc_holder_search_fourth,misc,i64
 0x026efe20,bb_auto_empty_026efe20,auto,void
 0x026f2860,bb_auto_return_field_026f2860,auto,i64
 0x026f2870,bb_auto_return_field_026f2870,auto,i64
