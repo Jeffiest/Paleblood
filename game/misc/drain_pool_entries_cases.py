@@ -18,9 +18,9 @@ ENTRY_SIZE = 0x30
 MASK64 = (1 << 64) - 1
 
 
-def u64(value):
-    """Eight bytes of a 64-bit value, little endian."""
-    return struct.pack('<Q', value & MASK64).hex()
+def u32(value):
+    """Four bytes of a 32-bit value, little endian."""
+    return struct.pack('<I', value & 0xffffffff).hex()
 
 
 def u16(value):
@@ -45,14 +45,14 @@ def case(cid, entries=()):
         vt = f'vt{i}'
         buffers[name] = {'size': ENTRY_SIZE, 'bytes': 'cc' * ENTRY_SIZE}
         buffers[vt] = {'size': 0x28, 'bytes': '00' * 0x28}
+        next_name = f'e{i + 1}' if i + 1 < len(entries) else None
         memory += [
             {'addr': f'buf:{name}', 'pointer': vt},
             {'addr': f'buf:{vt}', 'guest': DESTROY_SLOT},
             {'addr': f'buf:{vt}+24', 'guest': RETAINED_SLOT},
-            {'addr': f'buf:{name}+8', 'bytes': u64(0xfeed0000 + i)[:8]},
+            {'addr': f'buf:{name}+8', 'bytes': u32(0xfeed0000 + i)},
             {'addr': f'buf:{name}+12', 'bytes': u16(kind)},
-            {'addr': f'buf:{name}+16', 'pointer': f'e{i + 1}' if i + 1 < len(entries) else None}
-            if False else {'addr': f'buf:{name}+16', 'pointer': f'e{i + 1}'} if i + 1 < len(entries)
+            {'addr': f'buf:{name}+16', 'pointer': next_name} if next_name
             else {'addr': f'buf:{name}+16', 'bytes': '00' * 8},
         ]
         stubs.append({'address': RETAINED_SLOT, 'argc': 1, 'ret': hex(retained)})
