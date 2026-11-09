@@ -22909,6 +22909,7 @@ loading_file_handle_write,edge,,28,28,0,0,c136d1dfc7e4bcbf,2026-11-08
 loading_fios_directory_delete,edge,,20,20,0,0,5cad0c5d584713c7,2026-11-08
 loading_fios_open_default,edge,,18,18,0,0,d10a211bac268c7a,2026-11-08
 loading_fios_open_with_mode,edge,,37,37,0,0,566c29c843013a83,2026-11-08
+misc_alloc_block_with_value,edge,,5,5,0,0,914c3b0cf0e6e450,2026-11-09
 misc_append_indexed_node,edge,,8,8,0,0,624926113ffd4fc0,2026-11-09
 misc_attach_two_objects,edge,,6,6,0,0,013dec9a75a3c5ec,2026-11-09
 misc_base_init_02242980,edge,,3,3,0,0,610abb3077be2126,2026-11-09

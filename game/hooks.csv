@@ -18551,6 +18551,7 @@ address,replacement,system,returns
 0x02b3e280,bb_misc_destroy_node_slot_00_and_free,misc,void
 0x02b3e2c0,bb_misc_forward_object_slot_20,misc,i64
 0x02b3e2d0,bb_misc_forward_object_slot_30_result,misc,i64
+0x02b3e300,bb_misc_alloc_block_with_value,misc,i64
 0x02b3e5f0,bb_auto_empty_02b3e5f0,auto,void
 0x02b3e610,bb_auto_empty_02b3e610,auto,void
 0x02b3e820,bb_auto_return_field_02b3e820,auto,i64

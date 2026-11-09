@@ -18553,6 +18553,7 @@ address,size,name,system,status,notes
 0x02b3e280,58,misc_destroy_node_slot_00_and_free,misc,edge-verified,Releases what a node holds through its first vtable slot then frees the node through its allocator; a null node does nothing
 0x02b3e2c0,9,misc_forward_object_slot_20,misc,edge-verified,Forwards a reference object to the virtual routine in its slot at +0x20 and returns that result
 0x02b3e2d0,35,misc_forward_object_slot_30_result,misc,edge-verified,Asks an object for a second object through its slot at +0x30 and forwards to that object slot at +0x28 or returns all ones
+0x02b3e300,97,misc_alloc_block_with_value,misc,edge-verified,Asks the object for a value through its slot at +0x28 and if it is non-zero allocates and fills a 0x30 block
 0x02b3e5f0,1,auto_empty_02b3e5f0,auto,edge-verified,Generated from the empty template
 0x02b3e610,1,auto_empty_02b3e610,auto,edge-verified,Generated from the empty template
 0x02b3e820,5,auto_return_field_02b3e820,auto,edge-verified,Generated from the return field template
