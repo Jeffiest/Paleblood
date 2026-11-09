@@ -63,6 +63,7 @@ address,size,name,system,status,notes
 0x00414b70,28,misc_init_release_chain,misc,edge-verified,Initializes a release chain with an empty head and the given value stored in the last word
 0x00414b90,67,misc_release_chain_nodes,misc,edge-verified,Hands each node of a release chain back to the scratch service in chain order moving the head on after each release
 0x00414c90,60,misc_allocate_chain_node,misc,edge-verified,Allocates a release chain node from its allocator and links it at the head returning the payload address or null
+0x00414cd0,141,misc_allocate_aligned_chain_node,misc,edge-verified,Allocates a release chain node with an alignment padding the payload and returns the address past the aligned offset or null
 0x00418d80,8,auto_return_field_00418d80,auto,edge-verified,Generated from the return field template
 0x0041cac0,1,auto_empty_0041cac0,auto,edge-verified,Generated from the empty template
 0x0041d010,3,auto_return_constant_0041d010,auto,edge-verified,Generated from the return constant template

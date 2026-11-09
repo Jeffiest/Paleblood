@@ -27,8 +27,10 @@ struct ReleaseChainAllocator;
 struct ReleaseChainAllocatorVtable {
     uint8_t unknown_0x0000[0x50];
     void *(*allocate)(ReleaseChainAllocator *allocator, uint64_t size, uint64_t flags); /**< Slot at 0x50: returns a block of size bytes or null. */
+    void *(*allocate_aligned)(ReleaseChainAllocator *allocator, uint64_t size, uint64_t alignment, uint64_t flags); /**< Slot at 0x58: returns an aligned block or null. */
 };
 static_assert(offsetof(ReleaseChainAllocatorVtable, allocate) == 0x50);
+static_assert(offsetof(ReleaseChainAllocatorVtable, allocate_aligned) == 0x58);
 
 /**
  *
