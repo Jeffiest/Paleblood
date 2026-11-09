@@ -312,6 +312,105 @@ static_assert(offsetof(IndexedHolder, next_index) == 0x36c);
 static_assert(offsetof(IndexedHolder, count) == 0x378);
 static_assert(offsetof(IndexedHolder, first) == 0x390);
 
+/** Size of a pool node. */
+constexpr uint64_t pool_node_size = 0x20;
+
+struct RetainedObject;
+
+/**
+ *
+ * The virtual functions of an object a pool node holds: the first is called when a binding is
+ * taken, the second when a node lets its object go.
+ *
+ */
+struct RetainedVtable {
+    uint8_t unknown_0x0000[0x10];
+    void (*retain)(RetainedObject *self, uint64_t argument);  /**< Called with the binding's argument. */
+    void (*release)(RetainedObject *self, uint64_t argument); /**< Called with the node's argument. */
+};
+static_assert(offsetof(RetainedVtable, retain) == 0x10);
+static_assert(offsetof(RetainedVtable, release) == 0x18);
+
+struct RetainedObject {
+    const RetainedVtable *vtable;
+};
+
+/**
+ *
+ * An object with the argument its virtual functions receive.
+ *
+ */
+struct Binding {
+    RetainedObject *object;
+    uint64_t argument;
+};
+static_assert(offsetof(Binding, argument) == 0x08);
+
+/**
+ *
+ * A node of a pool: a binding, a tag, and the link to the next node.
+ *
+ */
+struct PoolNode {
+    RetainedObject *object; /**< The object the node holds. */
+    uint64_t argument;      /**< The argument the object's release receives. */
+    uint32_t tag;           /**< Copied from the caller's tagged value. */
+    uint8_t unknown_0x0014[0x04];
+    PoolNode *next;         /**< The node linked after this one. */
+};
+static_assert(offsetof(PoolNode, tag) == 0x10);
+static_assert(offsetof(PoolNode, next) == 0x18);
+static_assert(sizeof(PoolNode) == pool_node_size);
+
+/**
+ *
+ * A pool that hands out nodes from a cursor and keeps its nodes in a chain.
+ *
+ */
+struct NodePool {
+    uint8_t unknown_0x0000[0x10];
+    PoolNode *cursor;   /**< The next free node, while enough bytes remain. */
+    uint64_t remaining; /**< The bytes left after the cursor. */
+    uint8_t unknown_0x0020[0x110];
+    PoolNode *head;     /**< The first node of the chain. */
+    PoolNode *tail;     /**< The last node of the chain. */
+};
+static_assert(offsetof(NodePool, cursor) == 0x10);
+static_assert(offsetof(NodePool, remaining) == 0x18);
+static_assert(offsetof(NodePool, head) == 0x130);
+static_assert(offsetof(NodePool, tail) == 0x138);
+
+/**
+ *
+ * A caller's value that carries a tag.
+ *
+ */
+struct Tagged {
+    uint8_t unknown_0x0000[0x08];
+    uint32_t tag; /**< The tag copied into each node. */
+};
+static_assert(offsetof(Tagged, tag) == 0x08);
+
+/**
+ *
+ * The holder that owns a pool, counts the nodes it appends, and keeps the first one.
+ *
+ */
+struct PooledHolder {
+    uint8_t unknown_0x0000[0x38];
+    NodePool *pool;
+    uint8_t unknown_0x0040[0x33c];
+    uint32_t count;
+    uint8_t unknown_0x0380[0x18];
+    PoolNode *first;
+};
+static_assert(offsetof(PooledHolder, pool) == 0x38);
+static_assert(offsetof(PooledHolder, count) == 0x37c);
+static_assert(offsetof(PooledHolder, first) == 0x398);
+
+RT_ORIGINAL(0x00418060, fn_00418060, void(Tagged *tagged, NodePool *pool, const uint32_t *key));
+RT_ORIGINAL(0x00414be0, fn_00414be0, PoolNode *(PoolNode **cursor, uint32_t size));
+
 /** Constant added to the span's width before it is rounded down. */
 RT_GLOBAL(0x04b3b7a8, span_bias, const double);
 
