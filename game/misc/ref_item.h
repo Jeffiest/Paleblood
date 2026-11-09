@@ -29,11 +29,17 @@ constexpr uint32_t ref_counted_threshold = 0x10000;
  * A reference-counted item: a count in the low half of a word, and a flag in the high half.
  *
  */
+struct RefBranch;
 struct RefItem {
     const RefItemVtable *vtable; /**< The item's virtual functions. */
     uint32_t refcount_word;      /**< Low 16 bits: references. High 16 bits: the counted flag. */
+    uint8_t unknown_0x0c[0x14];
+    RefBranch **branches;        /**< Branches of the item, each with its leaves. */
+    int32_t branch_count;        /**< Number of branches. */
 };
 static_assert(offsetof(RefItem, refcount_word) == 0x8);
+static_assert(offsetof(RefItem, branches) == 0x20);
+static_assert(offsetof(RefItem, branch_count) == 0x28);
 
 /**
  *

@@ -16,10 +16,14 @@ struct RefItem;
  *
  */
 struct RefChildVtable {
-    uint8_t unknown_0x00[0x20];
-    void (*notify_add)(RefChild *child, RefItem *item);    /**< Slot 0x20: an item was attached. */
-    void (*notify_remove)(RefChild *child, RefItem *item); /**< Slot 0x28: an item was detached. */
+    uint8_t unknown_0x00[0x10];
+    void (*notify_0x10)(RefChild *child, RefItem *item);   /**< Slot 0x10: told about an item. */
+    void (*notify_0x18)(RefChild *child, RefItem *item);   /**< Slot 0x18: told about an item. */
+    void (*notify_add)(RefChild *child, void *added);      /**< Slot 0x20: an item or leaf was attached. */
+    void (*notify_remove)(RefChild *child, void *removed); /**< Slot 0x28: an item or leaf was detached. */
 };
+static_assert(offsetof(RefChildVtable, notify_0x10) == 0x10);
+static_assert(offsetof(RefChildVtable, notify_0x18) == 0x18);
 static_assert(offsetof(RefChildVtable, notify_add) == 0x20);
 static_assert(offsetof(RefChildVtable, notify_remove) == 0x28);
 
