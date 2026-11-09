@@ -8355,6 +8355,7 @@ address,replacement,system,returns
 0x01e44c60,bb_auto_return_zero_01e44c60,auto,i64
 0x01e44ee0,bb_auto_return_constant_01e44ee0,auto,i32
 0x01e45100,bb_auto_empty_01e45100,auto,void
+0x01e45240,bb_engine_initialize_static_wide_string_01e45240,engine,void
 0x01e457c0,bb_auto_return_field_01e457c0,auto,i64
 0x01e457d0,bb_auto_return_field_01e457d0,auto,i64
 0x01e45820,bb_auto_return_zero_01e45820,auto,i64

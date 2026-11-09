@@ -8356,6 +8356,7 @@ address,size,name,system,status,notes
 0x01e44c60,3,auto_return_zero_01e44c60,auto,edge-verified,Generated from the return zero template
 0x01e44ee0,6,auto_return_constant_01e44ee0,auto,edge-verified,Generated from the return constant template
 0x01e45100,1,auto_empty_01e45100,auto,edge-verified,Generated from the empty template
+0x01e45240,205,engine_initialize_static_wide_string_01e45240,engine,edge-verified,Duplicate of the guarded static wide string initializer at 0x0217ffb0 with identical code; forwards to that replacement
 0x01e457c0,5,auto_return_field_01e457c0,auto,edge-verified,Generated from the return field template
 0x01e457d0,5,auto_return_field_01e457d0,auto,edge-verified,Generated from the return field template
 0x01e45820,3,auto_return_zero_01e45820,auto,edge-verified,Generated from the return zero template
