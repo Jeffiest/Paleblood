@@ -12784,6 +12784,7 @@ address,size,name,system,status,notes
 0x02242a10,30,misc_member_call_02242a10,misc,edge-verified,Calls the member-function thunk target on the adjusted object directly or through its virtual slot and returns the target result
 0x02242a30,15,misc_base_init_02242a30,misc,edge-verified,Stores the base class vtable address point in a base object and nothing else
 0x02242a90,45,misc_pair_matches_02242a90,misc,edge-verified,Reports whether a two word pair of size 0x10 matches the owner two keys
+0x02242ac0,30,misc_member_call_02242ac0,misc,edge-verified,Calls the member-function thunk target on the adjusted object directly or through its virtual slot and returns the target result
 0x02242ae0,15,misc_base_init_02242ae0,misc,edge-verified,Stores the base class vtable address point in a base object and nothing else
 0x02242b40,45,misc_pair_matches_02242b40,misc,edge-verified,Reports whether a two word pair of size 0x10 matches the owner two keys
 0x02242b90,31,misc_base_init_02242b90,misc,edge-verified,Runs the setup step on the object then stores the other class vtable in it

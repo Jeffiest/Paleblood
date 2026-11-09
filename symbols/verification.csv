@@ -22943,6 +22943,7 @@ misc_lookup_record_payload,edge,,9,9,0,0,5dad04ae8902d9e9,2026-11-09
 misc_lookup_value_or_zero,edge,,9,9,0,0,b76ae46dc49a80c6,2026-11-09
 misc_mark_keyed_handle_active,edge,,5,5,0,0,9767443fdd5d87fc,2026-11-09
 misc_member_call_02242a10,edge,,9,9,0,0,80b23b0b5221eb2b,2026-11-09
+misc_member_call_02242ac0,edge,,9,9,0,0,53599044460601a9,2026-11-09
 misc_notify_unflagged_record,edge,,16,16,0,0,4939877d9dfa9721,2026-11-09
 misc_owned_list_delete,edge,,14,14,0,0,c7deca20fab5bf74,2026-11-09
 misc_owned_list_destroy,edge,,7,7,0,0,cd166f7ae2655669,2026-11-09
