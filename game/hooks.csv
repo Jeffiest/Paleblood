@@ -8518,6 +8518,7 @@ address,replacement,system,returns
 0x01e57940,bb_misc_child_ready_after_checks,misc,i8
 0x01e579f0,bb_misc_apply_child_unless_flagged,misc,i8
 0x01e57a20,bb_misc_dispatch_stages_0_to_8,misc,i64
+0x01e583f0,bb_misc_registry_latch_answer,misc,i8
 0x01e58830,bb_auto_return_field_01e58830,auto,i32
 0x01e58840,bb_auto_return_field_01e58840,auto,i32
 0x01e58850,bb_auto_empty_01e58850,auto,void

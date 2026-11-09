@@ -8519,6 +8519,7 @@ address,size,name,system,status,notes
 0x01e57940,172,misc_child_ready_after_checks,misc,edge-verified,Answers whether the owner child is ready after the registry and latch globals are checked and reports a missing registry by name
 0x01e579f0,34,misc_apply_child_unless_flagged,misc,edge-verified,Answers true when the owner skip flag is set otherwise returns the child answer to the low byte of the value
 0x01e57a20,172,misc_dispatch_stages_0_to_8,misc,edge-verified,Runs the stage callee for stages 0 to 7 then returns the stage 8 result and returns 0 for a null target
+0x01e583f0,76,misc_registry_latch_answer,misc,edge-verified,Answers true when the owner answer flag is set otherwise whether the latch byte is set after a missing registry is reported by name
 0x01e58830,7,auto_return_field_01e58830,auto,edge-verified,Generated from the return field template
 0x01e58840,7,auto_return_field_01e58840,auto,edge-verified,Generated from the return field template
 0x01e58850,1,auto_empty_01e58850,auto,edge-verified,Generated from the empty template
