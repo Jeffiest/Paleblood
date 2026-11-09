@@ -294,4 +294,66 @@ RT_ORIGINAL(0x00400ab0, fn_00400ab0, uint64_t(HandleOwner *));
  */
 RT_GLOBAL(0x05ac5540, fallback_record, uint8_t);
 
+/** A service that hands out blocks and takes records back, of which only two vtable slots are used. */
+struct Service;
+
+/**
+ *
+ * The vtable of a Service, of which only the allocate and release slots are used.
+ *
+ */
+struct ServiceVtable {
+    uint8_t unknown_0x0000[0x50];
+    void *(*allocate)(Service *service, uint32_t size, uint32_t flags); /**< Slot at 0x50: returns a block of size bytes. */
+    uint8_t unknown_0x0058[0x10];
+    uint64_t (*release)(Service *service, void *record); /**< Slot at 0x68: takes a record back and returns its result. */
+};
+static_assert(offsetof(ServiceVtable, allocate) == 0x50);
+static_assert(offsetof(ServiceVtable, release) == 0x68);
+
+/**
+ *
+ * The first word of a Service is its vtable pointer.
+ *
+ */
+struct Service {
+    const ServiceVtable *vtable; /**< Dispatch table for the service's methods. */
+};
+static_assert(offsetof(Service, vtable) == 0x00);
+
+/** The scratch service that the records allocate from and release to (the game's global at 0x057e7320). */
+RT_GLOBAL(0x057e7320, scratch_service, Service *);
+
+/** The game's record vtable, which an initialized record points at. */
+RT_GLOBAL(0x0553bc50, record_vtable, const uint8_t);
+
+/** Kind value that an initialized record carries. */
+constexpr int32_t record_kind = 0x17;
+
+/** Size of the block that an initialized record takes from the scratch service. */
+constexpr uint32_t record_block_size = 8;
+
+/**
+ *
+ * A record: its vtable, a count and kind word, and the block it takes from the scratch service.
+ *
+ */
+struct RecordObject {
+    const void *vtable;  /**< The record vtable. */
+    int32_t value_0x08;  /**< Set to 1 when the record is initialized. */
+    int32_t kind_0x0c;   /**< Set to record_kind when the record is initialized. */
+    void *block_0x10;    /**< Block taken from the scratch service. */
+};
+static_assert(offsetof(RecordObject, vtable) == 0x00);
+static_assert(offsetof(RecordObject, value_0x08) == 0x08);
+static_assert(offsetof(RecordObject, kind_0x0c) == 0x0c);
+static_assert(offsetof(RecordObject, block_0x10) == 0x10);
+
+/**
+ *
+ * Tears down a record's owned entries (0x0040bfd0), which the record teardown calls first.
+ *
+ */
+RT_ORIGINAL(0x0040bfd0, fn_0040bfd0, void(RecordObject *record));
+
 }  // namespace misc
