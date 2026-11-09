@@ -14,7 +14,7 @@
 extern "C" bool bb_misc_has_marked_record(int32_t key)
 {
     misc::RecordRegistry *registry = engine::require(misc::record_registry, misc::record_registry_name.address());
-    misc::RecordTable *table = registry->table;
+    misc::KeyedRecordTable *table = registry->table;
     if (table->count_0x38 == 0) return false;
 
     misc::ObjectQueueNode *const sentinel = table->sentinel;

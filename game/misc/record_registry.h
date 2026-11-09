@@ -5,7 +5,7 @@
 #include <cstddef>
 #include <cstdint>
 
-#include "record_table.h"
+#include "keyed_record_table.h"
 #include "runtime/original.h"
 
 namespace misc {
@@ -17,7 +17,7 @@ namespace misc {
  */
 struct RecordRegistry {
     uint8_t unknown_0x0000[0xc80];
-    RecordTable *table; /**< The table every keyed record is kept in. */
+    KeyedRecordTable *table; /**< The table every keyed record is kept in. */
 };
 static_assert(offsetof(RecordRegistry, table) == 0xc80);
 
