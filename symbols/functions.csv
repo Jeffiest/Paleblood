@@ -15071,6 +15071,7 @@ address,size,name,system,status,notes
 0x026f3ba0,1,auto_empty_026f3ba0,auto,edge-verified,Generated from the empty template
 0x026f3bb0,124,misc_destroy_chain_node,misc,edge-verified,Destroys a chain of tree nodes by destroying each left child first then freeing the buffer and the node
 0x026f3c30,124,misc_destroy_chain_node_3c30,misc,edge-verified,Destroys a chain of tree nodes by destroying each left child first then freeing the buffer and the node
+0x026f3cb0,124,misc_destroy_chain_node_3cb0,misc,edge-verified,Destroys a chain of tree nodes by destroying each left child first then freeing the buffer and the node
 0x026f7810,3,auto_return_zero_026f7810,auto,edge-verified,Generated from the return zero template
 0x026f7840,4,auto_return_field_026f7840,auto,edge-verified,Generated from the return field template
 0x026f7850,5,auto_return_member_address_026f7850,auto,edge-verified,Generated from the return member address template
