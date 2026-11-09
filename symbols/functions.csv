@@ -5076,8 +5076,21 @@ address,size,name,system,status,notes
 0x018878d0,138,misc_has_marked_record,misc,edge-verified,Reports whether a marked record with the given key is in the record ring of the registry table; an empty table or a null record never matches
 0x01887cd0,205,engine_initialize_static_wide_string_01887cd0,engine,edge-verified,Same guarded static empty wide string as engine_initialize_static_wide_string_0217ffb0; byte-only entry test; captured allocator; destructor registration before full guard publication
 0x01887de0,1,auto_empty_01887de0,auto,edge-verified,Generated from the empty template
+0x01887e00,165,misc_call_record_member_target,misc,edge-verified,Builds a stack record from a source pair and passes it with the adjusted object to a member thunk target then destroys it; a null source zero word or null object returns without a call
 0x01887eb0,1,auto_empty_01887eb0,auto,edge-verified,Generated from the empty template
+0x01887ed0,57,misc_relay_member_call,misc,edge-verified,Tail calls the target of a member thunk on its adjusted object with the owner payload forwarded and a 32-bit argument; a null owner payload or object returns without a call
+0x01887f20,28,misc_release_after_empty_call,misc,edge-verified,Calls the empty routine 0x01401600 then tail calls the release routine 0x02fbe588 with the same object and returns its result
+0x01887f40,39,misc_tail_call_member_target,misc,edge-verified,Tail calls the target of a member thunk on its adjusted object with a 32-bit argument and returns its result; a zero target returns without a call
+0x01887f70,63,misc_member_call_or_fallback,misc,edge-verified,Tail calls the target of a member thunk on its adjusted object or with no target calls the fallback object vtable slot 0x80 with a fixed tag and a 64-bit argument
+0x018881b0,31,misc_set_vtable_after_call,misc,edge-verified,Calls the routine 0x01884e90 with the object then stores the static vtable block address as the first word of the object and returns
+0x018881d0,28,misc_call_then_release,misc,edge-verified,Calls the routine 0x01885070 with the object then tail calls the release routine 0x02fbe588 with the same object and returns its result
 0x01888200,1,auto_empty_01888200,auto,edge-verified,Generated from the empty template
+0x018882a0,205,misc_init_shared_record_once,misc,edge-verified,Creates the shared object on first use checks its flag query bit reports a missing bit as fatal and registers the teardown record once
+0x018883b0,26,misc_init_value_record,misc,edge-verified,Sets the record vtable stores the 32-bit value clears the flag byte at 0x0c and clears the trailing word at 0x10
+0x018883d0,168,misc_release_handle_record,misc,edge-verified,Sets the record vtable frees its handle registers the record with the registry when one exists then releases the record and returns the release result
+0x01888480,155,misc_register_handle_record,misc,edge-verified,Sets the record vtable frees its handle and registers the record with the registry when one exists using a scratch handle
+0x01888520,15,misc_test_and_set_flag,misc,edge-verified,Reports whether the record flag byte at 0x0c was already set and sets it when it was clear
+0x01888650,30,misc_forward_tagged_request,misc,edge-verified,Forwards a tagged request payload with a table and a holder count to a library routine when the 32-bit tag equals 2; otherwise returns without a call
 0x01888b10,1,auto_empty_01888b10,auto,edge-verified,Generated from the empty template
 0x01889310,6,auto_return_constant_01889310,auto,edge-verified,Generated from the return constant template
 0x0188b7c0,6,auto_return_constant_0188b7c0,auto,edge-verified,Generated from the return constant template
