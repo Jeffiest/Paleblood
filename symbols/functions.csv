@@ -5,6 +5,7 @@ address,size,name,system,status,notes
 0x00405e70,163,misc_scratch_value_50,misc,edge-verified,Builds a default scratch block then runs the block builder on it and returns the double at offset 0x50 of its result
 0x00405f20,163,misc_scratch_value_58,misc,edge-verified,Builds a default scratch block then runs the block builder on it and returns the double at offset 0x58 of its result
 0x00406600,1,auto_empty_00406600,auto,edge-verified,Generated from the empty template
+0x00409b30,41,misc_child_idle,misc,edge-verified,Asks the owned child for its query result and reports idle when it is zero or the owner counter is zero
 0x00409fd0,1,auto_empty_00409fd0,auto,edge-verified,Generated from the empty template
 0x0040c4c0,3,auto_return_zero_0040c4c0,auto,edge-verified,Generated from the return zero template
 0x00410100,5,auto_return_field_00410100,auto,edge-verified,Generated from the return field template

@@ -76,4 +76,46 @@ inline ScratchBlock default_scratch_block()
  */
 RT_ORIGINAL(0x00403570, build_scratch_block, ScratchBlock *(ScratchSource *source, ScratchBlock *block));
 
+/**
+ *
+ * An object owned by a ChildOwner, whose first word is its vtable.
+ *
+ */
+struct ChildObject;
+
+/**
+ *
+ * The vtable of a ChildObject, of which only the query slot is used.
+ *
+ */
+struct ChildVtable {
+    uint8_t unknown_0x00[0x20];
+    int32_t (*query)(ChildObject *child); /**< Slot at 0x20. Zero reports that the child is finished. */
+};
+static_assert(offsetof(ChildVtable, query) == 0x20);
+
+/**
+ *
+ * The first word of a ChildObject is its vtable pointer.
+ *
+ */
+struct ChildObject {
+    const ChildVtable *vtable; /**< Dispatch table for the child's methods. */
+};
+static_assert(offsetof(ChildObject, vtable) == 0x00);
+
+/**
+ *
+ * An object that owns a child and a counter that the game sets elsewhere.
+ *
+ */
+struct ChildOwner {
+    uint8_t unknown_0x00[0x38];
+    ChildObject *child;  /**< The owned child, always present. */
+    uint8_t unknown_0x40[0x38];
+    int32_t counter_78;  /**< Compared with zero once the child has reported work. */
+};
+static_assert(offsetof(ChildOwner, child) == 0x38);
+static_assert(offsetof(ChildOwner, counter_78) == 0x78);
+
 }  // namespace misc
