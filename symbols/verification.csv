@@ -22759,6 +22759,7 @@ engine_store_word_product,edge,,32,32,0,0,ecb3d664ff30b9e2,2026-11-05
 engine_string_append,edge,,32,32,0,0,f9bbc2ec8f450f14,2026-11-05
 engine_string_append_counted,edge,,48,48,0,0,f7f96f0ac221364a,2026-11-05
 engine_string_length,edge,,30,30,0,0,dbb33699bb2cc030,2026-11-03
+engine_tree_destroy_nodes,edge,,10,10,0,0,c0a33585b1c03c09,2026-11-09
 engine_wide_string_destroy,edge,,28,28,0,0,82e3fd837894b106,2026-11-03
 engine_write_stderr,edge,,28,28,0,0,f997862b08044f6d,2026-10-31
 event_emk_add,recorded,,150,150,0,0,937b4dca128ba863,2026-10-07
@@ -22936,6 +22937,7 @@ misc_drain_object_queue,edge,,14,14,0,0,691df9c7d0a3a1ec,2026-11-09
 misc_entry_for_key,edge,,9,9,0,0,05562ce18d85b046,2026-11-09
 misc_entry_ref_accept,edge,,15,15,0,0,37f92aa1e32c3463,2026-11-09
 misc_fill_item_table,edge,,10,10,0,0,121719f0b60da0e7,2026-11-09
+misc_find_record_index,edge,,14,14,0,0,751d3dfb822f3451,2026-11-09
 misc_finish_tracked_update,edge,,15,15,0,0,70fff57b72b6f567,2026-11-09
 misc_forward_index_02242c30,edge,,11,11,0,0,7f0cf449db39903b,2026-11-09
 misc_forward_value_to_child,edge,,9,9,0,0,009a8387a53acfdc,2026-11-09
@@ -22980,6 +22982,8 @@ misc_ref_holder_attach,edge,,9,9,0,0,33afa17235b90ca2,2026-11-09
 misc_ref_holder_detach,edge,,9,9,0,0,079ca90ad72427c9,2026-11-09
 misc_ref_holder_hold,edge,,7,7,0,0,6687a505ddc2329a,2026-11-09
 misc_ref_holder_release,edge,,10,10,0,0,a48afd36acf09017,2026-11-09
+misc_release_entries_and_clear,edge,,13,13,0,0,83babd723232eff6,2026-11-09
+misc_release_entries_then_forward,edge,,14,14,0,0,5fa30e404e0403fc,2026-11-09
 misc_release_four_children,edge,,9,9,0,0,0916e3319b18bd4d,2026-11-09
 misc_release_held_block,edge,,2,2,0,0,12b79404f2903b0d,2026-11-09
 misc_release_holder_child,edge,,9,9,0,0,491b51e0f159ead4,2026-11-09
