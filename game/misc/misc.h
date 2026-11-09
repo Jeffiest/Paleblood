@@ -411,6 +411,63 @@ static_assert(offsetof(PooledHolder, first) == 0x398);
 RT_ORIGINAL(0x00418060, fn_00418060, void(Tagged *tagged, NodePool *pool, const uint32_t *key));
 RT_ORIGINAL(0x00414be0, fn_00414be0, PoolNode *(PoolNode **cursor, uint32_t size));
 
+/** The shared object the keyed append retains for the duration of a call. */
+RT_GLOBAL(0x0553be98, shared_retained_object, RetainedObject);
+
+/**
+ *
+ * A node of a keyed pool: a key, an argument, a tag, and the link to the next node.
+ *
+ */
+struct KeyedNode {
+    uint32_t key;                 /**< The key stored at offset 0. */
+    uint8_t unknown_0x0004[0x04];
+    uint64_t argument;            /**< The argument the node's release receives. */
+    uint32_t tag;                 /**< Copied from the caller's tagged value. */
+    uint8_t unknown_0x0014[0x04];
+    KeyedNode *next;              /**< The node linked after this one. */
+};
+static_assert(offsetof(KeyedNode, argument) == 0x08);
+static_assert(offsetof(KeyedNode, tag) == 0x10);
+static_assert(offsetof(KeyedNode, next) == 0x18);
+
+/**
+ *
+ * A pool of keyed nodes: a cursor, the bytes left after it, and the chain of nodes.
+ *
+ */
+struct KeyedPool {
+    uint8_t unknown_0x0000[0x10];
+    KeyedNode *cursor;
+    uint64_t remaining;
+    uint8_t unknown_0x0020[0x100];
+    KeyedNode *head;
+    KeyedNode *tail;
+};
+static_assert(offsetof(KeyedPool, head) == 0x120);
+static_assert(offsetof(KeyedPool, tail) == 0x128);
+
+/**
+ *
+ * The holder of a keyed pool, which counts the nodes it appends and keeps the first one.
+ *
+ */
+struct KeyedHolder {
+    uint8_t unknown_0x0000[0x38];
+    KeyedPool *pool;
+    uint8_t unknown_0x0040[0x340];
+    uint32_t count;
+    uint8_t unknown_0x0384[0x24];
+    KeyedNode *first;
+};
+static_assert(offsetof(KeyedHolder, pool) == 0x38);
+static_assert(offsetof(KeyedHolder, count) == 0x380);
+static_assert(offsetof(KeyedHolder, first) == 0x3a8);
+
+RT_ORIGINAL(0x0045a4b0, fn_0045a4b0, void(void *object));
+RT_ORIGINAL(0x0045a4c0, fn_0045a4c0, void(void *object));
+RT_ORIGINAL(0x0040dee0, fn_0040dee0, Tagged *(Tagged *tagged, void *holder, const uint32_t *key, Binding *binding));
+
 /** Constant added to the span's width before it is rounded down. */
 RT_GLOBAL(0x04b3b7a8, span_bias, const double);
 

@@ -9,6 +9,7 @@ address,size,name,system,status,notes
 0x00409fd0,1,auto_empty_00409fd0,auto,edge-verified,Generated from the empty template
 0x0040c4c0,3,auto_return_zero_0040c4c0,auto,edge-verified,Generated from the return zero template
 0x0040dee0,316,misc_pool_append_node,misc,edge-verified,Takes a node from the holder pool binds it to the caller object and tag and appends it to the pool chain counting it
+0x0040e020,379,misc_keyed_pool_append,misc,edge-verified,Appends a keyed node to a pool after the pool append with a retained shared object and releases the binding or the shared object
 0x0040e1a0,90,misc_append_indexed_node,misc,edge-verified,Numbers a node with the next holder index counts it keeps the first node once and appends it to the chain tail
 0x00410100,5,auto_return_field_00410100,auto,edge-verified,Generated from the return field template
 0x00410290,1,auto_empty_00410290,auto,edge-verified,Generated from the empty template
