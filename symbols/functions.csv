@@ -15107,12 +15107,26 @@ address,size,name,system,status,notes
 0x026f1d00,103,misc_scaled_size_class_entry,misc,edge-verified,Returns the scaled table entry for the class of the size times a multiplier or zero past the limit
 0x026f1d70,49,misc_size_class_entry_fourth,misc,edge-verified,Returns the entry of the fourth size table for the size class of the request size.
 0x026f1db0,49,misc_size_class_entry_fifth,misc,edge-verified,Returns the entry of the fifth size table for the size class of the request size.
+0x026f2270,471,misc_find_or_create_keyed_object_a,misc,edge-verified,Returns the object three keys map to in the first entry list or builds an entry and object for them
+0x026f2450,471,misc_find_or_create_keyed_object_b,misc,edge-verified,Returns the object three keys map to in the second entry list or builds an entry and object for them
 0x026f2860,8,auto_return_field_026f2860,auto,edge-verified,Generated from the return field template
 0x026f2870,8,auto_return_field_026f2870,auto,edge-verified,Generated from the return field template
 0x026f3990,1,auto_empty_026f3990,auto,edge-verified,Generated from the empty template
+0x026f39b0,28,misc_call_then_forward,misc,edge-verified,Runs an object routine on the object then returns the result of the library routine it tail-forwards to
+0x026f39d0,22,misc_clear_flagged_tag,misc,edge-verified,Gives a flagged object the base vtable and clears the tag bit of its flag word
+0x026f3a00,40,misc_forward_member_call,misc,edge-verified,Forwards a call through a member record to a function or a vtable slot of the adjusted object when the forward bit is set
+0x026f3a30,22,misc_clear_flagged_tag_alt,misc,edge-verified,Gives a second flagged object the base vtable and clears the tag bit of its flag word
+0x026f3a60,40,misc_forward_member_call_alt,misc,edge-verified,Forwards a call through a second member record to a function or a vtable slot of the adjusted object when the forward bit is set
 0x026f3a90,1,auto_empty_026f3a90,auto,edge-verified,Generated from the empty template
 0x026f3ab0,3,auto_return_zero_026f3ab0,auto,edge-verified,Generated from the return zero template
+0x026f3ac0,221,misc_record_probe_values,misc,edge-verified,Records three probe values from the holder pair into the owner words and the pair context then clamps two counts
 0x026f3ba0,1,auto_empty_026f3ba0,auto,edge-verified,Generated from the empty template
+0x026f3bb0,124,misc_destroy_chain_node,misc,edge-verified,Destroys a chain of tree nodes by destroying each left child first then freeing the buffer and the node
+0x026f3c30,124,misc_destroy_chain_node_3c30,misc,edge-verified,Destroys a chain of tree nodes by destroying each left child first then freeing the buffer and the node
+0x026f3cb0,124,misc_destroy_chain_node_3cb0,misc,edge-verified,Destroys a chain of tree nodes by destroying each left child first then freeing the buffer and the node
+0x026f3d30,124,misc_destroy_chain_node_3d30,misc,edge-verified,Destroys a chain of tree nodes by destroying each left child first then freeing the buffer and the node
+0x026f3db0,124,misc_destroy_chain_node_3db0,misc,edge-verified,Destroys a chain of tree nodes by destroying each left child first then freeing the buffer and the node
+0x026f3e30,124,misc_destroy_chain_node_3e30,misc,edge-verified,Destroys a chain of tree nodes by destroying each left child first then freeing the buffer and the node
 0x026f7810,3,auto_return_zero_026f7810,auto,edge-verified,Generated from the return zero template
 0x026f7840,4,auto_return_field_026f7840,auto,edge-verified,Generated from the return field template
 0x026f7850,5,auto_return_member_address_026f7850,auto,edge-verified,Generated from the return member address template
