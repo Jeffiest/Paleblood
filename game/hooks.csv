@@ -6,9 +6,17 @@ address,replacement,system,returns
 0x00405dc0,bb_misc_scratch_value_18,misc,f64
 0x00405e70,bb_misc_scratch_value_50,misc,f64
 0x00405f20,bb_misc_scratch_value_58,misc,f64
+0x00405fd0,bb_misc_quantized_span,misc,f64
 0x00406600,bb_auto_empty_00406600,auto,void
+0x00406be0,bb_misc_finish_tracked_update,misc,void
+0x00406d30,bb_misc_resolve_then_forward,misc,i64
+0x00406d50,bb_misc_lookup_value_or_zero,misc,i64
+0x004090b0,bb_engine_counted_pair_retarget,engine,void
 0x00409b30,bb_misc_child_idle,misc,i8
 0x00409fd0,bb_auto_empty_00409fd0,auto,void
+0x0040b4e0,bb_misc_unpack_and_release,misc,i64
+0x0040b570,bb_misc_create_checked,misc,i64
+0x0040b5e0,bb_misc_init_child_holder,misc,i64
 0x0040be60,bb_misc_lookup_record_payload,misc,i64
 0x0040bf40,bb_misc_init_record_block,misc,i64
 0x0040bfa0,bb_misc_teardown_record,misc,i64
@@ -18,6 +26,9 @@ address,replacement,system,returns
 0x0040d180,bb_misc_submit_request,misc,i64
 0x0040d1d0,bb_misc_dispatch_to_target,misc,i64
 0x0040d270,bb_misc_dispatch_request,misc,i64
+0x0040dee0,bb_misc_pool_append_node,misc,i64
+0x0040e020,bb_misc_keyed_pool_append,misc,i64
+0x0040e1a0,bb_misc_append_indexed_node,misc,void
 0x00410100,bb_auto_return_field_00410100,auto,i64
 0x00410290,bb_auto_empty_00410290,auto,void
 0x004102a0,bb_auto_empty_004102a0,auto,void

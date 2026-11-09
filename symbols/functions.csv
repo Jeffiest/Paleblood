@@ -6,9 +6,17 @@ address,size,name,system,status,notes
 0x00405dc0,163,misc_scratch_value_18,misc,edge-verified,Builds a default scratch block then runs the block builder on it and returns the double at offset 0x18 of its result
 0x00405e70,163,misc_scratch_value_50,misc,edge-verified,Builds a default scratch block then runs the block builder on it and returns the double at offset 0x50 of its result
 0x00405f20,163,misc_scratch_value_58,misc,edge-verified,Builds a default scratch block then runs the block builder on it and returns the double at offset 0x58 of its result
+0x00405fd0,197,misc_quantized_span,misc,edge-verified,Floor of the end minus start width plus a constant times a second constant; span from a direct callee when the chunk entry flag is set and from a vtable otherwise
 0x00406600,1,auto_empty_00406600,auto,edge-verified,Generated from the empty template
+0x00406be0,322,misc_finish_tracked_update,misc,edge-verified,Finishes a pending update of a tracked object by dispatching its target then refreshing the owned subobject and releasing the references the update took
+0x00406d30,31,misc_resolve_then_forward,misc,edge-verified,Resolves the first argument through a callee then returns the second stage result for the first argument and the second argument unchanged
+0x00406d50,64,misc_lookup_value_or_zero,misc,edge-verified,Writes the 16-byte value of the record found for a resolved source into out or zeros when no record is found and returns out
+0x004090b0,92,engine_counted_pair_retarget,engine,edge-verified,Points both slots of a counted pair at the owner embedded object after raising its count by two and dropping each slot previous object
 0x00409b30,41,misc_child_idle,misc,edge-verified,Asks the owned child for its query result and reports idle when it is zero or the owner counter is zero
 0x00409fd0,1,auto_empty_00409fd0,auto,edge-verified,Generated from the empty template
+0x0040b4e0,128,misc_unpack_and_release,misc,edge-verified,Unpacks a counted handle into a value and drops its reference destroying the block through the dispatcher when it was the last one
+0x0040b570,106,misc_create_checked,misc,edge-verified,Creates an object through a factory and keeps it only when its valid test returns zero otherwise reports the failure and releases it
+0x0040b5e0,147,misc_init_child_holder,misc,edge-verified,Sets a child holder to kind one and width twenty points it at a new child node from the dispatcher allocator and returns the report result
 0x0040be60,54,misc_lookup_record_payload,misc,edge-verified,Looks up record 0x15 and returns its tag-cleared word plus 12 then releases the record; zero when missing
 0x0040bf40,92,misc_init_record_block,misc,edge-verified,Initializes a record with the record vtable and kind then takes a zeroed 8-byte block from the scratch service and returns it
 0x0040bfa0,42,misc_teardown_record,misc,edge-verified,Tears down the record then gives it to the scratch service release slot and returns the slot result
@@ -18,6 +26,9 @@ address,size,name,system,status,notes
 0x0040d180,70,misc_submit_request,misc,edge-verified,Adds the request node entry to the owner queue then returns the flag word when its low byte is set or hands the queue on when it is clear
 0x0040d1d0,151,misc_dispatch_to_target,misc,edge-verified,Calls the held target handle slot with the value and a second word or reports the value to the context sink when there is no target
 0x0040d270,33,misc_dispatch_request,misc,edge-verified,Hands the two request words to the route handler handle slot or to the game when the route has no handler and returns the result
+0x0040dee0,316,misc_pool_append_node,misc,edge-verified,Takes a node from the holder pool binds it to the caller object and tag and appends it to the pool chain counting it
+0x0040e020,379,misc_keyed_pool_append,misc,edge-verified,Appends a keyed node to a pool after the pool append with a retained shared object and releases the binding or the shared object
+0x0040e1a0,90,misc_append_indexed_node,misc,edge-verified,Numbers a node with the next holder index counts it keeps the first node once and appends it to the chain tail
 0x00410100,5,auto_return_field_00410100,auto,edge-verified,Generated from the return field template
 0x00410290,1,auto_empty_00410290,auto,edge-verified,Generated from the empty template
 0x004102a0,1,auto_empty_004102a0,auto,edge-verified,Generated from the empty template
