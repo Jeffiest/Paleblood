@@ -4984,6 +4984,7 @@ address,replacement,system,returns
 0x01884ce0,bb_auto_return_constant_01884ce0,auto,i8
 0x018852b0,bb_auto_empty_018852b0,auto,void
 0x01886740,bb_auto_empty_01886740,auto,void
+0x01887300,bb_misc_drain_object_queue,misc,void
 0x01887680,bb_misc_notify_unflagged_record,misc,i64
 0x01887de0,bb_auto_empty_01887de0,auto,void
 0x01887eb0,bb_auto_empty_01887eb0,auto,void
