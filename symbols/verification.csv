@@ -22949,6 +22949,7 @@ misc_chain_leaf_flag,edge,,6,6,0,0,1e265fb6c6640d38,2026-11-09
 misc_chain_search,edge,,24,24,0,0,9025f7eefef211ad,2026-11-09
 misc_child_idle,edge,,10,10,0,0,7d142083dbdc1f05,2026-11-09
 misc_clear_flagged_tag,edge,,6,6,0,0,a27f003e89e8beb5,2026-11-09
+misc_clear_flagged_tag_alt,edge,,6,6,0,0,4324bfada71dd207,2026-11-09
 misc_clear_id_list_022430f0,edge,,5,5,0,0,8d14115bb7de3d16,2026-11-09
 misc_clear_pending_four_keys,edge,,15,15,0,0,e408ac5368aed16d,2026-11-09
 misc_clear_two_words,edge,,4,4,0,0,fd76028ce27c1369,2026-11-09
