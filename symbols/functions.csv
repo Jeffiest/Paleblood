@@ -18548,6 +18548,7 @@ address,size,name,system,status,notes
 0x02b3e180,1,auto_empty_02b3e180,auto,edge-verified,Generated from the empty template
 0x02b3e190,12,misc_call_object_slot_38,misc,edge-verified,Forwards a reference object to the virtual routine in its slot at +0x38 and returns that result
 0x02b3e1c0,12,misc_call_object_slot_40,misc,edge-verified,Forwards a reference object to the virtual routine in its slot at +0x40 and returns that result
+0x02b3e1d0,12,misc_forward_object_slot_28,misc,edge-verified,Forwards a reference object to the virtual routine in its slot at +0x28 and returns that result
 0x02b3e5f0,1,auto_empty_02b3e5f0,auto,edge-verified,Generated from the empty template
 0x02b3e610,1,auto_empty_02b3e610,auto,edge-verified,Generated from the empty template
 0x02b3e820,5,auto_return_field_02b3e820,auto,edge-verified,Generated from the return field template
