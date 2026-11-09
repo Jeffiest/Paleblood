@@ -22980,6 +22980,7 @@ misc_has_marked_record,edge,,10,10,0,0,42b8cc6a2343a490,2026-11-09
 misc_held_block_delete_02242ea0,edge,,5,5,0,0,a26573f0674ea49e,2026-11-09
 misc_held_block_destroy_02242ee0,edge,,5,5,0,0,0e9c32eabec69d0e,2026-11-09
 misc_held_block_has_value,edge,,7,7,0,0,5c0d4438fe9f6cf2,2026-11-09
+misc_held_member_object_init,edge,,5,5,0,0,fd4613c3242ea98c,2026-11-09
 misc_held_member_object_release,edge,,5,5,0,0,0e49827af3d1adff,2026-11-09
 misc_holder_search_fifth,edge,,4,4,0,0,1cb29bc0ae1fd4f5,2026-11-09
 misc_holder_search_first,edge,,4,4,0,0,31fcf9ab170c684b,2026-11-09

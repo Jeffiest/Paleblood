@@ -35,7 +35,8 @@ struct HeldMemberObject {
     uint32_t zero_0x50;                  /**< Zeroed when the object is built. */
     float scale_0x54;                    /**< Set to one when the object is built. */
     uint8_t member_0x58[member_bytes];   /**< Member destroyed first; passed by address. */
-    uint8_t unknown_0x60[0x10];
+    uint64_t zero_0x60;                  /**< Zeroed when the object is built. */
+    uint64_t zero_0x68;                  /**< Zeroed when the object is built. */
     uint32_t value_0x70;                 /**< Set to 0x100 when the object is built. */
 };
 static_assert(offsetof(HeldMemberObject, refcount_word) == 0x08);
@@ -51,6 +52,7 @@ static_assert(offsetof(HeldMemberObject, member_0x48) == 0x48);
 static_assert(offsetof(HeldMemberObject, zero_0x50) == 0x50);
 static_assert(offsetof(HeldMemberObject, scale_0x54) == 0x54);
 static_assert(offsetof(HeldMemberObject, member_0x58) == 0x58);
+static_assert(offsetof(HeldMemberObject, zero_0x60) == 0x60);
 static_assert(offsetof(HeldMemberObject, value_0x70) == 0x70);
 
 }  // namespace misc
