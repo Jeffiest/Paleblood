@@ -12887,6 +12887,7 @@ address,size,name,system,status,notes
 0x02243f10,164,misc_construct_member_owner_02243f10,misc,edge-verified,Constructs an owner with a member at 0x68: builds its base part first then stores its vtable then builds the member from a record holding the flag heap and the capacity
 0x02243fc0,50,misc_member_owner_delete_02243fc0,misc,edge-verified,Deleting destructor of an owner with a member at 0x68: stores its vtable destroys the member and the base part then returns the library release result for the owner
 0x02244000,42,misc_member_owner_destroy_02244000,misc,edge-verified,Destructor of an owner with a member at 0x68: stores its vtable destroys the member then returns the result of destroying the base part
+0x022441c0,80,misc_forward_when_flagged_022441c0,misc,edge-verified,Forwards a flagged object: notifies it and returns its target forward result otherwise returns the check result with its low byte flipped
 0x022447b0,5,auto_return_field_022447b0,auto,edge-verified,Generated from the return field template
 0x022447c0,5,auto_return_field_022447c0,auto,edge-verified,Generated from the return field template
 0x02244810,3,auto_return_zero_02244810,auto,edge-verified,Generated from the return zero template
