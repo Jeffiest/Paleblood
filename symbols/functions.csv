@@ -1463,6 +1463,7 @@ address,size,name,system,status,notes
 0x00b70cf0,6,auto_return_constant_00b70cf0,auto,edge-verified,Generated from the return constant template
 0x00b71ef0,3,auto_return_constant_00b71ef0,auto,edge-verified,Generated from the return constant template
 0x00b71f00,6,auto_return_constant_00b71f00,auto,edge-verified,Generated from the return constant template
+0x00bdd420,192,misc_linked_object_init,misc,edge-verified,Builds a linked object around a reference item by taking its own count and zeroing its members and values
 0x00bdd5a0,129,misc_linked_object_release,misc,edge-verified,Releases a linked object by taking its vtable destroying two members dropping its held reference and destroying its last member
 0x00bdd630,9,misc_tagged_link_address,misc,edge-verified,Returns the address held in a tagged link with its flag bit cleared
 0x00bdd640,6,auto_return_constant_00bdd640,auto,edge-verified,Generated from the return constant template

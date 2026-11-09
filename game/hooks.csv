@@ -1462,6 +1462,7 @@ address,replacement,system,returns
 0x00b70cf0,bb_auto_return_constant_00b70cf0,auto,i32
 0x00b71ef0,bb_auto_return_constant_00b71ef0,auto,i8
 0x00b71f00,bb_auto_return_constant_00b71f00,auto,i32
+0x00bdd420,bb_misc_linked_object_init,misc,void
 0x00bdd5a0,bb_misc_linked_object_release,misc,void
 0x00bdd630,bb_misc_tagged_link_address,misc,i64
 0x00bdd640,bb_auto_return_constant_00bdd640,auto,i32
