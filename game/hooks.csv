@@ -14908,6 +14908,7 @@ address,replacement,system,returns
 0x026e3860,bb_misc_release_owned_state,misc,i64
 0x026e6f30,bb_misc_forward_with_mode,misc,i64
 0x026e6f60,bb_misc_reset_listed_members,misc,void
+0x026e6fe0,bb_misc_update_owned_entries,misc,void
 0x026efe20,bb_auto_empty_026efe20,auto,void
 0x026f2860,bb_auto_return_field_026f2860,auto,i64
 0x026f2870,bb_auto_return_field_026f2870,auto,i64
