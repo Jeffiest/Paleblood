@@ -18,11 +18,11 @@ RT_GLOBAL(0x057a78e0, owned_list_vtable, const uint8_t);
 
 /**
  *
- * A node of an owned list: its vtable, then the link to the next node.
+ * A node of an owned list: the object it holds, then the link to the next node.
  *
  */
 struct OwnedNode {
-    const void *vtable; /**< Dispatch table of the node's class. */
+    void *object;       /**< The object the node holds, stored as is. */
     OwnedNode *next;    /**< The next node, or null at the end of the list. */
 };
 static_assert(offsetof(OwnedNode, next) == 0x08);
@@ -53,9 +53,9 @@ struct OwnedList {
     uint8_t unknown_0x0c[4];
     uint64_t argument;     /**< The value the constructor was given, stored as is. */
     OwnedNode *head;       /**< First node of the list, or null when the list is empty. */
-    uint64_t word_0x20;    /**< Cleared when the list is destroyed; meaning not known. */
+    OwnedNode *tail;       /**< Last node of the list, or null when the list is empty. */
 };
 static_assert(offsetof(OwnedList, tag) == 0x08 && offsetof(OwnedList, argument) == 0x10);
-static_assert(offsetof(OwnedList, head) == 0x18 && offsetof(OwnedList, word_0x20) == 0x20);
+static_assert(offsetof(OwnedList, head) == 0x18 && offsetof(OwnedList, tail) == 0x20);
 
 }  // namespace misc

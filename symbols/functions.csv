@@ -12759,6 +12759,7 @@ address,size,name,system,status,notes
 0x02240db0,38,misc_owned_list_init,misc,edge-verified,Constructor of an owned list; sets the size tag and vtable; stores the argument; clears the list head and the word at 0x20
 0x02240de0,149,misc_owned_list_delete,misc,edge-verified,Deleting destructor of an owned list; sets the vtable; frees every node through its allocator; frees the object through the thread allocator by its size tag and returns that result
 0x02240e80,94,misc_owned_list_destroy,misc,edge-verified,Destructor of an owned list; sets the vtable; frees every node through its allocator; clears the word at 0x20 and the list head
+0x02241880,322,physics_list_append_pair,physics,edge-verified,Appends the second body parent object to an owned list when both bodies instances are ready kind 2 and one parent is ready state 2; allocates a node at the tail
 0x022447b0,5,auto_return_field_022447b0,auto,edge-verified,Generated from the return field template
 0x022447c0,5,auto_return_field_022447c0,auto,edge-verified,Generated from the return field template
 0x02244810,3,auto_return_zero_02244810,auto,edge-verified,Generated from the return zero template

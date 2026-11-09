@@ -25,7 +25,7 @@ RT_ORIGINAL(0x0247b720, allocator_of, engine::Allocator *(misc::OwnedNode *));
 /**
  *
  * Deleting destructor of an owned list: sets the vtable, frees every node through its allocator,
- * clears the word at 0x20 and the head, then frees the object through the thread's allocator.
+ * clears the tail and the head, then frees the object through the thread's allocator.
  *
  * The object's size comes from its size tag: the default size when the high 16 bits hold 0xffff.
  * The result is the sized free's result, returned as the original does with its tail jump.
@@ -39,7 +39,7 @@ extern "C" uint64_t bb_misc_owned_list_delete(misc::OwnedList *list)
         allocator_of(node)->free(node);
         node = next;
     }
-    list->word_0x20 = 0;
+    list->tail = nullptr;
     list->head = nullptr;
 
     engine::Allocator *allocator = loading::fios::thread_allocator();

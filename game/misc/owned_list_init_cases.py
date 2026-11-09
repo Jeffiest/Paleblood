@@ -5,7 +5,7 @@
 usage: owned_list_init_cases.py OUT_DIR
 
 The object is 0x28 bytes. The constructor has no branches and no calls: it writes the size tag, the
-vtable address, the argument and clears the word at 0x20 and the head. Covers zero, all-ones, high
+vtable address, the argument and clears the tail and the head. Covers zero, all-ones, high
 bit and upper-word arguments, and an object whose bytes start out as zero or as garbage (the tag's
 low bits, the bytes at 0x0c..0x0f and the padding must all be left as the original leaves them).
 """

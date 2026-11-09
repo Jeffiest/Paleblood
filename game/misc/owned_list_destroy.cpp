@@ -13,7 +13,7 @@ RT_ORIGINAL(0x0247b720, allocator_of, engine::Allocator *(misc::OwnedNode *));
 /**
  *
  * Destroys an owned list without freeing the object: sets the vtable, frees every node through its
- * allocator, then clears the word at 0x20 and the head.
+ * allocator, then clears the tail and the head.
  *
  * Each node's next link is read before the node is freed, so the walk never reads a freed node.
  */
@@ -26,6 +26,6 @@ extern "C" void bb_misc_owned_list_destroy(misc::OwnedList *list)
         allocator_of(node)->free(node);
         node = next;
     }
-    list->word_0x20 = 0;
+    list->tail = nullptr;
     list->head = nullptr;
 }
