@@ -2963,6 +2963,7 @@ address,size,name,system,status,notes
 0x0139bd70,49,misc_copy_default_blocks,misc,edge-verified,Copies three 16-byte default blocks from the executable data into three globals
 0x0139bf20,103,misc_destroy_flagged_pair_then_release,misc,edge-verified,Destroys a flagged owned pair then tail-calls the library release on the object and returns its result
 0x0139bf90,95,misc_destroy_flagged_pair_tail,misc,edge-verified,Destroys a flagged owned pair then tail-calls the owned pair destructor and returns its result
+0x0139bff0,218,misc_call_receiver_with_name,misc,edge-verified,Calls a name formatter then hands the formatted name text to a receiver and returns the stack guard word
 0x0139c0d0,41,misc_bind_vtable_56b4840_0139c0d0,misc,edge-verified,Publishes the address of the static vtable block at 0x056b4840 into a global pointer once and sets a qword flag
 0x0139d9d0,3,auto_return_zero_0139d9d0,auto,edge-verified,Generated from the return zero template
 0x0139ea10,3,auto_return_zero_0139ea10,auto,edge-verified,Generated from the return zero template
