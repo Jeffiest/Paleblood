@@ -344,3 +344,25 @@ extern "C" uint64_t bb_auto_return_field_01aec560(const Object01aec560 *self)
 {
     return self->value_0x0048;
 }
+
+/**
+ *
+ * Returns zero.
+ *
+ */
+extern "C" uint64_t bb_auto_return_zero_01aec5b0()
+{
+    return 0;
+}
+
+/**
+ *
+ * Returns a fixed value whose meaning is unknown.
+ *
+ */
+constexpr uint32_t value_01aec830 = 0x198;
+
+extern "C" uint32_t bb_auto_return_constant_01aec830()
+{
+    return value_01aec830;
+}
