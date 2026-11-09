@@ -1453,6 +1453,7 @@ address,size,name,system,status,notes
 0x00b6c7d0,6,auto_return_constant_00b6c7d0,auto,edge-verified,Generated from the return constant template
 0x00b6cac0,6,auto_return_constant_00b6cac0,auto,edge-verified,Generated from the return constant template
 0x00b6d530,1,auto_empty_00b6d530,auto,edge-verified,Generated from the empty template
+0x00b6e2a0,179,misc_item_set_apply,misc,edge-verified,Applies an enabled item set to each item in order with the set scale in four lanes calling the callback for the first or second item kind
 0x00b70250,6,auto_return_constant_00b70250,auto,edge-verified,Generated from the return constant template
 0x00b703b0,1,auto_empty_00b703b0,auto,edge-verified,Generated from the empty template
 0x00b70920,3,auto_return_zero_00b70920,auto,edge-verified,Generated from the return zero template
