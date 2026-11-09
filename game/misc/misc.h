@@ -175,10 +175,44 @@ RT_ORIGINAL(0x0045a4c0, release_record, void(LookupRecord *record));
 
 /**
  *
- * A pending request that an owner holds (defined with the store that fills it).
+ * The six words of a request, which the store copies as a unit.
  *
  */
-struct PendingRequest;
+struct RequestWords {
+    uint64_t word_00; /**< First word of the request. */
+    uint64_t word_08; /**< Second word of the request. */
+    uint64_t word_10; /**< Third word of the request. */
+    uint64_t word_18; /**< Fourth word of the request. */
+    uint64_t word_20; /**< Fifth word of the request. */
+    uint64_t word_28; /**< Sixth word of the request. */
+};
+static_assert(offsetof(RequestWords, word_28) == 0x28);
+static_assert(sizeof(RequestWords) == 0x30);
+
+/**
+ *
+ * A request that an owner holds while it is pending: its words, then a flag byte.
+ *
+ */
+struct PendingRequest {
+    RequestWords words;  /**< Copied from the request that was stored. */
+    uint8_t flag_0x30;   /**< Set to 1 when a request is stored; its later use is not known. */
+};
+static_assert(offsetof(PendingRequest, flag_0x30) == 0x30);
+
+/**
+ *
+ * Passes a handle and a flag to the game (0x00482a70); the result is not read.
+ *
+ */
+RT_ORIGINAL(0x00482a70, fn_00482a70, void(uint64_t handle, uint32_t flag));
+
+/**
+ *
+ * Passes a handle and a request to the game (0x004de720); the result is not read.
+ *
+ */
+RT_ORIGINAL(0x004de720, fn_004de720, void(uint64_t handle, const RequestWords *request));
 
 /** Mask of the handle bits below the page start; the page start is the handle with these bits cleared. */
 constexpr uint64_t handle_page_mask = 0xfff;
@@ -191,9 +225,6 @@ constexpr uint64_t handle_slot_shift = 3;
 
 /** Multiplicative inverse of seven modulo 2^32: the game divides a slot offset by seven this way. */
 constexpr uint32_t handle_slot_inverse = 0xb6db6db7;
-
-/** Offset of the payload field inside a HandleTarget, which is the address the lookup returns. */
-constexpr uint64_t handle_target_payload_offset = 0x10;
 
 /**
  *
@@ -241,6 +272,20 @@ struct HandleOwner {
 };
 static_assert(offsetof(HandleOwner, handle_0x48) == 0x48);
 static_assert(offsetof(HandleOwner, pending_0x60) == 0x60);
+
+/**
+ *
+ * Returns a handle for the owner (0x00400300); what the game does with the owner is not known.
+ *
+ */
+RT_ORIGINAL(0x00400300, fn_00400300, uint64_t(HandleOwner *));
+
+/**
+ *
+ * Called as the store's tail call (0x00400ab0); its result is the store's result.
+ *
+ */
+RT_ORIGINAL(0x00400ab0, fn_00400ab0, uint64_t(HandleOwner *));
 
 /**
  *

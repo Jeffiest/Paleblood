@@ -1,5 +1,6 @@
 address,replacement,system,returns
 0x00400e40,bb_misc_resolve_request_target,misc,i64
+0x00400e90,bb_misc_store_request,misc,i64
 0x004034f0,bb_auto_return_constant_004034f0,auto,i8
 0x00405d10,bb_misc_scratch_value_48,misc,f64
 0x00405dc0,bb_misc_scratch_value_18,misc,f64
