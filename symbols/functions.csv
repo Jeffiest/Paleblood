@@ -8554,6 +8554,7 @@ address,size,name,system,status,notes
 0x01e58950,5,auto_return_field_01e58950,auto,edge-verified,Generated from the return field template
 0x01e589a0,3,auto_return_zero_01e589a0,auto,edge-verified,Generated from the return zero template
 0x01e58c20,6,auto_return_constant_01e58c20,auto,edge-verified,Generated from the return constant template
+0x01e59020,227,misc_allocated_block_holder_construct,misc,edge-verified,Constructs the holder with its vtable and words then allocates and initializes a state block when the heap allocation succeeds
 0x01e59110,61,misc_allocated_block_holder_destroy,misc,edge-verified,Sets the holder vtable then frees its block through the allocator it reports when set and returns the base destructor result
 0x01e59150,62,misc_allocated_block_holder_release,misc,edge-verified,Sets the holder vtable then frees its block through the allocator it reports and clears the block pointer when one is held
 0x01e59190,40,misc_gated_store_value,misc,edge-verified,Stores the value into the holder and its owner target only when the owner gating block flag is set
