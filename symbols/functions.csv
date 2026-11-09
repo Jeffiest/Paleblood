@@ -5097,6 +5097,7 @@ address,size,name,system,status,notes
 0x01888b80,28,misc_release_after_empty_call_01888b80,misc,edge-verified,Same body as misc_release_after_empty_call at 0x01887f20: calls the empty routine then tail calls the release routine with the object
 0x01888ba0,31,misc_forward_record_to_slot_90,misc,edge-verified,Passes the record value and the 32-bit mode behind its pointer with the object to its vtable slot at +0x90 and returns that result
 0x01888bd0,28,misc_call_then_release_01888bd0,misc,edge-verified,Calls the routine 0x01402180 with the object then tail calls the release routine 0x02fbe588 with the same object and returns its result
+0x01888fd0,29,misc_finish_pending_block_offset,misc,edge-verified,Stores the record limit minus the pending block address plus eight in the block offset word then clears the pending block; no pending block changes nothing
 0x01889310,6,auto_return_constant_01889310,auto,edge-verified,Generated from the return constant template
 0x0188b7c0,6,auto_return_constant_0188b7c0,auto,edge-verified,Generated from the return constant template
 0x0188dd20,5,auto_return_field_0188dd20,auto,edge-verified,Generated from the return field template
