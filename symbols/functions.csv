@@ -18542,6 +18542,7 @@ address,size,name,system,status,notes
 0x02b3e010,73,misc_inline_text_reset,misc,edge-verified,Empties a text object by setting its vtable freeing heap storage through its allocator and making it inline with no characters
 0x02b3e060,58,misc_inline_text_destroy,misc,edge-verified,Destroys a text object by freeing its heap storage through its allocator then hands the object to the library release routine
 0x02b3e130,1,auto_empty_02b3e130,auto,edge-verified,Generated from the empty template
+0x02b3e150,12,misc_set_value_clear_link,misc,edge-verified,Stores a value in a two-word slot and clears the link word that follows it
 0x02b3e160,1,auto_empty_02b3e160,auto,edge-verified,Generated from the empty template
 0x02b3e180,1,auto_empty_02b3e180,auto,edge-verified,Generated from the empty template
 0x02b3e5f0,1,auto_empty_02b3e5f0,auto,edge-verified,Generated from the empty template
