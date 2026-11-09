@@ -22938,6 +22938,7 @@ misc_insert_scaled_entry,edge,,14,14,0,0,0c099f6f95dec14a,2026-11-09
 misc_insert_scaled_entry_alt,edge,,14,14,0,0,69bbb208c531a58e,2026-11-09
 misc_int_queue_push_source,edge,,6,6,0,0,e8a2d1a264c83ce3,2026-11-09
 misc_invoke_callback,edge,,12,12,0,0,8fc1139db930cda5,2026-11-09
+misc_keep_last_path_component,edge,,5,5,0,0,2e91f6f84a86f4ad,2026-11-09
 misc_keyed_pool_append,edge,,10,10,0,0,a4f064fdb0d9e5e5,2026-11-09
 misc_list_all_exceed_one,edge,,12,12,0,0,9d15f22d0f823a8a,2026-11-09
 misc_lookup_record_payload,edge,,9,9,0,0,5dad04ae8902d9e9,2026-11-09

@@ -43,6 +43,7 @@ address,replacement,system,returns
 0x0040e680,bb_misc_take_pending_node,misc,i64
 0x0040f0b0,bb_misc_replace_holder_object,misc,i8
 0x0040f2f0,bb_misc_find_or_create_match,misc,i8
+0x0040fa50,bb_misc_keep_last_path_component,misc,i8
 0x0040fb10,bb_misc_tagged_name_matches,misc,i8
 0x0040fbd0,bb_misc_emit_through_lookup,misc,i64
 0x0040fc50,bb_misc_emit_through_fresh_sink,misc,i64
