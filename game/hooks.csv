@@ -8380,6 +8380,7 @@ address,replacement,system,returns
 0x01e47b00,bb_auto_return_constant_01e47b00,auto,i32
 0x01e47d40,bb_auto_empty_01e47d40,auto,void
 0x01e47df0,bb_misc_release_held_block,misc,void
+0x01e47e20,bb_misc_release_owner_with_holder,misc,void
 0x01e47ec0,bb_misc_release_owner_nodes,misc,void
 0x01e47f50,bb_misc_held_block_has_value,misc,i8
 0x01e48670,bb_misc_dispatch_and_free_nodes,misc,void
