@@ -22759,6 +22759,7 @@ engine_store_word_product,edge,,32,32,0,0,ecb3d664ff30b9e2,2026-11-05
 engine_string_append,edge,,32,32,0,0,f9bbc2ec8f450f14,2026-11-05
 engine_string_append_counted,edge,,48,48,0,0,f7f96f0ac221364a,2026-11-05
 engine_string_length,edge,,30,30,0,0,dbb33699bb2cc030,2026-11-03
+engine_tree_destroy_nodes,edge,,10,10,0,0,c0a33585b1c03c09,2026-11-09
 engine_wide_string_destroy,edge,,28,28,0,0,82e3fd837894b106,2026-11-03
 engine_write_stderr,edge,,28,28,0,0,f997862b08044f6d,2026-10-31
 event_emk_add,recorded,,150,150,0,0,937b4dca128ba863,2026-10-07
