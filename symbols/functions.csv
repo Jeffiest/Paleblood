@@ -14906,6 +14906,7 @@ address,size,name,system,status,notes
 0x026dde00,1,auto_empty_026dde00,auto,edge-verified,Generated from the empty template
 0x026dde10,1,auto_empty_026dde10,auto,edge-verified,Generated from the empty template
 0x026e2e70,1,auto_empty_026e2e70,auto,edge-verified,Generated from the empty template
+0x026e3860,455,misc_release_owned_state,misc,edge-verified,Releases owned items packed reference held object and node list then resets counters and flags and returns the base reset result
 0x026efe20,1,auto_empty_026efe20,auto,edge-verified,Generated from the empty template
 0x026f2860,8,auto_return_field_026f2860,auto,edge-verified,Generated from the return field template
 0x026f2870,8,auto_return_field_026f2870,auto,edge-verified,Generated from the return field template

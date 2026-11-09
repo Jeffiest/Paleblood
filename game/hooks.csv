@@ -14905,6 +14905,7 @@ address,replacement,system,returns
 0x026dde00,bb_auto_empty_026dde00,auto,void
 0x026dde10,bb_auto_empty_026dde10,auto,void
 0x026e2e70,bb_auto_empty_026e2e70,auto,void
+0x026e3860,bb_misc_release_owned_state,misc,i64
 0x026efe20,bb_auto_empty_026efe20,auto,void
 0x026f2860,bb_auto_return_field_026f2860,auto,i64
 0x026f2870,bb_auto_return_field_026f2870,auto,i64
