@@ -8380,6 +8380,7 @@ address,size,name,system,status,notes
 0x01e47880,3,auto_return_zero_01e47880,auto,edge-verified,Generated from the return zero template
 0x01e47b00,6,auto_return_constant_01e47b00,auto,edge-verified,Generated from the return constant template
 0x01e47d40,1,auto_empty_01e47d40,auto,edge-verified,Generated from the empty template
+0x01e47d50,146,misc_bind_counted_handle,misc,edge-verified,Binds the record key to a target through a counted object; releases one count from the low half while the high half is set and destroys at zero; then releases the target
 0x01e47df0,38,misc_release_held_block,misc,edge-verified,Releases the block held at +0x10 when one is set then clears that pointer
 0x01e47e20,158,misc_release_owner_with_holder,misc,edge-verified,Tears down an owner: the object release runs first with the physics holder as argument then child release and flags set when the counter is set; nodes freed in list order
 0x01e47ec0,142,misc_release_owner_nodes,misc,edge-verified,Releases the owner object with its child and counter then frees each node of its list through its allocator and clears the list

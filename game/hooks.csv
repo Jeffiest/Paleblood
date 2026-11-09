@@ -8379,6 +8379,7 @@ address,replacement,system,returns
 0x01e47880,bb_auto_return_zero_01e47880,auto,i64
 0x01e47b00,bb_auto_return_constant_01e47b00,auto,i32
 0x01e47d40,bb_auto_empty_01e47d40,auto,void
+0x01e47d50,bb_misc_bind_counted_handle,misc,i8
 0x01e47df0,bb_misc_release_held_block,misc,void
 0x01e47e20,bb_misc_release_owner_with_holder,misc,void
 0x01e47ec0,bb_misc_release_owner_nodes,misc,void
