@@ -8502,6 +8502,7 @@ address,replacement,system,returns
 0x01e54670,bb_auto_return_field_01e54670,auto,i64
 0x01e546c0,bb_auto_return_zero_01e546c0,auto,i64
 0x01e54940,bb_auto_return_constant_01e54940,auto,i32
+0x01e54b60,bb_misc_forward_renderer_resource,misc,i64
 0x01e55be0,bb_auto_return_field_01e55be0,auto,i64
 0x01e55bf0,bb_auto_return_field_01e55bf0,auto,i64
 0x01e55c40,bb_auto_return_zero_01e55c40,auto,i64
