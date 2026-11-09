@@ -1484,6 +1484,7 @@ address,size,name,system,status,notes
 0x00be2e90,5,auto_return_member_address_00be2e90,auto,edge-verified,Generated from the return member address template
 0x00be2ea0,4,auto_return_field_00be2ea0,auto,edge-verified,Generated from the return field template
 0x00be2f90,160,misc_lookup_entry_word,misc,edge-verified,Returns the word of a table entry by index and reports an out of range index giving zero
+0x00be3040,164,misc_lookup_entry_link,misc,edge-verified,Returns the address in a table entry tagged link with its flag cleared and reports an out of range index giving zero
 0x00be3100,7,auto_return_field_00be3100,auto,edge-verified,Generated from the return field template
 0x00be3360,8,auto_return_member_address_00be3360,auto,edge-verified,Generated from the return member address template
 0x00be3370,7,auto_return_field_00be3370,auto,edge-verified,Generated from the return field template
