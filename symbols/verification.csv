@@ -22963,6 +22963,7 @@ misc_release_owner_nodes,edge,,10,10,0,0,c6fdd3a722ed1f6e,2026-11-09
 misc_release_owner_slots,edge,,13,13,0,0,cd757b70faaf3895,2026-11-09
 misc_release_pair,edge,,8,8,0,0,35af01fa31edbc2e,2026-11-09
 misc_remove_value_from_vector,edge,,10,10,0,0,bb5afec1a13ffc37,2026-11-09
+misc_replace_block_02242560,edge,,8,8,0,0,9d7e468cece9c57b,2026-11-09
 misc_replace_holder_object,edge,,14,14,0,0,edb94c90e97e4106,2026-11-09
 misc_reset_listed_members,edge,,7,7,0,0,05d746a0ec655de6,2026-11-09
 misc_reset_then_release,edge,,4,4,0,0,69e09939e2f1c051,2026-11-09
