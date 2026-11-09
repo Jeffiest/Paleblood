@@ -8504,6 +8504,7 @@ address,size,name,system,status,notes
 0x01e546c0,3,auto_return_zero_01e546c0,auto,edge-verified,Generated from the return zero template
 0x01e54940,6,auto_return_constant_01e54940,auto,edge-verified,Generated from the return constant template
 0x01e54b60,87,misc_forward_renderer_resource,misc,edge-verified,Forwards the renderer child resource to a callee when its query kind is 6 otherwise returns the kind; the override renderer is used when set
+0x01e54bc0,214,misc_query_each_table_item,misc,edge-verified,Runs a query for every entry of the global item table using the value of the request source and returns at once for a null source
 0x01e55be0,5,auto_return_field_01e55be0,auto,edge-verified,Generated from the return field template
 0x01e55bf0,5,auto_return_field_01e55bf0,auto,edge-verified,Generated from the return field template
 0x01e55c40,3,auto_return_zero_01e55c40,auto,edge-verified,Generated from the return zero template
