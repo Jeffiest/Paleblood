@@ -2951,6 +2951,7 @@ address,replacement,system,returns
 0x0139b5d0,bb_misc_construct_serial_object,misc,void
 0x0139b610,bb_misc_destroy_then_release,misc,i64
 0x0139b630,bb_misc_destroy_owned_block_pair,misc,i64
+0x0139bce0,bb_misc_bind_vtable_56b4840_0139bce0,misc,void
 0x0139d9d0,bb_auto_return_zero_0139d9d0,auto,i64
 0x0139ea10,bb_auto_return_zero_0139ea10,auto,i64
 0x013a7610,bb_auto_return_constant_013a7610,auto,i32
