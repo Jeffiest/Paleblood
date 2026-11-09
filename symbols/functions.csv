@@ -8406,6 +8406,7 @@ address,size,name,system,status,notes
 0x01e44c60,3,auto_return_zero_01e44c60,auto,edge-verified,Generated from the return zero template
 0x01e44ee0,6,auto_return_constant_01e44ee0,auto,edge-verified,Generated from the return constant template
 0x01e45100,1,auto_empty_01e45100,auto,edge-verified,Generated from the empty template
+0x01e45240,205,engine_initialize_static_wide_string_01e45240,engine,edge-verified,Duplicate of the guarded static wide string initializer at 0x0217ffb0 with identical code; forwards to that replacement
 0x01e457c0,5,auto_return_field_01e457c0,auto,edge-verified,Generated from the return field template
 0x01e457d0,5,auto_return_field_01e457d0,auto,edge-verified,Generated from the return field template
 0x01e45820,3,auto_return_zero_01e45820,auto,edge-verified,Generated from the return zero template
@@ -8429,15 +8430,20 @@ address,size,name,system,status,notes
 0x01e47880,3,auto_return_zero_01e47880,auto,edge-verified,Generated from the return zero template
 0x01e47b00,6,auto_return_constant_01e47b00,auto,edge-verified,Generated from the return constant template
 0x01e47d40,1,auto_empty_01e47d40,auto,edge-verified,Generated from the empty template
+0x01e47d50,146,misc_bind_counted_handle,misc,edge-verified,Binds the record key to a target through a counted object; releases one count from the low half while the high half is set and destroys at zero; then releases the target
 0x01e47df0,38,misc_release_held_block,misc,edge-verified,Releases the block held at +0x10 when one is set then clears that pointer
+0x01e47e20,158,misc_release_owner_with_holder,misc,edge-verified,Tears down an owner: the object release runs first with the physics holder as argument then child release and flags set when the counter is set; nodes freed in list order
 0x01e47ec0,142,misc_release_owner_nodes,misc,edge-verified,Releases the owner object with its child and counter then frees each node of its list through its allocator and clears the list
+0x01e47f50,33,misc_held_block_has_value,misc,edge-verified,Reports whether the held block has a child whose value at +0x10 is nonzero; false when there is no block or no child
 0x01e48670,122,misc_dispatch_and_free_nodes,misc,edge-verified,Hands each node payload with the owner context to a callee then frees the nodes through their allocators and clears the list
 0x01e48b10,5,auto_return_field_01e48b10,auto,edge-verified,Generated from the return field template
 0x01e48b20,5,auto_return_field_01e48b20,auto,edge-verified,Generated from the return field template
 0x01e48b70,3,auto_return_zero_01e48b70,auto,edge-verified,Generated from the return zero template
 0x01e48df0,6,auto_return_constant_01e48df0,auto,edge-verified,Generated from the return constant template
+0x01e49400,207,misc_release_resource_holder,misc,edge-verified,Releases a holder counted object with one count and destroy at zero then its block then its two buffers each destroyed and freed; pointers cleared after release
 0x01e4d3b0,8,auto_return_member_address_01e4d3b0,auto,edge-verified,Generated from the return member address template
 0x01e4f110,1,auto_empty_01e4f110,auto,edge-verified,Generated from the empty template
+0x01e4fad0,205,engine_initialize_static_wide_string_01e4fad0,engine,edge-verified,Duplicate of the guarded static wide string initializer at 0x0217ffb0 with identical code; forwards to that replacement
 0x01e50040,1,auto_empty_01e50040,auto,edge-verified,Generated from the empty template
 0x01e500a0,1,auto_empty_01e500a0,auto,edge-verified,Generated from the empty template
 0x01e50130,5,auto_return_field_01e50130,auto,edge-verified,Generated from the return field template
@@ -8449,18 +8455,25 @@ address,size,name,system,status,notes
 0x01e50a30,5,misc_mark_keyed_handle_active,misc,edge-verified,Adds the active bit to a keyed handle flags and changes nothing else
 0x01e50a40,74,misc_select_probe_scaled,misc,edge-verified,Adds the scale in steps of one hundred to the probe selected value or returns minus one when the value or scale is negative
 0x01e50a90,56,misc_select_probe_value,misc,edge-verified,Returns the probe first value when the config flag is set then its second value when the block word bit is set otherwise minus one
+0x01e50ad0,332,misc_refresh_cached_indices,misc,edge-verified,Refreshes the cache first index from a masked-key lookup and a node list match then the second index from a second lookup and the provider tag lookup sign extended
 0x01e50c20,73,misc_chain_leaf_flag,misc,edge-verified,Returns the flag byte of the leaf of the holder owner chain or zero when the owner has no link or the link has no leaf
+0x01e50c70,74,misc_select_idle_pool_entry,misc,edge-verified,Selects the first idle entry of the pool list and clears its flag bit; a nonzero flag byte hands the pool sub-object to the other selection instead
+0x01e52cc0,137,misc_drain_pool_entries,misc,edge-verified,Drains the pool list: each entry the virtual test keeps goes back on the list with its idle bit set; the others are destroyed and freed through their allocator
 0x01e53190,3,auto_return_zero_01e53190,auto,edge-verified,Generated from the return zero template
 0x01e531d0,5,auto_return_field_01e531d0,auto,edge-verified,Generated from the return field template
 0x01e531e0,5,auto_return_field_01e531e0,auto,edge-verified,Generated from the return field template
 0x01e53230,3,auto_return_zero_01e53230,auto,edge-verified,Generated from the return zero template
 0x01e532d0,6,auto_return_constant_01e532d0,auto,edge-verified,Generated from the return constant template
+0x01e534c0,27,misc_init_keyed_handle_variant,misc,edge-verified,Sets up a keyed handle of the second class with the target stored and the id set to minus one then the active flag added and the class virtual table stored last
 0x01e534f0,1,auto_empty_01e534f0,auto,edge-verified,Generated from the empty template
+0x01e53500,41,misc_read_probe_flag,misc,edge-verified,Reports the flag byte of the probe detail for the holder source zero-extended; zero when the probe reports no detail
+0x01e535c0,205,engine_initialize_static_wide_string_01e535c0,engine,edge-verified,Duplicate of the guarded static wide string initializer at 0x0217ffb0 with identical code; forwards to that replacement
 0x01e53b40,5,auto_return_field_01e53b40,auto,edge-verified,Generated from the return field template
 0x01e53b50,5,auto_return_field_01e53b50,auto,edge-verified,Generated from the return field template
 0x01e53ba0,3,auto_return_zero_01e53ba0,auto,edge-verified,Generated from the return zero template
 0x01e53e20,6,auto_return_constant_01e53e20,auto,edge-verified,Generated from the return constant template
 0x01e54040,1,auto_empty_01e54040,auto,edge-verified,Generated from the empty template
+0x01e540e0,205,engine_initialize_static_wide_string_01e540e0,engine,edge-verified,Duplicate of the guarded static wide string initializer at 0x0217ffb0 with identical code; forwards to that replacement
 0x01e54660,5,auto_return_field_01e54660,auto,edge-verified,Generated from the return field template
 0x01e54670,5,auto_return_field_01e54670,auto,edge-verified,Generated from the return field template
 0x01e546c0,3,auto_return_zero_01e546c0,auto,edge-verified,Generated from the return zero template
