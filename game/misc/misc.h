@@ -1,0 +1,137 @@
+// SPDX-License-Identifier: GPL-2.0-or-later
+// Misc: layouts shared by the span reader and the chunk pages it looks its entries up in.
+#pragma once
+
+#include <cstddef>
+#include <cstdint>
+
+#include "runtime/original.h"
+
+namespace misc {
+
+struct Span;
+struct SpanValue;
+
+/**
+ *
+ * Size of a chunk page: clearing the low bits of a chunk address gives the page it lies in.
+ *
+ */
+constexpr uint64_t chunk_page_size = 0x1000;
+
+/**
+ *
+ * Offset from the start of a page to its first chunk slot.
+ *
+ */
+constexpr uint64_t chunk_first_offset = 0x38;
+
+/**
+ *
+ * Multiplicative inverse of 7 modulo 2^32 (the original's -0x49249249), which divides a slot offset
+ * of whole chunk strides, 56 bytes each, after the offset is shifted down by three bits.
+ *
+ */
+constexpr uint32_t inverse_of_seven = 0xb6db6db7u;
+
+/**
+ *
+ * Offset of the entry pointer table inside a pool, one 8-byte pointer per slot index.
+ *
+ */
+constexpr size_t pool_slots_offset = 0x28;
+
+/**
+ *
+ * Bit of ChunkEntry::flags that selects the direct path of the span reader.
+ *
+ */
+constexpr uint8_t direct_flag = 0x02;
+
+/**
+ *
+ * An entry for one chunk, found through its pool's slot table.
+ *
+ */
+struct ChunkEntry {
+    uint8_t unknown_0x0000[0x0b];
+    uint8_t flags; /**< Bits tested by the span reader; direct_flag selects the direct path. */
+};
+static_assert(offsetof(ChunkEntry, flags) == 0x0b);
+
+/**
+ *
+ * The pool a chunk page points to. Its slot table starts at pool_slots_offset.
+ *
+ */
+struct ChunkPool {
+    uint8_t unknown_0x0000[0x28];
+};
+
+/**
+ *
+ * The page a chunk lies in, found by clearing the low bits of the chunk address.
+ *
+ */
+struct ChunkPage {
+    uint8_t unknown_0x0000[0x20];
+    ChunkPool *pool; /**< The pool whose slot table indexes this page's chunks. */
+};
+static_assert(offsetof(ChunkPage, pool) == 0x20);
+
+/**
+ *
+ * The virtual functions of a span: the value source and the span source.
+ *
+ */
+struct SpanVtable {
+    uint8_t unknown_0x0000[0x18];
+    uint64_t (*value_0x18)(Span *self);                             /**< Returns the argument for span_0x1f0. */
+    uint8_t unknown_0x0020[0x1d0];
+    void (*span_0x1f0)(SpanValue *out, Span *self, uint64_t argument); /**< Writes the span into out. */
+};
+static_assert(offsetof(SpanVtable, value_0x18) == 0x18);
+static_assert(offsetof(SpanVtable, span_0x1f0) == 0x1f0);
+
+/**
+ *
+ * A 16-byte block holding a span's two ends as floats; the other bytes are not read.
+ *
+ */
+struct SpanValue {
+    float start;             /**< The lower end of the span. */
+    uint8_t unknown_0x04[4];
+    float end;               /**< The upper end of the span. */
+    uint8_t unknown_0x0c[4];
+};
+static_assert(offsetof(SpanValue, start) == 0x00);
+static_assert(offsetof(SpanValue, end) == 0x08);
+static_assert(sizeof(SpanValue) == 0x10);
+
+/**
+ *
+ * An object that reports a span and keeps the chunk its entry is looked up through.
+ *
+ */
+struct Span {
+    const SpanVtable *vtable; /**< Virtual functions of this object. */
+    uint8_t unknown_0x0008[0x40];
+    uint64_t chunk;           /**< Address of the chunk, or zero when there is none. */
+};
+static_assert(offsetof(Span, vtable) == 0x00);
+static_assert(offsetof(Span, chunk) == 0x48);
+
+/**
+ *
+ * Writes a span into out from the object's chunk entry; the span is read from the chunk path.
+ *
+ */
+RT_ORIGINAL(0x004060a0, fn_004060a0, void(SpanValue *out, Span *self));
+
+/** Constant added to the span's width before it is rounded down. */
+RT_GLOBAL(0x04b3b7a8, span_bias, const double);
+
+/** Constant the rounded width is multiplied by. */
+RT_GLOBAL(0x04b3b7b0, span_scale, const double);
+
+}  // namespace misc

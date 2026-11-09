@@ -1,5 +1,6 @@
 address,replacement,system,returns
 0x004034f0,bb_auto_return_constant_004034f0,auto,i8
+0x00405fd0,bb_misc_quantized_span,misc,f64
 0x00406600,bb_auto_empty_00406600,auto,void
 0x004090b0,bb_engine_counted_pair_retarget,engine,void
 0x00409fd0,bb_auto_empty_00409fd0,auto,void
