@@ -6,6 +6,8 @@
 
 namespace misc {
 
+struct PoolEntry;
+
 /**
  *
  * Size of the lock object held by a SlotPool: one 64-bit word.
@@ -20,7 +22,7 @@ constexpr size_t slot_pool_lock_bytes = sizeof(uint64_t);
  */
 struct SlotPool {
     uint8_t unknown_0x00[0x10];
-    void **children;          /**< Child objects, visited in order when the pool is not changed. */
+    PoolEntry **children;     /**< Entries, visited in order when the pool is not changed. */
     int32_t child_count;      /**< Number of child objects. */
     uint8_t unknown_0x1c[0x34];
     uint64_t *values;         /**< One 64-bit value per slot. */

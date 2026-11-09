@@ -22933,6 +22933,7 @@ misc_scratch_value_18,edge,,15,15,0,0,78d59daf53f9216d,2026-11-09
 misc_scratch_value_48,edge,,15,15,0,0,aeae6a9a6b51dbeb,2026-11-09
 misc_scratch_value_50,edge,,15,15,0,0,dbfc7470130ba6ee,2026-11-09
 misc_scratch_value_58,edge,,15,15,0,0,1a8f63b163f55114,2026-11-09
+misc_slot_pool_measure,edge,,17,17,0,0,8e439df8d4ab786a,2026-11-09
 misc_slot_pool_reassign,edge,,15,15,0,0,1419ecc1fda5c910,2026-11-09
 misc_slot_pool_take,edge,,19,19,0,0,dcc1aacd2c9a0f9d,2026-11-09
 misc_slot_pool_total,edge,,6,6,0,0,e46c25952fa7a639,2026-11-09
