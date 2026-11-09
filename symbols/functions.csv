@@ -18606,12 +18606,30 @@ address,size,name,system,status,notes
 0x02b3d3f0,189,misc_release_entries_and_clear,misc,edge-verified,Releases each counted entry of an array then frees its storage and clears its begin end and word
 0x02b3d6e0,1,auto_empty_02b3d6e0,auto,edge-verified,Generated from the empty template
 0x02b3d6f0,1,auto_empty_02b3d6f0,auto,edge-verified,Generated from the empty template
+0x02b3d700,21,misc_span_forward,misc,edge-verified,Forwards two arguments to a callee with the first entry and entry count of a run then returns its result
 0x02b3d720,5,auto_return_field_02b3d720,auto,edge-verified,Generated from the return field template
+0x02b3d730,8,misc_span_end,misc,edge-verified,Returns the first entry address plus the entry count of a run as a 64-bit address past its end
+0x02b3d920,132,misc_find_leaf_index,misc,edge-verified,Finds the position of a target node among the leaves below a tree node or negative one when it is not below the node
+0x02b3d9b0,80,misc_count_subtree_leaves,misc,edge-verified,Counts the leaves below a tree node where a leaf counts one and a group sums the counts of its children
 0x02b3de50,4,auto_return_field_02b3de50,auto,edge-verified,Generated from the return field template
 0x02b3dfc0,5,auto_return_member_address_02b3dfc0,auto,edge-verified,Generated from the return member address template
+0x02b3dfd0,59,misc_destroy_node_and_free,misc,edge-verified,Destroys a node through its vtable destroy slot then frees it through the allocator it was created with; a null node does nothing
+0x02b3e010,73,misc_inline_text_reset,misc,edge-verified,Empties a text object by setting its vtable freeing heap storage through its allocator and making it inline with no characters
+0x02b3e060,58,misc_inline_text_destroy,misc,edge-verified,Destroys a text object by freeing its heap storage through its allocator then hands the object to the library release routine
 0x02b3e130,1,auto_empty_02b3e130,auto,edge-verified,Generated from the empty template
+0x02b3e150,12,misc_set_value_clear_link,misc,edge-verified,Stores a value in a two-word slot and clears the link word that follows it
 0x02b3e160,1,auto_empty_02b3e160,auto,edge-verified,Generated from the empty template
+0x02b3e170,5,misc_set_link,misc,edge-verified,Stores the link word of a two-word slot and leaves its value word as it is
 0x02b3e180,1,auto_empty_02b3e180,auto,edge-verified,Generated from the empty template
+0x02b3e190,12,misc_call_object_slot_38,misc,edge-verified,Forwards a reference object to the virtual routine in its slot at +0x38 and returns that result
+0x02b3e1a0,21,misc_object_slot_28_is_set,misc,edge-verified,Reports whether the virtual routine in the object slot at +0x28 returns a non-zero value for the object
+0x02b3e1c0,12,misc_call_object_slot_40,misc,edge-verified,Forwards a reference object to the virtual routine in its slot at +0x40 and returns that result
+0x02b3e1d0,12,misc_forward_object_slot_28,misc,edge-verified,Forwards a reference object to the virtual routine in its slot at +0x28 and returns that result
+0x02b3e1e0,149,misc_build_object_block,misc,edge-verified,Builds a 0x140 byte block for an object from its slot answer and stores the answer routine value in it or returns zero
+0x02b3e280,58,misc_destroy_node_slot_00_and_free,misc,edge-verified,Releases what a node holds through its first vtable slot then frees the node through its allocator; a null node does nothing
+0x02b3e2c0,9,misc_forward_object_slot_20,misc,edge-verified,Forwards a reference object to the virtual routine in its slot at +0x20 and returns that result
+0x02b3e2d0,35,misc_forward_object_slot_30_result,misc,edge-verified,Asks an object for a second object through its slot at +0x30 and forwards to that object slot at +0x28 or returns all ones
+0x02b3e300,97,misc_alloc_block_with_value,misc,edge-verified,Asks the object for a value through its slot at +0x28 and if it is non-zero allocates and fills a 0x30 block
 0x02b3e5f0,1,auto_empty_02b3e5f0,auto,edge-verified,Generated from the empty template
 0x02b3e610,1,auto_empty_02b3e610,auto,edge-verified,Generated from the empty template
 0x02b3e820,5,auto_return_field_02b3e820,auto,edge-verified,Generated from the return field template
