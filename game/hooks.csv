@@ -8514,6 +8514,7 @@ address,replacement,system,returns
 0x01e55c40,bb_auto_return_zero_01e55c40,auto,i64
 0x01e55ec0,bb_auto_return_constant_01e55ec0,auto,i32
 0x01e57770,bb_auto_return_float_field_01e57770,auto,f32
+0x01e577d0,bb_misc_chain_ready_or_group_bit,misc,i8
 0x01e57940,bb_misc_child_ready_after_checks,misc,i8
 0x01e579f0,bb_misc_apply_child_unless_flagged,misc,i8
 0x01e57a20,bb_misc_dispatch_stages_0_to_8,misc,i64

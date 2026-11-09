@@ -8515,6 +8515,7 @@ address,size,name,system,status,notes
 0x01e55c40,3,auto_return_zero_01e55c40,auto,edge-verified,Generated from the return zero template
 0x01e55ec0,6,auto_return_constant_01e55ec0,auto,edge-verified,Generated from the return constant template
 0x01e57770,9,auto_return_float_field_01e57770,auto,edge-verified,Generated from the return float field template
+0x01e577d0,353,misc_chain_ready_or_group_bit,misc,edge-verified,Answers whether the owner child is ready or its chains hold a matching node and otherwise the group bit of the child holder
 0x01e57940,172,misc_child_ready_after_checks,misc,edge-verified,Answers whether the owner child is ready after the registry and latch globals are checked and reports a missing registry by name
 0x01e579f0,34,misc_apply_child_unless_flagged,misc,edge-verified,Answers true when the owner skip flag is set otherwise returns the child answer to the low byte of the value
 0x01e57a20,172,misc_dispatch_stages_0_to_8,misc,edge-verified,Runs the stage callee for stages 0 to 7 then returns the stage 8 result and returns 0 for a null target
