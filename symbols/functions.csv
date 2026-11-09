@@ -53,6 +53,7 @@ address,size,name,system,status,notes
 0x00410100,5,auto_return_field_00410100,auto,edge-verified,Generated from the return field template
 0x00410290,1,auto_empty_00410290,auto,edge-verified,Generated from the empty template
 0x004102a0,1,auto_empty_004102a0,auto,edge-verified,Generated from the empty template
+0x00410e60,114,misc_push_front_locked,misc,edge-verified,Pushes a value onto the front of the owner list under its lock then unlocks and returns the unlock result
 0x00410ee0,42,misc_prepare_then_release,misc,edge-verified,Prepares an object then releases it through the scratch service returning the release result
 0x00418d80,8,auto_return_field_00418d80,auto,edge-verified,Generated from the return field template
 0x0041cac0,1,auto_empty_0041cac0,auto,edge-verified,Generated from the empty template
