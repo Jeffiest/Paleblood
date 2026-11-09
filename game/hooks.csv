@@ -4993,6 +4993,7 @@ address,replacement,system,returns
 0x01886d30,bb_engine_initialize_static_wide_string_01886d30,engine,void
 0x01887300,bb_misc_drain_object_queue,misc,void
 0x01887680,bb_misc_notify_unflagged_record,misc,i64
+0x01887870,bb_misc_insert_keyed_record,misc,i64
 0x01887de0,bb_auto_empty_01887de0,auto,void
 0x01887eb0,bb_auto_empty_01887eb0,auto,void
 0x01888200,bb_auto_empty_01888200,auto,void

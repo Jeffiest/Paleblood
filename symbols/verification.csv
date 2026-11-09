@@ -22926,6 +22926,7 @@ misc_drain_object_queue,edge,,14,14,0,0,691df9c7d0a3a1ec,2026-11-09
 misc_finish_tracked_update,edge,,15,15,0,0,70fff57b72b6f567,2026-11-09
 misc_init_child_holder,edge,,4,4,0,0,129ed90552350e0f,2026-11-09
 misc_init_record_block,edge,,3,3,0,0,7bd22e5e16029ce2,2026-11-09
+misc_insert_keyed_record,edge,,7,7,0,0,477289891a03780e,2026-11-09
 misc_keyed_pool_append,edge,,10,10,0,0,a4f064fdb0d9e5e5,2026-11-09
 misc_list_all_exceed_one,edge,,12,12,0,0,9d15f22d0f823a8a,2026-11-09
 misc_lookup_record_payload,edge,,9,9,0,0,5dad04ae8902d9e9,2026-11-09

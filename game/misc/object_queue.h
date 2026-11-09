@@ -27,7 +27,7 @@ struct QueuedObjectVtable {
  */
 struct QueuedObject {
     const QueuedObjectVtable *vtable;
-    uint8_t unknown_0x08[0x4];
+    uint32_t key_0x08;   /**< Compared with the key a record is looked up by. */
     uint8_t marked_0x0c; /**< Zero until the first pass sets it. */
 };
 static_assert(offsetof(QueuedObject, marked_0x0c) == 0x0c);
