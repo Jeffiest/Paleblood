@@ -1479,6 +1479,7 @@ address,size,name,system,status,notes
 0x00be1740,1,auto_empty_00be1740,auto,edge-verified,Generated from the empty template
 0x00be1750,1,auto_empty_00be1750,auto,edge-verified,Generated from the empty template
 0x00be1760,8,misc_small_type_address,misc,edge-verified,Returns the address of the small type static object
+0x00be1770,277,misc_register_type_pair,misc,edge-verified,Registers the descriptor type with its table then fills its static descriptor and registers the small type with a flag
 0x00be2dd0,4,auto_return_field_00be2dd0,auto,edge-verified,Generated from the return field template
 0x00be2e90,5,auto_return_member_address_00be2e90,auto,edge-verified,Generated from the return member address template
 0x00be2ea0,4,auto_return_field_00be2ea0,auto,edge-verified,Generated from the return field template
