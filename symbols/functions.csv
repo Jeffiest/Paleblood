@@ -2924,6 +2924,7 @@ address,size,name,system,status,notes
 0x0139b0e0,57,misc_take_slot_item,misc,edge-verified,Takes the last item of a slot list if it has room marks its flag byte and returns the item or -1
 0x0139b120,62,misc_release_slot_item,misc,edge-verified,Clears the flag of an item below the next slot limit and appends it back to the end of the slot list
 0x0139b160,279,misc_attach_two_objects,misc,edge-verified,Looks up an object from a source makes two child objects and registers the holder fields with it or does nothing for a null source
+0x0139b410,41,misc_bind_vtable_56b4840_alt2,misc,edge-verified,Publishes the address of the static vtable block at 0x056b4840 into a global pointer once and sets a qword flag
 0x0139b4f0,1,auto_empty_0139b4f0,auto,edge-verified,Generated from the empty template
 0x0139d9d0,3,auto_return_zero_0139d9d0,auto,edge-verified,Generated from the return zero template
 0x0139ea10,3,auto_return_zero_0139ea10,auto,edge-verified,Generated from the return zero template
