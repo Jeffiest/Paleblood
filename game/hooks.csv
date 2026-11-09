@@ -5046,6 +5046,7 @@ address,replacement,system,returns
 0x018881b0,bb_misc_set_vtable_after_call,misc,void
 0x018881d0,bb_misc_call_then_release,misc,i64
 0x01888200,bb_auto_empty_01888200,auto,void
+0x018882a0,bb_misc_init_shared_record_once,misc,void
 0x01888b10,bb_auto_empty_01888b10,auto,void
 0x01889310,bb_auto_return_constant_01889310,auto,i32
 0x0188b7c0,bb_auto_return_constant_0188b7c0,auto,i32
