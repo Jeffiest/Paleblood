@@ -42,9 +42,22 @@ address,size,name,system,status,notes
 0x0040e1a0,90,misc_append_indexed_node,misc,edge-verified,Numbers a node with the next holder index counts it keeps the first node once and appends it to the chain tail
 0x0040e680,260,misc_take_pending_node,misc,edge-verified,Takes a 0x38 byte node from the holder pool from the cursor or the slow allocator and moves the holders pending words into it then clears them and returns the node or null
 0x0040f0b0,435,misc_replace_holder_object,misc,edge-verified,Builds a new object from the accepted object that the table or a lookup gives and stores it in the holder in place of the old one returning true when stored
+0x0040f2f0,461,misc_find_or_create_match,misc,edge-verified,Finds the first candidate matching the request and answers the output with its row otherwise marks a pending request and allocates an object for an empty output
+0x0040fa50,183,misc_keep_last_path_component,misc,edge-verified,Keeps the text after the last path separator as a shared text and drops its reference returns whether a separator was found
+0x0040fb10,184,misc_tagged_name_matches,misc,edge-verified,Tells whether the tagged word names a record whose text is one of three known names and drops its reference releasing the record through the scratch service on the last one
+0x0040fbd0,115,misc_emit_through_lookup,misc,edge-verified,Emits a value through the emitter the lookup gives for id 0x0c then releases it otherwise reports the failure to the sink when there is one and returns zero
+0x0040fc50,193,misc_emit_through_fresh_sink,misc,edge-verified,Emits a value through the emitter of the lookup for id 0x0c to a sink the lookup opens then releases the emitter and the sink otherwise reports the failure to the sink
+0x0040fd20,19,misc_begin_configure_holder,misc,edge-verified,Gives a holder its vtable and configures it through the full configuration which returns the configuration result
+0x0040fd40,302,misc_configure_holder,misc,edge-verified,Configures a holder from its flags and first word by building its source and detail blocks then a record and returns the result of the final configuration
+0x0040fe70,199,misc_configure_from_retained_pair,misc,edge-verified,Gives a holder its vtable retains the objects of two slots configures the holder with them then drops each reference that was taken
 0x00410100,5,auto_return_field_00410100,auto,edge-verified,Generated from the return field template
 0x00410290,1,auto_empty_00410290,auto,edge-verified,Generated from the empty template
 0x004102a0,1,auto_empty_004102a0,auto,edge-verified,Generated from the empty template
+0x00410d90,194,misc_init_member_and_push,misc,edge-verified,Makes a member with a kind width and zero value retains its source and pushes the member onto the front of the source list under its lock
+0x00410e60,114,misc_push_front_locked,misc,edge-verified,Pushes a value onto the front of the owner list under its lock then unlocks and returns the unlock result
+0x00410ee0,42,misc_prepare_then_release,misc,edge-verified,Prepares an object then releases it through the scratch service returning the release result
+0x00410f10,160,misc_remove_member_from_list,misc,edge-verified,Unlinks the node of a member from its source list under the list lock then releases the source and tail releases the member
+0x00410fb0,122,misc_remove_value_locked,misc,edge-verified,Removes the first node of the owner list whose value matches walking back from the tail under the owner lock and releases it then returns the unlock result
 0x00418d80,8,auto_return_field_00418d80,auto,edge-verified,Generated from the return field template
 0x0041cac0,1,auto_empty_0041cac0,auto,edge-verified,Generated from the empty template
 0x0041d010,3,auto_return_constant_0041d010,auto,edge-verified,Generated from the return constant template
