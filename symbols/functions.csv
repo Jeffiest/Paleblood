@@ -18538,6 +18538,7 @@ address,size,name,system,status,notes
 0x02b3d9b0,80,misc_count_subtree_leaves,misc,edge-verified,Counts the leaves below a tree node where a leaf counts one and a group sums the counts of its children
 0x02b3de50,4,auto_return_field_02b3de50,auto,edge-verified,Generated from the return field template
 0x02b3dfc0,5,auto_return_member_address_02b3dfc0,auto,edge-verified,Generated from the return member address template
+0x02b3dfd0,59,misc_destroy_node_and_free,misc,edge-verified,Destroys a node through its vtable destroy slot then frees it through the allocator it was created with; a null node does nothing
 0x02b3e130,1,auto_empty_02b3e130,auto,edge-verified,Generated from the empty template
 0x02b3e160,1,auto_empty_02b3e160,auto,edge-verified,Generated from the empty template
 0x02b3e180,1,auto_empty_02b3e180,auto,edge-verified,Generated from the empty template
