@@ -22915,6 +22915,7 @@ misc_child_idle,edge,,10,10,0,0,7d142083dbdc1f05,2026-11-09
 misc_create_checked,edge,,7,7,0,0,3d08f8a7d8cf56ae,2026-11-09
 misc_dispatch_request,edge,,6,6,0,0,614522f80ec7e1c2,2026-11-09
 misc_dispatch_to_target,edge,,8,8,0,0,78669d30f0a70518,2026-11-09
+misc_drain_object_queue,edge,,14,14,0,0,691df9c7d0a3a1ec,2026-11-09
 misc_finish_tracked_update,edge,,15,15,0,0,70fff57b72b6f567,2026-11-09
 misc_init_child_holder,edge,,4,4,0,0,129ed90552350e0f,2026-11-09
 misc_init_record_block,edge,,3,3,0,0,7bd22e5e16029ce2,2026-11-09
@@ -22922,6 +22923,7 @@ misc_keyed_pool_append,edge,,10,10,0,0,a4f064fdb0d9e5e5,2026-11-09
 misc_list_all_exceed_one,edge,,12,12,0,0,9d15f22d0f823a8a,2026-11-09
 misc_lookup_record_payload,edge,,9,9,0,0,5dad04ae8902d9e9,2026-11-09
 misc_lookup_value_or_zero,edge,,9,9,0,0,b76ae46dc49a80c6,2026-11-09
+misc_notify_unflagged_record,edge,,16,16,0,0,4939877d9dfa9721,2026-11-09
 misc_pool_append_node,edge,,10,10,0,0,2715d63d147a09e3,2026-11-09
 misc_prepare_forward,edge,,6,6,0,0,543c3d001ccdac0f,2026-11-09
 misc_quantized_span,edge,,23,23,0,0,84373e71f9548e5c,2026-11-09

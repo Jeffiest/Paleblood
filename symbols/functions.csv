@@ -4985,6 +4985,8 @@ address,size,name,system,status,notes
 0x01884ce0,3,auto_return_constant_01884ce0,auto,edge-verified,Generated from the return constant template
 0x018852b0,1,auto_empty_018852b0,auto,edge-verified,Generated from the empty template
 0x01886740,1,auto_empty_01886740,auto,edge-verified,Generated from the empty template
+0x01887300,181,misc_drain_object_queue,misc,edge-verified,Two-pass drain of a queue ring: first pass marks each object; second pass destroys and frees marked objects and unlinks their nodes
+0x01887680,47,misc_notify_unflagged_record,misc,edge-verified,Hands a holder record to the notifier at 0x018873c0 when its flag byte is clear then returns the holder
 0x01887de0,1,auto_empty_01887de0,auto,edge-verified,Generated from the empty template
 0x01887eb0,1,auto_empty_01887eb0,auto,edge-verified,Generated from the empty template
 0x01888200,1,auto_empty_01888200,auto,edge-verified,Generated from the empty template
