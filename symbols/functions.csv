@@ -1435,6 +1435,7 @@ address,size,name,system,status,notes
 0x00b68050,1,auto_empty_00b68050,auto,edge-verified,Generated from the empty template
 0x00b680a0,6,auto_return_constant_00b680a0,auto,edge-verified,Generated from the return constant template
 0x00b680c0,1,auto_empty_00b680c0,auto,edge-verified,Generated from the empty template
+0x00b68940,313,misc_slot_pool_take,misc,edge-verified,Claims the first unclaimed slot of a lock-guarded pool and returns its value or zero when none is free
 0x00b697c0,1,auto_empty_00b697c0,auto,edge-verified,Generated from the empty template
 0x00b6a020,7,auto_return_field_00b6a020,auto,edge-verified,Generated from the return field template
 0x00b6afa0,6,auto_return_constant_00b6afa0,auto,edge-verified,Generated from the return constant template
