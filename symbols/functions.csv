@@ -12844,15 +12844,27 @@ address,size,name,system,status,notes
 0x02240de0,149,misc_owned_list_delete,misc,edge-verified,Deleting destructor of an owned list; sets the vtable; frees every node through its allocator; frees the object through the thread allocator by its size tag and returns that result
 0x02240e80,94,misc_owned_list_destroy,misc,edge-verified,Destructor of an owned list; sets the vtable; frees every node through its allocator; clears the word at 0x20 and the list head
 0x02241880,322,physics_list_append_pair,physics,edge-verified,Appends the second body parent object to an owned list when both bodies instances are ready kind 2 and one parent is ready state 2; allocates a node at the tail
+0x02242560,218,misc_replace_block_02242560,misc,edge-verified,Replaces the owner entry block with one sized from the scaled request; fills it and frees the old block through the cached or looked-up allocator
+0x02242640,203,misc_replace_block_02242640,misc,edge-verified,Replaces the owner entry block with one sized from the doubled and masked request; fills it and frees the old block through the cached or looked-up allocator
+0x02242710,196,misc_replace_block_02242710,misc,edge-verified,Replaces the owner entry block with one sized from the doubled request; fills it and frees the old block through the cached or looked-up allocator
 0x02242980,15,misc_base_init_02242980,misc,edge-verified,Stores the base class vtable address point in a base object and nothing else
+0x02242990,66,misc_base_delete_02242990,misc,edge-verified,Deleting destructor of a base object: stores the base vtable address point then frees the object through the thread allocator sized free with size 0x28 and returns its result
 0x022429e0,45,misc_pair_matches_022429e0,misc,edge-verified,Reports whether a two word pair of size 0x10 matches the owner two keys
+0x02242a10,30,misc_member_call_02242a10,misc,edge-verified,Calls the member-function thunk target on the adjusted object directly or through its virtual slot and returns the target result
 0x02242a30,15,misc_base_init_02242a30,misc,edge-verified,Stores the base class vtable address point in a base object and nothing else
+0x02242a40,66,misc_base_delete_02242a40,misc,edge-verified,Deleting destructor of a base object: stores the base vtable address point then frees the object through the thread allocator sized free with size 0x28 and returns its result
 0x02242a90,45,misc_pair_matches_02242a90,misc,edge-verified,Reports whether a two word pair of size 0x10 matches the owner two keys
+0x02242ac0,30,misc_member_call_02242ac0,misc,edge-verified,Calls the member-function thunk target on the adjusted object directly or through its virtual slot and returns the target result
 0x02242ae0,15,misc_base_init_02242ae0,misc,edge-verified,Stores the base class vtable address point in a base object and nothing else
+0x02242af0,66,misc_base_delete_02242af0,misc,edge-verified,Deleting destructor of a base object: stores the base vtable address point then frees the object through the thread allocator sized free with size 0x28 and returns its result
 0x02242b40,45,misc_pair_matches_02242b40,misc,edge-verified,Reports whether a two word pair of size 0x10 matches the owner two keys
+0x02242b70,30,misc_member_call_02242b70,misc,edge-verified,Calls the member-function thunk target on the adjusted object directly or through its virtual slot and returns the target result
 0x02242b90,31,misc_base_init_02242b90,misc,edge-verified,Runs the setup step on the object then stores the other class vtable in it
 0x02242bb0,75,misc_sized_delete_02242bb0,misc,edge-verified,Runs the release step then frees the object through the thread allocator with its size tag or the default 0x130 size and returns the free result
 0x02242c30,24,misc_forward_index_02242c30,misc,edge-verified,Stores the value then forwards the inner object index value and mode zero to the forwarding function and returns its result
+0x02242ea0,52,misc_held_block_delete_02242ea0,misc,edge-verified,Deleting destructor of an owner holding one block: stores its virtual table releases the held block through its allocator when one is held then returns the library result of the owner
+0x02242ee0,72,misc_held_block_destroy_02242ee0,misc,edge-verified,Destructor of an owner holding one block: stores its virtual table and when a block is held releases it through the owner allocator then clears the held block and the two words after it
+0x022430f0,89,misc_clear_id_list_022430f0,misc,edge-verified,Hands each 32-bit id of a list to the physics world id handler then empties the list by setting its end to its first id
 0x022447b0,5,auto_return_field_022447b0,auto,edge-verified,Generated from the return field template
 0x022447c0,5,auto_return_field_022447c0,auto,edge-verified,Generated from the return field template
 0x02244810,3,auto_return_zero_02244810,auto,edge-verified,Generated from the return zero template
