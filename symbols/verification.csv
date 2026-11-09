@@ -23076,6 +23076,7 @@ misc_register_type_descriptor,edge,,2,2,0,0,afb9924897c2a447,2026-11-09
 misc_register_type_pair,edge,,2,2,0,0,3496f52d7658b00a,2026-11-09
 misc_relay_member_call,edge,,12,12,0,0,c77ee0c14705d8bb,2026-11-09
 misc_release_after_empty_call,edge,,6,6,0,0,545042d61ebb4e42,2026-11-09
+misc_release_chain_nodes,edge,,4,4,0,0,d7c9dd140b2f4242,2026-11-09
 misc_release_entries_and_clear,edge,,13,13,0,0,83babd723232eff6,2026-11-09
 misc_release_entries_then_forward,edge,,14,14,0,0,5fa30e404e0403fc,2026-11-09
 misc_release_four_children,edge,,9,9,0,0,0916e3319b18bd4d,2026-11-09
