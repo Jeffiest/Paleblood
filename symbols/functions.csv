@@ -1507,6 +1507,7 @@ address,size,name,system,status,notes
 0x00be44f0,9,misc_record_link_address,misc,edge-verified,Returns the address held in a lookup record tagged link with its flag bit cleared
 0x00be4500,6,auto_return_constant_00be4500,auto,edge-verified,Generated from the return constant template
 0x00be6dc0,123,misc_dual_held_member_object_init,misc,edge-verified,Builds a dual held member object with no held items by initialising its first member with a name and zeroing its words
+0x00be6e40,75,misc_dual_held_member_object_free,misc,edge-verified,Deleting destructor of a dual held member object that releases it then frees its block through the thread allocator with its size
 0x00be6e90,209,misc_dual_held_member_object_release,misc,edge-verified,Releases a dual held member object by destroying its members and dropping its two held references
 0x00be6f70,9,misc_record_link_address_00be6f70,misc,edge-verified,Returns the address held in a lookup record tagged link with its flag bit cleared
 0x00be7010,28,misc_dispatch_by_kind,misc,edge-verified,Forwards a call to one of two target functions by the object kind word and returns one for any other kind
