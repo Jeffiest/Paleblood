@@ -15071,6 +15071,7 @@ address,replacement,system,returns
 0x026f3bb0,bb_misc_destroy_chain_node,misc,void
 0x026f3c30,bb_misc_destroy_chain_node_3c30,misc,void
 0x026f3cb0,bb_misc_destroy_chain_node_3cb0,misc,void
+0x026f3d30,bb_misc_destroy_chain_node_3d30,misc,void
 0x026f7810,bb_auto_return_zero_026f7810,auto,i64
 0x026f7840,bb_auto_return_field_026f7840,auto,i32
 0x026f7850,bb_auto_return_member_address_026f7850,auto,i64
