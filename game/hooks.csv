@@ -2879,6 +2879,7 @@ address,replacement,system,returns
 0x01393730,bb_auto_empty_01393730,auto,void
 0x01395950,bb_auto_empty_01395950,auto,void
 0x01397280,bb_auto_empty_01397280,auto,void
+0x013986d0,bb_misc_release_holder_child,misc,i64
 0x013987d0,bb_misc_run_four_stages,misc,i64
 0x01398830,bb_misc_run_stages_for_pair,misc,i64
 0x013988d0,bb_misc_bind_vtable_56b4840,misc,void
