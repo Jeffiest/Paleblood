@@ -128,12 +128,6 @@ static_assert(offsetof(Span, chunk) == 0x48);
  */
 RT_ORIGINAL(0x004060a0, fn_004060a0, void(SpanValue *out, Span *self));
 
-/**
- *
- * Resolver for a single argument; its result is the first argument of the forwarding stage.
- *
- */
-RT_ORIGINAL(0x00400300, fn_00400300, uint64_t(uint64_t));
 
 /**
  *
@@ -243,7 +237,6 @@ struct Pending {
 static_assert(offsetof(Pending, third) == 0x10);
 
 RT_ORIGINAL(0x004de620, fn_004de620, void(RefCounted *));
-RT_ORIGINAL(0x004de720, fn_004de720, void(RefCounted *));
 RT_ORIGINAL(0x004de6a0, fn_004de6a0, void(RefCounted *, Target *));
 RT_ORIGINAL(0x004deb80, fn_004deb80, void(RefCounted *, uint64_t));
 RT_ORIGINAL(0x0042b850, fn_0042b850, void(Pending *, void *value, Tracked *));
@@ -570,7 +563,6 @@ RT_GLOBAL(0x04b3b88b, child_name_format, const char);
 RT_GLOBAL(0x0553bbd0, child_holder_table, const uint8_t);
 
 RT_ORIGINAL(0x0045c6f0, fn_0045c6f0, void(void *sub_object));
-RT_ORIGINAL(0x0045d5a0, fn_0045d5a0, uint64_t(void *sub_object, const char *format));
 
 /** Constant added to the span's width before it is rounded down. */
 RT_GLOBAL(0x04b3b7a8, span_bias, const double);

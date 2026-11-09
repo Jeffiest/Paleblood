@@ -1,6 +1,10 @@
 // SPDX-License-Identifier: GPL-2.0-or-later
 #include "misc.h"
 
+namespace {
+RT_ORIGINAL(0x00400300, fn_00400300, uint64_t(uint64_t));
+}  // namespace
+
 /**
  *
  * Writes the 16-byte value of the record found for a source into out, or zeros when there is none.
@@ -10,7 +14,7 @@
  */
 extern "C" misc::SpanValue *bb_misc_lookup_value_or_zero(misc::SpanValue *out, uint64_t source)
 {
-    const uint64_t key = misc::fn_00400300(source);
+    const uint64_t key = fn_00400300(source);
     const misc::Lookup *record = misc::fn_004de9c0(key, misc::record_key);
     if (record != nullptr) {
         *out = record->payload->value;

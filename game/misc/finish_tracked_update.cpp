@@ -1,6 +1,11 @@
 // SPDX-License-Identifier: GPL-2.0-or-later
 #include "misc.h"
 
+namespace {
+RT_ORIGINAL(0x00400300, fn_00400300, uint64_t(uint64_t));
+RT_ORIGINAL(0x004de720, fn_004de720, void(misc::RefCounted *));
+}  // namespace
+
 /**
  *
  * Finishes a pending update of a tracked object: dispatches its target, refreshes the owned
@@ -14,11 +19,11 @@ extern "C" void bb_misc_finish_tracked_update(misc::Tracked *self, uint32_t keep
     if ((self->flags & misc::pending_flag) == 0) return;
 
     misc::RefCounted *held = reinterpret_cast<misc::RefCounted *>(
-        misc::fn_00400300(reinterpret_cast<uint64_t>(self)));
+        fn_00400300(reinterpret_cast<uint64_t>(self)));
     if (held != nullptr) ++held->count;
 
     if (self->target->flag != 0) {
-        misc::fn_004de720(held);
+        fn_004de720(held);
     } else {
         misc::fn_004de620(held);
         misc::fn_004de6a0(held, self->target);

@@ -1,6 +1,10 @@
 // SPDX-License-Identifier: GPL-2.0-or-later
 #include "misc.h"
 
+namespace {
+RT_ORIGINAL(0x0045d5a0, fn_0045d5a0, uint64_t(void *sub_object, const char *format));
+}  // namespace
+
 /**
  *
  * Sets up a child holder: marks it with a kind and a width, gives it the child holder vtable, and
@@ -24,5 +28,5 @@ extern "C" uint64_t bb_misc_init_child_holder(misc::ChildHolder *holder)
     void *sub_object = reinterpret_cast<uint8_t *>(child) + misc::child_sub_offset;
     misc::fn_0045c6f0(sub_object);
     holder->child = child;
-    return misc::fn_0045d5a0(sub_object, misc::child_name_format.address());
+    return fn_0045d5a0(sub_object, misc::child_name_format.address());
 }
