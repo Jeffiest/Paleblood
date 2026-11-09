@@ -22992,6 +22992,7 @@ misc_ref_holder_attach,edge,,9,9,0,0,33afa17235b90ca2,2026-11-09
 misc_ref_holder_detach,edge,,9,9,0,0,079ca90ad72427c9,2026-11-09
 misc_ref_holder_hold,edge,,7,7,0,0,6687a505ddc2329a,2026-11-09
 misc_ref_holder_release,edge,,10,10,0,0,a48afd36acf09017,2026-11-09
+misc_release_after_empty_call,edge,,6,6,0,0,545042d61ebb4e42,2026-11-09
 misc_release_entries_and_clear,edge,,13,13,0,0,83babd723232eff6,2026-11-09
 misc_release_entries_then_forward,edge,,14,14,0,0,5fa30e404e0403fc,2026-11-09
 misc_release_four_children,edge,,9,9,0,0,0916e3319b18bd4d,2026-11-09

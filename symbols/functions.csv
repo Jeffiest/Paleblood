@@ -5039,6 +5039,7 @@ address,size,name,system,status,notes
 0x01887cd0,205,engine_initialize_static_wide_string_01887cd0,engine,edge-verified,Same guarded static empty wide string as engine_initialize_static_wide_string_0217ffb0; byte-only entry test; captured allocator; destructor registration before full guard publication
 0x01887de0,1,auto_empty_01887de0,auto,edge-verified,Generated from the empty template
 0x01887eb0,1,auto_empty_01887eb0,auto,edge-verified,Generated from the empty template
+0x01887f20,28,misc_release_after_empty_call,misc,edge-verified,Calls the empty routine 0x01401600 then tail calls the release routine 0x02fbe588 with the same object and returns its result
 0x01888200,1,auto_empty_01888200,auto,edge-verified,Generated from the empty template
 0x01888b10,1,auto_empty_01888b10,auto,edge-verified,Generated from the empty template
 0x01889310,6,auto_return_constant_01889310,auto,edge-verified,Generated from the return constant template
