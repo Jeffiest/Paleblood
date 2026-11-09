@@ -22994,6 +22994,7 @@ misc_forward_index_02242c30,edge,,11,11,0,0,7f0cf449db39903b,2026-11-09
 misc_forward_object_slot_20,edge,,4,4,0,0,094521e5af2c581a,2026-11-09
 misc_forward_object_slot_28,edge,,4,4,0,0,2b84d8770a12e4d1,2026-11-09
 misc_forward_object_slot_30_result,edge,,5,5,0,0,a68811a0511cb30c,2026-11-09
+misc_forward_record_to_slot_90,edge,,6,6,0,0,13bf2e60f0780a7e,2026-11-09
 misc_forward_tagged_request,edge,,11,11,0,0,fa1d69a4607b6e39,2026-11-09
 misc_forward_value_to_child,edge,,9,9,0,0,009a8387a53acfdc,2026-11-09
 misc_forward_with_mode,edge,,12,12,0,0,f8904775e3ce7c3b,2026-11-09

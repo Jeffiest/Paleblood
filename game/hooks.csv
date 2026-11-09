@@ -5093,6 +5093,7 @@ address,replacement,system,returns
 0x01888a00,bb_misc_init_shared_record_once_guarded,misc,void
 0x01888b10,bb_auto_empty_01888b10,auto,void
 0x01888b80,bb_misc_release_after_empty_call_01888b80,misc,i64
+0x01888ba0,bb_misc_forward_record_to_slot_90,misc,i64
 0x01888bd0,bb_misc_call_then_release_01888bd0,misc,i64
 0x01889310,bb_auto_return_constant_01889310,auto,i32
 0x0188b7c0,bb_auto_return_constant_0188b7c0,auto,i32
