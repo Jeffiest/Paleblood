@@ -22920,6 +22920,7 @@ misc_chain_search,edge,,24,24,0,0,9025f7eefef211ad,2026-11-09
 misc_child_idle,edge,,10,10,0,0,7d142083dbdc1f05,2026-11-09
 misc_clear_pending_four_keys,edge,,15,15,0,0,e408ac5368aed16d,2026-11-09
 misc_copy_block_58b3240,edge,,7,7,0,0,5525f5e6553b8fba,2026-11-09
+misc_copy_block_58b3300,edge,,7,7,0,0,0b4f1e1dcdda3b95,2026-11-09
 misc_create_checked,edge,,7,7,0,0,3d08f8a7d8cf56ae,2026-11-09
 misc_dispatch_request,edge,,6,6,0,0,614522f80ec7e1c2,2026-11-09
 misc_dispatch_to_target,edge,,8,8,0,0,78669d30f0a70518,2026-11-09
