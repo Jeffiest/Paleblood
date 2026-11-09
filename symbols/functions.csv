@@ -7,6 +7,7 @@ address,size,name,system,status,notes
 0x00406d50,64,misc_lookup_value_or_zero,misc,edge-verified,Writes the 16-byte value of the record found for a resolved source into out or zeros when no record is found and returns out
 0x004090b0,92,engine_counted_pair_retarget,engine,edge-verified,Points both slots of a counted pair at the owner embedded object after raising its count by two and dropping each slot previous object
 0x00409fd0,1,auto_empty_00409fd0,auto,edge-verified,Generated from the empty template
+0x0040b5e0,147,misc_init_child_holder,misc,edge-verified,Sets a child holder to kind one and width twenty points it at a new child node from the dispatcher allocator and returns the report result
 0x0040c4c0,3,auto_return_zero_0040c4c0,auto,edge-verified,Generated from the return zero template
 0x0040dee0,316,misc_pool_append_node,misc,edge-verified,Takes a node from the holder pool binds it to the caller object and tag and appends it to the pool chain counting it
 0x0040e020,379,misc_keyed_pool_append,misc,edge-verified,Appends a keyed node to a pool after the pool append with a retained shared object and releases the binding or the shared object

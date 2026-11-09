@@ -255,9 +255,12 @@ RT_ORIGINAL(0x00482790, fn_00482790, void(RefCounted *));
 struct Dispatcher;
 
 struct DispatcherVtable {
-    uint8_t unknown_0x0000[0x68];
+    uint8_t unknown_0x0000[0x50];
+    void *(*slot_0x50)(Dispatcher *self, uint32_t size, uint32_t flags);
+    uint8_t unknown_0x0058[0x10];
     void (*slot_0x68)(Dispatcher *self, Target *target);
 };
+static_assert(offsetof(DispatcherVtable, slot_0x50) == 0x50);
 static_assert(offsetof(DispatcherVtable, slot_0x68) == 0x68);
 
 struct Dispatcher {
@@ -467,6 +470,52 @@ static_assert(offsetof(KeyedHolder, first) == 0x3a8);
 RT_ORIGINAL(0x0045a4b0, fn_0045a4b0, void(void *object));
 RT_ORIGINAL(0x0045a4c0, fn_0045a4c0, void(void *object));
 RT_ORIGINAL(0x0040dee0, fn_0040dee0, Tagged *(Tagged *tagged, void *holder, const uint32_t *key, Binding *binding));
+
+/**
+ *
+ * A holder that points at a child node, with a kind and a width it was given.
+ *
+ */
+struct ChildHolder {
+    const void *vtable;
+    uint32_t kind;  /**< Set to one when the holder is set up. */
+    uint32_t width; /**< Set to twenty when the holder is set up. */
+    void *child;    /**< The child node the holder points at. */
+};
+static_assert(offsetof(ChildHolder, kind) == 0x08);
+static_assert(offsetof(ChildHolder, child) == 0x10);
+
+/**
+ *
+ * A child node: three words, then a sub-object that starts at child_sub_offset.
+ *
+ */
+struct ChildNode {
+    uint64_t first;
+    uint64_t second;
+    uint64_t third;
+    uint8_t unknown_0x0018[0x08];
+};
+static_assert(offsetof(ChildNode, third) == 0x10);
+
+/** Offset of the vtable pointer a child holder is given, inside the table at its address. */
+constexpr uint64_t holder_vtable_offset = 0x10;
+
+/** Width a child holder is given, and the size of a child node. */
+constexpr uint32_t child_width = 0x14;
+constexpr uint32_t child_size = 0x20;
+
+/** Offset of the sub-object inside a child node. */
+constexpr uint64_t child_sub_offset = 0x18;
+
+/** Format string the child name is reported with. */
+RT_GLOBAL(0x04b3b88b, child_name_format, const char);
+
+/** Table whose entry, at holder_vtable_offset, is the vtable a child holder points to. */
+RT_GLOBAL(0x0553bbd0, child_holder_table, const uint8_t);
+
+RT_ORIGINAL(0x0045c6f0, fn_0045c6f0, void(void *sub_object));
+RT_ORIGINAL(0x0045d5a0, fn_0045d5a0, uint64_t(void *sub_object, const char *format));
 
 /** Constant added to the span's width before it is rounded down. */
 RT_GLOBAL(0x04b3b7a8, span_bias, const double);
