@@ -2928,6 +2928,7 @@ address,size,name,system,status,notes
 0x0139b440,41,misc_bind_vtable_56b4890_alt2,misc,edge-verified,Publishes the address of the static vtable block at 0x056b4890 into a global pointer once and sets a qword flag
 0x0139b470,41,misc_bind_vtable_56b47f0_alt2,misc,edge-verified,Publishes the address of the static vtable block at 0x056b47f0 into a global pointer once and sets a qword flag
 0x0139b4a0,49,misc_copy_constant_to_058b3340,misc,edge-verified,Copies the 48-byte constant block from the read-only image into the writable global at 0x058b3340
+0x0139b4e0,16,misc_clear_two_words,misc,edge-verified,Sets both 64-bit words of a two-word record to zero
 0x0139b4f0,1,auto_empty_0139b4f0,auto,edge-verified,Generated from the empty template
 0x0139b500,41,misc_bind_vtable_56b4840_alt3,misc,edge-verified,Publishes the address of the static vtable block at 0x056b4840 into a global pointer once and sets a qword flag
 0x0139b530,41,misc_bind_vtable_56b4890_alt3,misc,edge-verified,Publishes the address of the static vtable block at 0x056b4890 into a global pointer once and sets a qword flag
