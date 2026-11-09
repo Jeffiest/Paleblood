@@ -22966,6 +22966,7 @@ misc_copy_constant_to_058b3380,edge,,5,5,0,0,42e623b70f340588,2026-11-09
 misc_copy_default_blocks,edge,,3,3,0,0,fdb22452cfa7015a,2026-11-09
 misc_create_checked,edge,,7,7,0,0,3d08f8a7d8cf56ae,2026-11-09
 misc_descriptor_type_address,edge,,1,1,0,0,43e00eb2669c1418,2026-11-09
+misc_destroy_flagged_pair_then_release,edge,,10,3,7,0,983087bd5db287c3,2026-11-09
 misc_destroy_owned_block_pair,edge,,6,6,0,0,e5805f947c4582ff,2026-11-09
 misc_destroy_then_release,edge,,4,4,0,0,3e2ea31c54b1b109,2026-11-09
 misc_disarm_callback,edge,,7,7,0,0,a49db354307528b6,2026-11-09
