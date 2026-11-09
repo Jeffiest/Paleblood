@@ -95,9 +95,9 @@ extern "C" uint64_t bb_misc_release_owned_state(misc::OwnedState *self)
         self->allocator->free(self->item_0x0978);
         self->item_0x0978 = nullptr;
     }
-    if (self->item_0x0980) {
-        self->allocator->free(self->item_0x0980);
-        self->item_0x0980 = nullptr;
+    if (self->entries_0x0980) {
+        self->allocator->free(self->entries_0x0980);
+        self->entries_0x0980 = nullptr;
     }
     if (self->packed_ref) {
         release_packed_ref(self->packed_ref);
