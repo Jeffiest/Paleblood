@@ -6,6 +6,7 @@ address,size,name,system,status,notes
 0x0040c4c0,3,auto_return_zero_0040c4c0,auto,edge-verified,Generated from the return zero template
 0x0040d150,18,misc_holder_value_unless_suppressed,misc,edge-verified,Returns zero when the flags low byte has bit 0x80 set; otherwise the value at +0x20 of the inner record at +0x10 of the holder
 0x0040d170,9,misc_holder_value,misc,edge-verified,Returns the value at +0x20 of the inner record that the holder reaches at +0x10; no checks
+0x0040d270,33,misc_holder_forward,misc,edge-verified,Forwards the two register arguments to the inner objects method or to the fallback at 0x0040f580 when the inner record has no object
 0x00410100,5,auto_return_field_00410100,auto,edge-verified,Generated from the return field template
 0x00410290,1,auto_empty_00410290,auto,edge-verified,Generated from the empty template
 0x004102a0,1,auto_empty_004102a0,auto,edge-verified,Generated from the empty template
