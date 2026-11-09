@@ -1492,6 +1492,7 @@ address,size,name,system,status,notes
 0x00be32b0,170,misc_lookup_second_link,misc,edge-verified,Returns the address in a second list tagged link of a table entry by index with its flag cleared and reports an out of range index giving zero
 0x00be3360,8,auto_return_member_address_00be3360,auto,edge-verified,Generated from the return member address template
 0x00be3370,7,auto_return_field_00be3370,auto,edge-verified,Generated from the return field template
+0x00be3380,221,misc_find_third_link_index,misc,edge-verified,Returns the index of the first third list entry whose link address matches the argument and reports a miss giving minus one
 0x00be35d0,7,auto_return_field_00be35d0,auto,edge-verified,Generated from the return field template
 0x00be35e0,7,auto_return_field_00be35e0,auto,edge-verified,Generated from the return field template
 0x00be4500,6,auto_return_constant_00be4500,auto,edge-verified,Generated from the return constant template

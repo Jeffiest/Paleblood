@@ -22918,6 +22918,7 @@ misc_dispatch_request,edge,,6,6,0,0,614522f80ec7e1c2,2026-11-09
 misc_dispatch_to_target,edge,,8,8,0,0,78669d30f0a70518,2026-11-09
 misc_entry_ref_accept,edge,,15,15,0,0,37f92aa1e32c3463,2026-11-09
 misc_find_link_index,edge,,7,7,0,0,31b0924bf5135034,2026-11-09
+misc_find_third_link_index,edge,,7,7,0,0,6898929a4f60d763,2026-11-09
 misc_finish_tracked_update,edge,,15,15,0,0,70fff57b72b6f567,2026-11-09
 misc_init_child_holder,edge,,4,4,0,0,129ed90552350e0f,2026-11-09
 misc_init_record_block,edge,,3,3,0,0,7bd22e5e16029ce2,2026-11-09

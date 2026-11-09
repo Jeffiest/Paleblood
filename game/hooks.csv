@@ -1491,6 +1491,7 @@ address,replacement,system,returns
 0x00be32b0,bb_misc_lookup_second_link,misc,i64
 0x00be3360,bb_auto_return_member_address_00be3360,auto,i64
 0x00be3370,bb_auto_return_field_00be3370,auto,i32
+0x00be3380,bb_misc_find_third_link_index,misc,i32
 0x00be35d0,bb_auto_return_field_00be35d0,auto,i8
 0x00be35e0,bb_auto_return_field_00be35e0,auto,i32
 0x00be4500,bb_auto_return_constant_00be4500,auto,i32

@@ -22,7 +22,7 @@ static_assert(sizeof(LookupEntry) == 0x10);
 
 /**
  *
- * A table that holds two lists of entries, each with its count.
+ * A table that holds three lists of entries, each with its count.
  *
  */
 struct LookupTable {
@@ -32,10 +32,15 @@ struct LookupTable {
     uint8_t unknown_0x7c[0x4];
     LookupEntry *second_entries; /**< The second list, at 0x80. */
     int32_t second_count;        /**< Number of entries in the second list, at 0x88. */
+    uint8_t unknown_0x8c[0x4];
+    LookupEntry *third_entries;  /**< The third list, at 0x90. */
+    int32_t third_count;         /**< Number of entries in the third list, at 0x98. */
 };
 static_assert(offsetof(LookupTable, entries) == 0x70);
 static_assert(offsetof(LookupTable, count) == 0x78);
 static_assert(offsetof(LookupTable, second_entries) == 0x80);
 static_assert(offsetof(LookupTable, second_count) == 0x88);
+static_assert(offsetof(LookupTable, third_entries) == 0x90);
+static_assert(offsetof(LookupTable, third_count) == 0x98);
 
 }  // namespace misc
