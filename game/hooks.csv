@@ -7,6 +7,7 @@ address,replacement,system,returns
 0x00406d50,bb_misc_lookup_value_or_zero,misc,i64
 0x004090b0,bb_engine_counted_pair_retarget,engine,void
 0x00409fd0,bb_auto_empty_00409fd0,auto,void
+0x0040b570,bb_misc_create_checked,misc,i64
 0x0040b5e0,bb_misc_init_child_holder,misc,i64
 0x0040c4c0,bb_auto_return_zero_0040c4c0,auto,i64
 0x0040dee0,bb_misc_pool_append_node,misc,i64

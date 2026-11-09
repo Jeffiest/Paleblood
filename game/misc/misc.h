@@ -498,6 +498,44 @@ struct ChildNode {
 };
 static_assert(offsetof(ChildNode, third) == 0x10);
 
+struct Checked;
+
+/**
+ *
+ * The virtual functions of a factory: the first creates a checked object from a context and two
+ * values, and returns null when it cannot.
+ *
+ */
+struct FactoryVtable {
+    uint8_t unknown_0x0000[0x10];
+    Checked *(*create)(struct Factory *self, void *context, uint32_t first, uint32_t second);
+};
+static_assert(offsetof(FactoryVtable, create) == 0x10);
+
+struct Factory {
+    const FactoryVtable *vtable;
+};
+
+/**
+ *
+ * The virtual functions of a checked object: the valid test returns zero when the object passes.
+ *
+ */
+struct CheckedVtable {
+    uint8_t unknown_0x0000[0x48];
+    uint32_t (*valid)(Checked *self);
+};
+static_assert(offsetof(CheckedVtable, valid) == 0x48);
+
+struct Checked {
+    const CheckedVtable *vtable;
+};
+
+/** Format the failed creation is reported with. */
+RT_GLOBAL(0x04b3b870, create_failure_format, const char);
+
+RT_ORIGINAL(0x02788b20, fn_02788b20, void(void *target, const char *format, ...));
+
 /** Offset of the vtable pointer a child holder is given, inside the table at its address. */
 constexpr uint64_t holder_vtable_offset = 0x10;
 
