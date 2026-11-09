@@ -258,7 +258,7 @@ struct DispatcherVtable {
     uint8_t unknown_0x0000[0x50];
     void *(*slot_0x50)(Dispatcher *self, uint32_t size, uint32_t flags);
     uint8_t unknown_0x0058[0x10];
-    void (*slot_0x68)(Dispatcher *self, Target *target);
+    void (*slot_0x68)(Dispatcher *self, void *target);
 };
 static_assert(offsetof(DispatcherVtable, slot_0x50) == 0x50);
 static_assert(offsetof(DispatcherVtable, slot_0x68) == 0x68);
@@ -535,6 +535,23 @@ struct Checked {
 RT_GLOBAL(0x04b3b870, create_failure_format, const char);
 
 RT_ORIGINAL(0x02788b20, fn_02788b20, void(void *target, const char *format, ...));
+
+/** Low bits of a counted handle that are tags, not part of the block address. */
+constexpr uint64_t handle_tag_bits = 0x3;
+
+/**
+ *
+ * A reference-counted block; its 32-bit count sits at +0x08.
+ *
+ */
+struct CountedBlock {
+    uint8_t unknown_0x0000[0x08];
+    uint32_t count; /**< The reference count, decremented atomically. */
+};
+static_assert(offsetof(CountedBlock, count) == 0x08);
+
+RT_ORIGINAL(0x0045c700, fn_0045c700, void(uint64_t *value));
+RT_ORIGINAL(0x00465400, fn_00465400, bool(uint64_t *out, const uint64_t *value));
 
 /** Offset of the vtable pointer a child holder is given, inside the table at its address. */
 constexpr uint64_t holder_vtable_offset = 0x10;

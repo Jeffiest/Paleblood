@@ -18916,6 +18916,7 @@ misc_lookup_value_or_zero,edge,,9,9,0,0,b76ae46dc49a80c6,2026-11-09
 misc_pool_append_node,edge,,10,10,0,0,2715d63d147a09e3,2026-11-09
 misc_quantized_span,edge,,23,23,0,0,84373e71f9548e5c,2026-11-09
 misc_resolve_then_forward,edge,,9,9,0,0,3b101394d12e99ca,2026-11-09
+misc_unpack_and_release,edge,,7,7,0,0,c3f850c037c90982,2026-11-09
 physics_instance_construct_01c0c2b0,recorded,,119,119,0,0,ca3412adb293c909,2026-10-07
 physics_instance_construct_01c0c2b0,recorded,30,119,119,0,0,ca3412adb293c909,2026-10-07
 physics_instance_construct_01c0c2b0,recorded,60,119,119,0,0,ca3412adb293c909,2026-10-07
