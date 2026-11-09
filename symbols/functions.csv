@@ -1440,6 +1440,7 @@ address,size,name,system,status,notes
 0x00b687b0,387,misc_slot_pool_reassign,misc,edge-verified,Gives the slots of a pool a value spread across count steps when its child computation changed the pool and otherwise visits its children
 0x00b68940,313,misc_slot_pool_take,misc,edge-verified,Claims the first unclaimed slot of a lock-guarded pool and returns its value or zero when none is free
 0x00b697c0,1,auto_empty_00b697c0,auto,edge-verified,Generated from the empty template
+0x00b69c60,213,misc_ref_holder_attach,misc,edge-verified,Attaches an item to a reference holder unless already attached then raises its count and tells each child
 0x00b69e20,70,misc_ref_holder_add_child,misc,edge-verified,Adds a child to a reference holder child list growing the list when it is full
 0x00b6a020,7,auto_return_field_00b6a020,auto,edge-verified,Generated from the return field template
 0x00b6afa0,6,auto_return_constant_00b6afa0,auto,edge-verified,Generated from the return constant template
