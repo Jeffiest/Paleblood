@@ -1,4 +1,5 @@
 address,size,name,system,status,notes
+0x00400e40,67,misc_resolve_request_target,misc,edge-verified,Returns the pending request if one is held else the payload of the handle target else the fallback record for a zero handle
 0x004034f0,3,auto_return_constant_004034f0,auto,edge-verified,Generated from the return constant template
 0x00405d10,163,misc_scratch_value_48,misc,edge-verified,Builds a default scratch block then runs the block builder on it and returns the double at offset 0x48 of its result
 0x00405dc0,163,misc_scratch_value_18,misc,edge-verified,Builds a default scratch block then runs the block builder on it and returns the double at offset 0x18 of its result

@@ -173,4 +173,80 @@ static_assert(offsetof(LookupTable, vtable) == 0x00);
  */
 RT_ORIGINAL(0x0045a4c0, release_record, void(LookupRecord *record));
 
+/**
+ *
+ * A pending request that an owner holds (defined with the store that fills it).
+ *
+ */
+struct PendingRequest;
+
+/** Mask of the handle bits below the page start; the page start is the handle with these bits cleared. */
+constexpr uint64_t handle_page_mask = 0xfff;
+
+/** Offset from the page start to the slot that a handle of the page names, at slot index zero. */
+constexpr uint64_t handle_slot_base = 0x38;
+
+/** Shift that turns a byte offset from the first slot into a count of eight-byte units. */
+constexpr uint64_t handle_slot_shift = 3;
+
+/** Multiplicative inverse of seven modulo 2^32: the game divides a slot offset by seven this way. */
+constexpr uint32_t handle_slot_inverse = 0xb6db6db7;
+
+/** Offset of the payload field inside a HandleTarget, which is the address the lookup returns. */
+constexpr uint64_t handle_target_payload_offset = 0x10;
+
+/**
+ *
+ * The entry a handle page's table gives for one slot, whose payload field the lookup returns.
+ *
+ */
+struct HandleTarget {
+    uint8_t unknown_0x0000[0x10];
+    uint8_t payload_0x10[1]; /**< Its address is the lookup result; the contents are not read. */
+};
+static_assert(offsetof(HandleTarget, payload_0x10) == 0x10);
+
+/**
+ *
+ * The table of a handle page: one target pointer per slot, after the table's leading fields.
+ *
+ */
+struct HandleTable {
+    uint8_t unknown_0x0000[0x28];
+    HandleTarget *targets[1]; /**< Indexed by slot; the table holds one pointer for each slot. */
+};
+static_assert(offsetof(HandleTable, targets) == 0x28);
+
+/**
+ *
+ * A page-aligned block that a handle points into, whose table holds the slots' targets.
+ *
+ */
+struct HandlePage {
+    uint8_t unknown_0x0000[0x20];
+    const HandleTable *table; /**< Table of the page's targets. */
+};
+static_assert(offsetof(HandlePage, table) == 0x20);
+
+/**
+ *
+ * An object that refers to a pooled entry by handle and may hold a pending request.
+ *
+ */
+struct HandleOwner {
+    uint8_t unknown_0x0000[0x48];
+    uint64_t handle_0x48;             /**< Handle into a handle page; zero means no entry. */
+    uint8_t unknown_0x0050[0x10];
+    PendingRequest *pending_0x60;     /**< Pending request, or null when none is held. */
+};
+static_assert(offsetof(HandleOwner, handle_0x48) == 0x48);
+static_assert(offsetof(HandleOwner, pending_0x60) == 0x60);
+
+/**
+ *
+ * The record that a zero handle resolves to: a static block in the game, whose contents are not read here.
+ *
+ */
+RT_GLOBAL(0x05ac5540, fallback_record, uint8_t);
+
 }  // namespace misc
