@@ -14911,6 +14911,7 @@ address,replacement,system,returns
 0x026e6fe0,bb_misc_update_owned_entries,misc,void
 0x026e70e0,bb_misc_entry_for_key,misc,i64
 0x026e79d0,bb_misc_prepare_listed_values,misc,void
+0x026e82e0,bb_misc_disarm_callback,misc,void
 0x026efe20,bb_auto_empty_026efe20,auto,void
 0x026f2860,bb_auto_return_field_026f2860,auto,i64
 0x026f2870,bb_auto_return_field_026f2870,auto,i64
