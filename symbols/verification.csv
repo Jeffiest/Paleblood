@@ -22965,6 +22965,7 @@ misc_dispatch_request,edge,,6,6,0,0,614522f80ec7e1c2,2026-11-09
 misc_dispatch_to_target,edge,,8,8,0,0,78669d30f0a70518,2026-11-09
 misc_drain_object_queue,edge,,14,14,0,0,691df9c7d0a3a1ec,2026-11-09
 misc_drain_pool_entries,edge,,10,10,0,0,4df4693bc373f5fd,2026-11-09
+misc_enable_owner_target,edge,,6,6,0,0,ab5ba15acc4d6d73,2026-11-09
 misc_entry_for_key,edge,,9,9,0,0,05562ce18d85b046,2026-11-09
 misc_entry_ref_accept,edge,,15,15,0,0,37f92aa1e32c3463,2026-11-09
 misc_fill_item_table,edge,,10,10,0,0,121719f0b60da0e7,2026-11-09
