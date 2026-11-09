@@ -19,8 +19,18 @@ SCOPE = ('runtime', 'test', 'tools')
 SKIP_EXT = {'.pyc'}
 
 
-def words(root: str) -> list[tuple[str, re.Pattern]]:
+# A whole identifier or number, as the boundaries of a tracked name or address are.
+TOKEN = re.compile(r'[0-9A-Za-z_]+')
+
+
+def words(root: str) -> tuple[list[tuple[str, re.Pattern]], dict[str, str]]:
+    """Free-text words as patterns, and tracked names and addresses as an exact lookup.
+
+    The tracked set holds tens of thousands of entries, so they are matched by looking each
+    token of a line up in a dictionary rather than by one pattern per entry.
+    """
     out = []
+    exact: dict[str, str] = {}
     path = os.path.join(root, 'game', 'agnostic_words.txt')
     if os.path.isfile(path):
         with open(path) as f:
@@ -38,15 +48,15 @@ def words(root: str) -> list[tuple[str, re.Pattern]]:
         with open(p, newline='') as f:
             for r in csv.DictReader(f):
                 v = r[col]
-                out.append((f'{label} {v}', re.compile(rf'(?<![0-9A-Za-z_]){re.escape(v)}(?![0-9A-Za-z_])', re.I)))
-    return out
+                exact.setdefault(v.lower(), f'{label} {v}')
+    return out, exact
 
 
 def main() -> int:
     ap = argparse.ArgumentParser()
     ap.add_argument('--root', default=DEFAULT_ROOT)
     root = ap.parse_args().root
-    pats = words(root)
+    pats, exact = words(root)
     errs = []
     for top in SCOPE:
         for dp, _, fs in os.walk(os.path.join(root, top)):
@@ -65,6 +75,9 @@ def main() -> int:
                     for label, pat in pats:
                         if pat.search(ln):
                             errs.append(f'{rel}:{n}: game-specific ({label})')
+                    found = {exact[t.lower()] for t in TOKEN.findall(ln) if t.lower() in exact}
+                    for label in sorted(found):
+                        errs.append(f'{rel}:{n}: game-specific ({label})')
     for e in errs:
         print(f'agnostic: {e}', file=sys.stderr)
     return 1 if errs else 0
