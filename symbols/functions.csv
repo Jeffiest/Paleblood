@@ -46,6 +46,7 @@ address,size,name,system,status,notes
 0x0040fb10,184,misc_tagged_name_matches,misc,edge-verified,Tells whether the tagged word names a record whose text is one of three known names and drops its reference releasing the record through the scratch service on the last one
 0x0040fbd0,115,misc_emit_through_lookup,misc,edge-verified,Emits a value through the emitter the lookup gives for id 0x0c then releases it otherwise reports the failure to the sink when there is one and returns zero
 0x0040fc50,193,misc_emit_through_fresh_sink,misc,edge-verified,Emits a value through the emitter of the lookup for id 0x0c to a sink the lookup opens then releases the emitter and the sink otherwise reports the failure to the sink
+0x0040fd40,302,misc_configure_holder,misc,edge-verified,Configures a holder from its flags and first word by building its source and detail blocks then a record and returns the result of the final configuration
 0x00410100,5,auto_return_field_00410100,auto,edge-verified,Generated from the return field template
 0x00410290,1,auto_empty_00410290,auto,edge-verified,Generated from the empty template
 0x004102a0,1,auto_empty_004102a0,auto,edge-verified,Generated from the empty template
