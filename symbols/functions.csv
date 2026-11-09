@@ -1,6 +1,5 @@
 address,size,name,system,status,notes
 0x004009f0,67,engine_handle_payload_alt,engine,edge-verified,Same lookup as engine_handle_payload with a second fallback global: cached payload when set otherwise the payload of the handle entry and a zero handle gives that global
-0x00400e40,67,engine_handle_payload,engine,edge-verified,Cached payload pointer when set; otherwise the payload of the entry named by the handle at +0x48 found through its page record and table slot; zero handle gives the address of a global
 0x004034f0,3,auto_return_constant_004034f0,auto,edge-verified,Generated from the return constant template
 0x00406450,375,misc_chain_search,misc,edge-verified,Returns the first linked entry after a head that passes its test and visitor and whose element probe accepts it or whose child does skipping one target
 0x004065d0,39,misc_chain_contains,misc,edge-verified,Returns whether a node is one of the nodes after the head in a chain linked at +0x38 the head itself is never compared
@@ -11,10 +10,6 @@ address,size,name,system,status,notes
 0x0040b860,90,misc_store_pair,misc,edge-verified,Retains the new blocks that are set then releases the old blocks that are set and stores the new pair in the owner
 0x0040b8c0,45,misc_release_pair,misc,edge-verified,Releases the pair first block when set then returns the release result of the second block when set otherwise the first result
 0x0040c4c0,3,auto_return_zero_0040c4c0,auto,edge-verified,Generated from the return zero template
-0x0040d150,18,misc_holder_value_unless_suppressed,misc,edge-verified,Returns zero when the flags low byte has bit 0x80 set; otherwise the value at +0x20 of the inner record at +0x10 of the holder
-0x0040d170,9,misc_holder_value,misc,edge-verified,Returns the value at +0x20 of the inner record that the holder reaches at +0x10; no checks
-0x0040d1d0,151,misc_owner_dispatch,misc,edge-verified,Dispatches to the wrapper target through its method table with the default value and a fixed mode; without a target reports the default label to the context sink unless the unrestricted bit is set
-0x0040d270,33,misc_holder_forward,misc,edge-verified,Forwards the two register arguments to the inner objects method or to the fallback at 0x0040f580 when the inner record has no object
 0x00410100,5,auto_return_field_00410100,auto,edge-verified,Generated from the return field template
 0x00410290,1,auto_empty_00410290,auto,edge-verified,Generated from the empty template
 0x004102a0,1,auto_empty_004102a0,auto,edge-verified,Generated from the empty template
@@ -2272,7 +2267,7 @@ address,size,name,system,status,notes
 0x011c4840,38,audio_fmod_string_copy_counted,audio,edge-verified,FMOD bounded string copy uses low32 count; stops at NUL or count without padding; zero count accesses neither pointer
 0x011c4870,51,engine_string_append,engine,edge-verified,NUL-terminated string append returns original destination; includes prefixes beyond four bytes and finite aliases
 0x011c48b0,60,engine_string_append_counted,engine,edge-verified,Bounded string append uses low32 count; zero count touches neither pointer; appends NUL after count bytes when needed
-0x011c48f0,18,engine_ascii_to_lower,engine,edge-verified,"ASCII lowercase of the low input byte; sign-extend the result byte to 32 bits; the upper 32 bits of RAX are zero"
+0x011c48f0,18,engine_ascii_to_lower,engine,edge-verified,ASCII lowercase of the low input byte; sign-extend the result byte to 32 bits; the upper 32 bits of RAX are zero
 0x011c4910,44,engine_ascii_to_upper_in_place,engine,edge-verified,Convert ASCII a-z to A-Z in place through NUL; retain all other bytes and return original pointer; caller 0x01127ca0
 0x011c4940,44,engine_ascii_to_lower_in_place,engine,edge-verified,Convert ASCII A-Z to a-z in place through NUL; retain all other bytes and return original pointer; caller 0x01127ca0
 0x011c4970,29,engine_compare_signed_strings,engine,edge-verified,Compare zero-terminated strings by signed bytes and return their first differing byte subtraction
@@ -14399,7 +14394,7 @@ address,size,name,system,status,notes
 0x02a70980,53,loading_file_handle_seek,loading,edge-verified,Move the descriptor to an offset relative to origin and publish the new position; origin low 32 bits zero-extended; no open-bit check; -1 on a negative kernel result
 0x02a8c210,164,input_mouse_construct,input,edge-verified,"Constructs a mouse input object: base part, vtable, cleared state, libSceMouse load and init, then the object's virtual method at +0x100; clears the handle slot on failure."
 0x02a8c420,108,input_initialize_mouse_for_initial_user,input,original,"Initializes or reinitializes mouse input for the initial user, closing a previous connection if necessary."
-0x02a9c790,84,input_pad_set_vibration,input,edge-verified,"Sets a pad output's large and small motor speeds through scePadSetVibration; false when vibration is disabled or the call fails."
+0x02a9c790,84,input_pad_set_vibration,input,edge-verified,Sets a pad output's large and small motor speeds through scePadSetVibration; false when vibration is disabled or the call fails.
 0x02aaddc0,393,render_allocate_shader_upload,render,edge-verified,"Allocate one shader-upload slice of at most 64 KiB. If no suitable block exists, acquire once, reclaim, then retry once. Preserve zero-size requests and delegate block policy to the original manager."
 0x02aafb30,509,render_command_submit_present,render,edge-verified,"Prepare and delegate a present submission, preserving capacity-failure returns and resetting begin markers to the live cursor."
 0x02ab0ce0,326,render_command_submit_batch,render,edge-verified,"Emit counter waits and submit nonempty regions with the packed video/index handle, or delegate the snapshot when no optional context exists."

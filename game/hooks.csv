@@ -1,6 +1,5 @@
 address,replacement,system,returns
 0x004009f0,bb_engine_handle_payload_alt,engine,i64
-0x00400e40,bb_engine_handle_payload,engine,i64
 0x004034f0,bb_auto_return_constant_004034f0,auto,i8
 0x00406450,bb_misc_chain_search,misc,i64
 0x004065d0,bb_misc_chain_contains,misc,i8
@@ -11,10 +10,6 @@ address,replacement,system,returns
 0x0040b860,bb_misc_store_pair,misc,void
 0x0040b8c0,bb_misc_release_pair,misc,i64
 0x0040c4c0,bb_auto_return_zero_0040c4c0,auto,i64
-0x0040d150,bb_misc_holder_value_unless_suppressed,misc,i64
-0x0040d170,bb_misc_holder_value,misc,i64
-0x0040d1d0,bb_misc_owner_dispatch,misc,i64
-0x0040d270,bb_misc_holder_forward,misc,void
 0x00410100,bb_auto_return_field_00410100,auto,i64
 0x00410290,bb_auto_empty_00410290,auto,void
 0x004102a0,bb_auto_empty_004102a0,auto,void
