@@ -12761,6 +12761,7 @@ address,size,name,system,status,notes
 0x02240e80,94,misc_owned_list_destroy,misc,edge-verified,Destructor of an owned list; sets the vtable; frees every node through its allocator; clears the word at 0x20 and the list head
 0x02241880,322,physics_list_append_pair,physics,edge-verified,Appends the second body parent object to an owned list when both bodies instances are ready kind 2 and one parent is ready state 2; allocates a node at the tail
 0x02242980,15,misc_base_init_02242980,misc,edge-verified,Stores the base class vtable address point in a base object and nothing else
+0x022429e0,45,misc_pair_matches_022429e0,misc,edge-verified,Reports whether a two word pair of size 0x10 matches the owner two keys
 0x02242a30,15,misc_base_init_02242a30,misc,edge-verified,Stores the base class vtable address point in a base object and nothing else
 0x02242ae0,15,misc_base_init_02242ae0,misc,edge-verified,Stores the base class vtable address point in a base object and nothing else
 0x02242b90,31,misc_base_init_02242b90,misc,edge-verified,Runs the setup step on the object then stores the other class vtable in it
