@@ -58,6 +58,7 @@ address,size,name,system,status,notes
 0x00410ee0,42,misc_prepare_then_release,misc,edge-verified,Prepares an object then releases it through the scratch service returning the release result
 0x00410f10,160,misc_remove_member_from_list,misc,edge-verified,Unlinks the node of a member from its source list under the list lock then releases the source and tail releases the member
 0x00410fb0,122,misc_remove_value_locked,misc,edge-verified,Removes the first node of the owner list whose value matches walking back from the tail under the owner lock and releases it then returns the unlock result
+0x00413f60,93,misc_assign_text,misc,edge-verified,Assigns a byte string to a text target measuring it when the length is unmeasured then reserves the holder storage copies the characters and sets the assigned flag
 0x00418d80,8,auto_return_field_00418d80,auto,edge-verified,Generated from the return field template
 0x0041cac0,1,auto_empty_0041cac0,auto,edge-verified,Generated from the empty template
 0x0041d010,3,auto_return_constant_0041d010,auto,edge-verified,Generated from the return constant template
