@@ -43,6 +43,7 @@ address,size,name,system,status,notes
 0x0040e680,260,misc_take_pending_node,misc,edge-verified,Takes a 0x38 byte node from the holder pool from the cursor or the slow allocator and moves the holders pending words into it then clears them and returns the node or null
 0x0040f0b0,435,misc_replace_holder_object,misc,edge-verified,Builds a new object from the accepted object that the table or a lookup gives and stores it in the holder in place of the old one returning true when stored
 0x0040f2f0,461,misc_find_or_create_match,misc,edge-verified,Finds the first candidate matching the request and answers the output with its row otherwise marks a pending request and allocates an object for an empty output
+0x0040fb10,184,misc_tagged_name_matches,misc,edge-verified,Tells whether the tagged word names a record whose text is one of three known names and drops its reference releasing the record through the scratch service on the last one
 0x0040fbd0,115,misc_emit_through_lookup,misc,edge-verified,Emits a value through the emitter the lookup gives for id 0x0c then releases it otherwise reports the failure to the sink when there is one and returns zero
 0x00410100,5,auto_return_field_00410100,auto,edge-verified,Generated from the return field template
 0x00410290,1,auto_empty_00410290,auto,edge-verified,Generated from the empty template
