@@ -2894,6 +2894,7 @@ address,size,name,system,status,notes
 0x01399860,6,auto_return_constant_01399860,auto,edge-verified,Generated from the return constant template
 0x0139a380,1,auto_empty_0139a380,auto,edge-verified,Generated from the empty template
 0x0139a390,6,auto_return_constant_0139a390,auto,edge-verified,Generated from the return constant template
+0x0139ae00,41,misc_bind_vtable_56b4840_alt,misc,edge-verified,Publishes the address of the static vtable block at 0x056b4840 into a global pointer once and sets a qword flag
 0x0139b4f0,1,auto_empty_0139b4f0,auto,edge-verified,Generated from the empty template
 0x0139d9d0,3,auto_return_zero_0139d9d0,auto,edge-verified,Generated from the return zero template
 0x0139ea10,3,auto_return_zero_0139ea10,auto,edge-verified,Generated from the return zero template

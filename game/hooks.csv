@@ -2893,6 +2893,7 @@ address,replacement,system,returns
 0x01399860,bb_auto_return_constant_01399860,auto,i32
 0x0139a380,bb_auto_empty_0139a380,auto,void
 0x0139a390,bb_auto_return_constant_0139a390,auto,i32
+0x0139ae00,bb_misc_bind_vtable_56b4840_alt,misc,void
 0x0139b4f0,bb_auto_empty_0139b4f0,auto,void
 0x0139d9d0,bb_auto_return_zero_0139d9d0,auto,i64
 0x0139ea10,bb_auto_return_zero_0139ea10,auto,i64
