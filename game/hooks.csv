@@ -18542,6 +18542,7 @@ address,replacement,system,returns
 0x02b3e130,bb_auto_empty_02b3e130,auto,void
 0x02b3e150,bb_misc_set_value_clear_link,misc,void
 0x02b3e160,bb_auto_empty_02b3e160,auto,void
+0x02b3e170,bb_misc_set_link,misc,void
 0x02b3e180,bb_auto_empty_02b3e180,auto,void
 0x02b3e5f0,bb_auto_empty_02b3e5f0,auto,void
 0x02b3e610,bb_auto_empty_02b3e610,auto,void

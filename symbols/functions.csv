@@ -18544,6 +18544,7 @@ address,size,name,system,status,notes
 0x02b3e130,1,auto_empty_02b3e130,auto,edge-verified,Generated from the empty template
 0x02b3e150,12,misc_set_value_clear_link,misc,edge-verified,Stores a value in a two-word slot and clears the link word that follows it
 0x02b3e160,1,auto_empty_02b3e160,auto,edge-verified,Generated from the empty template
+0x02b3e170,5,misc_set_link,misc,edge-verified,Stores the link word of a two-word slot and leaves its value word as it is
 0x02b3e180,1,auto_empty_02b3e180,auto,edge-verified,Generated from the empty template
 0x02b3e5f0,1,auto_empty_02b3e5f0,auto,edge-verified,Generated from the empty template
 0x02b3e610,1,auto_empty_02b3e610,auto,edge-verified,Generated from the empty template
