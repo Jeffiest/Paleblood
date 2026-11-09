@@ -128,6 +128,20 @@ static_assert(offsetof(Span, chunk) == 0x48);
  */
 RT_ORIGINAL(0x004060a0, fn_004060a0, void(SpanValue *out, Span *self));
 
+/**
+ *
+ * Resolver for a single argument; its result is the first argument of the forwarding stage.
+ *
+ */
+RT_ORIGINAL(0x00400300, fn_00400300, uint64_t(uint64_t));
+
+/**
+ *
+ * Second stage of the forwarding pair: receives the resolved value and the caller's second argument.
+ *
+ */
+RT_ORIGINAL(0x004de260, fn_004de260, uint64_t(uint64_t, uint64_t));
+
 /** Constant added to the span's width before it is rounded down. */
 RT_GLOBAL(0x04b3b7a8, span_bias, const double);
 

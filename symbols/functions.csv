@@ -2,6 +2,7 @@ address,size,name,system,status,notes
 0x004034f0,3,auto_return_constant_004034f0,auto,edge-verified,Generated from the return constant template
 0x00405fd0,197,misc_quantized_span,misc,edge-verified,Floor of the end minus start width plus a constant times a second constant; span from a direct callee when the chunk entry flag is set and from a vtable otherwise
 0x00406600,1,auto_empty_00406600,auto,edge-verified,Generated from the empty template
+0x00406d30,31,misc_resolve_then_forward,misc,edge-verified,Resolves the first argument through a callee then returns the second stage result for the first argument and the second argument unchanged
 0x004090b0,92,engine_counted_pair_retarget,engine,edge-verified,Points both slots of a counted pair at the owner embedded object after raising its count by two and dropping each slot previous object
 0x00409fd0,1,auto_empty_00409fd0,auto,edge-verified,Generated from the empty template
 0x0040c4c0,3,auto_return_zero_0040c4c0,auto,edge-verified,Generated from the return zero template
