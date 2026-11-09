@@ -14,8 +14,8 @@ import struct
 import sys
 
 ADDRESS = '0x0139b0e0'
-TABLE_BYTES = 0x48
-SLOT_BASE = (0x00, 0x20)
+TABLE_BYTES = 0x60
+SLOT_BASE = (0x00, 0x20, 0x40)
 MASK32 = (1 << 32) - 1
 GARBAGE = {'rsi': '0x1111111111111111', 'rdx': '0xffffffffffffffff', 'rcx': '0x0',
            'r8': '0x8080808080808080', 'r9': '0x7f'}
@@ -27,13 +27,15 @@ def i32(value):
 
 
 def case(cid, index=0, slots=((4, 0, [0, 0, 0, 0]), (4, 0, [0, 0, 0, 0])), flags=(0, 0), limit=0x7fffffff,
-         registers=None):
+         registers=None, third=None):
     """One take: the slots as (capacity, count, items), the flag arrays and the index argument."""
     buffers = {'table': {'size': TABLE_BYTES, 'bytes': 'd3' * TABLE_BYTES}}
     memory = [{'addr': 'buf:table+0x40', 'bytes': i32(limit)}]
-    for number, (base, (capacity, count, items)) in enumerate(zip(SLOT_BASE, slots)):
+    listed = tuple(slots) + ((third,) if third else ())
+    for number, (base, (capacity, count, items)) in enumerate(zip(SLOT_BASE, listed)):
         buffers[f'items{number}'] = {'size': 4 * len(items), 'bytes': ''.join(i32(v) for v in items)}
-        buffers[f'flags{number}'] = {'size': 8, 'bytes': bytes(flags[number]).hex()}
+        flag_row = flags[number] if number < len(flags) else (0,) * 8
+        buffers[f'flags{number}'] = {'size': 8, 'bytes': bytes(flag_row).hex()}
         memory += [{'addr': f'buf:table+0x{base + 0x8:x}', 'bytes': i32(capacity)},
                    {'addr': f'buf:table+0x{base + 0xc:x}', 'bytes': i32(count)},
                    {'addr': f'buf:table+0x{base + 0x10:x}', 'pointer': f'items{number}'},
@@ -56,6 +58,7 @@ CASES = [
     case('index_all_ones_rejected', index=MASK32, slots=SLOT_ITEMS, flags=NO_FLAGS),
     case('full_list_rejected', slots=((2, 2, [3, 2]), (4, 0, [0, 0, 0, 0])), flags=NO_FLAGS),
     case('count_above_capacity_rejected', slots=((2, 3, [3, 2, 1]), (4, 0, [0, 0, 0, 0])), flags=NO_FLAGS),
+    case('index_two_with_room_rejected', index=2, slots=SLOT_ITEMS, third=(4, 0, [1, 2, 3, 0]), flags=NO_FLAGS),
     case('last_free_entry_taken', slots=((2, 1, [6, 4]), (4, 0, [0, 0, 0, 0])), flags=NO_FLAGS),
     case('first_item_zero_taken', slots=((4, 0, [0, 1, 2, 3]), (4, 0, [0, 0, 0, 0])), flags=NO_FLAGS),
     case('item_already_flagged_taken_again', slots=((4, 0, [4, 1, 2, 3]),
