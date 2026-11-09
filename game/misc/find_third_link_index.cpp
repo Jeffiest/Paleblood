@@ -2,7 +2,7 @@
 #include <cstddef>
 #include <cstdint>
 
-#include "lookup_table.h"
+#include "link_lookup_table.h"
 #include "runtime/original.h"
 
 namespace {
@@ -46,7 +46,7 @@ void report_not_found(const char *argument)
  * argument. When none matches, the miss is reported and the result is minus one.
  *
  */
-extern "C" int32_t bb_misc_find_third_link_index(misc::LookupTable *table, const char *argument)
+extern "C" int32_t bb_misc_find_third_link_index(misc::LinkLookupTable *table, const char *argument)
 {
     for (int32_t index = 0; index < table->third_count; index++) {
         const uint64_t address = table->third_entries[index].link & ~link_flag;

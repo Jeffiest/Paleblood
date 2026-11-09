@@ -2,7 +2,7 @@
 #include <cstddef>
 #include <cstdint>
 
-#include "lookup_table.h"
+#include "link_lookup_table.h"
 #include "runtime/original.h"
 
 namespace {
@@ -44,7 +44,7 @@ void report_out_of_range()
  *
  * The count is taken as unsigned, so an empty table (count zero) wraps and accepts any index.
  */
-extern "C" uint64_t bb_misc_lookup_second_link(misc::LookupTable *table, uint32_t index)
+extern "C" uint64_t bb_misc_lookup_second_link(misc::LinkLookupTable *table, uint32_t index)
 {
     const uint32_t last_index = static_cast<uint32_t>(table->second_count) - 1;
     if (last_index < index) {
