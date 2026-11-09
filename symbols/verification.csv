@@ -22939,6 +22939,7 @@ misc_scratch_value_18,edge,,15,15,0,0,78d59daf53f9216d,2026-11-09
 misc_scratch_value_48,edge,,15,15,0,0,aeae6a9a6b51dbeb,2026-11-09
 misc_scratch_value_50,edge,,15,15,0,0,dbfc7470130ba6ee,2026-11-09
 misc_scratch_value_58,edge,,15,15,0,0,1a8f63b163f55114,2026-11-09
+misc_select_probe_scaled,edge,,11,11,0,0,a2c6c96c7f32aaa6,2026-11-09
 misc_select_probe_value,edge,,8,8,0,0,c7955f2a8e547e8a,2026-11-09
 misc_store_pair,edge,,9,0,9,0,d8cc4e7f9a84080a,2026-11-09
 misc_store_request,edge,,14,14,0,0,371c37c37b2f52f7,2026-11-09

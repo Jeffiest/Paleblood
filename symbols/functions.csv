@@ -8395,6 +8395,7 @@ address,size,name,system,status,notes
 0x01e509f0,27,misc_init_keyed_handle,misc,edge-verified,Sets a keyed handle to its class vtable the target with no id and adds the active flag to its flags
 0x01e50a20,1,auto_empty_01e50a20,auto,edge-verified,Generated from the empty template
 0x01e50a30,5,misc_mark_keyed_handle_active,misc,edge-verified,Adds the active bit to a keyed handle flags and changes nothing else
+0x01e50a40,74,misc_select_probe_scaled,misc,edge-verified,Adds the scale in steps of one hundred to the probe selected value or returns minus one when the value or scale is negative
 0x01e50a90,56,misc_select_probe_value,misc,edge-verified,Returns the probe first value when the config flag is set then its second value when the block word bit is set otherwise minus one
 0x01e50c20,73,misc_chain_leaf_flag,misc,edge-verified,Returns the flag byte of the leaf of the holder owner chain or zero when the owner has no link or the link has no leaf
 0x01e53190,3,auto_return_zero_01e53190,auto,edge-verified,Generated from the return zero template
