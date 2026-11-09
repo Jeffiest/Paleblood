@@ -8381,6 +8381,7 @@ address,replacement,system,returns
 0x01e47d40,bb_auto_empty_01e47d40,auto,void
 0x01e47df0,bb_misc_release_held_block,misc,void
 0x01e47ec0,bb_misc_release_owner_nodes,misc,void
+0x01e47f50,bb_misc_held_block_has_value,misc,i8
 0x01e48670,bb_misc_dispatch_and_free_nodes,misc,void
 0x01e48b10,bb_auto_return_field_01e48b10,auto,i64
 0x01e48b20,bb_auto_return_field_01e48b20,auto,i64
