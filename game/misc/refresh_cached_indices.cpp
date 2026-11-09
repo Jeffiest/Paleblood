@@ -8,7 +8,7 @@
 #include "key_source.h"
 #include "list_head.h"
 #include "list_node.h"
-#include "lookup_result.h"
+#include "index_lookup_result.h"
 #include "pool_context.h"
 #include "runtime/original.h"
 #include "tagged_entry.h"
@@ -20,12 +20,12 @@ using misc::IndexEntry;
 using misc::KeyProvider;
 using misc::KeySource;
 using misc::ListNode;
-using misc::LookupResult;
+using misc::IndexLookupResult;
 using misc::PoolContext;
 using misc::TaggedEntry;
 
-RT_ORIGINAL(0x0231e3d0, fn_0231e3d0, void(LookupResult *result, uint32_t id));
-RT_ORIGINAL(0x023210e0, fn_023210e0, void(LookupResult *result, uint32_t id));
+RT_ORIGINAL(0x0231e3d0, fn_0231e3d0, void(IndexLookupResult *result, uint32_t id));
+RT_ORIGINAL(0x023210e0, fn_023210e0, void(IndexLookupResult *result, uint32_t id));
 
 /** The index mask: only the low 28 bits of an index are used. */
 constexpr uint32_t index_mask = 0x0fffffff;
@@ -37,9 +37,9 @@ constexpr uint32_t index_none = 0xffffffff;
 constexpr int32_t lookup_unset = -1;
 
 /** A lookup result nothing has written yet: the requested id is unset and no entry is set. */
-LookupResult unset_lookup()
+IndexLookupResult unset_lookup()
 {
-    LookupResult result{};
+    IndexLookupResult result{};
     result.requested_0x00 = lookup_unset;
     return result;
 }
@@ -61,7 +61,7 @@ extern "C" void bb_misc_refresh_cached_indices(IndexCache *cache)
     PoolContext *context = cache->context_0x08;
     const uint32_t masked_key = context->key_0x1c0 & index_mask;
 
-    LookupResult first = unset_lookup();
+    IndexLookupResult first = unset_lookup();
     fn_0231e3d0(&first, masked_key == index_mask ? index_none : masked_key);
 
     uint32_t second_key = masked_key;
@@ -77,7 +77,7 @@ extern "C" void bb_misc_refresh_cached_indices(IndexCache *cache)
     }
     if (second_key == index_mask) second_key = index_none;
 
-    LookupResult second = unset_lookup();
+    IndexLookupResult second = unset_lookup();
     fn_0231e3d0(&second, second_key);
     uint32_t index = index_none;
     auto *second_entry = static_cast<IndexEntry *>(second.entry_0x08);
@@ -88,7 +88,7 @@ extern "C" void bb_misc_refresh_cached_indices(IndexCache *cache)
     KeyProvider *provider = source->provider_0x60;
     const uint32_t provided = provider->vtable->slot_0x20(provider);
 
-    LookupResult tag = unset_lookup();
+    IndexLookupResult tag = unset_lookup();
     fn_023210e0(&tag, provided);
     int32_t tag_index = static_cast<int32_t>(index_none);
     auto *tagged = static_cast<TaggedEntry *>(tag.entry_0x08);

@@ -12,11 +12,11 @@ namespace misc {
  * A lookup result: the requested id at +0x0 (set to minus one before the lookup) and the entry at +0x8.
  *
  */
-struct LookupResult {
+struct IndexLookupResult {
     int32_t requested_0x00;
     uint8_t unknown_0x04[0x4];
     void *entry_0x08; /**< The entry the lookup found, or null. */
 };
-static_assert(offsetof(LookupResult, entry_0x08) == 0x8);
+static_assert(offsetof(IndexLookupResult, entry_0x08) == 0x8);
 
 }  // namespace misc

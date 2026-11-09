@@ -7,7 +7,7 @@
 
 namespace misc {
 
-struct PoolEntry;
+struct RetainablePoolEntry;
 
 /**
  *
@@ -17,7 +17,7 @@ struct PoolEntry;
 struct IndexedPool {
     uint8_t unknown_0x0000[0x2a0];
     uint8_t sub_object[1];  /**< Only its address is passed on; its size is not known here. */
-    PoolEntry *first_0x2a8; /**< The first entry of the list, or null when the list is empty. */
+    RetainablePoolEntry *first_0x2a8; /**< The first entry of the list, or null when the list is empty. */
 };
 static_assert(offsetof(IndexedPool, sub_object) == 0x2a0 && offsetof(IndexedPool, first_0x2a8) == 0x2a8);
 

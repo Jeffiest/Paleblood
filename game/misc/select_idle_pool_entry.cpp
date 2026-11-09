@@ -3,14 +3,14 @@
 #include <cstdint>
 
 #include "indexed_pool.h"
-#include "pool_entry.h"
+#include "retainable_pool_entry.h"
 #include "pool_holder.h"
 #include "runtime/original.h"
 
 namespace {
 
 using misc::IndexedPool;
-using misc::PoolEntry;
+using misc::RetainablePoolEntry;
 using misc::PoolHolder;
 
 RT_ORIGINAL(0x01c96990, fn_01c96990, uint64_t(void *sub_object, uint32_t value));
@@ -40,7 +40,7 @@ extern "C" uint64_t bb_misc_select_idle_pool_entry(PoolHolder *holder, uint8_t t
     IndexedPool *pool = holder->pool_0x08;
     if (through_sub_object != 0) return fn_01c96990(pool->sub_object, value);
 
-    PoolEntry *entry = pool->first_0x2a8;
+    RetainablePoolEntry *entry = pool->first_0x2a8;
     while (entry != nullptr && !(entry->references_0x08 == 0 && (entry->kind_0x0c & kind_mask) == idle_kind))
         entry = entry->next_0x10;
     if (entry == nullptr) return 0;

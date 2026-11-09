@@ -4,17 +4,17 @@
 
 #include "../engine/allocator.h"
 #include "indexed_pool.h"
-#include "pool_entry.h"
+#include "retainable_pool_entry.h"
 #include "pool_holder.h"
 #include "runtime/original.h"
 
 namespace {
 
 using misc::IndexedPool;
-using misc::PoolEntry;
+using misc::RetainablePoolEntry;
 using misc::PoolHolder;
 
-RT_ORIGINAL(0x0247b720, allocator_of, engine::Allocator *(PoolEntry *entry));
+RT_ORIGINAL(0x0247b720, allocator_of, engine::Allocator *(RetainablePoolEntry *entry));
 
 /** The bit of the entry's kind word that a kept entry gets set. */
 constexpr uint16_t kept_kind_bit = 0x4000;
@@ -32,10 +32,10 @@ constexpr uint16_t kept_kind_bit = 0x4000;
 extern "C" void bb_misc_drain_pool_entries(PoolHolder *holder)
 {
     IndexedPool *pool = holder->pool_0x08;
-    PoolEntry *entry = pool->first_0x2a8;
+    RetainablePoolEntry *entry = pool->first_0x2a8;
     pool->first_0x2a8 = nullptr;
     while (entry != nullptr) {
-        PoolEntry *next = entry->next_0x10;
+        RetainablePoolEntry *next = entry->next_0x10;
         if (entry->vtable->is_retained(entry)) {
             entry->next_0x10 = pool->first_0x2a8;
             pool->first_0x2a8 = entry;
