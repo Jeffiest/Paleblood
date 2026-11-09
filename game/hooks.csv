@@ -1477,6 +1477,7 @@ address,replacement,system,returns
 0x00be1730,bb_misc_descriptor_type_address,misc,i64
 0x00be1740,bb_auto_empty_00be1740,auto,void
 0x00be1750,bb_auto_empty_00be1750,auto,void
+0x00be1760,bb_misc_small_type_address,misc,i64
 0x00be2dd0,bb_auto_return_field_00be2dd0,auto,i32
 0x00be2e90,bb_auto_return_member_address_00be2e90,auto,i64
 0x00be2ea0,bb_auto_return_field_00be2ea0,auto,i32
