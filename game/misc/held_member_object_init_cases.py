@@ -49,6 +49,7 @@ CASES = [
     case('no_held_item'),
     case('uncounted_item', held=True, word=0x0),
     case('counted_item', held=True, word=0x10001),
+    case('counted_at_threshold_is_counted', held=True, word=0x10000),
     case('counted_low_half_wraps', held=True, word=0x1ffff),
     case('counted_flag_and_high_word_survive', held=True, word=0xabcd0005),
 ]
