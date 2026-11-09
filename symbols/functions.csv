@@ -5040,6 +5040,7 @@ address,size,name,system,status,notes
 0x01887de0,1,auto_empty_01887de0,auto,edge-verified,Generated from the empty template
 0x01887eb0,1,auto_empty_01887eb0,auto,edge-verified,Generated from the empty template
 0x01887f20,28,misc_release_after_empty_call,misc,edge-verified,Calls the empty routine 0x01401600 then tail calls the release routine 0x02fbe588 with the same object and returns its result
+0x018881d0,28,misc_call_then_release,misc,edge-verified,Calls the routine 0x01885070 with the object then tail calls the release routine 0x02fbe588 with the same object and returns its result
 0x01888200,1,auto_empty_01888200,auto,edge-verified,Generated from the empty template
 0x01888b10,1,auto_empty_01888b10,auto,edge-verified,Generated from the empty template
 0x01889310,6,auto_return_constant_01889310,auto,edge-verified,Generated from the return constant template
