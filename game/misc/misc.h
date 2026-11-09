@@ -266,6 +266,52 @@ struct Dispatcher {
 
 RT_GLOBAL(0x057e7320, pending_dispatcher, Dispatcher *);
 
+/**
+ *
+ * A node of an intrusive list that numbers its entries as they are appended.
+ *
+ */
+struct IndexedNode {
+    uint8_t unknown_0x0000[0x24];
+    uint32_t index; /**< The position the node was appended at. */
+    IndexedNode *next; /**< The node appended after this one, set when that node is appended. */
+};
+static_assert(offsetof(IndexedNode, index) == 0x24);
+static_assert(offsetof(IndexedNode, next) == 0x28);
+
+/**
+ *
+ * The chain that holds the head and the tail of an intrusive list.
+ *
+ */
+struct NodeChain {
+    uint8_t unknown_0x0000[0x110];
+    IndexedNode *head; /**< The first node, or null while the chain is empty. */
+    IndexedNode *tail; /**< The last node appended. */
+};
+static_assert(offsetof(NodeChain, head) == 0x110);
+static_assert(offsetof(NodeChain, tail) == 0x118);
+
+/**
+ *
+ * The holder that numbers appended nodes and keeps the chain they go into.
+ *
+ */
+struct IndexedHolder {
+    uint8_t unknown_0x0000[0x38];
+    NodeChain *chain;   /**< The chain the nodes are appended to. */
+    uint8_t unknown_0x0040[0x32c];
+    uint32_t next_index; /**< The index the next appended node receives. */
+    uint8_t unknown_0x0370[0x08];
+    uint32_t count;      /**< The number of nodes appended. */
+    uint8_t unknown_0x037c[0x14];
+    IndexedNode *first;  /**< The first node appended, kept once it is set. */
+};
+static_assert(offsetof(IndexedHolder, chain) == 0x38);
+static_assert(offsetof(IndexedHolder, next_index) == 0x36c);
+static_assert(offsetof(IndexedHolder, count) == 0x378);
+static_assert(offsetof(IndexedHolder, first) == 0x390);
+
 /** Constant added to the span's width before it is rounded down. */
 RT_GLOBAL(0x04b3b7a8, span_bias, const double);
 
