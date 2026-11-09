@@ -14935,6 +14935,7 @@ address,size,name,system,status,notes
 0x026efe20,1,auto_empty_026efe20,auto,edge-verified,Generated from the empty template
 0x026f04e0,70,misc_remove_stored_value_if_present,misc,edge-verified,Removes the first stored value equal to the argument from the holder vector and leaves the vector alone when none matches
 0x026f0530,200,misc_flush_owner_once,misc,edge-verified,Runs a one time flush of the flusher and locator sources into the holder sink and then sets the done flag
+0x026f1c40,49,misc_size_class_entry_first,misc,edge-verified,Returns the entry of the first size table for the size class of the request size.
 0x026f2860,8,auto_return_field_026f2860,auto,edge-verified,Generated from the return field template
 0x026f2870,8,auto_return_field_026f2870,auto,edge-verified,Generated from the return field template
 0x026f3990,1,auto_empty_026f3990,auto,edge-verified,Generated from the empty template

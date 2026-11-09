@@ -14934,6 +14934,7 @@ address,replacement,system,returns
 0x026efe20,bb_auto_empty_026efe20,auto,void
 0x026f04e0,bb_misc_remove_stored_value_if_present,misc,void
 0x026f0530,bb_misc_flush_owner_once,misc,void
+0x026f1c40,bb_misc_size_class_entry_first,misc,i64
 0x026f2860,bb_auto_return_field_026f2860,auto,i64
 0x026f2870,bb_auto_return_field_026f2870,auto,i64
 0x026f3990,bb_auto_empty_026f3990,auto,void

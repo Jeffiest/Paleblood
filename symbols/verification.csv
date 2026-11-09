@@ -22969,6 +22969,7 @@ misc_select_probe_value,edge,,8,8,0,0,c7955f2a8e547e8a,2026-11-09
 misc_set_u32_word_160,edge,,7,7,0,0,a3d04fc3eab470cc,2026-11-09
 misc_set_value_word_130,edge,,6,6,0,0,91908f151b5f35ba,2026-11-09
 misc_set_value_word_148,edge,,6,6,0,0,cce399dab4b975f2,2026-11-09
+misc_size_class_entry_first,edge,,12,12,0,0,9eaa8c97b746114a,2026-11-09
 misc_slot_matches_unset,edge,,16,16,0,0,e2aac4ae58b14977,2026-11-09
 misc_store_pair,edge,,9,0,9,0,d8cc4e7f9a84080a,2026-11-09
 misc_store_request,edge,,14,14,0,0,371c37c37b2f52f7,2026-11-09
