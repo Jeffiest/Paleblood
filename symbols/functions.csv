@@ -5048,6 +5048,7 @@ address,size,name,system,status,notes
 0x018881d0,28,misc_call_then_release,misc,edge-verified,Calls the routine 0x01885070 with the object then tail calls the release routine 0x02fbe588 with the same object and returns its result
 0x01888200,1,auto_empty_01888200,auto,edge-verified,Generated from the empty template
 0x018882a0,205,misc_init_shared_record_once,misc,edge-verified,Creates the shared object on first use checks its flag query bit reports a missing bit as fatal and registers the teardown record once
+0x018883b0,26,misc_init_value_record,misc,edge-verified,Sets the record vtable stores the 32-bit value clears the flag byte at 0x0c and clears the trailing word at 0x10
 0x01888b10,1,auto_empty_01888b10,auto,edge-verified,Generated from the empty template
 0x01889310,6,auto_return_constant_01889310,auto,edge-verified,Generated from the return constant template
 0x0188b7c0,6,auto_return_constant_0188b7c0,auto,edge-verified,Generated from the return constant template
