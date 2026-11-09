@@ -60,7 +60,9 @@ def case(cid, remaining=0x40, cursor=True, allocated=True, first=True, count=5,
     if first:
         memory.append({'addr': 'buf:holder+0x398', 'pointer': 'other'})
     stubs = []
-    if remaining < NODE_BYTES:
+    # The allocator is offered for every size up to and including the node size, so that a take at
+    # exactly the node size must not reach it.
+    if remaining <= NODE_BYTES:
         stubs.append({'address': ALLOCATOR, 'argc': 2, 'argi': [0, 1],
                       'ret': 'buf:slow_node' if allocated else '0x0'})
     return {
