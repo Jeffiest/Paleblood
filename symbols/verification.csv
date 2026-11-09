@@ -22911,6 +22911,7 @@ loading_fios_open_with_mode,edge,,37,37,0,0,566c29c843013a83,2026-11-08
 misc_append_indexed_node,edge,,8,8,0,0,624926113ffd4fc0,2026-11-09
 misc_base_init_02242980,edge,,3,3,0,0,610abb3077be2126,2026-11-09
 misc_base_init_02242a30,edge,,3,3,0,0,7c81b62fe9c19951,2026-11-09
+misc_base_init_02242ae0,edge,,3,3,0,0,d406474c8f1be01b,2026-11-09
 misc_chain_contains,edge,,9,9,0,0,8b4669a2c9b3075e,2026-11-09
 misc_chain_search,edge,,24,24,0,0,9025f7eefef211ad,2026-11-09
 misc_child_idle,edge,,10,10,0,0,7d142083dbdc1f05,2026-11-09
