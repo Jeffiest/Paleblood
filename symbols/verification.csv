@@ -22928,6 +22928,8 @@ misc_holder_search_second,edge,,4,4,0,0,8ea756833cdd18bc,2026-11-09
 misc_init_child_holder,edge,,4,4,0,0,129ed90552350e0f,2026-11-09
 misc_init_keyed_handle,edge,,5,5,0,0,5baab1272f6a7e05,2026-11-09
 misc_init_record_block,edge,,3,3,0,0,7bd22e5e16029ce2,2026-11-09
+misc_insert_scaled_entry,edge,,14,14,0,0,0c099f6f95dec14a,2026-11-09
+misc_insert_scaled_entry_alt,edge,,14,14,0,0,69bbb208c531a58e,2026-11-09
 misc_int_queue_push_source,edge,,6,6,0,0,e8a2d1a264c83ce3,2026-11-09
 misc_invoke_callback,edge,,12,12,0,0,8fc1139db930cda5,2026-11-09
 misc_keyed_pool_append,edge,,10,10,0,0,a4f064fdb0d9e5e5,2026-11-09
@@ -22947,8 +22949,10 @@ misc_read_source_word,edge,,5,5,0,0,c4b6dac915b6330a,2026-11-09
 misc_release_held_block,edge,,2,2,0,0,12b79404f2903b0d,2026-11-09
 misc_release_owned_state,edge,,23,23,0,0,00fc5fe8e66a2654,2026-11-09
 misc_release_owner_nodes,edge,,10,10,0,0,c6fdd3a722ed1f6e,2026-11-09
+misc_release_owner_slots,edge,,13,13,0,0,cd757b70faaf3895,2026-11-09
 misc_release_pair,edge,,8,8,0,0,35af01fa31edbc2e,2026-11-09
 misc_remove_value_from_vector,edge,,10,10,0,0,bb5afec1a13ffc37,2026-11-09
+misc_replace_holder_object,edge,,14,14,0,0,edb94c90e97e4106,2026-11-09
 misc_reset_listed_members,edge,,7,7,0,0,05d746a0ec655de6,2026-11-09
 misc_reset_then_release,edge,,4,4,0,0,69e09939e2f1c051,2026-11-09
 misc_resolve_request_target,edge,,7,7,0,0,03a93f3371a9f3c2,2026-11-09
@@ -22966,7 +22970,9 @@ misc_slot_matches_unset,edge,,16,16,0,0,e2aac4ae58b14977,2026-11-09
 misc_store_pair,edge,,9,0,9,0,d8cc4e7f9a84080a,2026-11-09
 misc_store_request,edge,,14,14,0,0,371c37c37b2f52f7,2026-11-09
 misc_submit_request,edge,,8,8,0,0,6b2878ba4d6b1578,2026-11-09
+misc_take_pending_node,edge,,10,10,0,0,9cd062ecd03f968a,2026-11-09
 misc_teardown_record,edge,,5,5,0,0,4344b708ae9c9edf,2026-11-09
+misc_teardown_record_entries,edge,,17,17,0,0,414367481204d094,2026-11-09
 misc_unpack_and_release,edge,,7,7,0,0,c3f850c037c90982,2026-11-09
 misc_update_owned_entries,edge,,11,11,0,0,2649a9fa3292b49e,2026-11-09
 misc_value_unless_flagged,edge,,10,10,0,0,f8e45a1ee3d584de,2026-11-09

@@ -27,7 +27,11 @@ address,size,name,system,status,notes
 0x0040be60,54,misc_lookup_record_payload,misc,edge-verified,Looks up record 0x15 and returns its tag-cleared word plus 12 then releases the record; zero when missing
 0x0040bf40,92,misc_init_record_block,misc,edge-verified,Initializes a record with the record vtable and kind then takes a zeroed 8-byte block from the scratch service and returns it
 0x0040bfa0,42,misc_teardown_record,misc,edge-verified,Tears down the record then gives it to the scratch service release slot and returns the slot result
+0x0040bfd0,260,misc_teardown_record_entries,misc,edge-verified,Tears down the entry table of a record: live entries drop their two tagged references and become empty then the array and table go back to the scratch service and the base teardown tail call runs
+0x0040c0e0,339,misc_insert_scaled_entry,misc,edge-verified,Looks the source key up in the record entry table and when it is absent inserts a value built from the second argument with the given scale and flags then drops the temporary references
+0x0040c240,339,misc_insert_scaled_entry_alt,misc,edge-verified,Same as misc_insert_scaled_entry with the key and value built by the other builder at 0x0045cd00 then drops the temporary references
 0x0040c4c0,3,auto_return_zero_0040c4c0,auto,edge-verified,Generated from the return zero template
+0x0040d000,321,misc_release_owner_slots,misc,edge-verified,Releases an owner items array and tagged reference and its twelve record slots from the last one down then runs the base teardown tail call
 0x0040d150,18,misc_value_unless_flagged,misc,edge-verified,Returns zero when the flags byte has bit 0x80 otherwise the word at 0x20 of the holder source
 0x0040d170,9,misc_read_source_word,misc,edge-verified,Returns the word at offset 0x20 of the holder source with no check on the pointer
 0x0040d180,70,misc_submit_request,misc,edge-verified,Adds the request node entry to the owner queue then returns the flag word when its low byte is set or hands the queue on when it is clear
@@ -36,6 +40,8 @@ address,size,name,system,status,notes
 0x0040dee0,316,misc_pool_append_node,misc,edge-verified,Takes a node from the holder pool binds it to the caller object and tag and appends it to the pool chain counting it
 0x0040e020,379,misc_keyed_pool_append,misc,edge-verified,Appends a keyed node to a pool after the pool append with a retained shared object and releases the binding or the shared object
 0x0040e1a0,90,misc_append_indexed_node,misc,edge-verified,Numbers a node with the next holder index counts it keeps the first node once and appends it to the chain tail
+0x0040e680,260,misc_take_pending_node,misc,edge-verified,Takes a 0x38 byte node from the holder pool from the cursor or the slow allocator and moves the holders pending words into it then clears them and returns the node or null
+0x0040f0b0,435,misc_replace_holder_object,misc,edge-verified,Builds a new object from the accepted object that the table or a lookup gives and stores it in the holder in place of the old one returning true when stored
 0x00410100,5,auto_return_field_00410100,auto,edge-verified,Generated from the return field template
 0x00410290,1,auto_empty_00410290,auto,edge-verified,Generated from the empty template
 0x004102a0,1,auto_empty_004102a0,auto,edge-verified,Generated from the empty template

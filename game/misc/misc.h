@@ -901,14 +901,23 @@ static_assert(offsetof(Tagged, tag) == 0x08);
 struct PooledHolder {
     uint8_t unknown_0x0000[0x38];
     NodePool *pool;
-    uint8_t unknown_0x0040[0x33c];
-    uint32_t count;
-    uint8_t unknown_0x0380[0x18];
-    PoolNode *first;
+    uint8_t unknown_0x0040[0x338];
+    uint32_t value_0x378;   /**< Moved into a taken node and cleared. */
+    uint32_t count;         /**< Counts the nodes appended; moved into a taken node and cleared. */
+    uint32_t value_0x380;   /**< Moved into a taken node and cleared. */
+    uint8_t unknown_0x0384[0x0c];
+    uint64_t value_0x390;   /**< Moved into a taken node and cleared. */
+    PoolNode *first;        /**< The first node appended; moved into a taken node and cleared by the taker. */
+    uint8_t unknown_0x03a0[0x08];
+    uint64_t value_0x3a8;   /**< Moved into a taken node and cleared. */
 };
 static_assert(offsetof(PooledHolder, pool) == 0x38);
+static_assert(offsetof(PooledHolder, value_0x378) == 0x378);
 static_assert(offsetof(PooledHolder, count) == 0x37c);
+static_assert(offsetof(PooledHolder, value_0x380) == 0x380);
+static_assert(offsetof(PooledHolder, value_0x390) == 0x390);
 static_assert(offsetof(PooledHolder, first) == 0x398);
+static_assert(offsetof(PooledHolder, value_0x3a8) == 0x3a8);
 
 RT_ORIGINAL(0x00418060, fn_00418060, void(Tagged *tagged, NodePool *pool, const uint32_t *key));
 RT_ORIGINAL(0x00414be0, fn_00414be0, PoolNode *(PoolNode **cursor, uint32_t size));
