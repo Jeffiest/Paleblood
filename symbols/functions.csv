@@ -8406,6 +8406,7 @@ address,size,name,system,status,notes
 0x01e50a40,74,misc_select_probe_scaled,misc,edge-verified,Adds the scale in steps of one hundred to the probe selected value or returns minus one when the value or scale is negative
 0x01e50a90,56,misc_select_probe_value,misc,edge-verified,Returns the probe first value when the config flag is set then its second value when the block word bit is set otherwise minus one
 0x01e50c20,73,misc_chain_leaf_flag,misc,edge-verified,Returns the flag byte of the leaf of the holder owner chain or zero when the owner has no link or the link has no leaf
+0x01e50c70,74,misc_select_idle_pool_entry,misc,edge-verified,Selects the first idle entry of the pool list and clears its flag bit; a nonzero flag byte hands the pool sub-object to the other selection instead
 0x01e53190,3,auto_return_zero_01e53190,auto,edge-verified,Generated from the return zero template
 0x01e531d0,5,auto_return_field_01e531d0,auto,edge-verified,Generated from the return field template
 0x01e531e0,5,auto_return_field_01e531e0,auto,edge-verified,Generated from the return field template
