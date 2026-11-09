@@ -22929,6 +22929,7 @@ misc_list_all_exceed_one,edge,,12,12,0,0,9d15f22d0f823a8a,2026-11-09
 misc_lookup_entry_link,edge,,8,8,0,0,1b12f2f4bb632d35,2026-11-09
 misc_lookup_entry_word,edge,,8,8,0,0,1a0306976fe2608b,2026-11-09
 misc_lookup_record_payload,edge,,9,9,0,0,5dad04ae8902d9e9,2026-11-09
+misc_lookup_second_list_address,edge,,2,2,0,0,0327ea5eef40722d,2026-11-09
 misc_lookup_second_word,edge,,8,8,0,0,9adbad068e6aff8f,2026-11-09
 misc_lookup_value_or_zero,edge,,9,9,0,0,b76ae46dc49a80c6,2026-11-09
 misc_plain_type_address,edge,,1,1,0,0,80a2e8f92ca741fa,2026-11-09

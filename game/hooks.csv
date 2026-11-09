@@ -1484,6 +1484,7 @@ address,replacement,system,returns
 0x00be2ea0,bb_auto_return_field_00be2ea0,auto,i32
 0x00be2f90,bb_misc_lookup_entry_word,misc,i32
 0x00be3040,bb_misc_lookup_entry_link,misc,i64
+0x00be30f0,bb_misc_lookup_second_list_address,misc,i64
 0x00be3100,bb_auto_return_field_00be3100,auto,i32
 0x00be3200,bb_misc_lookup_second_word,misc,i32
 0x00be3360,bb_auto_return_member_address_00be3360,auto,i64
