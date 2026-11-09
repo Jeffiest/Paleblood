@@ -5039,6 +5039,7 @@ address,replacement,system,returns
 0x01887de0,bb_auto_empty_01887de0,auto,void
 0x01887eb0,bb_auto_empty_01887eb0,auto,void
 0x01887f20,bb_misc_release_after_empty_call,misc,i64
+0x01887f40,bb_misc_tail_call_member_target,misc,i64
 0x018881b0,bb_misc_set_vtable_after_call,misc,void
 0x018881d0,bb_misc_call_then_release,misc,i64
 0x01888200,bb_auto_empty_01888200,auto,void

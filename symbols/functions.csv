@@ -5040,6 +5040,7 @@ address,size,name,system,status,notes
 0x01887de0,1,auto_empty_01887de0,auto,edge-verified,Generated from the empty template
 0x01887eb0,1,auto_empty_01887eb0,auto,edge-verified,Generated from the empty template
 0x01887f20,28,misc_release_after_empty_call,misc,edge-verified,Calls the empty routine 0x01401600 then tail calls the release routine 0x02fbe588 with the same object and returns its result
+0x01887f40,39,misc_tail_call_member_target,misc,edge-verified,Tail calls the target of a member thunk on its adjusted object with a 32-bit argument and returns its result; a zero target returns without a call
 0x018881b0,31,misc_set_vtable_after_call,misc,edge-verified,Calls the routine 0x01884e90 with the object then stores the static vtable block address as the first word of the object and returns
 0x018881d0,28,misc_call_then_release,misc,edge-verified,Calls the routine 0x01885070 with the object then tail calls the release routine 0x02fbe588 with the same object and returns its result
 0x01888200,1,auto_empty_01888200,auto,edge-verified,Generated from the empty template
