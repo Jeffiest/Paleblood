@@ -1513,6 +1513,7 @@ address,size,name,system,status,notes
 0x00be6f80,141,misc_dual_held_pair_report,misc,edge-verified,Reports the two held items of a dual held member object in the order its kind word gives and returns zero
 0x00be7010,28,misc_dispatch_by_kind,misc,edge-verified,Forwards a call to one of two target functions by the object kind word and returns one for any other kind
 0x00be9280,285,misc_bounded_range_object_init,misc,edge-verified,Builds a bounded range object with its two vtables and zeroed and lowest-value range slots
+0x00be93a0,75,misc_bounded_range_object_free,misc,edge-verified,Deleting destructor of a bounded range object that releases it then frees its block through the thread allocator with its size
 0x00be9890,5,auto_return_field_00be9890,auto,edge-verified,Generated from the return field template
 0x00be98a0,5,auto_return_field_00be98a0,auto,edge-verified,Generated from the return field template
 0x00be9910,4,auto_return_field_00be9910,auto,edge-verified,Generated from the return field template

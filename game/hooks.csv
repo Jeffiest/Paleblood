@@ -1512,6 +1512,7 @@ address,replacement,system,returns
 0x00be6f80,bb_misc_dual_held_pair_report,misc,i64
 0x00be7010,bb_misc_dispatch_by_kind,misc,i64
 0x00be9280,bb_misc_bounded_range_object_init,misc,void
+0x00be93a0,bb_misc_bounded_range_object_free,misc,i64
 0x00be9890,bb_auto_return_field_00be9890,auto,i64
 0x00be98a0,bb_auto_return_field_00be98a0,auto,i64
 0x00be9910,bb_auto_return_field_00be9910,auto,i32
