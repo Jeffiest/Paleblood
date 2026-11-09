@@ -18429,6 +18429,7 @@ address,replacement,system,returns
 0x02b393a0,bb_auto_return_field_02b393a0,auto,i64
 0x02b393b0,bb_auto_return_field_02b393b0,auto,i64
 0x02b3a370,bb_misc_push_value_to_vector,misc,void
+0x02b3a3c0,bb_misc_push_value_by_reference,misc,void
 0x02b3a4a0,bb_misc_remove_value_from_vector,misc,void
 0x02b3a500,bb_misc_set_value_word_130,misc,void
 0x02b3a510,bb_misc_forward_value_to_child,misc,i64

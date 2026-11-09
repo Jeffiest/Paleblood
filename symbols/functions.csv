@@ -18431,6 +18431,7 @@ address,size,name,system,status,notes
 0x02b393a0,8,auto_return_field_02b393a0,auto,edge-verified,Generated from the return field template
 0x02b393b0,8,auto_return_field_02b393b0,auto,edge-verified,Generated from the return field template
 0x02b3a370,64,misc_push_value_to_vector,misc,edge-verified,Appends a 64-bit value to the owner vector through the push routine
+0x02b3a3c0,218,misc_push_value_by_reference,misc,edge-verified,Appends a copy of a value to the vector growing the storage when full
 0x02b3a4a0,82,misc_remove_value_from_vector,misc,edge-verified,Removes the first stored value equal to the argument from the owner vector
 0x02b3a500,8,misc_set_value_word_130,misc,edge-verified,Stores a 64-bit value into the owner word at +0x130
 0x02b3a510,29,misc_forward_value_to_child,misc,edge-verified,Stores a value at +0x138 then returns the result of the child handler slot
