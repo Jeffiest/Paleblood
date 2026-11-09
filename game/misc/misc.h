@@ -142,6 +142,38 @@ RT_ORIGINAL(0x00400300, fn_00400300, uint64_t(uint64_t));
  */
 RT_ORIGINAL(0x004de260, fn_004de260, uint64_t(uint64_t, uint64_t));
 
+/**
+ *
+ * The part of a lookup record that holds a 16-byte value at +0x10.
+ *
+ */
+struct LookupPayload {
+    uint8_t unknown_0x0000[0x10];
+    SpanValue value; /**< The 16-byte value returned by the lookup, copied as it is. */
+};
+static_assert(offsetof(LookupPayload, value) == 0x10);
+
+/**
+ *
+ * A record returned by fn_004de9c0 for a resolved key.
+ *
+ */
+struct Lookup {
+    uint8_t unknown_0x0000[0x08];
+    LookupPayload *payload; /**< The payload that holds the value. */
+};
+static_assert(offsetof(Lookup, payload) == 0x08);
+
+/**
+ *
+ * Finds the record for a resolved key; a null result means there is none.
+ *
+ */
+RT_ORIGINAL(0x004de9c0, fn_004de9c0, Lookup *(uint64_t, uint32_t));
+
+/** The key that the record lookup is requested with. */
+constexpr uint32_t record_key = 2;
+
 /** Constant added to the span's width before it is rounded down. */
 RT_GLOBAL(0x04b3b7a8, span_bias, const double);
 
