@@ -22966,6 +22966,7 @@ misc_destroy_chain_node_3c30,edge,,6,6,0,0,dcf0b8fa2e61950d,2026-11-09
 misc_destroy_chain_node_3cb0,edge,,6,6,0,0,1ef08f7700b951fe,2026-11-09
 misc_destroy_chain_node_3d30,edge,,6,6,0,0,ccd5b020e92597f2,2026-11-09
 misc_destroy_chain_node_3db0,edge,,6,6,0,0,fbfc1fd0135e0891,2026-11-09
+misc_destroy_chain_node_3e30,edge,,6,6,0,0,791307ca21d3e7ed,2026-11-09
 misc_destroy_then_release,edge,,4,4,0,0,3e2ea31c54b1b109,2026-11-09
 misc_disarm_callback,edge,,7,7,0,0,a49db354307528b6,2026-11-09
 misc_dispatch_and_free_nodes,edge,,8,8,0,0,560d5709d5ca98c6,2026-11-09
