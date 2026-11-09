@@ -5094,6 +5094,7 @@ address,size,name,system,status,notes
 0x01888a00,205,misc_init_shared_record_once_guarded,misc,edge-verified,Guarded copy of misc_init_shared_record_once with the same setup and flag query; the stack guard is left to the compiler and the copy after its failure call is omitted
 0x01888b10,1,auto_empty_01888b10,auto,edge-verified,Generated from the empty template
 0x01888b80,28,misc_release_after_empty_call_01888b80,misc,edge-verified,Same body as misc_release_after_empty_call at 0x01887f20: calls the empty routine then tail calls the release routine with the object
+0x01888bd0,28,misc_call_then_release_01888bd0,misc,edge-verified,Calls the routine 0x01402180 with the object then tail calls the release routine 0x02fbe588 with the same object and returns its result
 0x01889310,6,auto_return_constant_01889310,auto,edge-verified,Generated from the return constant template
 0x0188b7c0,6,auto_return_constant_0188b7c0,auto,edge-verified,Generated from the return constant template
 0x0188dd20,5,auto_return_field_0188dd20,auto,edge-verified,Generated from the return field template
