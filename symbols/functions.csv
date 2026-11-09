@@ -1535,6 +1535,7 @@ address,size,name,system,status,notes
 0x00be9930,167,misc_copy_pair_00be9930,misc,edge-verified,Copies the 16-byte record at an index of a pair table to the output and returns zero or reports an index past the end and returns one
 0x00be99e0,167,misc_copy_pair_00be99e0,misc,edge-verified,Copies the 16-byte record at an index of a pair table to the output and returns zero or reports an index past the end and returns one
 0x00be9a90,167,misc_copy_pair_00be9a90,misc,edge-verified,Copies the 16-byte record at an index of a pair table to the output and returns zero or reports an index past the end and returns one
+0x00be9b40,167,misc_copy_pair_00be9b40,misc,edge-verified,Copies the 16-byte record at an index of a pair table to the output and returns zero or reports an index past the end and returns one
 0x00be9eb0,4,auto_return_field_00be9eb0,auto,edge-verified,Generated from the return field template
 0x00be9ec0,4,auto_return_field_00be9ec0,auto,edge-verified,Generated from the return field template
 0x00beaf60,3,auto_return_zero_00beaf60,auto,edge-verified,Generated from the return zero template
