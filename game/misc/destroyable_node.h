@@ -15,7 +15,7 @@ struct DestroyableNode;
  *
  */
 struct DestroyableVtable {
-    uint8_t unknown_0x00[0x8];
+    void (*slot_00)(DestroyableNode *node);    /**< The first slot: releases what the object holds. */
     void (*destroy)(DestroyableNode *node);    /**< Tears the object down before it is freed. */
 };
 static_assert(offsetof(DestroyableVtable, destroy) == 0x8);

@@ -22933,6 +22933,7 @@ misc_copy_block_58b3300,edge,,7,7,0,0,0b4f1e1dcdda3b95,2026-11-09
 misc_count_subtree_leaves,edge,,10,10,0,0,76ae6fa4641c1b40,2026-11-09
 misc_create_checked,edge,,7,7,0,0,3d08f8a7d8cf56ae,2026-11-09
 misc_destroy_node_and_free,edge,,4,4,0,0,7d850322006235b9,2026-11-09
+misc_destroy_node_slot_00_and_free,edge,,4,0,4,0,dcb0a4d7bca79049,2026-11-09
 misc_disarm_callback,edge,,7,7,0,0,a49db354307528b6,2026-11-09
 misc_dispatch_and_free_nodes,edge,,8,8,0,0,560d5709d5ca98c6,2026-11-09
 misc_dispatch_request,edge,,6,6,0,0,614522f80ec7e1c2,2026-11-09
