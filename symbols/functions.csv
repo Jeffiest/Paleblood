@@ -12780,6 +12780,7 @@ address,size,name,system,status,notes
 0x02242640,203,misc_replace_block_02242640,misc,edge-verified,Replaces the owner entry block with one sized from the doubled and masked request; fills it and frees the old block through the cached or looked-up allocator
 0x02242710,196,misc_replace_block_02242710,misc,edge-verified,Replaces the owner entry block with one sized from the doubled request; fills it and frees the old block through the cached or looked-up allocator
 0x02242980,15,misc_base_init_02242980,misc,edge-verified,Stores the base class vtable address point in a base object and nothing else
+0x02242990,66,misc_base_delete_02242990,misc,edge-verified,Deleting destructor of a base object: stores the base vtable address point then frees the object through the thread allocator sized free with size 0x28 and returns its result
 0x022429e0,45,misc_pair_matches_022429e0,misc,edge-verified,Reports whether a two word pair of size 0x10 matches the owner two keys
 0x02242a10,30,misc_member_call_02242a10,misc,edge-verified,Calls the member-function thunk target on the adjusted object directly or through its virtual slot and returns the target result
 0x02242a30,15,misc_base_init_02242a30,misc,edge-verified,Stores the base class vtable address point in a base object and nothing else
