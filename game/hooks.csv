@@ -8505,6 +8505,7 @@ address,replacement,system,returns
 0x01e54b60,bb_misc_forward_renderer_resource,misc,i64
 0x01e54bc0,bb_misc_query_each_table_item,misc,void
 0x01e54ca0,bb_misc_query_each_table_item_kind7,misc,void
+0x01e54d80,bb_misc_query_each_table_item_kind1,misc,void
 0x01e55be0,bb_auto_return_field_01e55be0,auto,i64
 0x01e55bf0,bb_auto_return_field_01e55bf0,auto,i64
 0x01e55c40,bb_auto_return_zero_01e55c40,auto,i64
