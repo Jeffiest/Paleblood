@@ -378,4 +378,57 @@ struct WordHolder {
 };
 static_assert(offsetof(WordHolder, source_0x10) == 0x10);
 
+/** A handler that takes two request words, of which only its handle slot is used. */
+struct Handler;
+
+/**
+ *
+ * The vtable of a Handler, of which only the handle slot is used.
+ *
+ */
+struct HandlerVtable {
+    uint8_t unknown_0x0000[0x10];
+    uint64_t (*handle)(Handler *handler, uint64_t first, uint64_t second); /**< Slot at 0x10. */
+};
+static_assert(offsetof(HandlerVtable, handle) == 0x10);
+
+/**
+ *
+ * The first word of a Handler is its vtable pointer.
+ *
+ */
+struct Handler {
+    const HandlerVtable *vtable; /**< Dispatch table for the handler's methods. */
+};
+static_assert(offsetof(Handler, vtable) == 0x00);
+
+/**
+ *
+ * A route that keeps its handler at 0x18.
+ *
+ */
+struct DispatchRoute {
+    uint8_t unknown_0x0000[0x18];
+    Handler *handler_0x18; /**< Handler for the route, or null when there is none. */
+};
+static_assert(offsetof(DispatchRoute, handler_0x18) == 0x18);
+
+/**
+ *
+ * A dispatcher that keeps its route at 0x10.
+ *
+ */
+struct Dispatch {
+    uint8_t unknown_0x0000[0x10];
+    DispatchRoute *route_0x10; /**< The route whose handler takes the request. */
+};
+static_assert(offsetof(Dispatch, route_0x10) == 0x10);
+
+/**
+ *
+ * Called with the two request words when the route has no handler (0x0040f580).
+ *
+ */
+RT_ORIGINAL(0x0040f580, fn_0040f580, uint64_t(uint64_t first, uint64_t second));
+
 }  // namespace misc
