@@ -22922,6 +22922,7 @@ misc_bind_vtable_56b4840_alt,edge,,14,14,0,0,d868a7fc6ab8a3be,2026-11-09
 misc_bind_vtable_56b4890,edge,,14,14,0,0,aa35292700d69d49,2026-11-09
 misc_bind_vtable_56b4890_alt,edge,,14,14,0,0,4b0780e0c9604eee,2026-11-09
 misc_call_object_slot_38,edge,,4,4,0,0,6c7e909d98891c21,2026-11-09
+misc_call_object_slot_40,edge,,4,4,0,0,380340cc65ea56b3,2026-11-09
 misc_chain_contains,edge,,9,9,0,0,8b4669a2c9b3075e,2026-11-09
 misc_chain_leaf_flag,edge,,6,6,0,0,1e265fb6c6640d38,2026-11-09
 misc_chain_search,edge,,24,24,0,0,9025f7eefef211ad,2026-11-09

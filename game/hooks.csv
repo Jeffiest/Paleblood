@@ -18545,6 +18545,7 @@ address,replacement,system,returns
 0x02b3e170,bb_misc_set_link,misc,void
 0x02b3e180,bb_auto_empty_02b3e180,auto,void
 0x02b3e190,bb_misc_call_object_slot_38,misc,i64
+0x02b3e1c0,bb_misc_call_object_slot_40,misc,i64
 0x02b3e5f0,bb_auto_empty_02b3e5f0,auto,void
 0x02b3e610,bb_auto_empty_02b3e610,auto,void
 0x02b3e820,bb_auto_return_field_02b3e820,auto,i64
