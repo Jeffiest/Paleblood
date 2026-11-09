@@ -18448,6 +18448,7 @@ address,size,name,system,status,notes
 0x02b3b2c0,5,auto_return_field_02b3b2c0,auto,edge-verified,Generated from the return field template
 0x02b3b2d0,4,auto_return_field_02b3b2d0,auto,edge-verified,Generated from the return field template
 0x02b3b310,3,auto_return_field_02b3b310,auto,edge-verified,Generated from the return field template
+0x02b3b980,218,misc_push_value_from_pointer,misc,edge-verified,Appends a copy of a value to the vector growing the storage when full
 0x02b3be00,1,auto_empty_02b3be00,auto,edge-verified,Generated from the empty template
 0x02b3be10,1,auto_empty_02b3be10,auto,edge-verified,Generated from the empty template
 0x02b3d6e0,1,auto_empty_02b3d6e0,auto,edge-verified,Generated from the empty template
