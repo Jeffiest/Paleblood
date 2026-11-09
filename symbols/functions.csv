@@ -1469,7 +1469,9 @@ address,size,name,system,status,notes
 0x00b70cf0,6,auto_return_constant_00b70cf0,auto,edge-verified,Generated from the return constant template
 0x00b71ef0,3,auto_return_constant_00b71ef0,auto,edge-verified,Generated from the return constant template
 0x00b71f00,6,auto_return_constant_00b71f00,auto,edge-verified,Generated from the return constant template
+0x00bdd2e0,309,misc_register_type_descriptor,misc,edge-verified,Registers the static descriptor of a type with the registry then fills its names methods vtable address point and size
 0x00bdd420,192,misc_linked_object_init,misc,edge-verified,Builds a linked object around a reference item by taking its own count and zeroing its members and values
+0x00bdd4e0,182,misc_linked_object_free,misc,edge-verified,Frees a linked object by destroying its members and held reference then hands the block to the thread releaser with its size
 0x00bdd5a0,129,misc_linked_object_release,misc,edge-verified,Releases a linked object by taking its vtable destroying two members dropping its held reference and destroying its last member
 0x00bdd630,9,misc_tagged_link_address,misc,edge-verified,Returns the address held in a tagged link with its flag bit cleared
 0x00bdd640,6,auto_return_constant_00bdd640,auto,edge-verified,Generated from the return constant template
@@ -1477,14 +1479,26 @@ address,size,name,system,status,notes
 0x00bdfd00,6,auto_return_constant_00bdfd00,auto,edge-verified,Generated from the return constant template
 0x00be0ca0,5,auto_return_field_00be0ca0,auto,edge-verified,Generated from the return field template
 0x00be0e70,3,auto_return_constant_00be0e70,auto,edge-verified,Generated from the return constant template
+0x00be16a0,8,misc_plain_type_address,misc,edge-verified,Returns the address of the plain type static object
+0x00be16b0,113,misc_register_plain_type,misc,edge-verified,Registers the plain type with its registry using the fixed name and source and no table or flags
+0x00be1730,8,misc_descriptor_type_address,misc,edge-verified,Returns the address of the descriptor type static object
 0x00be1740,1,auto_empty_00be1740,auto,edge-verified,Generated from the empty template
 0x00be1750,1,auto_empty_00be1750,auto,edge-verified,Generated from the empty template
+0x00be1760,8,misc_small_type_address,misc,edge-verified,Returns the address of the small type static object
+0x00be1770,277,misc_register_type_pair,misc,edge-verified,Registers the descriptor type with its table then fills its static descriptor and registers the small type with a flag
 0x00be2dd0,4,auto_return_field_00be2dd0,auto,edge-verified,Generated from the return field template
 0x00be2e90,5,auto_return_member_address_00be2e90,auto,edge-verified,Generated from the return member address template
 0x00be2ea0,4,auto_return_field_00be2ea0,auto,edge-verified,Generated from the return field template
+0x00be2f90,160,misc_lookup_entry_word,misc,edge-verified,Returns the word of a table entry by index and reports an out of range index giving zero
+0x00be3040,164,misc_lookup_entry_link,misc,edge-verified,Returns the address in a table entry tagged link with its flag cleared and reports an out of range index giving zero
+0x00be30f0,8,misc_lookup_second_list_address,misc,edge-verified,Returns the address of the second list field of a lookup table
 0x00be3100,7,auto_return_field_00be3100,auto,edge-verified,Generated from the return field template
+0x00be3110,221,misc_find_link_index,misc,edge-verified,Returns the index of the first second list entry whose link address matches the argument and reports a miss giving minus one
+0x00be3200,166,misc_lookup_second_word,misc,edge-verified,Returns the word of an entry in the second list of a table by index and reports an out of range index giving zero
+0x00be32b0,170,misc_lookup_second_link,misc,edge-verified,Returns the address in a second list tagged link of a table entry by index with its flag cleared and reports an out of range index giving zero
 0x00be3360,8,auto_return_member_address_00be3360,auto,edge-verified,Generated from the return member address template
 0x00be3370,7,auto_return_field_00be3370,auto,edge-verified,Generated from the return field template
+0x00be3380,221,misc_find_third_link_index,misc,edge-verified,Returns the index of the first third list entry whose link address matches the argument and reports a miss giving minus one
 0x00be35d0,7,auto_return_field_00be35d0,auto,edge-verified,Generated from the return field template
 0x00be35e0,7,auto_return_field_00be35e0,auto,edge-verified,Generated from the return field template
 0x00be4500,6,auto_return_constant_00be4500,auto,edge-verified,Generated from the return constant template
