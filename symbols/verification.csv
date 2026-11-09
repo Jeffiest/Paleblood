@@ -22917,6 +22917,7 @@ misc_base_init_02242b90,edge,,3,3,0,0,81ce579f5bf957b5,2026-11-09
 misc_bind_vtable_56b47f0,edge,,14,14,0,0,01ad645b393e965f,2026-11-09
 misc_bind_vtable_56b47f0_alt,edge,,14,14,0,0,05e23a5dd798d41a,2026-11-09
 misc_bind_vtable_56b47f0_alt2,edge,,14,14,0,0,50428c12a61f1ce5,2026-11-09
+misc_bind_vtable_56b47f0_alt3,edge,,14,14,0,0,f3208cad4c4574b7,2026-11-09
 misc_bind_vtable_56b4840,edge,,14,14,0,0,3ccedfb2fdb2debb,2026-11-09
 misc_bind_vtable_56b4840_alt,edge,,14,14,0,0,d868a7fc6ab8a3be,2026-11-09
 misc_bind_vtable_56b4840_alt2,edge,,14,14,0,0,f601e799fd094191,2026-11-09
