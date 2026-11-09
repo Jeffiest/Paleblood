@@ -2880,6 +2880,7 @@ address,size,name,system,status,notes
 0x01393730,1,auto_empty_01393730,auto,edge-verified,Generated from the empty template
 0x01395950,1,auto_empty_01395950,auto,edge-verified,Generated from the empty template
 0x01397280,1,auto_empty_01397280,auto,edge-verified,Generated from the empty template
+0x013987d0,87,misc_run_four_stages,misc,edge-verified,Runs three per-index stages on an object each with a float scale then returns the final stage result as a tail call
 0x013988d0,41,misc_bind_vtable_56b4840,misc,edge-verified,Publishes the address of the static vtable block at 0x056b4840 into a global pointer once and sets a qword flag
 0x01398900,41,misc_bind_vtable_56b4890,misc,edge-verified,Publishes the address of the static vtable block at 0x056b4890 into a global pointer once and sets a qword flag
 0x01398930,41,misc_bind_vtable_56b47f0,misc,edge-verified,Publishes the address of the static vtable block at 0x056b47f0 into a global pointer once and sets a qword flag
