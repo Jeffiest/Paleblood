@@ -52,6 +52,12 @@ void replacement(uint64_t *out)
     GLOBAL_WRITE
 }
 '''
+# The host interface a test replacement needs; `img` is the image (PS4 address 0x400000).
+HOST_C = ('#include <stdint.h>\n'
+          'typedef struct { uint32_t version; unsigned char *image; uint64_t image_size;\n'
+          '                 int (*install_hook)(uint64_t, uint64_t, const void *); } host_t;\n'
+          'static unsigned char *img;\n'
+          'int bbgame_init(const host_t *h) { img = h->image; return 0; }\n')
 
 
 def nid(name):
@@ -86,6 +92,20 @@ def boot_image(stacked_imports=False):
     code = bytearray(0x1000)
     code[:len(CODE)] = CODE
     code[0x800:0x800 + len(STACK_CODE)] = STACK_CODE
+    # A callee fills a record on the caller's stack: sub rsp,0x18; lea rdi,[rsp+8]; call 0x180;
+    # mov rax,[rsp+8]; add rsp,0x18; ret. The callee at 0x180 is stubbed by the cases.
+    code[0x100:0x118] = bytes.fromhex('4883ec18 488d7c2408 e872000000 488b442408 4883c418 c3')
+    code[0x180] = 0xc3
+    # RDX as a second return register: sub rsp,8; call 0x190 (stub); imul rax,rdx; add rsp,8;
+    # ret. 0x1c0 does the same through the import thunk at 0xb70.
+    code[0x140:0x152] = bytes.fromhex('4883ec08 e847000000 480fafc2 4883c408 c3')
+    code[0x190] = 0xc3
+    code[0x1c0:0x1d2] = bytes.fromhex('4883ec08 e8a7090000 480fafc2 4883c408 c3')
+    # Calls that never return: push rbx; mov dword [rdi],0x2a; mov edi,7; call 0x280 (stub);
+    # ud2. 0x240: push rbx; mov edi,7; call 0xb70 (the import thunk); ud2.
+    code[0x200:0x216] = bytes.fromhex('53 4889fb c7072a000000 bf07000000 e86c000000 0f0b')
+    code[0x280] = 0xc3
+    code[0x240:0x24d] = bytes.fromhex('53 bf07000000 e825090000 0f0b')
     code[0x900:0x906] = bytes.fromhex('b807000000c3')
     code[0x910:0x912] = bytes.fromhex('ebfe')
     code[0x920:0x928] = bytes.fromhex('48c7c707000000c3')
@@ -1221,6 +1241,146 @@ class Harness(unittest.TestCase):
         with open(self.case, 'w') as f:
             json.dump(case, f)
         self.assertIn('errors', self.side())
+
+    # Stack writes, a scripted RDX and noreturn calls -------------------------------------
+    def compile_replacement(self, name, body):
+        source, library = os.path.join(self.d, f'{name}.c'), os.path.join(self.d, f'{name}.so')
+        Path(source).write_text(HOST_C + body)
+        subprocess.run([os.environ.get('CC', 'cc'), '-shared', '-fPIC', '-O2', '-o', library, source],
+                       check=True)
+        return library
+
+    def run_fixture(self, case, lib=None):
+        path = os.path.join(self.d, f"{case['id']}.json")
+        Path(path).write_text(json.dumps(case))
+        return self.side_case(path, lib, case['address'])
+
+    @staticmethod
+    def agree(original, replacement):
+        res = lambda r: {'schema': 1, 'address': '0x00400000', 'cases': [dict(r, id='case')]}
+        return verify.compare(res(original), res(replacement))
+
+    def test_stub_write_fills_a_record_on_the_callers_stack(self):
+        case = {'schema': 1, 'address': '0x00400100', 'id': 'stack-record', 'returns': 'i64',
+                'args': {}, 'buffers': {}, 'memory': [], 'imports': [],
+                'stubs': [{'address': '0x00400180', 'argc': 1,
+                           'writes': [{'arg': 0, 'bytes': '8877665544332211'}]}]}
+        original = self.run_fixture(case)
+        self.assertNotIn('errors', original)
+        self.assertEqual(original['ret'], {'rax': '0x1122334455667788'})
+        self.assertEqual(original['calls'], [{'call': '0x00400180', 'args': ['stack']}])
+        self.assertEqual(original['writes'], [])        # stack bytes are never compared
+        self.assertIn(('write', 'stack', 8, 'stub_write'),
+                      [(e['access'], e['region'], e['size'], e['source']) for e in original['access_trace']])
+        # A replacement with a different frame passes its own local and agrees.
+        library = self.compile_replacement('stack_record', (
+            'typedef void (*fill_fn)(uint64_t *);\n'
+            'uint64_t replacement(void) { volatile uint64_t pad[5] = {0}; uint64_t local;\n'
+            '    ((fill_fn)(img + 0x180))(&local); return local + pad[0]; }\n'))
+        self.assertEqual(self.agree(original, self.run_fixture(case, library))['failed'], 0)
+        # Writes reaching past the live stack are still refused: past the stack top, over the
+        # function's own return address, or below the scripted call's first argument slot.
+        for name, write in (('past-top', {'arg': 0, 'bytes': '00' * 0x20}),
+                            ('own-return-address', {'arg': 0, 'offset': 0x10, 'bytes': '00' * 8}),
+                            ('callee-return-address', {'arg': 0, 'offset': -0x10, 'bytes': '00' * 8})):
+            with self.subTest(write=name):
+                refused = self.run_fixture(dict(case, id=name, stubs=[dict(case['stubs'][0], writes=[write])]))
+                self.assertNotIn('fault', refused)
+                self.assertTrue(any('outside the live stack' in e for e in refused.get('errors', [])), refused)
+                self.assertFalse(any(e['access'] == 'write' for e in refused['access_trace']))
+                self.assertEqual(self.agree(original, refused)['failed'], 1)
+
+    def test_scripted_rdx_is_a_second_return_register(self):
+        for kind, address in (('stubs', '0x00400140'), ('imports', '0x004001c0')):
+            def run(rdx):
+                entry = {'address': '0x00400190'} if kind == 'stubs' else {'name': 'testImport'}
+                entry.update(argc=0, ret=3)
+                if rdx is not None:
+                    entry['rdx'] = rdx
+                case = {'schema': 1, 'address': address, 'id': f'rdx-{kind}-{rdx}', 'returns': 'i64',
+                        'args': {}, 'buffers': {}, 'memory': [], 'imports': [], 'stubs': []}
+                case[kind] = [entry]
+                return self.run_fixture(case)
+            with self.subTest(kind=kind):
+                five, six, wide = run(5), run(6), run('0x100000000')
+                for result in (five, six, wide):
+                    self.assertNotIn('errors', result)
+                self.assertEqual(five['ret'], {'rax': '0xf'})       # imul rax, rdx: 3 * 5
+                self.assertEqual(wide['ret'], {'rax': '0x300000000'})
+                self.assertEqual(self.agree(five, run(5))['failed'], 0)
+                self.assertEqual(self.agree(five, six)['failed'], 1)
+                default = run(None)                                  # rdx left as the bridge leaves it
+                self.assertNotIn('errors', default)
+                self.assertNotIn('fault', default)
+
+    def test_noreturn_call_ends_the_case_without_returning(self):
+        case = {'schema': 1, 'address': '0x00400200', 'id': 'noreturn-stub', 'returns': 'i32',
+                'args': {'rdi': 'buf:out'}, 'buffers': {'out': {'size': 4}}, 'memory': [],
+                'imports': [], 'stubs': [{'address': '0x00400280', 'argc': 1, 'noreturn': True}]}
+        original = self.run_fixture(case)
+        self.assertNotIn('fault', original)
+        self.assertNotIn('errors', original)
+        self.assertEqual(original['ended_in'], {'call': '0x00400280'})
+        self.assertNotIn('ret', original)
+        self.assertNotIn('preserved', original)
+        self.assertEqual(original['calls'], [{'call': '0x00400280', 'args': ['0x7']}])
+        self.assertEqual(original['writes'], [{'addr': 'buf:out+0x0', 'bytes': '2a'}])
+        # Scripted as an ordinary call, the function returns into the ud2 after it.
+        returning = self.run_fixture(dict(case, id='returns',
+                                          stubs=[{'address': '0x00400280', 'argc': 1, 'ret': 0}]))
+        self.assertEqual(returning['fault'], 'signal 4')
+        body = ('typedef void (*end_fn)(uint64_t);\n'
+                'void replacement(uint32_t *out) { *out = 42; %s }\n')
+        same = self.compile_replacement('noreturn_same', body % '((end_fn)(img + 0x280))(7);')
+        other_arg = self.compile_replacement('noreturn_arg', body % '((end_fn)(img + 0x280))(8);')
+        returns = self.compile_replacement('noreturn_returns', body % '')
+        self.assertEqual(self.agree(original, self.run_fixture(case, same))['failed'], 0)
+        self.assertEqual(self.agree(original, self.run_fixture(case, other_arg))['failed'], 1)
+        mismatch = self.agree(original, self.run_fixture(case, returns))
+        self.assertEqual(mismatch['failed'], 1)
+        self.assertTrue(any(d.startswith('ended_in:') for d in mismatch['failures'][0]['diffs']), mismatch)
+        imported = dict(case, address='0x00400240', id='noreturn-import', args={}, buffers={},
+                        stubs=[], imports=[{'name': 'testImport', 'argc': 1, 'noreturn': True}])
+        result = self.run_fixture(imported)
+        self.assertNotIn('fault', result)
+        self.assertEqual(result['ended_in'], {'import': 'testImport'})
+        self.assertEqual(result['calls'], [{'import': 'testImport', 'args': ['0x7']}])
+
+    def test_noreturn_call_under_instruction_tracing(self):
+        self.trace_instructions = True
+        try:
+            for case in (
+                    {'schema': 1, 'address': '0x00400200', 'id': 'traced-stub', 'returns': 'i32',
+                     'args': {'rdi': 'buf:out'}, 'buffers': {'out': {'size': 4}}, 'memory': [],
+                     'imports': [], 'stubs': [{'address': '0x00400280', 'argc': 1, 'noreturn': True}]},
+                    {'schema': 1, 'address': '0x00400240', 'id': 'traced-import', 'returns': 'i32',
+                     'args': {}, 'buffers': {}, 'memory': [], 'stubs': [],
+                     'imports': [{'name': 'testImport', 'argc': 1, 'noreturn': True}]}):
+                with self.subTest(case=case['id']):
+                    result = self.run_fixture(case)
+                    self.assertNotIn('fault', result)
+                    self.assertIn('ended_in', result)
+                    trace = result['instruction_trace']
+                    # The scripted call is an untraced host call; the ud2 after it never runs.
+                    self.assertFalse(trace['complete'])
+                    self.assertNotIn('stop_reason', trace)
+                    self.assertEqual(trace['skipped_host_calls'], 1)
+                    self.assertNotIn('ud2', [gap['mnemonic'] for gap in trace['gaps']])
+        finally:
+            self.trace_instructions = False
+
+    def test_noreturn_and_rdx_reject_malformed_entries(self):
+        for entry in ({'noreturn': 'yes'}, {'noreturn': True, 'series': {'arg': 0, 'values': [1]}},
+                      {'rdx': 1, 'series': {'arg': 0, 'values': [1]}}):
+            with self.subTest(entry=entry):
+                case = {'schema': 1, 'address': '0x00400900', 'id': 'malformed', 'returns': 'i64',
+                        'args': {}, 'buffers': {}, 'memory': [], 'stubs': [],
+                        'imports': [{'name': 'testImport', 'argc': 1, **entry}]}
+                Path(self.case).write_text(json.dumps(case))
+                r = subprocess.run([sys.executable, os.path.join(TOOLS, 'harness.py'), '--elf', self.boot,
+                                    '--case', self.case, '--address', case['address']],
+                                   capture_output=True, text=True, timeout=30)
+                self.assertEqual(r.returncode, 3, r.stderr)
 
 
 if __name__ == '__main__':
