@@ -8379,6 +8379,9 @@ address,size,name,system,status,notes
 0x01e47880,3,auto_return_zero_01e47880,auto,edge-verified,Generated from the return zero template
 0x01e47b00,6,auto_return_constant_01e47b00,auto,edge-verified,Generated from the return constant template
 0x01e47d40,1,auto_empty_01e47d40,auto,edge-verified,Generated from the empty template
+0x01e47df0,38,misc_release_held_block,misc,edge-verified,Releases the block held at +0x10 when one is set then clears that pointer
+0x01e47ec0,142,misc_release_owner_nodes,misc,edge-verified,Releases the owner object with its child and counter then frees each node of its list through its allocator and clears the list
+0x01e48670,122,misc_dispatch_and_free_nodes,misc,edge-verified,Hands each node payload with the owner context to a callee then frees the nodes through their allocators and clears the list
 0x01e48b10,5,auto_return_field_01e48b10,auto,edge-verified,Generated from the return field template
 0x01e48b20,5,auto_return_field_01e48b20,auto,edge-verified,Generated from the return field template
 0x01e48b70,3,auto_return_zero_01e48b70,auto,edge-verified,Generated from the return zero template
@@ -8391,7 +8394,12 @@ address,size,name,system,status,notes
 0x01e50140,5,auto_return_field_01e50140,auto,edge-verified,Generated from the return field template
 0x01e50190,3,auto_return_zero_01e50190,auto,edge-verified,Generated from the return zero template
 0x01e50410,6,auto_return_constant_01e50410,auto,edge-verified,Generated from the return constant template
+0x01e509f0,27,misc_init_keyed_handle,misc,edge-verified,Sets a keyed handle to its class vtable the target with no id and adds the active flag to its flags
 0x01e50a20,1,auto_empty_01e50a20,auto,edge-verified,Generated from the empty template
+0x01e50a30,5,misc_mark_keyed_handle_active,misc,edge-verified,Adds the active bit to a keyed handle flags and changes nothing else
+0x01e50a40,74,misc_select_probe_scaled,misc,edge-verified,Adds the scale in steps of one hundred to the probe selected value or returns minus one when the value or scale is negative
+0x01e50a90,56,misc_select_probe_value,misc,edge-verified,Returns the probe first value when the config flag is set then its second value when the block word bit is set otherwise minus one
+0x01e50c20,73,misc_chain_leaf_flag,misc,edge-verified,Returns the flag byte of the leaf of the holder owner chain or zero when the owner has no link or the link has no leaf
 0x01e53190,3,auto_return_zero_01e53190,auto,edge-verified,Generated from the return zero template
 0x01e531d0,5,auto_return_field_01e531d0,auto,edge-verified,Generated from the return field template
 0x01e531e0,5,auto_return_field_01e531e0,auto,edge-verified,Generated from the return field template

@@ -8378,6 +8378,9 @@ address,replacement,system,returns
 0x01e47880,bb_auto_return_zero_01e47880,auto,i64
 0x01e47b00,bb_auto_return_constant_01e47b00,auto,i32
 0x01e47d40,bb_auto_empty_01e47d40,auto,void
+0x01e47df0,bb_misc_release_held_block,misc,void
+0x01e47ec0,bb_misc_release_owner_nodes,misc,void
+0x01e48670,bb_misc_dispatch_and_free_nodes,misc,void
 0x01e48b10,bb_auto_return_field_01e48b10,auto,i64
 0x01e48b20,bb_auto_return_field_01e48b20,auto,i64
 0x01e48b70,bb_auto_return_zero_01e48b70,auto,i64
@@ -8390,7 +8393,12 @@ address,replacement,system,returns
 0x01e50140,bb_auto_return_field_01e50140,auto,i64
 0x01e50190,bb_auto_return_zero_01e50190,auto,i64
 0x01e50410,bb_auto_return_constant_01e50410,auto,i32
+0x01e509f0,bb_misc_init_keyed_handle,misc,void
 0x01e50a20,bb_auto_empty_01e50a20,auto,void
+0x01e50a30,bb_misc_mark_keyed_handle_active,misc,void
+0x01e50a40,bb_misc_select_probe_scaled,misc,i32
+0x01e50a90,bb_misc_select_probe_value,misc,i32
+0x01e50c20,bb_misc_chain_leaf_flag,misc,i32
 0x01e53190,bb_auto_return_zero_01e53190,auto,i64
 0x01e531d0,bb_auto_return_field_01e531d0,auto,i64
 0x01e531e0,bb_auto_return_field_01e531e0,auto,i64
