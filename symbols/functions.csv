@@ -6,6 +6,7 @@ address,size,name,system,status,notes
 0x004065d0,39,misc_chain_contains,misc,edge-verified,Returns whether a node is one of the nodes after the head in a chain linked at +0x38 the head itself is never compared
 0x00406600,1,auto_empty_00406600,auto,edge-verified,Generated from the empty template
 0x00409fd0,1,auto_empty_00409fd0,auto,edge-verified,Generated from the empty template
+0x0040b680,42,misc_prepare_forward,misc,edge-verified,Runs the preparation routine on the argument then returns the shared object forward method result for the same argument
 0x0040b820,63,misc_list_all_exceed_one,misc,edge-verified,Returns whether every object in an owner list has a signed value above one; a null or empty list passes
 0x0040b8c0,45,misc_release_pair,misc,edge-verified,Releases the pair first block when set then returns the release result of the second block when set otherwise the first result
 0x0040c4c0,3,auto_return_zero_0040c4c0,auto,edge-verified,Generated from the return zero template
