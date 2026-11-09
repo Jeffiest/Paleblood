@@ -1,4 +1,5 @@
 address,replacement,system,returns
+0x004009f0,bb_engine_handle_payload_alt,engine,i64
 0x00400e40,bb_misc_resolve_request_target,misc,i64
 0x00400e90,bb_misc_store_request,misc,i64
 0x004034f0,bb_auto_return_constant_004034f0,auto,i8
@@ -7,6 +8,8 @@ address,replacement,system,returns
 0x00405e70,bb_misc_scratch_value_50,misc,f64
 0x00405f20,bb_misc_scratch_value_58,misc,f64
 0x00405fd0,bb_misc_quantized_span,misc,f64
+0x00406450,bb_misc_chain_search,misc,i64
+0x004065d0,bb_misc_chain_contains,misc,i8
 0x00406600,bb_auto_empty_00406600,auto,void
 0x00406be0,bb_misc_finish_tracked_update,misc,void
 0x00406d30,bb_misc_resolve_then_forward,misc,i64
@@ -17,6 +20,10 @@ address,replacement,system,returns
 0x0040b4e0,bb_misc_unpack_and_release,misc,i64
 0x0040b570,bb_misc_create_checked,misc,i64
 0x0040b5e0,bb_misc_init_child_holder,misc,i64
+0x0040b680,bb_misc_prepare_forward,misc,i64
+0x0040b820,bb_misc_list_all_exceed_one,misc,i8
+0x0040b860,bb_misc_store_pair,misc,void
+0x0040b8c0,bb_misc_release_pair,misc,i64
 0x0040be60,bb_misc_lookup_record_payload,misc,i64
 0x0040bf40,bb_misc_init_record_block,misc,i64
 0x0040bfa0,bb_misc_teardown_record,misc,i64

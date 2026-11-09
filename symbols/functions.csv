@@ -1,4 +1,5 @@
 address,size,name,system,status,notes
+0x004009f0,67,engine_handle_payload_alt,engine,edge-verified,Same lookup as engine_handle_payload with a second fallback global: cached payload when set otherwise the payload of the handle entry and a zero handle gives that global
 0x00400e40,67,misc_resolve_request_target,misc,edge-verified,Returns the pending request if one is held else the payload of the handle target else the fallback record for a zero handle
 0x00400e90,130,misc_store_request,misc,edge-verified,Stores the request in the pending request and sets its flag or hands it to the game when none is held then returns the result of the tail call
 0x004034f0,3,auto_return_constant_004034f0,auto,edge-verified,Generated from the return constant template
@@ -7,6 +8,8 @@ address,size,name,system,status,notes
 0x00405e70,163,misc_scratch_value_50,misc,edge-verified,Builds a default scratch block then runs the block builder on it and returns the double at offset 0x50 of its result
 0x00405f20,163,misc_scratch_value_58,misc,edge-verified,Builds a default scratch block then runs the block builder on it and returns the double at offset 0x58 of its result
 0x00405fd0,197,misc_quantized_span,misc,edge-verified,Floor of the end minus start width plus a constant times a second constant; span from a direct callee when the chunk entry flag is set and from a vtable otherwise
+0x00406450,375,misc_chain_search,misc,edge-verified,Returns the first linked entry after a head that passes its test and visitor and whose element probe accepts it or whose child does skipping one target
+0x004065d0,39,misc_chain_contains,misc,edge-verified,Returns whether a node is one of the nodes after the head in a chain linked at +0x38 the head itself is never compared
 0x00406600,1,auto_empty_00406600,auto,edge-verified,Generated from the empty template
 0x00406be0,322,misc_finish_tracked_update,misc,edge-verified,Finishes a pending update of a tracked object by dispatching its target then refreshing the owned subobject and releasing the references the update took
 0x00406d30,31,misc_resolve_then_forward,misc,edge-verified,Resolves the first argument through a callee then returns the second stage result for the first argument and the second argument unchanged
@@ -17,6 +20,10 @@ address,size,name,system,status,notes
 0x0040b4e0,128,misc_unpack_and_release,misc,edge-verified,Unpacks a counted handle into a value and drops its reference destroying the block through the dispatcher when it was the last one
 0x0040b570,106,misc_create_checked,misc,edge-verified,Creates an object through a factory and keeps it only when its valid test returns zero otherwise reports the failure and releases it
 0x0040b5e0,147,misc_init_child_holder,misc,edge-verified,Sets a child holder to kind one and width twenty points it at a new child node from the dispatcher allocator and returns the report result
+0x0040b680,42,misc_prepare_forward,misc,edge-verified,Runs the preparation routine on the argument then returns the shared object forward method result for the same argument
+0x0040b820,63,misc_list_all_exceed_one,misc,edge-verified,Returns whether every object in an owner list has a signed value above one; a null or empty list passes
+0x0040b860,90,misc_store_pair,misc,edge-verified,Retains the new blocks that are set then releases the old blocks that are set and stores the new pair in the owner
+0x0040b8c0,45,misc_release_pair,misc,edge-verified,Releases the pair first block when set then returns the release result of the second block when set otherwise the first result
 0x0040be60,54,misc_lookup_record_payload,misc,edge-verified,Looks up record 0x15 and returns its tag-cleared word plus 12 then releases the record; zero when missing
 0x0040bf40,92,misc_init_record_block,misc,edge-verified,Initializes a record with the record vtable and kind then takes a zeroed 8-byte block from the scratch service and returns it
 0x0040bfa0,42,misc_teardown_record,misc,edge-verified,Tears down the record then gives it to the scratch service release slot and returns the slot result
