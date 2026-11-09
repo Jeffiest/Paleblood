@@ -55,7 +55,11 @@ DUMP_LINE = re.compile(rb'\b(undefined[1-8]?|(FUN|DAT|LAB|PTR|SUB|UNK)_[0-9a-fA-
 DUMP_THRESHOLD = 20
 DUMP_EXEMPT = ('README.md', 'QUIRKS.md', 'CONTRIBUTING.md', 'docs/', 'tools/', 'test/')
 MAX_SIZE = 2 * 1024 * 1024
-SIZE_EXCEPTIONS = {'symbols/ghidra_functions.csv': 16 * 1024 * 1024}
+# The tables with one row per function grow with the decompilation (157,757 functions).
+SIZE_EXCEPTIONS = {'symbols/ghidra_functions.csv': 16 * 1024 * 1024,
+                   'symbols/functions.csv': 32 * 1024 * 1024,
+                   'symbols/verification.csv': 32 * 1024 * 1024,
+                   'game/hooks.csv': 32 * 1024 * 1024}
 
 
 def git(root: str, *args: str) -> bytes:
