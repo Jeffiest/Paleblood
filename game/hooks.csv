@@ -2934,6 +2934,7 @@ address,replacement,system,returns
 0x0139b560,bb_misc_bind_vtable_56b47f0_alt3,misc,void
 0x0139b590,bb_misc_copy_constant_to_058b3380,misc,void
 0x0139b5d0,bb_misc_construct_serial_object,misc,void
+0x0139b610,bb_misc_destroy_then_release,misc,i64
 0x0139d9d0,bb_auto_return_zero_0139d9d0,auto,i64
 0x0139ea10,bb_auto_return_zero_0139ea10,auto,i64
 0x013a7610,bb_auto_return_constant_013a7610,auto,i32
