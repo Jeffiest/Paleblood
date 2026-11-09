@@ -8378,6 +8378,7 @@ address,size,name,system,status,notes
 0x01e47b00,6,auto_return_constant_01e47b00,auto,edge-verified,Generated from the return constant template
 0x01e47d40,1,auto_empty_01e47d40,auto,edge-verified,Generated from the empty template
 0x01e47df0,38,misc_release_held_block,misc,edge-verified,Releases the block held at +0x10 when one is set then clears that pointer
+0x01e47ec0,142,misc_release_owner_nodes,misc,edge-verified,Releases the owner object with its child and counter then frees each node of its list through its allocator and clears the list
 0x01e48b10,5,auto_return_field_01e48b10,auto,edge-verified,Generated from the return field template
 0x01e48b20,5,auto_return_field_01e48b20,auto,edge-verified,Generated from the return field template
 0x01e48b70,3,auto_return_zero_01e48b70,auto,edge-verified,Generated from the return zero template
