@@ -4995,6 +4995,7 @@ address,size,name,system,status,notes
 0x01887300,181,misc_drain_object_queue,misc,edge-verified,Two-pass drain of a queue ring: first pass marks each object; second pass destroys and frees marked objects and unlinks their nodes
 0x01887680,47,misc_notify_unflagged_record,misc,edge-verified,Hands a holder record to the notifier at 0x018873c0 when its flag byte is clear then returns the holder
 0x01887870,79,misc_insert_keyed_record,misc,edge-verified,Gets the registry record table and tail calls the insert of a 32-bit key into its ring of child queues; the registry must exist
+0x018878d0,138,misc_has_marked_record,misc,edge-verified,Reports whether a marked record with the given key is in the record ring of the registry table; an empty table or a null record never matches
 0x01887de0,1,auto_empty_01887de0,auto,edge-verified,Generated from the empty template
 0x01887eb0,1,auto_empty_01887eb0,auto,edge-verified,Generated from the empty template
 0x01888200,1,auto_empty_01888200,auto,edge-verified,Generated from the empty template
