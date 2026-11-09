@@ -2889,6 +2889,7 @@ address,size,name,system,status,notes
 0x01398960,49,misc_copy_block_58b3240,misc,edge-verified,Copies a 48-byte constant block at 0x04cb88b0 over the global block at 0x058b3240 word by word
 0x013989a0,79,misc_init_vtable_subobject,misc,edge-verified,Gives an object its vtable and clears its second word then initializes the sub-object at +0x10 with a scratch slot under the stack guard
 0x01398f50,302,misc_clear_pending_four_keys,misc,edge-verified,Clears the pending flag of the node matching each of four keys in a tree or the end node when none matches
+0x01399080,412,misc_mark_bounded_matches,misc,edge-verified,Queries a source for two count and bound pairs then flags the tree match for each bound that qualifies against a float threshold
 0x01399850,1,auto_empty_01399850,auto,edge-verified,Generated from the empty template
 0x01399860,6,auto_return_constant_01399860,auto,edge-verified,Generated from the return constant template
 0x0139a380,1,auto_empty_0139a380,auto,edge-verified,Generated from the empty template
