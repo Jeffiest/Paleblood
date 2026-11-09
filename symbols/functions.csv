@@ -28,6 +28,7 @@ address,size,name,system,status,notes
 0x0040bf40,92,misc_init_record_block,misc,edge-verified,Initializes a record with the record vtable and kind then takes a zeroed 8-byte block from the scratch service and returns it
 0x0040bfa0,42,misc_teardown_record,misc,edge-verified,Tears down the record then gives it to the scratch service release slot and returns the slot result
 0x0040bfd0,260,misc_teardown_record_entries,misc,edge-verified,Tears down the entry table of a record: live entries drop their two tagged references and become empty then the array and table go back to the scratch service and the base teardown tail call runs
+0x0040c0e0,339,misc_insert_scaled_entry,misc,edge-verified,Looks the source key up in the record entry table and when it is absent inserts a value built from the second argument with the given scale and flags then drops the temporary references
 0x0040c4c0,3,auto_return_zero_0040c4c0,auto,edge-verified,Generated from the return zero template
 0x0040d150,18,misc_value_unless_flagged,misc,edge-verified,Returns zero when the flags byte has bit 0x80 otherwise the word at 0x20 of the holder source
 0x0040d170,9,misc_read_source_word,misc,edge-verified,Returns the word at offset 0x20 of the holder source with no check on the pointer
