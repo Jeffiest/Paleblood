@@ -1434,6 +1434,7 @@ address,replacement,system,returns
 0x00b68050,bb_auto_empty_00b68050,auto,void
 0x00b680a0,bb_auto_return_constant_00b680a0,auto,i32
 0x00b680c0,bb_auto_empty_00b680c0,auto,void
+0x00b68770,bb_misc_slot_pool_total,misc,i32
 0x00b68940,bb_misc_slot_pool_take,misc,i64
 0x00b697c0,bb_auto_empty_00b697c0,auto,void
 0x00b6a020,bb_auto_return_field_00b6a020,auto,i8
