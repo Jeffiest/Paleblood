@@ -1500,6 +1500,7 @@ address,replacement,system,returns
 0x00be3380,bb_misc_find_third_link_index,misc,i32
 0x00be35d0,bb_auto_return_field_00be35d0,auto,i8
 0x00be35e0,bb_auto_return_field_00be35e0,auto,i32
+0x00be44f0,bb_misc_record_link_address,misc,i64
 0x00be4500,bb_auto_return_constant_00be4500,auto,i32
 0x00be9890,bb_auto_return_field_00be9890,auto,i64
 0x00be98a0,bb_auto_return_field_00be98a0,auto,i64
