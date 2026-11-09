@@ -4,6 +4,7 @@ address,replacement,system,returns
 0x00406600,bb_auto_empty_00406600,auto,void
 0x00409fd0,bb_auto_empty_00409fd0,auto,void
 0x0040c4c0,bb_auto_return_zero_0040c4c0,auto,i64
+0x0040d150,bb_misc_holder_value_unless_suppressed,misc,i64
 0x0040d170,bb_misc_holder_value,misc,i64
 0x00410100,bb_auto_return_field_00410100,auto,i64
 0x00410290,bb_auto_empty_00410290,auto,void
