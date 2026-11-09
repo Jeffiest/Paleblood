@@ -8392,6 +8392,7 @@ address,replacement,system,returns
 0x01e49400,bb_misc_release_resource_holder,misc,void
 0x01e4d3b0,bb_auto_return_member_address_01e4d3b0,auto,i64
 0x01e4f110,bb_auto_empty_01e4f110,auto,void
+0x01e4fad0,bb_engine_initialize_static_wide_string_01e4fad0,engine,void
 0x01e50040,bb_auto_empty_01e50040,auto,void
 0x01e500a0,bb_auto_empty_01e500a0,auto,void
 0x01e50130,bb_auto_return_field_01e50130,auto,i64
