@@ -23101,6 +23101,7 @@ misc_teardown_record_entries,edge,,17,17,0,0,414367481204d094,2026-11-09
 misc_unpack_and_release,edge,,7,7,0,0,c3f850c037c90982,2026-11-09
 misc_update_owned_entries,edge,,11,11,0,0,2649a9fa3292b49e,2026-11-09
 misc_value_unless_flagged,edge,,10,10,0,0,f8e45a1ee3d584de,2026-11-09
+misc_write_indexed_field_pairs,edge,,16,16,0,0,13ab2edd66924c01,2026-11-09
 physics_instance_construct_01c0c2b0,recorded,,119,119,0,0,ca3412adb293c909,2026-10-07
 physics_instance_construct_01c0c2b0,recorded,30,119,119,0,0,ca3412adb293c909,2026-10-07
 physics_instance_construct_01c0c2b0,recorded,60,119,119,0,0,ca3412adb293c909,2026-10-07

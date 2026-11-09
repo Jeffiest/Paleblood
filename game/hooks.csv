@@ -2937,6 +2937,7 @@ address,replacement,system,returns
 0x0139b0e0,bb_misc_take_slot_item,misc,i32
 0x0139b120,bb_misc_release_slot_item,misc,void
 0x0139b160,bb_misc_attach_two_objects,misc,void
+0x0139b280,bb_misc_write_indexed_field_pairs,misc,void
 0x0139b410,bb_misc_bind_vtable_56b4840_alt2,misc,void
 0x0139b440,bb_misc_bind_vtable_56b4890_alt2,misc,void
 0x0139b470,bb_misc_bind_vtable_56b47f0_alt2,misc,void
