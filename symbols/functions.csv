@@ -5038,6 +5038,7 @@ address,size,name,system,status,notes
 0x018878d0,138,misc_has_marked_record,misc,edge-verified,Reports whether a marked record with the given key is in the record ring of the registry table; an empty table or a null record never matches
 0x01887cd0,205,engine_initialize_static_wide_string_01887cd0,engine,edge-verified,Same guarded static empty wide string as engine_initialize_static_wide_string_0217ffb0; byte-only entry test; captured allocator; destructor registration before full guard publication
 0x01887de0,1,auto_empty_01887de0,auto,edge-verified,Generated from the empty template
+0x01887e00,165,misc_call_record_member_target,misc,edge-verified,Builds a stack record from a source pair and passes it with the adjusted object to a member thunk target then destroys it; a null source zero word or null object returns without a call
 0x01887eb0,1,auto_empty_01887eb0,auto,edge-verified,Generated from the empty template
 0x01887ed0,57,misc_relay_member_call,misc,edge-verified,Tail calls the target of a member thunk on its adjusted object with the owner payload forwarded and a 32-bit argument; a null owner payload or object returns without a call
 0x01887f20,28,misc_release_after_empty_call,misc,edge-verified,Calls the empty routine 0x01401600 then tail calls the release routine 0x02fbe588 with the same object and returns its result
