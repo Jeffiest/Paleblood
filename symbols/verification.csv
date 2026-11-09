@@ -22926,6 +22926,7 @@ misc_pool_append_node,edge,,10,10,0,0,2715d63d147a09e3,2026-11-09
 misc_prepare_forward,edge,,6,6,0,0,543c3d001ccdac0f,2026-11-09
 misc_quantized_span,edge,,23,23,0,0,84373e71f9548e5c,2026-11-09
 misc_read_source_word,edge,,5,5,0,0,c4b6dac915b6330a,2026-11-09
+misc_ref_holder_add_child,edge,,6,6,0,0,394137bdb7c43a92,2026-11-09
 misc_release_pair,edge,,8,8,0,0,35af01fa31edbc2e,2026-11-09
 misc_resolve_request_target,edge,,7,7,0,0,03a93f3371a9f3c2,2026-11-09
 misc_resolve_then_forward,edge,,9,9,0,0,3b101394d12e99ca,2026-11-09

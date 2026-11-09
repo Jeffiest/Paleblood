@@ -1439,6 +1439,7 @@ address,replacement,system,returns
 0x00b687b0,bb_misc_slot_pool_reassign,misc,i64
 0x00b68940,bb_misc_slot_pool_take,misc,i64
 0x00b697c0,bb_auto_empty_00b697c0,auto,void
+0x00b69e20,bb_misc_ref_holder_add_child,misc,void
 0x00b6a020,bb_auto_return_field_00b6a020,auto,i8
 0x00b6afa0,bb_auto_return_constant_00b6afa0,auto,i32
 0x00b6bc00,bb_auto_empty_00b6bc00,auto,void
