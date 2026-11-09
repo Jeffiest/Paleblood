@@ -1,0 +1,21 @@
+// SPDX-License-Identifier: GPL-2.0-or-later
+#include <cstddef>
+#include <cstdint>
+
+/**
+ *
+ * Does nothing.
+ *
+ */
+extern "C" void bb_auto_empty_00de5c00()
+{
+}
+
+/**
+ *
+ * Does nothing.
+ *
+ */
+extern "C" void bb_auto_empty_00ded6a0()
+{
+}
