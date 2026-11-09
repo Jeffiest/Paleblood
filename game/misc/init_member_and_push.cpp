@@ -44,7 +44,7 @@ extern "C" uint64_t bb_misc_init_member_and_push(misc::ListMember *member, misc:
     misc::ListOwner *list = source->list;
     lock_owner(list->lock);
     misc::Service *service = misc::scratch_service.get();
-    auto *node = static_cast<misc::ListNode *>(service->vtable->allocate(service, list_node_size, allocation_flags));
+    auto *node = static_cast<misc::ValueListNode *>(service->vtable->allocate(service, list_node_size, allocation_flags));
     node->next = list->head;
     node->previous = &list->head;
     node->value = reinterpret_cast<uint64_t>(member);

@@ -28,7 +28,7 @@ extern "C" uint64_t bb_misc_push_front_locked(misc::ListOwner *owner, uint64_t v
     lock_owner(owner->lock);
 
     misc::Service *service = misc::scratch_service.get();
-    auto *node = static_cast<misc::ListNode *>(service->vtable->allocate(service, list_node_size, allocation_flags));
+    auto *node = static_cast<misc::ValueListNode *>(service->vtable->allocate(service, list_node_size, allocation_flags));
     node->next = owner->head;
     node->previous = &owner->head;
     node->value = value;

@@ -23,13 +23,13 @@ extern "C" uint64_t bb_misc_remove_value_locked(misc::ListOwner *owner, uint64_t
 {
     lock_owner(owner->lock);
 
-    misc::ListNode *sentinel = reinterpret_cast<misc::ListNode *>(&owner->head);
-    misc::ListNode *cursor = owner->tail;
+    misc::ValueListNode *sentinel = reinterpret_cast<misc::ValueListNode *>(&owner->head);
+    misc::ValueListNode *cursor = owner->tail;
     while (cursor != sentinel) {
-        misc::ListNode *previous = static_cast<misc::ListNode *>(cursor->previous);
+        misc::ValueListNode *previous = static_cast<misc::ValueListNode *>(cursor->previous);
         if (cursor->value == value) {
             cursor->next->previous = cursor->previous;
-            static_cast<misc::ListNode *>(cursor->previous)->next = cursor->next;
+            static_cast<misc::ValueListNode *>(cursor->previous)->next = cursor->next;
             if (cursor != nullptr) {
                 misc::Service *service = misc::scratch_service.get();
                 service->vtable->release(service, cursor);

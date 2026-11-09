@@ -7,20 +7,20 @@
 
 namespace misc {
 
-struct ListNode;
+struct ValueListNode;
 
 /**
  *
  * A node of the list: its next node, the slot before it, and the value it carries.
  *
  */
-struct ListNode {
-    ListNode *next;    /**< The following node. */
+struct ValueListNode {
+    ValueListNode *next;    /**< The following node. */
     void *previous;    /**< The slot before this node: the owner's head slot, or the previous node. */
     uint64_t value;    /**< The value the node carries. */
 };
-static_assert(offsetof(ListNode, previous) == 0x08);
-static_assert(offsetof(ListNode, value) == 0x10);
+static_assert(offsetof(ValueListNode, previous) == 0x08);
+static_assert(offsetof(ValueListNode, value) == 0x10);
 
 /** The room the lock takes inside the owner. */
 constexpr size_t list_lock_size = 0x10;
@@ -32,8 +32,8 @@ constexpr size_t list_lock_size = 0x10;
  */
 struct ListOwner {
     uint8_t unknown_0x0000[0x30];
-    ListNode *head;    /**< The first node of the list, which is never null. */
-    ListNode *tail;   /**< The last node, where a removal walk starts. */
+    ValueListNode *head;    /**< The first node of the list, which is never null. */
+    ValueListNode *tail;   /**< The last node, where a removal walk starts. */
     uint8_t lock[list_lock_size]; /**< The lock; its address is given to the lock calls. */
 };
 static_assert(offsetof(ListOwner, head) == 0x30);
