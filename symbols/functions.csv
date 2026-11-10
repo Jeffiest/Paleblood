@@ -1448,6 +1448,7 @@ address,size,name,system,status,notes
 0x009e0b00,9,auto_return_float_field_009e0b00,auto,edge-verified,Generated from the return float field template
 0x009e0bb0,6,auto_return_constant_009e0bb0,auto,edge-verified,Generated from the return constant template
 0x009e1280,8,auto_fixed_address_009e1280,auto,edge-verified,Same instructions as misc_plain_type_address with other addresses
+0x009e1290,113,auto_register_plain_type_009e1290,auto,edge-verified,Same instructions as misc_register_plain_type with other addresses
 0x009e1390,8,auto_fixed_address_009e1390,auto,edge-verified,Same instructions as misc_plain_type_address with other addresses
 0x009e13a0,15,auto_base_init_009e13a0,auto,edge-verified,Same instructions as misc_base_init_02242980 with other addresses
 0x009e1b60,6,auto_return_constant_009e1b60,auto,edge-verified,Generated from the return constant template
@@ -2118,6 +2119,7 @@ address,size,name,system,status,notes
 0x00b06700,8,auto_fixed_address_00b06700,auto,edge-verified,Same instructions as misc_plain_type_address with other addresses
 0x00b06790,8,auto_fixed_address_00b06790,auto,edge-verified,Same instructions as misc_plain_type_address with other addresses
 0x00b06890,8,auto_fixed_address_00b06890,auto,edge-verified,Same instructions as misc_plain_type_address with other addresses
+0x00b068a0,113,auto_register_plain_type_00b068a0,auto,edge-verified,Same instructions as misc_register_plain_type with other addresses
 0x00b06920,8,auto_fixed_address_00b06920,auto,edge-verified,Same instructions as misc_plain_type_address with other addresses
 0x00b06930,1,auto_empty_00b06930,auto,edge-verified,Generated from the empty template
 0x00b06940,8,auto_fixed_address_00b06940,auto,edge-verified,Same instructions as misc_plain_type_address with other addresses
@@ -2417,6 +2419,7 @@ address,size,name,system,status,notes
 0x00bd9f10,8,auto_fixed_address_00bd9f10,auto,edge-verified,Same instructions as misc_plain_type_address with other addresses
 0x00bd9f40,8,auto_fixed_address_00bd9f40,auto,edge-verified,Same instructions as misc_plain_type_address with other addresses
 0x00bda530,8,auto_fixed_address_00bda530,auto,edge-verified,Same instructions as misc_plain_type_address with other addresses
+0x00bda540,113,auto_register_plain_type_00bda540,auto,edge-verified,Same instructions as misc_register_plain_type with other addresses
 0x00bda5c0,8,auto_fixed_address_00bda5c0,auto,edge-verified,Same instructions as misc_plain_type_address with other addresses
 0x00bda5d0,15,auto_base_init_00bda5d0,auto,edge-verified,Same instructions as misc_base_init_02242980 with other addresses
 0x00bda5f0,8,auto_fixed_address_00bda5f0,auto,edge-verified,Same instructions as misc_plain_type_address with other addresses
@@ -2461,7 +2464,9 @@ address,size,name,system,status,notes
 0x00bdd630,9,misc_tagged_link_address,misc,edge-verified,Returns the address held in a tagged link with its flag bit cleared
 0x00bdd640,6,auto_return_constant_00bdd640,auto,edge-verified,Generated from the return constant template
 0x00bde8e0,8,auto_fixed_address_00bde8e0,auto,edge-verified,Same instructions as misc_plain_type_address with other addresses
+0x00bde8f0,113,auto_register_plain_type_00bde8f0,auto,edge-verified,Same instructions as misc_register_plain_type with other addresses
 0x00bde970,8,auto_fixed_address_00bde970,auto,edge-verified,Same instructions as misc_plain_type_address with other addresses
+0x00bde980,113,auto_register_plain_type_00bde980,auto,edge-verified,Same instructions as misc_register_plain_type with other addresses
 0x00bdeb90,9,auto_tagged_link_address_00bdeb90,auto,edge-verified,Same instructions as misc_tagged_link_address with other addresses
 0x00bdec70,5,auto_return_field_00bdec70,auto,edge-verified,Generated from the return field template
 0x00bded20,8,auto_fixed_address_00bded20,auto,edge-verified,Same instructions as misc_plain_type_address with other addresses
@@ -2672,6 +2677,7 @@ address,size,name,system,status,notes
 0x00c991f0,3,auto_return_constant_00c991f0,auto,edge-verified,Generated from the return constant template
 0x00c99780,8,auto_fixed_address_00c99780,auto,edge-verified,Same instructions as misc_plain_type_address with other addresses
 0x00c9a120,8,auto_fixed_address_00c9a120,auto,edge-verified,Same instructions as misc_plain_type_address with other addresses
+0x00c9a130,113,auto_register_plain_type_00c9a130,auto,edge-verified,Same instructions as misc_register_plain_type with other addresses
 0x00c9dda0,8,auto_fixed_address_00c9dda0,auto,edge-verified,Same instructions as misc_plain_type_address with other addresses
 0x00c9ddb0,1,auto_empty_00c9ddb0,auto,edge-verified,Generated from the empty template
 0x00c9ddc0,1,auto_empty_00c9ddc0,auto,edge-verified,Generated from the empty template
@@ -2744,6 +2750,7 @@ address,size,name,system,status,notes
 0x00cb1460,8,auto_fixed_address_00cb1460,auto,edge-verified,Same instructions as misc_plain_type_address with other addresses
 0x00cb1470,1,auto_empty_00cb1470,auto,edge-verified,Generated from the empty template
 0x00cb1590,8,auto_fixed_address_00cb1590,auto,edge-verified,Same instructions as misc_plain_type_address with other addresses
+0x00cb15a0,113,auto_register_plain_type_00cb15a0,auto,edge-verified,Same instructions as misc_register_plain_type with other addresses
 0x00cb1620,8,auto_fixed_address_00cb1620,auto,edge-verified,Same instructions as misc_plain_type_address with other addresses
 0x00cb1630,1,auto_empty_00cb1630,auto,edge-verified,Generated from the empty template
 0x00cb1640,1,auto_empty_00cb1640,auto,edge-verified,Generated from the empty template
@@ -2816,6 +2823,7 @@ address,size,name,system,status,notes
 0x00cd3de0,1,auto_empty_00cd3de0,auto,edge-verified,Generated from the empty template
 0x00cd3df0,1,auto_empty_00cd3df0,auto,edge-verified,Generated from the empty template
 0x00cd3ec0,8,auto_fixed_address_00cd3ec0,auto,edge-verified,Same instructions as misc_plain_type_address with other addresses
+0x00cd3ed0,113,auto_register_plain_type_00cd3ed0,auto,edge-verified,Same instructions as misc_register_plain_type with other addresses
 0x00cd4380,8,auto_fixed_address_00cd4380,auto,edge-verified,Same instructions as misc_plain_type_address with other addresses
 0x00cda670,1,auto_empty_00cda670,auto,edge-verified,Generated from the empty template
 0x00cdce20,8,auto_fixed_address_00cdce20,auto,edge-verified,Same instructions as misc_plain_type_address with other addresses
@@ -3052,6 +3060,7 @@ address,size,name,system,status,notes
 0x00d5aa70,8,auto_fixed_address_00d5aa70,auto,edge-verified,Same instructions as misc_plain_type_address with other addresses
 0x00d5aa80,15,auto_base_init_00d5aa80,auto,edge-verified,Same instructions as misc_base_init_02242980 with other addresses
 0x00d5ab60,8,auto_fixed_address_00d5ab60,auto,edge-verified,Same instructions as misc_plain_type_address with other addresses
+0x00d5ab70,113,auto_register_plain_type_00d5ab70,auto,edge-verified,Same instructions as misc_register_plain_type with other addresses
 0x00d5abf0,8,auto_fixed_address_00d5abf0,auto,edge-verified,Same instructions as misc_plain_type_address with other addresses
 0x00d5ac00,15,auto_base_init_00d5ac00,auto,edge-verified,Same instructions as misc_base_init_02242980 with other addresses
 0x00d5ace0,8,auto_fixed_address_00d5ace0,auto,edge-verified,Same instructions as misc_plain_type_address with other addresses
@@ -3220,7 +3229,9 @@ address,size,name,system,status,notes
 0x00d85490,8,auto_fixed_address_00d85490,auto,edge-verified,Same instructions as misc_plain_type_address with other addresses
 0x00d854a0,1,auto_empty_00d854a0,auto,edge-verified,Generated from the empty template
 0x00d85560,8,auto_fixed_address_00d85560,auto,edge-verified,Same instructions as misc_plain_type_address with other addresses
+0x00d85570,113,auto_register_plain_type_00d85570,auto,edge-verified,Same instructions as misc_register_plain_type with other addresses
 0x00d855f0,8,auto_fixed_address_00d855f0,auto,edge-verified,Same instructions as misc_plain_type_address with other addresses
+0x00d85600,113,auto_register_plain_type_00d85600,auto,edge-verified,Same instructions as misc_register_plain_type with other addresses
 0x00d85680,8,auto_fixed_address_00d85680,auto,edge-verified,Same instructions as misc_plain_type_address with other addresses
 0x00d85690,15,auto_base_init_00d85690,auto,edge-verified,Same instructions as misc_base_init_02242980 with other addresses
 0x00d85770,8,auto_fixed_address_00d85770,auto,edge-verified,Same instructions as misc_plain_type_address with other addresses
@@ -3496,6 +3507,7 @@ address,size,name,system,status,notes
 0x00eacc60,8,auto_fixed_address_00eacc60,auto,edge-verified,Same instructions as misc_plain_type_address with other addresses
 0x00eacca0,8,auto_fixed_address_00eacca0,auto,edge-verified,Same instructions as misc_plain_type_address with other addresses
 0x00eacff0,8,auto_fixed_address_00eacff0,auto,edge-verified,Same instructions as misc_plain_type_address with other addresses
+0x00ead000,113,auto_register_plain_type_00ead000,auto,edge-verified,Same instructions as misc_register_plain_type with other addresses
 0x00eaf640,5,auto_return_member_address_00eaf640,auto,edge-verified,Generated from the return member address template
 0x00eb0720,8,auto_fixed_address_00eb0720,auto,edge-verified,Same instructions as misc_plain_type_address with other addresses
 0x00eb0730,15,auto_base_init_00eb0730,auto,edge-verified,Same instructions as misc_base_init_02242980 with other addresses
@@ -3678,6 +3690,7 @@ address,size,name,system,status,notes
 0x00f2aeb0,8,auto_fixed_address_00f2aeb0,auto,edge-verified,Same instructions as misc_plain_type_address with other addresses
 0x00f2b4c0,8,auto_fixed_address_00f2b4c0,auto,edge-verified,Same instructions as misc_plain_type_address with other addresses
 0x00f2b6d0,8,auto_fixed_address_00f2b6d0,auto,edge-verified,Same instructions as misc_plain_type_address with other addresses
+0x00f2b6e0,113,auto_register_plain_type_00f2b6e0,auto,edge-verified,Same instructions as misc_register_plain_type with other addresses
 0x00f2c670,1,auto_empty_00f2c670,auto,edge-verified,Generated from the empty template
 0x00f30470,8,auto_fixed_address_00f30470,auto,edge-verified,Same instructions as misc_plain_type_address with other addresses
 0x00f30480,15,auto_base_init_00f30480,auto,edge-verified,Same instructions as misc_base_init_02242980 with other addresses
@@ -3713,7 +3726,9 @@ address,size,name,system,status,notes
 0x00f3fe70,5,auto_return_member_address_00f3fe70,auto,edge-verified,Generated from the return member address template
 0x00f3ffe0,1,auto_empty_00f3ffe0,auto,edge-verified,Generated from the empty template
 0x00f40b40,8,auto_fixed_address_00f40b40,auto,edge-verified,Same instructions as misc_plain_type_address with other addresses
+0x00f40b50,113,auto_register_plain_type_00f40b50,auto,edge-verified,Same instructions as misc_register_plain_type with other addresses
 0x00f40bd0,8,auto_fixed_address_00f40bd0,auto,edge-verified,Same instructions as misc_plain_type_address with other addresses
+0x00f40be0,113,auto_register_plain_type_00f40be0,auto,edge-verified,Same instructions as misc_register_plain_type with other addresses
 0x00f40c60,8,auto_fixed_address_00f40c60,auto,edge-verified,Same instructions as misc_plain_type_address with other addresses
 0x00f40fd0,8,auto_fixed_address_00f40fd0,auto,edge-verified,Same instructions as misc_plain_type_address with other addresses
 0x00f410f0,8,auto_fixed_address_00f410f0,auto,edge-verified,Same instructions as misc_plain_type_address with other addresses
@@ -3801,6 +3816,7 @@ address,size,name,system,status,notes
 0x00f6f5b0,15,auto_base_init_00f6f5b0,auto,edge-verified,Same instructions as misc_base_init_02242980 with other addresses
 0x00f6f5c0,8,auto_fixed_address_00f6f5c0,auto,edge-verified,Same instructions as misc_plain_type_address with other addresses
 0x00f6f6e0,8,auto_fixed_address_00f6f6e0,auto,edge-verified,Same instructions as misc_plain_type_address with other addresses
+0x00f6f6f0,113,auto_register_plain_type_00f6f6f0,auto,edge-verified,Same instructions as misc_register_plain_type with other addresses
 0x00f6fbc0,8,auto_fixed_address_00f6fbc0,auto,edge-verified,Same instructions as misc_plain_type_address with other addresses
 0x00f6fc50,8,auto_fixed_address_00f6fc50,auto,edge-verified,Same instructions as misc_plain_type_address with other addresses
 0x00f70d90,66,auto_base_delete_00f70d90,auto,edge-verified,Same instructions as misc_base_delete_02242990 with other addresses
@@ -3841,10 +3857,12 @@ address,size,name,system,status,notes
 0x00f790c0,8,auto_fixed_address_00f790c0,auto,edge-verified,Same instructions as misc_plain_type_address with other addresses
 0x00f79680,8,auto_fixed_address_00f79680,auto,edge-verified,Same instructions as misc_plain_type_address with other addresses
 0x00f797a0,8,auto_fixed_address_00f797a0,auto,edge-verified,Same instructions as misc_plain_type_address with other addresses
+0x00f797b0,113,auto_register_plain_type_00f797b0,auto,edge-verified,Same instructions as misc_register_plain_type with other addresses
 0x00f7b610,8,auto_fixed_address_00f7b610,auto,edge-verified,Same instructions as misc_plain_type_address with other addresses
 0x00f7cbb0,8,auto_fixed_address_00f7cbb0,auto,edge-verified,Same instructions as misc_plain_type_address with other addresses
 0x00f7ccd0,8,auto_fixed_address_00f7ccd0,auto,edge-verified,Same instructions as misc_plain_type_address with other addresses
 0x00f7e210,8,auto_fixed_address_00f7e210,auto,edge-verified,Same instructions as misc_plain_type_address with other addresses
+0x00f7e220,113,auto_register_plain_type_00f7e220,auto,edge-verified,Same instructions as misc_register_plain_type with other addresses
 0x00f7e2a0,8,auto_fixed_address_00f7e2a0,auto,edge-verified,Same instructions as misc_plain_type_address with other addresses
 0x00f7ebe0,8,auto_fixed_address_00f7ebe0,auto,edge-verified,Same instructions as misc_plain_type_address with other addresses
 0x00f7ed10,8,auto_fixed_address_00f7ed10,auto,edge-verified,Same instructions as misc_plain_type_address with other addresses
@@ -6692,6 +6710,8 @@ address,size,name,system,status,notes
 0x014c5430,5,auto_return_field_014c5430,auto,edge-verified,Generated from the return field template
 0x014c67b0,4,auto_return_field_014c67b0,auto,edge-verified,Generated from the return field template
 0x014c7980,5,auto_return_field_014c7980,auto,edge-verified,Generated from the return field template
+0x014cb860,113,auto_register_plain_type_014cb860,auto,edge-verified,Same instructions as misc_register_plain_type with other addresses
+0x014cb8e0,113,auto_register_plain_type_014cb8e0,auto,edge-verified,Same instructions as misc_register_plain_type with other addresses
 0x014e1dd0,6,auto_return_float_field_014e1dd0,auto,edge-verified,Generated from the return float field template
 0x014f3480,1,auto_empty_014f3480,auto,edge-verified,Generated from the empty template
 0x014f3540,1,auto_empty_014f3540,auto,edge-verified,Generated from the empty template
