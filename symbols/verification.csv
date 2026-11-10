@@ -39622,6 +39622,8 @@ misc_holder_search_third,edge,,4,4,0,0,e21c971d8e58be79,2026-11-09
 misc_id_owner_construct_02242df0,edge,,8,8,0,0,627eb0aab7bf21ee,2026-11-09
 misc_init_child_holder,edge,,4,4,0,0,129ed90552350e0f,2026-11-09
 misc_init_flagged_payload_or_allocate,edge,,7,1,6,0,3ea2b13bc7ea1b15,2026-11-09
+misc_init_identity_rows_5ac5540,edge,,13,13,0,0,9ef5e1376b2ce201,2026-11-10
+misc_init_identity_rows_5ac5570,edge,,13,13,0,0,e6f5558115aaecd8,2026-11-10
 misc_init_item_table,edge,,11,11,0,0,a01f279af0fefd7b,2026-11-09
 misc_init_keyed_handle,edge,,5,5,0,0,5baab1272f6a7e05,2026-11-09
 misc_init_keyed_handle_variant,edge,,6,6,0,0,b7d0651b14eb1306,2026-11-09

@@ -16,6 +16,8 @@ address,replacement,system,returns
 0x00406d50,bb_misc_lookup_value_or_zero,misc,i64
 0x00407200,bb_auto_prepare_forward_00407200,auto,i64
 0x004090b0,bb_engine_counted_pair_retarget,engine,void
+0x00409110,bb_misc_init_identity_rows_5ac5540,misc,void
+0x00409160,bb_misc_init_identity_rows_5ac5570,misc,void
 0x00409540,bb_auto_prepare_forward_00409540,auto,i64
 0x00409b30,bb_misc_child_idle,misc,i8
 0x00409fd0,bb_auto_empty_00409fd0,auto,void
