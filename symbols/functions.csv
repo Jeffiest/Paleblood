@@ -32578,9 +32578,17 @@ address,size,name,system,status,notes
 0x02b3e5f0,1,auto_empty_02b3e5f0,auto,edge-verified,Generated from the empty template
 0x02b3e610,1,auto_empty_02b3e610,auto,edge-verified,Generated from the empty template
 0x02b3e700,58,auto_destroy_node_slot_00_and_free_02b3e700,auto,edge-verified,Same instructions as misc_destroy_node_slot_00_and_free with other addresses
+0x02b3e810,5,misc_set_tail_value_40,misc,edge-verified,Stores a value into the second tail word of an object and leaves the first tail word as it is
 0x02b3e820,5,auto_return_field_02b3e820,auto,edge-verified,Generated from the return field template
 0x02b3e830,5,auto_return_field_02b3e830,auto,edge-verified,Generated from the return field template
 0x02b3e840,4,auto_return_field_02b3e840,auto,edge-verified,Generated from the return field template
+0x02b3ea30,19,misc_element_key_at,misc,edge-verified,Returns the leading 32-bit key of the table element at a signed index by passing the element to its key callee
+0x02b3ea50,71,misc_element_table_call_each,misc,edge-verified,Passes every element of a table to a callee in index order and rereads the element count after each call
+0x02b3f260,25,misc_query_owned_child,misc,edge-verified,Returns the 64-bit answer of the child an owner holds through its query slot or zero when it holds none
+0x02b3f280,399,misc_task_object_construct,misc,edge-verified,Builds a task object from a source word a flag byte and two values and attaches the shared object created on first use
+0x02b3f410,28,misc_run_teardown_then_release,misc,edge-verified,Runs the object teardown routine then tail-calls the library release with the same object and returns its result
+0x02b3f430,385,misc_task_object_destroy,misc,edge-verified,Tears a task object down by releasing the nodes it owns handing its handler a record releasing its shared object and waiter and clearing the references
+0x02b3f5c0,72,misc_release_holder_node,misc,edge-verified,Releases the node a holder owns through its allocator and clears the holder reference to it
 0x02b3f870,5,auto_return_field_02b3f870,auto,edge-verified,Generated from the return field template
 0x02b3f880,5,auto_return_field_02b3f880,auto,edge-verified,Generated from the return field template
 0x02b3f890,5,auto_return_field_02b3f890,auto,edge-verified,Generated from the return field template
