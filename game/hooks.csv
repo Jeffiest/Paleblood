@@ -11083,6 +11083,7 @@ address,replacement,system,returns
 0x01930000,bb_auto_initialize_static_wide_string_01930000,auto,void
 0x019316b0,bb_auto_initialize_static_wide_string_019316b0,auto,void
 0x01932b60,bb_auto_initialize_static_wide_string_01932b60,auto,void
+0x01932c30,bb_auto_init_rows_spaced_fields_01932c30,auto,void
 0x01933050,bb_auto_destroy_then_release_01933050,auto,i64
 0x019363a0,bb_auto_empty_019363a0,auto,void
 0x01936dc0,bb_auto_empty_01936dc0,auto,void

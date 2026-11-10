@@ -11084,6 +11084,7 @@ address,size,name,system,status,notes
 0x01930000,205,auto_initialize_static_wide_string_01930000,auto,edge-verified,Same instructions as engine_initialize_static_wide_string_018867e0 with other addresses
 0x019316b0,205,auto_initialize_static_wide_string_019316b0,auto,edge-verified,Same instructions as engine_initialize_static_wide_string_018867e0 with other addresses
 0x01932b60,205,auto_initialize_static_wide_string_01932b60,auto,edge-verified,Same instructions as engine_initialize_static_wide_string_018867e0 with other addresses
+0x01932c30,89,auto_init_rows_spaced_fields_01932c30,auto,edge-verified,Same instructions as misc_init_rows_spaced_fields_5953fd0 with other addresses
 0x01933050,28,auto_destroy_then_release_01933050,auto,edge-verified,Same instructions as misc_destroy_then_release with other addresses
 0x019363a0,1,auto_empty_019363a0,auto,edge-verified,Generated from the empty template
 0x01936dc0,1,auto_empty_01936dc0,auto,edge-verified,Generated from the empty template
