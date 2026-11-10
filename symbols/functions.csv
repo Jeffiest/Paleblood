@@ -4339,31 +4339,169 @@ address,size,name,system,status,notes
 0x0135b050,28,auto_destroy_then_release_0135b050,auto,edge-verified,Same instructions as misc_destroy_then_release with other addresses
 0x0135b240,5,auto_return_field_0135b240,auto,edge-verified,Generated from the return field template
 0x0135b8f0,1,auto_empty_0135b8f0,auto,edge-verified,Generated from the empty template
+0x0135bde0,41,auto_bind_vtable_0135bde0,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x0135be10,41,auto_bind_vtable_0135be10,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x0135be40,41,auto_bind_vtable_0135be40,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x0135c780,41,auto_bind_vtable_0135c780,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x0135c7b0,41,auto_bind_vtable_0135c7b0,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x0135c7e0,41,auto_bind_vtable_0135c7e0,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x0135c9b0,41,auto_bind_vtable_0135c9b0,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x0135c9e0,41,auto_bind_vtable_0135c9e0,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x0135ca10,41,auto_bind_vtable_0135ca10,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x0135cca0,41,auto_bind_vtable_0135cca0,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x0135ccd0,41,auto_bind_vtable_0135ccd0,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x0135cd00,41,auto_bind_vtable_0135cd00,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x0135d370,41,auto_bind_vtable_0135d370,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x0135d3a0,41,auto_bind_vtable_0135d3a0,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x0135d3d0,41,auto_bind_vtable_0135d3d0,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
 0x0135d5f0,28,auto_destroy_then_release_0135d5f0,auto,edge-verified,Same instructions as misc_destroy_then_release with other addresses
+0x0135e1a0,41,auto_bind_vtable_0135e1a0,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x0135e1d0,41,auto_bind_vtable_0135e1d0,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x0135e200,41,auto_bind_vtable_0135e200,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
 0x0135e420,28,auto_destroy_then_release_0135e420,auto,edge-verified,Same instructions as misc_destroy_then_release with other addresses
+0x01364050,41,auto_bind_vtable_01364050,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x01364080,41,auto_bind_vtable_01364080,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x013640b0,41,auto_bind_vtable_013640b0,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
 0x01364230,1,auto_empty_01364230,auto,edge-verified,Generated from the empty template
+0x013642c0,41,auto_bind_vtable_013642c0,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x013642f0,41,auto_bind_vtable_013642f0,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x01364320,41,auto_bind_vtable_01364320,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
 0x013644e0,3,auto_return_constant_013644e0,auto,edge-verified,Generated from the return constant template
 0x013644f0,3,auto_return_constant_013644f0,auto,edge-verified,Generated from the return constant template
 0x0136a820,1,auto_empty_0136a820,auto,edge-verified,Generated from the empty template
+0x0136ad40,41,auto_bind_vtable_0136ad40,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x0136ad70,41,auto_bind_vtable_0136ad70,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x0136ada0,41,auto_bind_vtable_0136ada0,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x0136af00,41,auto_bind_vtable_0136af00,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x0136af30,41,auto_bind_vtable_0136af30,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x0136af60,41,auto_bind_vtable_0136af60,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x0136b2f0,41,auto_bind_vtable_0136b2f0,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x0136b320,41,auto_bind_vtable_0136b320,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x0136b350,41,auto_bind_vtable_0136b350,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x0136ccb0,41,auto_bind_vtable_0136ccb0,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x0136cce0,41,auto_bind_vtable_0136cce0,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x0136cd10,41,auto_bind_vtable_0136cd10,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
 0x0136cf90,1,auto_empty_0136cf90,auto,edge-verified,Generated from the empty template
+0x0136d550,41,auto_bind_vtable_0136d550,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x0136d580,41,auto_bind_vtable_0136d580,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x0136d5b0,41,auto_bind_vtable_0136d5b0,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x0136de90,41,auto_bind_vtable_0136de90,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x0136dec0,41,auto_bind_vtable_0136dec0,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x0136def0,41,auto_bind_vtable_0136def0,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x0136e0b0,41,auto_bind_vtable_0136e0b0,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x0136e0e0,41,auto_bind_vtable_0136e0e0,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x0136e110,41,auto_bind_vtable_0136e110,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x0136e4e0,41,auto_bind_vtable_0136e4e0,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x0136e510,41,auto_bind_vtable_0136e510,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x0136e540,41,auto_bind_vtable_0136e540,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
 0x0136e5b0,28,auto_destroy_then_release_0136e5b0,auto,edge-verified,Same instructions as misc_destroy_then_release with other addresses
+0x01370770,41,auto_bind_vtable_01370770,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x013707a0,41,auto_bind_vtable_013707a0,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x013707d0,41,auto_bind_vtable_013707d0,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
 0x01370910,1,auto_empty_01370910,auto,edge-verified,Generated from the empty template
+0x01370920,41,auto_bind_vtable_01370920,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x01370950,41,auto_bind_vtable_01370950,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x01370980,41,auto_bind_vtable_01370980,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x01370ea0,41,auto_bind_vtable_01370ea0,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x01370ed0,41,auto_bind_vtable_01370ed0,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x01370f00,41,auto_bind_vtable_01370f00,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x013711b0,41,auto_bind_vtable_013711b0,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x013711e0,41,auto_bind_vtable_013711e0,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x01371210,41,auto_bind_vtable_01371210,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x01371810,41,auto_bind_vtable_01371810,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x01371840,41,auto_bind_vtable_01371840,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x01371870,41,auto_bind_vtable_01371870,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x01371b20,41,auto_bind_vtable_01371b20,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x01371b50,41,auto_bind_vtable_01371b50,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x01371b80,41,auto_bind_vtable_01371b80,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x01372140,41,auto_bind_vtable_01372140,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x01372170,41,auto_bind_vtable_01372170,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x013721a0,41,auto_bind_vtable_013721a0,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x01372400,41,auto_bind_vtable_01372400,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x01372430,41,auto_bind_vtable_01372430,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x01372460,41,auto_bind_vtable_01372460,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x01372620,41,auto_bind_vtable_01372620,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x01372650,41,auto_bind_vtable_01372650,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x01372680,41,auto_bind_vtable_01372680,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
 0x01372800,28,auto_destroy_then_release_01372800,auto,edge-verified,Same instructions as misc_destroy_then_release with other addresses
+0x01372fd0,41,auto_bind_vtable_01372fd0,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x01373000,41,auto_bind_vtable_01373000,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x01373030,41,auto_bind_vtable_01373030,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x01373d60,41,auto_bind_vtable_01373d60,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x01373d90,41,auto_bind_vtable_01373d90,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x01373dc0,41,auto_bind_vtable_01373dc0,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x01373f60,41,auto_bind_vtable_01373f60,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x01373f90,41,auto_bind_vtable_01373f90,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x01373fc0,41,auto_bind_vtable_01373fc0,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x01374a80,41,auto_bind_vtable_01374a80,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x01374ab0,41,auto_bind_vtable_01374ab0,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x01374ae0,41,auto_bind_vtable_01374ae0,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x013784a0,41,auto_bind_vtable_013784a0,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x013784d0,41,auto_bind_vtable_013784d0,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x01378500,41,auto_bind_vtable_01378500,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x0137a460,41,auto_bind_vtable_0137a460,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x0137a490,41,auto_bind_vtable_0137a490,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x0137a4c0,41,auto_bind_vtable_0137a4c0,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x0137ac00,41,auto_bind_vtable_0137ac00,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x0137ac30,41,auto_bind_vtable_0137ac30,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x0137ac60,41,auto_bind_vtable_0137ac60,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
 0x0137af40,1,auto_empty_0137af40,auto,edge-verified,Generated from the empty template
+0x0137af50,41,auto_bind_vtable_0137af50,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x0137af80,41,auto_bind_vtable_0137af80,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x0137afb0,41,auto_bind_vtable_0137afb0,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x0137b490,41,auto_bind_vtable_0137b490,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x0137b4c0,41,auto_bind_vtable_0137b4c0,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x0137b4f0,41,auto_bind_vtable_0137b4f0,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
 0x0137b7d0,1,auto_empty_0137b7d0,auto,edge-verified,Generated from the empty template
+0x0137b7e0,41,auto_bind_vtable_0137b7e0,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x0137b810,41,auto_bind_vtable_0137b810,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x0137b840,41,auto_bind_vtable_0137b840,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
 0x0137d4c0,8,auto_return_field_0137d4c0,auto,edge-verified,Generated from the return field template
 0x0137d4e0,7,auto_return_field_0137d4e0,auto,edge-verified,Generated from the return field template
 0x0137d4f0,7,auto_return_field_0137d4f0,auto,edge-verified,Generated from the return field template
 0x0137d500,9,auto_return_float_field_0137d500,auto,edge-verified,Generated from the return float field template
+0x0137d670,41,auto_bind_vtable_0137d670,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x0137d6a0,41,auto_bind_vtable_0137d6a0,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x0137d6d0,41,auto_bind_vtable_0137d6d0,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
 0x0137d850,28,auto_destroy_then_release_0137d850,auto,edge-verified,Same instructions as misc_destroy_then_release with other addresses
+0x0137d930,41,auto_bind_vtable_0137d930,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x0137d960,41,auto_bind_vtable_0137d960,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x0137d990,41,auto_bind_vtable_0137d990,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
 0x0137db10,28,auto_destroy_then_release_0137db10,auto,edge-verified,Same instructions as misc_destroy_then_release with other addresses
 0x0137dcd0,3,auto_return_zero_0137dcd0,auto,edge-verified,Generated from the return zero template
+0x0137df20,41,auto_bind_vtable_0137df20,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x0137df50,41,auto_bind_vtable_0137df50,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x0137df80,41,auto_bind_vtable_0137df80,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x0137e2b0,41,auto_bind_vtable_0137e2b0,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x0137e2e0,41,auto_bind_vtable_0137e2e0,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x0137e310,41,auto_bind_vtable_0137e310,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x0137e5c0,41,auto_bind_vtable_0137e5c0,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x0137e5f0,41,auto_bind_vtable_0137e5f0,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x0137e620,41,auto_bind_vtable_0137e620,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
 0x0137e790,1,auto_empty_0137e790,auto,edge-verified,Generated from the empty template
+0x0137e7e0,41,auto_bind_vtable_0137e7e0,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x0137e810,41,auto_bind_vtable_0137e810,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x0137e840,41,auto_bind_vtable_0137e840,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x0137ea10,41,auto_bind_vtable_0137ea10,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x0137ea40,41,auto_bind_vtable_0137ea40,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x0137ea70,41,auto_bind_vtable_0137ea70,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x0137ec90,41,auto_bind_vtable_0137ec90,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x0137ecc0,41,auto_bind_vtable_0137ecc0,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x0137ecf0,41,auto_bind_vtable_0137ecf0,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x0137f270,41,auto_bind_vtable_0137f270,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x0137f2a0,41,auto_bind_vtable_0137f2a0,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x0137f2d0,41,auto_bind_vtable_0137f2d0,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
 0x0137f590,1,auto_empty_0137f590,auto,edge-verified,Generated from the empty template
 0x0137f5a0,5,auto_return_field_0137f5a0,auto,edge-verified,Generated from the return field template
 0x0137f5c0,5,auto_return_field_0137f5c0,auto,edge-verified,Generated from the return field template
+0x0137f5e0,41,auto_bind_vtable_0137f5e0,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x0137f610,41,auto_bind_vtable_0137f610,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x0137f640,41,auto_bind_vtable_0137f640,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
 0x013805d0,28,auto_destroy_then_release_013805d0,auto,edge-verified,Same instructions as misc_destroy_then_release with other addresses
 0x013820a0,7,auto_return_field_013820a0,auto,edge-verified,Generated from the return field template
+0x01382360,41,auto_bind_vtable_01382360,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x01382390,41,auto_bind_vtable_01382390,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x013823c0,41,auto_bind_vtable_013823c0,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
 0x013826b0,1,auto_empty_013826b0,auto,edge-verified,Generated from the empty template
 0x013826c0,4,auto_return_field_013826c0,auto,edge-verified,Generated from the return field template
 0x013826d0,4,auto_return_field_013826d0,auto,edge-verified,Generated from the return field template
@@ -4380,34 +4518,136 @@ address,size,name,system,status,notes
 0x01382880,6,auto_return_constant_01382880,auto,edge-verified,Generated from the return constant template
 0x013828a0,6,auto_return_constant_013828a0,auto,edge-verified,Generated from the return constant template
 0x013828b0,3,auto_return_zero_013828b0,auto,edge-verified,Generated from the return zero template
+0x013828c0,41,auto_bind_vtable_013828c0,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x013828f0,41,auto_bind_vtable_013828f0,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x01382920,41,auto_bind_vtable_01382920,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
 0x01382c00,28,auto_destroy_then_release_01382c00,auto,edge-verified,Same instructions as misc_destroy_then_release with other addresses
 0x01382c30,1,auto_empty_01382c30,auto,edge-verified,Generated from the empty template
+0x01382c40,41,auto_bind_vtable_01382c40,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x01382c70,41,auto_bind_vtable_01382c70,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x01382ca0,41,auto_bind_vtable_01382ca0,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x01382f50,41,auto_bind_vtable_01382f50,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x01382f80,41,auto_bind_vtable_01382f80,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x01382fb0,41,auto_bind_vtable_01382fb0,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
 0x01383290,28,auto_destroy_then_release_01383290,auto,edge-verified,Same instructions as misc_destroy_then_release with other addresses
+0x01383300,41,auto_bind_vtable_01383300,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x01383330,41,auto_bind_vtable_01383330,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x01383360,41,auto_bind_vtable_01383360,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x01383610,41,auto_bind_vtable_01383610,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x01383640,41,auto_bind_vtable_01383640,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x01383670,41,auto_bind_vtable_01383670,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x01383920,41,auto_bind_vtable_01383920,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x01383950,41,auto_bind_vtable_01383950,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x01383980,41,auto_bind_vtable_01383980,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
 0x01383db0,5,auto_return_field_01383db0,auto,edge-verified,Generated from the return field template
 0x01383dc0,5,auto_return_field_01383dc0,auto,edge-verified,Generated from the return field template
+0x01383e10,41,auto_bind_vtable_01383e10,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x01383e40,41,auto_bind_vtable_01383e40,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x01383e70,41,auto_bind_vtable_01383e70,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x01384100,41,auto_bind_vtable_01384100,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x01384130,41,auto_bind_vtable_01384130,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x01384160,41,auto_bind_vtable_01384160,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x013843f0,41,auto_bind_vtable_013843f0,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x01384420,41,auto_bind_vtable_01384420,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x01384450,41,auto_bind_vtable_01384450,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
 0x01384730,28,auto_destroy_then_release_01384730,auto,edge-verified,Same instructions as misc_destroy_then_release with other addresses
+0x01384760,41,auto_bind_vtable_01384760,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x01384790,41,auto_bind_vtable_01384790,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x013847c0,41,auto_bind_vtable_013847c0,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x01384a70,41,auto_bind_vtable_01384a70,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x01384aa0,41,auto_bind_vtable_01384aa0,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x01384ad0,41,auto_bind_vtable_01384ad0,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x01384f10,41,auto_bind_vtable_01384f10,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x01384f40,41,auto_bind_vtable_01384f40,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x01384f70,41,auto_bind_vtable_01384f70,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
 0x01385230,1,auto_empty_01385230,auto,edge-verified,Generated from the empty template
 0x01385240,5,auto_return_field_01385240,auto,edge-verified,Generated from the return field template
+0x013852b0,41,auto_bind_vtable_013852b0,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x013852e0,41,auto_bind_vtable_013852e0,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x01385310,41,auto_bind_vtable_01385310,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
 0x013855d0,28,auto_destroy_then_release_013855d0,auto,edge-verified,Same instructions as misc_destroy_then_release with other addresses
+0x01385610,41,auto_bind_vtable_01385610,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x01385640,41,auto_bind_vtable_01385640,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x01385670,41,auto_bind_vtable_01385670,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
 0x01385950,28,auto_destroy_then_release_01385950,auto,edge-verified,Same instructions as misc_destroy_then_release with other addresses
+0x01385980,41,auto_bind_vtable_01385980,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x013859b0,41,auto_bind_vtable_013859b0,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x013859e0,41,auto_bind_vtable_013859e0,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x01385c90,41,auto_bind_vtable_01385c90,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x01385cc0,41,auto_bind_vtable_01385cc0,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x01385cf0,41,auto_bind_vtable_01385cf0,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x01386180,41,auto_bind_vtable_01386180,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x013861b0,41,auto_bind_vtable_013861b0,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x013861e0,41,auto_bind_vtable_013861e0,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
 0x013864b0,28,auto_destroy_then_release_013864b0,auto,edge-verified,Same instructions as misc_destroy_then_release with other addresses
+0x013864e0,41,auto_bind_vtable_013864e0,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x01386510,41,auto_bind_vtable_01386510,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x01386540,41,auto_bind_vtable_01386540,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
 0x013865e0,28,auto_destroy_then_release_013865e0,auto,edge-verified,Same instructions as misc_destroy_then_release with other addresses
+0x01386610,41,auto_bind_vtable_01386610,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x01386640,41,auto_bind_vtable_01386640,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x01386670,41,auto_bind_vtable_01386670,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
 0x01386710,28,auto_destroy_then_release_01386710,auto,edge-verified,Same instructions as misc_destroy_then_release with other addresses
+0x01386740,41,auto_bind_vtable_01386740,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x01386770,41,auto_bind_vtable_01386770,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x013867a0,41,auto_bind_vtable_013867a0,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
 0x01386840,1,auto_empty_01386840,auto,edge-verified,Generated from the empty template
 0x01386850,5,auto_return_field_01386850,auto,edge-verified,Generated from the return field template
+0x01386860,41,auto_bind_vtable_01386860,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x01386890,41,auto_bind_vtable_01386890,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x013868c0,41,auto_bind_vtable_013868c0,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
 0x01387100,1,auto_empty_01387100,auto,edge-verified,Generated from the empty template
 0x01387110,1,auto_empty_01387110,auto,edge-verified,Generated from the empty template
+0x01387410,41,auto_bind_vtable_01387410,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x01387440,41,auto_bind_vtable_01387440,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x01387470,41,auto_bind_vtable_01387470,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
 0x01387600,28,auto_destroy_then_release_01387600,auto,edge-verified,Same instructions as misc_destroy_then_release with other addresses
 0x01388130,5,auto_return_field_01388130,auto,edge-verified,Generated from the return field template
+0x013884a0,41,auto_bind_vtable_013884a0,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x013884d0,41,auto_bind_vtable_013884d0,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x01388500,41,auto_bind_vtable_01388500,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
 0x01388c60,16,frame_timing_task_run_all_01388c60,frame_timing,verified,task manager: run the tasks of every group (0x01388c70 with -1)
 0x01388c70,171,frame_timing_task_run_01388c70,frame_timing,verified,"task manager run: prepare the frame, dispatch through +0x40 (virtual +0x30) with +0x38 set, finish"
+0x01389560,41,auto_bind_vtable_01389560,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x01389590,41,auto_bind_vtable_01389590,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x013895c0,41,auto_bind_vtable_013895c0,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x01389750,41,auto_bind_vtable_01389750,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x01389780,41,auto_bind_vtable_01389780,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x013897b0,41,auto_bind_vtable_013897b0,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x01389ed0,41,auto_bind_vtable_01389ed0,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x01389f00,41,auto_bind_vtable_01389f00,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x01389f30,41,auto_bind_vtable_01389f30,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
 0x0138a030,28,auto_destroy_then_release_0138a030,auto,edge-verified,Same instructions as misc_destroy_then_release with other addresses
 0x0138a370,330,frame_timing_task_dispatch_0138a370,frame_timing,verified,"task dispatcher (virtual +0x30): wakes registered tasks, updates the group record, runs the job like the worker step"
+0x0138a5c0,41,auto_bind_vtable_0138a5c0,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x0138a5f0,41,auto_bind_vtable_0138a5f0,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x0138a620,41,auto_bind_vtable_0138a620,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
 0x0138a850,28,auto_destroy_then_release_0138a850,auto,edge-verified,Same instructions as misc_destroy_then_release with other addresses
+0x0138a9e0,41,auto_bind_vtable_0138a9e0,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x0138aa10,41,auto_bind_vtable_0138aa10,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x0138aa40,41,auto_bind_vtable_0138aa40,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x0138acf0,41,auto_bind_vtable_0138acf0,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x0138ad20,41,auto_bind_vtable_0138ad20,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x0138ad50,41,auto_bind_vtable_0138ad50,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x0138bf20,41,auto_bind_vtable_0138bf20,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x0138bf50,41,auto_bind_vtable_0138bf50,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x0138bf80,41,auto_bind_vtable_0138bf80,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x0138bff0,41,auto_bind_vtable_0138bff0,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x0138c020,41,auto_bind_vtable_0138c020,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x0138c050,41,auto_bind_vtable_0138c050,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x0138c770,41,auto_bind_vtable_0138c770,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x0138c7a0,41,auto_bind_vtable_0138c7a0,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x0138c7d0,41,auto_bind_vtable_0138c7d0,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
 0x0138c8c0,1,auto_empty_0138c8c0,auto,edge-verified,Generated from the empty template
+0x0138ca20,41,auto_bind_vtable_0138ca20,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x0138ca50,41,auto_bind_vtable_0138ca50,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x0138ca80,41,auto_bind_vtable_0138ca80,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
 0x0138cbe0,28,auto_destroy_then_release_0138cbe0,auto,edge-verified,Same instructions as misc_destroy_then_release with other addresses
 0x0138d030,5,auto_return_field_0138d030,auto,edge-verified,Generated from the return field template
 0x0138d0c0,4,auto_return_field_0138d0c0,auto,edge-verified,Generated from the return field template
+0x01391300,41,auto_bind_vtable_01391300,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x01391330,41,auto_bind_vtable_01391330,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x01391360,41,auto_bind_vtable_01391360,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
 0x01391390,205,auto_initialize_static_wide_string_01391390,auto,edge-verified,Same instructions as engine_initialize_static_wide_string_018867e0 with other addresses
 0x013915c0,28,auto_destroy_then_release_013915c0,auto,edge-verified,Same instructions as misc_destroy_then_release with other addresses
 0x013918c0,4,auto_return_field_013918c0,auto,edge-verified,Generated from the return field template
@@ -4423,9 +4663,24 @@ address,size,name,system,status,notes
 0x01393710,1,auto_empty_01393710,auto,edge-verified,Generated from the empty template
 0x01393720,1,auto_empty_01393720,auto,edge-verified,Generated from the empty template
 0x01393730,1,auto_empty_01393730,auto,edge-verified,Generated from the empty template
+0x01393740,41,auto_bind_vtable_01393740,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x01393770,41,auto_bind_vtable_01393770,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x013937a0,41,auto_bind_vtable_013937a0,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x01395780,41,auto_bind_vtable_01395780,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x013957b0,41,auto_bind_vtable_013957b0,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x013957e0,41,auto_bind_vtable_013957e0,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
 0x01395810,205,auto_initialize_static_wide_string_01395810,auto,edge-verified,Same instructions as engine_initialize_static_wide_string_018867e0 with other addresses
 0x01395950,1,auto_empty_01395950,auto,edge-verified,Generated from the empty template
+0x01395960,41,auto_bind_vtable_01395960,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x01395990,41,auto_bind_vtable_01395990,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x013959c0,41,auto_bind_vtable_013959c0,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x01396090,41,auto_bind_vtable_01396090,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x013960c0,41,auto_bind_vtable_013960c0,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x013960f0,41,auto_bind_vtable_013960f0,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
 0x01397280,1,auto_empty_01397280,auto,edge-verified,Generated from the empty template
+0x013984b0,41,auto_bind_vtable_013984b0,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x013984e0,41,auto_bind_vtable_013984e0,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x01398510,41,auto_bind_vtable_01398510,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
 0x013986b0,28,auto_destroy_then_release_013986b0,auto,edge-verified,Same instructions as misc_destroy_then_release with other addresses
 0x013986d0,252,misc_release_holder_child,misc,edge-verified,Sets a holder vtable releases its child if present through the target notify then runs five manager calls and returns the last
 0x013987d0,87,misc_run_four_stages,misc,edge-verified,Runs three per-index stages on an object each with a float scale then returns the final stage result as a tail call
@@ -4437,8 +4692,14 @@ address,size,name,system,status,notes
 0x013989a0,79,misc_init_vtable_subobject,misc,edge-verified,Gives an object its vtable and clears its second word then initializes the sub-object at +0x10 with a scratch slot under the stack guard
 0x01398f50,302,misc_clear_pending_four_keys,misc,edge-verified,Clears the pending flag of the node matching each of four keys in a tree or the end node when none matches
 0x01399080,412,misc_mark_bounded_matches,misc,edge-verified,Queries a source for two count and bound pairs then flags the tree match for each bound that qualifies against a float threshold
+0x01399550,41,auto_bind_vtable_01399550,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x01399580,41,auto_bind_vtable_01399580,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x013995b0,41,auto_bind_vtable_013995b0,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
 0x01399850,1,auto_empty_01399850,auto,edge-verified,Generated from the empty template
 0x01399860,6,auto_return_constant_01399860,auto,edge-verified,Generated from the return constant template
+0x01399fa0,41,auto_bind_vtable_01399fa0,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x01399fd0,41,auto_bind_vtable_01399fd0,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x0139a000,41,auto_bind_vtable_0139a000,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
 0x0139a380,1,auto_empty_0139a380,auto,edge-verified,Generated from the empty template
 0x0139a390,6,auto_return_constant_0139a390,auto,edge-verified,Generated from the return constant template
 0x0139ae00,41,misc_bind_vtable_56b4840_alt,misc,edge-verified,Publishes the address of the static vtable block at 0x056b4840 into a global pointer once and sets a qword flag
@@ -4478,49 +4739,186 @@ address,size,name,system,status,notes
 0x0139bf90,95,misc_destroy_flagged_pair_tail,misc,edge-verified,Destroys a flagged owned pair then tail-calls the owned pair destructor; returns nothing
 0x0139bff0,218,misc_call_receiver_with_name,misc,edge-verified,Calls a name formatter then hands the formatted name text to a receiver; returns nothing
 0x0139c0d0,41,misc_bind_vtable_56b4840_0139c0d0,misc,edge-verified,Publishes the address of the static vtable block at 0x056b4840 into a global pointer once and sets a qword flag
+0x0139c100,41,auto_bind_vtable_0139c100,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x0139c130,41,auto_bind_vtable_0139c130,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x0139c310,41,auto_bind_vtable_0139c310,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x0139c340,41,auto_bind_vtable_0139c340,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x0139c370,41,auto_bind_vtable_0139c370,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x0139c620,41,auto_bind_vtable_0139c620,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x0139c650,41,auto_bind_vtable_0139c650,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x0139c680,41,auto_bind_vtable_0139c680,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
 0x0139c730,28,auto_destroy_then_release_0139c730,auto,edge-verified,Same instructions as misc_destroy_then_release with other addresses
+0x0139c770,41,auto_bind_vtable_0139c770,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x0139c7a0,41,auto_bind_vtable_0139c7a0,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x0139c7d0,41,auto_bind_vtable_0139c7d0,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x0139cba0,41,auto_bind_vtable_0139cba0,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x0139cbd0,41,auto_bind_vtable_0139cbd0,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x0139cc00,41,auto_bind_vtable_0139cc00,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
 0x0139d9d0,3,auto_return_zero_0139d9d0,auto,edge-verified,Generated from the return zero template
 0x0139ea10,3,auto_return_zero_0139ea10,auto,edge-verified,Generated from the return zero template
+0x0139f6d0,41,auto_bind_vtable_0139f6d0,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x0139f700,41,auto_bind_vtable_0139f700,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x0139f730,41,auto_bind_vtable_0139f730,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x013a4bd0,41,auto_bind_vtable_013a4bd0,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x013a4c00,41,auto_bind_vtable_013a4c00,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x013a4c30,41,auto_bind_vtable_013a4c30,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x013a5030,41,auto_bind_vtable_013a5030,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x013a5060,41,auto_bind_vtable_013a5060,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x013a5090,41,auto_bind_vtable_013a5090,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
 0x013a53a0,28,auto_destroy_then_release_013a53a0,auto,edge-verified,Same instructions as misc_destroy_then_release with other addresses
+0x013a6380,41,auto_bind_vtable_013a6380,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x013a63b0,41,auto_bind_vtable_013a63b0,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x013a63e0,41,auto_bind_vtable_013a63e0,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
 0x013a6410,205,auto_initialize_static_wide_string_013a6410,auto,edge-verified,Same instructions as engine_initialize_static_wide_string_018867e0 with other addresses
+0x013a6580,41,auto_bind_vtable_013a6580,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x013a65b0,41,auto_bind_vtable_013a65b0,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x013a65e0,41,auto_bind_vtable_013a65e0,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x013a74a0,41,auto_bind_vtable_013a74a0,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x013a74d0,41,auto_bind_vtable_013a74d0,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x013a7500,41,auto_bind_vtable_013a7500,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
 0x013a75b0,28,auto_destroy_then_release_013a75b0,auto,edge-verified,Same instructions as misc_destroy_then_release with other addresses
 0x013a7610,6,auto_return_constant_013a7610,auto,edge-verified,Generated from the return constant template
 0x013a7680,1,auto_empty_013a7680,auto,edge-verified,Generated from the empty template
 0x013a7690,1,auto_empty_013a7690,auto,edge-verified,Generated from the empty template
+0x013a79e0,41,auto_bind_vtable_013a79e0,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x013a7a10,41,auto_bind_vtable_013a7a10,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x013a7a40,41,auto_bind_vtable_013a7a40,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
 0x013a7ab0,1,auto_empty_013a7ab0,auto,edge-verified,Generated from the empty template
 0x013a7ac0,1,auto_empty_013a7ac0,auto,edge-verified,Generated from the empty template
 0x013a7e10,1,auto_empty_013a7e10,auto,edge-verified,Generated from the empty template
 0x013a8070,6,auto_return_constant_013a8070,auto,edge-verified,Generated from the return constant template
+0x013a8080,41,auto_bind_vtable_013a8080,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x013a80b0,41,auto_bind_vtable_013a80b0,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x013a80e0,41,auto_bind_vtable_013a80e0,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
 0x013a8210,1,auto_empty_013a8210,auto,edge-verified,Generated from the empty template
+0x013a9b50,41,auto_bind_vtable_013a9b50,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x013a9b80,41,auto_bind_vtable_013a9b80,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x013a9bb0,41,auto_bind_vtable_013a9bb0,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
 0x013aa840,4,auto_return_field_013aa840,auto,edge-verified,Generated from the return field template
+0x013aa960,41,auto_bind_vtable_013aa960,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x013aa990,41,auto_bind_vtable_013aa990,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x013aa9c0,41,auto_bind_vtable_013aa9c0,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
 0x013ab520,6,auto_return_constant_013ab520,auto,edge-verified,Generated from the return constant template
+0x013ab530,41,auto_bind_vtable_013ab530,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x013ab560,41,auto_bind_vtable_013ab560,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x013ab590,41,auto_bind_vtable_013ab590,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
 0x013ab860,1,auto_empty_013ab860,auto,edge-verified,Generated from the empty template
+0x013ad0b0,41,auto_bind_vtable_013ad0b0,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x013ad0e0,41,auto_bind_vtable_013ad0e0,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x013ad110,41,auto_bind_vtable_013ad110,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x013ae990,41,auto_bind_vtable_013ae990,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x013ae9c0,41,auto_bind_vtable_013ae9c0,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x013ae9f0,41,auto_bind_vtable_013ae9f0,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x013af330,41,auto_bind_vtable_013af330,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x013af360,41,auto_bind_vtable_013af360,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x013af390,41,auto_bind_vtable_013af390,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x013af7c0,41,auto_bind_vtable_013af7c0,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x013af7f0,41,auto_bind_vtable_013af7f0,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x013af820,41,auto_bind_vtable_013af820,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x013b0090,41,auto_bind_vtable_013b0090,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x013b00c0,41,auto_bind_vtable_013b00c0,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x013b00f0,41,auto_bind_vtable_013b00f0,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
 0x013b1160,1,auto_empty_013b1160,auto,edge-verified,Generated from the empty template
+0x013b1b60,41,auto_bind_vtable_013b1b60,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x013b1b90,41,auto_bind_vtable_013b1b90,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x013b1bc0,41,auto_bind_vtable_013b1bc0,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
 0x013b1ce0,28,auto_destroy_then_release_013b1ce0,auto,edge-verified,Same instructions as misc_destroy_then_release with other addresses
+0x013b2e20,41,auto_bind_vtable_013b2e20,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x013b2e50,41,auto_bind_vtable_013b2e50,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x013b2e80,41,auto_bind_vtable_013b2e80,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x013b3430,41,auto_bind_vtable_013b3430,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x013b3460,41,auto_bind_vtable_013b3460,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x013b3490,41,auto_bind_vtable_013b3490,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
 0x013b4500,28,auto_destroy_then_release_013b4500,auto,edge-verified,Same instructions as misc_destroy_then_release with other addresses
+0x013b4730,41,auto_bind_vtable_013b4730,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x013b4760,41,auto_bind_vtable_013b4760,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x013b4790,41,auto_bind_vtable_013b4790,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x013b4d50,41,auto_bind_vtable_013b4d50,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x013b4d80,41,auto_bind_vtable_013b4d80,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x013b4db0,41,auto_bind_vtable_013b4db0,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x013b4fb0,41,auto_bind_vtable_013b4fb0,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x013b4fe0,41,auto_bind_vtable_013b4fe0,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x013b5010,41,auto_bind_vtable_013b5010,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
 0x013b50c0,28,auto_destroy_then_release_013b50c0,auto,edge-verified,Same instructions as misc_destroy_then_release with other addresses
+0x013b5370,41,auto_bind_vtable_013b5370,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x013b53a0,41,auto_bind_vtable_013b53a0,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x013b53d0,41,auto_bind_vtable_013b53d0,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
 0x013b5480,28,auto_destroy_then_release_013b5480,auto,edge-verified,Same instructions as misc_destroy_then_release with other addresses
+0x013b5fd0,41,auto_bind_vtable_013b5fd0,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x013b6000,41,auto_bind_vtable_013b6000,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x013b6030,41,auto_bind_vtable_013b6030,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x013b8920,41,auto_bind_vtable_013b8920,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x013b8950,41,auto_bind_vtable_013b8950,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x013b8980,41,auto_bind_vtable_013b8980,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
 0x013b8a30,28,auto_destroy_then_release_013b8a30,auto,edge-verified,Same instructions as misc_destroy_then_release with other addresses
+0x013b9220,41,auto_bind_vtable_013b9220,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x013b9250,41,auto_bind_vtable_013b9250,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x013b9280,41,auto_bind_vtable_013b9280,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
 0x013b95a0,5,auto_return_field_013b95a0,auto,edge-verified,Generated from the return field template
 0x013b95d0,8,auto_return_field_013b95d0,auto,edge-verified,Generated from the return field template
+0x013b97f0,41,auto_bind_vtable_013b97f0,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x013b9820,41,auto_bind_vtable_013b9820,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x013b9850,41,auto_bind_vtable_013b9850,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
 0x013b9b70,28,auto_destroy_then_release_013b9b70,auto,edge-verified,Same instructions as misc_destroy_then_release with other addresses
 0x013b9cd0,1,auto_empty_013b9cd0,auto,edge-verified,Generated from the empty template
 0x013ba540,8,auto_fixed_address_013ba540,auto,edge-verified,Same instructions as misc_plain_type_address with other addresses
+0x013ba550,41,auto_bind_vtable_013ba550,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x013ba580,41,auto_bind_vtable_013ba580,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x013ba5b0,41,auto_bind_vtable_013ba5b0,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
 0x013bac20,1,auto_empty_013bac20,auto,edge-verified,Generated from the empty template
+0x013bbfc0,41,auto_bind_vtable_013bbfc0,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x013bbff0,41,auto_bind_vtable_013bbff0,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x013bc020,41,auto_bind_vtable_013bc020,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
 0x013bc0b0,1,auto_empty_013bc0b0,auto,edge-verified,Generated from the empty template
 0x013bc0c0,3,auto_return_zero_013bc0c0,auto,edge-verified,Generated from the return zero template
 0x013bc0d0,3,auto_return_zero_013bc0d0,auto,edge-verified,Generated from the return zero template
 0x013bc0e0,1,auto_empty_013bc0e0,auto,edge-verified,Generated from the empty template
 0x013bc0f0,1,auto_empty_013bc0f0,auto,edge-verified,Generated from the empty template
+0x013bc100,41,auto_bind_vtable_013bc100,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x013bc130,41,auto_bind_vtable_013bc130,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x013bc160,41,auto_bind_vtable_013bc160,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
 0x013bc200,1,auto_empty_013bc200,auto,edge-verified,Generated from the empty template
 0x013bc210,1,auto_empty_013bc210,auto,edge-verified,Generated from the empty template
+0x013bc220,41,auto_bind_vtable_013bc220,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x013bc250,41,auto_bind_vtable_013bc250,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x013bc280,41,auto_bind_vtable_013bc280,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x013bc660,41,auto_bind_vtable_013bc660,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x013bc690,41,auto_bind_vtable_013bc690,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x013bc6c0,41,auto_bind_vtable_013bc6c0,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
 0x013bc930,28,auto_destroy_then_release_013bc930,auto,edge-verified,Same instructions as misc_destroy_then_release with other addresses
+0x013bde80,41,auto_bind_vtable_013bde80,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x013bdeb0,41,auto_bind_vtable_013bdeb0,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x013bdee0,41,auto_bind_vtable_013bdee0,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
 0x013be0e0,28,auto_destroy_then_release_013be0e0,auto,edge-verified,Same instructions as misc_destroy_then_release with other addresses
+0x013be8b0,41,auto_bind_vtable_013be8b0,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x013be8e0,41,auto_bind_vtable_013be8e0,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x013be910,41,auto_bind_vtable_013be910,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x013beba0,41,auto_bind_vtable_013beba0,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x013bebd0,41,auto_bind_vtable_013bebd0,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x013bec00,41,auto_bind_vtable_013bec00,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x013bece0,41,auto_bind_vtable_013bece0,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x013bed10,41,auto_bind_vtable_013bed10,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x013bed40,41,auto_bind_vtable_013bed40,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x013beea0,41,auto_bind_vtable_013beea0,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x013beed0,41,auto_bind_vtable_013beed0,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x013bef00,41,auto_bind_vtable_013bef00,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x013bf9a0,41,auto_bind_vtable_013bf9a0,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x013bf9d0,41,auto_bind_vtable_013bf9d0,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x013bfa00,41,auto_bind_vtable_013bfa00,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x013bfe60,41,auto_bind_vtable_013bfe60,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x013bfe90,41,auto_bind_vtable_013bfe90,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x013bfec0,41,auto_bind_vtable_013bfec0,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
 0x013bfef0,205,auto_initialize_static_wide_string_013bfef0,auto,edge-verified,Same instructions as engine_initialize_static_wide_string_018867e0 with other addresses
 0x013c05e0,28,auto_destroy_then_release_013c05e0,auto,edge-verified,Same instructions as misc_destroy_then_release with other addresses
+0x013c18a0,41,auto_bind_vtable_013c18a0,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x013c18d0,41,auto_bind_vtable_013c18d0,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x013c1900,41,auto_bind_vtable_013c1900,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
 0x013c1930,205,auto_initialize_static_wide_string_013c1930,auto,edge-verified,Same instructions as engine_initialize_static_wide_string_018867e0 with other addresses
 0x013c2ef0,1,auto_empty_013c2ef0,auto,edge-verified,Generated from the empty template
 0x013c2fd0,1,auto_empty_013c2fd0,auto,edge-verified,Generated from the empty template
+0x013c2fe0,41,auto_bind_vtable_013c2fe0,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x013c3010,41,auto_bind_vtable_013c3010,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x013c3040,41,auto_bind_vtable_013c3040,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
 0x013c3070,205,auto_initialize_static_wide_string_013c3070,auto,edge-verified,Same instructions as engine_initialize_static_wide_string_018867e0 with other addresses
 0x013c32d0,28,auto_destroy_then_release_013c32d0,auto,edge-verified,Same instructions as misc_destroy_then_release with other addresses
 0x013c3440,5,auto_return_field_013c3440,auto,edge-verified,Generated from the return field template
@@ -4538,6 +4936,9 @@ address,size,name,system,status,notes
 0x013c3740,1,auto_empty_013c3740,auto,edge-verified,Generated from the empty template
 0x013c37c0,1,auto_empty_013c37c0,auto,edge-verified,Generated from the empty template
 0x013c37d0,1,auto_empty_013c37d0,auto,edge-verified,Generated from the empty template
+0x013c3830,41,auto_bind_vtable_013c3830,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x013c3860,41,auto_bind_vtable_013c3860,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x013c3890,41,auto_bind_vtable_013c3890,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
 0x013c38c0,205,auto_initialize_static_wide_string_013c38c0,auto,edge-verified,Same instructions as engine_initialize_static_wide_string_018867e0 with other addresses
 0x013c3bf0,28,auto_destroy_then_release_013c3bf0,auto,edge-verified,Same instructions as misc_destroy_then_release with other addresses
 0x013c3d00,5,auto_return_field_013c3d00,auto,edge-verified,Generated from the return field template
@@ -4550,24 +4951,111 @@ address,size,name,system,status,notes
 0x013c3d70,8,auto_return_member_address_013c3d70,auto,edge-verified,Generated from the return member address template
 0x013c3d80,8,auto_return_field_013c3d80,auto,edge-verified,Generated from the return field template
 0x013c3d90,8,auto_return_field_013c3d90,auto,edge-verified,Generated from the return field template
+0x013c3da0,41,auto_bind_vtable_013c3da0,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x013c3dd0,41,auto_bind_vtable_013c3dd0,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x013c3e00,41,auto_bind_vtable_013c3e00,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x013c5000,41,auto_bind_vtable_013c5000,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x013c5030,41,auto_bind_vtable_013c5030,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x013c5060,41,auto_bind_vtable_013c5060,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
 0x013c5090,205,auto_initialize_static_wide_string_013c5090,auto,edge-verified,Same instructions as engine_initialize_static_wide_string_018867e0 with other addresses
 0x013c54d0,28,auto_destroy_then_release_013c54d0,auto,edge-verified,Same instructions as misc_destroy_then_release with other addresses
+0x013c55c0,41,auto_bind_vtable_013c55c0,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x013c55f0,41,auto_bind_vtable_013c55f0,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x013c5620,41,auto_bind_vtable_013c5620,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x013c6e60,41,auto_bind_vtable_013c6e60,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x013c6e90,41,auto_bind_vtable_013c6e90,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x013c6ec0,41,auto_bind_vtable_013c6ec0,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
 0x013c6ef0,205,auto_initialize_static_wide_string_013c6ef0,auto,edge-verified,Same instructions as engine_initialize_static_wide_string_018867e0 with other addresses
+0x013c7330,41,auto_bind_vtable_013c7330,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x013c7360,41,auto_bind_vtable_013c7360,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x013c7390,41,auto_bind_vtable_013c7390,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
 0x013c73c0,205,auto_initialize_static_wide_string_013c73c0,auto,edge-verified,Same instructions as engine_initialize_static_wide_string_018867e0 with other addresses
 0x013c7970,28,auto_destroy_then_release_013c7970,auto,edge-verified,Same instructions as misc_destroy_then_release with other addresses
 0x013c79a0,5,auto_return_field_013c79a0,auto,edge-verified,Generated from the return field template
+0x013c7a60,41,auto_bind_vtable_013c7a60,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x013c7a90,41,auto_bind_vtable_013c7a90,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x013c7ac0,41,auto_bind_vtable_013c7ac0,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
 0x013c7af0,205,auto_initialize_static_wide_string_013c7af0,auto,edge-verified,Same instructions as engine_initialize_static_wide_string_018867e0 with other addresses
 0x013c7ec0,1,auto_empty_013c7ec0,auto,edge-verified,Generated from the empty template
 0x013c7ed0,5,auto_return_field_013c7ed0,auto,edge-verified,Generated from the return field template
+0x013c7ee0,41,auto_bind_vtable_013c7ee0,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x013c7f10,41,auto_bind_vtable_013c7f10,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x013c7f40,41,auto_bind_vtable_013c7f40,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
 0x013c7f70,205,auto_initialize_static_wide_string_013c7f70,auto,edge-verified,Same instructions as engine_initialize_static_wide_string_018867e0 with other addresses
+0x013cc410,41,auto_bind_vtable_013cc410,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x013cc440,41,auto_bind_vtable_013cc440,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x013cc470,41,auto_bind_vtable_013cc470,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
 0x013cc4a0,205,auto_initialize_static_wide_string_013cc4a0,auto,edge-verified,Same instructions as engine_initialize_static_wide_string_018867e0 with other addresses
+0x013cd550,41,auto_bind_vtable_013cd550,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x013cd580,41,auto_bind_vtable_013cd580,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x013cd5b0,41,auto_bind_vtable_013cd5b0,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
 0x013cd5e0,205,auto_initialize_static_wide_string_013cd5e0,auto,edge-verified,Same instructions as engine_initialize_static_wide_string_018867e0 with other addresses
+0x013ce1b0,41,auto_bind_vtable_013ce1b0,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x013ce1e0,41,auto_bind_vtable_013ce1e0,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x013ce210,41,auto_bind_vtable_013ce210,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x013ce500,41,auto_bind_vtable_013ce500,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x013ce530,41,auto_bind_vtable_013ce530,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x013ce560,41,auto_bind_vtable_013ce560,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x013ce9e0,41,auto_bind_vtable_013ce9e0,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x013cea10,41,auto_bind_vtable_013cea10,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x013cea40,41,auto_bind_vtable_013cea40,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
 0x013ced20,1,auto_empty_013ced20,auto,edge-verified,Generated from the empty template
+0x013ced30,41,auto_bind_vtable_013ced30,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x013ced60,41,auto_bind_vtable_013ced60,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x013ced90,41,auto_bind_vtable_013ced90,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x013cf100,41,auto_bind_vtable_013cf100,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x013cf130,41,auto_bind_vtable_013cf130,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x013cf160,41,auto_bind_vtable_013cf160,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
 0x013cf440,1,auto_empty_013cf440,auto,edge-verified,Generated from the empty template
+0x013cf450,41,auto_bind_vtable_013cf450,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x013cf480,41,auto_bind_vtable_013cf480,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x013cf4b0,41,auto_bind_vtable_013cf4b0,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x013cfa10,41,auto_bind_vtable_013cfa10,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x013cfa40,41,auto_bind_vtable_013cfa40,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x013cfa70,41,auto_bind_vtable_013cfa70,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
 0x013cfd50,1,auto_empty_013cfd50,auto,edge-verified,Generated from the empty template
+0x013cfd60,41,auto_bind_vtable_013cfd60,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x013cfd90,41,auto_bind_vtable_013cfd90,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x013cfdc0,41,auto_bind_vtable_013cfdc0,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x013d01c0,41,auto_bind_vtable_013d01c0,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x013d01f0,41,auto_bind_vtable_013d01f0,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x013d0220,41,auto_bind_vtable_013d0220,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
 0x013d0500,1,auto_empty_013d0500,auto,edge-verified,Generated from the empty template
+0x013d0510,41,auto_bind_vtable_013d0510,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x013d0540,41,auto_bind_vtable_013d0540,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x013d0570,41,auto_bind_vtable_013d0570,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x013d08d0,41,auto_bind_vtable_013d08d0,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x013d0900,41,auto_bind_vtable_013d0900,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x013d0930,41,auto_bind_vtable_013d0930,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x013d0bc0,41,auto_bind_vtable_013d0bc0,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x013d0bf0,41,auto_bind_vtable_013d0bf0,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x013d0c20,41,auto_bind_vtable_013d0c20,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x013d1be0,41,auto_bind_vtable_013d1be0,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x013d1c10,41,auto_bind_vtable_013d1c10,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x013d1c40,41,auto_bind_vtable_013d1c40,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x013d1ef0,41,auto_bind_vtable_013d1ef0,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x013d1f20,41,auto_bind_vtable_013d1f20,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x013d1f50,41,auto_bind_vtable_013d1f50,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x013d21b0,41,auto_bind_vtable_013d21b0,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x013d21e0,41,auto_bind_vtable_013d21e0,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x013d2210,41,auto_bind_vtable_013d2210,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
 0x013d22b0,1,auto_empty_013d22b0,auto,edge-verified,Generated from the empty template
+0x013d22c0,41,auto_bind_vtable_013d22c0,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x013d22f0,41,auto_bind_vtable_013d22f0,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x013d2320,41,auto_bind_vtable_013d2320,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x013d24a0,41,auto_bind_vtable_013d24a0,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x013d24d0,41,auto_bind_vtable_013d24d0,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x013d2500,41,auto_bind_vtable_013d2500,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x013d2ce0,41,auto_bind_vtable_013d2ce0,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x013d2d10,41,auto_bind_vtable_013d2d10,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x013d2d40,41,auto_bind_vtable_013d2d40,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
 0x013d3520,87,frame_timing_task_013d3520,frame_timing,verified,per-frame task: passes the frame-time descriptor and its seconds to three parts; Uncap FPS++ edits it
+0x013d37b0,41,auto_bind_vtable_013d37b0,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x013d37e0,41,auto_bind_vtable_013d37e0,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x013d3810,41,auto_bind_vtable_013d3810,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x013d4b10,41,auto_bind_vtable_013d4b10,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x013d4b40,41,auto_bind_vtable_013d4b40,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x013d4b70,41,auto_bind_vtable_013d4b70,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
 0x013d4f40,28,auto_destroy_then_release_013d4f40,auto,edge-verified,Same instructions as misc_destroy_then_release with other addresses
 0x013d5cd0,1,auto_empty_013d5cd0,auto,edge-verified,Generated from the empty template
 0x013d5d70,1,auto_empty_013d5d70,auto,edge-verified,Generated from the empty template
@@ -4575,12 +5063,102 @@ address,size,name,system,status,notes
 0x013d5eb0,1,auto_empty_013d5eb0,auto,edge-verified,Generated from the empty template
 0x013d5f50,3,auto_return_zero_013d5f50,auto,edge-verified,Generated from the return zero template
 0x013d6380,1,auto_empty_013d6380,auto,edge-verified,Generated from the empty template
+0x013d64c0,41,auto_bind_vtable_013d64c0,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x013d64f0,41,auto_bind_vtable_013d64f0,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x013d6520,41,auto_bind_vtable_013d6520,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
 0x013d6700,28,auto_destroy_then_release_013d6700,auto,edge-verified,Same instructions as misc_destroy_then_release with other addresses
 0x013d6870,5,auto_return_field_013d6870,auto,edge-verified,Generated from the return field template
+0x013d6b30,41,auto_bind_vtable_013d6b30,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x013d6b60,41,auto_bind_vtable_013d6b60,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x013d6b90,41,auto_bind_vtable_013d6b90,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x013da6f0,41,auto_bind_vtable_013da6f0,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x013da720,41,auto_bind_vtable_013da720,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x013da750,41,auto_bind_vtable_013da750,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x013dae40,41,auto_bind_vtable_013dae40,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x013dae70,41,auto_bind_vtable_013dae70,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x013daea0,41,auto_bind_vtable_013daea0,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x013db320,41,auto_bind_vtable_013db320,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x013db350,41,auto_bind_vtable_013db350,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x013db380,41,auto_bind_vtable_013db380,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
 0x013db660,1,auto_empty_013db660,auto,edge-verified,Generated from the empty template
+0x013db670,41,auto_bind_vtable_013db670,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x013db6a0,41,auto_bind_vtable_013db6a0,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x013db6d0,41,auto_bind_vtable_013db6d0,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x013dba90,41,auto_bind_vtable_013dba90,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x013dbac0,41,auto_bind_vtable_013dbac0,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x013dbaf0,41,auto_bind_vtable_013dbaf0,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
 0x013dbdd0,1,auto_empty_013dbdd0,auto,edge-verified,Generated from the empty template
+0x013dbde0,41,auto_bind_vtable_013dbde0,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x013dbe10,41,auto_bind_vtable_013dbe10,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x013dbe40,41,auto_bind_vtable_013dbe40,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x013dc0c0,41,auto_bind_vtable_013dc0c0,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x013dc0f0,41,auto_bind_vtable_013dc0f0,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x013dc120,41,auto_bind_vtable_013dc120,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x013dc6d0,41,auto_bind_vtable_013dc6d0,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x013dc700,41,auto_bind_vtable_013dc700,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x013dc730,41,auto_bind_vtable_013dc730,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x013dca30,41,auto_bind_vtable_013dca30,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x013dca60,41,auto_bind_vtable_013dca60,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x013dca90,41,auto_bind_vtable_013dca90,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x013de430,41,auto_bind_vtable_013de430,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x013de460,41,auto_bind_vtable_013de460,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x013de490,41,auto_bind_vtable_013de490,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x013debf0,41,auto_bind_vtable_013debf0,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x013dec20,41,auto_bind_vtable_013dec20,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x013dec50,41,auto_bind_vtable_013dec50,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x013defd0,41,auto_bind_vtable_013defd0,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x013df000,41,auto_bind_vtable_013df000,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x013df030,41,auto_bind_vtable_013df030,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x013df440,41,auto_bind_vtable_013df440,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x013df470,41,auto_bind_vtable_013df470,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x013df4a0,41,auto_bind_vtable_013df4a0,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x013df650,41,auto_bind_vtable_013df650,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x013df680,41,auto_bind_vtable_013df680,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x013df6b0,41,auto_bind_vtable_013df6b0,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x013dfe60,41,auto_bind_vtable_013dfe60,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x013dfe90,41,auto_bind_vtable_013dfe90,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x013dfec0,41,auto_bind_vtable_013dfec0,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x013e0300,41,auto_bind_vtable_013e0300,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x013e0330,41,auto_bind_vtable_013e0330,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x013e0360,41,auto_bind_vtable_013e0360,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x013e07e0,41,auto_bind_vtable_013e07e0,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x013e0810,41,auto_bind_vtable_013e0810,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x013e0840,41,auto_bind_vtable_013e0840,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x013e09e0,41,auto_bind_vtable_013e09e0,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x013e0a10,41,auto_bind_vtable_013e0a10,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x013e0a40,41,auto_bind_vtable_013e0a40,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x013e0b10,41,auto_bind_vtable_013e0b10,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x013e0b40,41,auto_bind_vtable_013e0b40,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x013e0b70,41,auto_bind_vtable_013e0b70,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x013e1010,41,auto_bind_vtable_013e1010,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x013e1040,41,auto_bind_vtable_013e1040,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x013e1070,41,auto_bind_vtable_013e1070,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
 0x013e1350,1,auto_empty_013e1350,auto,edge-verified,Generated from the empty template
+0x013e1360,41,auto_bind_vtable_013e1360,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x013e1390,41,auto_bind_vtable_013e1390,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x013e13c0,41,auto_bind_vtable_013e13c0,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x013e1a50,41,auto_bind_vtable_013e1a50,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x013e1a80,41,auto_bind_vtable_013e1a80,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x013e1ab0,41,auto_bind_vtable_013e1ab0,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
 0x013e1d90,1,auto_empty_013e1d90,auto,edge-verified,Generated from the empty template
+0x013e1da0,41,auto_bind_vtable_013e1da0,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x013e1dd0,41,auto_bind_vtable_013e1dd0,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x013e1e00,41,auto_bind_vtable_013e1e00,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x013e1f80,41,auto_bind_vtable_013e1f80,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x013e1fb0,41,auto_bind_vtable_013e1fb0,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x013e1fe0,41,auto_bind_vtable_013e1fe0,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x013e25d0,41,auto_bind_vtable_013e25d0,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x013e2600,41,auto_bind_vtable_013e2600,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x013e2630,41,auto_bind_vtable_013e2630,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x013e28c0,41,auto_bind_vtable_013e28c0,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x013e28f0,41,auto_bind_vtable_013e28f0,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x013e2920,41,auto_bind_vtable_013e2920,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x013e2e80,41,auto_bind_vtable_013e2e80,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x013e2eb0,41,auto_bind_vtable_013e2eb0,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x013e2ee0,41,auto_bind_vtable_013e2ee0,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x013e3830,41,auto_bind_vtable_013e3830,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x013e3860,41,auto_bind_vtable_013e3860,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x013e3890,41,auto_bind_vtable_013e3890,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
 0x013e3940,1,auto_empty_013e3940,auto,edge-verified,Generated from the empty template
 0x013e3950,3,auto_return_constant_013e3950,auto,edge-verified,Generated from the return constant template
 0x013e3960,3,auto_return_constant_013e3960,auto,edge-verified,Generated from the return constant template
@@ -4590,9 +5168,30 @@ address,size,name,system,status,notes
 0x013e39b0,3,auto_return_zero_013e39b0,auto,edge-verified,Generated from the return zero template
 0x013e39c0,3,auto_return_zero_013e39c0,auto,edge-verified,Generated from the return zero template
 0x013e39d0,3,auto_return_zero_013e39d0,auto,edge-verified,Generated from the return zero template
+0x013e39e0,41,auto_bind_vtable_013e39e0,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x013e3a10,41,auto_bind_vtable_013e3a10,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x013e3a40,41,auto_bind_vtable_013e3a40,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
 0x013e3c40,28,auto_destroy_then_release_013e3c40,auto,edge-verified,Same instructions as misc_destroy_then_release with other addresses
 0x013e3c70,1,auto_empty_013e3c70,auto,edge-verified,Generated from the empty template
+0x013e3c80,41,auto_bind_vtable_013e3c80,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x013e3cb0,41,auto_bind_vtable_013e3cb0,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x013e3ce0,41,auto_bind_vtable_013e3ce0,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x013e49c0,41,auto_bind_vtable_013e49c0,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x013e49f0,41,auto_bind_vtable_013e49f0,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x013e4a20,41,auto_bind_vtable_013e4a20,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x013e5b40,41,auto_bind_vtable_013e5b40,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x013e5b70,41,auto_bind_vtable_013e5b70,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x013e5ba0,41,auto_bind_vtable_013e5ba0,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
 0x013e5c40,1,auto_empty_013e5c40,auto,edge-verified,Generated from the empty template
+0x013e5c50,41,auto_bind_vtable_013e5c50,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x013e5c80,41,auto_bind_vtable_013e5c80,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x013e5cb0,41,auto_bind_vtable_013e5cb0,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x013e6700,41,auto_bind_vtable_013e6700,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x013e6730,41,auto_bind_vtable_013e6730,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x013e6760,41,auto_bind_vtable_013e6760,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x013e6dc0,41,auto_bind_vtable_013e6dc0,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x013e6df0,41,auto_bind_vtable_013e6df0,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x013e6e20,41,auto_bind_vtable_013e6e20,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
 0x013e7220,1,auto_empty_013e7220,auto,edge-verified,Generated from the empty template
 0x013e7260,1,auto_empty_013e7260,auto,edge-verified,Generated from the empty template
 0x013e7270,3,auto_return_zero_013e7270,auto,edge-verified,Generated from the return zero template
@@ -4601,13 +5200,40 @@ address,size,name,system,status,notes
 0x013e74e0,1,auto_empty_013e74e0,auto,edge-verified,Generated from the empty template
 0x013e74f0,3,auto_return_zero_013e74f0,auto,edge-verified,Generated from the return zero template
 0x013e7500,3,auto_return_constant_013e7500,auto,edge-verified,Generated from the return constant template
+0x013e7510,41,auto_bind_vtable_013e7510,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x013e7540,41,auto_bind_vtable_013e7540,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x013e7570,41,auto_bind_vtable_013e7570,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x013e7b30,41,auto_bind_vtable_013e7b30,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x013e7b60,41,auto_bind_vtable_013e7b60,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x013e7b90,41,auto_bind_vtable_013e7b90,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x013e7ef0,41,auto_bind_vtable_013e7ef0,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x013e7f20,41,auto_bind_vtable_013e7f20,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x013e7f50,41,auto_bind_vtable_013e7f50,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
 0x013e8230,28,auto_destroy_then_release_013e8230,auto,edge-verified,Same instructions as misc_destroy_then_release with other addresses
+0x013e8260,41,auto_bind_vtable_013e8260,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x013e8290,41,auto_bind_vtable_013e8290,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x013e82c0,41,auto_bind_vtable_013e82c0,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x013e8940,41,auto_bind_vtable_013e8940,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x013e8970,41,auto_bind_vtable_013e8970,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x013e89a0,41,auto_bind_vtable_013e89a0,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x013e9da0,41,auto_bind_vtable_013e9da0,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x013e9dd0,41,auto_bind_vtable_013e9dd0,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x013e9e00,41,auto_bind_vtable_013e9e00,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
 0x013e9e90,1,auto_empty_013e9e90,auto,edge-verified,Generated from the empty template
 0x013e9ea0,3,auto_return_field_013e9ea0,auto,edge-verified,Generated from the return field template
 0x013e9eb0,5,auto_return_field_013e9eb0,auto,edge-verified,Generated from the return field template
+0x013e9ef0,41,auto_bind_vtable_013e9ef0,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x013e9f20,41,auto_bind_vtable_013e9f20,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x013e9f50,41,auto_bind_vtable_013e9f50,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
 0x013ea8e0,1,auto_empty_013ea8e0,auto,edge-verified,Generated from the empty template
+0x013edf80,41,auto_bind_vtable_013edf80,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x013edfb0,41,auto_bind_vtable_013edfb0,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x013edfe0,41,auto_bind_vtable_013edfe0,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
 0x013f07c0,1,auto_empty_013f07c0,auto,edge-verified,Generated from the empty template
 0x013f2130,1,auto_empty_013f2130,auto,edge-verified,Generated from the empty template
+0x013f2140,41,auto_bind_vtable_013f2140,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x013f2170,41,auto_bind_vtable_013f2170,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x013f21a0,41,auto_bind_vtable_013f21a0,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
 0x013f2320,28,auto_destroy_then_release_013f2320,auto,edge-verified,Same instructions as misc_destroy_then_release with other addresses
 0x013f2450,1,auto_empty_013f2450,auto,edge-verified,Generated from the empty template
 0x013f2460,1,auto_empty_013f2460,auto,edge-verified,Generated from the empty template
@@ -4615,26 +5241,62 @@ address,size,name,system,status,notes
 0x013f2480,1,auto_empty_013f2480,auto,edge-verified,Generated from the empty template
 0x013f3e00,4,auto_return_field_013f3e00,auto,edge-verified,Generated from the return field template
 0x013f49a0,1,auto_empty_013f49a0,auto,edge-verified,Generated from the empty template
+0x013f4af0,41,auto_bind_vtable_013f4af0,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x013f4b20,41,auto_bind_vtable_013f4b20,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x013f4b50,41,auto_bind_vtable_013f4b50,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x013f4de0,41,auto_bind_vtable_013f4de0,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x013f4e10,41,auto_bind_vtable_013f4e10,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x013f4e40,41,auto_bind_vtable_013f4e40,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
 0x013f5c10,5,auto_return_field_013f5c10,auto,edge-verified,Generated from the return field template
 0x013f5c20,8,auto_fixed_address_013f5c20,auto,edge-verified,Same instructions as misc_plain_type_address with other addresses
+0x013f5c30,41,auto_bind_vtable_013f5c30,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x013f5c60,41,auto_bind_vtable_013f5c60,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x013f5c90,41,auto_bind_vtable_013f5c90,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
 0x013f69f0,8,auto_return_field_013f69f0,auto,edge-verified,Generated from the return field template
 0x013f6a00,1,auto_empty_013f6a00,auto,edge-verified,Generated from the empty template
 0x013f6a10,1,auto_empty_013f6a10,auto,edge-verified,Generated from the empty template
 0x013f6a20,8,auto_fixed_address_013f6a20,auto,edge-verified,Same instructions as misc_plain_type_address with other addresses
+0x013f6a30,41,auto_bind_vtable_013f6a30,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x013f6a60,41,auto_bind_vtable_013f6a60,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x013f6a90,41,auto_bind_vtable_013f6a90,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
 0x013f6db0,28,auto_destroy_then_release_013f6db0,auto,edge-verified,Same instructions as misc_destroy_then_release with other addresses
 0x013f7cd0,1,auto_empty_013f7cd0,auto,edge-verified,Generated from the empty template
 0x013f7ce0,1,auto_empty_013f7ce0,auto,edge-verified,Generated from the empty template
+0x013f8cc0,41,auto_bind_vtable_013f8cc0,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x013f8cf0,41,auto_bind_vtable_013f8cf0,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x013f8d20,41,auto_bind_vtable_013f8d20,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
 0x013f9460,1,auto_empty_013f9460,auto,edge-verified,Generated from the empty template
 0x013f99e0,8,auto_return_field_013f99e0,auto,edge-verified,Generated from the return field template
 0x013f99f0,8,auto_fixed_address_013f99f0,auto,edge-verified,Same instructions as misc_plain_type_address with other addresses
+0x013f9a00,41,auto_bind_vtable_013f9a00,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x013f9a30,41,auto_bind_vtable_013f9a30,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x013f9a60,41,auto_bind_vtable_013f9a60,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
 0x013fbdd0,1,auto_empty_013fbdd0,auto,edge-verified,Generated from the empty template
 0x013fbde0,1,auto_empty_013fbde0,auto,edge-verified,Generated from the empty template
+0x013fe5f0,41,auto_bind_vtable_013fe5f0,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x013fe620,41,auto_bind_vtable_013fe620,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x013fe650,41,auto_bind_vtable_013fe650,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
 0x013fecf0,1,auto_empty_013fecf0,auto,edge-verified,Generated from the empty template
 0x013ff270,8,auto_return_field_013ff270,auto,edge-verified,Generated from the return field template
 0x013ff280,8,auto_fixed_address_013ff280,auto,edge-verified,Same instructions as misc_plain_type_address with other addresses
+0x013ff290,41,auto_bind_vtable_013ff290,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x013ff2c0,41,auto_bind_vtable_013ff2c0,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x013ff2f0,41,auto_bind_vtable_013ff2f0,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x013ffe50,41,auto_bind_vtable_013ffe50,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x013ffe80,41,auto_bind_vtable_013ffe80,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x013ffeb0,41,auto_bind_vtable_013ffeb0,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
 0x01400080,1,auto_empty_01400080,auto,edge-verified,Generated from the empty template
+0x01400740,41,auto_bind_vtable_01400740,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x01400770,41,auto_bind_vtable_01400770,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x014007a0,41,auto_bind_vtable_014007a0,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
 0x01400850,1,auto_empty_01400850,auto,edge-verified,Generated from the empty template
+0x01400860,41,auto_bind_vtable_01400860,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x01400890,41,auto_bind_vtable_01400890,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x014008c0,41,auto_bind_vtable_014008c0,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
 0x01400980,28,auto_destroy_then_release_01400980,auto,edge-verified,Same instructions as misc_destroy_then_release with other addresses
+0x01401500,41,auto_bind_vtable_01401500,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x01401530,41,auto_bind_vtable_01401530,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x01401560,41,auto_bind_vtable_01401560,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
 0x01401600,1,auto_empty_01401600,auto,edge-verified,Generated from the empty template
 0x01401680,3,auto_return_zero_01401680,auto,edge-verified,Generated from the return zero template
 0x01401690,1,auto_empty_01401690,auto,edge-verified,Generated from the empty template
@@ -4643,52 +5305,265 @@ address,size,name,system,status,notes
 0x014016c0,1,auto_empty_014016c0,auto,edge-verified,Generated from the empty template
 0x014016d0,3,auto_return_zero_014016d0,auto,edge-verified,Generated from the return zero template
 0x014016e0,3,auto_return_zero_014016e0,auto,edge-verified,Generated from the return zero template
+0x01401b20,41,auto_bind_vtable_01401b20,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x01401b50,41,auto_bind_vtable_01401b50,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x01401b80,41,auto_bind_vtable_01401b80,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x01401e30,41,auto_bind_vtable_01401e30,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x01401e60,41,auto_bind_vtable_01401e60,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x01401e90,41,auto_bind_vtable_01401e90,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
 0x01401f60,28,auto_destroy_then_release_01401f60,auto,edge-verified,Same instructions as misc_destroy_then_release with other addresses
+0x01401fb0,41,auto_bind_vtable_01401fb0,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x01401fe0,41,auto_bind_vtable_01401fe0,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x01402010,41,auto_bind_vtable_01402010,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x01403810,41,auto_bind_vtable_01403810,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x01403840,41,auto_bind_vtable_01403840,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x01403870,41,auto_bind_vtable_01403870,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
 0x01403910,28,auto_destroy_then_release_01403910,auto,edge-verified,Same instructions as misc_destroy_then_release with other addresses
 0x01403a50,3,auto_return_zero_01403a50,auto,edge-verified,Generated from the return zero template
 0x01403a60,3,auto_return_zero_01403a60,auto,edge-verified,Generated from the return zero template
 0x01403a70,3,auto_return_constant_01403a70,auto,edge-verified,Generated from the return constant template
+0x0140a7a0,41,auto_bind_vtable_0140a7a0,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x0140a7d0,41,auto_bind_vtable_0140a7d0,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x0140a800,41,auto_bind_vtable_0140a800,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x0140b410,41,auto_bind_vtable_0140b410,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x0140b440,41,auto_bind_vtable_0140b440,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x0140b470,41,auto_bind_vtable_0140b470,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x0140b710,41,auto_bind_vtable_0140b710,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x0140b740,41,auto_bind_vtable_0140b740,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x0140b770,41,auto_bind_vtable_0140b770,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
 0x0140b920,28,auto_destroy_then_release_0140b920,auto,edge-verified,Same instructions as misc_destroy_then_release with other addresses
 0x0140b950,3,auto_return_zero_0140b950,auto,edge-verified,Generated from the return zero template
+0x0140cd80,41,auto_bind_vtable_0140cd80,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x0140cdb0,41,auto_bind_vtable_0140cdb0,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x0140cde0,41,auto_bind_vtable_0140cde0,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x0140ce90,41,auto_bind_vtable_0140ce90,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x0140cec0,41,auto_bind_vtable_0140cec0,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x0140cef0,41,auto_bind_vtable_0140cef0,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x0140d300,41,auto_bind_vtable_0140d300,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x0140d330,41,auto_bind_vtable_0140d330,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x0140d360,41,auto_bind_vtable_0140d360,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
 0x0140de20,3,auto_return_zero_0140de20,auto,edge-verified,Generated from the return zero template
 0x0140de30,1,auto_empty_0140de30,auto,edge-verified,Generated from the empty template
+0x0140def0,41,auto_bind_vtable_0140def0,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x0140df20,41,auto_bind_vtable_0140df20,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x0140df50,41,auto_bind_vtable_0140df50,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x0140ea50,41,auto_bind_vtable_0140ea50,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x0140ea80,41,auto_bind_vtable_0140ea80,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x0140eab0,41,auto_bind_vtable_0140eab0,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x0140f090,41,auto_bind_vtable_0140f090,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x0140f0c0,41,auto_bind_vtable_0140f0c0,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x0140f0f0,41,auto_bind_vtable_0140f0f0,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
 0x0140f180,1,auto_empty_0140f180,auto,edge-verified,Generated from the empty template
+0x0140f5c0,41,auto_bind_vtable_0140f5c0,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x0140f5f0,41,auto_bind_vtable_0140f5f0,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x0140f620,41,auto_bind_vtable_0140f620,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x0140f690,41,auto_bind_vtable_0140f690,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x0140f6c0,41,auto_bind_vtable_0140f6c0,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x0140f6f0,41,auto_bind_vtable_0140f6f0,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x0140fd10,41,auto_bind_vtable_0140fd10,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x0140fd40,41,auto_bind_vtable_0140fd40,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x0140fd70,41,auto_bind_vtable_0140fd70,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x01410030,41,auto_bind_vtable_01410030,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x01410060,41,auto_bind_vtable_01410060,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x01410090,41,auto_bind_vtable_01410090,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x01410750,41,auto_bind_vtable_01410750,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x01410780,41,auto_bind_vtable_01410780,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x014107b0,41,auto_bind_vtable_014107b0,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x01411490,41,auto_bind_vtable_01411490,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x014114c0,41,auto_bind_vtable_014114c0,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x014114f0,41,auto_bind_vtable_014114f0,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
 0x014118f0,3,auto_return_zero_014118f0,auto,edge-verified,Generated from the return zero template
+0x014119e0,41,auto_bind_vtable_014119e0,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x01411a10,41,auto_bind_vtable_01411a10,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x01411a40,41,auto_bind_vtable_01411a40,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x01412430,41,auto_bind_vtable_01412430,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x01412460,41,auto_bind_vtable_01412460,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x01412490,41,auto_bind_vtable_01412490,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
 0x01412520,1,auto_empty_01412520,auto,edge-verified,Generated from the empty template
+0x01412df0,41,auto_bind_vtable_01412df0,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x01412e20,41,auto_bind_vtable_01412e20,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x01412e50,41,auto_bind_vtable_01412e50,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
 0x01413810,4,auto_return_field_01413810,auto,edge-verified,Generated from the return field template
 0x01414ae0,28,auto_destroy_then_release_01414ae0,auto,edge-verified,Same instructions as misc_destroy_then_release with other addresses
 0x01415ff0,1,auto_empty_01415ff0,auto,edge-verified,Generated from the empty template
 0x01416ee0,1,auto_empty_01416ee0,auto,edge-verified,Generated from the empty template
 0x01416ef0,8,auto_fixed_address_01416ef0,auto,edge-verified,Same instructions as misc_plain_type_address with other addresses
 0x014170e0,8,auto_fixed_address_014170e0,auto,edge-verified,Same instructions as misc_plain_type_address with other addresses
+0x01417530,41,auto_bind_vtable_01417530,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x01417560,41,auto_bind_vtable_01417560,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x01417590,41,auto_bind_vtable_01417590,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x01417a20,41,auto_bind_vtable_01417a20,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x01417a50,41,auto_bind_vtable_01417a50,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x01417a80,41,auto_bind_vtable_01417a80,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
 0x01418150,1,auto_empty_01418150,auto,edge-verified,Generated from the empty template
 0x014181c0,4,auto_return_field_014181c0,auto,edge-verified,Generated from the return field template
+0x014181d0,41,auto_bind_vtable_014181d0,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x01418200,41,auto_bind_vtable_01418200,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x01418230,41,auto_bind_vtable_01418230,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
 0x01419310,1,auto_empty_01419310,auto,edge-verified,Generated from the empty template
 0x01419a60,6,auto_return_constant_01419a60,auto,edge-verified,Generated from the return constant template
 0x01419b20,3,auto_return_zero_01419b20,auto,edge-verified,Generated from the return zero template
+0x0141a290,41,auto_bind_vtable_0141a290,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x0141a2c0,41,auto_bind_vtable_0141a2c0,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x0141a2f0,41,auto_bind_vtable_0141a2f0,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x0141a560,41,auto_bind_vtable_0141a560,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x0141a590,41,auto_bind_vtable_0141a590,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x0141a5c0,41,auto_bind_vtable_0141a5c0,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x0141bb90,41,auto_bind_vtable_0141bb90,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x0141bbc0,41,auto_bind_vtable_0141bbc0,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x0141bbf0,41,auto_bind_vtable_0141bbf0,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x0141bd40,41,auto_bind_vtable_0141bd40,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x0141bd70,41,auto_bind_vtable_0141bd70,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x0141bda0,41,auto_bind_vtable_0141bda0,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
 0x0141be10,1,auto_empty_0141be10,auto,edge-verified,Generated from the empty template
+0x0141bfa0,41,auto_bind_vtable_0141bfa0,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x0141bfd0,41,auto_bind_vtable_0141bfd0,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x0141c000,41,auto_bind_vtable_0141c000,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x0141c1d0,41,auto_bind_vtable_0141c1d0,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x0141c200,41,auto_bind_vtable_0141c200,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x0141c230,41,auto_bind_vtable_0141c230,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
 0x0141c4e0,5,auto_return_field_0141c4e0,auto,edge-verified,Generated from the return field template
+0x0141c4f0,41,auto_bind_vtable_0141c4f0,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x0141c520,41,auto_bind_vtable_0141c520,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x0141c550,41,auto_bind_vtable_0141c550,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x0141c800,41,auto_bind_vtable_0141c800,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x0141c830,41,auto_bind_vtable_0141c830,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x0141c860,41,auto_bind_vtable_0141c860,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
 0x0141cb10,5,auto_return_field_0141cb10,auto,edge-verified,Generated from the return field template
+0x0141cb20,41,auto_bind_vtable_0141cb20,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x0141cb50,41,auto_bind_vtable_0141cb50,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x0141cb80,41,auto_bind_vtable_0141cb80,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
 0x0141cf70,4,auto_return_field_0141cf70,auto,edge-verified,Generated from the return field template
+0x0141cf80,41,auto_bind_vtable_0141cf80,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x0141cfb0,41,auto_bind_vtable_0141cfb0,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x0141cfe0,41,auto_bind_vtable_0141cfe0,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x0141d1b0,41,auto_bind_vtable_0141d1b0,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x0141d1e0,41,auto_bind_vtable_0141d1e0,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x0141d210,41,auto_bind_vtable_0141d210,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
 0x0141d4c0,5,auto_return_field_0141d4c0,auto,edge-verified,Generated from the return field template
+0x0141d4d0,41,auto_bind_vtable_0141d4d0,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x0141d500,41,auto_bind_vtable_0141d500,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x0141d530,41,auto_bind_vtable_0141d530,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x0141d7e0,41,auto_bind_vtable_0141d7e0,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x0141d810,41,auto_bind_vtable_0141d810,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x0141d840,41,auto_bind_vtable_0141d840,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x0141da70,41,auto_bind_vtable_0141da70,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x0141daa0,41,auto_bind_vtable_0141daa0,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x0141dad0,41,auto_bind_vtable_0141dad0,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x0141dc40,41,auto_bind_vtable_0141dc40,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x0141dc70,41,auto_bind_vtable_0141dc70,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x0141dca0,41,auto_bind_vtable_0141dca0,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x0141e320,41,auto_bind_vtable_0141e320,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x0141e350,41,auto_bind_vtable_0141e350,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x0141e380,41,auto_bind_vtable_0141e380,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x0141f080,41,auto_bind_vtable_0141f080,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x0141f0b0,41,auto_bind_vtable_0141f0b0,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x0141f0e0,41,auto_bind_vtable_0141f0e0,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x0141f4e0,41,auto_bind_vtable_0141f4e0,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x0141f510,41,auto_bind_vtable_0141f510,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x0141f540,41,auto_bind_vtable_0141f540,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
 0x0141fee0,28,auto_destroy_then_release_0141fee0,auto,edge-verified,Same instructions as misc_destroy_then_release with other addresses
+0x01423250,41,auto_bind_vtable_01423250,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x01423280,41,auto_bind_vtable_01423280,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x014232b0,41,auto_bind_vtable_014232b0,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
 0x01423c00,5,auto_return_field_01423c00,auto,edge-verified,Generated from the return field template
+0x01425f60,41,auto_bind_vtable_01425f60,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x01425f90,41,auto_bind_vtable_01425f90,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x01425fc0,41,auto_bind_vtable_01425fc0,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x01426c20,41,auto_bind_vtable_01426c20,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x01426c50,41,auto_bind_vtable_01426c50,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x01426c80,41,auto_bind_vtable_01426c80,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x01426da0,41,auto_bind_vtable_01426da0,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x01426dd0,41,auto_bind_vtable_01426dd0,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x01426e00,41,auto_bind_vtable_01426e00,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
 0x01426ea0,1,auto_empty_01426ea0,auto,edge-verified,Generated from the empty template
+0x01427500,41,auto_bind_vtable_01427500,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x01427530,41,auto_bind_vtable_01427530,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x01427560,41,auto_bind_vtable_01427560,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x014325f0,41,auto_bind_vtable_014325f0,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x01432620,41,auto_bind_vtable_01432620,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x01432650,41,auto_bind_vtable_01432650,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
 0x01432680,4,auto_return_field_01432680,auto,edge-verified,Generated from the return field template
 0x014326a0,4,auto_return_field_014326a0,auto,edge-verified,Generated from the return field template
+0x014329c0,41,auto_bind_vtable_014329c0,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x014329f0,41,auto_bind_vtable_014329f0,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x01432a20,41,auto_bind_vtable_01432a20,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
 0x01432a90,1,auto_empty_01432a90,auto,edge-verified,Generated from the empty template
+0x01432ab0,41,auto_bind_vtable_01432ab0,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x01432ae0,41,auto_bind_vtable_01432ae0,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x01432b10,41,auto_bind_vtable_01432b10,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x01432c10,41,auto_bind_vtable_01432c10,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x01432c40,41,auto_bind_vtable_01432c40,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x01432c70,41,auto_bind_vtable_01432c70,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x01432f80,41,auto_bind_vtable_01432f80,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x01432fb0,41,auto_bind_vtable_01432fb0,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x01432fe0,41,auto_bind_vtable_01432fe0,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x014332b0,41,auto_bind_vtable_014332b0,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x014332e0,41,auto_bind_vtable_014332e0,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x01433310,41,auto_bind_vtable_01433310,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x014333b0,41,auto_bind_vtable_014333b0,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x014333e0,41,auto_bind_vtable_014333e0,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x01433410,41,auto_bind_vtable_01433410,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x01433700,41,auto_bind_vtable_01433700,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x01433730,41,auto_bind_vtable_01433730,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x01433760,41,auto_bind_vtable_01433760,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x01433a60,41,auto_bind_vtable_01433a60,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x01433a90,41,auto_bind_vtable_01433a90,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x01433ac0,41,auto_bind_vtable_01433ac0,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x01434980,41,auto_bind_vtable_01434980,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x014349b0,41,auto_bind_vtable_014349b0,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x014349e0,41,auto_bind_vtable_014349e0,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x01435910,41,auto_bind_vtable_01435910,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x01435940,41,auto_bind_vtable_01435940,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x01435970,41,auto_bind_vtable_01435970,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
 0x01435f20,1,auto_empty_01435f20,auto,edge-verified,Generated from the empty template
 0x01435f30,5,auto_return_field_01435f30,auto,edge-verified,Generated from the return field template
 0x01435f40,1,auto_empty_01435f40,auto,edge-verified,Generated from the empty template
 0x014361e0,1,auto_empty_014361e0,auto,edge-verified,Generated from the empty template
+0x01436930,41,auto_bind_vtable_01436930,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x01436960,41,auto_bind_vtable_01436960,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x01436990,41,auto_bind_vtable_01436990,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x01436b60,41,auto_bind_vtable_01436b60,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x01436b90,41,auto_bind_vtable_01436b90,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x01436bc0,41,auto_bind_vtable_01436bc0,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x01436e50,41,auto_bind_vtable_01436e50,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x01436e80,41,auto_bind_vtable_01436e80,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x01436eb0,41,auto_bind_vtable_01436eb0,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x014371f0,41,auto_bind_vtable_014371f0,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x01437220,41,auto_bind_vtable_01437220,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x01437250,41,auto_bind_vtable_01437250,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x01437500,41,auto_bind_vtable_01437500,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x01437530,41,auto_bind_vtable_01437530,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x01437560,41,auto_bind_vtable_01437560,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x01437810,41,auto_bind_vtable_01437810,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x01437840,41,auto_bind_vtable_01437840,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x01437870,41,auto_bind_vtable_01437870,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x01437b20,41,auto_bind_vtable_01437b20,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x01437b50,41,auto_bind_vtable_01437b50,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x01437b80,41,auto_bind_vtable_01437b80,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x01437e30,41,auto_bind_vtable_01437e30,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x01437e60,41,auto_bind_vtable_01437e60,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x01437e90,41,auto_bind_vtable_01437e90,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
 0x01438650,5,auto_return_field_01438650,auto,edge-verified,Generated from the return field template
+0x01438af0,41,auto_bind_vtable_01438af0,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x01438b20,41,auto_bind_vtable_01438b20,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x01438b50,41,auto_bind_vtable_01438b50,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
 0x01438d00,28,auto_destroy_then_release_01438d00,auto,edge-verified,Same instructions as misc_destroy_then_release with other addresses
+0x014391a0,41,auto_bind_vtable_014391a0,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x014391d0,41,auto_bind_vtable_014391d0,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x01439200,41,auto_bind_vtable_01439200,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
 0x01439310,28,auto_destroy_then_release_01439310,auto,edge-verified,Same instructions as misc_destroy_then_release with other addresses
 0x01439360,5,auto_return_field_01439360,auto,edge-verified,Generated from the return field template
 0x01439370,5,auto_return_field_01439370,auto,edge-verified,Generated from the return field template
 0x01439380,5,auto_return_field_01439380,auto,edge-verified,Generated from the return field template
 0x01439390,5,auto_return_field_01439390,auto,edge-verified,Generated from the return field template
+0x014393a0,41,auto_bind_vtable_014393a0,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x014393d0,41,auto_bind_vtable_014393d0,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x01439400,41,auto_bind_vtable_01439400,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
 0x014395c0,28,auto_destroy_then_release_014395c0,auto,edge-verified,Same instructions as misc_destroy_then_release with other addresses
+0x0143b9d0,41,auto_bind_vtable_0143b9d0,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x0143ba00,41,auto_bind_vtable_0143ba00,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x0143ba30,41,auto_bind_vtable_0143ba30,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
 0x0143bcc0,1,auto_empty_0143bcc0,auto,edge-verified,Generated from the empty template
 0x0143bcd0,1,auto_empty_0143bcd0,auto,edge-verified,Generated from the empty template
 0x0143bce0,1,auto_empty_0143bce0,auto,edge-verified,Generated from the empty template
@@ -4700,57 +5575,282 @@ address,size,name,system,status,notes
 0x0143bd40,1,auto_empty_0143bd40,auto,edge-verified,Generated from the empty template
 0x0143bd50,1,auto_empty_0143bd50,auto,edge-verified,Generated from the empty template
 0x0143bda0,1,auto_empty_0143bda0,auto,edge-verified,Generated from the empty template
+0x0143bdf0,41,auto_bind_vtable_0143bdf0,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x0143be20,41,auto_bind_vtable_0143be20,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x0143be50,41,auto_bind_vtable_0143be50,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x0143bf20,41,auto_bind_vtable_0143bf20,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x0143bf50,41,auto_bind_vtable_0143bf50,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x0143bf80,41,auto_bind_vtable_0143bf80,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
 0x0143c400,1,auto_empty_0143c400,auto,edge-verified,Generated from the empty template
+0x0143ce10,41,auto_bind_vtable_0143ce10,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x0143ce40,41,auto_bind_vtable_0143ce40,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x0143ce70,41,auto_bind_vtable_0143ce70,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x0143d470,41,auto_bind_vtable_0143d470,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x0143d4a0,41,auto_bind_vtable_0143d4a0,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x0143d4d0,41,auto_bind_vtable_0143d4d0,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
 0x0143d800,4,auto_return_field_0143d800,auto,edge-verified,Generated from the return field template
+0x0143d810,41,auto_bind_vtable_0143d810,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x0143d840,41,auto_bind_vtable_0143d840,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x0143d870,41,auto_bind_vtable_0143d870,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x0143e0e0,41,auto_bind_vtable_0143e0e0,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x0143e110,41,auto_bind_vtable_0143e110,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x0143e140,41,auto_bind_vtable_0143e140,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
 0x0143e200,1,auto_empty_0143e200,auto,edge-verified,Generated from the empty template
 0x0143e490,174,frame_timing_task_flush_queue_0143e490,frame_timing,verified,"task manager queue flush: lock, run, destroy and free every queued object, empty the list, unlock"
+0x0143e540,41,auto_bind_vtable_0143e540,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x0143e570,41,auto_bind_vtable_0143e570,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x0143e5a0,41,auto_bind_vtable_0143e5a0,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
 0x0143e750,28,auto_destroy_then_release_0143e750,auto,edge-verified,Same instructions as misc_destroy_then_release with other addresses
+0x0143eff0,41,auto_bind_vtable_0143eff0,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x0143f020,41,auto_bind_vtable_0143f020,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x0143f050,41,auto_bind_vtable_0143f050,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x0143f8b0,41,auto_bind_vtable_0143f8b0,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x0143f8e0,41,auto_bind_vtable_0143f8e0,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x0143f910,41,auto_bind_vtable_0143f910,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
 0x0143f9e0,8,auto_fixed_address_0143f9e0,auto,edge-verified,Same instructions as misc_plain_type_address with other addresses
 0x0143f9f0,18,frame_timing_task_set_frame_value_0143f9f0,frame_timing,verified,task manager: copies the float at +0x8 of the frame information to the global 0x058b7e08
+0x0143fa30,41,auto_bind_vtable_0143fa30,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x0143fa60,41,auto_bind_vtable_0143fa60,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x0143fa90,41,auto_bind_vtable_0143fa90,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
 0x014400a0,180,frame_timing_task_workers_step_014400a0,frame_timing,verified,"task manager workers: three rounds over the worker queues +0x58, +0x68, +0x60"
 0x014403d0,1,auto_empty_014403d0,auto,edge-verified,Generated from the empty template
+0x014405b0,41,auto_bind_vtable_014405b0,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x014405e0,41,auto_bind_vtable_014405e0,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x01440610,41,auto_bind_vtable_01440610,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x01440700,41,auto_bind_vtable_01440700,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x01440730,41,auto_bind_vtable_01440730,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x01440760,41,auto_bind_vtable_01440760,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x01440d60,41,auto_bind_vtable_01440d60,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x01440d90,41,auto_bind_vtable_01440d90,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x01440dc0,41,auto_bind_vtable_01440dc0,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x014412b0,41,auto_bind_vtable_014412b0,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x014412e0,41,auto_bind_vtable_014412e0,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x01441310,41,auto_bind_vtable_01441310,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
 0x014413c0,28,auto_destroy_then_release_014413c0,auto,edge-verified,Same instructions as misc_destroy_then_release with other addresses
+0x014415a0,41,auto_bind_vtable_014415a0,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x014415d0,41,auto_bind_vtable_014415d0,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x01441600,41,auto_bind_vtable_01441600,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x01441870,41,auto_bind_vtable_01441870,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x014418a0,41,auto_bind_vtable_014418a0,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x014418d0,41,auto_bind_vtable_014418d0,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x014422c0,41,auto_bind_vtable_014422c0,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x014422f0,41,auto_bind_vtable_014422f0,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x01442320,41,auto_bind_vtable_01442320,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x01444270,41,auto_bind_vtable_01444270,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x014442a0,41,auto_bind_vtable_014442a0,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x014442d0,41,auto_bind_vtable_014442d0,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
 0x01444570,28,auto_destroy_then_release_01444570,auto,edge-verified,Same instructions as misc_destroy_then_release with other addresses
 0x014448a0,1,auto_empty_014448a0,auto,edge-verified,Generated from the empty template
 0x01444980,1,auto_empty_01444980,auto,edge-verified,Generated from the empty template
+0x01444a40,41,auto_bind_vtable_01444a40,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x01444a70,41,auto_bind_vtable_01444a70,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x01444aa0,41,auto_bind_vtable_01444aa0,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
 0x01444b40,28,auto_destroy_then_release_01444b40,auto,edge-verified,Same instructions as misc_destroy_then_release with other addresses
+0x01444dd0,41,auto_bind_vtable_01444dd0,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x01444e00,41,auto_bind_vtable_01444e00,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x01444e30,41,auto_bind_vtable_01444e30,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
 0x01444ed0,28,auto_destroy_then_release_01444ed0,auto,edge-verified,Same instructions as misc_destroy_then_release with other addresses
 0x01444f00,1,auto_empty_01444f00,auto,edge-verified,Generated from the empty template
 0x01444f10,1,auto_empty_01444f10,auto,edge-verified,Generated from the empty template
 0x01445070,1,auto_empty_01445070,auto,edge-verified,Generated from the empty template
+0x014452d0,41,auto_bind_vtable_014452d0,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x01445300,41,auto_bind_vtable_01445300,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x01445330,41,auto_bind_vtable_01445330,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
 0x01445650,5,auto_return_field_01445650,auto,edge-verified,Generated from the return field template
+0x01445820,41,auto_bind_vtable_01445820,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x01445850,41,auto_bind_vtable_01445850,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x01445880,41,auto_bind_vtable_01445880,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
 0x01445a50,6,auto_return_constant_01445a50,auto,edge-verified,Generated from the return constant template
 0x01445e00,1,auto_empty_01445e00,auto,edge-verified,Generated from the empty template
+0x014469b0,41,auto_bind_vtable_014469b0,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x014469e0,41,auto_bind_vtable_014469e0,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x01446a10,41,auto_bind_vtable_01446a10,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x01447e10,41,auto_bind_vtable_01447e10,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x01447e40,41,auto_bind_vtable_01447e40,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x01447e70,41,auto_bind_vtable_01447e70,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x01448390,41,auto_bind_vtable_01448390,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x014483c0,41,auto_bind_vtable_014483c0,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x014483f0,41,auto_bind_vtable_014483f0,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x014488e0,41,auto_bind_vtable_014488e0,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x01448910,41,auto_bind_vtable_01448910,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x01448940,41,auto_bind_vtable_01448940,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x014489f0,41,auto_bind_vtable_014489f0,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x01448a20,41,auto_bind_vtable_01448a20,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x01448a50,41,auto_bind_vtable_01448a50,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x01448ce0,41,auto_bind_vtable_01448ce0,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x01448d10,41,auto_bind_vtable_01448d10,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x01448d40,41,auto_bind_vtable_01448d40,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x01449120,41,auto_bind_vtable_01449120,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x01449150,41,auto_bind_vtable_01449150,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x01449180,41,auto_bind_vtable_01449180,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x014493c0,41,auto_bind_vtable_014493c0,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x014493f0,41,auto_bind_vtable_014493f0,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x01449420,41,auto_bind_vtable_01449420,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x0144a740,41,auto_bind_vtable_0144a740,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x0144a770,41,auto_bind_vtable_0144a770,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x0144a7a0,41,auto_bind_vtable_0144a7a0,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
 0x0144a9c0,28,auto_destroy_then_release_0144a9c0,auto,edge-verified,Same instructions as misc_destroy_then_release with other addresses
 0x0144ad20,7,auto_return_field_0144ad20,auto,edge-verified,Generated from the return field template
+0x0144ae60,41,auto_bind_vtable_0144ae60,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x0144ae90,41,auto_bind_vtable_0144ae90,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x0144aec0,41,auto_bind_vtable_0144aec0,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x0144ba10,41,auto_bind_vtable_0144ba10,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x0144ba40,41,auto_bind_vtable_0144ba40,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x0144ba70,41,auto_bind_vtable_0144ba70,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
 0x0144e760,1,auto_empty_0144e760,auto,edge-verified,Generated from the empty template
 0x01450330,1,auto_empty_01450330,auto,edge-verified,Generated from the empty template
+0x01450720,41,auto_bind_vtable_01450720,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x01450750,41,auto_bind_vtable_01450750,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x01450780,41,auto_bind_vtable_01450780,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
 0x01450860,1,auto_empty_01450860,auto,edge-verified,Generated from the empty template
+0x01450e10,41,auto_bind_vtable_01450e10,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x01450e40,41,auto_bind_vtable_01450e40,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x01450e70,41,auto_bind_vtable_01450e70,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x014511b0,41,auto_bind_vtable_014511b0,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x014511e0,41,auto_bind_vtable_014511e0,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x01451210,41,auto_bind_vtable_01451210,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x01451c90,41,auto_bind_vtable_01451c90,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x01451cc0,41,auto_bind_vtable_01451cc0,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x01451cf0,41,auto_bind_vtable_01451cf0,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x01455be0,41,auto_bind_vtable_01455be0,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x01455c10,41,auto_bind_vtable_01455c10,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x01455c40,41,auto_bind_vtable_01455c40,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x01455cc0,41,auto_bind_vtable_01455cc0,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x01455cf0,41,auto_bind_vtable_01455cf0,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x01455d20,41,auto_bind_vtable_01455d20,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x01456040,41,auto_bind_vtable_01456040,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x01456070,41,auto_bind_vtable_01456070,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x014560a0,41,auto_bind_vtable_014560a0,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x01456a10,41,auto_bind_vtable_01456a10,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x01456a40,41,auto_bind_vtable_01456a40,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x01456a70,41,auto_bind_vtable_01456a70,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x01456cc0,41,auto_bind_vtable_01456cc0,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x01456cf0,41,auto_bind_vtable_01456cf0,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x01456d20,41,auto_bind_vtable_01456d20,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x01457210,41,auto_bind_vtable_01457210,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x01457240,41,auto_bind_vtable_01457240,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x01457270,41,auto_bind_vtable_01457270,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
 0x01457570,3,auto_return_zero_01457570,auto,edge-verified,Generated from the return zero template
+0x01457b70,41,auto_bind_vtable_01457b70,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x01457ba0,41,auto_bind_vtable_01457ba0,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x01457bd0,41,auto_bind_vtable_01457bd0,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x01457c60,41,auto_bind_vtable_01457c60,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x01457c90,41,auto_bind_vtable_01457c90,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x01457cc0,41,auto_bind_vtable_01457cc0,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
 0x01458440,28,auto_destroy_then_release_01458440,auto,edge-verified,Same instructions as misc_destroy_then_release with other addresses
 0x01459080,1,auto_empty_01459080,auto,edge-verified,Generated from the empty template
 0x01459190,1,auto_empty_01459190,auto,edge-verified,Generated from the empty template
+0x014592a0,41,auto_bind_vtable_014592a0,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x014592d0,41,auto_bind_vtable_014592d0,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x01459300,41,auto_bind_vtable_01459300,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x01459d00,41,auto_bind_vtable_01459d00,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x01459d30,41,auto_bind_vtable_01459d30,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x01459d60,41,auto_bind_vtable_01459d60,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x01459dd0,41,auto_bind_vtable_01459dd0,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x01459e00,41,auto_bind_vtable_01459e00,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x01459e30,41,auto_bind_vtable_01459e30,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
 0x01459ef0,1,auto_empty_01459ef0,auto,edge-verified,Generated from the empty template
+0x01459f00,41,auto_bind_vtable_01459f00,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x01459f30,41,auto_bind_vtable_01459f30,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x01459f60,41,auto_bind_vtable_01459f60,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x0145a030,41,auto_bind_vtable_0145a030,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x0145a060,41,auto_bind_vtable_0145a060,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x0145a090,41,auto_bind_vtable_0145a090,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
 0x0145ad90,1,auto_empty_0145ad90,auto,edge-verified,Generated from the empty template
 0x0145aed0,1,auto_empty_0145aed0,auto,edge-verified,Generated from the empty template
+0x0145b5e0,41,auto_bind_vtable_0145b5e0,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x0145b610,41,auto_bind_vtable_0145b610,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x0145b640,41,auto_bind_vtable_0145b640,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
 0x0145b6e0,1,auto_empty_0145b6e0,auto,edge-verified,Generated from the empty template
+0x0145b700,41,auto_bind_vtable_0145b700,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x0145b730,41,auto_bind_vtable_0145b730,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x0145b760,41,auto_bind_vtable_0145b760,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x0145bb60,41,auto_bind_vtable_0145bb60,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x0145bb90,41,auto_bind_vtable_0145bb90,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x0145bbc0,41,auto_bind_vtable_0145bbc0,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
 0x0145bc70,1,auto_empty_0145bc70,auto,edge-verified,Generated from the empty template
+0x0145c770,41,auto_bind_vtable_0145c770,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x0145c7a0,41,auto_bind_vtable_0145c7a0,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x0145c7d0,41,auto_bind_vtable_0145c7d0,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
 0x0145c890,28,auto_destroy_then_release_0145c890,auto,edge-verified,Same instructions as misc_destroy_then_release with other addresses
+0x0145cb70,41,auto_bind_vtable_0145cb70,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x0145cba0,41,auto_bind_vtable_0145cba0,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x0145cbd0,41,auto_bind_vtable_0145cbd0,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
 0x0145cc80,28,auto_destroy_then_release_0145cc80,auto,edge-verified,Same instructions as misc_destroy_then_release with other addresses
+0x0145d020,41,auto_bind_vtable_0145d020,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x0145d050,41,auto_bind_vtable_0145d050,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x0145d080,41,auto_bind_vtable_0145d080,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
 0x0145d140,28,auto_destroy_then_release_0145d140,auto,edge-verified,Same instructions as misc_destroy_then_release with other addresses
+0x0145da00,41,auto_bind_vtable_0145da00,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x0145da30,41,auto_bind_vtable_0145da30,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x0145da60,41,auto_bind_vtable_0145da60,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x0145e530,41,auto_bind_vtable_0145e530,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x0145e560,41,auto_bind_vtable_0145e560,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x0145e590,41,auto_bind_vtable_0145e590,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x0145eaa0,41,auto_bind_vtable_0145eaa0,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x0145ead0,41,auto_bind_vtable_0145ead0,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x0145eb00,41,auto_bind_vtable_0145eb00,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x0145edb0,41,auto_bind_vtable_0145edb0,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x0145ede0,41,auto_bind_vtable_0145ede0,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x0145ee10,41,auto_bind_vtable_0145ee10,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
 0x0145f280,7,auto_return_field_0145f280,auto,edge-verified,Generated from the return field template
 0x0145f290,5,auto_return_member_address_0145f290,auto,edge-verified,Generated from the return member address template
+0x0145f2d0,41,auto_bind_vtable_0145f2d0,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x0145f300,41,auto_bind_vtable_0145f300,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x0145f330,41,auto_bind_vtable_0145f330,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x0145fc90,41,auto_bind_vtable_0145fc90,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x0145fcc0,41,auto_bind_vtable_0145fcc0,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x0145fcf0,41,auto_bind_vtable_0145fcf0,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
 0x014602e0,1,auto_empty_014602e0,auto,edge-verified,Generated from the empty template
 0x014602f0,1,auto_empty_014602f0,auto,edge-verified,Generated from the empty template
 0x014624a0,1,auto_empty_014624a0,auto,edge-verified,Generated from the empty template
 0x014624b0,1,auto_empty_014624b0,auto,edge-verified,Generated from the empty template
+0x014624c0,41,auto_bind_vtable_014624c0,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x014624f0,41,auto_bind_vtable_014624f0,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x01462520,41,auto_bind_vtable_01462520,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x01463300,41,auto_bind_vtable_01463300,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x01463330,41,auto_bind_vtable_01463330,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x01463360,41,auto_bind_vtable_01463360,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
 0x01463de0,1,auto_empty_01463de0,auto,edge-verified,Generated from the empty template
+0x014644f0,41,auto_bind_vtable_014644f0,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x01464520,41,auto_bind_vtable_01464520,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x01464550,41,auto_bind_vtable_01464550,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
 0x01464640,28,auto_destroy_then_release_01464640,auto,edge-verified,Same instructions as misc_destroy_then_release with other addresses
 0x01464d60,6,auto_return_constant_01464d60,auto,edge-verified,Generated from the return constant template
 0x01464d90,1,auto_empty_01464d90,auto,edge-verified,Generated from the empty template
+0x01464da0,41,auto_bind_vtable_01464da0,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x01464dd0,41,auto_bind_vtable_01464dd0,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x01464e00,41,auto_bind_vtable_01464e00,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x01464f70,41,auto_bind_vtable_01464f70,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x01464fa0,41,auto_bind_vtable_01464fa0,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x01464fd0,41,auto_bind_vtable_01464fd0,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x01466c70,41,auto_bind_vtable_01466c70,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x01466ca0,41,auto_bind_vtable_01466ca0,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x01466cd0,41,auto_bind_vtable_01466cd0,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
 0x01466d70,1,auto_empty_01466d70,auto,edge-verified,Generated from the empty template
 0x01466d80,5,auto_return_field_01466d80,auto,edge-verified,Generated from the return field template
+0x01466d90,41,auto_bind_vtable_01466d90,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x01466dc0,41,auto_bind_vtable_01466dc0,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x01466df0,41,auto_bind_vtable_01466df0,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x01466f00,41,auto_bind_vtable_01466f00,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x01466f30,41,auto_bind_vtable_01466f30,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x01466f60,41,auto_bind_vtable_01466f60,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x014675c0,41,auto_bind_vtable_014675c0,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x014675f0,41,auto_bind_vtable_014675f0,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x01467620,41,auto_bind_vtable_01467620,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
 0x014676b0,1,auto_empty_014676b0,auto,edge-verified,Generated from the empty template
+0x014677f0,41,auto_bind_vtable_014677f0,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x01467820,41,auto_bind_vtable_01467820,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x01467850,41,auto_bind_vtable_01467850,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x014680c0,41,auto_bind_vtable_014680c0,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x014680f0,41,auto_bind_vtable_014680f0,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x01468120,41,auto_bind_vtable_01468120,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x01468380,41,auto_bind_vtable_01468380,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x014683b0,41,auto_bind_vtable_014683b0,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x014683e0,41,auto_bind_vtable_014683e0,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x014684d0,41,auto_bind_vtable_014684d0,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x01468500,41,auto_bind_vtable_01468500,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x01468530,41,auto_bind_vtable_01468530,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
 0x0146fdc0,3,auto_return_zero_0146fdc0,auto,edge-verified,Generated from the return zero template
 0x01470260,3,auto_return_zero_01470260,auto,edge-verified,Generated from the return zero template
 0x014711d0,4,auto_return_field_014711d0,auto,edge-verified,Generated from the return field template
@@ -25433,6 +26533,7 @@ address,size,name,system,status,notes
 0x02783d80,1,auto_empty_02783d80,auto,edge-verified,Generated from the empty template
 0x02784c80,1,auto_empty_02784c80,auto,edge-verified,Generated from the empty template
 0x027852a0,6,auto_return_constant_027852a0,auto,edge-verified,Generated from the return constant template
+0x02785310,41,auto_bind_vtable_02785310,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
 0x02785340,1,auto_empty_02785340,auto,edge-verified,Generated from the empty template
 0x02785510,1,auto_empty_02785510,auto,edge-verified,Generated from the empty template
 0x02785520,1,auto_empty_02785520,auto,edge-verified,Generated from the empty template
