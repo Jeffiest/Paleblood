@@ -10949,6 +10949,7 @@ address,size,name,system,status,notes
 0x01920fe0,205,auto_initialize_static_wide_string_01920fe0,auto,edge-verified,Same instructions as engine_initialize_static_wide_string_018867e0 with other addresses
 0x01921150,3,auto_return_zero_01921150,auto,edge-verified,Generated from the return zero template
 0x01922000,205,auto_initialize_static_wide_string_01922000,auto,edge-verified,Same instructions as engine_initialize_static_wide_string_018867e0 with other addresses
+0x019220d0,89,misc_init_rows_spaced_fields_5953fd0,misc,edge-verified,Copy three constant rows into the record at 0x05953fd0 and set its four fields.
 0x019222c0,205,auto_initialize_static_wide_string_019222c0,auto,edge-verified,Same instructions as engine_initialize_static_wide_string_018867e0 with other addresses
 0x01922390,153,auto_init_rows_fields_total_01922390,auto,edge-verified,Same instructions as misc_init_rows_fields_total_5940ef0 with other addresses
 0x019224c0,205,auto_initialize_static_wide_string_019224c0,auto,edge-verified,Same instructions as engine_initialize_static_wide_string_018867e0 with other addresses
