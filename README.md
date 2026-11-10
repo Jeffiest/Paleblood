@@ -3,7 +3,7 @@
 *Bloodborne, rewritten as readable C++ one verified function at a time, running natively on a PC on a runtime of its own.*
 
 <!-- status:start -->
-The game doesn't run on Paleblood yet: 21 of 157757 functions are verified (0.01%). On [our own runtime](runtime/) the executable's boot gets as far as the run's time limit, still running (no call stopped it), with 453 of 686 system imports implemented.
+The game doesn't run on Paleblood yet: 21 of 179038 functions are verified (0.01%). On [our own runtime](runtime/) the executable's boot gets as far as the run's time limit, still running (no call stopped it), with 453 of 686 system imports implemented.
 <!-- status:end -->
 
 **[Start here](https://github.com/Yharnam-Hunters/Paleblood/issues/31)** ·
@@ -45,9 +45,9 @@ It is made by people who love this game and want it to outlive the hardware it w
 <!-- progress:start -->
 | | Functions | Bytes |
 |---|---:|---:|
-| Target (Ghidra export) | 157757 | 42487347 |
-| Replaced | 39771 (25.21%) | 932738 (2.20%) |
-| Edge-verified | 39771 (25.21%) | 932738 (2.20%) |
+| Target (Ghidra export) | 179038 | 43760090 |
+| Replaced | 39771 (22.21%) | 932738 (2.13%) |
+| Edge-verified | 39771 (22.21%) | 932738 (2.13%) |
 | Verified | 21 (0.01%) | 14010 (0.03%) |
 
 Each row includes the next: verified functions are also edge-verified and replaced.

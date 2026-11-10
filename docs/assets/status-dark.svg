@@ -876,14 +876,14 @@
 <text x="630.0" y="312.0" fill="#c3c2b7" font-size="12" font-weight="normal" text-anchor="start">Furthest milestone: first flip</text>
 <text x="630.0" y="334.0" fill="#c3c2b7" font-size="12" font-weight="normal" text-anchor="start">Stops at: the run&#x27;s time limit, still running (no call stopped</text>
 <text x="630.0" y="351.0" fill="#c3c2b7" font-size="12" font-weight="normal" text-anchor="start">it)</text>
-<text x="630.0" y="410.0" fill="#f0efec" font-size="14" font-weight="bold" text-anchor="start">Decompilation (of 157,757 functions)</text>
+<text x="630.0" y="410.0" fill="#f0efec" font-size="14" font-weight="bold" text-anchor="start">Decompilation (of 179,038 functions)</text>
 <text x="630.0" y="434.0" fill="#c3c2b7" font-size="12" font-weight="normal" text-anchor="start">replaced</text>
 <rect x="740" y="424" width="204" height="12" rx="2" fill="#3a3a37"/>
-<rect x="740" y="424" width="51.4" height="12" rx="2" fill="#3987e5"/>
+<rect x="740" y="424" width="45.3" height="12" rx="2" fill="#3987e5"/>
 <text x="984.0" y="434.0" fill="#f0efec" font-size="12" font-weight="normal" text-anchor="end">39,771</text>
 <text x="630.0" y="464.0" fill="#c3c2b7" font-size="12" font-weight="normal" text-anchor="start">edge-verified</text>
 <rect x="740" y="454" width="204" height="12" rx="2" fill="#3a3a37"/>
-<rect x="740" y="454" width="51.4" height="12" rx="2" fill="#3987e5"/>
+<rect x="740" y="454" width="45.3" height="12" rx="2" fill="#3987e5"/>
 <text x="984.0" y="464.0" fill="#f0efec" font-size="12" font-weight="normal" text-anchor="end">39,771</text>
 <text x="630.0" y="494.0" fill="#c3c2b7" font-size="12" font-weight="normal" text-anchor="start">verified</text>
 <rect x="740" y="484" width="204" height="12" rx="2" fill="#3a3a37"/>
