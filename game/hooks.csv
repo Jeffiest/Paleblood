@@ -7947,6 +7947,7 @@ address,replacement,system,returns
 0x01473320,bb_render_set_cb_color_control,render,void
 0x014733a0,bb_render_set_db_depth_control,render,void
 0x01473400,bb_render_set_db_stencil_control,render,void
+0x01473460,bb_auto_set_db_depth_control_01473460,auto,void
 0x01473590,bb_render_emit_present_preparation_scalar,render,i64
 0x014735f0,bb_render_emit_present_preparation_byte,render,i64
 0x01473650,bb_render_set_screen_offset,render,void
@@ -7957,12 +7958,15 @@ address,replacement,system,returns
 0x014741b0,bb_render_emit_draw_index_auto,render,void
 0x01474a30,bb_auto_set_cb_target_mask_01474a30,auto,void
 0x01475370,bb_render_emit_num_instances,render,void
+0x01475a90,bb_auto_set_db_depth_control_01475a90,auto,void
 0x01475da0,bb_render_emit_event_write,render,void
 0x014765e0,bb_render_configure_viewport,render,void
 0x01476790,bb_render_configure_screen_scissor,render,void
 0x01476980,bb_render_emit_pa_cl_vte_cntl,render,void
 0x014769e0,bb_render_emit_present_last_record_packet,render,i64
+0x01476b30,bb_auto_set_db_depth_control_01476b30,auto,void
 0x01476da0,bb_auto_set_cb_target_mask_01476da0,auto,void
+0x01476e00,bb_auto_set_db_depth_control_01476e00,auto,void
 0x01477b30,bb_render_command_emit_counter_operation,render,void
 0x014784a0,bb_render_command_prepare_submission,render,void
 0x01485040,bb_auto_set_record_register_enabled_01485040,auto,i32

@@ -48087,6 +48087,10 @@ auto_set_cb_target_mask_014732c0,edge,,14,14,0,0,4a1b565cf0134bea,2026-11-10
 auto_set_cb_target_mask_01474040,edge,,14,14,0,0,4a1b565cf0134bea,2026-11-10
 auto_set_cb_target_mask_01474a30,edge,,14,14,0,0,4a1b565cf0134bea,2026-11-10
 auto_set_cb_target_mask_01476da0,edge,,14,14,0,0,4a1b565cf0134bea,2026-11-10
+auto_set_db_depth_control_01473460,edge,,14,14,0,0,51f35bc6006fc2c0,2026-11-10
+auto_set_db_depth_control_01475a90,edge,,14,14,0,0,51f35bc6006fc2c0,2026-11-10
+auto_set_db_depth_control_01476b30,edge,,14,14,0,0,51f35bc6006fc2c0,2026-11-10
+auto_set_db_depth_control_01476e00,edge,,14,14,0,0,51f35bc6006fc2c0,2026-11-10
 auto_set_link_00e599c0,edge,,4,4,0,0,a0f79ed3d741c6c9,2026-11-10
 auto_set_link_00f3cc50,edge,,4,4,0,0,a0f79ed3d741c6c9,2026-11-10
 auto_set_link_010d2580,edge,,4,4,0,0,a0f79ed3d741c6c9,2026-11-10
