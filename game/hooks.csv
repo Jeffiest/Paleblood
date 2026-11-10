@@ -6628,6 +6628,7 @@ address,replacement,system,returns
 0x014712c0,bb_auto_return_zero_014712c0,auto,i64
 0x014712d0,bb_render_compose_record_encoding_fields,render,i32
 0x01471310,bb_render_pack_record_mapping_word,render,i64
+0x01471710,bb_auto_record_encoding_metadata_01471710,auto,i32
 0x01471730,bb_render_record_encoding_metadata,render,i32
 0x01471770,bb_render_record_encoding_byte_flags,render,i32
 0x014717a0,bb_render_record_encoding_components,render,i8

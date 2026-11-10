@@ -21,6 +21,7 @@ address,name,size,cases,addresses
 0x0139b610,misc_destroy_then_release,28,game/misc/destroy_then_release_cases.py,0x0139b630 0x02fbe588
 0x0139bc90,misc_child_call_or_zero,24,game/misc/child_call_or_zero_cases.py,0x01441280
 0x0139bcb0,misc_forward_child_tail,15,game/misc/forward_child_tail_cases.py,0x01440fb0
+0x01471730,render_record_encoding_metadata,21,game/render/record_encoding_metadata_cases.py,0x04b2bdd0
 0x014853f0,render_set_record_register_enabled,16,game/render/set_record_register_enabled_cases.py,
 0x01489c40,render_record_step_user_pa_enabled,16,game/render/record_step_user_pa_enabled_cases.py,0x02fc07a8
 0x018867e0,engine_initialize_static_wide_string_018867e0,205,game/engine/static_wide_string_init_018867e0_cases.py,0x057e3be0 0x05acebc8 0x05940670 0x02fa2b10 0x04b37dc0 0x024b55b0 0x05aceb90 0x02a44140 0x0553b490 0x02fbe548 0x02fbe4f8

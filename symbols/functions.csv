@@ -6629,6 +6629,7 @@ address,size,name,system,status,notes
 0x014712c0,3,auto_return_zero_014712c0,auto,edge-verified,Generated from the return zero template
 0x014712d0,51,render_compose_record_encoding_fields,render,edge-verified,Pack one byte and five masked fields into an encoding DWORD; no memory access.
 0x01471310,544,render_pack_record_mapping_word,render,edge-verified,Pack numeric mapping fields with priority masks and full-width mode handling; return a zero-extended DWORD.
+0x01471710,21,auto_record_encoding_metadata_01471710,auto,edge-verified,Same instructions as render_record_encoding_metadata with other addresses
 0x01471730,21,render_record_encoding_metadata,render,edge-verified,Bounded first-byte metadata lookup; preserve original table entries and zero fallback.
 0x01471770,27,render_record_encoding_byte_flags,render,edge-verified,"Map encoding byte 4 to 3, byte 2 to 1, and all other byte values to zero."
 0x014717a0,505,render_record_encoding_components,render,edge-verified,Select ordered packed component arrangement; optional output only on success and Boolean AL contract.
