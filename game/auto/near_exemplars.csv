@@ -14,6 +14,7 @@ address,name,size,cases,home,addresses,exchange
 0x01e50a30,misc_mark_keyed_handle_active,5,game/auto/near_set_flag_bits_01e50a30_cases.py,game/misc,,slots
 0x02242990,misc_base_delete_02242990,66,game/misc/base_delete_02242990_cases.py,game/misc,0x0566fa90 0x057e40f8,text
 0x02242a10,misc_member_call_02242a10,30,game/auto/near_member_call_02242a10_cases.py,game/misc,,slots
+0x02244000,misc_member_owner_destroy_02244000,42,game/auto/near_member_owner_destroy_02244000_cases.py,game/misc,0x0574f2e0 0x013e68b0 0x013e8250,slots
 0x026e6f30,misc_forward_with_mode,43,game/auto/near_forward_with_mode_026e6f30_cases.py,game/misc,0x05940dd8 0x02586da0,slots
 0x02b3a500,misc_set_value_word_130,8,game/auto/near_set_word_02b3a500_cases.py,game/misc,,slots
 0x02b3a500,misc_set_value_word_130,8,game/misc/set_value_word_130_cases.py,game/misc,,text
