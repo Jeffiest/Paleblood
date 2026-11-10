@@ -10027,8 +10027,20 @@ address,size,name,system,status,notes
 0x018883d0,168,misc_release_handle_record,misc,edge-verified,Sets the record vtable frees its handle registers the record with the registry when one exists then releases the record and returns the release result
 0x01888480,155,misc_register_handle_record,misc,edge-verified,Sets the record vtable frees its handle and registers the record with the registry when one exists using a scratch handle
 0x01888520,15,misc_test_and_set_flag,misc,edge-verified,Reports whether the record flag byte at 0x0c was already set and sets it when it was clear
-0x01888650,30,misc_forward_tagged_request,misc,edge-verified,Forwards a tagged request payload with a format string and a holder count to the library wide formatter when the 32-bit tag equals 2; otherwise returns without a call; returns nothing
+0x01888a00,205,misc_init_shared_record_once_guarded,misc,edge-verified,Guarded copy of misc_init_shared_record_once with the same setup and flag query; the stack guard is left to the compiler and the copy after its failure call is omitted
 0x01888b10,1,auto_empty_01888b10,auto,edge-verified,Generated from the empty template
+0x01888b30,50,misc_tail_call_offset_member_thunk,misc,edge-verified,Tail calls the target of a member thunk on its object adjusted by +0x18 with the second record value and 32-bit argument; a zero target or null object returns without a call
+0x01888b80,28,misc_release_after_empty_call_01888b80,misc,edge-verified,Same body as misc_release_after_empty_call at 0x01887f20: calls the empty routine then tail calls the release routine with the object
+0x01888ba0,31,misc_forward_record_to_slot_90,misc,edge-verified,Passes the record value and the 32-bit mode behind its pointer with the object to its vtable slot at +0x90 and returns that result
+0x01888bd0,28,misc_call_then_release_01888bd0,misc,edge-verified,Calls the routine 0x01402180 with the object then tail calls the release routine 0x02fbe588 with the same object and returns its result
+0x01888bf0,150,misc_call_member_with_text_record,misc,edge-verified,Measures the thunk text when its first unit is nonzero then passes the subject text and length to a routine and calls the member target with a kind-two record holding the subject
+0x01888c90,102,misc_call_member_with_record,misc,edge-verified,Calls the member thunk target with the adjusted object a kind-zero record on the stack holding two values and the thunk 32-bit argument; a zero target makes no call
+0x01888d00,102,misc_call_member_with_flagged_record,misc,edge-verified,Calls the member thunk target with the adjusted object a kind-one record on the stack holding two values and the thunk 32-bit argument; a zero target makes no call
+0x01888e60,116,misc_init_flagged_payload_or_allocate,misc,edge-verified,Sets the release vtable kind size and payload of a flagged object and allocates the payload from the shared allocator when none is given and a size is
+0x01888ee0,64,misc_free_flagged_payload_then_release,misc,edge-verified,Sets the release vtable then frees a flagged payload through the shared allocator slot at +0x70 and tail calls the library release with the object
+0x01888f20,65,misc_free_flagged_payload_and_clear,misc,edge-verified,Sets the release vtable then frees a flagged payload through the shared allocator slot at +0x70 and clears the payload pointer
+0x01888f70,91,misc_bump_allocate_block,misc,edge-verified,Stores the offset of the pending block from the cursor then allocates an aligned eight-byte block from the arena with two 16-bit tags and returns the aligned cursor
+0x01888fd0,29,misc_finish_pending_block_offset,misc,edge-verified,Stores the record limit minus the pending block address plus eight in the block offset word then clears the pending block; no pending block changes nothing
 0x01889200,205,auto_initialize_static_wide_string_01889200,auto,edge-verified,Same instructions as engine_initialize_static_wide_string_018867e0 with other addresses
 0x01889310,6,auto_return_constant_01889310,auto,edge-verified,Generated from the return constant template
 0x0188a400,28,auto_destroy_then_release_0188a400,auto,edge-verified,Same instructions as misc_destroy_then_release with other addresses

@@ -39500,13 +39500,18 @@ misc_bounded_range_object_free_secondary,edge,,6,6,0,0,7f6ef649f264032c,2026-11-
 misc_bounded_range_object_init,edge,,2,2,0,0,0cdb501f7c0fa1b2,2026-11-09
 misc_build_block_object_02244030,edge,,8,8,0,0,38e27fd9a7ca14d4,2026-11-09
 misc_build_object_block,edge,,5,5,0,0,a29a195f36f9bfda,2026-11-09
+misc_bump_allocate_block,edge,,11,11,0,0,51b5523399a9cd0b,2026-11-09
 misc_call_child_with_record,edge,,8,8,0,0,77e781488ef0a9c6,2026-11-10
-misc_call_object_slot_38,edge,,6,6,0,0,3afb82b5b15df3c8,2026-11-10
+misc_call_member_with_flagged_record,edge,,7,7,0,0,37a1098f00e8f653,2026-11-09
+misc_call_member_with_record,edge,,7,7,0,0,413c4b47c8db8320,2026-11-09
+misc_call_member_with_text_record,edge,,6,6,0,0,7e9c43cf09e7a738,2026-11-09
+misc_call_object_slot_38,edge,,4,4,0,0,6c7e909d98891c21,2026-11-09
 misc_call_object_slot_40,edge,,4,4,0,0,380340cc65ea56b3,2026-11-09
 misc_call_receiver_with_name,edge,,12,12,0,0,071239327e91b218,2026-11-10
 misc_call_record_member_target,edge,,12,12,0,0,5c35c57ca751fcf4,2026-11-10
 misc_call_then_forward,edge,,4,4,0,0,818ff73fa1c91dbd,2026-11-09
 misc_call_then_release,edge,,6,6,0,0,6448081417772e6c,2026-11-09
+misc_call_then_release_01888bd0,edge,,6,6,0,0,c522943d83802d1e,2026-11-09
 misc_chain_contains,edge,,9,9,0,0,8b4669a2c9b3075e,2026-11-09
 misc_chain_leaf_flag,edge,,6,6,0,0,1e265fb6c6640d38,2026-11-09
 misc_chain_ready_or_group_bit,edge,,29,29,0,0,47ee6d285c740872,2026-11-09
@@ -39580,6 +39585,7 @@ misc_find_or_create_keyed_object_b,edge,,15,15,0,0,214eb9daec5457a1,2026-11-09
 misc_find_or_create_match,edge,,13,13,0,0,e41a9060d1844ef8,2026-11-09
 misc_find_record_index,edge,,14,14,0,0,751d3dfb822f3451,2026-11-09
 misc_find_third_link_index,edge,,7,7,0,0,6898929a4f60d763,2026-11-09
+misc_finish_pending_block_offset,edge,,7,7,0,0,b18bd76ea4109872,2026-11-09
 misc_finish_tracked_update,edge,,15,15,0,0,70fff57b72b6f567,2026-11-09
 misc_flush_owner_once,edge,,5,5,0,0,45aa1a8e622f9bb7,2026-11-09
 misc_forward_child_tail,edge,,5,5,0,0,989f574c6f35b10e,2026-11-10
@@ -39589,11 +39595,13 @@ misc_forward_member_call_alt,edge,,7,7,0,0,c24f1217b84b4d1a,2026-11-09
 misc_forward_object_slot_20,edge,,4,4,0,0,094521e5af2c581a,2026-11-09
 misc_forward_object_slot_28,edge,,4,4,0,0,2b84d8770a12e4d1,2026-11-09
 misc_forward_object_slot_30_result,edge,,5,5,0,0,a68811a0511cb30c,2026-11-09
+misc_forward_record_to_slot_90,edge,,6,6,0,0,13bf2e60f0780a7e,2026-11-09
 misc_forward_renderer_resource,edge,,12,12,0,0,29478ed4c0e042eb,2026-11-09
-misc_forward_tagged_request,edge,,10,10,0,0,6f031f709950964f,2026-11-10
 misc_forward_value_to_child,edge,,9,9,0,0,009a8387a53acfdc,2026-11-09
 misc_forward_when_flagged_022441c0,edge,,8,8,0,0,b54830e07939c5a9,2026-11-09
 misc_forward_with_mode,edge,,12,12,0,0,f8904775e3ce7c3b,2026-11-09
+misc_free_flagged_payload_and_clear,edge,,7,7,0,0,8c4eb3b26cb0d508,2026-11-09
+misc_free_flagged_payload_then_release,edge,,7,7,0,0,9eb445d73a5d21e0,2026-11-09
 misc_gated_clear_value,edge,,5,3,2,0,351aa0b611603a91,2026-11-09
 misc_gated_read_bit,edge,,8,8,0,0,c4e1e1c4f4b89dcc,2026-11-09
 misc_gated_store_value,edge,,6,6,0,0,df2446ff7fd5897a,2026-11-09
@@ -39611,6 +39619,7 @@ misc_holder_search_second,edge,,4,4,0,0,8ea756833cdd18bc,2026-11-09
 misc_holder_search_third,edge,,4,4,0,0,e21c971d8e58be79,2026-11-09
 misc_id_owner_construct_02242df0,edge,,8,8,0,0,627eb0aab7bf21ee,2026-11-09
 misc_init_child_holder,edge,,4,4,0,0,129ed90552350e0f,2026-11-09
+misc_init_flagged_payload_or_allocate,edge,,7,1,6,0,3ea2b13bc7ea1b15,2026-11-09
 misc_init_item_table,edge,,11,11,0,0,a01f279af0fefd7b,2026-11-09
 misc_init_keyed_handle,edge,,5,5,0,0,5baab1272f6a7e05,2026-11-09
 misc_init_keyed_handle_variant,edge,,6,6,0,0,b7d0651b14eb1306,2026-11-09
@@ -39618,6 +39627,7 @@ misc_init_member_and_push,edge,,2,2,0,0,530234fd5d8fb0dd,2026-11-09
 misc_init_record_block,edge,,3,3,0,0,7bd22e5e16029ce2,2026-11-09
 misc_init_release_chain,edge,,4,4,0,0,e841d17605cf630b,2026-11-09
 misc_init_shared_record_once,edge,,8,8,0,0,fe59d1d70e36e671,2026-11-09
+misc_init_shared_record_once_guarded,edge,,8,8,0,0,49c2ae0e3fa7e7ec,2026-11-09
 misc_init_value_record,edge,,8,8,0,0,57f649b02fe70774,2026-11-09
 misc_init_vtable_subobject,edge,,7,7,0,0,be35856bcedd4623,2026-11-09
 misc_inline_text_destroy,edge,,6,6,0,0,2f0aafea2a74b5d6,2026-11-09
@@ -39690,6 +39700,7 @@ misc_register_type_pair,edge,,2,2,0,0,3496f52d7658b00a,2026-11-09
 misc_registry_latch_answer,edge,,8,8,0,0,b9d51c137a66bbbc,2026-11-09
 misc_relay_member_call,edge,,9,9,0,0,ab12523ea4f974bd,2026-11-10
 misc_release_after_empty_call,edge,,6,6,0,0,545042d61ebb4e42,2026-11-09
+misc_release_after_empty_call_01888b80,edge,,6,6,0,0,ebe11fdf2ab01e5b,2026-11-09
 misc_release_chain_nodes,edge,,4,4,0,0,d7c9dd140b2f4242,2026-11-09
 misc_release_entries_and_clear,edge,,13,13,0,0,83babd723232eff6,2026-11-09
 misc_release_entries_then_forward,edge,,14,14,0,0,5fa30e404e0403fc,2026-11-09
@@ -39759,7 +39770,8 @@ misc_store_request,edge,,14,14,0,0,371c37c37b2f52f7,2026-11-09
 misc_submit_request,edge,,8,8,0,0,6b2878ba4d6b1578,2026-11-09
 misc_tagged_link_address,edge,,8,8,0,0,421ad006857028d7,2026-11-09
 misc_tagged_name_matches,edge,,6,6,0,0,8d775d814a19282b,2026-11-09
-misc_tail_call_member_target,edge,,9,9,0,0,bd4517fcdeaa5379,2026-11-10
+misc_tail_call_member_target,edge,,10,10,0,0,84e9e4fba3a30960,2026-11-09
+misc_tail_call_offset_member_thunk,edge,,8,8,0,0,39c74a32efeb829f,2026-11-09
 misc_take_pending_node,edge,,10,10,0,0,9cd062ecd03f968a,2026-11-09
 misc_take_slot_item,edge,,13,13,0,0,4db22f8d952d6440,2026-11-09
 misc_task_object_construct,edge,,12,12,0,0,efc8da79a8db224e,2026-11-09
