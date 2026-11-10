@@ -2548,6 +2548,13 @@ address,size,name,system,status,notes
 0x00be98a0,5,auto_return_field_00be98a0,auto,edge-verified,Generated from the return field template
 0x00be9910,4,auto_return_field_00be9910,auto,edge-verified,Generated from the return field template
 0x00be9920,4,auto_return_field_00be9920,auto,edge-verified,Generated from the return field template
+0x00be9930,167,misc_copy_pair_00be9930,misc,edge-verified,Copies the 16-byte record at an index of a pair table to the output and returns zero or reports an index past the end and returns one
+0x00be99e0,167,misc_copy_pair_00be99e0,misc,edge-verified,Copies the 16-byte record at an index of a pair table to the output and returns zero or reports an index past the end and returns one
+0x00be9a90,167,misc_copy_pair_00be9a90,misc,edge-verified,Copies the 16-byte record at an index of a pair table to the output and returns zero or reports an index past the end and returns one
+0x00be9b40,167,misc_copy_pair_00be9b40,misc,edge-verified,Copies the 16-byte record at an index of a pair table to the output and returns zero or reports an index past the end and returns one
+0x00be9bf0,167,misc_copy_pair_00be9bf0,misc,edge-verified,Copies the 16-byte record at an index of a pair table to the output and returns zero or reports an index past the end and returns one
+0x00be9ca0,167,misc_copy_pair_00be9ca0,misc,edge-verified,Copies the 16-byte record at an index of a pair table to the output and returns zero or reports an index past the end and returns one
+0x00be9d50,167,misc_copy_pair_00be9d50,misc,edge-verified,Copies the 16-byte record at an index of a pair table to the output and returns zero or reports an index past the end and returns one
 0x00be9eb0,4,auto_return_field_00be9eb0,auto,edge-verified,Generated from the return field template
 0x00be9ec0,4,auto_return_field_00be9ec0,auto,edge-verified,Generated from the return field template
 0x00beabc0,8,auto_fixed_address_00beabc0,auto,edge-verified,Same instructions as misc_plain_type_address with other addresses

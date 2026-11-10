@@ -2547,6 +2547,13 @@ address,replacement,system,returns
 0x00be98a0,bb_auto_return_field_00be98a0,auto,i64
 0x00be9910,bb_auto_return_field_00be9910,auto,i32
 0x00be9920,bb_auto_return_field_00be9920,auto,i32
+0x00be9930,bb_misc_copy_pair_00be9930,misc,i32
+0x00be99e0,bb_misc_copy_pair_00be99e0,misc,i32
+0x00be9a90,bb_misc_copy_pair_00be9a90,misc,i32
+0x00be9b40,bb_misc_copy_pair_00be9b40,misc,i32
+0x00be9bf0,bb_misc_copy_pair_00be9bf0,misc,i32
+0x00be9ca0,bb_misc_copy_pair_00be9ca0,misc,i32
+0x00be9d50,bb_misc_copy_pair_00be9d50,misc,i32
 0x00be9eb0,bb_auto_return_field_00be9eb0,auto,i32
 0x00be9ec0,bb_auto_return_field_00be9ec0,auto,i32
 0x00beabc0,bb_auto_fixed_address_00beabc0,auto,i64
