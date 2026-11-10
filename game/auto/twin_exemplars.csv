@@ -1,3 +1,4 @@
 address,name,size,cases,addresses
 0x00be16a0,misc_plain_type_address,8,game/misc/plain_type_address_cases.py,0x05845228
 0x0139b610,misc_destroy_then_release,28,game/misc/destroy_then_release_cases.py,0x0139b630 0x02fbe588
+0x018867e0,engine_initialize_static_wide_string_018867e0,205,game/engine/static_wide_string_init_018867e0_cases.py,0x057e3be0 0x05acebc8 0x05940670 0x02fa2b10 0x04b37dc0 0x024b55b0 0x05aceb90 0x02a44140 0x0553b490 0x02fbe548 0x02fbe4f8
