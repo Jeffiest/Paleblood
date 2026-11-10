@@ -6856,6 +6856,7 @@ address,replacement,system,returns
 0x015eee20,bb_auto_return_zero_015eee20,auto,i64
 0x015efa00,bb_auto_return_member_address_015efa00,auto,i64
 0x015f1d60,bb_auto_record_tuple_classification_group_015f1d60,auto,i32
+0x015f1e90,bb_auto_record_tuple_alternate_classification_015f1e90,auto,i32
 0x015f62e0,bb_auto_return_constant_015f62e0,auto,i32
 0x015f62f0,bb_auto_empty_015f62f0,auto,void
 0x015f6300,bb_auto_empty_015f6300,auto,void
