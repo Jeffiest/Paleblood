@@ -4817,6 +4817,7 @@ address,replacement,system,returns
 0x01338830,bb_auto_empty_01338830,auto,void
 0x01338840,bb_auto_empty_01338840,auto,void
 0x0133c740,bb_auto_destroy_then_release_0133c740,auto,i64
+0x0133f010,bb_auto_call_object_slot_38_0133f010,auto,i64
 0x013411b0,bb_auto_return_constant_013411b0,auto,i32
 0x01342690,bb_auto_empty_01342690,auto,void
 0x013438a0,bb_auto_destroy_then_release_013438a0,auto,i64

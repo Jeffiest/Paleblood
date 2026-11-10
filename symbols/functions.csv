@@ -4818,6 +4818,7 @@ address,size,name,system,status,notes
 0x01338830,1,auto_empty_01338830,auto,edge-verified,Generated from the empty template
 0x01338840,1,auto_empty_01338840,auto,edge-verified,Generated from the empty template
 0x0133c740,28,auto_destroy_then_release_0133c740,auto,edge-verified,Same instructions as misc_destroy_then_release with other addresses
+0x0133f010,12,auto_call_object_slot_38_0133f010,auto,edge-verified,Same instructions as misc_call_object_slot_38 with other addresses
 0x013411b0,6,auto_return_constant_013411b0,auto,edge-verified,Generated from the return constant template
 0x01342690,1,auto_empty_01342690,auto,edge-verified,Generated from the empty template
 0x013438a0,28,auto_destroy_then_release_013438a0,auto,edge-verified,Same instructions as misc_destroy_then_release with other addresses
