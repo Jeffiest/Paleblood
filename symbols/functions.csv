@@ -6665,6 +6665,8 @@ address,size,name,system,status,notes
 0x01489910,24,render_record_descriptor_level_count,render,edge-verified,Read bits 16..19 below the upper descriptor partition; otherwise return zero.
 0x01489940,24,render_record_descriptor_count_exponent,render,edge-verified,Read bits 16..19 in the upper descriptor partition; otherwise return zero.
 0x01489960,68,render_record_descriptor_encoding,render,edge-verified,Read packed words at offsets 0x04 then 0x0c; pass six extracted fields to the encoding packer.
+0x01489b60,16,auto_record_step_user_pa_enabled_01489b60,auto,edge-verified,Same instructions as render_record_step_user_pa_enabled with other addresses
+0x01489c30,16,auto_record_step_user_pa_enabled_01489c30,auto,edge-verified,Same instructions as render_record_step_user_pa_enabled with other addresses
 0x01489c40,16,render_record_step_user_pa_enabled,render,edge-verified,"Query the actual import once; no cached global, fallback or service value is invented."
 0x0148bcc0,1,auto_empty_0148bcc0,auto,edge-verified,Generated from the empty template
 0x0148cb10,1,auto_empty_0148cb10,auto,edge-verified,Generated from the empty template
@@ -8033,6 +8035,7 @@ address,size,name,system,status,notes
 0x017278e0,205,auto_initialize_static_wide_string_017278e0,auto,edge-verified,Same instructions as engine_initialize_static_wide_string_018867e0 with other addresses
 0x0172e4c0,3,auto_return_zero_0172e4c0,auto,edge-verified,Generated from the return zero template
 0x0172f890,3,auto_return_zero_0172f890,auto,edge-verified,Generated from the return zero template
+0x0172f9f0,16,auto_record_step_user_pa_enabled_0172f9f0,auto,edge-verified,Same instructions as render_record_step_user_pa_enabled with other addresses
 0x01732860,3,auto_return_constant_01732860,auto,edge-verified,Generated from the return constant template
 0x01732870,3,auto_return_constant_01732870,auto,edge-verified,Generated from the return constant template
 0x017328f0,3,auto_return_zero_017328f0,auto,edge-verified,Generated from the return zero template
