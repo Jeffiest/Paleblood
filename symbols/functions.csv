@@ -3433,6 +3433,8 @@ address,size,name,system,status,notes
 0x00e82f30,1,auto_empty_00e82f30,auto,edge-verified,Generated from the empty template
 0x00e82f40,1,auto_empty_00e82f40,auto,edge-verified,Generated from the empty template
 0x00e82f50,8,auto_fixed_address_00e82f50,auto,edge-verified,Same instructions as misc_plain_type_address with other addresses
+0x00e852f0,15,auto_forward_child_tail_00e852f0,auto,edge-verified,Same instructions as misc_forward_child_tail with other addresses
+0x00e85310,15,auto_forward_child_tail_00e85310,auto,edge-verified,Same instructions as misc_forward_child_tail with other addresses
 0x00e85610,3,auto_return_zero_00e85610,auto,edge-verified,Generated from the return zero template
 0x00e862d0,8,auto_fixed_address_00e862d0,auto,edge-verified,Same instructions as misc_plain_type_address with other addresses
 0x00e86760,3,auto_return_constant_00e86760,auto,edge-verified,Generated from the return constant template
@@ -22919,6 +22921,7 @@ address,size,name,system,status,notes
 0x02237010,1,auto_empty_02237010,auto,edge-verified,Generated from the empty template
 0x02237020,1,auto_empty_02237020,auto,edge-verified,Generated from the empty template
 0x02237030,1,auto_empty_02237030,auto,edge-verified,Generated from the empty template
+0x02237ea0,15,auto_forward_child_tail_02237ea0,auto,edge-verified,Same instructions as misc_forward_child_tail with other addresses
 0x02237ff0,205,auto_initialize_static_wide_string_02237ff0,auto,edge-verified,Same instructions as engine_initialize_static_wide_string_018867e0 with other addresses
 0x02238100,1,auto_empty_02238100,auto,edge-verified,Generated from the empty template
 0x02238830,3,auto_return_zero_02238830,auto,edge-verified,Generated from the return zero template
@@ -24040,7 +24043,9 @@ address,size,name,system,status,notes
 0x0233ee40,28,auto_destroy_then_release_0233ee40,auto,edge-verified,Same instructions as misc_destroy_then_release with other addresses
 0x0233efc0,1,auto_empty_0233efc0,auto,edge-verified,Generated from the empty template
 0x0233efd0,1,auto_empty_0233efd0,auto,edge-verified,Generated from the empty template
+0x0233efe0,15,auto_forward_child_tail_0233efe0,auto,edge-verified,Same instructions as misc_forward_child_tail with other addresses
 0x0233eff0,1,auto_empty_0233eff0,auto,edge-verified,Generated from the empty template
+0x0233f1c0,15,auto_forward_child_tail_0233f1c0,auto,edge-verified,Same instructions as misc_forward_child_tail with other addresses
 0x0233f270,1,auto_empty_0233f270,auto,edge-verified,Generated from the empty template
 0x0233f300,3,auto_return_zero_0233f300,auto,edge-verified,Generated from the return zero template
 0x0233f370,8,auto_fixed_address_0233f370,auto,edge-verified,Same instructions as misc_plain_type_address with other addresses
@@ -27925,6 +27930,7 @@ address,size,name,system,status,notes
 0x02785700,6,auto_return_constant_02785700,auto,edge-verified,Generated from the return constant template
 0x02785740,3,auto_return_zero_02785740,auto,edge-verified,Generated from the return zero template
 0x02785750,1,auto_empty_02785750,auto,edge-verified,Generated from the empty template
+0x02785790,15,auto_forward_child_tail_02785790,auto,edge-verified,Same instructions as misc_forward_child_tail with other addresses
 0x02787910,4,auto_return_field_02787910,auto,edge-verified,Generated from the return field template
 0x02787920,4,auto_return_field_02787920,auto,edge-verified,Generated from the return field template
 0x02787b80,4,auto_return_field_02787b80,auto,edge-verified,Generated from the return field template
@@ -31229,6 +31235,7 @@ address,size,name,system,status,notes
 0x02a70920,46,loading_file_handle_read,loading,edge-verified,Read up to size bytes from the descriptor into the buffer and publish the count; descriptor low 32 bits zero-extended; no open-bit check; -1 on a negative kernel result
 0x02a70950,46,loading_file_handle_write,loading,edge-verified,Write up to size bytes from the buffer to the descriptor and publish the count; descriptor low 32 bits zero-extended; no open-bit check; -1 on a negative kernel result
 0x02a70980,53,loading_file_handle_seek,loading,edge-verified,Move the descriptor to an offset relative to origin and publish the new position; origin low 32 bits zero-extended; no open-bit check; -1 on a negative kernel result
+0x02a70b40,15,auto_forward_child_tail_02a70b40,auto,edge-verified,Same instructions as misc_forward_child_tail with other addresses
 0x02a70cf0,28,auto_destroy_then_release_02a70cf0,auto,edge-verified,Same instructions as misc_destroy_then_release with other addresses
 0x02a70f00,3,auto_return_zero_02a70f00,auto,edge-verified,Generated from the return zero template
 0x02a70f20,1,auto_empty_02a70f20,auto,edge-verified,Generated from the empty template
@@ -32157,6 +32164,7 @@ address,size,name,system,status,notes
 0x02b36f60,3,auto_return_zero_02b36f60,auto,edge-verified,Generated from the return zero template
 0x02b36f70,1,auto_empty_02b36f70,auto,edge-verified,Generated from the empty template
 0x02b38580,1,auto_empty_02b38580,auto,edge-verified,Generated from the empty template
+0x02b388f0,15,auto_forward_child_tail_02b388f0,auto,edge-verified,Same instructions as misc_forward_child_tail with other addresses
 0x02b38c10,218,auto_push_value_by_reference_02b38c10,auto,edge-verified,Same instructions as misc_push_value_by_reference with other addresses
 0x02b38f70,28,auto_destroy_then_release_02b38f70,auto,edge-verified,Same instructions as misc_destroy_then_release with other addresses
 0x02b39360,5,auto_return_field_02b39360,auto,edge-verified,Generated from the return field template
@@ -33571,6 +33579,7 @@ address,size,name,system,status,notes
 0x02c51150,6,auto_return_constant_02c51150,auto,edge-verified,Generated from the return constant template
 0x02c511f0,1,auto_empty_02c511f0,auto,edge-verified,Generated from the empty template
 0x02c51210,1,auto_empty_02c51210,auto,edge-verified,Generated from the empty template
+0x02c51840,15,auto_forward_child_tail_02c51840,auto,edge-verified,Same instructions as misc_forward_child_tail with other addresses
 0x02c51970,3,auto_return_zero_02c51970,auto,edge-verified,Generated from the return zero template
 0x02c51f30,4,auto_return_field_02c51f30,auto,edge-verified,Generated from the return field template
 0x02c51f40,5,auto_return_field_02c51f40,auto,edge-verified,Generated from the return field template
@@ -39311,6 +39320,7 @@ address,size,name,system,status,notes
 0x02f91940,3,auto_return_zero_02f91940,auto,edge-verified,Generated from the return zero template
 0x02f91950,3,auto_return_zero_02f91950,auto,edge-verified,Generated from the return zero template
 0x02f91960,3,auto_return_zero_02f91960,auto,edge-verified,Generated from the return zero template
+0x02f91c30,15,auto_forward_child_tail_02f91c30,auto,edge-verified,Same instructions as misc_forward_child_tail with other addresses
 0x02f93550,28,auto_destroy_then_release_02f93550,auto,edge-verified,Same instructions as misc_destroy_then_release with other addresses
 0x02f93670,1,auto_empty_02f93670,auto,edge-verified,Generated from the empty template
 0x02f94c50,3,auto_return_constant_02f94c50,auto,edge-verified,Generated from the return constant template

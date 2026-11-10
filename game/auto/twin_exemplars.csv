@@ -7,6 +7,7 @@ address,name,size,cases,addresses
 0x013988d0,misc_bind_vtable_56b4840,41,game/misc/bind_vtable_56b4840_cases.py,0x05ac59b8 0x056b4840 0x05ac59b0
 0x01398960,misc_copy_block_58b3240,49,game/misc/copy_block_58b3240_cases.py,0x04cb88b0 0x058b3240 0x04cb88c0 0x058b3250 0x04cb88d0 0x058b3260
 0x0139b610,misc_destroy_then_release,28,game/misc/destroy_then_release_cases.py,0x0139b630 0x02fbe588
+0x0139bcb0,misc_forward_child_tail,15,game/misc/forward_child_tail_cases.py,0x01440fb0
 0x018867e0,engine_initialize_static_wide_string_018867e0,205,game/engine/static_wide_string_init_018867e0_cases.py,0x057e3be0 0x05acebc8 0x05940670 0x02fa2b10 0x04b37dc0 0x024b55b0 0x05aceb90 0x02a44140 0x0553b490 0x02fbe548 0x02fbe4f8
 0x01887e00,misc_call_record_member_target,165,game/misc/call_record_member_target_cases.py,0x057e3be0 0x01400810 0x056f3170 0x013a75d0 0x02fbe4f8
 0x01887ed0,misc_relay_member_call,57,game/misc/relay_member_call_cases.py,

@@ -20514,6 +20514,16 @@ auto_fixed_address_02f82af0,edge,,1,1,0,0,205f3a057bc6b829,2026-11-10
 auto_fixed_address_02f82b00,edge,,1,1,0,0,205f3a057bc6b829,2026-11-10
 auto_fixed_address_02f82b10,edge,,1,1,0,0,205f3a057bc6b829,2026-11-10
 auto_fixed_address_02f82b20,edge,,1,1,0,0,205f3a057bc6b829,2026-11-10
+auto_forward_child_tail_00e852f0,edge,,5,5,0,0,1f0d2940781c3db3,2026-11-10
+auto_forward_child_tail_00e85310,edge,,5,5,0,0,1f0d2940781c3db3,2026-11-10
+auto_forward_child_tail_02237ea0,edge,,5,5,0,0,1f0d2940781c3db3,2026-11-10
+auto_forward_child_tail_0233efe0,edge,,5,5,0,0,1f0d2940781c3db3,2026-11-10
+auto_forward_child_tail_0233f1c0,edge,,5,5,0,0,1f0d2940781c3db3,2026-11-10
+auto_forward_child_tail_02785790,edge,,5,5,0,0,1f0d2940781c3db3,2026-11-10
+auto_forward_child_tail_02a70b40,edge,,5,5,0,0,1f0d2940781c3db3,2026-11-10
+auto_forward_child_tail_02b388f0,edge,,5,5,0,0,1f0d2940781c3db3,2026-11-10
+auto_forward_child_tail_02c51840,edge,,5,5,0,0,1f0d2940781c3db3,2026-11-10
+auto_forward_child_tail_02f91c30,edge,,5,5,0,0,1f0d2940781c3db3,2026-11-10
 auto_initialize_static_wide_string_01391390,edge,,30,30,0,0,20ecca0dad6ddaf3,2026-11-10
 auto_initialize_static_wide_string_01395810,edge,,30,30,0,0,20ecca0dad6ddaf3,2026-11-10
 auto_initialize_static_wide_string_013a6410,edge,,30,30,0,0,20ecca0dad6ddaf3,2026-11-10
