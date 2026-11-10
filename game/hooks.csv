@@ -10111,6 +10111,7 @@ address,replacement,system,returns
 0x018a3880,bb_auto_release_handle_record_018a3880,auto,i64
 0x018a3930,bb_auto_register_handle_record_018a3930,auto,void
 0x018a39d0,bb_auto_test_and_set_flag_018a39d0,auto,i8
+0x018a3b00,bb_auto_forward_tagged_request_018a3b00,auto,void
 0x018a3eb0,bb_auto_initialize_static_wide_string_018a3eb0,auto,void
 0x018a3fc0,bb_auto_empty_018a3fc0,auto,void
 0x018a4030,bb_auto_destroy_then_release_018a4030,auto,i64
