@@ -22,4 +22,5 @@ address,name,size,cases,home,addresses,exchange
 0x02b3a500,misc_set_value_word_130,8,game/auto/near_set_word_02b3a500_cases.py,game/misc,,slots
 0x02b3a500,misc_set_value_word_130,8,game/misc/set_value_word_130_cases.py,game/misc,,text
 0x02b3a6d0,misc_set_u32_word_160,7,game/auto/near_set_u32_word_02b3a6d0_cases.py,game/misc,,slots
+0x02b3e010,misc_inline_text_reset,73,game/auto/near_inline_text_reset_02b3e010_cases.py,game/misc,0x056c70e0,slots
 0x02b3f260,misc_query_owned_child,25,game/auto/near_query_owned_child_02b3f260_cases.py,game/misc,,slots
