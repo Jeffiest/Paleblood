@@ -10957,10 +10957,12 @@ address,size,name,system,status,notes
 0x01799130,28,auto_destroy_then_release_01799130,auto,edge-verified,Same instructions as misc_destroy_then_release with other addresses
 0x01799150,150,auto_call_member_with_text_record_01799150,auto,edge-verified,Same instructions as misc_call_member_with_text_record with other addresses
 0x017991f0,102,auto_call_member_with_record_017991f0,auto,edge-verified,Same instructions as misc_call_member_with_record with other addresses
+0x01799260,102,auto_call_member_with_flagged_record_01799260,auto,edge-verified,Same instructions as misc_call_member_with_flagged_record with other addresses
 0x017992d0,5,auto_jump_thunk_017992d0,auto,edge-verified,Same instructions as misc_jump_thunk with other addresses
 0x017992e0,28,auto_destroy_then_release_017992e0,auto,edge-verified,Same instructions as misc_destroy_then_release with other addresses
 0x01799300,150,auto_call_member_with_text_record_01799300,auto,edge-verified,Same instructions as misc_call_member_with_text_record with other addresses
 0x017993a0,102,auto_call_member_with_record_017993a0,auto,edge-verified,Same instructions as misc_call_member_with_record with other addresses
+0x01799410,102,auto_call_member_with_flagged_record_01799410,auto,edge-verified,Same instructions as misc_call_member_with_flagged_record with other addresses
 0x01799480,5,auto_jump_thunk_01799480,auto,edge-verified,Same instructions as misc_jump_thunk with other addresses
 0x01799490,28,auto_destroy_then_release_01799490,auto,edge-verified,Same instructions as misc_destroy_then_release with other addresses
 0x017995e0,5,auto_jump_thunk_017995e0,auto,edge-verified,Same instructions as misc_jump_thunk with other addresses
@@ -11029,6 +11031,7 @@ address,size,name,system,status,notes
 0x017a7a10,28,auto_destroy_then_release_017a7a10,auto,edge-verified,Same instructions as misc_destroy_then_release with other addresses
 0x017a7a30,150,auto_call_member_with_text_record_017a7a30,auto,edge-verified,Same instructions as misc_call_member_with_text_record with other addresses
 0x017a7ad0,102,auto_call_member_with_record_017a7ad0,auto,edge-verified,Same instructions as misc_call_member_with_record with other addresses
+0x017a7b40,102,auto_call_member_with_flagged_record_017a7b40,auto,edge-verified,Same instructions as misc_call_member_with_flagged_record with other addresses
 0x017a7ef0,3,auto_return_zero_017a7ef0,auto,edge-verified,Generated from the return zero template
 0x017a7f20,3,auto_return_zero_017a7f20,auto,edge-verified,Generated from the return zero template
 0x017a7f30,3,auto_return_zero_017a7f30,auto,edge-verified,Generated from the return zero template
@@ -12343,6 +12346,7 @@ address,size,name,system,status,notes
 0x0184f0f0,28,auto_destroy_then_release_0184f0f0,auto,edge-verified,Same instructions as misc_destroy_then_release with other addresses
 0x0184f110,150,auto_call_member_with_text_record_0184f110,auto,edge-verified,Same instructions as misc_call_member_with_text_record with other addresses
 0x0184f1b0,102,auto_call_member_with_record_0184f1b0,auto,edge-verified,Same instructions as misc_call_member_with_record with other addresses
+0x0184f220,102,auto_call_member_with_flagged_record_0184f220,auto,edge-verified,Same instructions as misc_call_member_with_flagged_record with other addresses
 0x0184f520,1,auto_empty_0184f520,auto,edge-verified,Generated from the empty template
 0x0184f530,38,auto_release_held_block_0184f530,auto,edge-verified,Same instructions as misc_release_held_block with other addresses and constants
 0x0184fa10,1,auto_empty_0184fa10,auto,edge-verified,Generated from the empty template
@@ -12358,12 +12362,14 @@ address,size,name,system,status,notes
 0x01850260,28,auto_destroy_then_release_01850260,auto,edge-verified,Same instructions as misc_destroy_then_release with other addresses
 0x01850280,150,auto_call_member_with_text_record_01850280,auto,edge-verified,Same instructions as misc_call_member_with_text_record with other addresses
 0x01850320,102,auto_call_member_with_record_01850320,auto,edge-verified,Same instructions as misc_call_member_with_record with other addresses
+0x01850390,102,auto_call_member_with_flagged_record_01850390,auto,edge-verified,Same instructions as misc_call_member_with_flagged_record with other addresses
 0x01850be0,38,auto_release_held_block_01850be0,auto,edge-verified,Same instructions as misc_release_held_block with other addresses and constants
 0x01850ca0,205,auto_initialize_static_wide_string_01850ca0,auto,edge-verified,Same instructions as engine_initialize_static_wide_string_018867e0 with other addresses
 0x01850db0,5,auto_jump_thunk_01850db0,auto,edge-verified,Same instructions as misc_jump_thunk with other addresses
 0x01850dc0,28,auto_destroy_then_release_01850dc0,auto,edge-verified,Same instructions as misc_destroy_then_release with other addresses
 0x01850de0,150,auto_call_member_with_text_record_01850de0,auto,edge-verified,Same instructions as misc_call_member_with_text_record with other addresses
 0x01850e80,102,auto_call_member_with_record_01850e80,auto,edge-verified,Same instructions as misc_call_member_with_record with other addresses
+0x01850ef0,102,auto_call_member_with_flagged_record_01850ef0,auto,edge-verified,Same instructions as misc_call_member_with_flagged_record with other addresses
 0x01851280,1,auto_empty_01851280,auto,edge-verified,Generated from the empty template
 0x01851290,38,auto_release_held_block_01851290,auto,edge-verified,Same instructions as misc_release_held_block with other addresses and constants
 0x01851540,1,auto_empty_01851540,auto,edge-verified,Generated from the empty template
@@ -12375,6 +12381,7 @@ address,size,name,system,status,notes
 0x01851820,28,auto_destroy_then_release_01851820,auto,edge-verified,Same instructions as misc_destroy_then_release with other addresses
 0x01851840,150,auto_call_member_with_text_record_01851840,auto,edge-verified,Same instructions as misc_call_member_with_text_record with other addresses
 0x018518e0,102,auto_call_member_with_record_018518e0,auto,edge-verified,Same instructions as misc_call_member_with_record with other addresses
+0x01851950,102,auto_call_member_with_flagged_record_01851950,auto,edge-verified,Same instructions as misc_call_member_with_flagged_record with other addresses
 0x01851d20,38,auto_release_held_block_01851d20,auto,edge-verified,Same instructions as misc_release_held_block with other addresses and constants
 0x01852210,205,auto_initialize_static_wide_string_01852210,auto,edge-verified,Same instructions as engine_initialize_static_wide_string_018867e0 with other addresses
 0x018522e0,113,auto_init_rows_total_018522e0,auto,edge-verified,Same instructions as misc_init_rows_total_5944010 with other addresses
@@ -12385,6 +12392,7 @@ address,size,name,system,status,notes
 0x018523d0,28,auto_destroy_then_release_018523d0,auto,edge-verified,Same instructions as misc_destroy_then_release with other addresses
 0x018523f0,150,auto_call_member_with_text_record_018523f0,auto,edge-verified,Same instructions as misc_call_member_with_text_record with other addresses
 0x01852490,102,auto_call_member_with_record_01852490,auto,edge-verified,Same instructions as misc_call_member_with_record with other addresses
+0x01852500,102,auto_call_member_with_flagged_record_01852500,auto,edge-verified,Same instructions as misc_call_member_with_flagged_record with other addresses
 0x01852850,38,auto_release_held_block_01852850,auto,edge-verified,Same instructions as misc_release_held_block with other addresses and constants
 0x01852d50,205,auto_initialize_static_wide_string_01852d50,auto,edge-verified,Same instructions as engine_initialize_static_wide_string_018867e0 with other addresses
 0x01852e60,1,auto_empty_01852e60,auto,edge-verified,Generated from the empty template
@@ -12394,6 +12402,7 @@ address,size,name,system,status,notes
 0x01852ed0,28,auto_destroy_then_release_01852ed0,auto,edge-verified,Same instructions as misc_destroy_then_release with other addresses
 0x01852ef0,150,auto_call_member_with_text_record_01852ef0,auto,edge-verified,Same instructions as misc_call_member_with_text_record with other addresses
 0x01852f90,102,auto_call_member_with_record_01852f90,auto,edge-verified,Same instructions as misc_call_member_with_record with other addresses
+0x01853000,102,auto_call_member_with_flagged_record_01853000,auto,edge-verified,Same instructions as misc_call_member_with_flagged_record with other addresses
 0x01853440,38,auto_release_held_block_01853440,auto,edge-verified,Same instructions as misc_release_held_block with other addresses and constants
 0x01853950,205,auto_initialize_static_wide_string_01853950,auto,edge-verified,Same instructions as engine_initialize_static_wide_string_018867e0 with other addresses
 0x01853a60,1,auto_empty_01853a60,auto,edge-verified,Generated from the empty template
@@ -12403,6 +12412,7 @@ address,size,name,system,status,notes
 0x01853ad0,28,auto_destroy_then_release_01853ad0,auto,edge-verified,Same instructions as misc_destroy_then_release with other addresses
 0x01853af0,150,auto_call_member_with_text_record_01853af0,auto,edge-verified,Same instructions as misc_call_member_with_text_record with other addresses
 0x01853b90,102,auto_call_member_with_record_01853b90,auto,edge-verified,Same instructions as misc_call_member_with_record with other addresses
+0x01853c00,102,auto_call_member_with_flagged_record_01853c00,auto,edge-verified,Same instructions as misc_call_member_with_flagged_record with other addresses
 0x01853f40,38,auto_release_held_block_01853f40,auto,edge-verified,Same instructions as misc_release_held_block with other addresses and constants
 0x018543e0,205,auto_initialize_static_wide_string_018543e0,auto,edge-verified,Same instructions as engine_initialize_static_wide_string_018867e0 with other addresses
 0x018544f0,1,auto_empty_018544f0,auto,edge-verified,Generated from the empty template
@@ -12412,6 +12422,7 @@ address,size,name,system,status,notes
 0x01854560,28,auto_destroy_then_release_01854560,auto,edge-verified,Same instructions as misc_destroy_then_release with other addresses
 0x01854580,150,auto_call_member_with_text_record_01854580,auto,edge-verified,Same instructions as misc_call_member_with_text_record with other addresses
 0x01854620,102,auto_call_member_with_record_01854620,auto,edge-verified,Same instructions as misc_call_member_with_record with other addresses
+0x01854690,102,auto_call_member_with_flagged_record_01854690,auto,edge-verified,Same instructions as misc_call_member_with_flagged_record with other addresses
 0x01854a80,38,auto_release_held_block_01854a80,auto,edge-verified,Same instructions as misc_release_held_block with other addresses and constants
 0x01854fa0,205,auto_initialize_static_wide_string_01854fa0,auto,edge-verified,Same instructions as engine_initialize_static_wide_string_018867e0 with other addresses
 0x01855070,113,auto_init_rows_total_01855070,auto,edge-verified,Same instructions as misc_init_rows_total_5944010 with other addresses
@@ -12422,6 +12433,7 @@ address,size,name,system,status,notes
 0x01855160,28,auto_destroy_then_release_01855160,auto,edge-verified,Same instructions as misc_destroy_then_release with other addresses
 0x01855180,150,auto_call_member_with_text_record_01855180,auto,edge-verified,Same instructions as misc_call_member_with_text_record with other addresses
 0x01855220,102,auto_call_member_with_record_01855220,auto,edge-verified,Same instructions as misc_call_member_with_record with other addresses
+0x01855290,102,auto_call_member_with_flagged_record_01855290,auto,edge-verified,Same instructions as misc_call_member_with_flagged_record with other addresses
 0x01856520,205,auto_initialize_static_wide_string_01856520,auto,edge-verified,Same instructions as engine_initialize_static_wide_string_018867e0 with other addresses
 0x018565f0,153,auto_init_rows_fields_total_018565f0,auto,edge-verified,Same instructions as misc_init_rows_fields_total_5940ef0 with other addresses
 0x01856690,1,auto_empty_01856690,auto,edge-verified,Generated from the empty template
@@ -12440,6 +12452,7 @@ address,size,name,system,status,notes
 0x01858f40,28,auto_destroy_then_release_01858f40,auto,edge-verified,Same instructions as misc_destroy_then_release with other addresses
 0x01858f60,150,auto_call_member_with_text_record_01858f60,auto,edge-verified,Same instructions as misc_call_member_with_text_record with other addresses
 0x01859000,102,auto_call_member_with_record_01859000,auto,edge-verified,Same instructions as misc_call_member_with_record with other addresses
+0x01859070,102,auto_call_member_with_flagged_record_01859070,auto,edge-verified,Same instructions as misc_call_member_with_flagged_record with other addresses
 0x0185d2f0,5,auto_jump_thunk_0185d2f0,auto,edge-verified,Same instructions as misc_jump_thunk with other addresses
 0x0185d300,5,auto_jump_thunk_0185d300,auto,edge-verified,Same instructions as misc_jump_thunk with other addresses
 0x0185d310,5,auto_jump_thunk_0185d310,auto,edge-verified,Same instructions as misc_jump_thunk with other addresses
@@ -12552,6 +12565,7 @@ address,size,name,system,status,notes
 0x0186b330,28,auto_destroy_then_release_0186b330,auto,edge-verified,Same instructions as misc_destroy_then_release with other addresses
 0x0186b350,150,auto_call_member_with_text_record_0186b350,auto,edge-verified,Same instructions as misc_call_member_with_text_record with other addresses
 0x0186b3f0,102,auto_call_member_with_record_0186b3f0,auto,edge-verified,Same instructions as misc_call_member_with_record with other addresses
+0x0186b460,102,auto_call_member_with_flagged_record_0186b460,auto,edge-verified,Same instructions as misc_call_member_with_flagged_record with other addresses
 0x0186bb90,28,auto_destroy_then_release_0186bb90,auto,edge-verified,Same instructions as misc_destroy_then_release with other addresses
 0x0186d2a0,5,auto_jump_thunk_0186d2a0,auto,edge-verified,Same instructions as misc_jump_thunk with other addresses
 0x0186d3b0,5,auto_jump_thunk_0186d3b0,auto,edge-verified,Same instructions as misc_jump_thunk with other addresses
@@ -12611,6 +12625,7 @@ address,size,name,system,status,notes
 0x01872980,28,auto_destroy_then_release_01872980,auto,edge-verified,Same instructions as misc_destroy_then_release with other addresses
 0x018729a0,150,auto_call_member_with_text_record_018729a0,auto,edge-verified,Same instructions as misc_call_member_with_text_record with other addresses
 0x01872a40,102,auto_call_member_with_record_01872a40,auto,edge-verified,Same instructions as misc_call_member_with_record with other addresses
+0x01872ab0,102,auto_call_member_with_flagged_record_01872ab0,auto,edge-verified,Same instructions as misc_call_member_with_flagged_record with other addresses
 0x01873ee0,1,auto_empty_01873ee0,auto,edge-verified,Generated from the empty template
 0x01874120,205,auto_initialize_static_wide_string_01874120,auto,edge-verified,Same instructions as engine_initialize_static_wide_string_018867e0 with other addresses
 0x01874230,5,auto_jump_thunk_01874230,auto,edge-verified,Same instructions as misc_jump_thunk with other addresses
@@ -12623,6 +12638,7 @@ address,size,name,system,status,notes
 0x01874db0,28,auto_destroy_then_release_01874db0,auto,edge-verified,Same instructions as misc_destroy_then_release with other addresses
 0x01874dd0,150,auto_call_member_with_text_record_01874dd0,auto,edge-verified,Same instructions as misc_call_member_with_text_record with other addresses
 0x01874e70,102,auto_call_member_with_record_01874e70,auto,edge-verified,Same instructions as misc_call_member_with_record with other addresses
+0x01874ee0,102,auto_call_member_with_flagged_record_01874ee0,auto,edge-verified,Same instructions as misc_call_member_with_flagged_record with other addresses
 0x01875150,28,auto_destroy_then_release_01875150,auto,edge-verified,Same instructions as misc_destroy_then_release with other addresses
 0x01876280,205,auto_initialize_static_wide_string_01876280,auto,edge-verified,Same instructions as engine_initialize_static_wide_string_018867e0 with other addresses
 0x018764d0,28,auto_destroy_then_release_018764d0,auto,edge-verified,Same instructions as misc_destroy_then_release with other addresses
@@ -12636,6 +12652,7 @@ address,size,name,system,status,notes
 0x018770e0,28,auto_destroy_then_release_018770e0,auto,edge-verified,Same instructions as misc_destroy_then_release with other addresses
 0x01877100,150,auto_call_member_with_text_record_01877100,auto,edge-verified,Same instructions as misc_call_member_with_text_record with other addresses
 0x018771a0,102,auto_call_member_with_record_018771a0,auto,edge-verified,Same instructions as misc_call_member_with_record with other addresses
+0x01877210,102,auto_call_member_with_flagged_record_01877210,auto,edge-verified,Same instructions as misc_call_member_with_flagged_record with other addresses
 0x01877290,1,auto_empty_01877290,auto,edge-verified,Generated from the empty template
 0x01877450,205,auto_initialize_static_wide_string_01877450,auto,edge-verified,Same instructions as engine_initialize_static_wide_string_018867e0 with other addresses
 0x018785f0,205,auto_initialize_static_wide_string_018785f0,auto,edge-verified,Same instructions as engine_initialize_static_wide_string_018867e0 with other addresses
@@ -12646,6 +12663,7 @@ address,size,name,system,status,notes
 0x01878770,28,auto_destroy_then_release_01878770,auto,edge-verified,Same instructions as misc_destroy_then_release with other addresses
 0x01878790,150,auto_call_member_with_text_record_01878790,auto,edge-verified,Same instructions as misc_call_member_with_text_record with other addresses
 0x01878830,102,auto_call_member_with_record_01878830,auto,edge-verified,Same instructions as misc_call_member_with_record with other addresses
+0x018788a0,102,auto_call_member_with_flagged_record_018788a0,auto,edge-verified,Same instructions as misc_call_member_with_flagged_record with other addresses
 0x01878fd0,28,auto_destroy_then_release_01878fd0,auto,edge-verified,Same instructions as misc_destroy_then_release with other addresses
 0x01879710,205,auto_initialize_static_wide_string_01879710,auto,edge-verified,Same instructions as engine_initialize_static_wide_string_018867e0 with other addresses
 0x01879820,1,auto_empty_01879820,auto,edge-verified,Generated from the empty template
@@ -12655,6 +12673,7 @@ address,size,name,system,status,notes
 0x01879890,28,auto_destroy_then_release_01879890,auto,edge-verified,Same instructions as misc_destroy_then_release with other addresses
 0x018798b0,150,auto_call_member_with_text_record_018798b0,auto,edge-verified,Same instructions as misc_call_member_with_text_record with other addresses
 0x01879950,102,auto_call_member_with_record_01879950,auto,edge-verified,Same instructions as misc_call_member_with_record with other addresses
+0x018799c0,102,auto_call_member_with_flagged_record_018799c0,auto,edge-verified,Same instructions as misc_call_member_with_flagged_record with other addresses
 0x01879ac0,205,auto_initialize_static_wide_string_01879ac0,auto,edge-verified,Same instructions as engine_initialize_static_wide_string_018867e0 with other addresses
 0x0187cc10,205,auto_initialize_static_wide_string_0187cc10,auto,edge-verified,Same instructions as engine_initialize_static_wide_string_018867e0 with other addresses
 0x0187d760,1,auto_empty_0187d760,auto,edge-verified,Generated from the empty template
@@ -12698,6 +12717,7 @@ address,size,name,system,status,notes
 0x0187fa60,28,auto_destroy_then_release_0187fa60,auto,edge-verified,Same instructions as misc_destroy_then_release with other addresses
 0x0187fa80,150,auto_call_member_with_text_record_0187fa80,auto,edge-verified,Same instructions as misc_call_member_with_text_record with other addresses
 0x0187fb20,102,auto_call_member_with_record_0187fb20,auto,edge-verified,Same instructions as misc_call_member_with_record with other addresses
+0x0187fb90,102,auto_call_member_with_flagged_record_0187fb90,auto,edge-verified,Same instructions as misc_call_member_with_flagged_record with other addresses
 0x0187fe20,1,auto_empty_0187fe20,auto,edge-verified,Generated from the empty template
 0x0187ff30,1,auto_empty_0187ff30,auto,edge-verified,Generated from the empty template
 0x01880010,205,auto_initialize_static_wide_string_01880010,auto,edge-verified,Same instructions as engine_initialize_static_wide_string_018867e0 with other addresses
@@ -12713,6 +12733,7 @@ address,size,name,system,status,notes
 0x01883a60,28,auto_destroy_then_release_01883a60,auto,edge-verified,Same instructions as misc_destroy_then_release with other addresses
 0x01883a80,150,auto_call_member_with_text_record_01883a80,auto,edge-verified,Same instructions as misc_call_member_with_text_record with other addresses
 0x01883b20,102,auto_call_member_with_record_01883b20,auto,edge-verified,Same instructions as misc_call_member_with_record with other addresses
+0x01883b90,102,auto_call_member_with_flagged_record_01883b90,auto,edge-verified,Same instructions as misc_call_member_with_flagged_record with other addresses
 0x01883c00,5,auto_jump_thunk_01883c00,auto,edge-verified,Same instructions as misc_jump_thunk with other addresses
 0x01883c10,28,auto_destroy_then_release_01883c10,auto,edge-verified,Same instructions as misc_destroy_then_release with other addresses
 0x01883c30,5,auto_return_field_01883c30,auto,edge-verified,Generated from the return field template
@@ -12918,6 +12939,7 @@ address,size,name,system,status,notes
 0x018a0320,28,auto_destroy_then_release_018a0320,auto,edge-verified,Same instructions as misc_destroy_then_release with other addresses
 0x018a0340,150,auto_call_member_with_text_record_018a0340,auto,edge-verified,Same instructions as misc_call_member_with_text_record with other addresses
 0x018a03e0,102,auto_call_member_with_record_018a03e0,auto,edge-verified,Same instructions as misc_call_member_with_record with other addresses
+0x018a0450,102,auto_call_member_with_flagged_record_018a0450,auto,edge-verified,Same instructions as misc_call_member_with_flagged_record with other addresses
 0x018a2fd0,5,auto_jump_thunk_018a2fd0,auto,edge-verified,Same instructions as misc_jump_thunk with other addresses
 0x018a30d0,205,auto_initialize_static_wide_string_018a30d0,auto,edge-verified,Same instructions as engine_initialize_static_wide_string_018867e0 with other addresses
 0x018a3660,31,auto_set_vtable_after_call_018a3660,auto,edge-verified,Same instructions as misc_set_vtable_after_call with other addresses
@@ -12938,6 +12960,7 @@ address,size,name,system,status,notes
 0x018a4030,28,auto_destroy_then_release_018a4030,auto,edge-verified,Same instructions as misc_destroy_then_release with other addresses
 0x018a4050,150,auto_call_member_with_text_record_018a4050,auto,edge-verified,Same instructions as misc_call_member_with_text_record with other addresses
 0x018a40f0,102,auto_call_member_with_record_018a40f0,auto,edge-verified,Same instructions as misc_call_member_with_record with other addresses
+0x018a4160,102,auto_call_member_with_flagged_record_018a4160,auto,edge-verified,Same instructions as misc_call_member_with_flagged_record with other addresses
 0x018a41d0,3,auto_return_constant_018a41d0,auto,edge-verified,Generated from the return constant template
 0x018a4310,28,auto_destroy_then_release_018a4310,auto,edge-verified,Same instructions as misc_destroy_then_release with other addresses
 0x018aa360,205,auto_initialize_static_wide_string_018aa360,auto,edge-verified,Same instructions as engine_initialize_static_wide_string_018867e0 with other addresses
@@ -12949,6 +12972,7 @@ address,size,name,system,status,notes
 0x018aa520,28,auto_destroy_then_release_018aa520,auto,edge-verified,Same instructions as misc_destroy_then_release with other addresses
 0x018aa540,150,auto_call_member_with_text_record_018aa540,auto,edge-verified,Same instructions as misc_call_member_with_text_record with other addresses
 0x018aa5e0,102,auto_call_member_with_record_018aa5e0,auto,edge-verified,Same instructions as misc_call_member_with_record with other addresses
+0x018aa650,102,auto_call_member_with_flagged_record_018aa650,auto,edge-verified,Same instructions as misc_call_member_with_flagged_record with other addresses
 0x018aa6d0,28,auto_destroy_then_release_018aa6d0,auto,edge-verified,Same instructions as misc_destroy_then_release with other addresses
 0x018aa6f0,5,auto_jump_thunk_018aa6f0,auto,edge-verified,Same instructions as misc_jump_thunk with other addresses
 0x018aa7e0,205,auto_initialize_static_wide_string_018aa7e0,auto,edge-verified,Same instructions as engine_initialize_static_wide_string_018867e0 with other addresses
@@ -12970,6 +12994,7 @@ address,size,name,system,status,notes
 0x018ad670,28,auto_destroy_then_release_018ad670,auto,edge-verified,Same instructions as misc_destroy_then_release with other addresses
 0x018ad690,150,auto_call_member_with_text_record_018ad690,auto,edge-verified,Same instructions as misc_call_member_with_text_record with other addresses
 0x018ad730,102,auto_call_member_with_record_018ad730,auto,edge-verified,Same instructions as misc_call_member_with_record with other addresses
+0x018ad7a0,102,auto_call_member_with_flagged_record_018ad7a0,auto,edge-verified,Same instructions as misc_call_member_with_flagged_record with other addresses
 0x018adc40,28,auto_destroy_then_release_018adc40,auto,edge-verified,Same instructions as misc_destroy_then_release with other addresses
 0x018ae2f0,205,auto_initialize_static_wide_string_018ae2f0,auto,edge-verified,Same instructions as engine_initialize_static_wide_string_018867e0 with other addresses
 0x018ae3c0,113,auto_init_rows_total_018ae3c0,auto,edge-verified,Same instructions as misc_init_rows_total_5944010 with other addresses
@@ -12977,6 +13002,7 @@ address,size,name,system,status,notes
 0x018ae450,28,auto_destroy_then_release_018ae450,auto,edge-verified,Same instructions as misc_destroy_then_release with other addresses
 0x018ae470,150,auto_call_member_with_text_record_018ae470,auto,edge-verified,Same instructions as misc_call_member_with_text_record with other addresses
 0x018ae510,102,auto_call_member_with_record_018ae510,auto,edge-verified,Same instructions as misc_call_member_with_record with other addresses
+0x018ae580,102,auto_call_member_with_flagged_record_018ae580,auto,edge-verified,Same instructions as misc_call_member_with_flagged_record with other addresses
 0x018ae7a0,28,auto_destroy_then_release_018ae7a0,auto,edge-verified,Same instructions as misc_destroy_then_release with other addresses
 0x018aeda0,1,auto_empty_018aeda0,auto,edge-verified,Generated from the empty template
 0x018af1f0,1,auto_empty_018af1f0,auto,edge-verified,Generated from the empty template
@@ -12993,6 +13019,7 @@ address,size,name,system,status,notes
 0x018afe30,28,auto_destroy_then_release_018afe30,auto,edge-verified,Same instructions as misc_destroy_then_release with other addresses
 0x018afe50,150,auto_call_member_with_text_record_018afe50,auto,edge-verified,Same instructions as misc_call_member_with_text_record with other addresses
 0x018afef0,102,auto_call_member_with_record_018afef0,auto,edge-verified,Same instructions as misc_call_member_with_record with other addresses
+0x018aff60,102,auto_call_member_with_flagged_record_018aff60,auto,edge-verified,Same instructions as misc_call_member_with_flagged_record with other addresses
 0x018affd0,5,auto_jump_thunk_018affd0,auto,edge-verified,Same instructions as misc_jump_thunk with other addresses
 0x018affe0,28,auto_destroy_then_release_018affe0,auto,edge-verified,Same instructions as misc_destroy_then_release with other addresses
 0x018b0000,39,auto_tail_call_member_target_018b0000,auto,edge-verified,Same instructions as misc_tail_call_member_target with other addresses
@@ -13010,6 +13037,7 @@ address,size,name,system,status,notes
 0x018b2380,28,auto_destroy_then_release_018b2380,auto,edge-verified,Same instructions as misc_destroy_then_release with other addresses
 0x018b23a0,150,auto_call_member_with_text_record_018b23a0,auto,edge-verified,Same instructions as misc_call_member_with_text_record with other addresses
 0x018b2440,102,auto_call_member_with_record_018b2440,auto,edge-verified,Same instructions as misc_call_member_with_record with other addresses
+0x018b24b0,102,auto_call_member_with_flagged_record_018b24b0,auto,edge-verified,Same instructions as misc_call_member_with_flagged_record with other addresses
 0x018b3140,1,auto_empty_018b3140,auto,edge-verified,Generated from the empty template
 0x018b33a0,205,auto_initialize_static_wide_string_018b33a0,auto,edge-verified,Same instructions as engine_initialize_static_wide_string_018867e0 with other addresses
 0x018b34b0,5,auto_jump_thunk_018b34b0,auto,edge-verified,Same instructions as misc_jump_thunk with other addresses
@@ -13022,6 +13050,7 @@ address,size,name,system,status,notes
 0x018b4060,28,auto_destroy_then_release_018b4060,auto,edge-verified,Same instructions as misc_destroy_then_release with other addresses
 0x018b4080,150,auto_call_member_with_text_record_018b4080,auto,edge-verified,Same instructions as misc_call_member_with_text_record with other addresses
 0x018b4120,102,auto_call_member_with_record_018b4120,auto,edge-verified,Same instructions as misc_call_member_with_record with other addresses
+0x018b4190,102,auto_call_member_with_flagged_record_018b4190,auto,edge-verified,Same instructions as misc_call_member_with_flagged_record with other addresses
 0x018ba080,1,auto_empty_018ba080,auto,edge-verified,Generated from the empty template
 0x018badb0,3,auto_return_constant_018badb0,auto,edge-verified,Generated from the return constant template
 0x018bb6a0,205,auto_initialize_static_wide_string_018bb6a0,auto,edge-verified,Same instructions as engine_initialize_static_wide_string_018867e0 with other addresses
@@ -13118,6 +13147,7 @@ address,size,name,system,status,notes
 0x018c12d0,28,auto_destroy_then_release_018c12d0,auto,edge-verified,Same instructions as misc_destroy_then_release with other addresses
 0x018c12f0,150,auto_call_member_with_text_record_018c12f0,auto,edge-verified,Same instructions as misc_call_member_with_text_record with other addresses
 0x018c1390,102,auto_call_member_with_record_018c1390,auto,edge-verified,Same instructions as misc_call_member_with_record with other addresses
+0x018c1400,102,auto_call_member_with_flagged_record_018c1400,auto,edge-verified,Same instructions as misc_call_member_with_flagged_record with other addresses
 0x018c1700,205,auto_initialize_static_wide_string_018c1700,auto,edge-verified,Same instructions as engine_initialize_static_wide_string_018867e0 with other addresses
 0x018c18a0,205,auto_initialize_static_wide_string_018c18a0,auto,edge-verified,Same instructions as engine_initialize_static_wide_string_018867e0 with other addresses
 0x018c1a40,205,auto_initialize_static_wide_string_018c1a40,auto,edge-verified,Same instructions as engine_initialize_static_wide_string_018867e0 with other addresses
@@ -13164,6 +13194,7 @@ address,size,name,system,status,notes
 0x018c8330,28,auto_destroy_then_release_018c8330,auto,edge-verified,Same instructions as misc_destroy_then_release with other addresses
 0x018c8350,150,auto_call_member_with_text_record_018c8350,auto,edge-verified,Same instructions as misc_call_member_with_text_record with other addresses
 0x018c83f0,102,auto_call_member_with_record_018c83f0,auto,edge-verified,Same instructions as misc_call_member_with_record with other addresses
+0x018c8460,102,auto_call_member_with_flagged_record_018c8460,auto,edge-verified,Same instructions as misc_call_member_with_flagged_record with other addresses
 0x018c8c40,28,auto_destroy_then_release_018c8c40,auto,edge-verified,Same instructions as misc_destroy_then_release with other addresses
 0x018c9ae0,3,auto_return_constant_018c9ae0,auto,edge-verified,Generated from the return constant template
 0x018ca4c0,205,auto_initialize_static_wide_string_018ca4c0,auto,edge-verified,Same instructions as engine_initialize_static_wide_string_018867e0 with other addresses
@@ -13188,6 +13219,7 @@ address,size,name,system,status,notes
 0x018cc210,28,auto_destroy_then_release_018cc210,auto,edge-verified,Same instructions as misc_destroy_then_release with other addresses
 0x018cc230,150,auto_call_member_with_text_record_018cc230,auto,edge-verified,Same instructions as misc_call_member_with_text_record with other addresses
 0x018cc2d0,102,auto_call_member_with_record_018cc2d0,auto,edge-verified,Same instructions as misc_call_member_with_record with other addresses
+0x018cc340,102,auto_call_member_with_flagged_record_018cc340,auto,edge-verified,Same instructions as misc_call_member_with_flagged_record with other addresses
 0x018cc8a0,28,auto_destroy_then_release_018cc8a0,auto,edge-verified,Same instructions as misc_destroy_then_release with other addresses
 0x018cf500,8,auto_return_member_address_018cf500,auto,edge-verified,Generated from the return member address template
 0x018cf760,8,auto_return_member_address_018cf760,auto,edge-verified,Generated from the return member address template
@@ -13780,6 +13812,7 @@ address,size,name,system,status,notes
 0x019503d0,28,auto_destroy_then_release_019503d0,auto,edge-verified,Same instructions as misc_destroy_then_release with other addresses
 0x019503f0,150,auto_call_member_with_text_record_019503f0,auto,edge-verified,Same instructions as misc_call_member_with_text_record with other addresses
 0x01950490,102,auto_call_member_with_record_01950490,auto,edge-verified,Same instructions as misc_call_member_with_record with other addresses
+0x01950500,102,auto_call_member_with_flagged_record_01950500,auto,edge-verified,Same instructions as misc_call_member_with_flagged_record with other addresses
 0x01954dc0,205,auto_initialize_static_wide_string_01954dc0,auto,edge-verified,Same instructions as engine_initialize_static_wide_string_018867e0 with other addresses
 0x019553d0,28,auto_destroy_then_release_019553d0,auto,edge-verified,Same instructions as misc_destroy_then_release with other addresses
 0x01956ac0,1,auto_empty_01956ac0,auto,edge-verified,Generated from the empty template
@@ -13801,6 +13834,7 @@ address,size,name,system,status,notes
 0x01958830,28,auto_destroy_then_release_01958830,auto,edge-verified,Same instructions as misc_destroy_then_release with other addresses
 0x01958850,150,auto_call_member_with_text_record_01958850,auto,edge-verified,Same instructions as misc_call_member_with_text_record with other addresses
 0x019588f0,102,auto_call_member_with_record_019588f0,auto,edge-verified,Same instructions as misc_call_member_with_record with other addresses
+0x01958960,102,auto_call_member_with_flagged_record_01958960,auto,edge-verified,Same instructions as misc_call_member_with_flagged_record with other addresses
 0x01961dd0,205,auto_initialize_static_wide_string_01961dd0,auto,edge-verified,Same instructions as engine_initialize_static_wide_string_018867e0 with other addresses
 0x01962ee0,8,auto_fixed_address_01962ee0,auto,edge-verified,Same instructions as misc_plain_type_address with other addresses
 0x01962f80,205,auto_initialize_static_wide_string_01962f80,auto,edge-verified,Same instructions as engine_initialize_static_wide_string_018867e0 with other addresses
@@ -13811,6 +13845,7 @@ address,size,name,system,status,notes
 0x01963100,28,auto_destroy_then_release_01963100,auto,edge-verified,Same instructions as misc_destroy_then_release with other addresses
 0x01963120,150,auto_call_member_with_text_record_01963120,auto,edge-verified,Same instructions as misc_call_member_with_text_record with other addresses
 0x019631c0,102,auto_call_member_with_record_019631c0,auto,edge-verified,Same instructions as misc_call_member_with_record with other addresses
+0x01963230,102,auto_call_member_with_flagged_record_01963230,auto,edge-verified,Same instructions as misc_call_member_with_flagged_record with other addresses
 0x01964750,4,auto_set_u32_word_01964750,auto,edge-verified,Same instructions as misc_set_u32_word_160 with other addresses and constants
 0x01964760,7,auto_set_u32_word_01964760,auto,edge-verified,Same instructions as misc_set_u32_word_160 with other addresses and constants
 0x01964800,205,auto_initialize_static_wide_string_01964800,auto,edge-verified,Same instructions as engine_initialize_static_wide_string_018867e0 with other addresses
@@ -14158,6 +14193,7 @@ address,size,name,system,status,notes
 0x019c1580,28,auto_destroy_then_release_019c1580,auto,edge-verified,Same instructions as misc_destroy_then_release with other addresses
 0x019c15a0,150,auto_call_member_with_text_record_019c15a0,auto,edge-verified,Same instructions as misc_call_member_with_text_record with other addresses
 0x019c1640,102,auto_call_member_with_record_019c1640,auto,edge-verified,Same instructions as misc_call_member_with_record with other addresses
+0x019c16b0,102,auto_call_member_with_flagged_record_019c16b0,auto,edge-verified,Same instructions as misc_call_member_with_flagged_record with other addresses
 0x019c2130,205,auto_initialize_static_wide_string_019c2130,auto,edge-verified,Same instructions as engine_initialize_static_wide_string_018867e0 with other addresses
 0x019c2700,28,auto_destroy_then_release_019c2700,auto,edge-verified,Same instructions as misc_destroy_then_release with other addresses
 0x019c2880,1,auto_empty_019c2880,auto,edge-verified,Generated from the empty template
@@ -17499,6 +17535,7 @@ address,size,name,system,status,notes
 0x01b9ba00,28,auto_destroy_then_release_01b9ba00,auto,edge-verified,Same instructions as misc_destroy_then_release with other addresses
 0x01b9ba20,150,auto_call_member_with_text_record_01b9ba20,auto,edge-verified,Same instructions as misc_call_member_with_text_record with other addresses
 0x01b9bac0,102,auto_call_member_with_record_01b9bac0,auto,edge-verified,Same instructions as misc_call_member_with_record with other addresses
+0x01b9bb30,102,auto_call_member_with_flagged_record_01b9bb30,auto,edge-verified,Same instructions as misc_call_member_with_flagged_record with other addresses
 0x01b9bf70,38,auto_release_held_block_01b9bf70,auto,edge-verified,Same instructions as misc_release_held_block with other addresses and constants
 0x01b9c470,205,auto_initialize_static_wide_string_01b9c470,auto,edge-verified,Same instructions as engine_initialize_static_wide_string_018867e0 with other addresses
 0x01b9c540,113,auto_init_rows_total_01b9c540,auto,edge-verified,Same instructions as misc_init_rows_total_5944010 with other addresses
@@ -17509,6 +17546,7 @@ address,size,name,system,status,notes
 0x01b9c630,28,auto_destroy_then_release_01b9c630,auto,edge-verified,Same instructions as misc_destroy_then_release with other addresses
 0x01b9c650,150,auto_call_member_with_text_record_01b9c650,auto,edge-verified,Same instructions as misc_call_member_with_text_record with other addresses
 0x01b9c6f0,102,auto_call_member_with_record_01b9c6f0,auto,edge-verified,Same instructions as misc_call_member_with_record with other addresses
+0x01b9c760,102,auto_call_member_with_flagged_record_01b9c760,auto,edge-verified,Same instructions as misc_call_member_with_flagged_record with other addresses
 0x01b9cb90,38,auto_release_held_block_01b9cb90,auto,edge-verified,Same instructions as misc_release_held_block with other addresses and constants
 0x01b9d0a0,205,auto_initialize_static_wide_string_01b9d0a0,auto,edge-verified,Same instructions as engine_initialize_static_wide_string_018867e0 with other addresses
 0x01b9d170,153,auto_init_rows_total_fields_01b9d170,auto,edge-verified,Same instructions as misc_init_rows_total_fields_5946c40 with other addresses
@@ -17519,6 +17557,7 @@ address,size,name,system,status,notes
 0x01b9d280,28,auto_destroy_then_release_01b9d280,auto,edge-verified,Same instructions as misc_destroy_then_release with other addresses
 0x01b9d2a0,150,auto_call_member_with_text_record_01b9d2a0,auto,edge-verified,Same instructions as misc_call_member_with_text_record with other addresses
 0x01b9d340,102,auto_call_member_with_record_01b9d340,auto,edge-verified,Same instructions as misc_call_member_with_record with other addresses
+0x01b9d3b0,102,auto_call_member_with_flagged_record_01b9d3b0,auto,edge-verified,Same instructions as misc_call_member_with_flagged_record with other addresses
 0x01b9d7f0,38,auto_release_held_block_01b9d7f0,auto,edge-verified,Same instructions as misc_release_held_block with other addresses and constants
 0x01b9dd00,205,auto_initialize_static_wide_string_01b9dd00,auto,edge-verified,Same instructions as engine_initialize_static_wide_string_018867e0 with other addresses
 0x01b9ddd0,153,auto_init_rows_total_fields_01b9ddd0,auto,edge-verified,Same instructions as misc_init_rows_total_fields_5946c40 with other addresses
@@ -17529,6 +17568,7 @@ address,size,name,system,status,notes
 0x01b9dee0,28,auto_destroy_then_release_01b9dee0,auto,edge-verified,Same instructions as misc_destroy_then_release with other addresses
 0x01b9df00,150,auto_call_member_with_text_record_01b9df00,auto,edge-verified,Same instructions as misc_call_member_with_text_record with other addresses
 0x01b9dfa0,102,auto_call_member_with_record_01b9dfa0,auto,edge-verified,Same instructions as misc_call_member_with_record with other addresses
+0x01b9e010,102,auto_call_member_with_flagged_record_01b9e010,auto,edge-verified,Same instructions as misc_call_member_with_flagged_record with other addresses
 0x01b9e470,38,auto_release_held_block_01b9e470,auto,edge-verified,Same instructions as misc_release_held_block with other addresses and constants
 0x01b9e970,205,auto_initialize_static_wide_string_01b9e970,auto,edge-verified,Same instructions as engine_initialize_static_wide_string_018867e0 with other addresses
 0x01b9ea40,113,auto_init_rows_total_01b9ea40,auto,edge-verified,Same instructions as misc_init_rows_total_5944010 with other addresses
@@ -17539,6 +17579,7 @@ address,size,name,system,status,notes
 0x01b9eb30,28,auto_destroy_then_release_01b9eb30,auto,edge-verified,Same instructions as misc_destroy_then_release with other addresses
 0x01b9eb50,150,auto_call_member_with_text_record_01b9eb50,auto,edge-verified,Same instructions as misc_call_member_with_text_record with other addresses
 0x01b9ebf0,102,auto_call_member_with_record_01b9ebf0,auto,edge-verified,Same instructions as misc_call_member_with_record with other addresses
+0x01b9ec60,102,auto_call_member_with_flagged_record_01b9ec60,auto,edge-verified,Same instructions as misc_call_member_with_flagged_record with other addresses
 0x01b9f060,38,auto_release_held_block_01b9f060,auto,edge-verified,Same instructions as misc_release_held_block with other addresses and constants
 0x01b9f560,205,auto_initialize_static_wide_string_01b9f560,auto,edge-verified,Same instructions as engine_initialize_static_wide_string_018867e0 with other addresses
 0x01b9f630,113,auto_init_rows_total_01b9f630,auto,edge-verified,Same instructions as misc_init_rows_total_5944010 with other addresses
@@ -17549,6 +17590,7 @@ address,size,name,system,status,notes
 0x01b9f720,28,auto_destroy_then_release_01b9f720,auto,edge-verified,Same instructions as misc_destroy_then_release with other addresses
 0x01b9f740,150,auto_call_member_with_text_record_01b9f740,auto,edge-verified,Same instructions as misc_call_member_with_text_record with other addresses
 0x01b9f7e0,102,auto_call_member_with_record_01b9f7e0,auto,edge-verified,Same instructions as misc_call_member_with_record with other addresses
+0x01b9f850,102,auto_call_member_with_flagged_record_01b9f850,auto,edge-verified,Same instructions as misc_call_member_with_flagged_record with other addresses
 0x01b9fa70,5,auto_delete_object_thunk_01b9fa70,auto,edge-verified,Same instructions as misc_delete_object_thunk with other addresses
 0x01b9fa80,1,auto_empty_01b9fa80,auto,edge-verified,Generated from the empty template
 0x01b9fb20,205,auto_initialize_static_wide_string_01b9fb20,auto,edge-verified,Same instructions as engine_initialize_static_wide_string_018867e0 with other addresses
@@ -17563,6 +17605,7 @@ address,size,name,system,status,notes
 0x01ba0750,28,auto_destroy_then_release_01ba0750,auto,edge-verified,Same instructions as misc_destroy_then_release with other addresses
 0x01ba0770,150,auto_call_member_with_text_record_01ba0770,auto,edge-verified,Same instructions as misc_call_member_with_text_record with other addresses
 0x01ba0810,102,auto_call_member_with_record_01ba0810,auto,edge-verified,Same instructions as misc_call_member_with_record with other addresses
+0x01ba0880,102,auto_call_member_with_flagged_record_01ba0880,auto,edge-verified,Same instructions as misc_call_member_with_flagged_record with other addresses
 0x01ba0cf0,38,auto_release_held_block_01ba0cf0,auto,edge-verified,Same instructions as misc_release_held_block with other addresses and constants
 0x01ba1220,205,auto_initialize_static_wide_string_01ba1220,auto,edge-verified,Same instructions as engine_initialize_static_wide_string_018867e0 with other addresses
 0x01ba1370,1,auto_empty_01ba1370,auto,edge-verified,Generated from the empty template
@@ -17572,6 +17615,7 @@ address,size,name,system,status,notes
 0x01ba13e0,28,auto_destroy_then_release_01ba13e0,auto,edge-verified,Same instructions as misc_destroy_then_release with other addresses
 0x01ba1400,150,auto_call_member_with_text_record_01ba1400,auto,edge-verified,Same instructions as misc_call_member_with_text_record with other addresses
 0x01ba14a0,102,auto_call_member_with_record_01ba14a0,auto,edge-verified,Same instructions as misc_call_member_with_record with other addresses
+0x01ba1510,102,auto_call_member_with_flagged_record_01ba1510,auto,edge-verified,Same instructions as misc_call_member_with_flagged_record with other addresses
 0x01ba1970,38,auto_release_held_block_01ba1970,auto,edge-verified,Same instructions as misc_release_held_block with other addresses and constants
 0x01ba1e90,205,auto_initialize_static_wide_string_01ba1e90,auto,edge-verified,Same instructions as engine_initialize_static_wide_string_018867e0 with other addresses
 0x01ba1fe0,1,auto_empty_01ba1fe0,auto,edge-verified,Generated from the empty template
@@ -17581,6 +17625,7 @@ address,size,name,system,status,notes
 0x01ba2050,28,auto_destroy_then_release_01ba2050,auto,edge-verified,Same instructions as misc_destroy_then_release with other addresses
 0x01ba2070,150,auto_call_member_with_text_record_01ba2070,auto,edge-verified,Same instructions as misc_call_member_with_text_record with other addresses
 0x01ba2110,102,auto_call_member_with_record_01ba2110,auto,edge-verified,Same instructions as misc_call_member_with_record with other addresses
+0x01ba2180,102,auto_call_member_with_flagged_record_01ba2180,auto,edge-verified,Same instructions as misc_call_member_with_flagged_record with other addresses
 0x01ba2620,38,auto_release_held_block_01ba2620,auto,edge-verified,Same instructions as misc_release_held_block with other addresses and constants
 0x01ba2b30,205,auto_initialize_static_wide_string_01ba2b30,auto,edge-verified,Same instructions as engine_initialize_static_wide_string_018867e0 with other addresses
 0x01ba2c00,153,auto_init_rows_total_fields_01ba2c00,auto,edge-verified,Same instructions as misc_init_rows_total_fields_5946c40 with other addresses
@@ -17591,6 +17636,7 @@ address,size,name,system,status,notes
 0x01ba2d10,28,auto_destroy_then_release_01ba2d10,auto,edge-verified,Same instructions as misc_destroy_then_release with other addresses
 0x01ba2d30,150,auto_call_member_with_text_record_01ba2d30,auto,edge-verified,Same instructions as misc_call_member_with_text_record with other addresses
 0x01ba2dd0,102,auto_call_member_with_record_01ba2dd0,auto,edge-verified,Same instructions as misc_call_member_with_record with other addresses
+0x01ba2e40,102,auto_call_member_with_flagged_record_01ba2e40,auto,edge-verified,Same instructions as misc_call_member_with_flagged_record with other addresses
 0x01ba3310,38,auto_release_held_block_01ba3310,auto,edge-verified,Same instructions as misc_release_held_block with other addresses and constants
 0x01ba3810,205,auto_initialize_static_wide_string_01ba3810,auto,edge-verified,Same instructions as engine_initialize_static_wide_string_018867e0 with other addresses
 0x01ba38e0,113,auto_init_rows_total_01ba38e0,auto,edge-verified,Same instructions as misc_init_rows_total_5944010 with other addresses
@@ -17601,6 +17647,7 @@ address,size,name,system,status,notes
 0x01ba39d0,28,auto_destroy_then_release_01ba39d0,auto,edge-verified,Same instructions as misc_destroy_then_release with other addresses
 0x01ba39f0,150,auto_call_member_with_text_record_01ba39f0,auto,edge-verified,Same instructions as misc_call_member_with_text_record with other addresses
 0x01ba3a90,102,auto_call_member_with_record_01ba3a90,auto,edge-verified,Same instructions as misc_call_member_with_record with other addresses
+0x01ba3b00,102,auto_call_member_with_flagged_record_01ba3b00,auto,edge-verified,Same instructions as misc_call_member_with_flagged_record with other addresses
 0x01ba3eb0,38,auto_release_held_block_01ba3eb0,auto,edge-verified,Same instructions as misc_release_held_block with other addresses and constants
 0x01ba43b0,205,auto_initialize_static_wide_string_01ba43b0,auto,edge-verified,Same instructions as engine_initialize_static_wide_string_018867e0 with other addresses
 0x01ba4480,113,auto_init_rows_total_01ba4480,auto,edge-verified,Same instructions as misc_init_rows_total_5944010 with other addresses
@@ -17611,6 +17658,7 @@ address,size,name,system,status,notes
 0x01ba4570,28,auto_destroy_then_release_01ba4570,auto,edge-verified,Same instructions as misc_destroy_then_release with other addresses
 0x01ba4590,150,auto_call_member_with_text_record_01ba4590,auto,edge-verified,Same instructions as misc_call_member_with_text_record with other addresses
 0x01ba4630,102,auto_call_member_with_record_01ba4630,auto,edge-verified,Same instructions as misc_call_member_with_record with other addresses
+0x01ba46a0,102,auto_call_member_with_flagged_record_01ba46a0,auto,edge-verified,Same instructions as misc_call_member_with_flagged_record with other addresses
 0x01ba4a20,38,auto_release_held_block_01ba4a20,auto,edge-verified,Same instructions as misc_release_held_block with other addresses and constants
 0x01ba4f20,205,auto_initialize_static_wide_string_01ba4f20,auto,edge-verified,Same instructions as engine_initialize_static_wide_string_018867e0 with other addresses
 0x01ba4ff0,153,auto_init_rows_total_fields_01ba4ff0,auto,edge-verified,Same instructions as misc_init_rows_total_fields_5946c40 with other addresses
@@ -17621,6 +17669,7 @@ address,size,name,system,status,notes
 0x01ba5100,28,auto_destroy_then_release_01ba5100,auto,edge-verified,Same instructions as misc_destroy_then_release with other addresses
 0x01ba5120,150,auto_call_member_with_text_record_01ba5120,auto,edge-verified,Same instructions as misc_call_member_with_text_record with other addresses
 0x01ba51c0,102,auto_call_member_with_record_01ba51c0,auto,edge-verified,Same instructions as misc_call_member_with_record with other addresses
+0x01ba5230,102,auto_call_member_with_flagged_record_01ba5230,auto,edge-verified,Same instructions as misc_call_member_with_flagged_record with other addresses
 0x01ba5800,38,auto_release_held_block_01ba5800,auto,edge-verified,Same instructions as misc_release_held_block with other addresses and constants
 0x01ba5e20,205,auto_initialize_static_wide_string_01ba5e20,auto,edge-verified,Same instructions as engine_initialize_static_wide_string_018867e0 with other addresses
 0x01ba5ef0,113,auto_init_rows_total_01ba5ef0,auto,edge-verified,Same instructions as misc_init_rows_total_5944010 with other addresses
@@ -17631,6 +17680,7 @@ address,size,name,system,status,notes
 0x01ba5fe0,28,auto_destroy_then_release_01ba5fe0,auto,edge-verified,Same instructions as misc_destroy_then_release with other addresses
 0x01ba6000,150,auto_call_member_with_text_record_01ba6000,auto,edge-verified,Same instructions as misc_call_member_with_text_record with other addresses
 0x01ba60a0,102,auto_call_member_with_record_01ba60a0,auto,edge-verified,Same instructions as misc_call_member_with_record with other addresses
+0x01ba6110,102,auto_call_member_with_flagged_record_01ba6110,auto,edge-verified,Same instructions as misc_call_member_with_flagged_record with other addresses
 0x01ba6200,5,auto_delete_object_thunk_01ba6200,auto,edge-verified,Same instructions as misc_delete_object_thunk with other addresses
 0x01ba6210,1,auto_empty_01ba6210,auto,edge-verified,Generated from the empty template
 0x01ba62b0,205,auto_initialize_static_wide_string_01ba62b0,auto,edge-verified,Same instructions as engine_initialize_static_wide_string_018867e0 with other addresses
@@ -17645,6 +17695,7 @@ address,size,name,system,status,notes
 0x01ba6e70,28,auto_destroy_then_release_01ba6e70,auto,edge-verified,Same instructions as misc_destroy_then_release with other addresses
 0x01ba6e90,150,auto_call_member_with_text_record_01ba6e90,auto,edge-verified,Same instructions as misc_call_member_with_text_record with other addresses
 0x01ba6f30,102,auto_call_member_with_record_01ba6f30,auto,edge-verified,Same instructions as misc_call_member_with_record with other addresses
+0x01ba6fa0,102,auto_call_member_with_flagged_record_01ba6fa0,auto,edge-verified,Same instructions as misc_call_member_with_flagged_record with other addresses
 0x01ba7410,38,auto_release_held_block_01ba7410,auto,edge-verified,Same instructions as misc_release_held_block with other addresses and constants
 0x01ba7910,205,auto_initialize_static_wide_string_01ba7910,auto,edge-verified,Same instructions as engine_initialize_static_wide_string_018867e0 with other addresses
 0x01ba79e0,153,auto_init_rows_total_fields_01ba79e0,auto,edge-verified,Same instructions as misc_init_rows_total_fields_5946c40 with other addresses
@@ -17655,6 +17706,7 @@ address,size,name,system,status,notes
 0x01ba7af0,28,auto_destroy_then_release_01ba7af0,auto,edge-verified,Same instructions as misc_destroy_then_release with other addresses
 0x01ba7b10,150,auto_call_member_with_text_record_01ba7b10,auto,edge-verified,Same instructions as misc_call_member_with_text_record with other addresses
 0x01ba7bb0,102,auto_call_member_with_record_01ba7bb0,auto,edge-verified,Same instructions as misc_call_member_with_record with other addresses
+0x01ba7c20,102,auto_call_member_with_flagged_record_01ba7c20,auto,edge-verified,Same instructions as misc_call_member_with_flagged_record with other addresses
 0x01ba80b0,38,auto_release_held_block_01ba80b0,auto,edge-verified,Same instructions as misc_release_held_block with other addresses and constants
 0x01ba85b0,205,auto_initialize_static_wide_string_01ba85b0,auto,edge-verified,Same instructions as engine_initialize_static_wide_string_018867e0 with other addresses
 0x01ba86c0,1,auto_empty_01ba86c0,auto,edge-verified,Generated from the empty template
@@ -17664,6 +17716,7 @@ address,size,name,system,status,notes
 0x01ba8730,28,auto_destroy_then_release_01ba8730,auto,edge-verified,Same instructions as misc_destroy_then_release with other addresses
 0x01ba8750,150,auto_call_member_with_text_record_01ba8750,auto,edge-verified,Same instructions as misc_call_member_with_text_record with other addresses
 0x01ba87f0,102,auto_call_member_with_record_01ba87f0,auto,edge-verified,Same instructions as misc_call_member_with_record with other addresses
+0x01ba8860,102,auto_call_member_with_flagged_record_01ba8860,auto,edge-verified,Same instructions as misc_call_member_with_flagged_record with other addresses
 0x01ba8c30,38,auto_release_held_block_01ba8c30,auto,edge-verified,Same instructions as misc_release_held_block with other addresses and constants
 0x01ba9130,205,auto_initialize_static_wide_string_01ba9130,auto,edge-verified,Same instructions as engine_initialize_static_wide_string_018867e0 with other addresses
 0x01ba9240,1,auto_empty_01ba9240,auto,edge-verified,Generated from the empty template
@@ -17673,6 +17726,7 @@ address,size,name,system,status,notes
 0x01ba92b0,28,auto_destroy_then_release_01ba92b0,auto,edge-verified,Same instructions as misc_destroy_then_release with other addresses
 0x01ba92d0,150,auto_call_member_with_text_record_01ba92d0,auto,edge-verified,Same instructions as misc_call_member_with_text_record with other addresses
 0x01ba9370,102,auto_call_member_with_record_01ba9370,auto,edge-verified,Same instructions as misc_call_member_with_record with other addresses
+0x01ba93e0,102,auto_call_member_with_flagged_record_01ba93e0,auto,edge-verified,Same instructions as misc_call_member_with_flagged_record with other addresses
 0x01ba9870,38,auto_release_held_block_01ba9870,auto,edge-verified,Same instructions as misc_release_held_block with other addresses and constants
 0x01ba9da0,205,auto_initialize_static_wide_string_01ba9da0,auto,edge-verified,Same instructions as engine_initialize_static_wide_string_018867e0 with other addresses
 0x01ba9e70,113,auto_init_rows_total_01ba9e70,auto,edge-verified,Same instructions as misc_init_rows_total_5944010 with other addresses
@@ -17683,6 +17737,7 @@ address,size,name,system,status,notes
 0x01ba9f60,28,auto_destroy_then_release_01ba9f60,auto,edge-verified,Same instructions as misc_destroy_then_release with other addresses
 0x01ba9f80,150,auto_call_member_with_text_record_01ba9f80,auto,edge-verified,Same instructions as misc_call_member_with_text_record with other addresses
 0x01baa020,102,auto_call_member_with_record_01baa020,auto,edge-verified,Same instructions as misc_call_member_with_record with other addresses
+0x01baa090,102,auto_call_member_with_flagged_record_01baa090,auto,edge-verified,Same instructions as misc_call_member_with_flagged_record with other addresses
 0x01baa4d0,38,auto_release_held_block_01baa4d0,auto,edge-verified,Same instructions as misc_release_held_block with other addresses and constants
 0x01baa9e0,205,auto_initialize_static_wide_string_01baa9e0,auto,edge-verified,Same instructions as engine_initialize_static_wide_string_018867e0 with other addresses
 0x01baaaf0,1,auto_empty_01baaaf0,auto,edge-verified,Generated from the empty template
@@ -17692,6 +17747,7 @@ address,size,name,system,status,notes
 0x01baab60,28,auto_destroy_then_release_01baab60,auto,edge-verified,Same instructions as misc_destroy_then_release with other addresses
 0x01baab80,150,auto_call_member_with_text_record_01baab80,auto,edge-verified,Same instructions as misc_call_member_with_text_record with other addresses
 0x01baac20,102,auto_call_member_with_record_01baac20,auto,edge-verified,Same instructions as misc_call_member_with_record with other addresses
+0x01baac90,102,auto_call_member_with_flagged_record_01baac90,auto,edge-verified,Same instructions as misc_call_member_with_flagged_record with other addresses
 0x01bab0d0,38,auto_release_held_block_01bab0d0,auto,edge-verified,Same instructions as misc_release_held_block with other addresses and constants
 0x01bab600,205,auto_initialize_static_wide_string_01bab600,auto,edge-verified,Same instructions as engine_initialize_static_wide_string_018867e0 with other addresses
 0x01bab710,1,auto_empty_01bab710,auto,edge-verified,Generated from the empty template
@@ -17701,6 +17757,7 @@ address,size,name,system,status,notes
 0x01bab780,28,auto_destroy_then_release_01bab780,auto,edge-verified,Same instructions as misc_destroy_then_release with other addresses
 0x01bab7a0,150,auto_call_member_with_text_record_01bab7a0,auto,edge-verified,Same instructions as misc_call_member_with_text_record with other addresses
 0x01bab840,102,auto_call_member_with_record_01bab840,auto,edge-verified,Same instructions as misc_call_member_with_record with other addresses
+0x01bab8b0,102,auto_call_member_with_flagged_record_01bab8b0,auto,edge-verified,Same instructions as misc_call_member_with_flagged_record with other addresses
 0x01babd60,38,auto_release_held_block_01babd60,auto,edge-verified,Same instructions as misc_release_held_block with other addresses and constants
 0x01bac290,205,auto_initialize_static_wide_string_01bac290,auto,edge-verified,Same instructions as engine_initialize_static_wide_string_018867e0 with other addresses
 0x01bac3a0,1,auto_empty_01bac3a0,auto,edge-verified,Generated from the empty template
@@ -17710,6 +17767,7 @@ address,size,name,system,status,notes
 0x01bac410,28,auto_destroy_then_release_01bac410,auto,edge-verified,Same instructions as misc_destroy_then_release with other addresses
 0x01bac430,150,auto_call_member_with_text_record_01bac430,auto,edge-verified,Same instructions as misc_call_member_with_text_record with other addresses
 0x01bac4d0,102,auto_call_member_with_record_01bac4d0,auto,edge-verified,Same instructions as misc_call_member_with_record with other addresses
+0x01bac540,102,auto_call_member_with_flagged_record_01bac540,auto,edge-verified,Same instructions as misc_call_member_with_flagged_record with other addresses
 0x01bac920,38,auto_release_held_block_01bac920,auto,edge-verified,Same instructions as misc_release_held_block with other addresses and constants
 0x01bace40,205,auto_initialize_static_wide_string_01bace40,auto,edge-verified,Same instructions as engine_initialize_static_wide_string_018867e0 with other addresses
 0x01bacf50,1,auto_empty_01bacf50,auto,edge-verified,Generated from the empty template
@@ -17719,6 +17777,7 @@ address,size,name,system,status,notes
 0x01bacfc0,28,auto_destroy_then_release_01bacfc0,auto,edge-verified,Same instructions as misc_destroy_then_release with other addresses
 0x01bacfe0,150,auto_call_member_with_text_record_01bacfe0,auto,edge-verified,Same instructions as misc_call_member_with_text_record with other addresses
 0x01bad080,102,auto_call_member_with_record_01bad080,auto,edge-verified,Same instructions as misc_call_member_with_record with other addresses
+0x01bad0f0,102,auto_call_member_with_flagged_record_01bad0f0,auto,edge-verified,Same instructions as misc_call_member_with_flagged_record with other addresses
 0x01bad730,38,auto_release_held_block_01bad730,auto,edge-verified,Same instructions as misc_release_held_block with other addresses and constants
 0x01badce0,205,auto_initialize_static_wide_string_01badce0,auto,edge-verified,Same instructions as engine_initialize_static_wide_string_018867e0 with other addresses
 0x01baddb0,113,auto_init_rows_total_01baddb0,auto,edge-verified,Same instructions as misc_init_rows_total_5944010 with other addresses
@@ -17729,6 +17788,7 @@ address,size,name,system,status,notes
 0x01badea0,28,auto_destroy_then_release_01badea0,auto,edge-verified,Same instructions as misc_destroy_then_release with other addresses
 0x01badec0,150,auto_call_member_with_text_record_01badec0,auto,edge-verified,Same instructions as misc_call_member_with_text_record with other addresses
 0x01badf60,102,auto_call_member_with_record_01badf60,auto,edge-verified,Same instructions as misc_call_member_with_record with other addresses
+0x01badfd0,102,auto_call_member_with_flagged_record_01badfd0,auto,edge-verified,Same instructions as misc_call_member_with_flagged_record with other addresses
 0x01bae490,38,auto_release_held_block_01bae490,auto,edge-verified,Same instructions as misc_release_held_block with other addresses and constants
 0x01bae990,205,auto_initialize_static_wide_string_01bae990,auto,edge-verified,Same instructions as engine_initialize_static_wide_string_018867e0 with other addresses
 0x01baea60,113,auto_init_rows_total_01baea60,auto,edge-verified,Same instructions as misc_init_rows_total_5944010 with other addresses
@@ -17739,6 +17799,7 @@ address,size,name,system,status,notes
 0x01baeb50,28,auto_destroy_then_release_01baeb50,auto,edge-verified,Same instructions as misc_destroy_then_release with other addresses
 0x01baeb70,150,auto_call_member_with_text_record_01baeb70,auto,edge-verified,Same instructions as misc_call_member_with_text_record with other addresses
 0x01baec10,102,auto_call_member_with_record_01baec10,auto,edge-verified,Same instructions as misc_call_member_with_record with other addresses
+0x01baec80,102,auto_call_member_with_flagged_record_01baec80,auto,edge-verified,Same instructions as misc_call_member_with_flagged_record with other addresses
 0x01baf310,38,auto_release_held_block_01baf310,auto,edge-verified,Same instructions as misc_release_held_block with other addresses and constants
 0x01baf870,205,auto_initialize_static_wide_string_01baf870,auto,edge-verified,Same instructions as engine_initialize_static_wide_string_018867e0 with other addresses
 0x01baf940,113,auto_init_rows_total_01baf940,auto,edge-verified,Same instructions as misc_init_rows_total_5944010 with other addresses
@@ -17749,6 +17810,7 @@ address,size,name,system,status,notes
 0x01bafa30,28,auto_destroy_then_release_01bafa30,auto,edge-verified,Same instructions as misc_destroy_then_release with other addresses
 0x01bafa50,150,auto_call_member_with_text_record_01bafa50,auto,edge-verified,Same instructions as misc_call_member_with_text_record with other addresses
 0x01bafaf0,102,auto_call_member_with_record_01bafaf0,auto,edge-verified,Same instructions as misc_call_member_with_record with other addresses
+0x01bafb60,102,auto_call_member_with_flagged_record_01bafb60,auto,edge-verified,Same instructions as misc_call_member_with_flagged_record with other addresses
 0x01bafea0,38,auto_release_held_block_01bafea0,auto,edge-verified,Same instructions as misc_release_held_block with other addresses and constants
 0x01bb03a0,205,auto_initialize_static_wide_string_01bb03a0,auto,edge-verified,Same instructions as engine_initialize_static_wide_string_018867e0 with other addresses
 0x01bb04b0,1,auto_empty_01bb04b0,auto,edge-verified,Generated from the empty template
@@ -17758,6 +17820,7 @@ address,size,name,system,status,notes
 0x01bb0520,28,auto_destroy_then_release_01bb0520,auto,edge-verified,Same instructions as misc_destroy_then_release with other addresses
 0x01bb0540,150,auto_call_member_with_text_record_01bb0540,auto,edge-verified,Same instructions as misc_call_member_with_text_record with other addresses
 0x01bb05e0,102,auto_call_member_with_record_01bb05e0,auto,edge-verified,Same instructions as misc_call_member_with_record with other addresses
+0x01bb0650,102,auto_call_member_with_flagged_record_01bb0650,auto,edge-verified,Same instructions as misc_call_member_with_flagged_record with other addresses
 0x01bb0ac0,38,auto_release_held_block_01bb0ac0,auto,edge-verified,Same instructions as misc_release_held_block with other addresses and constants
 0x01bb0ff0,205,auto_initialize_static_wide_string_01bb0ff0,auto,edge-verified,Same instructions as engine_initialize_static_wide_string_018867e0 with other addresses
 0x01bb1100,1,auto_empty_01bb1100,auto,edge-verified,Generated from the empty template
@@ -17767,6 +17830,7 @@ address,size,name,system,status,notes
 0x01bb1170,28,auto_destroy_then_release_01bb1170,auto,edge-verified,Same instructions as misc_destroy_then_release with other addresses
 0x01bb1190,150,auto_call_member_with_text_record_01bb1190,auto,edge-verified,Same instructions as misc_call_member_with_text_record with other addresses
 0x01bb1230,102,auto_call_member_with_record_01bb1230,auto,edge-verified,Same instructions as misc_call_member_with_record with other addresses
+0x01bb12a0,102,auto_call_member_with_flagged_record_01bb12a0,auto,edge-verified,Same instructions as misc_call_member_with_flagged_record with other addresses
 0x01bb1860,38,auto_release_held_block_01bb1860,auto,edge-verified,Same instructions as misc_release_held_block with other addresses and constants
 0x01bb1d60,205,auto_initialize_static_wide_string_01bb1d60,auto,edge-verified,Same instructions as engine_initialize_static_wide_string_018867e0 with other addresses
 0x01bb1e70,1,auto_empty_01bb1e70,auto,edge-verified,Generated from the empty template
@@ -17776,6 +17840,7 @@ address,size,name,system,status,notes
 0x01bb1ee0,28,auto_destroy_then_release_01bb1ee0,auto,edge-verified,Same instructions as misc_destroy_then_release with other addresses
 0x01bb1f00,150,auto_call_member_with_text_record_01bb1f00,auto,edge-verified,Same instructions as misc_call_member_with_text_record with other addresses
 0x01bb1fa0,102,auto_call_member_with_record_01bb1fa0,auto,edge-verified,Same instructions as misc_call_member_with_record with other addresses
+0x01bb2010,102,auto_call_member_with_flagged_record_01bb2010,auto,edge-verified,Same instructions as misc_call_member_with_flagged_record with other addresses
 0x01bb26a0,38,auto_release_held_block_01bb26a0,auto,edge-verified,Same instructions as misc_release_held_block with other addresses and constants
 0x01bb2ba0,205,auto_initialize_static_wide_string_01bb2ba0,auto,edge-verified,Same instructions as engine_initialize_static_wide_string_018867e0 with other addresses
 0x01bb2cf0,1,auto_empty_01bb2cf0,auto,edge-verified,Generated from the empty template
@@ -17785,6 +17850,7 @@ address,size,name,system,status,notes
 0x01bb2d60,28,auto_destroy_then_release_01bb2d60,auto,edge-verified,Same instructions as misc_destroy_then_release with other addresses
 0x01bb2d80,150,auto_call_member_with_text_record_01bb2d80,auto,edge-verified,Same instructions as misc_call_member_with_text_record with other addresses
 0x01bb2e20,102,auto_call_member_with_record_01bb2e20,auto,edge-verified,Same instructions as misc_call_member_with_record with other addresses
+0x01bb2e90,102,auto_call_member_with_flagged_record_01bb2e90,auto,edge-verified,Same instructions as misc_call_member_with_flagged_record with other addresses
 0x01bb3240,38,auto_release_held_block_01bb3240,auto,edge-verified,Same instructions as misc_release_held_block with other addresses and constants
 0x01bb3740,205,auto_initialize_static_wide_string_01bb3740,auto,edge-verified,Same instructions as engine_initialize_static_wide_string_018867e0 with other addresses
 0x01bb3850,1,auto_empty_01bb3850,auto,edge-verified,Generated from the empty template
@@ -17794,6 +17860,7 @@ address,size,name,system,status,notes
 0x01bb38c0,28,auto_destroy_then_release_01bb38c0,auto,edge-verified,Same instructions as misc_destroy_then_release with other addresses
 0x01bb38e0,150,auto_call_member_with_text_record_01bb38e0,auto,edge-verified,Same instructions as misc_call_member_with_text_record with other addresses
 0x01bb3980,102,auto_call_member_with_record_01bb3980,auto,edge-verified,Same instructions as misc_call_member_with_record with other addresses
+0x01bb39f0,102,auto_call_member_with_flagged_record_01bb39f0,auto,edge-verified,Same instructions as misc_call_member_with_flagged_record with other addresses
 0x01bb3dd0,38,auto_release_held_block_01bb3dd0,auto,edge-verified,Same instructions as misc_release_held_block with other addresses and constants
 0x01bb42d0,205,auto_initialize_static_wide_string_01bb42d0,auto,edge-verified,Same instructions as engine_initialize_static_wide_string_018867e0 with other addresses
 0x01bb43a0,113,auto_init_rows_total_01bb43a0,auto,edge-verified,Same instructions as misc_init_rows_total_5944010 with other addresses
@@ -17804,6 +17871,7 @@ address,size,name,system,status,notes
 0x01bb4490,28,auto_destroy_then_release_01bb4490,auto,edge-verified,Same instructions as misc_destroy_then_release with other addresses
 0x01bb44b0,150,auto_call_member_with_text_record_01bb44b0,auto,edge-verified,Same instructions as misc_call_member_with_text_record with other addresses
 0x01bb4550,102,auto_call_member_with_record_01bb4550,auto,edge-verified,Same instructions as misc_call_member_with_record with other addresses
+0x01bb45c0,102,auto_call_member_with_flagged_record_01bb45c0,auto,edge-verified,Same instructions as misc_call_member_with_flagged_record with other addresses
 0x01bb46f0,5,auto_delete_object_thunk_01bb46f0,auto,edge-verified,Same instructions as misc_delete_object_thunk with other addresses
 0x01bb4700,1,auto_empty_01bb4700,auto,edge-verified,Generated from the empty template
 0x01bb47a0,205,auto_initialize_static_wide_string_01bb47a0,auto,edge-verified,Same instructions as engine_initialize_static_wide_string_018867e0 with other addresses
@@ -17818,6 +17886,7 @@ address,size,name,system,status,notes
 0x01bb53a0,28,auto_destroy_then_release_01bb53a0,auto,edge-verified,Same instructions as misc_destroy_then_release with other addresses
 0x01bb53c0,150,auto_call_member_with_text_record_01bb53c0,auto,edge-verified,Same instructions as misc_call_member_with_text_record with other addresses
 0x01bb5460,102,auto_call_member_with_record_01bb5460,auto,edge-verified,Same instructions as misc_call_member_with_record with other addresses
+0x01bb54d0,102,auto_call_member_with_flagged_record_01bb54d0,auto,edge-verified,Same instructions as misc_call_member_with_flagged_record with other addresses
 0x01bb5a90,38,auto_release_held_block_01bb5a90,auto,edge-verified,Same instructions as misc_release_held_block with other addresses and constants
 0x01bb5fd0,205,auto_initialize_static_wide_string_01bb5fd0,auto,edge-verified,Same instructions as engine_initialize_static_wide_string_018867e0 with other addresses
 0x01bb60e0,1,auto_empty_01bb60e0,auto,edge-verified,Generated from the empty template
@@ -17827,6 +17896,7 @@ address,size,name,system,status,notes
 0x01bb6150,28,auto_destroy_then_release_01bb6150,auto,edge-verified,Same instructions as misc_destroy_then_release with other addresses
 0x01bb6170,150,auto_call_member_with_text_record_01bb6170,auto,edge-verified,Same instructions as misc_call_member_with_text_record with other addresses
 0x01bb6210,102,auto_call_member_with_record_01bb6210,auto,edge-verified,Same instructions as misc_call_member_with_record with other addresses
+0x01bb6280,102,auto_call_member_with_flagged_record_01bb6280,auto,edge-verified,Same instructions as misc_call_member_with_flagged_record with other addresses
 0x01bb66b0,38,auto_release_held_block_01bb66b0,auto,edge-verified,Same instructions as misc_release_held_block with other addresses and constants
 0x01bb6bd0,205,auto_initialize_static_wide_string_01bb6bd0,auto,edge-verified,Same instructions as engine_initialize_static_wide_string_018867e0 with other addresses
 0x01bb6ca0,153,auto_init_rows_total_fields_01bb6ca0,auto,edge-verified,Same instructions as misc_init_rows_total_fields_5946c40 with other addresses
@@ -17837,6 +17907,7 @@ address,size,name,system,status,notes
 0x01bb6db0,28,auto_destroy_then_release_01bb6db0,auto,edge-verified,Same instructions as misc_destroy_then_release with other addresses
 0x01bb6dd0,150,auto_call_member_with_text_record_01bb6dd0,auto,edge-verified,Same instructions as misc_call_member_with_text_record with other addresses
 0x01bb6e70,102,auto_call_member_with_record_01bb6e70,auto,edge-verified,Same instructions as misc_call_member_with_record with other addresses
+0x01bb6ee0,102,auto_call_member_with_flagged_record_01bb6ee0,auto,edge-verified,Same instructions as misc_call_member_with_flagged_record with other addresses
 0x01bb70f0,5,auto_delete_object_thunk_01bb70f0,auto,edge-verified,Same instructions as misc_delete_object_thunk with other addresses
 0x01bb7100,1,auto_empty_01bb7100,auto,edge-verified,Generated from the empty template
 0x01bb7110,1,auto_empty_01bb7110,auto,edge-verified,Generated from the empty template
@@ -17856,6 +17927,7 @@ address,size,name,system,status,notes
 0x01bb8110,28,auto_destroy_then_release_01bb8110,auto,edge-verified,Same instructions as misc_destroy_then_release with other addresses
 0x01bb8130,150,auto_call_member_with_text_record_01bb8130,auto,edge-verified,Same instructions as misc_call_member_with_text_record with other addresses
 0x01bb81d0,102,auto_call_member_with_record_01bb81d0,auto,edge-verified,Same instructions as misc_call_member_with_record with other addresses
+0x01bb8240,102,auto_call_member_with_flagged_record_01bb8240,auto,edge-verified,Same instructions as misc_call_member_with_flagged_record with other addresses
 0x01bb86d0,38,auto_release_held_block_01bb86d0,auto,edge-verified,Same instructions as misc_release_held_block with other addresses and constants
 0x01bb8c00,205,auto_initialize_static_wide_string_01bb8c00,auto,edge-verified,Same instructions as engine_initialize_static_wide_string_018867e0 with other addresses
 0x01bb8d10,1,auto_empty_01bb8d10,auto,edge-verified,Generated from the empty template
@@ -17865,6 +17937,7 @@ address,size,name,system,status,notes
 0x01bb8d80,28,auto_destroy_then_release_01bb8d80,auto,edge-verified,Same instructions as misc_destroy_then_release with other addresses
 0x01bb8da0,150,auto_call_member_with_text_record_01bb8da0,auto,edge-verified,Same instructions as misc_call_member_with_text_record with other addresses
 0x01bb8e40,102,auto_call_member_with_record_01bb8e40,auto,edge-verified,Same instructions as misc_call_member_with_record with other addresses
+0x01bb8eb0,102,auto_call_member_with_flagged_record_01bb8eb0,auto,edge-verified,Same instructions as misc_call_member_with_flagged_record with other addresses
 0x01bb9680,205,auto_initialize_static_wide_string_01bb9680,auto,edge-verified,Same instructions as engine_initialize_static_wide_string_018867e0 with other addresses
 0x01bb9790,1,auto_empty_01bb9790,auto,edge-verified,Generated from the empty template
 0x01bb97a0,1,auto_empty_01bb97a0,auto,edge-verified,Generated from the empty template
@@ -18291,6 +18364,7 @@ address,size,name,system,status,notes
 0x01c2a890,28,auto_destroy_then_release_01c2a890,auto,edge-verified,Same instructions as misc_destroy_then_release with other addresses
 0x01c2a8b0,150,auto_call_member_with_text_record_01c2a8b0,auto,edge-verified,Same instructions as misc_call_member_with_text_record with other addresses
 0x01c2a950,102,auto_call_member_with_record_01c2a950,auto,edge-verified,Same instructions as misc_call_member_with_record with other addresses
+0x01c2a9c0,102,auto_call_member_with_flagged_record_01c2a9c0,auto,edge-verified,Same instructions as misc_call_member_with_flagged_record with other addresses
 0x01c2aa30,5,auto_jump_thunk_01c2aa30,auto,edge-verified,Same instructions as misc_jump_thunk with other addresses
 0x01c2aa40,28,auto_destroy_then_release_01c2aa40,auto,edge-verified,Same instructions as misc_destroy_then_release with other addresses
 0x01c2aa90,39,auto_tail_call_member_target_01c2aa90,auto,edge-verified,Same instructions as misc_tail_call_member_target with other addresses
@@ -19021,6 +19095,7 @@ address,size,name,system,status,notes
 0x01ce3190,28,auto_destroy_then_release_01ce3190,auto,edge-verified,Same instructions as misc_destroy_then_release with other addresses
 0x01ce31b0,150,auto_call_member_with_text_record_01ce31b0,auto,edge-verified,Same instructions as misc_call_member_with_text_record with other addresses
 0x01ce3250,102,auto_call_member_with_record_01ce3250,auto,edge-verified,Same instructions as misc_call_member_with_record with other addresses
+0x01ce32c0,102,auto_call_member_with_flagged_record_01ce32c0,auto,edge-verified,Same instructions as misc_call_member_with_flagged_record with other addresses
 0x01ce3330,5,auto_jump_thunk_01ce3330,auto,edge-verified,Same instructions as misc_jump_thunk with other addresses
 0x01ce3340,28,auto_destroy_then_release_01ce3340,auto,edge-verified,Same instructions as misc_destroy_then_release with other addresses
 0x01ce3360,5,auto_return_field_01ce3360,auto,edge-verified,Generated from the return field template
@@ -29905,6 +29980,7 @@ address,size,name,system,status,notes
 0x02248200,28,auto_destroy_then_release_02248200,auto,edge-verified,Same instructions as misc_destroy_then_release with other addresses
 0x02248220,150,auto_call_member_with_text_record_02248220,auto,edge-verified,Same instructions as misc_call_member_with_text_record with other addresses
 0x022482c0,102,auto_call_member_with_record_022482c0,auto,edge-verified,Same instructions as misc_call_member_with_record with other addresses
+0x02248330,102,auto_call_member_with_flagged_record_02248330,auto,edge-verified,Same instructions as misc_call_member_with_flagged_record with other addresses
 0x022483a0,5,auto_jump_thunk_022483a0,auto,edge-verified,Same instructions as misc_jump_thunk with other addresses
 0x022483b0,28,auto_destroy_then_release_022483b0,auto,edge-verified,Same instructions as misc_destroy_then_release with other addresses
 0x022483d0,5,auto_return_field_022483d0,auto,edge-verified,Generated from the return field template
@@ -30583,6 +30659,7 @@ address,size,name,system,status,notes
 0x022e1730,28,auto_destroy_then_release_022e1730,auto,edge-verified,Same instructions as misc_destroy_then_release with other addresses
 0x022e1750,150,auto_call_member_with_text_record_022e1750,auto,edge-verified,Same instructions as misc_call_member_with_text_record with other addresses
 0x022e17f0,102,auto_call_member_with_record_022e17f0,auto,edge-verified,Same instructions as misc_call_member_with_record with other addresses
+0x022e1860,102,auto_call_member_with_flagged_record_022e1860,auto,edge-verified,Same instructions as misc_call_member_with_flagged_record with other addresses
 0x022e18d0,5,auto_jump_thunk_022e18d0,auto,edge-verified,Same instructions as misc_jump_thunk with other addresses
 0x022e18e0,28,auto_destroy_then_release_022e18e0,auto,edge-verified,Same instructions as misc_destroy_then_release with other addresses
 0x022e1900,5,auto_return_field_022e1900,auto,edge-verified,Generated from the return field template
@@ -30601,6 +30678,7 @@ address,size,name,system,status,notes
 0x022e4670,28,auto_destroy_then_release_022e4670,auto,edge-verified,Same instructions as misc_destroy_then_release with other addresses
 0x022e4690,150,auto_call_member_with_text_record_022e4690,auto,edge-verified,Same instructions as misc_call_member_with_text_record with other addresses
 0x022e4730,102,auto_call_member_with_record_022e4730,auto,edge-verified,Same instructions as misc_call_member_with_record with other addresses
+0x022e47a0,102,auto_call_member_with_flagged_record_022e47a0,auto,edge-verified,Same instructions as misc_call_member_with_flagged_record with other addresses
 0x022e4810,5,auto_jump_thunk_022e4810,auto,edge-verified,Same instructions as misc_jump_thunk with other addresses
 0x022e4820,28,auto_destroy_then_release_022e4820,auto,edge-verified,Same instructions as misc_destroy_then_release with other addresses
 0x022e4840,5,auto_return_field_022e4840,auto,edge-verified,Generated from the return field template
@@ -46866,6 +46944,7 @@ address,size,name,system,status,notes
 0x02d6d210,28,auto_destroy_then_release_02d6d210,auto,edge-verified,Same instructions as misc_destroy_then_release with other addresses
 0x02d6d230,150,auto_call_member_with_text_record_02d6d230,auto,edge-verified,Same instructions as misc_call_member_with_text_record with other addresses
 0x02d6d2d0,102,auto_call_member_with_record_02d6d2d0,auto,edge-verified,Same instructions as misc_call_member_with_record with other addresses
+0x02d6d340,102,auto_call_member_with_flagged_record_02d6d340,auto,edge-verified,Same instructions as misc_call_member_with_flagged_record with other addresses
 0x02d6d3b0,5,auto_jump_thunk_02d6d3b0,auto,edge-verified,Same instructions as misc_jump_thunk with other addresses
 0x02d6d3c0,28,auto_destroy_then_release_02d6d3c0,auto,edge-verified,Same instructions as misc_destroy_then_release with other addresses
 0x02d6d3e0,5,auto_return_field_02d6d3e0,auto,edge-verified,Generated from the return field template
@@ -47690,6 +47769,7 @@ address,size,name,system,status,notes
 0x02dbbb90,28,auto_destroy_then_release_02dbbb90,auto,edge-verified,Same instructions as misc_destroy_then_release with other addresses
 0x02dbbbb0,150,auto_call_member_with_text_record_02dbbbb0,auto,edge-verified,Same instructions as misc_call_member_with_text_record with other addresses
 0x02dbbc50,102,auto_call_member_with_record_02dbbc50,auto,edge-verified,Same instructions as misc_call_member_with_record with other addresses
+0x02dbbcc0,102,auto_call_member_with_flagged_record_02dbbcc0,auto,edge-verified,Same instructions as misc_call_member_with_flagged_record with other addresses
 0x02dbbd30,5,auto_jump_thunk_02dbbd30,auto,edge-verified,Same instructions as misc_jump_thunk with other addresses
 0x02dbbd40,28,auto_destroy_then_release_02dbbd40,auto,edge-verified,Same instructions as misc_destroy_then_release with other addresses
 0x02dbbd60,5,auto_return_field_02dbbd60,auto,edge-verified,Generated from the return field template
@@ -47718,6 +47798,7 @@ address,size,name,system,status,notes
 0x02dbc910,28,auto_destroy_then_release_02dbc910,auto,edge-verified,Same instructions as misc_destroy_then_release with other addresses
 0x02dbc930,150,auto_call_member_with_text_record_02dbc930,auto,edge-verified,Same instructions as misc_call_member_with_text_record with other addresses
 0x02dbc9d0,102,auto_call_member_with_record_02dbc9d0,auto,edge-verified,Same instructions as misc_call_member_with_record with other addresses
+0x02dbca40,102,auto_call_member_with_flagged_record_02dbca40,auto,edge-verified,Same instructions as misc_call_member_with_flagged_record with other addresses
 0x02dbcab0,5,auto_jump_thunk_02dbcab0,auto,edge-verified,Same instructions as misc_jump_thunk with other addresses
 0x02dbcac0,28,auto_destroy_then_release_02dbcac0,auto,edge-verified,Same instructions as misc_destroy_then_release with other addresses
 0x02dbcae0,5,auto_return_field_02dbcae0,auto,edge-verified,Generated from the return field template
@@ -48468,6 +48549,7 @@ address,size,name,system,status,notes
 0x02de39f0,28,auto_destroy_then_release_02de39f0,auto,edge-verified,Same instructions as misc_destroy_then_release with other addresses
 0x02de3a10,150,auto_call_member_with_text_record_02de3a10,auto,edge-verified,Same instructions as misc_call_member_with_text_record with other addresses
 0x02de3ab0,102,auto_call_member_with_record_02de3ab0,auto,edge-verified,Same instructions as misc_call_member_with_record with other addresses
+0x02de3b20,102,auto_call_member_with_flagged_record_02de3b20,auto,edge-verified,Same instructions as misc_call_member_with_flagged_record with other addresses
 0x02de3b90,1,auto_empty_02de3b90,auto,edge-verified,Generated from the empty template
 0x02de3ba0,5,auto_delete_object_thunk_02de3ba0,auto,edge-verified,Same instructions as misc_delete_object_thunk with other addresses
 0x02de3be0,5,auto_jump_thunk_02de3be0,auto,edge-verified,Same instructions as misc_jump_thunk with other addresses
