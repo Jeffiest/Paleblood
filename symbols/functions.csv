@@ -17007,6 +17007,7 @@ address,size,name,system,status,notes
 0x01e53b90,8,auto_fixed_address_01e53b90,auto,edge-verified,Same instructions as misc_plain_type_address with other addresses
 0x01e53ba0,3,auto_return_zero_01e53ba0,auto,edge-verified,Generated from the return zero template
 0x01e53e20,6,auto_return_constant_01e53e20,auto,edge-verified,Generated from the return constant template
+0x01e54010,27,auto_init_keyed_handle_variant_01e54010,auto,edge-verified,Same instructions as misc_init_keyed_handle_variant with other addresses
 0x01e54040,1,auto_empty_01e54040,auto,edge-verified,Generated from the empty template
 0x01e540e0,205,engine_initialize_static_wide_string_01e540e0,engine,edge-verified,Duplicate of the guarded static wide string initializer at 0x0217ffb0 with identical code; forwards to that replacement
 0x01e54640,28,auto_destroy_then_release_01e54640,auto,edge-verified,Same instructions as misc_destroy_then_release with other addresses
