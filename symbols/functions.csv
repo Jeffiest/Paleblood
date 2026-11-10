@@ -23258,9 +23258,21 @@ address,size,name,system,status,notes
 0x02242bb0,75,misc_sized_delete_02242bb0,misc,edge-verified,Runs the release step then frees the object through the thread allocator with its size tag or the default 0x130 size and returns the free result
 0x02242c30,24,misc_forward_index_02242c30,misc,edge-verified,Stores the value then forwards the inner object index value and mode zero to the forwarding function and returns its result
 0x02242ce0,205,auto_initialize_static_wide_string_02242ce0,auto,edge-verified,Same instructions as engine_initialize_static_wide_string_018867e0 with other addresses
+0x02242df0,167,misc_id_owner_construct_02242df0,misc,edge-verified,Constructs an id owner: stores its vtable reports an invalid id heap through the fatal error then reserves the initial ids from the heap
 0x02242ea0,52,misc_held_block_delete_02242ea0,misc,edge-verified,Deleting destructor of an owner holding one block: stores its virtual table releases the held block through its allocator when one is held then returns the library result of the owner
 0x02242ee0,72,misc_held_block_destroy_02242ee0,misc,edge-verified,Destructor of an owner holding one block: stores its virtual table and when a block is held releases it through the owner allocator then clears the held block and the two words after it
+0x02242f30,216,misc_collect_motion_types_02242f30,misc,edge-verified,Collects the motion types of the listed bodies into the owner id vector when a type is listed and not held yet reading the physics world tables
+0x02243010,216,misc_collect_motion_types_02243010,misc,edge-verified,Collects the motion types of the listed bodies into the owner id vector when a type is listed and not held yet reading the physics world tables
 0x022430f0,89,misc_clear_id_list_022430f0,misc,edge-verified,Hands each 32-bit id of a list to the physics world id handler then empties the list by setting its end to its first id
+0x022431e0,205,engine_initialize_static_wide_string_022431e0,engine,edge-verified,Duplicate of the guarded static wide string initializer at 0x0217ffb0 with identical code; forwards to that replacement
+0x02243c20,205,engine_initialize_static_wide_string_02243c20,engine,edge-verified,Duplicate of the guarded static wide string initializer at 0x0217ffb0 with identical code; forwards to that replacement
+0x02243d30,472,misc_setup_static_objects_02243d30,misc,edge-verified,Once-only setup of two static objects: the first is built in place unless its probe accepts it and the second is built around the target and published last
+0x02243f10,164,misc_construct_member_owner_02243f10,misc,edge-verified,Constructs an owner with a member at 0x68: builds its base part first then stores its vtable then builds the member from a record holding the flag heap and the capacity
+0x02243fc0,50,misc_member_owner_delete_02243fc0,misc,edge-verified,Deleting destructor of an owner with a member at 0x68: stores its vtable destroys the member and the base part then returns the library release result for the owner
+0x02244000,42,misc_member_owner_destroy_02244000,misc,edge-verified,Destructor of an owner with a member at 0x68: stores its vtable destroys the member then returns the result of destroying the base part
+0x02244030,387,misc_build_block_object_02244030,misc,edge-verified,Builds a table from the flag heap and binds it to the member when the member returns it copies the source block into a heap buffer and sets the entry ranges
+0x022441c0,80,misc_forward_when_flagged_022441c0,misc,edge-verified,Forwards a flagged object: notifies it and returns its target forward result otherwise returns the check result with its low byte flipped
+0x022442a0,205,engine_initialize_static_wide_string_022442a0,engine,edge-verified,Duplicate of the guarded static wide string initializer at 0x0217ffb0 with identical code; forwards to that replacement
 0x02244790,28,auto_destroy_then_release_02244790,auto,edge-verified,Same instructions as misc_destroy_then_release with other addresses
 0x022447b0,5,auto_return_field_022447b0,auto,edge-verified,Generated from the return field template
 0x022447c0,5,auto_return_field_022447c0,auto,edge-verified,Generated from the return field template
