@@ -27441,6 +27441,7 @@ address,size,name,system,status,notes
 0x026e82e0,22,misc_disarm_callback,misc,edge-verified,Points the callback at its vtable and clears its armed bit
 0x026e8310,40,misc_invoke_callback,misc,edge-verified,Calls an armed callback target on its adjusted object with its argument directly or through a vtable slot; an unarmed callback calls nothing; returns nothing
 0x026ebcf0,28,misc_reset_then_release,misc,edge-verified,Resets the object then passes it to the library routine and returns its result
+0x026ef300,38,auto_holder_search_first_026ef300,auto,edge-verified,Same instructions as misc_holder_search_first with other addresses
 0x026ef4c0,38,misc_holder_search_first,misc,edge-verified,Searches the holder first table for a key and returns the result
 0x026ef680,38,misc_holder_search_second,misc,edge-verified,Searches the holder second table for a key and returns the result
 0x026ef840,38,misc_holder_search_third,misc,edge-verified,Searches the holder third table for a key and returns the result

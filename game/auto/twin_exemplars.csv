@@ -53,6 +53,7 @@ address,name,size,cases,addresses
 0x026e6f30,misc_forward_with_mode,43,game/misc/forward_with_mode_cases.py,0x05940dd8 0x02586da0
 0x026e82e0,misc_disarm_callback,22,game/misc/disarm_callback_cases.py,0x057b93b0
 0x026e8310,misc_invoke_callback,40,game/misc/invoke_callback_cases.py,
+0x026ef4c0,misc_holder_search_first,38,game/misc/holder_search_first_cases.py,0x026eb200
 0x026f3bb0,misc_destroy_chain_node,124,game/misc/destroy_chain_node_cases.py,
 0x02a44140,engine_wide_string_destroy,59,game/engine/wide_string_destroy_cases.py,
 0x02b3a3c0,misc_push_value_by_reference,218,game/misc/push_value_by_reference_cases.py,0x02b3ad50

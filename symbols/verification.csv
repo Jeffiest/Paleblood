@@ -20655,6 +20655,7 @@ auto_held_member_object_free_02928460,edge,,6,6,0,0,fcef7af44fe97861,2026-11-10
 auto_held_member_object_free_0294b480,edge,,6,6,0,0,fcef7af44fe97861,2026-11-10
 auto_held_member_object_free_029be220,edge,,6,6,0,0,fcef7af44fe97861,2026-11-10
 auto_held_member_object_free_029c2e40,edge,,6,6,0,0,fcef7af44fe97861,2026-11-10
+auto_holder_search_first_026ef300,edge,,4,4,0,0,15f6b1a4e758460f,2026-11-10
 auto_init_keyed_handle_variant_01e54010,edge,,6,6,0,0,a787e6683a130dfd,2026-11-10
 auto_init_value_record_018a3860,edge,,8,8,0,0,c58107a7068b32d1,2026-11-10
 auto_initialize_static_wide_string_01391390,edge,,30,30,0,0,20ecca0dad6ddaf3,2026-11-10
