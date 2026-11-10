@@ -6923,6 +6923,7 @@ address,replacement,system,returns
 0x01619e80,bb_auto_empty_01619e80,auto,void
 0x0161bda0,bb_auto_empty_0161bda0,auto,void
 0x0161fe10,bb_auto_initialize_static_wide_string_0161fe10,auto,void
+0x0161fee0,bb_misc_init_rows_fields_5940ea0,misc,void
 0x01621e40,bb_auto_initialize_static_wide_string_01621e40,auto,void
 0x01622250,bb_auto_empty_01622250,auto,void
 0x016222b0,bb_auto_empty_016222b0,auto,void

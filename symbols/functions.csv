@@ -6924,6 +6924,7 @@ address,size,name,system,status,notes
 0x01619e80,1,auto_empty_01619e80,auto,edge-verified,Generated from the empty template
 0x0161bda0,1,auto_empty_0161bda0,auto,edge-verified,Generated from the empty template
 0x0161fe10,205,auto_initialize_static_wide_string_0161fe10,auto,edge-verified,Same instructions as engine_initialize_static_wide_string_018867e0 with other addresses
+0x0161fee0,89,misc_init_rows_fields_5940ea0,misc,edge-verified,copy three constant rows into the record at 0x05940ea0 and set its four fields
 0x01621e40,205,auto_initialize_static_wide_string_01621e40,auto,edge-verified,Same instructions as engine_initialize_static_wide_string_018867e0 with other addresses
 0x01622250,1,auto_empty_01622250,auto,edge-verified,Generated from the empty template
 0x016222b0,1,auto_empty_016222b0,auto,edge-verified,Generated from the empty template
