@@ -38769,6 +38769,9 @@ auto_set_link_02d447b0,edge,,4,4,0,0,a0f79ed3d741c6c9,2026-11-10
 auto_set_link_02d4d0a0,edge,,4,4,0,0,a0f79ed3d741c6c9,2026-11-10
 auto_set_link_02d9b670,edge,,4,4,0,0,a0f79ed3d741c6c9,2026-11-10
 auto_set_link_02d9bfe0,edge,,4,4,0,0,a0f79ed3d741c6c9,2026-11-10
+auto_set_value_clear_link_01374030,edge,,5,5,0,0,4dd1a958bda49538,2026-11-10
+auto_set_value_clear_link_014b5880,edge,,5,5,0,0,4dd1a958bda49538,2026-11-10
+auto_set_value_clear_link_0267ca00,edge,,5,5,0,0,4dd1a958bda49538,2026-11-10
 auto_set_vtable_after_call_0163f8c0,edge,,8,8,0,0,d43b495e9b7a0019,2026-11-10
 auto_set_vtable_after_call_01644ac0,edge,,8,8,0,0,d43b495e9b7a0019,2026-11-10
 auto_set_vtable_after_call_01645c60,edge,,8,8,0,0,d43b495e9b7a0019,2026-11-10

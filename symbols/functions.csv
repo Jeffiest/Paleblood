@@ -4945,6 +4945,7 @@ address,size,name,system,status,notes
 0x01373f90,41,auto_bind_vtable_01373f90,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
 0x01373fc0,41,auto_bind_vtable_01373fc0,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
 0x01373ff0,49,auto_copy_block_01373ff0,auto,edge-verified,Same instructions as misc_copy_block_58b3240 with other addresses
+0x01374030,12,auto_set_value_clear_link_01374030,auto,edge-verified,Same instructions as misc_set_value_clear_link with other addresses
 0x01374a80,41,auto_bind_vtable_01374a80,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
 0x01374ab0,41,auto_bind_vtable_01374ab0,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
 0x01374ae0,41,auto_bind_vtable_01374ae0,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
@@ -6723,6 +6724,7 @@ address,size,name,system,status,notes
 0x014b4d70,4,auto_return_field_014b4d70,auto,edge-verified,Generated from the return field template
 0x014b4ee0,5,auto_return_field_014b4ee0,auto,edge-verified,Generated from the return field template
 0x014b5050,1,auto_empty_014b5050,auto,edge-verified,Generated from the empty template
+0x014b5880,12,auto_set_value_clear_link_014b5880,auto,edge-verified,Same instructions as misc_set_value_clear_link with other addresses
 0x014bcb60,5,auto_return_field_014bcb60,auto,edge-verified,Generated from the return field template
 0x014bcd00,3,auto_return_constant_014bcd00,auto,edge-verified,Generated from the return constant template
 0x014bcd30,3,auto_return_constant_014bcd30,auto,edge-verified,Generated from the return constant template
@@ -27325,6 +27327,7 @@ address,size,name,system,status,notes
 0x0267bac0,1,auto_empty_0267bac0,auto,edge-verified,Generated from the empty template
 0x0267c9a0,22,auto_disarm_callback_0267c9a0,auto,edge-verified,Same instructions as misc_disarm_callback with other addresses
 0x0267c9d0,40,auto_invoke_callback_0267c9d0,auto,edge-verified,Same instructions as misc_invoke_callback with other addresses
+0x0267ca00,12,auto_set_value_clear_link_0267ca00,auto,edge-verified,Same instructions as misc_set_value_clear_link with other addresses
 0x0267ca10,1,auto_empty_0267ca10,auto,edge-verified,Generated from the empty template
 0x0267cc50,28,auto_destroy_then_release_0267cc50,auto,edge-verified,Same instructions as misc_destroy_then_release with other addresses
 0x02680e40,1,auto_empty_02680e40,auto,edge-verified,Generated from the empty template

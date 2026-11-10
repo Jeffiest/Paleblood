@@ -4944,6 +4944,7 @@ address,replacement,system,returns
 0x01373f90,bb_auto_bind_vtable_01373f90,auto,void
 0x01373fc0,bb_auto_bind_vtable_01373fc0,auto,void
 0x01373ff0,bb_auto_copy_block_01373ff0,auto,void
+0x01374030,bb_auto_set_value_clear_link_01374030,auto,void
 0x01374a80,bb_auto_bind_vtable_01374a80,auto,void
 0x01374ab0,bb_auto_bind_vtable_01374ab0,auto,void
 0x01374ae0,bb_auto_bind_vtable_01374ae0,auto,void
@@ -6722,6 +6723,7 @@ address,replacement,system,returns
 0x014b4d70,bb_auto_return_field_014b4d70,auto,i64
 0x014b4ee0,bb_auto_return_field_014b4ee0,auto,i64
 0x014b5050,bb_auto_empty_014b5050,auto,void
+0x014b5880,bb_auto_set_value_clear_link_014b5880,auto,void
 0x014bcb60,bb_auto_return_field_014bcb60,auto,i64
 0x014bcd00,bb_auto_return_constant_014bcd00,auto,i8
 0x014bcd30,bb_auto_return_constant_014bcd30,auto,i8
@@ -27324,6 +27326,7 @@ address,replacement,system,returns
 0x0267bac0,bb_auto_empty_0267bac0,auto,void
 0x0267c9a0,bb_auto_disarm_callback_0267c9a0,auto,void
 0x0267c9d0,bb_auto_invoke_callback_0267c9d0,auto,void
+0x0267ca00,bb_auto_set_value_clear_link_0267ca00,auto,void
 0x0267ca10,bb_auto_empty_0267ca10,auto,void
 0x0267cc50,bb_auto_destroy_then_release_0267cc50,auto,i64
 0x02680e40,bb_auto_empty_02680e40,auto,void
