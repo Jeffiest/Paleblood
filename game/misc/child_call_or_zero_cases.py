@@ -5,7 +5,8 @@
 usage: child_call_or_zero_cases.py OUT_DIR
 
 An owner without a child (no call, zero returned), and a child whose library call returns zero, one,
-all ones and a value with only the high bit set.
+all ones and a value with only the high bit set. The second argument is passed on to the library call
+and compared there as a 32-bit value.
 """
 import json
 import os
@@ -21,12 +22,16 @@ def u64(value):
     return struct.pack('<Q', value & MASK64).hex()
 
 
-def case(cid, has_child=True, result=0x1122334455667788):
-    """One call: the owner's child pointer is set or null; the library call scripts its result."""
+def case(cid, has_child=True, result=0x1122334455667788, second=0x12345678):
+    """One call: the owner's child pointer is set or null; the library call receives the child and the
+    second argument, and scripts its result."""
     buffers = {'owner': {'size': 0x10}, 'child': {'size': 0x10}}
     memory = [{'addr': 'buf:owner+8', 'pointer': 'child'}] if has_child else [{'addr': 'buf:owner+8', 'bytes': u64(0)}]
-    stubs = [{'address': CHILD_CALL, 'argc': 1, 'ret': hex(result & MASK64)}] if has_child else []
-    return {'schema': 1, 'address': ADDRESS, 'id': cid, 'returns': 'i64', 'args': {'rdi': 'buf:owner'},
+    stubs = []
+    if has_child:
+        stubs.append({'address': CHILD_CALL, 'argc': 2, 'argi': [0], 'argu32': [1], 'ret': hex(result & MASK64)})
+    return {'schema': 1, 'address': ADDRESS, 'id': cid, 'returns': 'i64',
+            'args': {'rdi': 'buf:owner', 'rsi': hex(second & MASK64)},
             'buffers': buffers, 'memory': memory, 'imports': [], 'stubs': stubs}
 
 
@@ -36,6 +41,9 @@ CASES = [
     case('child_result_one', result=1),
     case('child_result_all_ones', result=MASK64),
     case('child_result_high_bit_only', result=1 << 63),
+    case('second_zero', second=0),
+    case('second_all_ones', second=0xffffffff),
+    case('second_high_bit_without_child', has_child=False, second=0x80000000),
 ]
 
 

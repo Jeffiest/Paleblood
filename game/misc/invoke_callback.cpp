@@ -5,21 +5,21 @@
 namespace {
 
 /** Signature of a target: the object it is called on and the callback's argument. */
-using CallbackTarget = uint64_t (*)(uint8_t *object, int32_t argument);
+using CallbackTarget = void (*)(uint8_t *object, int32_t argument);
 
 }  // namespace
 
 /**
  *
- * Calls the callback's target on the object it acts on, and returns the target's result.
+ * Calls the callback's target on the object it acts on. Nothing is returned.
  *
- * An unarmed callback calls nothing and returns zero. The object is the base plus the adjustment. When
+ * An unarmed callback calls nothing. The object is the base plus the adjustment. When
  * the target's low bit is set, the function is read from the object's vtable at the target minus the
  * bias; otherwise the target is the function. The argument is passed as the second argument.
  */
-extern "C" uint64_t bb_misc_invoke_callback(misc::CallbackObject *callback)
+extern "C" void bb_misc_invoke_callback(misc::CallbackObject *callback)
 {
-    if ((callback->flags_0x08 & misc::callback_armed_bit) == 0) return 0;
+    if ((callback->flags_0x08 & misc::callback_armed_bit) == 0) return;
 
     uint8_t *object = callback->base_0x10 + callback->adjustment_0x28;
     uintptr_t function = static_cast<uintptr_t>(callback->target_0x20);
@@ -29,5 +29,5 @@ extern "C" uint64_t bb_misc_invoke_callback(misc::CallbackObject *callback)
         function = *reinterpret_cast<const uintptr_t *>(vtable + slot_offset);
     }
     const auto target = reinterpret_cast<CallbackTarget>(function);
-    return target(object, callback->argument_0x18);
+    target(object, callback->argument_0x18);
 }

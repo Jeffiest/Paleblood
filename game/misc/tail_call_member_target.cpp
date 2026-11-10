@@ -22,27 +22,26 @@ static_assert(offsetof(MemberTailThunk, object) == 0x28);
 static_assert(offsetof(MemberTailThunk, argument) == 0x40);
 
 /** The signature shared by the targets: the adjusted object, the second argument and the 32-bit argument. */
-using MemberTailTarget = uint64_t (*)(void *object, uint64_t second, uint32_t argument);
+using MemberTailTarget = void (*)(void *object, uint64_t second, uint32_t argument);
 
 }  // namespace
 
 /**
  *
- * Calls the thunk's target on the adjusted object and returns the target's result.
+ * Calls the thunk's target on the adjusted object, as a tail call. Nothing is returned.
  *
- * A zero target returns without a call, and the original leaves the return register alone there. A virtual
- * target is read from the adjusted object's vtable first; the second argument is passed on unchanged.
+ * A zero target returns without a call. A virtual target is read from the adjusted object's vtable first;
+ * the second argument is passed on unchanged.
  */
-extern "C" uint64_t bb_misc_tail_call_member_target(MemberTailThunk *thunk, uint64_t second)
+extern "C" void bb_misc_tail_call_member_target(MemberTailThunk *thunk, uint64_t second)
 {
     const uint64_t target = thunk->target;
-    if (target == 0) return 0;
+    if (target == 0) return;
     const uintptr_t self = thunk->object + thunk->adjustment;
     uintptr_t callee = target;
     if ((target & misc::virtual_target_bit) != 0) {
         const uintptr_t vtable = *reinterpret_cast<const uintptr_t *>(self);
         callee = *reinterpret_cast<const uintptr_t *>(vtable + (target - misc::virtual_target_bit));
     }
-    return reinterpret_cast<MemberTailTarget>(callee)(reinterpret_cast<void *>(self), second,
-                                                      thunk->argument);
+    reinterpret_cast<MemberTailTarget>(callee)(reinterpret_cast<void *>(self), second, thunk->argument);
 }

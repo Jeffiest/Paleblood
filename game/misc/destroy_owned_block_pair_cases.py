@@ -5,7 +5,7 @@
 usage: destroy_owned_block_pair_cases.py OUT_DIR
 
 Each of the two owned pointers is null or present, with the library allocators' frees scripted by their
-vtable slots; the stack guard word is the returned value, so several guard words are used.
+vtable slots. The function returns nothing; the stack guard word it checks takes several values.
 """
 import json
 import os
@@ -61,7 +61,7 @@ def case(cid, plain=True, node=True, guard=0x0123456789abcdef):
                   {'address': NODE_RECORD, 'argc': 2, 'argi': [1]},
                   {'address': FREE_DATA, 'argc': 2},
                   {'address': FREE_NODE, 'argc': 2}]
-    return {'schema': 1, 'address': ADDRESS, 'id': cid, 'returns': 'i64', 'args': {'rdi': 'buf:self'},
+    return {'schema': 1, 'address': ADDRESS, 'id': cid, 'returns': 'void', 'args': {'rdi': 'buf:self'},
             'buffers': buffers, 'memory': memory, 'imports': [], 'stubs': stubs}
 
 

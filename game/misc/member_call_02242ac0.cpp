@@ -5,8 +5,10 @@
  *
  * Calls the member-function thunk's target on the adjusted object and returns the target's result.
  *
+ * The second and third arguments reach the target unchanged, as the original's tail jump leaves them.
  */
-extern "C" uint64_t bb_misc_member_call_02242ac0(const misc::MemberThunk *thunk)
+extern "C" uint64_t bb_misc_member_call_02242ac0(const misc::MemberThunk *thunk, uint64_t second,
+                                               uint64_t third)
 {
-    return misc::member_call(thunk);
+    return misc::member_call(thunk, second, third);
 }

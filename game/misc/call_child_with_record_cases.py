@@ -6,7 +6,7 @@ usage: call_child_with_record_cases.py OUT_DIR
 
 An owner without a child (nothing is called), and an owner with a child for several argument sets: zero,
 all ones, the high bit alone, distinct values in each slot that the record must keep in order. The
-record's 32 bytes are compared through the stub's pointer argument, and the stack guard word is returned.
+record's 32 bytes are compared through the stub's pointer argument. The function returns nothing.
 """
 import json
 import os
@@ -37,12 +37,12 @@ def case(cid, has_child=True, second=0x1111111111111111, third=0x222222222222222
         stubs.append({'address': CHILD_CALL, 'argc': 3, 'argi': [0, 1], 'argmem': [{'arg': 2, 'size': RECORD_BYTES}]})
     args = {'rdi': 'buf:owner', 'rsi': hex(second & MASK64), 'rdx': hex(third & MASK64),
             'rcx': hex(fourth & MASK64), 'r8': hex(fifth & MASK64)}
-    return {'schema': 1, 'address': ADDRESS, 'id': cid, 'returns': 'i64', 'args': args,
+    return {'schema': 1, 'address': ADDRESS, 'id': cid, 'returns': 'void', 'args': args,
             'buffers': buffers, 'memory': memory, 'imports': [], 'stubs': stubs}
 
 
 CASES = [
-    case('owner_without_child_returns_guard', has_child=False),
+    case('owner_without_child', has_child=False),
     case('child_distinct_arguments'),
     case('child_zero_arguments', second=0, third=0, fourth=0, fifth=0),
     case('child_all_ones_arguments', second=MASK64, third=MASK64, fourth=MASK64, fifth=MASK64),

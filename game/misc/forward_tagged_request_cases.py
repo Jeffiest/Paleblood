@@ -6,7 +6,8 @@ usage: forward_tagged_request_cases.py OUT_DIR
 
 The request's tag is its low 32 bits (must equal 2); the payload is the 64-bit word at 0x08. The holder's
 32-bit count at 0x08 is forwarded. A request with another tag returns without a call. The library routine
-receives the payload, the table address and the count, and its result is returned.
+receives the payload, the format string's address and the count. The function returns nothing, so the
+return register is not compared.
 """
 import json
 from pathlib import Path
@@ -23,17 +24,16 @@ def word(value):
     return struct.pack('<Q', value & MASK64).hex()
 
 
-def case(cid, tag=2, payload=0x1122334455667788, count=5, result=0x1234, tag_word=None):
-    """One call: the request carries tag in its low word; the routine's stub returns result. A tag other
-    than 2 makes no call and leaves the return value to the caller."""
+def case(cid, tag=2, payload=0x1122334455667788, count=5, tag_word=None):
+    """One call: the request carries tag in its low word. A tag other than 2 makes no call."""
     tag_value = tag if tag_word is None else tag_word
     request = word(tag_value) + word(payload)
     holder = '00' * 8 + struct.pack('<I', count & 0xffffffff).hex() + '00' * 4
     forwarded = (tag_value & 0xffffffff) == 2
     stubs = []
     if forwarded:
-        stubs.append({'address': ROUTINE, 'argc': 3, 'ret': hex(result & MASK64)})
-    return {'schema': 1, 'address': ADDRESS, 'id': cid, 'returns': 'i64' if forwarded else 'void',
+        stubs.append({'address': ROUTINE, 'argc': 3})
+    return {'schema': 1, 'address': ADDRESS, 'id': cid, 'returns': 'void',
             'args': {'rdi': 'buf:holder', 'rsi': 'buf:request'},
             'buffers': {'holder': {'size': 0x10, 'bytes': holder},
                         'request': {'size': 0x10, 'bytes': request}},
@@ -46,8 +46,7 @@ CASES = [
     case('tag_matches_count_all_ones', count=0xffffffff),
     case('tag_matches_payload_zero', payload=0),
     case('tag_matches_payload_all_ones', payload=(1 << 64) - 1),
-    case('tag_matches_result_zero', result=0),
-    case('tag_matches_result_high_bit', result=1 << 63),
+    case('tag_matches_count_high_bit', count=0x80000000),
     case('tag_zero_no_call', tag=0),
     case('tag_one_no_call', tag=1),
     case('tag_three_no_call', tag=3),

@@ -9,10 +9,10 @@
 
 namespace {
 
-/** The thread allocator's sized free slot at 0x18, which returns the callee's result. */
+/** The thread allocator's sized free slot at 0x18. */
 struct SizedFreeVtable {
     uint8_t unknown_0x00[0x18];
-    uint64_t (*free_sized)(engine::Allocator *allocator, void *block, uint32_t size);
+    void (*free_sized)(engine::Allocator *allocator, void *block, uint32_t size);
 };
 static_assert(offsetof(SizedFreeVtable, free_sized) == 0x18);
 
@@ -24,17 +24,16 @@ constexpr uint32_t base_object_size = 0x28;
 /**
  *
  * Deleting destructor of a base object: stores the base class's vtable address point, then frees the
- * object through the thread's allocator with its size and returns the free's result.
+ * object through the thread's allocator with its size, as a tail call. Nothing is returned.
  *
- * A null object gives the vtable address point back as the result, as the original leaves it in RAX.
+ * A null object is not freed.
  *
  */
-extern "C" uint64_t bb_misc_base_delete_02242af0(misc::BaseObject *self)
+extern "C" void bb_misc_base_delete_02242af0(misc::BaseObject *self)
 {
     misc::base_init(self);
-    if (self == nullptr) return reinterpret_cast<uint64_t>(misc::base_vtable.address() + engine::vtable_address_point);
+    if (self == nullptr) return;
 
     engine::Allocator *allocator = loading::fios::thread_allocator();
-    return reinterpret_cast<const SizedFreeVtable *>(allocator->vtable)
-        ->free_sized(allocator, self, base_object_size);
+    reinterpret_cast<const SizedFreeVtable *>(allocator->vtable)->free_sized(allocator, self, base_object_size);
 }

@@ -3,7 +3,7 @@
 //
 // misc_destroy_flagged_pair_tail (0x0139bf90) sets the object's vtable to its class's, releases the two owned
 // pointers when its flag is set, clears both, and tail-jumps to the owned pair destructor at 0x0139b630 with
-// the object, whose result is this one's.
+// the object. Nothing is returned.
 #include <cstdint>
 
 #include "flagged_owned_pair.h"
@@ -12,7 +12,7 @@
 namespace {
 
 RT_ORIGINAL(0x0247c460, fn_0247c460, void(void *object));
-RT_ORIGINAL(0x0139b630, fn_0139b630, uint64_t(void *self));
+RT_ORIGINAL(0x0139b630, fn_0139b630, void(void *self));
 
 RT_GLOBAL(0x056f1ef0, flagged_pair_vtable, misc::FlaggedOwnedPairVtable);
 
@@ -20,11 +20,11 @@ RT_GLOBAL(0x056f1ef0, flagged_pair_vtable, misc::FlaggedOwnedPairVtable);
 
 /**
  *
- * Destroys the flagged pair and returns the result of the owned pair destructor.
+ * Destroys the flagged pair, ending in a tail call of the owned pair destructor. Nothing is returned.
  *
  * The two owned pointers are released only when the flag byte is nonzero; both are cleared either way.
  */
-extern "C" uint64_t bb_misc_destroy_flagged_pair_tail(misc::FlaggedOwnedPair *self)
+extern "C" void bb_misc_destroy_flagged_pair_tail(misc::FlaggedOwnedPair *self)
 {
     self->vtable = flagged_pair_vtable.address();
     if (self->flag_0x40 != 0) {
@@ -33,5 +33,5 @@ extern "C" uint64_t bb_misc_destroy_flagged_pair_tail(misc::FlaggedOwnedPair *se
     }
     self->first_0x30 = nullptr;
     self->second_0x38 = nullptr;
-    return fn_0139b630(self);
+    fn_0139b630(self);
 }

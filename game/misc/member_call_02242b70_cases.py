@@ -7,6 +7,7 @@ usage: member_call_02242b70_cases.py OUT_DIR
 The same thunk as misc_member_call_02242a10: object pointer at 0x10, target at 0x18 (low bit set means a
 virtual slot), adjustment at 0x20. Covers direct and virtual targets, adjustments of both signs, and
 results of zero, all ones and high bits.
+The second and third arguments are passed on to the target and compared there.
 """
 import json
 from pathlib import Path
@@ -18,14 +19,17 @@ DIRECT = '0x00400020'
 VIRTUAL = '0x00400300'
 SLOT = 0x18
 MASK64 = (1 << 64) - 1
+SECOND = 0x5566778899aabbcc
+THIRD = 0x1122334455667788
 
 
 def word(value):
     return struct.pack('<Q', value & MASK64).hex()
 
 
-def case(cid, virtual=False, adjustment=0, object_offset=0, result=0x1234):
-    """One call through the thunk: the target stub runs on the adjusted object and returns result."""
+def case(cid, virtual=False, adjustment=0, object_offset=0, result=0x1234, second=SECOND, third=THIRD):
+    """One call through the thunk: the target stub runs on the adjusted object with the second and third
+    arguments, and returns result."""
     target_value = (SLOT + 1) if virtual else int(DIRECT, 16)
     target_stub = VIRTUAL if virtual else DIRECT
     object_pointer = 'obj' if object_offset == 0 else f'obj+{object_offset}'
@@ -38,8 +42,9 @@ def case(cid, virtual=False, adjustment=0, object_offset=0, result=0x1234):
         memory += [{'addr': f'buf:obj+{object_offset + adjustment}', 'pointer': 'vt'},
                    {'addr': f'buf:vt+{SLOT:#x}', 'guest': VIRTUAL}]
     return {'schema': 1, 'address': ADDRESS, 'id': cid, 'returns': 'i64',
-            'args': {'rdi': 'buf:thunk'}, 'buffers': buffers, 'memory': memory, 'imports': [],
-            'stubs': [{'address': target_stub, 'argc': 1, 'ret': hex(result & MASK64)}]}
+            'args': {'rdi': 'buf:thunk', 'rsi': hex(second & MASK64), 'rdx': hex(third & MASK64)},
+            'buffers': buffers, 'memory': memory, 'imports': [],
+            'stubs': [{'address': target_stub, 'argc': 3, 'ret': hex(result & MASK64)}]}
 
 
 CASES = [
@@ -52,6 +57,8 @@ CASES = [
     case('result_zero', result=0),
     case('result_all_ones', result=MASK64),
     case('result_high_bit', result=1 << 63),
+    case('further_arguments_zero', second=0, third=0),
+    case('further_arguments_all_ones', virtual=True, second=MASK64, third=MASK64),
 ]
 
 

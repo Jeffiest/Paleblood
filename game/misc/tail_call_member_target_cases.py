@@ -7,8 +7,8 @@ usage: tail_call_member_target_cases.py OUT_DIR
 The thunk holds the target at 0x20, the object at 0x28, the adjustment at 0x18 and the 32-bit argument
 at 0x40. A target with its low bit set is a virtual slot: the adjusted object's vtable slot at
 (target - 1) gives the function. The target stub receives the adjusted object, the second argument and
-the 32-bit argument. Covers direct and virtual targets, zero, positive and negative adjustments, a zero
-target that makes no call, and results of zero, all ones and high bits.
+the 32-bit argument. Covers direct and virtual targets, zero, positive and negative adjustments, and a
+zero target that makes no call. The function returns nothing, so the return register is not compared.
 """
 import json
 from pathlib import Path
@@ -29,9 +29,9 @@ def word(value):
     return struct.pack('<Q', value & MASK64).hex()
 
 
-def case(cid, virtual=False, zero_target=False, adjustment=0, object_offset=0, result=0x1234):
-    """One call through the thunk: the target stub runs on the adjusted object and returns result. A zero
-    target makes no call and leaves the return value to the caller."""
+def case(cid, virtual=False, zero_target=False, adjustment=0, object_offset=0, second=SECOND):
+    """One call through the thunk: the target stub runs on the adjusted object with the second argument
+    and the 32-bit argument. A zero target makes no call."""
     if zero_target:
         target_entry = {'addr': 'buf:thunk+32', 'bytes': word(0)}
     elif virtual:
@@ -46,19 +46,15 @@ def case(cid, virtual=False, zero_target=False, adjustment=0, object_offset=0, r
     buffers = {'thunk': {'size': 0x48, 'bytes': 'ee' * 0x48},
                'obj': {'size': 0x40, 'bytes': '55' * 0x40}}
     stubs = []
-    if zero_target:
-        returns = 'void'
-    else:
-        returns = 'i64'
+    if not zero_target:
         if virtual:
             buffers['vt'] = {'size': 0x40}
             self_offset = object_offset + adjustment
             memory += [{'addr': f'buf:obj+{self_offset}', 'pointer': 'vt'},
                        {'addr': f'buf:vt+{SLOT:#x}', 'guest': VIRTUAL}]
-        stubs.append({'address': VIRTUAL if virtual else DIRECT, 'argc': 3,
-                      'ret': hex(result & MASK64)})
-    return {'schema': 1, 'address': ADDRESS, 'id': cid, 'returns': returns,
-            'args': {'rdi': 'buf:thunk', 'rsi': hex(SECOND)},
+        stubs.append({'address': VIRTUAL if virtual else DIRECT, 'argc': 3})
+    return {'schema': 1, 'address': ADDRESS, 'id': cid, 'returns': 'void',
+            'args': {'rdi': 'buf:thunk', 'rsi': hex(second & MASK64)},
             'buffers': buffers, 'memory': memory, 'imports': [], 'stubs': stubs}
 
 
@@ -70,9 +66,8 @@ CASES = [
     case('virtual_target_positive_adjustment', virtual=True, adjustment=0x10),
     case('virtual_target_negative_adjustment', virtual=True, adjustment=-0x10, object_offset=32),
     case('zero_target_no_call', zero_target=True),
-    case('result_zero', result=0),
-    case('result_all_ones', result=MASK64),
-    case('result_high_bit', result=1 << 63),
+    case('second_zero', second=0),
+    case('second_all_ones_virtual', virtual=True, second=MASK64),
 ]
 
 

@@ -13,7 +13,7 @@ struct VtableHeldObject {
 static_assert(sizeof(VtableHeldObject) == 8);
 
 RT_GLOBAL(0x057225f0, static_vtable_block, uint8_t);
-RT_ORIGINAL(0x01884e90, fn_01884e90, void(void *object));
+RT_ORIGINAL(0x01884e90, fn_01884e90, void(void *object, uint64_t second, uint64_t third, uint64_t fourth));
 
 }  // namespace
 
@@ -21,11 +21,12 @@ RT_ORIGINAL(0x01884e90, fn_01884e90, void(void *object));
  *
  * Calls the routine with the object, then stores the static vtable block's address as its vtable.
  *
- * The routine receives the object unchanged, and the vtable pointer is written after it returns, so
- * the stored value is the last write to the object's first word.
+ * The routine receives the object and the three further arguments unchanged, and the vtable pointer is
+ * written after it returns, so the stored value is the last write to the object's first word.
  */
-extern "C" void bb_misc_set_vtable_after_call(VtableHeldObject *object)
+extern "C" void bb_misc_set_vtable_after_call(VtableHeldObject *object, uint64_t second, uint64_t third,
+                                              uint64_t fourth)
 {
-    fn_01884e90(object);
+    fn_01884e90(object, second, third, fourth);
     object->vtable = static_vtable_block.address();
 }

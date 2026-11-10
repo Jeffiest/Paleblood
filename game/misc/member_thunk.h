@@ -29,8 +29,9 @@ static_assert(offsetof(MemberThunk, adjustment) == 0x20);
  * Calls the thunk's target on the adjusted object and returns the target's result.
  *
  * A virtual target is read from the adjusted object's vtable at the offset the target holds, less the virtual bit.
+ * The caller's second and third arguments are passed on to the target unchanged.
  */
-inline uint64_t member_call(const MemberThunk *thunk)
+inline uint64_t member_call(const MemberThunk *thunk, uint64_t second, uint64_t third)
 {
     const uintptr_t self = thunk->object + thunk->adjustment;
     uint64_t target = thunk->target;
@@ -38,7 +39,8 @@ inline uint64_t member_call(const MemberThunk *thunk)
         const uintptr_t vtable = *reinterpret_cast<const uintptr_t *>(self);
         target = *reinterpret_cast<const uint64_t *>(vtable + (target - virtual_target_bit));
     }
-    return reinterpret_cast<uint64_t (*)(void *)>(target)(reinterpret_cast<void *>(self));
+    using Target = uint64_t (*)(void *self, uint64_t second, uint64_t third);
+    return reinterpret_cast<Target>(target)(reinterpret_cast<void *>(self), second, third);
 }
 
 }  // namespace misc

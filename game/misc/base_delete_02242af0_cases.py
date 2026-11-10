@@ -5,10 +5,10 @@
 usage: base_delete_02242af0_cases.py OUT_DIR
 
 The object is 0x28 bytes; its vtable word is stored first, then the object is freed through the thread
-allocator's sized free slot at 0x18 (a stub that returns a chosen result, the original's tail jump).
+allocator's sized free slot at 0x18 (a stub, reached by the original's tail jump).
 The thread's allocator holder is reached from the thread-local offset at 0x057e40f8, as in the other
-loading and misc cases. Covers garbage, zero and all-ones starting bytes, and results of zero, one,
-all ones and high bits. A null object stores its vtable word through the null pointer first, which
+loading and misc cases. Covers garbage, zero, all-ones and mixed starting bytes. The function returns
+nothing. A null object stores its vtable word through the null pointer first, which
 faults before the null test, so that outcome is declared unreachable.
 """
 import json
@@ -31,8 +31,8 @@ UNREACHABLE = {
 
 
 
-def case(cid, fill="ee", result=0):
-    """One deletion: the object is stored, then freed with the sized free's result."""
+def case(cid, fill="ee"):
+    """One deletion: the object's vtable word is stored, then the object is freed with its size."""
     below = -TLS_SLOT
     buffers = {'tls': {'size': below + 8}, 'holder': {'size': 0x60}, 'talloc': {'size': 0x10},
                'talloc_vt': {'size': ALLOCATOR_VTABLE_SIZE},
@@ -43,18 +43,17 @@ def case(cid, fill="ee", result=0):
               {'addr': f'buf:holder+{ALLOCATOR_HOLDER_SLOT:#x}', 'pointer': 'talloc'},
               {'addr': 'buf:talloc+0', 'pointer': 'talloc_vt'},
               {'addr': f'buf:talloc_vt+{SIZED_FREE_SLOT:#x}', 'guest': SIZED_FREE}]
-    return {'schema': 1, 'address': ADDRESS, 'id': cid, 'returns': 'i64', 'gs': f'buf:tls+{below}',
+    return {'schema': 1, 'address': ADDRESS, 'id': cid, 'returns': 'void', 'gs': f'buf:tls+{below}',
             'args': {'rdi': 'buf:obj'}, 'buffers': buffers, 'memory': memory, 'imports': [],
-            'stubs': [{'address': SIZED_FREE, 'argc': 3, 'ret': hex(result & ((1 << 64) - 1))}],
+            'stubs': [{'address': SIZED_FREE, 'argc': 3}],
             'UNREACHABLE': UNREACHABLE}
 
 
 CASES = [
-    case('garbage_bytes_result_zero'),
-    case('zero_bytes', fill='00', result=1),
-    case('all_ones_bytes', fill='ff', result=((1 << 64) - 1)),
-    case('result_high_bit', result=1 << 63),
-    case('result_fixed_word', result=0x0123456789abcdef),
+    case('garbage_bytes'),
+    case('zero_bytes', fill='00'),
+    case('all_ones_bytes', fill='ff'),
+    case('mixed_bytes', fill='5a'),
 ]
 
 

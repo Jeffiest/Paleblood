@@ -3,14 +3,27 @@
 
 #include <cstdint>
 
+namespace {
+
+/** The slot's routine as this thunk reaches it: the object, then the caller's other arguments as they came. */
+using ForwardedSlot = uint64_t (*)(misc::VirtualObject *object, uint64_t second, uint64_t third, uint64_t fourth,
+                                   uint64_t fifth, uint64_t sixth);
+
+}  // namespace
+
 /**
  *
  * Forwards a reference's object to the virtual routine in the object's slot at +0x38.
  *
- * The routine receives only the object, and its result is returned as it is, so this is a tail call.
+ * The routine receives the object in place of the reference and the other five arguments unchanged, and its
+ * result is returned as it is, so this is a tail call. How many of the arguments the routine reads is not
+ * known here.
  */
-extern "C" uint64_t bb_misc_call_object_slot_38(misc::VirtualObjectRef *reference)
+extern "C" uint64_t bb_misc_call_object_slot_38(misc::VirtualObjectRef *reference, uint64_t second, uint64_t third,
+                                                uint64_t fourth, uint64_t fifth, uint64_t sixth)
 {
     misc::VirtualObject *object = reference->object;
-    return object->vtable->slot_38(object);
+    const auto slot = reinterpret_cast<uintptr_t>(object->vtable->slot_38);
+    const auto routine = reinterpret_cast<ForwardedSlot>(slot);
+    return routine(object, second, third, fourth, fifth, sixth);
 }

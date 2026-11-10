@@ -12,7 +12,7 @@
 namespace {
 
 RT_ORIGINAL(0x0247c460, fn_0247c460, void(void *object));
-RT_ORIGINAL(0x0139b630, fn_0139b630, uint64_t(void *self));
+RT_ORIGINAL(0x0139b630, fn_0139b630, void(void *self));
 RT_ORIGINAL(0x02fbe588, fn_02fbe588, uint64_t(void *self));
 
 RT_GLOBAL(0x056f1ef0, flagged_pair_vtable, misc::FlaggedOwnedPairVtable);

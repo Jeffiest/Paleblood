@@ -2977,19 +2977,19 @@ address,size,name,system,status,notes
 0x0139b590,49,misc_copy_constant_to_058b3380,misc,edge-verified,Copies the 48-byte constant block from the read-only image into the writable global at 0x058b3380
 0x0139b5d0,51,misc_construct_serial_object,misc,edge-verified,Gives a new serial object its static vtable clears two words and takes the next value from the serial counter
 0x0139b610,28,misc_destroy_then_release,misc,edge-verified,Runs the object destruction routine then returns the result of the library release on the same object
-0x0139b630,263,misc_destroy_owned_block_pair,misc,edge-verified,Destroys an object owning a plain block and an owned node: releases both and returns the stack guard word
+0x0139b630,263,misc_destroy_owned_block_pair,misc,edge-verified,Destroys an object owning a plain block and an owned node: releases both; returns nothing
 0x0139bc10,27,misc_child_call_with_flag,misc,edge-verified,Calls the child of an owner with a flag byte through the library call and returns its result or zero
-0x0139bc30,82,misc_call_child_with_record,misc,edge-verified,Passes an owner child a second argument and a record of three words to a library call and returns the stack guard word
-0x0139bc90,24,misc_child_call_or_zero,misc,edge-verified,Returns the result of the library call on an owner child or zero when the owner has no child
-0x0139bcb0,15,misc_forward_child_tail,misc,edge-verified,Tail-calls the library function on an owner child and returns zero when there is no child
+0x0139bc30,82,misc_call_child_with_record,misc,edge-verified,Passes an owner child a second argument and a record of three words to a library call; returns nothing
+0x0139bc90,24,misc_child_call_or_zero,misc,edge-verified,Returns the result of the library call on an owner child with the second argument passed on or zero when the owner has no child
+0x0139bcb0,15,misc_forward_child_tail,misc,edge-verified,Tail-calls the library function on an owner child and calls nothing when there is no child; returns nothing
 0x0139bcc0,28,misc_select_pair_table_entry,misc,edge-verified,Returns one word of a two-word row in the pair table chosen by the inverted low bit of a flag byte
 0x0139bce0,41,misc_bind_vtable_56b4840_0139bce0,misc,edge-verified,Publishes the address of the static vtable block at 0x056b4840 into a global pointer once and sets a qword flag
 0x0139bd10,41,misc_bind_vtable_56b4890_0139bd10,misc,edge-verified,Publishes the address of the static vtable block at 0x056b4890 into a global pointer once and sets a qword flag
 0x0139bd40,41,misc_bind_vtable_56b47f0_0139bd40,misc,edge-verified,Publishes the address of the static vtable block at 0x056b47f0 into a global pointer once and sets a qword flag
 0x0139bd70,49,misc_copy_default_blocks,misc,edge-verified,Copies three 16-byte default blocks from the executable data into three globals
 0x0139bf20,103,misc_destroy_flagged_pair_then_release,misc,edge-verified,Destroys a flagged owned pair then tail-calls the library release on the object and returns its result
-0x0139bf90,95,misc_destroy_flagged_pair_tail,misc,edge-verified,Destroys a flagged owned pair then tail-calls the owned pair destructor and returns its result
-0x0139bff0,218,misc_call_receiver_with_name,misc,edge-verified,Calls a name formatter then hands the formatted name text to a receiver and returns the stack guard word
+0x0139bf90,95,misc_destroy_flagged_pair_tail,misc,edge-verified,Destroys a flagged owned pair then tail-calls the owned pair destructor; returns nothing
+0x0139bff0,218,misc_call_receiver_with_name,misc,edge-verified,Calls a name formatter then hands the formatted name text to a receiver; returns nothing
 0x0139c0d0,41,misc_bind_vtable_56b4840_0139c0d0,misc,edge-verified,Publishes the address of the static vtable block at 0x056b4840 into a global pointer once and sets a qword flag
 0x0139d9d0,3,auto_return_zero_0139d9d0,auto,edge-verified,Generated from the return zero template
 0x0139ea10,3,auto_return_zero_0139ea10,auto,edge-verified,Generated from the return zero template
@@ -5106,11 +5106,11 @@ address,size,name,system,status,notes
 0x01887de0,1,auto_empty_01887de0,auto,edge-verified,Generated from the empty template
 0x01887e00,165,misc_call_record_member_target,misc,edge-verified,Builds a stack record from a source pair and passes it with the adjusted object to a member thunk target then destroys it; a null source zero word or null object returns without a call
 0x01887eb0,1,auto_empty_01887eb0,auto,edge-verified,Generated from the empty template
-0x01887ed0,57,misc_relay_member_call,misc,edge-verified,Tail calls the target of a member thunk on its adjusted object with the owner payload forwarded and a 32-bit argument; a null owner payload or object returns without a call
+0x01887ed0,57,misc_relay_member_call,misc,edge-verified,Tail calls the target of a member thunk on its adjusted object with the owner payload forwarded and a 32-bit argument; a null owner payload or object returns without a call; returns nothing
 0x01887f20,28,misc_release_after_empty_call,misc,edge-verified,Calls the empty routine 0x01401600 then tail calls the release routine 0x02fbe588 with the same object and returns its result
-0x01887f40,39,misc_tail_call_member_target,misc,edge-verified,Tail calls the target of a member thunk on its adjusted object with a 32-bit argument and returns its result; a zero target returns without a call
+0x01887f40,39,misc_tail_call_member_target,misc,edge-verified,Tail calls the target of a member thunk on its adjusted object with a 32-bit argument; a zero target returns without a call; returns nothing
 0x01887f70,63,misc_member_call_or_fallback,misc,edge-verified,Tail calls the target of a member thunk on its adjusted object or with no target calls the fallback object vtable slot 0x80 with a fixed tag and a 64-bit argument
-0x018881b0,31,misc_set_vtable_after_call,misc,edge-verified,Calls the routine 0x01884e90 with the object then stores the static vtable block address as the first word of the object and returns
+0x018881b0,31,misc_set_vtable_after_call,misc,edge-verified,Calls the routine 0x01884e90 with the object and three further arguments then stores the static vtable block address as the first word of the object and returns
 0x018881d0,28,misc_call_then_release,misc,edge-verified,Calls the routine 0x01885070 with the object then tail calls the release routine 0x02fbe588 with the same object and returns its result
 0x01888200,1,auto_empty_01888200,auto,edge-verified,Generated from the empty template
 0x018882a0,205,misc_init_shared_record_once,misc,edge-verified,Creates the shared object on first use checks its flag query bit reports a missing bit as fatal and registers the teardown record once
@@ -5118,7 +5118,7 @@ address,size,name,system,status,notes
 0x018883d0,168,misc_release_handle_record,misc,edge-verified,Sets the record vtable frees its handle registers the record with the registry when one exists then releases the record and returns the release result
 0x01888480,155,misc_register_handle_record,misc,edge-verified,Sets the record vtable frees its handle and registers the record with the registry when one exists using a scratch handle
 0x01888520,15,misc_test_and_set_flag,misc,edge-verified,Reports whether the record flag byte at 0x0c was already set and sets it when it was clear
-0x01888650,30,misc_forward_tagged_request,misc,edge-verified,Forwards a tagged request payload with a table and a holder count to a library routine when the 32-bit tag equals 2; otherwise returns without a call
+0x01888650,30,misc_forward_tagged_request,misc,edge-verified,Forwards a tagged request payload with a format string and a holder count to the library wide formatter when the 32-bit tag equals 2; otherwise returns without a call; returns nothing
 0x01888b10,1,auto_empty_01888b10,auto,edge-verified,Generated from the empty template
 0x01889310,6,auto_return_constant_01889310,auto,edge-verified,Generated from the return constant template
 0x0188b7c0,6,auto_return_constant_0188b7c0,auto,edge-verified,Generated from the return constant template
@@ -12928,17 +12928,17 @@ address,size,name,system,status,notes
 0x02242640,203,misc_replace_block_02242640,misc,edge-verified,Replaces the owner entry block with one sized from the doubled and masked request; fills it and frees the old block through the cached or looked-up allocator
 0x02242710,196,misc_replace_block_02242710,misc,edge-verified,Replaces the owner entry block with one sized from the doubled request; fills it and frees the old block through the cached or looked-up allocator
 0x02242980,15,misc_base_init_02242980,misc,edge-verified,Stores the base class vtable address point in a base object and nothing else
-0x02242990,66,misc_base_delete_02242990,misc,edge-verified,Deleting destructor of a base object: stores the base vtable address point then frees the object through the thread allocator sized free with size 0x28 and returns its result
+0x02242990,66,misc_base_delete_02242990,misc,edge-verified,Deleting destructor of a base object: stores the base vtable address point then frees the object through the thread allocator sized free with size 0x28; returns nothing
 0x022429e0,45,misc_pair_matches_022429e0,misc,edge-verified,Reports whether a two word pair of size 0x10 matches the owner two keys
-0x02242a10,30,misc_member_call_02242a10,misc,edge-verified,Calls the member-function thunk target on the adjusted object directly or through its virtual slot and returns the target result
+0x02242a10,30,misc_member_call_02242a10,misc,edge-verified,Calls the member-function thunk target on the adjusted object directly or through its virtual slot with the second and third arguments passed on and returns the target result
 0x02242a30,15,misc_base_init_02242a30,misc,edge-verified,Stores the base class vtable address point in a base object and nothing else
-0x02242a40,66,misc_base_delete_02242a40,misc,edge-verified,Deleting destructor of a base object: stores the base vtable address point then frees the object through the thread allocator sized free with size 0x28 and returns its result
+0x02242a40,66,misc_base_delete_02242a40,misc,edge-verified,Deleting destructor of a base object: stores the base vtable address point then frees the object through the thread allocator sized free with size 0x28; returns nothing
 0x02242a90,45,misc_pair_matches_02242a90,misc,edge-verified,Reports whether a two word pair of size 0x10 matches the owner two keys
-0x02242ac0,30,misc_member_call_02242ac0,misc,edge-verified,Calls the member-function thunk target on the adjusted object directly or through its virtual slot and returns the target result
+0x02242ac0,30,misc_member_call_02242ac0,misc,edge-verified,Calls the member-function thunk target on the adjusted object directly or through its virtual slot with the second and third arguments passed on and returns the target result
 0x02242ae0,15,misc_base_init_02242ae0,misc,edge-verified,Stores the base class vtable address point in a base object and nothing else
-0x02242af0,66,misc_base_delete_02242af0,misc,edge-verified,Deleting destructor of a base object: stores the base vtable address point then frees the object through the thread allocator sized free with size 0x28 and returns its result
+0x02242af0,66,misc_base_delete_02242af0,misc,edge-verified,Deleting destructor of a base object: stores the base vtable address point then frees the object through the thread allocator sized free with size 0x28; returns nothing
 0x02242b40,45,misc_pair_matches_02242b40,misc,edge-verified,Reports whether a two word pair of size 0x10 matches the owner two keys
-0x02242b70,30,misc_member_call_02242b70,misc,edge-verified,Calls the member-function thunk target on the adjusted object directly or through its virtual slot and returns the target result
+0x02242b70,30,misc_member_call_02242b70,misc,edge-verified,Calls the member-function thunk target on the adjusted object directly or through its virtual slot with the second and third arguments passed on and returns the target result
 0x02242b90,31,misc_base_init_02242b90,misc,edge-verified,Runs the setup step on the object then stores the other class vtable in it
 0x02242bb0,75,misc_sized_delete_02242bb0,misc,edge-verified,Runs the release step then frees the object through the thread allocator with its size tag or the default 0x130 size and returns the free result
 0x02242c30,24,misc_forward_index_02242c30,misc,edge-verified,Stores the value then forwards the inner object index value and mode zero to the forwarding function and returns its result
@@ -15102,7 +15102,7 @@ address,size,name,system,status,notes
 0x026e70e0,92,misc_entry_for_key,misc,edge-verified,Looks up a copy of the key in the table and returns the entry address at the index the lookup gives
 0x026e79d0,207,misc_prepare_listed_values,misc,edge-verified,Calls the resource manager prepare routine for each listed value with the mode then clears value and element flags
 0x026e82e0,22,misc_disarm_callback,misc,edge-verified,Points the callback at its vtable and clears its armed bit
-0x026e8310,40,misc_invoke_callback,misc,edge-verified,Calls an armed callback target on its adjusted object with its argument directly or through a vtable slot
+0x026e8310,40,misc_invoke_callback,misc,edge-verified,Calls an armed callback target on its adjusted object with its argument directly or through a vtable slot; an unarmed callback calls nothing; returns nothing
 0x026ebcf0,28,misc_reset_then_release,misc,edge-verified,Resets the object then passes it to the library routine and returns its result
 0x026ef4c0,38,misc_holder_search_first,misc,edge-verified,Searches the holder first table for a key and returns the result
 0x026ef680,38,misc_holder_search_second,misc,edge-verified,Searches the holder second table for a key and returns the result
@@ -18701,7 +18701,7 @@ address,size,name,system,status,notes
 0x02b3e160,1,auto_empty_02b3e160,auto,edge-verified,Generated from the empty template
 0x02b3e170,5,misc_set_link,misc,edge-verified,Stores the link word of a two-word slot and leaves its value word as it is
 0x02b3e180,1,auto_empty_02b3e180,auto,edge-verified,Generated from the empty template
-0x02b3e190,12,misc_call_object_slot_38,misc,edge-verified,Forwards a reference object to the virtual routine in its slot at +0x38 and returns that result
+0x02b3e190,12,misc_call_object_slot_38,misc,edge-verified,Forwards a reference object and the other argument registers to the virtual routine in its slot at +0x38 and returns that result
 0x02b3e1a0,21,misc_object_slot_28_is_set,misc,edge-verified,Reports whether the virtual routine in the object slot at +0x28 returns a non-zero value for the object
 0x02b3e1c0,12,misc_call_object_slot_40,misc,edge-verified,Forwards a reference object to the virtual routine in its slot at +0x40 and returns that result
 0x02b3e1d0,12,misc_forward_object_slot_28,misc,edge-verified,Forwards a reference object to the virtual routine in its slot at +0x28 and returns that result

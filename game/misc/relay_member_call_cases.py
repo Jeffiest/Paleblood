@@ -7,8 +7,8 @@ usage: relay_member_call_cases.py OUT_DIR
 The thunk holds the object at 0x08, the target at 0x10, the adjustment at 0x18 and the 32-bit argument at
 0x20. The owner holds a payload pointer at 0x08, and the target receives payload + 0x28. A target with
 its low bit set is a virtual slot: the adjusted object's vtable slot at (target - 1) gives the function.
-Covers direct and virtual targets, positive and negative adjustments, a null owner, a null payload, a null
-object (each returns without a call), and results of zero, all ones and high bits.
+Covers direct and virtual targets, positive and negative adjustments, a null owner, a null payload and a null
+object (each returns without a call). The function returns nothing, so the return register is not compared.
 """
 import json
 from pathlib import Path
@@ -28,10 +28,10 @@ def word(value):
     return struct.pack('<Q', value & MASK64).hex()
 
 
-def case(cid, virtual=False, adjustment=0, object_offset=0, result=0x1234,
+def case(cid, virtual=False, adjustment=0, object_offset=0,
          owner_null=False, payload_null=False, object_null=False):
-    """One call: the target stub runs on the adjusted object with the forwarded payload and returns result.
-    A null owner, payload or object makes no call and leaves the return value to the caller."""
+    """One call: the target stub runs on the adjusted object with the forwarded payload and the 32-bit
+    argument. A null owner, payload or object makes no call."""
     no_call = owner_null or payload_null or object_null
     buffers = {'thunk': {'size': 0x28, 'bytes': 'ee' * 0x28},
                'obj': {'size': 0x40, 'bytes': '55' * 0x40},
@@ -47,10 +47,7 @@ def case(cid, virtual=False, adjustment=0, object_offset=0, result=0x1234,
     else:
         memory.append({'addr': 'buf:owner+8', 'pointer': 'pay'})
     stubs = []
-    if no_call:
-        returns = 'void'
-    else:
-        returns = 'i64'
+    if not no_call:
         if virtual:
             memory.append({'addr': 'buf:thunk+16', 'bytes': word(SLOT + 1)})
             buffers['vt'] = {'size': 0x40}
@@ -61,9 +58,9 @@ def case(cid, virtual=False, adjustment=0, object_offset=0, result=0x1234,
         else:
             memory.append({'addr': 'buf:thunk+16', 'guest': DIRECT})
             stub_address = DIRECT
-        stubs.append({'address': stub_address, 'argc': 3, 'ret': hex(result & MASK64)})
+        stubs.append({'address': stub_address, 'argc': 3})
     args = {'rdi': 'buf:thunk', 'rsi': '0x0' if owner_null else 'buf:owner'}
-    return {'schema': 1, 'address': ADDRESS, 'id': cid, 'returns': returns, 'args': args,
+    return {'schema': 1, 'address': ADDRESS, 'id': cid, 'returns': 'void', 'args': args,
             'buffers': buffers, 'memory': memory, 'imports': [], 'stubs': stubs}
 
 
@@ -77,9 +74,6 @@ CASES = [
     case('null_owner_no_call', owner_null=True),
     case('null_payload_no_call', payload_null=True),
     case('null_object_no_call', object_null=True),
-    case('result_zero', result=0),
-    case('result_all_ones', result=MASK64),
-    case('result_high_bit', result=1 << 63),
 ]
 
 

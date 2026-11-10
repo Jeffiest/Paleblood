@@ -2,8 +2,8 @@
 # SPDX-License-Identifier: GPL-2.0-or-later
 """Synthetic callbacks for misc_invoke_callback (0x026e8310): unarmed (nothing is called), armed
 with a direct target at an adjusted object, armed with a virtual target whose slot is read from the
-adjusted object's vtable at several offsets, the argument at zero, negative and high-bit values, and
-the target's result at zero, all ones and an ordinary value.
+adjusted object's vtable at several offsets, and the argument at zero, negative and high-bit values.
+The function returns nothing, so the return register is not compared.
 
 usage: invoke_callback_cases.py OUT_DIR
 """
@@ -32,10 +32,10 @@ def u32(value):
     return (value & MASK32).to_bytes(4, 'little').hex()
 
 
-def case(cid, flags, target, adjustment, argument, result, virtual=False, base_pointer_offset=0):
+def case(cid, flags, target, adjustment, argument, virtual=False):
     """One call. A direct target is the guest address the stub is scripted at. A virtual target is an
     offset plus one into the vtable that the adjusted object points at; the slot holds the guest address.
-    The target receives the adjusted object and the argument, and the stub returns result."""
+    The target receives the adjusted object and the argument; the function returns nothing."""
     buffers = {'callback': {'size': OBJECT_SIZE}, 'base': {'size': BASE_SIZE}}
     memory = [{'addr': 'buf:callback+%d' % FLAGS, 'bytes': u32(flags)},
               {'addr': 'buf:callback+%d' % BASE, 'pointer': 'base'},
@@ -50,24 +50,23 @@ def case(cid, flags, target, adjustment, argument, result, virtual=False, base_p
         memory.append({'addr': 'buf:callback+%d' % TARGET_SLOT, 'guest': TARGET})
     stubs = []
     if flags & ARMED:
-        stubs.append({'address': TARGET, 'argc': 2, 'argi': [0], 'argu32': [1], 'ret': hex(result & MASK64)})
-    return {'schema': 1, 'address': ADDRESS, 'id': cid, 'returns': 'i64',
+        stubs.append({'address': TARGET, 'argc': 2, 'argi': [0], 'argu32': [1]})
+    return {'schema': 1, 'address': ADDRESS, 'id': cid, 'returns': 'void',
             'args': {'rdi': 'buf:callback'}, 'buffers': buffers, 'memory': memory, 'stubs': stubs, 'imports': []}
 
 
 CASES = [
-    case('unarmed_calls_nothing', 0x3, 0x1, 0x0, 5, 0x99),
-    case('unarmed_bit_below_calls_nothing', 0x3fffffff, 0x1, 0x0, 5, 0x99),
-    case('armed_direct', ARMED, 0x00400300, 0x0, 5, 0x7000),
-    case('armed_direct_adjusted', ARMED, 0x00400300, 0x20, 0x11, 0x7000),
-    case('armed_direct_argument_zero', ARMED, 0x00400300, 0x0, 0, 0),
-    case('armed_direct_argument_negative', ARMED, 0x00400300, 0x8, -2, MASK64),
-    case('armed_direct_argument_high_bit', ARMED, 0x00400300, 0x8, 0x80000000, 0x8000000000000001),
-    case('armed_virtual_slot', ARMED, 0x41, 0x0, 3, 0x55, virtual=True),
-    case('armed_virtual_adjusted', ARMED, 0x21, 0x8, 3, 0x56, virtual=True),
-    case('armed_virtual_high_slot', ARMED, 0x81, 0x10, 0x80000001, MASK64, virtual=True),
-    case('armed_result_zero', ARMED, 0x00400300, 0x0, 7, 0),
-    case('armed_other_flags', ARMED | 0x3, 0x00400300, 0x18, 8, 0x1234),
+    case('unarmed_calls_nothing', 0x3, 0x1, 0x0, 5),
+    case('unarmed_bit_below_calls_nothing', 0x3fffffff, 0x1, 0x0, 5),
+    case('armed_direct', ARMED, 0x00400300, 0x0, 5),
+    case('armed_direct_adjusted', ARMED, 0x00400300, 0x20, 0x11),
+    case('armed_direct_argument_zero', ARMED, 0x00400300, 0x0, 0),
+    case('armed_direct_argument_negative', ARMED, 0x00400300, 0x8, -2),
+    case('armed_direct_argument_high_bit', ARMED, 0x00400300, 0x8, 0x80000000),
+    case('armed_virtual_slot', ARMED, 0x41, 0x0, 3, virtual=True),
+    case('armed_virtual_adjusted', ARMED, 0x21, 0x8, 3, virtual=True),
+    case('armed_virtual_high_slot', ARMED, 0x81, 0x10, 0x80000001, virtual=True),
+    case('armed_other_flags', ARMED | 0x3, 0x00400300, 0x18, 8),
 ]
 
 

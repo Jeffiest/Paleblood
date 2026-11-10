@@ -68,7 +68,7 @@ def case(cid, flags=0x20, text=b'ab', capacity=7, heap=False, value=0x00000001, 
     if heap:
         stubs.append({'address': FREE, 'argc': 2})
     args = {'rdi': 'buf:formatter', 'rsi': hex(argument & MASK64), 'rdx': 'buf:receiver', 'rcx': 'buf:value'}
-    return {'schema': 1, 'address': ADDRESS, 'id': cid, 'returns': 'i64', 'args': args,
+    return {'schema': 1, 'address': ADDRESS, 'id': cid, 'returns': 'void', 'args': args,
             'buffers': buffers, 'memory': memory, 'imports': [], 'stubs': stubs}
 
 

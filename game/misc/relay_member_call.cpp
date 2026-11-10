@@ -31,20 +31,20 @@ static_assert(offsetof(MemberRelayOwner, payload) == 0x08);
 constexpr uintptr_t payload_forward_offset = 0x28;
 
 /** The signature of the targets: the adjusted object, the forwarded payload and the 32-bit argument. */
-using MemberRelayTarget = uint64_t (*)(void *object, void *payload, uint32_t argument);
+using MemberRelayTarget = void (*)(void *object, void *payload, uint32_t argument);
 
 }  // namespace
 
 /**
  *
- * Calls the thunk's target on the adjusted object with the owner's forwarded payload, and returns its result.
+ * Calls the thunk's target on the adjusted object with the owner's forwarded payload, as a tail call.
  *
- * A null owner, a null payload or a null object returns without a call, and the original leaves the
- * return register alone there. A virtual target is read from the adjusted object's vtable first.
+ * A null owner, a null payload or a null object returns without a call. A virtual target is read from the
+ * adjusted object's vtable first. Nothing is returned.
  */
-extern "C" uint64_t bb_misc_relay_member_call(MemberRelayThunk *thunk, MemberRelayOwner *owner)
+extern "C" void bb_misc_relay_member_call(MemberRelayThunk *thunk, MemberRelayOwner *owner)
 {
-    if (owner == nullptr || owner->payload == 0 || thunk->object == 0) return 0;
+    if (owner == nullptr || owner->payload == 0 || thunk->object == 0) return;
     const uintptr_t self = thunk->object + thunk->adjustment;
     uintptr_t callee = thunk->target;
     if ((callee & misc::virtual_target_bit) != 0) {
@@ -52,6 +52,6 @@ extern "C" uint64_t bb_misc_relay_member_call(MemberRelayThunk *thunk, MemberRel
         callee = *reinterpret_cast<const uintptr_t *>(vtable + (callee - misc::virtual_target_bit));
     }
     const uintptr_t forwarded = owner->payload + payload_forward_offset;
-    return reinterpret_cast<MemberRelayTarget>(callee)(reinterpret_cast<void *>(self),
-                                                       reinterpret_cast<void *>(forwarded), thunk->argument);
+    reinterpret_cast<MemberRelayTarget>(callee)(reinterpret_cast<void *>(self),
+                                                reinterpret_cast<void *>(forwarded), thunk->argument);
 }

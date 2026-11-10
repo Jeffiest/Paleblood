@@ -5,7 +5,7 @@
 // 0x0139b610) sets the object's vtable to its base class. It releases the plain block through the allocator
 // the library returns for it, then clears the pointer. It then releases the node: the node's data is freed
 // through the allocator stored in the node, and the node itself through the allocator the library returns
-// for it. The original leaves the stack guard word in RAX, which this returns too.
+// for it. Nothing is returned.
 #include <cstddef>
 #include <cstdint>
 
@@ -24,7 +24,6 @@ RT_ORIGINAL(0x01440f50, fn_01440f50, void(void *block));
 RT_ORIGINAL(0x02d858c0, fn_02d858c0, void(void *record, const misc::OwnedBlock *block));
 
 RT_GLOBAL(0x056f1e60, owned_block_pair_vtable, misc::OwnedBlockPairVtable);
-RT_GLOBAL(0x057e3be0, stack_guard, uint64_t *);
 
 }  // namespace
 
@@ -32,10 +31,8 @@ RT_GLOBAL(0x057e3be0, stack_guard, uint64_t *);
  *
  * Destroys the pair: publishes the base vtable, releases the plain block and the owned node, and clears both
  * pointers. The node's data block is read through its pointer before the node call, as the original does.
- *
- * It returns the stack guard word, the value the original leaves in RAX.
  */
-extern "C" uint64_t bb_misc_destroy_owned_block_pair(misc::OwnedBlockPair *self)
+extern "C" void bb_misc_destroy_owned_block_pair(misc::OwnedBlockPair *self)
 {
     self->vtable = owned_block_pair_vtable.address();
 
@@ -57,5 +54,4 @@ extern "C" uint64_t bb_misc_destroy_owned_block_pair(misc::OwnedBlockPair *self)
         node_allocator->free(node);
         self->node_0x18 = nullptr;
     }
-    return *stack_guard.get();
 }

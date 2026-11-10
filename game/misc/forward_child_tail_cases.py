@@ -4,9 +4,9 @@
 
 usage: forward_child_tail_cases.py OUT_DIR
 
-An owner without a child: nothing is called and the return register is left as the caller had it, so
-those cases do not compare RAX. An owner with a child: the tail-called library function's result is
-returned, for zero, one, all ones and a value with only the high bit set.
+An owner without a child: nothing is called. An owner with a child: the library function is tail-called
+with the child. The owner's other bytes are zero, all ones or mixed. The function returns nothing, so the
+return register is not compared.
 """
 import json
 import os
@@ -22,22 +22,21 @@ def u64(value):
     return struct.pack('<Q', value & MASK64).hex()
 
 
-def case(cid, has_child=True, result=0x1122334455667788):
-    """One call. The owner without a child returns with RAX unspecified (returns void), so RAX is not
-    compared there; with a child the tail-called function scripts the result that is returned."""
-    buffers = {'owner': {'size': 0x10}, 'child': {'size': 0x10}}
+def case(cid, has_child=True, fill='00'):
+    """One call. The owner holds a child or a null pointer; its other bytes are the fill."""
+    buffers = {'owner': {'size': 0x10, 'bytes': fill * 0x10}, 'child': {'size': 0x10}}
     memory = [{'addr': 'buf:owner+8', 'pointer': 'child'}] if has_child else [{'addr': 'buf:owner+8', 'bytes': u64(0)}]
-    stubs = [{'address': CHILD_TAIL, 'argc': 1, 'ret': hex(result & MASK64)}] if has_child else []
-    return {'schema': 1, 'address': ADDRESS, 'id': cid, 'returns': 'i64' if has_child else 'void',
+    stubs = [{'address': CHILD_TAIL, 'argc': 1}] if has_child else []
+    return {'schema': 1, 'address': ADDRESS, 'id': cid, 'returns': 'void',
             'args': {'rdi': 'buf:owner'}, 'buffers': buffers, 'memory': memory, 'imports': [], 'stubs': stubs}
 
 
 CASES = [
-    case('owner_without_child_leaves_rax', has_child=False),
-    case('child_result_zero', result=0),
-    case('child_result_one', result=1),
-    case('child_result_all_ones', result=MASK64),
-    case('child_result_high_bit_only', result=1 << 63),
+    case('owner_without_child', has_child=False),
+    case('owner_without_child_all_ones_bytes', has_child=False, fill='ff'),
+    case('owner_with_child'),
+    case('owner_with_child_all_ones_bytes', fill='ff'),
+    case('owner_with_child_mixed_bytes', fill='a5'),
 ]
 
 
