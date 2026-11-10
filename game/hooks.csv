@@ -3285,6 +3285,7 @@ address,replacement,system,returns
 0x00beb6d0,bb_auto_return_constant_00beb6d0,auto,i8
 0x00beb830,bb_auto_fixed_address_00beb830,auto,i64
 0x00bebed0,bb_auto_held_member_object_free_00bebed0,auto,i64
+0x00bec050,bb_auto_tagged_link_address_00bec050,auto,i64
 0x00bf15c0,bb_auto_held_member_object_free_00bf15c0,auto,i64
 0x00bf1a30,bb_auto_return_field_00bf1a30,auto,i32
 0x00bf1aa0,bb_auto_return_field_00bf1aa0,auto,i64

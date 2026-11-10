@@ -3286,6 +3286,7 @@ address,size,name,system,status,notes
 0x00beb6d0,3,auto_return_constant_00beb6d0,auto,edge-verified,Generated from the return constant template
 0x00beb830,8,auto_fixed_address_00beb830,auto,edge-verified,Same instructions as misc_plain_type_address with other addresses
 0x00bebed0,75,auto_held_member_object_free_00bebed0,auto,edge-verified,Same instructions as misc_held_member_object_free with other addresses and constants
+0x00bec050,9,auto_tagged_link_address_00bec050,auto,edge-verified,Same instructions as misc_tagged_link_address with other addresses
 0x00bf15c0,75,auto_held_member_object_free_00bf15c0,auto,edge-verified,Same instructions as misc_held_member_object_free with other addresses and constants
 0x00bf1a30,7,auto_return_field_00bf1a30,auto,edge-verified,Generated from the return field template
 0x00bf1aa0,5,auto_return_field_00bf1aa0,auto,edge-verified,Generated from the return field template
