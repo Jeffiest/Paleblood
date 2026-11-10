@@ -31474,6 +31474,7 @@ address,replacement,system,returns
 0x02a8c010,bb_auto_return_constant_02a8c010,auto,i32
 0x02a8c040,bb_auto_return_constant_02a8c040,auto,i32
 0x02a8c050,bb_auto_return_constant_02a8c050,auto,i32
+0x02a8c160,bb_auto_mouse_construct_02a8c160,auto,void
 0x02a8c210,bb_input_mouse_construct,input,void
 0x02a8c4b0,bb_auto_return_constant_02a8c4b0,auto,i8
 0x02a8c500,bb_auto_return_constant_02a8c500,auto,i32

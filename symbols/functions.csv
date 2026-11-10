@@ -31475,6 +31475,7 @@ address,size,name,system,status,notes
 0x02a8c010,6,auto_return_constant_02a8c010,auto,edge-verified,Generated from the return constant template
 0x02a8c040,6,auto_return_constant_02a8c040,auto,edge-verified,Generated from the return constant template
 0x02a8c050,6,auto_return_constant_02a8c050,auto,edge-verified,Generated from the return constant template
+0x02a8c160,164,auto_mouse_construct_02a8c160,auto,edge-verified,Same instructions as input_mouse_construct with other addresses
 0x02a8c210,164,input_mouse_construct,input,edge-verified,"Constructs a mouse input object: base part, vtable, cleared state, libSceMouse load and init, then the object's virtual method at +0x100; clears the handle slot on failure."
 0x02a8c420,108,input_initialize_mouse_for_initial_user,input,original,"Initializes or reinitializes mouse input for the initial user, closing a previous connection if necessary."
 0x02a8c4b0,3,auto_return_constant_02a8c4b0,auto,edge-verified,Generated from the return constant template
