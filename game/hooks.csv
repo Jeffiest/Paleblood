@@ -4468,6 +4468,7 @@ address,replacement,system,returns
 0x0111b0b0,bb_audio_fmod_output_defaults,audio,i64
 0x0111b570,bb_auto_return_zero_0111b570,auto,i64
 0x0111b580,bb_auto_fmod_output_driver_count_0111b580,auto,i64
+0x0111b5d0,bb_auto_fmod_output_defaults_0111b5d0,auto,i64
 0x0111c440,bb_auto_return_zero_0111c440,auto,i64
 0x011252b0,bb_auto_return_zero_011252b0,auto,i64
 0x01125fd0,bb_auto_empty_01125fd0,auto,void
