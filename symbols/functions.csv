@@ -203,6 +203,9 @@ address,size,name,system,status,notes
 0x0045a480,15,auto_base_init_0045a480,auto,edge-verified,Same instructions as misc_base_init_02242980 with other addresses
 0x0045a490,5,auto_delete_object_thunk_0045a490,auto,edge-verified,Same instructions as misc_delete_object_thunk with other addresses
 0x0045a4a0,15,auto_base_init_0045a4a0,auto,edge-verified,Same instructions as misc_base_init_02242980 with other addresses
+0x0045c190,5,auto_delete_object_thunk_0045c190,auto,edge-verified,Same instructions as misc_delete_object_thunk with other addresses
+0x0045c1a0,5,auto_delete_object_thunk_0045c1a0,auto,edge-verified,Same instructions as misc_delete_object_thunk with other addresses
+0x0045e440,5,auto_delete_object_thunk_0045e440,auto,edge-verified,Same instructions as misc_delete_object_thunk with other addresses
 0x00460920,25,auto_query_owned_child_00460920,auto,edge-verified,Same instructions as misc_query_owned_child with other addresses and constants
 0x00460ee0,15,auto_forward_child_tail_00460ee0,auto,edge-verified,Same instructions as misc_forward_child_tail with other addresses and constants
 0x004616b0,3,auto_return_constant_004616b0,auto,edge-verified,Generated from the return constant template
@@ -230,11 +233,13 @@ address,size,name,system,status,notes
 0x00464d60,4,auto_return_field_00464d60,auto,edge-verified,Generated from the return field template
 0x00464ef0,4,auto_return_field_00464ef0,auto,edge-verified,Generated from the return field template
 0x00465480,3,auto_return_constant_00465480,auto,edge-verified,Generated from the return constant template
+0x00465540,5,auto_delete_object_thunk_00465540,auto,edge-verified,Same instructions as misc_delete_object_thunk with other addresses
 0x00465ad0,3,auto_return_constant_00465ad0,auto,edge-verified,Generated from the return constant template
 0x00465ae0,3,auto_return_constant_00465ae0,auto,edge-verified,Generated from the return constant template
 0x00466230,1,auto_empty_00466230,auto,edge-verified,Generated from the empty template
 0x00466360,3,auto_return_zero_00466360,auto,edge-verified,Generated from the return zero template
 0x00466740,3,auto_return_zero_00466740,auto,edge-verified,Generated from the return zero template
+0x004667f0,5,auto_delete_object_thunk_004667f0,auto,edge-verified,Same instructions as misc_delete_object_thunk with other addresses
 0x00466840,6,auto_return_constant_00466840,auto,edge-verified,Generated from the return constant template
 0x0046b030,5,auto_jump_thunk_0046b030,auto,edge-verified,Same instructions as misc_jump_thunk with other addresses
 0x0046d060,42,auto_prepare_forward_0046d060,auto,edge-verified,Same instructions as misc_prepare_forward with other addresses
@@ -1141,6 +1146,7 @@ address,size,name,system,status,notes
 0x00838910,4,auto_return_field_00838910,auto,edge-verified,Generated from the return field template
 0x00838920,4,auto_return_field_00838920,auto,edge-verified,Generated from the return field template
 0x00838930,4,auto_return_field_00838930,auto,edge-verified,Generated from the return field template
+0x00838940,5,auto_delete_object_thunk_00838940,auto,edge-verified,Same instructions as misc_delete_object_thunk with other addresses
 0x0083b210,8,auto_fixed_address_0083b210,auto,edge-verified,Same instructions as misc_plain_type_address with other addresses
 0x0083b220,1,auto_empty_0083b220,auto,edge-verified,Generated from the empty template
 0x0083b6a0,8,auto_fixed_address_0083b6a0,auto,edge-verified,Same instructions as misc_plain_type_address with other addresses
@@ -1185,6 +1191,13 @@ address,size,name,system,status,notes
 0x00845fd0,1,auto_empty_00845fd0,auto,edge-verified,Generated from the empty template
 0x00845fe0,1,auto_empty_00845fe0,auto,edge-verified,Generated from the empty template
 0x008460d0,18,auto_ascii_to_lower_008460d0,auto,edge-verified,Same instructions as engine_ascii_to_lower with other addresses
+0x008462b0,5,auto_delete_object_thunk_008462b0,auto,edge-verified,Same instructions as misc_delete_object_thunk with other addresses
+0x00846390,5,auto_delete_object_thunk_00846390,auto,edge-verified,Same instructions as misc_delete_object_thunk with other addresses
+0x008463b0,5,auto_delete_object_thunk_008463b0,auto,edge-verified,Same instructions as misc_delete_object_thunk with other addresses
+0x008463c0,5,auto_delete_object_thunk_008463c0,auto,edge-verified,Same instructions as misc_delete_object_thunk with other addresses
+0x00846430,5,auto_delete_object_thunk_00846430,auto,edge-verified,Same instructions as misc_delete_object_thunk with other addresses
+0x00846440,5,auto_delete_object_thunk_00846440,auto,edge-verified,Same instructions as misc_delete_object_thunk with other addresses
+0x00846450,5,auto_delete_object_thunk_00846450,auto,edge-verified,Same instructions as misc_delete_object_thunk with other addresses
 0x008483e0,75,auto_held_member_object_free_008483e0,auto,edge-verified,Same instructions as misc_held_member_object_free with other addresses and constants
 0x00848810,4,auto_return_field_00848810,auto,edge-verified,Generated from the return field template
 0x0084ac90,8,auto_fixed_address_0084ac90,auto,edge-verified,Same instructions as misc_plain_type_address with other addresses
@@ -2560,6 +2573,7 @@ address,size,name,system,status,notes
 0x00aa08c0,1,auto_empty_00aa08c0,auto,edge-verified,Generated from the empty template
 0x00aa08d0,8,auto_fixed_address_00aa08d0,auto,edge-verified,Same instructions as misc_plain_type_address with other addresses
 0x00aa08e0,5,auto_jump_thunk_00aa08e0,auto,edge-verified,Same instructions as misc_jump_thunk with other addresses
+0x00aa1d60,5,auto_delete_object_thunk_00aa1d60,auto,edge-verified,Same instructions as misc_delete_object_thunk with other addresses
 0x00aa1d90,6,auto_return_constant_00aa1d90,auto,edge-verified,Generated from the return constant template
 0x00aa1e50,8,auto_fixed_address_00aa1e50,auto,edge-verified,Same instructions as misc_plain_type_address with other addresses
 0x00aa1e60,5,auto_jump_thunk_00aa1e60,auto,edge-verified,Same instructions as misc_jump_thunk with other addresses
@@ -5569,6 +5583,7 @@ address,size,name,system,status,notes
 0x010c7370,5,auto_return_field_010c7370,auto,edge-verified,Generated from the return field template
 0x010c7c80,5,auto_delete_object_thunk_010c7c80,auto,edge-verified,Same instructions as misc_delete_object_thunk with other addresses
 0x010c7c90,15,auto_base_init_010c7c90,auto,edge-verified,Same instructions as misc_base_init_02242980 with other addresses
+0x010c8280,5,auto_delete_object_thunk_010c8280,auto,edge-verified,Same instructions as misc_delete_object_thunk with other addresses
 0x010c8820,28,auto_destroy_then_release_010c8820,auto,edge-verified,Same instructions as misc_destroy_then_release with other addresses
 0x010cbfa0,28,auto_destroy_then_release_010cbfa0,auto,edge-verified,Same instructions as misc_destroy_then_release with other addresses
 0x010cc200,4,auto_return_field_010cc200,auto,edge-verified,Generated from the return field template
@@ -5765,6 +5780,7 @@ address,size,name,system,status,notes
 0x01117850,3,auto_return_zero_01117850,auto,edge-verified,Generated from the return zero template
 0x01117890,3,auto_return_zero_01117890,auto,edge-verified,Generated from the return zero template
 0x011183a0,3,auto_return_zero_011183a0,auto,edge-verified,Generated from the return zero template
+0x0111a610,5,auto_delete_object_thunk_0111a610,auto,edge-verified,Same instructions as misc_delete_object_thunk with other addresses
 0x0111a620,129,kernel_file_open,kernel,edge-verified,Open read-only and query FreeBSD amd64 stat; publish low32 file size before int64 descriptor; compiler stack guard omitted
 0x0111a6b0,23,kernel_file_close,kernel,edge-verified,Forward the full opaque descriptor; translate nonzero low32 close status to 19; synthetic wire edge cases only
 0x0111a6d0,3,auto_return_zero_0111a6d0,auto,edge-verified,Generated from the return zero template
@@ -5892,6 +5908,7 @@ address,size,name,system,status,notes
 0x011aa0f0,1,auto_empty_011aa0f0,auto,edge-verified,Generated from the empty template
 0x011ab550,5,auto_jump_thunk_011ab550,auto,edge-verified,Same instructions as misc_jump_thunk with other addresses
 0x011ab560,5,auto_jump_thunk_011ab560,auto,edge-verified,Same instructions as misc_jump_thunk with other addresses
+0x011ab570,5,auto_delete_object_thunk_011ab570,auto,edge-verified,Same instructions as misc_delete_object_thunk with other addresses
 0x011ac2a0,7,auto_return_field_011ac2a0,auto,edge-verified,Generated from the return field template
 0x011ac490,1,auto_empty_011ac490,auto,edge-verified,Generated from the empty template
 0x011ae6c0,1,auto_empty_011ae6c0,auto,edge-verified,Generated from the empty template
@@ -8296,7 +8313,31 @@ address,size,name,system,status,notes
 0x01489910,24,render_record_descriptor_level_count,render,edge-verified,Read bits 16..19 below the upper descriptor partition; otherwise return zero.
 0x01489940,24,render_record_descriptor_count_exponent,render,edge-verified,Read bits 16..19 in the upper descriptor partition; otherwise return zero.
 0x01489960,68,render_record_descriptor_encoding,render,edge-verified,Read packed words at offsets 0x04 then 0x0c; pass six extracted fields to the encoding packer.
+0x014899f0,5,auto_delete_object_thunk_014899f0,auto,edge-verified,Same instructions as misc_delete_object_thunk with other addresses
+0x01489a00,5,auto_delete_object_thunk_01489a00,auto,edge-verified,Same instructions as misc_delete_object_thunk with other addresses
+0x01489a20,5,auto_delete_object_thunk_01489a20,auto,edge-verified,Same instructions as misc_delete_object_thunk with other addresses
+0x01489a30,5,auto_delete_object_thunk_01489a30,auto,edge-verified,Same instructions as misc_delete_object_thunk with other addresses
+0x01489a40,5,auto_delete_object_thunk_01489a40,auto,edge-verified,Same instructions as misc_delete_object_thunk with other addresses
+0x01489a50,5,auto_delete_object_thunk_01489a50,auto,edge-verified,Same instructions as misc_delete_object_thunk with other addresses
+0x01489a70,5,auto_delete_object_thunk_01489a70,auto,edge-verified,Same instructions as misc_delete_object_thunk with other addresses
+0x01489b10,5,auto_delete_object_thunk_01489b10,auto,edge-verified,Same instructions as misc_delete_object_thunk with other addresses
+0x01489b20,5,auto_delete_object_thunk_01489b20,auto,edge-verified,Same instructions as misc_delete_object_thunk with other addresses
+0x01489b30,5,auto_delete_object_thunk_01489b30,auto,edge-verified,Same instructions as misc_delete_object_thunk with other addresses
+0x01489b40,5,auto_delete_object_thunk_01489b40,auto,edge-verified,Same instructions as misc_delete_object_thunk with other addresses
+0x01489b50,5,auto_delete_object_thunk_01489b50,auto,edge-verified,Same instructions as misc_delete_object_thunk with other addresses
 0x01489b60,16,auto_record_step_user_pa_enabled_01489b60,auto,edge-verified,Same instructions as render_record_step_user_pa_enabled with other addresses
+0x01489b70,5,auto_delete_object_thunk_01489b70,auto,edge-verified,Same instructions as misc_delete_object_thunk with other addresses
+0x01489b80,5,auto_delete_object_thunk_01489b80,auto,edge-verified,Same instructions as misc_delete_object_thunk with other addresses
+0x01489b90,5,auto_delete_object_thunk_01489b90,auto,edge-verified,Same instructions as misc_delete_object_thunk with other addresses
+0x01489ba0,5,auto_delete_object_thunk_01489ba0,auto,edge-verified,Same instructions as misc_delete_object_thunk with other addresses
+0x01489bb0,5,auto_delete_object_thunk_01489bb0,auto,edge-verified,Same instructions as misc_delete_object_thunk with other addresses
+0x01489bc0,5,auto_delete_object_thunk_01489bc0,auto,edge-verified,Same instructions as misc_delete_object_thunk with other addresses
+0x01489bd0,5,auto_delete_object_thunk_01489bd0,auto,edge-verified,Same instructions as misc_delete_object_thunk with other addresses
+0x01489be0,5,auto_delete_object_thunk_01489be0,auto,edge-verified,Same instructions as misc_delete_object_thunk with other addresses
+0x01489bf0,5,auto_delete_object_thunk_01489bf0,auto,edge-verified,Same instructions as misc_delete_object_thunk with other addresses
+0x01489c00,5,auto_delete_object_thunk_01489c00,auto,edge-verified,Same instructions as misc_delete_object_thunk with other addresses
+0x01489c10,5,auto_delete_object_thunk_01489c10,auto,edge-verified,Same instructions as misc_delete_object_thunk with other addresses
+0x01489c20,5,auto_delete_object_thunk_01489c20,auto,edge-verified,Same instructions as misc_delete_object_thunk with other addresses
 0x01489c30,16,auto_record_step_user_pa_enabled_01489c30,auto,edge-verified,Same instructions as render_record_step_user_pa_enabled with other addresses
 0x01489c40,16,render_record_step_user_pa_enabled,render,edge-verified,"Query the actual import once; no cached global, fallback or service value is invented."
 0x01489c50,90,auto_emit_present_context_section_01489c50,auto,edge-verified,Same instructions as render_emit_present_context_section with other addresses
@@ -8551,6 +8592,7 @@ address,size,name,system,status,notes
 0x015ac390,1,auto_empty_015ac390,auto,edge-verified,Generated from the empty template
 0x015ae7e0,1,auto_empty_015ae7e0,auto,edge-verified,Generated from the empty template
 0x015bc350,1,auto_empty_015bc350,auto,edge-verified,Generated from the empty template
+0x015d25e0,5,auto_delete_object_thunk_015d25e0,auto,edge-verified,Same instructions as misc_delete_object_thunk with other addresses
 0x015d2cc0,1,auto_empty_015d2cc0,auto,edge-verified,Generated from the empty template
 0x015d4d60,75,auto_held_member_object_free_015d4d60,auto,edge-verified,Same instructions as misc_held_member_object_free with other addresses and constants
 0x015d6610,84,misc_init_stream_guards_58b9d5c,misc,edge-verified,Start-up step of a source file that uses the standard streams: constructs its two stream guards and registers their destroy functions
@@ -19814,6 +19856,7 @@ address,size,name,system,status,notes
 0x01d5d000,1,auto_empty_01d5d000,auto,edge-verified,Generated from the empty template
 0x01d5d010,5,auto_delete_object_thunk_01d5d010,auto,edge-verified,Same instructions as misc_delete_object_thunk with other addresses
 0x01d5d020,5,auto_return_member_address_01d5d020,auto,edge-verified,Generated from the return member address template
+0x01d5d0b0,5,auto_delete_object_thunk_01d5d0b0,auto,edge-verified,Same instructions as misc_delete_object_thunk with other addresses
 0x01d5d0c0,3,auto_return_zero_01d5d0c0,auto,edge-verified,Generated from the return zero template
 0x01d5d100,1,auto_empty_01d5d100,auto,edge-verified,Generated from the empty template
 0x01d5d110,5,auto_delete_object_thunk_01d5d110,auto,edge-verified,Same instructions as misc_delete_object_thunk with other addresses
@@ -30378,6 +30421,8 @@ address,size,name,system,status,notes
 0x02274df0,205,auto_initialize_static_wide_string_02274df0,auto,edge-verified,Same instructions as engine_initialize_static_wide_string_018867e0 with other addresses
 0x02275ac0,28,auto_destroy_then_release_02275ac0,auto,edge-verified,Same instructions as misc_destroy_then_release with other addresses
 0x02276970,8,auto_set_flag_bits_02276970,auto,edge-verified,Same instructions as misc_mark_keyed_handle_active with other addresses and constants
+0x02276a40,5,auto_delete_object_thunk_02276a40,auto,edge-verified,Same instructions as misc_delete_object_thunk with other addresses
+0x02276b20,5,auto_delete_object_thunk_02276b20,auto,edge-verified,Same instructions as misc_delete_object_thunk with other addresses
 0x02276bc0,205,auto_initialize_static_wide_string_02276bc0,auto,edge-verified,Same instructions as engine_initialize_static_wide_string_018867e0 with other addresses
 0x02276e20,30,auto_member_call_02276e20,auto,edge-verified,Same instructions as misc_member_call_02242a10 with other addresses and constants
 0x022788e0,205,auto_initialize_static_wide_string_022788e0,auto,edge-verified,Same instructions as engine_initialize_static_wide_string_018867e0 with other addresses
@@ -33377,6 +33422,7 @@ address,size,name,system,status,notes
 0x02436b70,205,auto_initialize_static_wide_string_02436b70,auto,edge-verified,Same instructions as engine_initialize_static_wide_string_018867e0 with other addresses
 0x02436d10,205,auto_initialize_static_wide_string_02436d10,auto,edge-verified,Same instructions as engine_initialize_static_wide_string_018867e0 with other addresses
 0x02436eb0,205,auto_initialize_static_wide_string_02436eb0,auto,edge-verified,Same instructions as engine_initialize_static_wide_string_018867e0 with other addresses
+0x02436fc0,5,auto_delete_object_thunk_02436fc0,auto,edge-verified,Same instructions as misc_delete_object_thunk with other addresses
 0x024371f0,205,auto_initialize_static_wide_string_024371f0,auto,edge-verified,Same instructions as engine_initialize_static_wide_string_018867e0 with other addresses
 0x024389a0,205,auto_initialize_static_wide_string_024389a0,auto,edge-verified,Same instructions as engine_initialize_static_wide_string_018867e0 with other addresses
 0x02438fc0,3,auto_return_constant_02438fc0,auto,edge-verified,Generated from the return constant template
@@ -33720,6 +33766,7 @@ address,size,name,system,status,notes
 0x0247f850,3,auto_return_zero_0247f850,auto,edge-verified,Generated from the return zero template
 0x0247f860,3,auto_return_zero_0247f860,auto,edge-verified,Generated from the return zero template
 0x0247f870,3,auto_return_constant_0247f870,auto,edge-verified,Generated from the return constant template
+0x0247f960,5,auto_delete_object_thunk_0247f960,auto,edge-verified,Same instructions as misc_delete_object_thunk with other addresses
 0x024809d0,3,auto_return_zero_024809d0,auto,edge-verified,Generated from the return zero template
 0x024809e0,3,auto_return_zero_024809e0,auto,edge-verified,Generated from the return zero template
 0x02481470,6,auto_return_constant_02481470,auto,edge-verified,Generated from the return constant template
@@ -33761,6 +33808,9 @@ address,size,name,system,status,notes
 0x0248b420,28,auto_destroy_then_release_0248b420,auto,edge-verified,Same instructions as misc_destroy_then_release with other addresses
 0x0248b9b0,5,auto_return_field_0248b9b0,auto,edge-verified,Generated from the return field template
 0x0248b9c0,5,auto_set_word_0248b9c0,auto,edge-verified,Same instructions as misc_set_value_word_130 with other addresses and constants
+0x0248ba90,5,auto_delete_object_thunk_0248ba90,auto,edge-verified,Same instructions as misc_delete_object_thunk with other addresses
+0x0248baa0,5,auto_delete_object_thunk_0248baa0,auto,edge-verified,Same instructions as misc_delete_object_thunk with other addresses
+0x0248bab0,5,auto_delete_object_thunk_0248bab0,auto,edge-verified,Same instructions as misc_delete_object_thunk with other addresses
 0x0248bd50,42,auto_member_owner_destroy_0248bd50,auto,edge-verified,Same instructions as misc_member_owner_destroy_02244000 with other addresses and constants
 0x0248bda0,4,auto_return_field_0248bda0,auto,edge-verified,Generated from the return field template
 0x0248be00,5,auto_set_word_0248be00,auto,edge-verified,Same instructions as misc_set_value_word_130 with other addresses and constants
@@ -34012,6 +34062,11 @@ address,size,name,system,status,notes
 0x024a8880,6,auto_return_constant_024a8880,auto,edge-verified,Generated from the return constant template
 0x024a8fa0,8,auto_fixed_address_024a8fa0,auto,edge-verified,Same instructions as misc_plain_type_address with other addresses
 0x024b40c0,8,auto_fixed_address_024b40c0,auto,edge-verified,Same instructions as misc_plain_type_address with other addresses
+0x024b5470,5,auto_delete_object_thunk_024b5470,auto,edge-verified,Same instructions as misc_delete_object_thunk with other addresses
+0x024b5480,5,auto_delete_object_thunk_024b5480,auto,edge-verified,Same instructions as misc_delete_object_thunk with other addresses
+0x024b5490,5,auto_delete_object_thunk_024b5490,auto,edge-verified,Same instructions as misc_delete_object_thunk with other addresses
+0x024b54c0,5,auto_delete_object_thunk_024b54c0,auto,edge-verified,Same instructions as misc_delete_object_thunk with other addresses
+0x024b54f0,5,auto_delete_object_thunk_024b54f0,auto,edge-verified,Same instructions as misc_delete_object_thunk with other addresses
 0x024b58e0,5,auto_return_field_024b58e0,auto,edge-verified,Generated from the return field template
 0x024b5a40,28,auto_destroy_then_release_024b5a40,auto,edge-verified,Same instructions as misc_destroy_then_release with other addresses
 0x024b5f50,5,auto_jump_thunk_024b5f50,auto,edge-verified,Same instructions as misc_jump_thunk with other addresses
@@ -41577,6 +41632,7 @@ address,size,name,system,status,notes
 0x02b0d900,3,auto_return_zero_02b0d900,auto,edge-verified,Generated from the return zero template
 0x02b0d910,3,auto_return_zero_02b0d910,auto,edge-verified,Generated from the return zero template
 0x02b0f2f0,1,auto_empty_02b0f2f0,auto,edge-verified,Generated from the empty template
+0x02b11ca0,5,auto_delete_object_thunk_02b11ca0,auto,edge-verified,Same instructions as misc_delete_object_thunk with other addresses
 0x02b12070,1,auto_empty_02b12070,auto,edge-verified,Generated from the empty template
 0x02b124a0,19,auto_begin_configure_holder_02b124a0,auto,edge-verified,Same instructions as misc_begin_configure_holder with other addresses
 0x02b127b0,8,auto_fixed_address_02b127b0,auto,edge-verified,Same instructions as misc_plain_type_address with other addresses
@@ -48564,6 +48620,7 @@ address,size,name,system,status,notes
 0x02de4780,218,auto_push_value_by_reference_02de4780,auto,edge-verified,Same instructions as misc_push_value_by_reference with other addresses
 0x02de56d0,1,auto_empty_02de56d0,auto,edge-verified,Generated from the empty template
 0x02de56e0,5,auto_delete_object_thunk_02de56e0,auto,edge-verified,Same instructions as misc_delete_object_thunk with other addresses
+0x02df2f00,5,auto_delete_object_thunk_02df2f00,auto,edge-verified,Same instructions as misc_delete_object_thunk with other addresses
 0x02df2f10,1,auto_empty_02df2f10,auto,edge-verified,Generated from the empty template
 0x02df36c0,3,auto_return_zero_02df36c0,auto,edge-verified,Generated from the return zero template
 0x02df3ea0,1,auto_empty_02df3ea0,auto,edge-verified,Generated from the empty template
@@ -48885,6 +48942,10 @@ address,size,name,system,status,notes
 0x02e5fb60,30,auto_member_call_02e5fb60,auto,edge-verified,Same instructions as misc_member_call_02242a10 with other addresses and constants
 0x02e60b70,218,auto_push_value_by_reference_02e60b70,auto,edge-verified,Same instructions as misc_push_value_by_reference with other addresses
 0x02e60f00,5,auto_delete_object_thunk_02e60f00,auto,edge-verified,Same instructions as misc_delete_object_thunk with other addresses
+0x02e610f0,5,auto_delete_object_thunk_02e610f0,auto,edge-verified,Same instructions as misc_delete_object_thunk with other addresses
+0x02e61100,5,auto_delete_object_thunk_02e61100,auto,edge-verified,Same instructions as misc_delete_object_thunk with other addresses
+0x02e61110,5,auto_delete_object_thunk_02e61110,auto,edge-verified,Same instructions as misc_delete_object_thunk with other addresses
+0x02e61120,5,auto_delete_object_thunk_02e61120,auto,edge-verified,Same instructions as misc_delete_object_thunk with other addresses
 0x02e61130,6,auto_return_constant_02e61130,auto,edge-verified,Generated from the return constant template
 0x02e61220,84,auto_init_stream_guards_02e61220,auto,edge-verified,Same instructions as misc_init_stream_guards_58b9d5c with other addresses
 0x02e61670,1,auto_empty_02e61670,auto,edge-verified,Generated from the empty template
@@ -50570,6 +50631,7 @@ address,size,name,system,status,notes
 0x02f97c60,5,auto_return_field_02f97c60,auto,edge-verified,Generated from the return field template
 0x02f97d00,1,auto_empty_02f97d00,auto,edge-verified,Generated from the empty template
 0x02f97d10,5,auto_delete_object_thunk_02f97d10,auto,edge-verified,Same instructions as misc_delete_object_thunk with other addresses
+0x02f97da0,5,auto_delete_object_thunk_02f97da0,auto,edge-verified,Same instructions as misc_delete_object_thunk with other addresses
 0x02f98eb0,1,auto_empty_02f98eb0,auto,edge-verified,Generated from the empty template
 0x02f99340,5,auto_jump_thunk_02f99340,auto,edge-verified,Same instructions as misc_jump_thunk with other addresses
 0x02f99350,28,auto_destroy_then_release_02f99350,auto,edge-verified,Same instructions as misc_destroy_then_release with other addresses
