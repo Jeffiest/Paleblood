@@ -33669,6 +33669,7 @@ address,size,name,system,status,notes
 0x02c3c6a0,4,auto_return_field_02c3c6a0,auto,edge-verified,Generated from the return field template
 0x02c3c6b0,1,auto_empty_02c3c6b0,auto,edge-verified,Generated from the empty template
 0x02c3d020,1,auto_empty_02c3d020,auto,edge-verified,Generated from the empty template
+0x02c3d030,31,auto_resolve_then_forward_02c3d030,auto,edge-verified,Same instructions as misc_resolve_then_forward with other addresses
 0x02c3d110,28,auto_destroy_then_release_02c3d110,auto,edge-verified,Same instructions as misc_destroy_then_release with other addresses
 0x02c3d140,4,auto_return_field_02c3d140,auto,edge-verified,Generated from the return field template
 0x02c3d780,4,auto_return_field_02c3d780,auto,edge-verified,Generated from the return field template

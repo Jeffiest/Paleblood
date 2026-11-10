@@ -33667,6 +33667,7 @@ address,replacement,system,returns
 0x02c3c6a0,bb_auto_return_field_02c3c6a0,auto,i8
 0x02c3c6b0,bb_auto_empty_02c3c6b0,auto,void
 0x02c3d020,bb_auto_empty_02c3d020,auto,void
+0x02c3d030,bb_auto_resolve_then_forward_02c3d030,auto,i64
 0x02c3d110,bb_auto_destroy_then_release_02c3d110,auto,i64
 0x02c3d140,bb_auto_return_field_02c3d140,auto,i32
 0x02c3d780,bb_auto_return_field_02c3d780,auto,i32
