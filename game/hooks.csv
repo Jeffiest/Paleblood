@@ -10846,6 +10846,7 @@ address,replacement,system,returns
 0x0190ffa0,bb_auto_return_zero_0190ffa0,auto,i64
 0x019102b0,bb_auto_return_constant_019102b0,auto,i32
 0x01911870,bb_auto_initialize_static_wide_string_01911870,auto,void
+0x01911940,bb_misc_init_rows_spaced_fields_total_5953390,misc,void
 0x019119e0,bb_auto_return_constant_019119e0,auto,i8
 0x01913b50,bb_auto_empty_01913b50,auto,void
 0x01916510,bb_auto_return_field_01916510,auto,i32

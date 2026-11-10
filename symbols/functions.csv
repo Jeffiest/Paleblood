@@ -10847,6 +10847,7 @@ address,size,name,system,status,notes
 0x0190ffa0,3,auto_return_zero_0190ffa0,auto,edge-verified,Generated from the return zero template
 0x019102b0,6,auto_return_constant_019102b0,auto,edge-verified,Generated from the return constant template
 0x01911870,205,auto_initialize_static_wide_string_01911870,auto,edge-verified,Same instructions as engine_initialize_static_wide_string_018867e0 with other addresses
+0x01911940,153,misc_init_rows_spaced_fields_total_5953390,misc,edge-verified,Copy three constant rows into the record at 0x05953390 and set its four fields and its total.
 0x019119e0,3,auto_return_constant_019119e0,auto,edge-verified,Generated from the return constant template
 0x01913b50,1,auto_empty_01913b50,auto,edge-verified,Generated from the empty template
 0x01916510,8,auto_return_field_01916510,auto,edge-verified,Generated from the return field template
