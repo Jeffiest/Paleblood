@@ -59,7 +59,8 @@ MAX_SIZE = 2 * 1024 * 1024
 SIZE_EXCEPTIONS = {'symbols/ghidra_functions.csv': 16 * 1024 * 1024,
                    'symbols/functions.csv': 32 * 1024 * 1024,
                    'symbols/verification.csv': 32 * 1024 * 1024,
-                   'game/hooks.csv': 32 * 1024 * 1024}
+                   'game/hooks.csv': 32 * 1024 * 1024,
+                   'game/auto/twins.csv': 32 * 1024 * 1024}
 
 
 def git(root: str, *args: str) -> bytes:
