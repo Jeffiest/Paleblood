@@ -4692,6 +4692,7 @@ address,replacement,system,returns
 0x01125fd0,bb_auto_empty_01125fd0,auto,void
 0x011349d0,bb_auto_return_zero_011349d0,auto,i64
 0x0113d330,bb_auto_return_zero_0113d330,auto,i64
+0x01140d90,bb_misc_init_empty_list_586d918,misc,void
 0x01140e50,bb_auto_return_constant_01140e50,auto,i32
 0x01140fa0,bb_auto_return_constant_01140fa0,auto,i32
 0x01141530,bb_auto_return_zero_01141530,auto,i64
