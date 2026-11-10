@@ -41903,6 +41903,7 @@ address,replacement,system,returns
 0x02b388f0,bb_auto_forward_child_tail_02b388f0,auto,void
 0x02b38900,bb_auto_jump_thunk_02b38900,auto,i64
 0x02b38c10,bb_auto_push_value_by_reference_02b38c10,auto,void
+0x02b38d50,bb_auto_query_owned_child_02b38d50,auto,i64
 0x02b38f70,bb_auto_destroy_then_release_02b38f70,auto,i64
 0x02b39360,bb_auto_return_field_02b39360,auto,i64
 0x02b39370,bb_auto_return_field_02b39370,auto,i64

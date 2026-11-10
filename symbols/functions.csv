@@ -41905,6 +41905,7 @@ address,size,name,system,status,notes
 0x02b388f0,15,auto_forward_child_tail_02b388f0,auto,edge-verified,Same instructions as misc_forward_child_tail with other addresses
 0x02b38900,5,auto_jump_thunk_02b38900,auto,edge-verified,Same instructions as misc_jump_thunk with other addresses
 0x02b38c10,218,auto_push_value_by_reference_02b38c10,auto,edge-verified,Same instructions as misc_push_value_by_reference with other addresses
+0x02b38d50,25,auto_query_owned_child_02b38d50,auto,edge-verified,Same instructions as misc_query_owned_child with other addresses
 0x02b38f70,28,auto_destroy_then_release_02b38f70,auto,edge-verified,Same instructions as misc_destroy_then_release with other addresses
 0x02b39360,5,auto_return_field_02b39360,auto,edge-verified,Generated from the return field template
 0x02b39370,5,auto_return_field_02b39370,auto,edge-verified,Generated from the return field template
