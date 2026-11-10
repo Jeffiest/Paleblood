@@ -17229,6 +17229,12 @@ address,replacement,system,returns
 0x01e58990,bb_auto_fixed_address_01e58990,auto,i64
 0x01e589a0,bb_auto_return_zero_01e589a0,auto,i64
 0x01e58c20,bb_auto_return_constant_01e58c20,auto,i32
+0x01e59020,bb_misc_allocated_block_holder_construct,misc,void
+0x01e59110,bb_misc_allocated_block_holder_destroy,misc,i64
+0x01e59150,bb_misc_allocated_block_holder_release,misc,void
+0x01e59190,bb_misc_gated_store_value,misc,void
+0x01e591c0,bb_misc_gated_clear_value,misc,void
+0x01e59210,bb_misc_gated_read_bit,misc,i8
 0x01e59240,bb_auto_return_zero_01e59240,auto,i64
 0x01e596e0,bb_auto_initialize_static_wide_string_01e596e0,auto,void
 0x01e59c40,bb_auto_destroy_then_release_01e59c40,auto,i64
