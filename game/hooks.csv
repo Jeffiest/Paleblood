@@ -35610,6 +35610,7 @@ address,replacement,system,returns
 0x026f3d30,bb_misc_destroy_chain_node_3d30,misc,void
 0x026f3db0,bb_misc_destroy_chain_node_3db0,misc,void
 0x026f3e30,bb_misc_destroy_chain_node_3e30,misc,void
+0x026f4500,bb_auto_tree_destroy_nodes_026f4500,auto,void
 0x026f47c0,bb_auto_push_value_by_reference_026f47c0,auto,void
 0x026f6c20,bb_auto_destroy_node_and_free_026f6c20,auto,void
 0x026f6da0,bb_auto_jump_thunk_026f6da0,auto,i64

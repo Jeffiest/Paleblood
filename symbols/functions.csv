@@ -35611,6 +35611,7 @@ address,size,name,system,status,notes
 0x026f3d30,124,misc_destroy_chain_node_3d30,misc,edge-verified,Destroys a chain of tree nodes by destroying each left child first then freeing the buffer and the node
 0x026f3db0,124,misc_destroy_chain_node_3db0,misc,edge-verified,Destroys a chain of tree nodes by destroying each left child first then freeing the buffer and the node
 0x026f3e30,124,misc_destroy_chain_node_3e30,misc,edge-verified,Destroys a chain of tree nodes by destroying each left child first then freeing the buffer and the node
+0x026f4500,81,auto_tree_destroy_nodes_026f4500,auto,edge-verified,Same instructions as engine_tree_destroy_nodes with other addresses
 0x026f47c0,218,auto_push_value_by_reference_026f47c0,auto,edge-verified,Same instructions as misc_push_value_by_reference with other addresses
 0x026f6c20,59,auto_destroy_node_and_free_026f6c20,auto,edge-verified,Same instructions as misc_destroy_node_and_free with other addresses
 0x026f6da0,5,auto_jump_thunk_026f6da0,auto,edge-verified,Same instructions as misc_jump_thunk with other addresses
