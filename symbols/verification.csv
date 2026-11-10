@@ -1621,6 +1621,11 @@ auto_call_record_member_target_02435f70,edge,,12,12,0,0,4fbfbb5b478415a0,2026-11
 auto_call_record_member_target_02439320,edge,,12,12,0,0,4fbfbb5b478415a0,2026-11-10
 auto_call_record_member_target_02dcb440,edge,,12,12,0,0,4fbfbb5b478415a0,2026-11-10
 auto_call_record_member_target_02de3830,edge,,12,12,0,0,4fbfbb5b478415a0,2026-11-10
+auto_child_call_or_zero_0233f1d0,edge,,8,8,0,0,06d20579f46476bd,2026-11-10
+auto_child_call_or_zero_02b38760,edge,,8,8,0,0,06d20579f46476bd,2026-11-10
+auto_child_call_or_zero_02c518e0,edge,,8,8,0,0,06d20579f46476bd,2026-11-10
+auto_child_call_or_zero_02c51900,edge,,8,8,0,0,06d20579f46476bd,2026-11-10
+auto_child_call_or_zero_02c51920,edge,,8,8,0,0,06d20579f46476bd,2026-11-10
 auto_clear_two_words_0042fa70,edge,,4,4,0,0,f9ffc68ed8573115,2026-11-10
 auto_clear_two_words_00ae6dc0,edge,,4,4,0,0,f9ffc68ed8573115,2026-11-10
 auto_clear_two_words_00df09d0,edge,,4,4,0,0,f9ffc68ed8573115,2026-11-10

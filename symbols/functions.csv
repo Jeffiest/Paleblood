@@ -24105,6 +24105,7 @@ address,size,name,system,status,notes
 0x0233efe0,15,auto_forward_child_tail_0233efe0,auto,edge-verified,Same instructions as misc_forward_child_tail with other addresses
 0x0233eff0,1,auto_empty_0233eff0,auto,edge-verified,Generated from the empty template
 0x0233f1c0,15,auto_forward_child_tail_0233f1c0,auto,edge-verified,Same instructions as misc_forward_child_tail with other addresses
+0x0233f1d0,24,auto_child_call_or_zero_0233f1d0,auto,edge-verified,Same instructions as misc_child_call_or_zero with other addresses
 0x0233f270,1,auto_empty_0233f270,auto,edge-verified,Generated from the empty template
 0x0233f300,3,auto_return_zero_0233f300,auto,edge-verified,Generated from the return zero template
 0x0233f370,8,auto_fixed_address_0233f370,auto,edge-verified,Same instructions as misc_plain_type_address with other addresses
@@ -32278,6 +32279,7 @@ address,size,name,system,status,notes
 0x02b36f60,3,auto_return_zero_02b36f60,auto,edge-verified,Generated from the return zero template
 0x02b36f70,1,auto_empty_02b36f70,auto,edge-verified,Generated from the empty template
 0x02b38580,1,auto_empty_02b38580,auto,edge-verified,Generated from the empty template
+0x02b38760,24,auto_child_call_or_zero_02b38760,auto,edge-verified,Same instructions as misc_child_call_or_zero with other addresses
 0x02b388f0,15,auto_forward_child_tail_02b388f0,auto,edge-verified,Same instructions as misc_forward_child_tail with other addresses
 0x02b38c10,218,auto_push_value_by_reference_02b38c10,auto,edge-verified,Same instructions as misc_push_value_by_reference with other addresses
 0x02b38f70,28,auto_destroy_then_release_02b38f70,auto,edge-verified,Same instructions as misc_destroy_then_release with other addresses
@@ -33699,6 +33701,9 @@ address,size,name,system,status,notes
 0x02c511f0,1,auto_empty_02c511f0,auto,edge-verified,Generated from the empty template
 0x02c51210,1,auto_empty_02c51210,auto,edge-verified,Generated from the empty template
 0x02c51840,15,auto_forward_child_tail_02c51840,auto,edge-verified,Same instructions as misc_forward_child_tail with other addresses
+0x02c518e0,24,auto_child_call_or_zero_02c518e0,auto,edge-verified,Same instructions as misc_child_call_or_zero with other addresses
+0x02c51900,24,auto_child_call_or_zero_02c51900,auto,edge-verified,Same instructions as misc_child_call_or_zero with other addresses
+0x02c51920,24,auto_child_call_or_zero_02c51920,auto,edge-verified,Same instructions as misc_child_call_or_zero with other addresses
 0x02c51970,3,auto_return_zero_02c51970,auto,edge-verified,Generated from the return zero template
 0x02c51f30,4,auto_return_field_02c51f30,auto,edge-verified,Generated from the return field template
 0x02c51f40,5,auto_return_field_02c51f40,auto,edge-verified,Generated from the return field template
