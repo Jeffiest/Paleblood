@@ -22987,7 +22987,7 @@ misc_copy_default_blocks,edge,,3,3,0,0,fdb22452cfa7015a,2026-11-09
 misc_count_subtree_leaves,edge,,10,10,0,0,76ae6fa4641c1b40,2026-11-09
 misc_create_checked,edge,,7,7,0,0,3d08f8a7d8cf56ae,2026-11-09
 misc_descriptor_type_address,edge,,1,1,0,0,43e00eb2669c1418,2026-11-09
-misc_destroy_chain_node,edge,,6,6,0,0,a8be83c959ded117,2026-11-09
+misc_destroy_chain_node,edge,,8,8,0,0,a8be83c959ded117,2026-11-10
 misc_destroy_chain_node_3c30,edge,,6,6,0,0,dcf0b8fa2e61950d,2026-11-09
 misc_destroy_chain_node_3cb0,edge,,6,6,0,0,1ef08f7700b951fe,2026-11-09
 misc_destroy_chain_node_3d30,edge,,6,6,0,0,ccd5b020e92597f2,2026-11-09
@@ -23129,7 +23129,7 @@ misc_release_entries_and_clear,edge,,13,13,0,0,83babd723232eff6,2026-11-09
 misc_release_entries_then_forward,edge,,14,14,0,0,5fa30e404e0403fc,2026-11-09
 misc_release_four_children,edge,,9,9,0,0,0916e3319b18bd4d,2026-11-09
 misc_release_handle_record,edge,,7,7,0,0,88ac33796b032da8,2026-11-09
-misc_release_held_block,edge,,2,2,0,0,12b79404f2903b0d,2026-11-09
+misc_release_held_block,edge,,2,2,0,0,a55744ebd30b295b,2026-11-10
 misc_release_holder_child,edge,,9,9,0,0,491b51e0f159ead4,2026-11-09
 misc_release_owned_state,edge,,23,23,0,0,00fc5fe8e66a2654,2026-11-09
 misc_release_owner_nodes,edge,,10,10,0,0,c6fdd3a722ed1f6e,2026-11-09

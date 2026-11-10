@@ -36,7 +36,7 @@ def word(value):
 def case(cid, virtual=False, adjustment=0, object_offset=0, source_null=False, first=FIRST, second=SECOND,
          object_null=False, argument=ARGUMENT):
     """One call. The constructor, the target and the destructor are stubbed; the target sees the adjusted
-    object, the record and the argument. A null source, a zero word or a null object makes no call."""
+    object, the record (its vtable word and its two copied words are compared) and the argument. A null source, a zero word or a null object makes no call."""
     buffers = {'thunk': {'size': 0x28, 'bytes': 'ee' * 0x28},
                'obj': {'size': 0x40, 'bytes': '55' * 0x40},
                'src': {'size': 0x18, 'bytes': 'cd' * 0x18}}
@@ -65,7 +65,8 @@ def case(cid, virtual=False, adjustment=0, object_offset=0, source_null=False, f
             memory.append({'addr': 'buf:thunk+16', 'guest': DIRECT})
             target = DIRECT
         stubs = [{'address': CONSTRUCT, 'argc': 1, 'argi': [0]},
-                 {'address': target, 'argc': 3, 'argi': [0, 2]},
+                 {'address': target, 'argc': 3, 'argi': [0, 2],
+                  'argmem': [{'arg': 1, 'size': 8}, {'arg': 1, 'offset': 0x20, 'size': 0x10}]},
                  {'address': DESTROY, 'argc': 1, 'argi': [0]}]
     args = {'rdi': 'buf:thunk', 'rsi': '0x0' if source_null else 'buf:src'}
     return {'schema': 1, 'address': ADDRESS, 'id': cid, 'returns': 'void', 'args': args,

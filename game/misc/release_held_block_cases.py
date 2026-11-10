@@ -14,13 +14,13 @@ HELD_OFFSET = 0x10
 
 
 def case(cid, held=False):
-    """An owner whose held pointer is set or null; the release stub is called once only when set."""
+    """An owner whose held pointer is set or null; the release routine is a stub in both, called once only when set."""
     buffers = {'owner': {'size': OWNER_SIZE, 'bytes': 'a5' * OWNER_SIZE}}
     memory = [{'addr': f'buf:owner+{HELD_OFFSET:#x}', 'pointer': 'block'} if held
               else {'addr': f'buf:owner+{HELD_OFFSET:#x}', 'bytes': '00' * 8}]
     if held:
         buffers['block'] = {'size': BLOCK_SIZE, 'bytes': '5e' * BLOCK_SIZE}
-    stubs = [{'address': RELEASE, 'argc': 1}] if held else []
+    stubs = [{'address': RELEASE, 'argc': 1}]
     return {
         'schema': 1,
         'address': ADDRESS,

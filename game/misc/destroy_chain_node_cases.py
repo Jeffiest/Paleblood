@@ -9,7 +9,7 @@ A node is 0x50 bytes: the next link at +0x00, the left child at +0x10, the nil f
 original destroys each node's left child by calling this routine again (a stub here), frees the buffer
 through the buffer allocator's free slot when the capacity is eight or more, resets the node, and frees the
 node through the node allocator's free slot. Both free slots are stubs. Covers a nil start, a single node
-with and without a buffer, a nil-flagged left child, and chains of one to three nodes.
+with and without a buffer, a nil-flagged left child, a real left child (freed before its parent), and chains of one to three nodes.
 """
 import json
 from pathlib import Path
@@ -22,6 +22,7 @@ FREE_BUFFER = '0x004000a0'    # the buffer allocator's free slot; stubbed (a rea
 FREE_SLOT = 0x70
 NODE_SIZE = 0x50
 MIN_BUFFERED = 0x8
+STALE = 0x1122334455667788   # in the word at +0x38, which the routine clears
 MASK64 = (1 << 64) - 1
 
 
@@ -30,6 +31,8 @@ def node_buffer(name, nxt, left, capacity, nil=False):
     data = bytearray(NODE_SIZE)
     data[0x19] = 1 if nil else 0
     data[0x40:0x48] = struct.pack('<Q', capacity & MASK64)
+    if not nil:
+        data[0x38:0x40] = struct.pack('<Q', STALE)
     buffers = {name: {'size': NODE_SIZE, 'bytes': data.hex()}}
     memory = []
     if not nil:
@@ -41,10 +44,11 @@ def node_buffer(name, nxt, left, capacity, nil=False):
     return buffers, memory
 
 
-def case(cid, chain, left_of_first=False):
+def case(cid, chain, left_of_first=False, left_node=None):
     """chain: (name, next, capacity) per node in order; the last node's next is the nil sentinel.
 
-    The first node's left child is a plain node when left_of_first is set, else the sentinel."""
+    The first node's left child is a second nil-flagged node when left_of_first is set, and a real node of
+    the capacity left_node when that is given: it is destroyed and freed before the first node."""
     buffers = {
         'tree': {'size': 0x20},
         'node_alloc': {'size': 0x10}, 'node_alloc_vt': {'size': 0x78},
@@ -63,8 +67,18 @@ def case(cid, chain, left_of_first=False):
     left_buffers, _ = node_buffer('lnil', 'nil', 'nil', 0, nil=True)
     buffers.update(left_buffers)
     stubs = []
+    if left_node is not None:
+        node, node_memory = node_buffer('l0', 'nil', 'nil', left_node)
+        buffers.update(node)
+        memory.extend(node_memory)
+        if left_node >= MIN_BUFFERED:
+            buffers['data_l0'] = {'size': 0x40}
+            stubs.append({'address': FREE_BUFFER, 'argc': 2})
+        stubs.append({'address': FREE_NODE, 'argc': 2})
     for index, (name, nxt, capacity) in enumerate(chain):
-        node, node_memory = node_buffer(name, nxt, 'lnil' if (index == 0 and left_of_first) else 'nil', capacity)
+        left = 'l0' if (index == 0 and left_node is not None) else (
+            'lnil' if (index == 0 and left_of_first) else 'nil')
+        node, node_memory = node_buffer(name, nxt, left, capacity)
         buffers.update(node)
         memory.extend(node_memory)
         if capacity >= MIN_BUFFERED:
@@ -88,6 +102,8 @@ CASES = [
     case('single_large_capacity_nil_left', [('n0', 'nil', 0x40)], left_of_first=True),
     case('chain_two_nodes', [('n0', 'n1', 0x7), ('n1', 'nil', 0x40)]),
     case('chain_three_nodes', [('n0', 'n1', 0x8), ('n1', 'n2', 0x7), ('n2', 'nil', 0x9)]),
+    case('left_child_destroyed_first', [('n0', 'nil', 0x7)], left_node=0x7),
+    case('buffered_left_child_then_chain', [('n0', 'n1', 0x8), ('n1', 'nil', 0x7)], left_node=0x10),
 ]
 
 
