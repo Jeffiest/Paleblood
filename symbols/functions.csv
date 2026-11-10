@@ -3782,15 +3782,19 @@ address,size,name,system,status,notes
 0x00f6fc50,8,auto_fixed_address_00f6fc50,auto,edge-verified,Same instructions as misc_plain_type_address with other addresses
 0x00f70d90,66,auto_base_delete_00f70d90,auto,edge-verified,Same instructions as misc_base_delete_02242990 with other addresses
 0x00f70de0,45,auto_pair_matches_00f70de0,auto,edge-verified,Same instructions as misc_pair_matches_022429e0 with other addresses
+0x00f70e10,30,auto_member_call_00f70e10,auto,edge-verified,Same instructions as misc_member_call_02242a10 with other addresses
 0x00f70e30,15,auto_base_init_00f70e30,auto,edge-verified,Same instructions as misc_base_init_02242980 with other addresses
 0x00f70e40,66,auto_base_delete_00f70e40,auto,edge-verified,Same instructions as misc_base_delete_02242990 with other addresses
 0x00f70e90,45,auto_pair_matches_00f70e90,auto,edge-verified,Same instructions as misc_pair_matches_022429e0 with other addresses
+0x00f70ec0,30,auto_member_call_00f70ec0,auto,edge-verified,Same instructions as misc_member_call_02242a10 with other addresses
 0x00f70ee0,15,auto_base_init_00f70ee0,auto,edge-verified,Same instructions as misc_base_init_02242980 with other addresses
 0x00f70ef0,66,auto_base_delete_00f70ef0,auto,edge-verified,Same instructions as misc_base_delete_02242990 with other addresses
 0x00f70f40,45,auto_pair_matches_00f70f40,auto,edge-verified,Same instructions as misc_pair_matches_022429e0 with other addresses
+0x00f70f70,30,auto_member_call_00f70f70,auto,edge-verified,Same instructions as misc_member_call_02242a10 with other addresses
 0x00f70f90,15,auto_base_init_00f70f90,auto,edge-verified,Same instructions as misc_base_init_02242980 with other addresses
 0x00f70fa0,66,auto_base_delete_00f70fa0,auto,edge-verified,Same instructions as misc_base_delete_02242990 with other addresses
 0x00f70ff0,45,auto_pair_matches_00f70ff0,auto,edge-verified,Same instructions as misc_pair_matches_022429e0 with other addresses
+0x00f71020,30,auto_member_call_00f71020,auto,edge-verified,Same instructions as misc_member_call_02242a10 with other addresses
 0x00f71040,15,auto_base_init_00f71040,auto,edge-verified,Same instructions as misc_base_init_02242980 with other addresses
 0x00f71050,8,auto_fixed_address_00f71050,auto,edge-verified,Same instructions as misc_plain_type_address with other addresses
 0x00f742b0,1,auto_empty_00f742b0,auto,edge-verified,Generated from the empty template
@@ -22487,6 +22491,7 @@ address,size,name,system,status,notes
 0x021dbc70,15,auto_base_init_021dbc70,auto,edge-verified,Same instructions as misc_base_init_02242980 with other addresses
 0x021dbc80,66,auto_base_delete_021dbc80,auto,edge-verified,Same instructions as misc_base_delete_02242990 with other addresses
 0x021dbcd0,45,auto_pair_matches_021dbcd0,auto,edge-verified,Same instructions as misc_pair_matches_022429e0 with other addresses
+0x021dbd00,30,auto_member_call_021dbd00,auto,edge-verified,Same instructions as misc_member_call_02242a10 with other addresses
 0x021dbf80,5,auto_return_member_address_021dbf80,auto,edge-verified,Generated from the return member address template
 0x021dc0f0,205,auto_initialize_static_wide_string_021dc0f0,auto,edge-verified,Same instructions as engine_initialize_static_wide_string_018867e0 with other addresses
 0x021dc400,28,auto_destroy_then_release_021dc400,auto,edge-verified,Same instructions as misc_destroy_then_release with other addresses
@@ -30278,6 +30283,7 @@ address,size,name,system,status,notes
 0x02987c10,15,auto_base_init_02987c10,auto,edge-verified,Same instructions as misc_base_init_02242980 with other addresses
 0x02987c20,66,auto_base_delete_02987c20,auto,edge-verified,Same instructions as misc_base_delete_02242990 with other addresses
 0x02987c70,45,auto_pair_matches_02987c70,auto,edge-verified,Same instructions as misc_pair_matches_022429e0 with other addresses
+0x02987ca0,30,auto_member_call_02987ca0,auto,edge-verified,Same instructions as misc_member_call_02242a10 with other addresses
 0x02987cc0,1,auto_empty_02987cc0,auto,edge-verified,Generated from the empty template
 0x02987d30,6,auto_return_constant_02987d30,auto,edge-verified,Generated from the return constant template
 0x02987d40,3,auto_return_zero_02987d40,auto,edge-verified,Generated from the return zero template
@@ -30577,9 +30583,11 @@ address,size,name,system,status,notes
 0x029dac20,15,auto_base_init_029dac20,auto,edge-verified,Same instructions as misc_base_init_02242980 with other addresses
 0x029dac30,66,auto_base_delete_029dac30,auto,edge-verified,Same instructions as misc_base_delete_02242990 with other addresses
 0x029dac80,45,auto_pair_matches_029dac80,auto,edge-verified,Same instructions as misc_pair_matches_022429e0 with other addresses
+0x029dacb0,30,auto_member_call_029dacb0,auto,edge-verified,Same instructions as misc_member_call_02242a10 with other addresses
 0x029dacd0,15,auto_base_init_029dacd0,auto,edge-verified,Same instructions as misc_base_init_02242980 with other addresses
 0x029dace0,66,auto_base_delete_029dace0,auto,edge-verified,Same instructions as misc_base_delete_02242990 with other addresses
 0x029dad30,45,auto_pair_matches_029dad30,auto,edge-verified,Same instructions as misc_pair_matches_022429e0 with other addresses
+0x029dad60,30,auto_member_call_029dad60,auto,edge-verified,Same instructions as misc_member_call_02242a10 with other addresses
 0x029dadc0,1,auto_empty_029dadc0,auto,edge-verified,Generated from the empty template
 0x029dae50,1,auto_empty_029dae50,auto,edge-verified,Generated from the empty template
 0x029daf70,3,auto_return_constant_029daf70,auto,edge-verified,Generated from the return constant template
@@ -30638,6 +30646,7 @@ address,size,name,system,status,notes
 0x02a03d70,15,auto_base_init_02a03d70,auto,edge-verified,Same instructions as misc_base_init_02242980 with other addresses
 0x02a03d80,66,auto_base_delete_02a03d80,auto,edge-verified,Same instructions as misc_base_delete_02242990 with other addresses
 0x02a03dd0,45,auto_pair_matches_02a03dd0,auto,edge-verified,Same instructions as misc_pair_matches_022429e0 with other addresses
+0x02a03e00,30,auto_member_call_02a03e00,auto,edge-verified,Same instructions as misc_member_call_02242a10 with other addresses
 0x02a03eb0,1,auto_empty_02a03eb0,auto,edge-verified,Generated from the empty template
 0x02a03ec0,1,auto_empty_02a03ec0,auto,edge-verified,Generated from the empty template
 0x02a03ff0,1,auto_empty_02a03ff0,auto,edge-verified,Generated from the empty template
@@ -30648,14 +30657,17 @@ address,size,name,system,status,notes
 0x02a04ad0,15,auto_base_init_02a04ad0,auto,edge-verified,Same instructions as misc_base_init_02242980 with other addresses
 0x02a04ae0,66,auto_base_delete_02a04ae0,auto,edge-verified,Same instructions as misc_base_delete_02242990 with other addresses
 0x02a04b30,45,auto_pair_matches_02a04b30,auto,edge-verified,Same instructions as misc_pair_matches_022429e0 with other addresses
+0x02a04b60,30,auto_member_call_02a04b60,auto,edge-verified,Same instructions as misc_member_call_02242a10 with other addresses
 0x02a04b80,3,auto_return_zero_02a04b80,auto,edge-verified,Generated from the return zero template
 0x02a04d20,1,auto_empty_02a04d20,auto,edge-verified,Generated from the empty template
 0x02a04d70,15,auto_base_init_02a04d70,auto,edge-verified,Same instructions as misc_base_init_02242980 with other addresses
 0x02a04d80,66,auto_base_delete_02a04d80,auto,edge-verified,Same instructions as misc_base_delete_02242990 with other addresses
 0x02a04dd0,45,auto_pair_matches_02a04dd0,auto,edge-verified,Same instructions as misc_pair_matches_022429e0 with other addresses
+0x02a04e00,30,auto_member_call_02a04e00,auto,edge-verified,Same instructions as misc_member_call_02242a10 with other addresses
 0x02a04e20,15,auto_base_init_02a04e20,auto,edge-verified,Same instructions as misc_base_init_02242980 with other addresses
 0x02a04e30,66,auto_base_delete_02a04e30,auto,edge-verified,Same instructions as misc_base_delete_02242990 with other addresses
 0x02a04e80,45,auto_pair_matches_02a04e80,auto,edge-verified,Same instructions as misc_pair_matches_022429e0 with other addresses
+0x02a04eb0,30,auto_member_call_02a04eb0,auto,edge-verified,Same instructions as misc_member_call_02242a10 with other addresses
 0x02a04f30,6,auto_return_constant_02a04f30,auto,edge-verified,Generated from the return constant template
 0x02a04fd0,1,auto_empty_02a04fd0,auto,edge-verified,Generated from the empty template
 0x02a04fe0,1,auto_empty_02a04fe0,auto,edge-verified,Generated from the empty template
@@ -30672,6 +30684,7 @@ address,size,name,system,status,notes
 0x02a06160,15,auto_base_init_02a06160,auto,edge-verified,Same instructions as misc_base_init_02242980 with other addresses
 0x02a06170,66,auto_base_delete_02a06170,auto,edge-verified,Same instructions as misc_base_delete_02242990 with other addresses
 0x02a061c0,45,auto_pair_matches_02a061c0,auto,edge-verified,Same instructions as misc_pair_matches_022429e0 with other addresses
+0x02a061f0,30,auto_member_call_02a061f0,auto,edge-verified,Same instructions as misc_member_call_02242a10 with other addresses
 0x02a06360,6,auto_return_constant_02a06360,auto,edge-verified,Generated from the return constant template
 0x02a06370,3,auto_return_zero_02a06370,auto,edge-verified,Generated from the return zero template
 0x02a063e0,1,auto_empty_02a063e0,auto,edge-verified,Generated from the empty template
@@ -30701,21 +30714,25 @@ address,size,name,system,status,notes
 0x02a06b60,15,auto_base_init_02a06b60,auto,edge-verified,Same instructions as misc_base_init_02242980 with other addresses
 0x02a06b70,66,auto_base_delete_02a06b70,auto,edge-verified,Same instructions as misc_base_delete_02242990 with other addresses
 0x02a06bc0,45,auto_pair_matches_02a06bc0,auto,edge-verified,Same instructions as misc_pair_matches_022429e0 with other addresses
+0x02a06bf0,30,auto_member_call_02a06bf0,auto,edge-verified,Same instructions as misc_member_call_02242a10 with other addresses
 0x02a06dd0,1,auto_empty_02a06dd0,auto,edge-verified,Generated from the empty template
 0x02a07280,3,auto_return_zero_02a07280,auto,edge-verified,Generated from the return zero template
 0x02a072b0,15,auto_base_init_02a072b0,auto,edge-verified,Same instructions as misc_base_init_02242980 with other addresses
 0x02a072c0,66,auto_base_delete_02a072c0,auto,edge-verified,Same instructions as misc_base_delete_02242990 with other addresses
 0x02a07310,45,auto_pair_matches_02a07310,auto,edge-verified,Same instructions as misc_pair_matches_022429e0 with other addresses
+0x02a07340,30,auto_member_call_02a07340,auto,edge-verified,Same instructions as misc_member_call_02242a10 with other addresses
 0x02a07360,6,auto_return_constant_02a07360,auto,edge-verified,Generated from the return constant template
 0x02a07510,15,auto_base_init_02a07510,auto,edge-verified,Same instructions as misc_base_init_02242980 with other addresses
 0x02a07520,66,auto_base_delete_02a07520,auto,edge-verified,Same instructions as misc_base_delete_02242990 with other addresses
 0x02a07570,45,auto_pair_matches_02a07570,auto,edge-verified,Same instructions as misc_pair_matches_022429e0 with other addresses
+0x02a075a0,30,auto_member_call_02a075a0,auto,edge-verified,Same instructions as misc_member_call_02242a10 with other addresses
 0x02a075c0,15,auto_base_init_02a075c0,auto,edge-verified,Same instructions as misc_base_init_02242980 with other addresses
 0x02a075d0,66,auto_base_delete_02a075d0,auto,edge-verified,Same instructions as misc_base_delete_02242990 with other addresses
 0x02a07620,45,auto_pair_matches_02a07620,auto,edge-verified,Same instructions as misc_pair_matches_022429e0 with other addresses
 0x02a07680,15,auto_base_init_02a07680,auto,edge-verified,Same instructions as misc_base_init_02242980 with other addresses
 0x02a07690,66,auto_base_delete_02a07690,auto,edge-verified,Same instructions as misc_base_delete_02242990 with other addresses
 0x02a076e0,45,auto_pair_matches_02a076e0,auto,edge-verified,Same instructions as misc_pair_matches_022429e0 with other addresses
+0x02a07710,30,auto_member_call_02a07710,auto,edge-verified,Same instructions as misc_member_call_02242a10 with other addresses
 0x02a07b00,1,auto_empty_02a07b00,auto,edge-verified,Generated from the empty template
 0x02a07c80,1,auto_empty_02a07c80,auto,edge-verified,Generated from the empty template
 0x02a07d00,1,auto_empty_02a07d00,auto,edge-verified,Generated from the empty template
@@ -30733,6 +30750,7 @@ address,size,name,system,status,notes
 0x02a094e0,15,auto_base_init_02a094e0,auto,edge-verified,Same instructions as misc_base_init_02242980 with other addresses
 0x02a094f0,66,auto_base_delete_02a094f0,auto,edge-verified,Same instructions as misc_base_delete_02242990 with other addresses
 0x02a09540,45,auto_pair_matches_02a09540,auto,edge-verified,Same instructions as misc_pair_matches_022429e0 with other addresses
+0x02a09570,30,auto_member_call_02a09570,auto,edge-verified,Same instructions as misc_member_call_02242a10 with other addresses
 0x02a0a9e0,1,auto_empty_02a0a9e0,auto,edge-verified,Generated from the empty template
 0x02a0b240,1,auto_empty_02a0b240,auto,edge-verified,Generated from the empty template
 0x02a0b290,6,auto_return_constant_02a0b290,auto,edge-verified,Generated from the return constant template
@@ -30755,6 +30773,7 @@ address,size,name,system,status,notes
 0x02a0b980,15,auto_base_init_02a0b980,auto,edge-verified,Same instructions as misc_base_init_02242980 with other addresses
 0x02a0b990,66,auto_base_delete_02a0b990,auto,edge-verified,Same instructions as misc_base_delete_02242990 with other addresses
 0x02a0b9e0,45,auto_pair_matches_02a0b9e0,auto,edge-verified,Same instructions as misc_pair_matches_022429e0 with other addresses
+0x02a0ba10,30,auto_member_call_02a0ba10,auto,edge-verified,Same instructions as misc_member_call_02242a10 with other addresses
 0x02a0bf70,1,auto_empty_02a0bf70,auto,edge-verified,Generated from the empty template
 0x02a0bf80,1,auto_empty_02a0bf80,auto,edge-verified,Generated from the empty template
 0x02a0c050,1,auto_empty_02a0c050,auto,edge-verified,Generated from the empty template
@@ -30762,15 +30781,19 @@ address,size,name,system,status,notes
 0x02a0c0b0,15,auto_base_init_02a0c0b0,auto,edge-verified,Same instructions as misc_base_init_02242980 with other addresses
 0x02a0c0c0,66,auto_base_delete_02a0c0c0,auto,edge-verified,Same instructions as misc_base_delete_02242990 with other addresses
 0x02a0c110,45,auto_pair_matches_02a0c110,auto,edge-verified,Same instructions as misc_pair_matches_022429e0 with other addresses
+0x02a0c140,30,auto_member_call_02a0c140,auto,edge-verified,Same instructions as misc_member_call_02242a10 with other addresses
 0x02a0c160,15,auto_base_init_02a0c160,auto,edge-verified,Same instructions as misc_base_init_02242980 with other addresses
 0x02a0c170,66,auto_base_delete_02a0c170,auto,edge-verified,Same instructions as misc_base_delete_02242990 with other addresses
 0x02a0c1c0,45,auto_pair_matches_02a0c1c0,auto,edge-verified,Same instructions as misc_pair_matches_022429e0 with other addresses
+0x02a0c1f0,30,auto_member_call_02a0c1f0,auto,edge-verified,Same instructions as misc_member_call_02242a10 with other addresses
 0x02a0c210,15,auto_base_init_02a0c210,auto,edge-verified,Same instructions as misc_base_init_02242980 with other addresses
 0x02a0c220,66,auto_base_delete_02a0c220,auto,edge-verified,Same instructions as misc_base_delete_02242990 with other addresses
 0x02a0c270,45,auto_pair_matches_02a0c270,auto,edge-verified,Same instructions as misc_pair_matches_022429e0 with other addresses
+0x02a0c2a0,30,auto_member_call_02a0c2a0,auto,edge-verified,Same instructions as misc_member_call_02242a10 with other addresses
 0x02a0c2c0,15,auto_base_init_02a0c2c0,auto,edge-verified,Same instructions as misc_base_init_02242980 with other addresses
 0x02a0c2d0,66,auto_base_delete_02a0c2d0,auto,edge-verified,Same instructions as misc_base_delete_02242990 with other addresses
 0x02a0c320,45,auto_pair_matches_02a0c320,auto,edge-verified,Same instructions as misc_pair_matches_022429e0 with other addresses
+0x02a0c350,30,auto_member_call_02a0c350,auto,edge-verified,Same instructions as misc_member_call_02242a10 with other addresses
 0x02a0c440,1,auto_empty_02a0c440,auto,edge-verified,Generated from the empty template
 0x02a0c490,1,auto_empty_02a0c490,auto,edge-verified,Generated from the empty template
 0x02a0c5d0,4,auto_return_field_02a0c5d0,auto,edge-verified,Generated from the return field template
@@ -30786,6 +30809,7 @@ address,size,name,system,status,notes
 0x02a0d180,15,auto_base_init_02a0d180,auto,edge-verified,Same instructions as misc_base_init_02242980 with other addresses
 0x02a0d190,66,auto_base_delete_02a0d190,auto,edge-verified,Same instructions as misc_base_delete_02242990 with other addresses
 0x02a0d1e0,45,auto_pair_matches_02a0d1e0,auto,edge-verified,Same instructions as misc_pair_matches_022429e0 with other addresses
+0x02a0d210,30,auto_member_call_02a0d210,auto,edge-verified,Same instructions as misc_member_call_02242a10 with other addresses
 0x02a0d8a0,1,auto_empty_02a0d8a0,auto,edge-verified,Generated from the empty template
 0x02a0d8f0,1,auto_empty_02a0d8f0,auto,edge-verified,Generated from the empty template
 0x02a0d940,1,auto_empty_02a0d940,auto,edge-verified,Generated from the empty template
@@ -30800,6 +30824,7 @@ address,size,name,system,status,notes
 0x02a0db30,15,auto_base_init_02a0db30,auto,edge-verified,Same instructions as misc_base_init_02242980 with other addresses
 0x02a0db40,66,auto_base_delete_02a0db40,auto,edge-verified,Same instructions as misc_base_delete_02242990 with other addresses
 0x02a0db90,45,auto_pair_matches_02a0db90,auto,edge-verified,Same instructions as misc_pair_matches_022429e0 with other addresses
+0x02a0dbc0,30,auto_member_call_02a0dbc0,auto,edge-verified,Same instructions as misc_member_call_02242a10 with other addresses
 0x02a0dbe0,15,auto_base_init_02a0dbe0,auto,edge-verified,Same instructions as misc_base_init_02242980 with other addresses
 0x02a0dbf0,66,auto_base_delete_02a0dbf0,auto,edge-verified,Same instructions as misc_base_delete_02242990 with other addresses
 0x02a0dc40,45,auto_pair_matches_02a0dc40,auto,edge-verified,Same instructions as misc_pair_matches_022429e0 with other addresses
@@ -30812,6 +30837,7 @@ address,size,name,system,status,notes
 0x02a0dd60,15,auto_base_init_02a0dd60,auto,edge-verified,Same instructions as misc_base_init_02242980 with other addresses
 0x02a0dd70,66,auto_base_delete_02a0dd70,auto,edge-verified,Same instructions as misc_base_delete_02242990 with other addresses
 0x02a0ddc0,45,auto_pair_matches_02a0ddc0,auto,edge-verified,Same instructions as misc_pair_matches_022429e0 with other addresses
+0x02a0ddf0,30,auto_member_call_02a0ddf0,auto,edge-verified,Same instructions as misc_member_call_02242a10 with other addresses
 0x02a0e2d0,1,auto_empty_02a0e2d0,auto,edge-verified,Generated from the empty template
 0x02a0e320,6,auto_return_constant_02a0e320,auto,edge-verified,Generated from the return constant template
 0x02a0e340,1,auto_empty_02a0e340,auto,edge-verified,Generated from the empty template
@@ -30819,6 +30845,7 @@ address,size,name,system,status,notes
 0x02a0e360,15,auto_base_init_02a0e360,auto,edge-verified,Same instructions as misc_base_init_02242980 with other addresses
 0x02a0e370,66,auto_base_delete_02a0e370,auto,edge-verified,Same instructions as misc_base_delete_02242990 with other addresses
 0x02a0e3c0,45,auto_pair_matches_02a0e3c0,auto,edge-verified,Same instructions as misc_pair_matches_022429e0 with other addresses
+0x02a0e3f0,30,auto_member_call_02a0e3f0,auto,edge-verified,Same instructions as misc_member_call_02242a10 with other addresses
 0x02a0e410,1,auto_empty_02a0e410,auto,edge-verified,Generated from the empty template
 0x02a0e460,1,auto_empty_02a0e460,auto,edge-verified,Generated from the empty template
 0x02a0e4b0,1,auto_empty_02a0e4b0,auto,edge-verified,Generated from the empty template
@@ -37675,9 +37702,11 @@ address,size,name,system,status,notes
 0x02e17390,15,auto_base_init_02e17390,auto,edge-verified,Same instructions as misc_base_init_02242980 with other addresses
 0x02e173a0,66,auto_base_delete_02e173a0,auto,edge-verified,Same instructions as misc_base_delete_02242990 with other addresses
 0x02e173f0,45,auto_pair_matches_02e173f0,auto,edge-verified,Same instructions as misc_pair_matches_022429e0 with other addresses
+0x02e17420,30,auto_member_call_02e17420,auto,edge-verified,Same instructions as misc_member_call_02242a10 with other addresses
 0x02e17540,15,auto_base_init_02e17540,auto,edge-verified,Same instructions as misc_base_init_02242980 with other addresses
 0x02e17550,66,auto_base_delete_02e17550,auto,edge-verified,Same instructions as misc_base_delete_02242990 with other addresses
 0x02e175a0,45,auto_pair_matches_02e175a0,auto,edge-verified,Same instructions as misc_pair_matches_022429e0 with other addresses
+0x02e175d0,30,auto_member_call_02e175d0,auto,edge-verified,Same instructions as misc_member_call_02242a10 with other addresses
 0x02e23c20,1,auto_empty_02e23c20,auto,edge-verified,Generated from the empty template
 0x02e23c70,1,auto_empty_02e23c70,auto,edge-verified,Generated from the empty template
 0x02e23da0,1,auto_empty_02e23da0,auto,edge-verified,Generated from the empty template
