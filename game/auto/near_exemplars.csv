@@ -4,6 +4,7 @@ address,name,size,cases,home,addresses,exchange
 0x00be43f0,misc_held_member_object_free,75,game/misc/held_member_object_free_cases.py,game/misc,0x00be4440 0x057e40f8,text
 0x00be93f0,misc_bounded_range_object_free_secondary,81,game/auto/near_bounded_range_object_free_secondary_00be93f0_cases.py,game/misc,0x00be9450 0x057e40f8,slots
 0x00be93f0,misc_bounded_range_object_free_secondary,81,game/misc/bounded_range_object_free_secondary_cases.py,game/misc,0x00be9450 0x057e40f8,text
+0x0139bcb0,misc_forward_child_tail,15,game/auto/near_forward_child_tail_0139bcb0_cases.py,game/misc,0x01440fb0,slots
 0x01472fd0,render_set_cb_target_mask,86,game/render/set_cb_target_mask_cases.py,game/render,,text
 0x014733a0,render_set_db_depth_control,93,game/render/set_db_depth_control_cases.py,game/render,,text
 0x016fa520,misc_init_rows_total_marker_fields_5945ef0,162,game/misc/init_rows_total_marker_fields_5945ef0_cases.py,game/misc,0x04cece40 0x05945ef0 0x04cece50 0x05945f00 0x04cece60 0x05945f10 0x04cece70 0x04cece80 0x04cece90 0x05945f20 0x05945f24 0x05945f28 0x05945f2c 0x05945f30 0x05945f34,text
