@@ -1,6 +1,7 @@
 address,name,size,cases,addresses
 0x0040b680,misc_prepare_forward,42,game/misc/prepare_forward_cases.py,0x0040b6b0 0x057e7320
 0x0040fd20,misc_begin_configure_holder,19,game/misc/begin_configure_holder_cases.py,0x0553c220 0x0040fd40
+0x00b69e20,misc_ref_holder_add_child,70,game/misc/ref_holder_add_child_cases.py,0x058018b0 0x00819100
 0x00bdd630,misc_tagged_link_address,9,game/misc/tagged_link_address_cases.py,
 0x00be16a0,misc_plain_type_address,8,game/misc/plain_type_address_cases.py,0x05845228
 0x00be16b0,misc_register_plain_type,113,game/misc/register_plain_type_cases.py,0x05845228 0x04bb5c06 0x05801a70 0x0081e9b0
