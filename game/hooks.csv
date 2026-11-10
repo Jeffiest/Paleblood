@@ -38118,6 +38118,7 @@ address,replacement,system,returns
 0x02e67080,bb_auto_return_field_02e67080,auto,i8
 0x02e67090,bb_auto_return_member_address_02e67090,auto,i64
 0x02e670a0,bb_auto_return_constant_02e670a0,auto,i32
+0x02e67cd0,bb_auto_close_file_streams_02e67cd0,auto,void
 0x02e67d20,bb_loading_close_file_streams,loading,void
 0x02e68d30,bb_auto_return_field_02e68d30,auto,i64
 0x02e6b9c0,bb_auto_return_field_02e6b9c0,auto,i8

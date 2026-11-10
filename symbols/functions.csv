@@ -38120,6 +38120,7 @@ address,size,name,system,status,notes
 0x02e67080,7,auto_return_field_02e67080,auto,edge-verified,Generated from the return field template
 0x02e67090,5,auto_return_member_address_02e67090,auto,edge-verified,Generated from the return member address template
 0x02e670a0,6,auto_return_constant_02e670a0,auto,edge-verified,Generated from the return constant template
+0x02e67cd0,80,auto_close_file_streams_02e67cd0,auto,edge-verified,Same instructions as loading_close_file_streams with other addresses
 0x02e67d20,80,loading_close_file_streams,loading,edge-verified,Close the three stdio streams of a StreamSet last field first and null each; called from two destructors
 0x02e68d30,5,auto_return_field_02e68d30,auto,edge-verified,Generated from the return field template
 0x02e6b9c0,7,auto_return_field_02e6b9c0,auto,edge-verified,Generated from the return field template

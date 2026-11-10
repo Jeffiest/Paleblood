@@ -66,3 +66,4 @@ address,name,size,cases,addresses
 0x02b3e170,misc_set_link,5,game/misc/set_link_cases.py,
 0x02b3e190,misc_call_object_slot_38,12,game/misc/call_object_slot_38_cases.py,
 0x02b3e280,misc_destroy_node_slot_00_and_free,58,game/misc/destroy_node_slot_00_and_free_cases.py,0x0247b720
+0x02e67d20,loading_close_file_streams,80,game/loading/close_file_streams_cases.py,0x02fbe7b8
