@@ -4303,6 +4303,7 @@ address,size,name,system,status,notes
 0x010d2560,3,auto_return_field_010d2560,auto,edge-verified,Generated from the return field template
 0x010d2570,4,auto_return_field_010d2570,auto,edge-verified,Generated from the return field template
 0x010d2580,5,auto_set_link_010d2580,auto,edge-verified,Same instructions as misc_set_link with other addresses
+0x010d27e0,7,auto_set_u32_word_160_010d27e0,auto,edge-verified,Same instructions as misc_set_u32_word_160 with other addresses
 0x010d3370,8,auto_fixed_address_010d3370,auto,edge-verified,Same instructions as misc_plain_type_address with other addresses
 0x010d4cc0,15,auto_base_init_010d4cc0,auto,edge-verified,Same instructions as misc_base_init_02242980 with other addresses
 0x010d4ce0,15,auto_base_init_010d4ce0,auto,edge-verified,Same instructions as misc_base_init_02242980 with other addresses

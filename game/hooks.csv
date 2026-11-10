@@ -4302,6 +4302,7 @@ address,replacement,system,returns
 0x010d2560,bb_auto_return_field_010d2560,auto,i32
 0x010d2570,bb_auto_return_field_010d2570,auto,i8
 0x010d2580,bb_auto_set_link_010d2580,auto,void
+0x010d27e0,bb_auto_set_u32_word_160_010d27e0,auto,void
 0x010d3370,bb_auto_fixed_address_010d3370,auto,i64
 0x010d4cc0,bb_auto_base_init_010d4cc0,auto,void
 0x010d4ce0,bb_auto_base_init_010d4ce0,auto,void
