@@ -8245,6 +8245,7 @@ address,replacement,system,returns
 0x01706d20,bb_auto_empty_01706d20,auto,void
 0x01706f80,bb_auto_return_zero_01706f80,auto,i64
 0x01707020,bb_auto_initialize_static_wide_string_01707020,auto,void
+0x017070f0,bb_misc_init_rows_total_marker_fields_59464b0,misc,void
 0x017071a0,bb_auto_empty_017071a0,auto,void
 0x01707240,bb_auto_initialize_static_wide_string_01707240,auto,void
 0x01707410,bb_auto_return_zero_01707410,auto,i64

@@ -8246,6 +8246,7 @@ address,size,name,system,status,notes
 0x01706d20,1,auto_empty_01706d20,auto,edge-verified,Generated from the empty template
 0x01706f80,3,auto_return_zero_01706f80,auto,edge-verified,Generated from the return zero template
 0x01707020,205,auto_initialize_static_wide_string_01707020,auto,edge-verified,Same instructions as engine_initialize_static_wide_string_018867e0 with other addresses
+0x017070f0,162,misc_init_rows_total_marker_fields_59464b0,misc,edge-verified,Copy three constant rows into the record at 0x059464b0 and set its four fields its marker and its total.
 0x017071a0,1,auto_empty_017071a0,auto,edge-verified,Generated from the empty template
 0x01707240,205,auto_initialize_static_wide_string_01707240,auto,edge-verified,Same instructions as engine_initialize_static_wide_string_018867e0 with other addresses
 0x01707410,3,auto_return_zero_01707410,auto,edge-verified,Generated from the return zero template
