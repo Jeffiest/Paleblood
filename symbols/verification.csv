@@ -4732,6 +4732,14 @@ auto_disarm_callback_027050f0,edge,,7,7,0,0,bb4af61421862b1d,2026-11-10
 auto_disarm_callback_0271e1d0,edge,,7,7,0,0,bb4af61421862b1d,2026-11-10
 auto_disarm_callback_0276b080,edge,,7,7,0,0,bb4af61421862b1d,2026-11-10
 auto_disarm_callback_0276fc30,edge,,7,7,0,0,bb4af61421862b1d,2026-11-10
+auto_dual_held_member_object_free_00aa4ce0,edge,,6,6,0,0,a204a558a09f629f,2026-11-10
+auto_dual_held_member_object_free_00c11530,edge,,6,6,0,0,a204a558a09f629f,2026-11-10
+auto_dual_held_member_object_free_00c939b0,edge,,6,6,0,0,a204a558a09f629f,2026-11-10
+auto_dual_held_member_object_free_00ecf1a0,edge,,6,6,0,0,a204a558a09f629f,2026-11-10
+auto_dual_held_member_object_free_00f983f0,edge,,6,6,0,0,a204a558a09f629f,2026-11-10
+auto_dual_held_member_object_free_028ce490,edge,,6,6,0,0,a204a558a09f629f,2026-11-10
+auto_dual_held_member_object_free_0294ceb0,edge,,6,6,0,0,a204a558a09f629f,2026-11-10
+auto_dual_held_member_object_free_02956190,edge,,6,6,0,0,a204a558a09f629f,2026-11-10
 auto_empty_00406600,edge,,3,3,0,0,f672ffac90388272,2026-11-08
 auto_empty_00409fd0,edge,,3,3,0,0,f672ffac90388272,2026-11-08
 auto_empty_00410290,edge,,3,3,0,0,ed512db483b172e8,2026-11-08

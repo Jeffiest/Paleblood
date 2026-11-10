@@ -5,6 +5,7 @@ address,name,size,cases,addresses
 0x00be16a0,misc_plain_type_address,8,game/misc/plain_type_address_cases.py,0x05845228
 0x00be16b0,misc_register_plain_type,113,game/misc/register_plain_type_cases.py,0x05845228 0x04bb5c06 0x05801a70 0x0081e9b0
 0x00be43f0,misc_held_member_object_free,75,game/misc/held_member_object_free_cases.py,0x00be4440 0x057e40f8
+0x00be6e40,misc_dual_held_member_object_free,75,game/misc/dual_held_member_object_free_cases.py,0x00be6e90 0x057e40f8
 0x013988d0,misc_bind_vtable_56b4840,41,game/misc/bind_vtable_56b4840_cases.py,0x05ac59b8 0x056b4840 0x05ac59b0
 0x01398960,misc_copy_block_58b3240,49,game/misc/copy_block_58b3240_cases.py,0x04cb88b0 0x058b3240 0x04cb88c0 0x058b3250 0x04cb88d0 0x058b3260
 0x0139b4e0,misc_clear_two_words,16,game/misc/clear_two_words_cases.py,
