@@ -41135,6 +41135,7 @@ address,size,name,system,status,notes
 0x02be79e0,5,auto_return_member_address_02be79e0,auto,edge-verified,Generated from the return member address template
 0x02be7dc0,4,auto_return_field_02be7dc0,auto,edge-verified,Generated from the return field template
 0x02be81a0,4,auto_return_field_02be81a0,auto,edge-verified,Generated from the return field template
+0x02be85c0,8,auto_set_value_word_138_02be85c0,auto,edge-verified,Same instructions as misc_set_value_word_130 with other addresses and constants
 0x02be8760,7,auto_return_field_02be8760,auto,edge-verified,Generated from the return field template
 0x02be8770,9,auto_return_float_field_02be8770,auto,edge-verified,Generated from the return float field template
 0x02be8780,7,auto_return_field_02be8780,auto,edge-verified,Generated from the return field template

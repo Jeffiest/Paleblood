@@ -41133,6 +41133,7 @@ address,replacement,system,returns
 0x02be79e0,bb_auto_return_member_address_02be79e0,auto,i64
 0x02be7dc0,bb_auto_return_field_02be7dc0,auto,i32
 0x02be81a0,bb_auto_return_field_02be81a0,auto,i32
+0x02be85c0,bb_auto_set_value_word_138_02be85c0,auto,void
 0x02be8760,bb_auto_return_field_02be8760,auto,i32
 0x02be8770,bb_auto_return_float_field_02be8770,auto,f32
 0x02be8780,bb_auto_return_field_02be8780,auto,i8
