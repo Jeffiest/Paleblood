@@ -8628,9 +8628,11 @@ address,size,name,system,status,notes
 0x017a7ef0,3,auto_return_zero_017a7ef0,auto,edge-verified,Generated from the return zero template
 0x017a7f20,3,auto_return_zero_017a7f20,auto,edge-verified,Generated from the return zero template
 0x017a7f30,3,auto_return_zero_017a7f30,auto,edge-verified,Generated from the return zero template
+0x017a85e0,38,auto_release_held_block_017a85e0,auto,edge-verified,Same instructions as misc_release_held_block with other addresses
 0x017a87e0,3,auto_return_zero_017a87e0,auto,edge-verified,Generated from the return zero template
 0x017a8810,3,auto_return_zero_017a8810,auto,edge-verified,Generated from the return zero template
 0x017a8820,3,auto_return_zero_017a8820,auto,edge-verified,Generated from the return zero template
+0x017a8c10,38,auto_release_held_block_017a8c10,auto,edge-verified,Same instructions as misc_release_held_block with other addresses
 0x017a8d50,205,auto_initialize_static_wide_string_017a8d50,auto,edge-verified,Same instructions as engine_initialize_static_wide_string_018867e0 with other addresses
 0x017a8ec0,1,auto_empty_017a8ec0,auto,edge-verified,Generated from the empty template
 0x017a8ed0,1,auto_empty_017a8ed0,auto,edge-verified,Generated from the empty template
@@ -11351,6 +11353,7 @@ address,size,name,system,status,notes
 0x01a023e0,8,auto_fixed_address_01a023e0,auto,edge-verified,Same instructions as misc_plain_type_address with other addresses
 0x01a023f0,3,auto_return_zero_01a023f0,auto,edge-verified,Generated from the return zero template
 0x01a02670,6,auto_return_constant_01a02670,auto,edge-verified,Generated from the return constant template
+0x01a02700,38,auto_release_held_block_01a02700,auto,edge-verified,Same instructions as misc_release_held_block with other addresses
 0x01a032b0,205,auto_initialize_static_wide_string_01a032b0,auto,edge-verified,Same instructions as engine_initialize_static_wide_string_018867e0 with other addresses
 0x01a053e0,28,auto_destroy_then_release_01a053e0,auto,edge-verified,Same instructions as misc_destroy_then_release with other addresses
 0x01a056f0,1,auto_empty_01a056f0,auto,edge-verified,Generated from the empty template
@@ -25883,6 +25886,7 @@ address,size,name,system,status,notes
 0x0244f7f0,205,auto_initialize_static_wide_string_0244f7f0,auto,edge-verified,Same instructions as engine_initialize_static_wide_string_018867e0 with other addresses
 0x0244fe60,205,auto_initialize_static_wide_string_0244fe60,auto,edge-verified,Same instructions as engine_initialize_static_wide_string_018867e0 with other addresses
 0x02450000,205,auto_initialize_static_wide_string_02450000,auto,edge-verified,Same instructions as engine_initialize_static_wide_string_018867e0 with other addresses
+0x02450210,38,auto_release_held_block_02450210,auto,edge-verified,Same instructions as misc_release_held_block with other addresses
 0x02450340,205,auto_initialize_static_wide_string_02450340,auto,edge-verified,Same instructions as engine_initialize_static_wide_string_018867e0 with other addresses
 0x024506b0,205,auto_initialize_static_wide_string_024506b0,auto,edge-verified,Same instructions as engine_initialize_static_wide_string_018867e0 with other addresses
 0x024507e0,4,auto_return_field_024507e0,auto,edge-verified,Generated from the return field template
@@ -33702,6 +33706,7 @@ address,size,name,system,status,notes
 0x02c510c0,4,auto_return_field_02c510c0,auto,edge-verified,Generated from the return field template
 0x02c510d0,5,auto_return_member_address_02c510d0,auto,edge-verified,Generated from the return member address template
 0x02c510e0,5,auto_return_field_02c510e0,auto,edge-verified,Generated from the return field template
+0x02c51100,38,auto_release_held_block_02c51100,auto,edge-verified,Same instructions as misc_release_held_block with other addresses
 0x02c51150,6,auto_return_constant_02c51150,auto,edge-verified,Generated from the return constant template
 0x02c511f0,1,auto_empty_02c511f0,auto,edge-verified,Generated from the empty template
 0x02c51210,1,auto_empty_02c51210,auto,edge-verified,Generated from the empty template
