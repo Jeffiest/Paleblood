@@ -3711,6 +3711,7 @@ address,size,name,system,status,notes
 0x00f2b6d0,8,auto_fixed_address_00f2b6d0,auto,edge-verified,Same instructions as misc_plain_type_address with other addresses
 0x00f2b6e0,113,auto_register_plain_type_00f2b6e0,auto,edge-verified,Same instructions as misc_register_plain_type with other addresses
 0x00f2c670,1,auto_empty_00f2c670,auto,edge-verified,Generated from the empty template
+0x00f2e000,75,auto_sized_delete_00f2e000,auto,edge-verified,Same instructions as misc_sized_delete_02242bb0 with other addresses
 0x00f30470,8,auto_fixed_address_00f30470,auto,edge-verified,Same instructions as misc_plain_type_address with other addresses
 0x00f30480,15,auto_base_init_00f30480,auto,edge-verified,Same instructions as misc_base_init_02242980 with other addresses
 0x00f30db0,1,auto_empty_00f30db0,auto,edge-verified,Generated from the empty template
@@ -6603,6 +6604,7 @@ address,size,name,system,status,notes
 0x01467820,41,auto_bind_vtable_01467820,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
 0x01467850,41,auto_bind_vtable_01467850,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
 0x01467880,49,auto_copy_block_01467880,auto,edge-verified,Same instructions as misc_copy_block_58b3240 with other addresses
+0x01467910,75,auto_sized_delete_01467910,auto,edge-verified,Same instructions as misc_sized_delete_02242bb0 with other addresses
 0x014680c0,41,auto_bind_vtable_014680c0,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
 0x014680f0,41,auto_bind_vtable_014680f0,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
 0x01468120,41,auto_bind_vtable_01468120,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses

@@ -38793,6 +38793,8 @@ auto_set_vtable_after_call_023dcc40,edge,,8,8,0,0,d43b495e9b7a0019,2026-11-10
 auto_set_vtable_after_call_0245ca10,edge,,8,8,0,0,d43b495e9b7a0019,2026-11-10
 auto_set_vtable_after_call_02555750,edge,,8,8,0,0,d43b495e9b7a0019,2026-11-10
 auto_set_vtable_after_call_025cef70,edge,,8,8,0,0,d43b495e9b7a0019,2026-11-10
+auto_sized_delete_00f2e000,edge,,10,10,0,0,decc2836d2cae084,2026-11-10
+auto_sized_delete_01467910,edge,,10,10,0,0,decc2836d2cae084,2026-11-10
 auto_tagged_link_address_008cbed0,edge,,8,8,0,0,90aefd7f65ca0c08,2026-11-10
 auto_tagged_link_address_008cc720,edge,,8,8,0,0,90aefd7f65ca0c08,2026-11-10
 auto_tagged_link_address_00936930,edge,,8,8,0,0,90aefd7f65ca0c08,2026-11-10

@@ -3710,6 +3710,7 @@ address,replacement,system,returns
 0x00f2b6d0,bb_auto_fixed_address_00f2b6d0,auto,i64
 0x00f2b6e0,bb_auto_register_plain_type_00f2b6e0,auto,void
 0x00f2c670,bb_auto_empty_00f2c670,auto,void
+0x00f2e000,bb_auto_sized_delete_00f2e000,auto,i64
 0x00f30470,bb_auto_fixed_address_00f30470,auto,i64
 0x00f30480,bb_auto_base_init_00f30480,auto,void
 0x00f30db0,bb_auto_empty_00f30db0,auto,void
@@ -6602,6 +6603,7 @@ address,replacement,system,returns
 0x01467820,bb_auto_bind_vtable_01467820,auto,void
 0x01467850,bb_auto_bind_vtable_01467850,auto,void
 0x01467880,bb_auto_copy_block_01467880,auto,void
+0x01467910,bb_auto_sized_delete_01467910,auto,i64
 0x014680c0,bb_auto_bind_vtable_014680c0,auto,void
 0x014680f0,bb_auto_bind_vtable_014680f0,auto,void
 0x01468120,bb_auto_bind_vtable_01468120,auto,void
