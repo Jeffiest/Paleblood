@@ -6856,6 +6856,7 @@ address,size,name,system,status,notes
 0x015ee8c0,28,auto_destroy_then_release_015ee8c0,auto,edge-verified,Same instructions as misc_destroy_then_release with other addresses
 0x015eee20,3,auto_return_zero_015eee20,auto,edge-verified,Generated from the return zero template
 0x015efa00,8,auto_return_member_address_015efa00,auto,edge-verified,Generated from the return member address template
+0x015f1d60,28,auto_record_tuple_classification_group_015f1d60,auto,edge-verified,Same instructions as render_record_tuple_classification_group with other addresses
 0x015f62e0,6,auto_return_constant_015f62e0,auto,edge-verified,Generated from the return constant template
 0x015f62f0,1,auto_empty_015f62f0,auto,edge-verified,Generated from the empty template
 0x015f6300,1,auto_empty_015f6300,auto,edge-verified,Generated from the empty template
