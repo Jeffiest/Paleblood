@@ -4084,9 +4084,15 @@ address,size,name,system,status,notes
 0x01083950,4,auto_return_field_01083950,auto,edge-verified,Generated from the return field template
 0x01083960,5,auto_return_member_address_01083960,auto,edge-verified,Generated from the return member address template
 0x01083970,5,auto_return_member_address_01083970,auto,edge-verified,Generated from the return member address template
+0x01083ab0,41,auto_bind_vtable_01083ab0,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x01083ae0,41,auto_bind_vtable_01083ae0,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x01083b10,41,auto_bind_vtable_01083b10,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
 0x01083e90,3,auto_return_field_01083e90,auto,edge-verified,Generated from the return field template
 0x01083ea0,4,auto_return_field_01083ea0,auto,edge-verified,Generated from the return field template
 0x010845f0,4,auto_return_field_010845f0,auto,edge-verified,Generated from the return field template
+0x01086840,41,auto_bind_vtable_01086840,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x01086870,41,auto_bind_vtable_01086870,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x010868a0,41,auto_bind_vtable_010868a0,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
 0x01086c40,3,auto_return_zero_01086c40,auto,edge-verified,Generated from the return zero template
 0x01086c50,3,auto_return_zero_01086c50,auto,edge-verified,Generated from the return zero template
 0x01086c60,3,auto_return_zero_01086c60,auto,edge-verified,Generated from the return zero template
@@ -4103,6 +4109,9 @@ address,size,name,system,status,notes
 0x01087010,3,auto_return_zero_01087010,auto,edge-verified,Generated from the return zero template
 0x010871b0,3,auto_return_zero_010871b0,auto,edge-verified,Generated from the return zero template
 0x010871c0,3,auto_return_zero_010871c0,auto,edge-verified,Generated from the return zero template
+0x010873d0,41,auto_bind_vtable_010873d0,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x01087400,41,auto_bind_vtable_01087400,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x01087430,41,auto_bind_vtable_01087430,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
 0x01088110,4,auto_return_field_01088110,auto,edge-verified,Generated from the return field template
 0x01088120,5,auto_return_member_address_01088120,auto,edge-verified,Generated from the return member address template
 0x01088130,5,auto_return_member_address_01088130,auto,edge-verified,Generated from the return member address template
@@ -4143,6 +4152,12 @@ address,size,name,system,status,notes
 0x010885e0,8,auto_return_field_010885e0,auto,edge-verified,Generated from the return field template
 0x010885f0,7,auto_return_field_010885f0,auto,edge-verified,Generated from the return field template
 0x01088600,7,auto_return_field_01088600,auto,edge-verified,Generated from the return field template
+0x01088630,41,auto_bind_vtable_01088630,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x01088660,41,auto_bind_vtable_01088660,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x01088690,41,auto_bind_vtable_01088690,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x010886e0,41,auto_bind_vtable_010886e0,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x01088710,41,auto_bind_vtable_01088710,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x01088740,41,auto_bind_vtable_01088740,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
 0x0108b110,3,auto_return_field_0108b110,auto,edge-verified,Generated from the return field template
 0x0108b120,4,auto_return_field_0108b120,auto,edge-verified,Generated from the return field template
 0x0108b130,4,auto_return_field_0108b130,auto,edge-verified,Generated from the return field template
@@ -4158,7 +4173,12 @@ address,size,name,system,status,notes
 0x0108b2d0,5,auto_return_member_address_0108b2d0,auto,edge-verified,Generated from the return member address template
 0x0108b2e0,8,auto_return_member_address_0108b2e0,auto,edge-verified,Generated from the return member address template
 0x0108b2f0,8,auto_return_field_0108b2f0,auto,edge-verified,Generated from the return field template
+0x0108bf50,41,auto_bind_vtable_0108bf50,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x0108bf80,41,auto_bind_vtable_0108bf80,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x0108bfb0,41,auto_bind_vtable_0108bfb0,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
 0x0108bff0,15,auto_base_init_0108bff0,auto,edge-verified,Same instructions as misc_base_init_02242980 with other addresses
+0x0108c040,41,auto_bind_vtable_0108c040,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x0108c070,41,auto_bind_vtable_0108c070,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
 0x0108cfb0,5,auto_return_field_0108cfb0,auto,edge-verified,Generated from the return field template
 0x0108cfc0,5,auto_return_field_0108cfc0,auto,edge-verified,Generated from the return field template
 0x0108ddc0,3,auto_return_constant_0108ddc0,auto,edge-verified,Generated from the return constant template
