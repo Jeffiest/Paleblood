@@ -6,3 +6,4 @@ address,name,size,cases,addresses
 0x0139b610,misc_destroy_then_release,28,game/misc/destroy_then_release_cases.py,0x0139b630 0x02fbe588
 0x018867e0,engine_initialize_static_wide_string_018867e0,205,game/engine/static_wide_string_init_018867e0_cases.py,0x057e3be0 0x05acebc8 0x05940670 0x02fa2b10 0x04b37dc0 0x024b55b0 0x05aceb90 0x02a44140 0x0553b490 0x02fbe548 0x02fbe4f8
 0x02242980,misc_base_init_02242980,15,game/misc/base_init_02242980_cases.py,0x0566fa90
+0x02b3a3c0,misc_push_value_by_reference,218,game/misc/push_value_by_reference_cases.py,0x02b3ad50
