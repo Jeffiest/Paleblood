@@ -12606,6 +12606,7 @@ address,replacement,system,returns
 0x0186b1f0,bb_auto_tail_call_offset_member_thunk_0186b1f0,auto,i64
 0x0186b230,bb_auto_jump_thunk_0186b230,auto,i64
 0x0186b240,bb_auto_destroy_then_release_0186b240,auto,i64
+0x0186b260,bb_auto_forward_record_to_slot_90_0186b260,auto,i64
 0x0186b280,bb_auto_jump_thunk_0186b280,auto,i64
 0x0186b290,bb_auto_destroy_then_release_0186b290,auto,i64
 0x0186b2b0,bb_auto_tail_call_member_target_0186b2b0,auto,void
@@ -48603,6 +48604,7 @@ address,replacement,system,returns
 0x02ddddf0,bb_auto_tail_call_offset_member_thunk_02ddddf0,auto,i64
 0x02ddde30,bb_auto_jump_thunk_02ddde30,auto,i64
 0x02ddde40,bb_auto_destroy_then_release_02ddde40,auto,i64
+0x02ddde60,bb_auto_forward_record_to_slot_90_02ddde60,auto,i64
 0x02ddde80,bb_auto_jump_thunk_02ddde80,auto,i64
 0x02ddde90,bb_auto_destroy_then_release_02ddde90,auto,i64
 0x02dddeb0,bb_auto_tail_call_member_target_02dddeb0,auto,void

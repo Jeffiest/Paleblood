@@ -53,6 +53,7 @@ address,name,size,cases,addresses
 0x01888520,misc_test_and_set_flag,15,game/misc/test_and_set_flag_cases.py,
 0x01888650,misc_forward_tagged_request,30,game/misc/forward_tagged_request_cases.py,0x04d55b90 0x02b62d00
 0x01888b30,misc_tail_call_offset_member_thunk,50,game/misc/tail_call_offset_member_thunk_cases.py,
+0x01888ba0,misc_forward_record_to_slot_90,31,game/misc/forward_record_to_slot_90_cases.py,
 0x01888bf0,misc_call_member_with_text_record,150,game/misc/call_member_with_text_record_cases.py,0x057e3be0 0x02fbf228 0x02a2a310 0x02fbe4f8
 0x01888c90,misc_call_member_with_record,102,game/misc/call_member_with_record_cases.py,0x057e3be0 0x02fbe4f8
 0x01888d00,misc_call_member_with_flagged_record,102,game/misc/call_member_with_flagged_record_cases.py,0x057e3be0 0x02fbe4f8

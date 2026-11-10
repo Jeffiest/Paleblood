@@ -12607,6 +12607,7 @@ address,size,name,system,status,notes
 0x0186b1f0,50,auto_tail_call_offset_member_thunk_0186b1f0,auto,edge-verified,Same instructions as misc_tail_call_offset_member_thunk with other addresses
 0x0186b230,5,auto_jump_thunk_0186b230,auto,edge-verified,Same instructions as misc_jump_thunk with other addresses
 0x0186b240,28,auto_destroy_then_release_0186b240,auto,edge-verified,Same instructions as misc_destroy_then_release with other addresses
+0x0186b260,31,auto_forward_record_to_slot_90_0186b260,auto,edge-verified,Same instructions as misc_forward_record_to_slot_90 with other addresses
 0x0186b280,5,auto_jump_thunk_0186b280,auto,edge-verified,Same instructions as misc_jump_thunk with other addresses
 0x0186b290,28,auto_destroy_then_release_0186b290,auto,edge-verified,Same instructions as misc_destroy_then_release with other addresses
 0x0186b2b0,39,auto_tail_call_member_target_0186b2b0,auto,edge-verified,Same instructions as misc_tail_call_member_target with other addresses
@@ -48605,6 +48606,7 @@ address,size,name,system,status,notes
 0x02ddddf0,50,auto_tail_call_offset_member_thunk_02ddddf0,auto,edge-verified,Same instructions as misc_tail_call_offset_member_thunk with other addresses and constants
 0x02ddde30,5,auto_jump_thunk_02ddde30,auto,edge-verified,Same instructions as misc_jump_thunk with other addresses
 0x02ddde40,28,auto_destroy_then_release_02ddde40,auto,edge-verified,Same instructions as misc_destroy_then_release with other addresses
+0x02ddde60,31,auto_forward_record_to_slot_90_02ddde60,auto,edge-verified,Same instructions as misc_forward_record_to_slot_90 with other addresses
 0x02ddde80,5,auto_jump_thunk_02ddde80,auto,edge-verified,Same instructions as misc_jump_thunk with other addresses
 0x02ddde90,28,auto_destroy_then_release_02ddde90,auto,edge-verified,Same instructions as misc_destroy_then_release with other addresses
 0x02dddeb0,39,auto_tail_call_member_target_02dddeb0,auto,edge-verified,Same instructions as misc_tail_call_member_target with other addresses
