@@ -85,7 +85,9 @@ address,name,exemplar,addresses,constants,exchange
 0x0085aa00,auto_held_member_object_free_0085aa00,misc_held_member_object_free,0x0085aa50 0x057e40f8,i4:0x80>0x60,text
 0x008c3500,auto_held_member_object_free_008c3500,misc_held_member_object_free,0x008c3550 0x057e40f8,i4:0x80>0x48,text
 0x008c5be0,auto_held_member_object_free_008c5be0,misc_held_member_object_free,0x008c5c30 0x057e40f8,i4:0x80>0x40,text
+0x008c6070,auto_tagged_link_address_008c6070,misc_tagged_link_address,,@0=0x38 d:0x10>0x38,slots
 0x008cc7b0,auto_set_u32_word_008cc7b0,misc_set_u32_word_160,,@0=0x2c d:0x160>0x2c,slots
+0x008ce270,auto_tagged_link_address_008ce270,misc_tagged_link_address,,@0=0x50 d:0x10>0x50,slots
 0x008d7310,auto_read_pointed_word_008d7310,misc_read_source_word,,@0=0x10 @1=0x30 d:0x20>0x30,slots
 0x008d7410,auto_read_pointed_word_008d7410,misc_read_source_word,,@0=0x10 @1=0x48 d:0x20>0x48,slots
 0x008e99e0,auto_held_member_object_free_008e99e0,misc_held_member_object_free,0x008e9a30 0x057e40f8,i4:0x80>0x98,text
@@ -103,6 +105,7 @@ address,name,exemplar,addresses,constants,exchange
 0x009354e0,auto_held_member_object_free_009354e0,misc_held_member_object_free,0x00935530 0x057e40f8,i4:0x80>0x30,text
 0x00936120,auto_held_member_object_free_00936120,misc_held_member_object_free,0x00936170 0x057e40f8,i4:0x80>0x40,text
 0x00938ad0,auto_held_member_object_free_00938ad0,misc_held_member_object_free,0x00938b20 0x057e40f8,i4:0x80>0x138,text
+0x0093f220,auto_tagged_link_address_0093f220,misc_tagged_link_address,,@0=0x20 d:0x10>0x20,slots
 0x009449f0,auto_held_member_object_free_009449f0,misc_held_member_object_free,0x00944a40 0x057e40f8,i4:0x80>0xd8,text
 0x00946c50,auto_held_member_object_free_00946c50,misc_held_member_object_free,0x00946d60 0x057e40f8,i4:0x80>0x90,text
 0x00946ca0,auto_bounded_range_object_free_secondary_00946ca0,misc_bounded_range_object_free_secondary,0x00946d60 0x057e40f8,i4:0xc0>0x90,text
@@ -189,7 +192,10 @@ address,name,exemplar,addresses,constants,exchange
 0x00b5b9b0,auto_held_member_object_free_00b5b9b0,misc_held_member_object_free,0x00b5ba00 0x057e40f8,i4:0x80>0x180,text
 0x00b5ccd0,auto_held_member_object_free_00b5ccd0,misc_held_member_object_free,0x00b5cd20 0x057e40f8,i4:0x80>0x78,text
 0x00b681b0,auto_held_member_object_free_00b681b0,misc_held_member_object_free,0x00b68200 0x057e40f8,i4:0x80>0x88,text
+0x00bdebb0,auto_tagged_link_address_00bdebb0,misc_tagged_link_address,,@0=0x18 d:0x10>0x18,slots
 0x00bdfbf0,auto_held_member_object_free_00bdfbf0,misc_held_member_object_free,0x00bdfc40 0x057e40f8,i4:0x80>0x70,text
+0x00be0cb0,auto_tagged_link_address_00be0cb0,misc_tagged_link_address,,@0=0x18 d:0x10>0x18,slots
+0x00beb510,auto_tagged_link_address_00beb510,misc_tagged_link_address,,@0=0x18 d:0x10>0x18,slots
 0x00bebed0,auto_held_member_object_free_00bebed0,misc_held_member_object_free,0x00bebf20 0x057e40f8,i4:0x80>0x48,text
 0x00bf15c0,auto_held_member_object_free_00bf15c0,misc_held_member_object_free,0x00bf1610 0x057e40f8,i4:0x80>0x160,text
 0x00bf5820,auto_held_member_object_free_00bf5820,misc_held_member_object_free,0x00bf5870 0x057e40f8,i4:0x80>0x40,text
@@ -200,6 +206,7 @@ address,name,exemplar,addresses,constants,exchange
 0x00c05090,auto_held_member_object_free_00c05090,misc_held_member_object_free,0x00c050e0 0x057e40f8,i4:0x80>0x60,text
 0x00c07b40,auto_held_member_object_free_00c07b40,misc_held_member_object_free,0x00c07b90 0x057e40f8,i4:0x80>0xb0,text
 0x00c08480,auto_held_member_object_free_00c08480,misc_held_member_object_free,0x00c084d0 0x057e40f8,i4:0x80>0x78,text
+0x00c09800,auto_tagged_link_address_00c09800,misc_tagged_link_address,,@0=0x18 d:0x10>0x18,slots
 0x00c09b70,auto_held_member_object_free_00c09b70,misc_held_member_object_free,0x00c09bc0 0x057e40f8,i4:0x80>0x60,text
 0x00c0f400,auto_held_member_object_free_00c0f400,misc_held_member_object_free,0x00c0f450 0x057e40f8,i4:0x80>0x68,text
 0x00c1cb50,auto_set_word_00c1cb50,misc_set_value_word_130,,@0=0x88 d:0x130>0x88,slots
@@ -1146,16 +1153,20 @@ address,name,exemplar,addresses,constants,exchange
 0x028c08a0,auto_forward_child_tail_028c08a0,misc_forward_child_tail,0x014780e0,@0=0x70 d:0x8>0x70,slots
 0x028c3660,auto_set_word_028c3660,misc_set_value_word_130,,@0=0xc0 d:0x130>0xc0,slots
 0x028c6900,auto_held_member_object_free_028c6900,misc_held_member_object_free,0x028c6950 0x057e40f8,i4:0x80>0xd0,text
+0x028cae80,auto_tagged_link_address_028cae80,misc_tagged_link_address,,@0=0x70 d:0x10>0x70,slots
 0x028caea0,auto_set_word_028caea0,misc_set_value_word_130,,@0=0x60 d:0x130>0x60,slots
 0x028cd3f0,auto_read_pointed_word_028cd3f0,misc_read_source_word,,@0=0x50 @1=0x30 d:0x10>0x50 d:0x20>0x30,slots
 0x028cd400,auto_read_pointed_word_028cd400,misc_read_source_word,,@0=0x50 @1=0x40 d:0x10>0x50 d:0x20>0x40,slots
 0x028cd410,auto_read_pointed_word_028cd410,misc_read_source_word,,@0=0x50 @1=0x50 d:0x10>0x50 d:0x20>0x50,slots
+0x028cd460,auto_tagged_link_address_028cd460,misc_tagged_link_address,,@0=0x70 d:0x10>0x70,slots
 0x028cd490,auto_held_member_object_free_028cd490,misc_held_member_object_free,0x028cd4e0 0x057e40f8,i4:0x80>0x68,text
 0x028cd6e0,auto_held_member_object_free_028cd6e0,misc_held_member_object_free,0x028cd940 0x057e40f8,i4:0x80>0x158,text
+0x028cdcd0,auto_tagged_link_address_028cdcd0,misc_tagged_link_address,,@0=0x40 d:0x10>0x40,slots
 0x028cdd00,auto_held_member_object_free_028cdd00,misc_held_member_object_free,0x028cdd50 0x057e40f8,i4:0x80>0x38,text
 0x028ce070,auto_set_word_028ce070,misc_set_value_word_130,,@0=0x70 d:0x130>0x70,slots
 0x028deed0,auto_held_member_object_free_028deed0,misc_held_member_object_free,0x028de4f0 0x057e40f8,i4:0x80>0x90,text
 0x028e6e10,auto_held_member_object_free_028e6e10,misc_held_member_object_free,0x028e23e0 0x057e40f8,i4:0x80>0xd00,text
+0x028ecf00,auto_tagged_link_address_028ecf00,misc_tagged_link_address,,@0=0x30 d:0x10>0x30,slots
 0x028ef0f0,auto_held_member_object_free_028ef0f0,misc_held_member_object_free,0x028ef140 0x057e40f8,i4:0x80>0xb8,text
 0x028ef2a0,auto_held_member_object_free_028ef2a0,misc_held_member_object_free,0x028ef2f0 0x057e40f8,i4:0x80>0x70,text
 0x028f06a0,auto_set_word_028f06a0,misc_set_value_word_130,,@0=0x10 d:0x130>0x10,slots
