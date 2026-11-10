@@ -784,6 +784,7 @@ address,size,name,system,status,notes
 0x00845fc0,8,auto_fixed_address_00845fc0,auto,edge-verified,Same instructions as misc_plain_type_address with other addresses
 0x00845fd0,1,auto_empty_00845fd0,auto,edge-verified,Generated from the empty template
 0x00845fe0,1,auto_empty_00845fe0,auto,edge-verified,Generated from the empty template
+0x008460d0,18,auto_ascii_to_lower_008460d0,auto,edge-verified,Same instructions as engine_ascii_to_lower with other addresses
 0x00848810,4,auto_return_field_00848810,auto,edge-verified,Generated from the return field template
 0x0084ac90,8,auto_fixed_address_0084ac90,auto,edge-verified,Same instructions as misc_plain_type_address with other addresses
 0x0084aca0,1,auto_empty_0084aca0,auto,edge-verified,Generated from the empty template

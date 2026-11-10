@@ -783,6 +783,7 @@ address,replacement,system,returns
 0x00845fc0,bb_auto_fixed_address_00845fc0,auto,i64
 0x00845fd0,bb_auto_empty_00845fd0,auto,void
 0x00845fe0,bb_auto_empty_00845fe0,auto,void
+0x008460d0,bb_auto_ascii_to_lower_008460d0,auto,i64
 0x00848810,bb_auto_return_field_00848810,auto,i32
 0x0084ac90,bb_auto_fixed_address_0084ac90,auto,i64
 0x0084aca0,bb_auto_empty_0084aca0,auto,void

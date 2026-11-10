@@ -12,6 +12,7 @@ audio_fmod_output_driver_count,edge,,18,18,0,0,9ac316ccda703831,2026-11-04
 audio_fmod_string_copy,edge,,40,40,0,0,c17e74fefe35579f,2026-11-04
 audio_fmod_string_copy_counted,edge,,54,54,0,0,950224f5b69d2ee0,2026-11-04
 audio_fmod_thread_affinity_lookup,edge,,21,21,0,0,8abaccecd8e6ac90,2026-11-03
+auto_ascii_to_lower_008460d0,edge,,291,291,0,0,2988718dcac87259,2026-11-10
 auto_base_delete_00f6f510,edge,,4,4,0,0,8b9d9c1f2e91fcee,2026-11-10
 auto_base_delete_00f70d90,edge,,4,4,0,0,8b9d9c1f2e91fcee,2026-11-10
 auto_base_delete_00f70e40,edge,,4,4,0,0,8b9d9c1f2e91fcee,2026-11-10
