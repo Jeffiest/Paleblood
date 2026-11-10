@@ -28,3 +28,4 @@ address,name,size,cases,addresses
 0x02b3bda0,engine_tree_destroy_nodes,81,game/engine/tree_destroy_nodes_cases.py,
 0x02b3dfd0,misc_destroy_node_and_free,59,game/misc/destroy_node_and_free_cases.py,0x0247b720
 0x02b3e170,misc_set_link,5,game/misc/set_link_cases.py,
+0x02b3e280,misc_destroy_node_slot_00_and_free,58,game/misc/destroy_node_slot_00_and_free_cases.py,0x0247b720

@@ -13694,6 +13694,7 @@ address,size,name,system,status,notes
 0x01bc8620,1,auto_empty_01bc8620,auto,edge-verified,Generated from the empty template
 0x01bc8db0,3,auto_return_zero_01bc8db0,auto,edge-verified,Generated from the return zero template
 0x01bc8e50,205,auto_initialize_static_wide_string_01bc8e50,auto,edge-verified,Same instructions as engine_initialize_static_wide_string_018867e0 with other addresses
+0x01bc9010,58,auto_destroy_node_slot_00_and_free_01bc9010,auto,edge-verified,Same instructions as misc_destroy_node_slot_00_and_free with other addresses
 0x01bc9210,1,auto_empty_01bc9210,auto,edge-verified,Generated from the empty template
 0x01bc92b0,205,auto_initialize_static_wide_string_01bc92b0,auto,edge-verified,Same instructions as engine_initialize_static_wide_string_018867e0 with other addresses
 0x01bc9400,1,auto_empty_01bc9400,auto,edge-verified,Generated from the empty template
@@ -13994,14 +13995,21 @@ address,size,name,system,status,notes
 0x01c349c0,1,auto_empty_01c349c0,auto,edge-verified,Generated from the empty template
 0x01c34a20,1,auto_empty_01c34a20,auto,edge-verified,Generated from the empty template
 0x01c34a80,1,auto_empty_01c34a80,auto,edge-verified,Generated from the empty template
+0x01c34aa0,58,auto_destroy_node_slot_00_and_free_01c34aa0,auto,edge-verified,Same instructions as misc_destroy_node_slot_00_and_free with other addresses
 0x01c34ae0,1,auto_empty_01c34ae0,auto,edge-verified,Generated from the empty template
+0x01c34b00,58,auto_destroy_node_slot_00_and_free_01c34b00,auto,edge-verified,Same instructions as misc_destroy_node_slot_00_and_free with other addresses
 0x01c34b40,1,auto_empty_01c34b40,auto,edge-verified,Generated from the empty template
+0x01c34b60,58,auto_destroy_node_slot_00_and_free_01c34b60,auto,edge-verified,Same instructions as misc_destroy_node_slot_00_and_free with other addresses
 0x01c34ba0,1,auto_empty_01c34ba0,auto,edge-verified,Generated from the empty template
 0x01c34cd0,1,auto_empty_01c34cd0,auto,edge-verified,Generated from the empty template
 0x01c34e30,1,auto_empty_01c34e30,auto,edge-verified,Generated from the empty template
+0x01c34e50,58,auto_destroy_node_slot_00_and_free_01c34e50,auto,edge-verified,Same instructions as misc_destroy_node_slot_00_and_free with other addresses
 0x01c34e90,1,auto_empty_01c34e90,auto,edge-verified,Generated from the empty template
+0x01c34eb0,58,auto_destroy_node_slot_00_and_free_01c34eb0,auto,edge-verified,Same instructions as misc_destroy_node_slot_00_and_free with other addresses
 0x01c34ef0,1,auto_empty_01c34ef0,auto,edge-verified,Generated from the empty template
+0x01c34f10,58,auto_destroy_node_slot_00_and_free_01c34f10,auto,edge-verified,Same instructions as misc_destroy_node_slot_00_and_free with other addresses
 0x01c34f50,1,auto_empty_01c34f50,auto,edge-verified,Generated from the empty template
+0x01c34f70,58,auto_destroy_node_slot_00_and_free_01c34f70,auto,edge-verified,Same instructions as misc_destroy_node_slot_00_and_free with other addresses
 0x01c34fb0,1,auto_empty_01c34fb0,auto,edge-verified,Generated from the empty template
 0x01c35700,205,auto_initialize_static_wide_string_01c35700,auto,edge-verified,Same instructions as engine_initialize_static_wide_string_018867e0 with other addresses
 0x01c358a0,205,auto_initialize_static_wide_string_01c358a0,auto,edge-verified,Same instructions as engine_initialize_static_wide_string_018867e0 with other addresses
@@ -25511,6 +25519,7 @@ address,size,name,system,status,notes
 0x024132a0,1,auto_empty_024132a0,auto,edge-verified,Generated from the empty template
 0x02413300,1,auto_empty_02413300,auto,edge-verified,Generated from the empty template
 0x02413400,1,auto_empty_02413400,auto,edge-verified,Generated from the empty template
+0x02413780,58,auto_destroy_node_slot_00_and_free_02413780,auto,edge-verified,Same instructions as misc_destroy_node_slot_00_and_free with other addresses
 0x02413850,205,auto_initialize_static_wide_string_02413850,auto,edge-verified,Same instructions as engine_initialize_static_wide_string_018867e0 with other addresses
 0x02414510,205,auto_initialize_static_wide_string_02414510,auto,edge-verified,Same instructions as engine_initialize_static_wide_string_018867e0 with other addresses
 0x024153a0,4,auto_return_field_024153a0,auto,edge-verified,Generated from the return field template
@@ -27038,10 +27047,13 @@ address,size,name,system,status,notes
 0x02592990,1,auto_empty_02592990,auto,edge-verified,Generated from the empty template
 0x025929f0,6,auto_return_constant_025929f0,auto,edge-verified,Generated from the return constant template
 0x02592a00,1,auto_empty_02592a00,auto,edge-verified,Generated from the empty template
+0x02592a20,58,auto_destroy_node_slot_00_and_free_02592a20,auto,edge-verified,Same instructions as misc_destroy_node_slot_00_and_free with other addresses
 0x02592a60,6,auto_return_constant_02592a60,auto,edge-verified,Generated from the return constant template
 0x02592a70,1,auto_empty_02592a70,auto,edge-verified,Generated from the empty template
+0x02592a90,58,auto_destroy_node_slot_00_and_free_02592a90,auto,edge-verified,Same instructions as misc_destroy_node_slot_00_and_free with other addresses
 0x02592ad0,6,auto_return_constant_02592ad0,auto,edge-verified,Generated from the return constant template
 0x02592ae0,1,auto_empty_02592ae0,auto,edge-verified,Generated from the empty template
+0x02592b00,58,auto_destroy_node_slot_00_and_free_02592b00,auto,edge-verified,Same instructions as misc_destroy_node_slot_00_and_free with other addresses
 0x02592b40,6,auto_return_constant_02592b40,auto,edge-verified,Generated from the return constant template
 0x02599c20,1,auto_empty_02599c20,auto,edge-verified,Generated from the empty template
 0x02599c30,3,auto_return_constant_02599c30,auto,edge-verified,Generated from the return constant template
@@ -27965,7 +27977,9 @@ address,size,name,system,status,notes
 0x02783d80,1,auto_empty_02783d80,auto,edge-verified,Generated from the empty template
 0x02783e30,52,auto_held_block_delete_02783e30,auto,edge-verified,Same instructions as misc_held_block_delete_02242ea0 with other addresses
 0x02783e70,72,auto_held_block_destroy_02783e70,auto,edge-verified,Same instructions as misc_held_block_destroy_02242ee0 with other addresses
+0x02784980,58,auto_destroy_node_slot_00_and_free_02784980,auto,edge-verified,Same instructions as misc_destroy_node_slot_00_and_free with other addresses
 0x02784c80,1,auto_empty_02784c80,auto,edge-verified,Generated from the empty template
+0x02785100,58,auto_destroy_node_slot_00_and_free_02785100,auto,edge-verified,Same instructions as misc_destroy_node_slot_00_and_free with other addresses
 0x027852a0,6,auto_return_constant_027852a0,auto,edge-verified,Generated from the return constant template
 0x02785310,41,auto_bind_vtable_02785310,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
 0x02785340,1,auto_empty_02785340,auto,edge-verified,Generated from the empty template
@@ -32287,6 +32301,7 @@ address,size,name,system,status,notes
 0x02b3e300,97,misc_alloc_block_with_value,misc,edge-verified,Asks the object for a value through its slot at +0x28 and if it is non-zero allocates and fills a 0x30 block
 0x02b3e5f0,1,auto_empty_02b3e5f0,auto,edge-verified,Generated from the empty template
 0x02b3e610,1,auto_empty_02b3e610,auto,edge-verified,Generated from the empty template
+0x02b3e700,58,auto_destroy_node_slot_00_and_free_02b3e700,auto,edge-verified,Same instructions as misc_destroy_node_slot_00_and_free with other addresses
 0x02b3e820,5,auto_return_field_02b3e820,auto,edge-verified,Generated from the return field template
 0x02b3e830,5,auto_return_field_02b3e830,auto,edge-verified,Generated from the return field template
 0x02b3e840,4,auto_return_field_02b3e840,auto,edge-verified,Generated from the return field template
@@ -37178,6 +37193,8 @@ address,size,name,system,status,notes
 0x02dbac40,1,auto_empty_02dbac40,auto,edge-verified,Generated from the empty template
 0x02dbac50,1,auto_empty_02dbac50,auto,edge-verified,Generated from the empty template
 0x02dbac60,1,auto_empty_02dbac60,auto,edge-verified,Generated from the empty template
+0x02dbad20,58,auto_destroy_node_slot_00_and_free_02dbad20,auto,edge-verified,Same instructions as misc_destroy_node_slot_00_and_free with other addresses
+0x02dbad70,58,auto_destroy_node_slot_00_and_free_02dbad70,auto,edge-verified,Same instructions as misc_destroy_node_slot_00_and_free with other addresses
 0x02dbb950,1,auto_empty_02dbb950,auto,edge-verified,Generated from the empty template
 0x02dbb9b0,81,auto_tree_destroy_nodes_02dbb9b0,auto,edge-verified,Same instructions as engine_tree_destroy_nodes with other addresses
 0x02dbbb90,28,auto_destroy_then_release_02dbbb90,auto,edge-verified,Same instructions as misc_destroy_then_release with other addresses
