@@ -23698,6 +23698,7 @@ auto_record_tuple_classification_group_015f1d60,edge,,20,20,0,0,5aed89bd7e91e19b
 auto_record_tuple_parameter_supported_015e5220,edge,,47,47,0,0,86ebf96b227a1af7,2026-11-10
 auto_ref_holder_add_child_00953400,edge,,6,6,0,0,545910488b434d7b,2026-11-10
 auto_ref_holder_add_child_00aa4f30,edge,,6,6,0,0,545910488b434d7b,2026-11-10
+auto_register_handle_record_018a3930,edge,,4,4,0,0,b4001d08618ff489,2026-11-10
 auto_register_plain_type_009e1290,edge,,1,1,0,0,15556dbe69f9805c,2026-11-10
 auto_register_plain_type_00b068a0,edge,,1,1,0,0,15556dbe69f9805c,2026-11-10
 auto_register_plain_type_00bda540,edge,,1,1,0,0,15556dbe69f9805c,2026-11-10

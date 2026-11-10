@@ -10110,6 +10110,7 @@ address,size,name,system,status,notes
 0x018a3750,205,auto_initialize_static_wide_string_018a3750,auto,edge-verified,Same instructions as engine_initialize_static_wide_string_018867e0 with other addresses
 0x018a3860,26,auto_init_value_record_018a3860,auto,edge-verified,Same instructions as misc_init_value_record with other addresses
 0x018a3880,168,auto_release_handle_record_018a3880,auto,edge-verified,Same instructions as misc_release_handle_record with other addresses
+0x018a3930,155,auto_register_handle_record_018a3930,auto,edge-verified,Same instructions as misc_register_handle_record with other addresses
 0x018a3eb0,205,auto_initialize_static_wide_string_018a3eb0,auto,edge-verified,Same instructions as engine_initialize_static_wide_string_018867e0 with other addresses
 0x018a3fc0,1,auto_empty_018a3fc0,auto,edge-verified,Generated from the empty template
 0x018a4030,28,auto_destroy_then_release_018a4030,auto,edge-verified,Same instructions as misc_destroy_then_release with other addresses

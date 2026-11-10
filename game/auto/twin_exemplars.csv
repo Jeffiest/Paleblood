@@ -37,6 +37,7 @@ address,name,size,cases,addresses
 0x018881b0,misc_set_vtable_after_call,31,game/misc/set_vtable_after_call_cases.py,0x01884e90 0x057225f0
 0x018883b0,misc_init_value_record,26,game/misc/init_value_record_cases.py,0x05722620
 0x018883d0,misc_release_handle_record,168,game/misc/release_handle_record_cases.py,0x057e3be0 0x05722620 0x01401720 0x058b3570 0x04d55bca 0x013aeaf0 0x013a33a0 0x013aebc0 0x02fbe588 0x02fbe4f8
+0x01888480,misc_register_handle_record,155,game/misc/register_handle_record_cases.py,0x057e3be0 0x05722620 0x01401720 0x058b3570 0x04d55bca 0x013aeaf0 0x013a33a0 0x013aebc0 0x02fbe4f8
 0x01e47df0,misc_release_held_block,38,game/misc/release_held_block_cases.py,0x01c00d20
 0x02242980,misc_base_init_02242980,15,game/misc/base_init_02242980_cases.py,0x0566fa90
 0x02242990,misc_base_delete_02242990,66,game/misc/base_delete_02242990_cases.py,0x0566fa90 0x057e40f8
