@@ -1,2 +1,3 @@
 address,name,size,cases,addresses
 0x00be16a0,misc_plain_type_address,8,game/misc/plain_type_address_cases.py,0x05845228
+0x0139b610,misc_destroy_then_release,28,game/misc/destroy_then_release_cases.py,0x0139b630 0x02fbe588
