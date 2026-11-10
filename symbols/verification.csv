@@ -2060,6 +2060,17 @@ auto_clear_two_words_02fa7840,edge,,4,4,0,0,f9ffc68ed8573115,2026-11-10
 auto_clear_two_words_02fa8190,edge,,4,4,0,0,f9ffc68ed8573115,2026-11-10
 auto_close_file_streams_02e67cd0,edge,,11,11,0,0,9f4cadba9c02a641,2026-11-10
 auto_command_emit_counter_operation_0148b430,edge,,16,16,0,0,96aef832ba84ade6,2026-11-10
+auto_construct_member_owner_021456a0,edge,,5,5,0,0,67a5109f1de074aa,2026-11-10
+auto_construct_member_owner_021755d0,edge,,5,5,0,0,67a5109f1de074aa,2026-11-10
+auto_construct_member_owner_02176f10,edge,,5,5,0,0,67a5109f1de074aa,2026-11-10
+auto_construct_member_owner_0217a230,edge,,5,5,0,0,67a5109f1de074aa,2026-11-10
+auto_construct_member_owner_0217bb90,edge,,5,5,0,0,67a5109f1de074aa,2026-11-10
+auto_construct_member_owner_0217d4d0,edge,,5,5,0,0,67a5109f1de074aa,2026-11-10
+auto_construct_member_owner_0217fc10,edge,,5,5,0,0,67a5109f1de074aa,2026-11-10
+auto_construct_member_owner_022035c0,edge,,5,5,0,0,67a5109f1de074aa,2026-11-10
+auto_construct_member_owner_02206bf0,edge,,5,5,0,0,67a5109f1de074aa,2026-11-10
+auto_construct_member_owner_022085f0,edge,,5,5,0,0,67a5109f1de074aa,2026-11-10
+auto_construct_member_owner_022e4e50,edge,,5,5,0,0,67a5109f1de074aa,2026-11-10
 auto_copy_block_0135be70,edge,,7,7,0,0,b36d41b72ee77060,2026-11-10
 auto_copy_block_0135c810,edge,,7,7,0,0,b36d41b72ee77060,2026-11-10
 auto_copy_block_0135e230,edge,,7,7,0,0,b36d41b72ee77060,2026-11-10
