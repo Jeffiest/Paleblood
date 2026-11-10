@@ -6,5 +6,6 @@ address,name,size,cases,home,addresses,exchange
 0x014733a0,render_set_db_depth_control,93,game/render/set_db_depth_control_cases.py,game/render,,text
 0x016fa520,misc_init_rows_total_marker_fields_5945ef0,162,game/misc/init_rows_total_marker_fields_5945ef0_cases.py,game/misc,0x04cece40 0x05945ef0 0x04cece50 0x05945f00 0x04cece60 0x05945f10 0x04cece70 0x04cece80 0x04cece90 0x05945f20 0x05945f24 0x05945f28 0x05945f2c 0x05945f30 0x05945f34,text
 0x02242990,misc_base_delete_02242990,66,game/misc/base_delete_02242990_cases.py,game/misc,0x0566fa90 0x057e40f8,text
+0x02b3a500,misc_set_value_word_130,8,game/auto/near_set_word_02b3a500_cases.py,game/misc,,slots
 0x02b3a500,misc_set_value_word_130,8,game/misc/set_value_word_130_cases.py,game/misc,,text
 0x02b3a6d0,misc_set_u32_word_160,7,game/auto/near_set_u32_word_02b3a6d0_cases.py,game/misc,,slots
