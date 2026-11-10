@@ -26821,7 +26821,10 @@ address,size,name,system,status,notes
 0x0257f410,1,auto_empty_0257f410,auto,edge-verified,Generated from the empty template
 0x0257f420,1,auto_empty_0257f420,auto,edge-verified,Generated from the empty template
 0x0257f430,1,auto_empty_0257f430,auto,edge-verified,Generated from the empty template
+0x0257f4d0,22,auto_disarm_callback_0257f4d0,auto,edge-verified,Same instructions as misc_disarm_callback with other addresses
 0x0257f970,28,auto_destroy_then_release_0257f970,auto,edge-verified,Same instructions as misc_destroy_then_release with other addresses
+0x02587f30,22,auto_disarm_callback_02587f30,auto,edge-verified,Same instructions as misc_disarm_callback with other addresses
+0x02587f90,22,auto_disarm_callback_02587f90,auto,edge-verified,Same instructions as misc_disarm_callback with other addresses
 0x0258f490,1,auto_empty_0258f490,auto,edge-verified,Generated from the empty template
 0x02590f90,3,auto_return_zero_02590f90,auto,edge-verified,Generated from the return zero template
 0x02590fa0,1,auto_empty_02590fa0,auto,edge-verified,Generated from the empty template
@@ -26930,20 +26933,32 @@ address,size,name,system,status,notes
 0x025cfa40,1,auto_empty_025cfa40,auto,edge-verified,Generated from the empty template
 0x025d24c0,28,auto_destroy_then_release_025d24c0,auto,edge-verified,Same instructions as misc_destroy_then_release with other addresses
 0x025df430,1,auto_empty_025df430,auto,edge-verified,Generated from the empty template
+0x025df450,22,auto_disarm_callback_025df450,auto,edge-verified,Same instructions as misc_disarm_callback with other addresses
+0x025df4b0,22,auto_disarm_callback_025df4b0,auto,edge-verified,Same instructions as misc_disarm_callback with other addresses
 0x025e13b0,1,auto_empty_025e13b0,auto,edge-verified,Generated from the empty template
+0x025e2150,22,auto_disarm_callback_025e2150,auto,edge-verified,Same instructions as misc_disarm_callback with other addresses
 0x025e61c0,1,auto_empty_025e61c0,auto,edge-verified,Generated from the empty template
+0x025e6f60,22,auto_disarm_callback_025e6f60,auto,edge-verified,Same instructions as misc_disarm_callback with other addresses
+0x025eae70,22,auto_disarm_callback_025eae70,auto,edge-verified,Same instructions as misc_disarm_callback with other addresses
 0x025ef1d0,1,auto_empty_025ef1d0,auto,edge-verified,Generated from the empty template
+0x025eff70,22,auto_disarm_callback_025eff70,auto,edge-verified,Same instructions as misc_disarm_callback with other addresses
 0x025f2a80,1,auto_empty_025f2a80,auto,edge-verified,Generated from the empty template
+0x025f3820,22,auto_disarm_callback_025f3820,auto,edge-verified,Same instructions as misc_disarm_callback with other addresses
 0x025f67a0,1,auto_empty_025f67a0,auto,edge-verified,Generated from the empty template
+0x025f7540,22,auto_disarm_callback_025f7540,auto,edge-verified,Same instructions as misc_disarm_callback with other addresses
 0x025fa350,1,auto_empty_025fa350,auto,edge-verified,Generated from the empty template
+0x025fb0f0,22,auto_disarm_callback_025fb0f0,auto,edge-verified,Same instructions as misc_disarm_callback with other addresses
 0x025fe860,1,auto_empty_025fe860,auto,edge-verified,Generated from the empty template
+0x025ff600,22,auto_disarm_callback_025ff600,auto,edge-verified,Same instructions as misc_disarm_callback with other addresses
 0x02604390,1,auto_empty_02604390,auto,edge-verified,Generated from the empty template
+0x02605130,22,auto_disarm_callback_02605130,auto,edge-verified,Same instructions as misc_disarm_callback with other addresses
 0x02606bc0,28,auto_destroy_then_release_02606bc0,auto,edge-verified,Same instructions as misc_destroy_then_release with other addresses
 0x0260b470,8,auto_return_field_0260b470,auto,edge-verified,Generated from the return field template
 0x0260b490,8,auto_return_field_0260b490,auto,edge-verified,Generated from the return field template
 0x0260b570,8,auto_return_field_0260b570,auto,edge-verified,Generated from the return field template
 0x0260b580,8,auto_return_field_0260b580,auto,edge-verified,Generated from the return field template
 0x0260f720,28,auto_destroy_then_release_0260f720,auto,edge-verified,Same instructions as misc_destroy_then_release with other addresses
+0x0260f8d0,22,auto_disarm_callback_0260f8d0,auto,edge-verified,Same instructions as misc_disarm_callback with other addresses
 0x0260f930,3,auto_return_constant_0260f930,auto,edge-verified,Generated from the return constant template
 0x0260f940,218,auto_push_value_by_reference_0260f940,auto,edge-verified,Same instructions as misc_push_value_by_reference with other addresses
 0x02612230,1,auto_empty_02612230,auto,edge-verified,Generated from the empty template
@@ -26957,15 +26972,23 @@ address,size,name,system,status,notes
 0x02618750,1,auto_empty_02618750,auto,edge-verified,Generated from the empty template
 0x02618760,1,auto_empty_02618760,auto,edge-verified,Generated from the empty template
 0x0261a610,28,auto_destroy_then_release_0261a610,auto,edge-verified,Same instructions as misc_destroy_then_release with other addresses
+0x0261ca90,22,auto_disarm_callback_0261ca90,auto,edge-verified,Same instructions as misc_disarm_callback with other addresses
+0x0261fc60,22,auto_disarm_callback_0261fc60,auto,edge-verified,Same instructions as misc_disarm_callback with other addresses
 0x02622d30,81,auto_tree_destroy_nodes_02622d30,auto,edge-verified,Same instructions as engine_tree_destroy_nodes with other addresses
 0x02625aa0,1,auto_empty_02625aa0,auto,edge-verified,Generated from the empty template
+0x02626570,22,auto_disarm_callback_02626570,auto,edge-verified,Same instructions as misc_disarm_callback with other addresses
 0x026265d0,1,auto_empty_026265d0,auto,edge-verified,Generated from the empty template
 0x02628fd0,1,auto_empty_02628fd0,auto,edge-verified,Generated from the empty template
+0x0262f7a0,22,auto_disarm_callback_0262f7a0,auto,edge-verified,Same instructions as misc_disarm_callback with other addresses
 0x0262f800,1,auto_empty_0262f800,auto,edge-verified,Generated from the empty template
+0x02633c60,22,auto_disarm_callback_02633c60,auto,edge-verified,Same instructions as misc_disarm_callback with other addresses
 0x02633cc0,1,auto_empty_02633cc0,auto,edge-verified,Generated from the empty template
 0x02633ce0,1,auto_empty_02633ce0,auto,edge-verified,Generated from the empty template
 0x02636f50,1,auto_empty_02636f50,auto,edge-verified,Generated from the empty template
+0x02637b00,22,auto_disarm_callback_02637b00,auto,edge-verified,Same instructions as misc_disarm_callback with other addresses
+0x0263b5c0,22,auto_disarm_callback_0263b5c0,auto,edge-verified,Same instructions as misc_disarm_callback with other addresses
 0x0263e9c0,3,auto_return_constant_0263e9c0,auto,edge-verified,Generated from the return constant template
+0x026435a0,22,auto_disarm_callback_026435a0,auto,edge-verified,Same instructions as misc_disarm_callback with other addresses
 0x02646d00,1,auto_empty_02646d00,auto,edge-verified,Generated from the empty template
 0x02649510,1,auto_empty_02649510,auto,edge-verified,Generated from the empty template
 0x0264a830,1,auto_empty_0264a830,auto,edge-verified,Generated from the empty template
@@ -27004,6 +27027,7 @@ address,size,name,system,status,notes
 0x02664830,28,auto_destroy_then_release_02664830,auto,edge-verified,Same instructions as misc_destroy_then_release with other addresses
 0x02665940,1,auto_empty_02665940,auto,edge-verified,Generated from the empty template
 0x026678a0,28,auto_destroy_then_release_026678a0,auto,edge-verified,Same instructions as misc_destroy_then_release with other addresses
+0x0266afe0,22,auto_disarm_callback_0266afe0,auto,edge-verified,Same instructions as misc_disarm_callback with other addresses
 0x0266b040,1,auto_empty_0266b040,auto,edge-verified,Generated from the empty template
 0x0266f270,28,auto_destroy_then_release_0266f270,auto,edge-verified,Same instructions as misc_destroy_then_release with other addresses
 0x0266f7d0,28,auto_destroy_then_release_0266f7d0,auto,edge-verified,Same instructions as misc_destroy_then_release with other addresses
@@ -27015,15 +27039,19 @@ address,size,name,system,status,notes
 0x02676130,28,auto_destroy_then_release_02676130,auto,edge-verified,Same instructions as misc_destroy_then_release with other addresses
 0x02679080,1,auto_empty_02679080,auto,edge-verified,Generated from the empty template
 0x026790a0,1,auto_empty_026790a0,auto,edge-verified,Generated from the empty template
+0x026790b0,22,auto_disarm_callback_026790b0,auto,edge-verified,Same instructions as misc_disarm_callback with other addresses
 0x02679330,1,auto_empty_02679330,auto,edge-verified,Generated from the empty template
 0x02679b40,28,auto_destroy_then_release_02679b40,auto,edge-verified,Same instructions as misc_destroy_then_release with other addresses
 0x0267aaa0,28,auto_destroy_then_release_0267aaa0,auto,edge-verified,Same instructions as misc_destroy_then_release with other addresses
 0x0267b2d0,3,auto_return_zero_0267b2d0,auto,edge-verified,Generated from the return zero template
 0x0267b2e0,3,auto_return_zero_0267b2e0,auto,edge-verified,Generated from the return zero template
 0x0267bac0,1,auto_empty_0267bac0,auto,edge-verified,Generated from the empty template
+0x0267c9a0,22,auto_disarm_callback_0267c9a0,auto,edge-verified,Same instructions as misc_disarm_callback with other addresses
 0x0267ca10,1,auto_empty_0267ca10,auto,edge-verified,Generated from the empty template
 0x0267cc50,28,auto_destroy_then_release_0267cc50,auto,edge-verified,Same instructions as misc_destroy_then_release with other addresses
 0x02680e40,1,auto_empty_02680e40,auto,edge-verified,Generated from the empty template
+0x026820f0,22,auto_disarm_callback_026820f0,auto,edge-verified,Same instructions as misc_disarm_callback with other addresses
+0x02682150,22,auto_disarm_callback_02682150,auto,edge-verified,Same instructions as misc_disarm_callback with other addresses
 0x026821b0,1,auto_empty_026821b0,auto,edge-verified,Generated from the empty template
 0x02682310,218,auto_push_value_by_reference_02682310,auto,edge-verified,Same instructions as misc_push_value_by_reference with other addresses
 0x026830f0,1,auto_empty_026830f0,auto,edge-verified,Generated from the empty template
@@ -27050,9 +27078,12 @@ address,size,name,system,status,notes
 0x026960e0,28,auto_destroy_then_release_026960e0,auto,edge-verified,Same instructions as misc_destroy_then_release with other addresses
 0x0269cb60,1,auto_empty_0269cb60,auto,edge-verified,Generated from the empty template
 0x026bab20,3,auto_return_zero_026bab20,auto,edge-verified,Generated from the return zero template
+0x026babf0,22,auto_disarm_callback_026babf0,auto,edge-verified,Same instructions as misc_disarm_callback with other addresses
 0x026bb000,28,auto_destroy_then_release_026bb000,auto,edge-verified,Same instructions as misc_destroy_then_release with other addresses
+0x026bb1e0,22,auto_disarm_callback_026bb1e0,auto,edge-verified,Same instructions as misc_disarm_callback with other addresses
 0x026bb250,28,auto_destroy_then_release_026bb250,auto,edge-verified,Same instructions as misc_destroy_then_release with other addresses
 0x026bb330,1,auto_empty_026bb330,auto,edge-verified,Generated from the empty template
+0x026bb4a0,22,auto_disarm_callback_026bb4a0,auto,edge-verified,Same instructions as misc_disarm_callback with other addresses
 0x026bb540,1,auto_empty_026bb540,auto,edge-verified,Generated from the empty template
 0x026bb890,1,auto_empty_026bb890,auto,edge-verified,Generated from the empty template
 0x026bbbe0,1,auto_empty_026bbbe0,auto,edge-verified,Generated from the empty template
@@ -27069,6 +27100,7 @@ address,size,name,system,status,notes
 0x026c58b0,8,auto_return_member_address_026c58b0,auto,edge-verified,Generated from the return member address template
 0x026c58c0,8,auto_return_member_address_026c58c0,auto,edge-verified,Generated from the return member address template
 0x026c58d0,9,auto_return_float_field_026c58d0,auto,edge-verified,Generated from the return float field template
+0x026cdfc0,22,auto_disarm_callback_026cdfc0,auto,edge-verified,Same instructions as misc_disarm_callback with other addresses
 0x026ce3d0,28,auto_destroy_then_release_026ce3d0,auto,edge-verified,Same instructions as misc_destroy_then_release with other addresses
 0x026ce930,28,auto_destroy_then_release_026ce930,auto,edge-verified,Same instructions as misc_destroy_then_release with other addresses
 0x026cee90,28,auto_destroy_then_release_026cee90,auto,edge-verified,Same instructions as misc_destroy_then_release with other addresses
@@ -27077,7 +27109,9 @@ address,size,name,system,status,notes
 0x026d5460,28,auto_destroy_then_release_026d5460,auto,edge-verified,Same instructions as misc_destroy_then_release with other addresses
 0x026d6260,8,auto_return_field_026d6260,auto,edge-verified,Generated from the return field template
 0x026d6540,28,auto_destroy_then_release_026d6540,auto,edge-verified,Same instructions as misc_destroy_then_release with other addresses
+0x026d76c0,22,auto_disarm_callback_026d76c0,auto,edge-verified,Same instructions as misc_disarm_callback with other addresses
 0x026da680,1,auto_empty_026da680,auto,edge-verified,Generated from the empty template
+0x026db720,22,auto_disarm_callback_026db720,auto,edge-verified,Same instructions as misc_disarm_callback with other addresses
 0x026db780,1,auto_empty_026db780,auto,edge-verified,Generated from the empty template
 0x026ddd00,1,auto_empty_026ddd00,auto,edge-verified,Generated from the empty template
 0x026dde00,1,auto_empty_026dde00,auto,edge-verified,Generated from the empty template
@@ -27085,6 +27119,8 @@ address,size,name,system,status,notes
 0x026de660,28,auto_destroy_then_release_026de660,auto,edge-verified,Same instructions as misc_destroy_then_release with other addresses
 0x026e2d90,28,auto_destroy_then_release_026e2d90,auto,edge-verified,Same instructions as misc_destroy_then_release with other addresses
 0x026e2e70,1,auto_empty_026e2e70,auto,edge-verified,Generated from the empty template
+0x026e2ff0,22,auto_disarm_callback_026e2ff0,auto,edge-verified,Same instructions as misc_disarm_callback with other addresses
+0x026e3050,22,auto_disarm_callback_026e3050,auto,edge-verified,Same instructions as misc_disarm_callback with other addresses
 0x026e3860,455,misc_release_owned_state,misc,edge-verified,Releases owned items packed reference held object and node list then resets counters and flags and returns the base reset result
 0x026e6f30,43,misc_forward_with_mode,misc,edge-verified,Passes two 32-bit arguments with the resource manager mode and all ones to the request routine and returns its result
 0x026e6f60,111,misc_reset_listed_members,misc,edge-verified,Resets the member object then every value in each group list of the owned state in list order
@@ -27139,6 +27175,7 @@ address,size,name,system,status,notes
 0x026f78a0,1,auto_empty_026f78a0,auto,edge-verified,Generated from the empty template
 0x026f7970,1,auto_empty_026f7970,auto,edge-verified,Generated from the empty template
 0x026f7ec0,4,auto_return_field_026f7ec0,auto,edge-verified,Generated from the return field template
+0x026f7ed0,22,auto_disarm_callback_026f7ed0,auto,edge-verified,Same instructions as misc_disarm_callback with other addresses
 0x026f83f0,1,auto_empty_026f83f0,auto,edge-verified,Generated from the empty template
 0x026f8420,3,auto_return_zero_026f8420,auto,edge-verified,Generated from the return zero template
 0x026f8430,6,auto_return_constant_026f8430,auto,edge-verified,Generated from the return constant template
@@ -27165,6 +27202,7 @@ address,size,name,system,status,notes
 0x02701f60,5,auto_return_field_02701f60,auto,edge-verified,Generated from the return field template
 0x02705060,3,auto_return_constant_02705060,auto,edge-verified,Generated from the return constant template
 0x027050e0,1,auto_empty_027050e0,auto,edge-verified,Generated from the empty template
+0x027050f0,22,auto_disarm_callback_027050f0,auto,edge-verified,Same instructions as misc_disarm_callback with other addresses
 0x02705160,28,auto_destroy_then_release_02705160,auto,edge-verified,Same instructions as misc_destroy_then_release with other addresses
 0x02705560,218,auto_push_value_by_reference_02705560,auto,edge-verified,Same instructions as misc_push_value_by_reference with other addresses
 0x02705dd0,218,auto_push_value_by_reference_02705dd0,auto,edge-verified,Same instructions as misc_push_value_by_reference with other addresses
@@ -27213,6 +27251,7 @@ address,size,name,system,status,notes
 0x0271cb60,3,auto_return_zero_0271cb60,auto,edge-verified,Generated from the return zero template
 0x0271cb70,1,auto_empty_0271cb70,auto,edge-verified,Generated from the empty template
 0x0271db70,1,auto_empty_0271db70,auto,edge-verified,Generated from the empty template
+0x0271e1d0,22,auto_disarm_callback_0271e1d0,auto,edge-verified,Same instructions as misc_disarm_callback with other addresses
 0x0271e200,1,auto_empty_0271e200,auto,edge-verified,Generated from the empty template
 0x0271e5a0,1,auto_empty_0271e5a0,auto,edge-verified,Generated from the empty template
 0x0271e5c0,3,auto_return_zero_0271e5c0,auto,edge-verified,Generated from the return zero template
@@ -27575,6 +27614,7 @@ address,size,name,system,status,notes
 0x0276a800,8,auto_fixed_address_0276a800,auto,edge-verified,Same instructions as misc_plain_type_address with other addresses
 0x0276a810,3,auto_return_zero_0276a810,auto,edge-verified,Generated from the return zero template
 0x0276aa90,6,auto_return_constant_0276aa90,auto,edge-verified,Generated from the return constant template
+0x0276b080,22,auto_disarm_callback_0276b080,auto,edge-verified,Same instructions as misc_disarm_callback with other addresses
 0x0276b0a0,1,auto_empty_0276b0a0,auto,edge-verified,Generated from the empty template
 0x0276b2f0,28,auto_destroy_then_release_0276b2f0,auto,edge-verified,Same instructions as misc_destroy_then_release with other addresses
 0x0276b4d0,1,auto_empty_0276b4d0,auto,edge-verified,Generated from the empty template
@@ -27609,6 +27649,7 @@ address,size,name,system,status,notes
 0x0276f740,8,auto_fixed_address_0276f740,auto,edge-verified,Same instructions as misc_plain_type_address with other addresses
 0x0276f750,3,auto_return_zero_0276f750,auto,edge-verified,Generated from the return zero template
 0x0276f9d0,6,auto_return_constant_0276f9d0,auto,edge-verified,Generated from the return constant template
+0x0276fc30,22,auto_disarm_callback_0276fc30,auto,edge-verified,Same instructions as misc_disarm_callback with other addresses
 0x0276fc50,1,auto_empty_0276fc50,auto,edge-verified,Generated from the empty template
 0x027704a0,6,auto_return_constant_027704a0,auto,edge-verified,Generated from the return constant template
 0x02770930,28,auto_destroy_then_release_02770930,auto,edge-verified,Same instructions as misc_destroy_then_release with other addresses
