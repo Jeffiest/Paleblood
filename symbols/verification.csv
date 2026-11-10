@@ -39597,6 +39597,7 @@ misc_forward_object_slot_28,edge,,4,4,0,0,2b84d8770a12e4d1,2026-11-09
 misc_forward_object_slot_30_result,edge,,5,5,0,0,a68811a0511cb30c,2026-11-09
 misc_forward_record_to_slot_90,edge,,6,6,0,0,13bf2e60f0780a7e,2026-11-09
 misc_forward_renderer_resource,edge,,12,12,0,0,29478ed4c0e042eb,2026-11-09
+misc_forward_tagged_request,edge,,10,10,0,0,6f031f709950964f,2026-11-10
 misc_forward_value_to_child,edge,,9,9,0,0,009a8387a53acfdc,2026-11-09
 misc_forward_when_flagged_022441c0,edge,,8,8,0,0,b54830e07939c5a9,2026-11-09
 misc_forward_with_mode,edge,,12,12,0,0,f8904775e3ce7c3b,2026-11-09

@@ -10027,6 +10027,7 @@ address,size,name,system,status,notes
 0x018883d0,168,misc_release_handle_record,misc,edge-verified,Sets the record vtable frees its handle registers the record with the registry when one exists then releases the record and returns the release result
 0x01888480,155,misc_register_handle_record,misc,edge-verified,Sets the record vtable frees its handle and registers the record with the registry when one exists using a scratch handle
 0x01888520,15,misc_test_and_set_flag,misc,edge-verified,Reports whether the record flag byte at 0x0c was already set and sets it when it was clear
+0x01888650,30,misc_forward_tagged_request,misc,edge-verified,Forwards a tagged request payload with a format string and a holder count to the library wide formatter when the 32-bit tag equals 2; otherwise returns without a call; returns nothing
 0x01888a00,205,misc_init_shared_record_once_guarded,misc,edge-verified,Guarded copy of misc_init_shared_record_once with the same setup and flag query; the stack guard is left to the compiler and the copy after its failure call is omitted
 0x01888b10,1,auto_empty_01888b10,auto,edge-verified,Generated from the empty template
 0x01888b30,50,misc_tail_call_offset_member_thunk,misc,edge-verified,Tail calls the target of a member thunk on its object adjusted by +0x18 with the second record value and 32-bit argument; a zero target or null object returns without a call
