@@ -2495,6 +2495,7 @@ address,replacement,system,returns
 0x00be1750,bb_auto_empty_00be1750,auto,void
 0x00be1760,bb_misc_small_type_address,misc,i64
 0x00be1770,bb_misc_register_type_pair,misc,void
+0x00be2a80,bb_auto_bounded_range_object_free_00be2a80,auto,i64
 0x00be2d90,bb_auto_tagged_link_address_00be2d90,auto,i64
 0x00be2dd0,bb_auto_return_field_00be2dd0,auto,i32
 0x00be2e90,bb_auto_return_member_address_00be2e90,auto,i64
@@ -3784,6 +3785,7 @@ address,replacement,system,returns
 0x00f46a70,bb_auto_return_zero_00f46a70,auto,i64
 0x00f46a80,bb_auto_return_zero_00f46a80,auto,i64
 0x00f46a90,bb_auto_return_zero_00f46a90,auto,i64
+0x00f47140,bb_auto_bounded_range_object_free_00f47140,auto,i64
 0x00f473f0,bb_auto_fixed_address_00f473f0,auto,i64
 0x00f48580,bb_auto_empty_00f48580,auto,void
 0x00f48590,bb_auto_fixed_address_00f48590,auto,i64
@@ -14081,6 +14083,7 @@ address,replacement,system,returns
 0x01c44620,bb_auto_initialize_static_wide_string_01c44620,auto,void
 0x01c44b20,bb_auto_initialize_static_wide_string_01c44b20,auto,void
 0x01c44d40,bb_auto_initialize_static_wide_string_01c44d40,auto,void
+0x01c44e60,bb_auto_bounded_range_object_free_01c44e60,auto,i64
 0x01c45fe0,bb_auto_destroy_then_release_01c45fe0,auto,i64
 0x01c46aa0,bb_auto_initialize_static_wide_string_01c46aa0,auto,void
 0x01c46bd0,bb_auto_empty_01c46bd0,auto,void
@@ -30423,6 +30426,7 @@ address,replacement,system,returns
 0x02955d90,bb_auto_empty_02955d90,auto,void
 0x02955de0,bb_auto_empty_02955de0,auto,void
 0x02956190,bb_auto_dual_held_member_object_free_02956190,auto,i64
+0x0295d4e0,bb_auto_bounded_range_object_free_0295d4e0,auto,i64
 0x029604a0,bb_auto_empty_029604a0,auto,void
 0x02975990,bb_auto_return_zero_02975990,auto,i64
 0x029759b0,bb_auto_return_zero_029759b0,auto,i64
@@ -30831,6 +30835,7 @@ address,replacement,system,returns
 0x029e2420,bb_auto_empty_029e2420,auto,void
 0x029e2cd0,bb_auto_return_constant_029e2cd0,auto,i32
 0x029e30a0,bb_auto_return_zero_029e30a0,auto,i64
+0x029e31b0,bb_auto_bounded_range_object_free_029e31b0,auto,i64
 0x029e3200,bb_auto_return_constant_029e3200,auto,i32
 0x029e3210,bb_auto_empty_029e3210,auto,void
 0x029e5750,bb_auto_return_constant_029e5750,auto,i32
@@ -37036,6 +37041,7 @@ address,replacement,system,returns
 0x02dab230,bb_auto_push_value_by_reference_02dab230,auto,void
 0x02dab520,bb_auto_empty_02dab520,auto,void
 0x02dab580,bb_auto_empty_02dab580,auto,void
+0x02dabe40,bb_auto_bounded_range_object_free_02dabe40,auto,i64
 0x02dabe90,bb_auto_fixed_address_02dabe90,auto,i64
 0x02dabf10,bb_auto_fixed_address_02dabf10,auto,i64
 0x02dac700,bb_auto_empty_02dac700,auto,void
