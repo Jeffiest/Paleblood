@@ -37064,6 +37064,7 @@ address,size,name,system,status,notes
 0x02dab580,1,auto_empty_02dab580,auto,edge-verified,Generated from the empty template
 0x02dabe40,75,auto_bounded_range_object_free_02dabe40,auto,edge-verified,Same instructions as misc_bounded_range_object_free with other addresses
 0x02dabe90,8,auto_fixed_address_02dabe90,auto,edge-verified,Same instructions as misc_plain_type_address with other addresses
+0x02dabeb0,81,auto_bounded_range_object_free_secondary_02dabeb0,auto,edge-verified,Same instructions as misc_bounded_range_object_free_secondary with other addresses
 0x02dabf10,8,auto_fixed_address_02dabf10,auto,edge-verified,Same instructions as misc_plain_type_address with other addresses
 0x02dac700,1,auto_empty_02dac700,auto,edge-verified,Generated from the empty template
 0x02dac730,1,auto_empty_02dac730,auto,edge-verified,Generated from the empty template

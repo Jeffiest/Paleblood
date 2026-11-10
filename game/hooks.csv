@@ -37062,6 +37062,7 @@ address,replacement,system,returns
 0x02dab580,bb_auto_empty_02dab580,auto,void
 0x02dabe40,bb_auto_bounded_range_object_free_02dabe40,auto,i64
 0x02dabe90,bb_auto_fixed_address_02dabe90,auto,i64
+0x02dabeb0,bb_auto_bounded_range_object_free_secondary_02dabeb0,auto,i64
 0x02dabf10,bb_auto_fixed_address_02dabf10,auto,i64
 0x02dac700,bb_auto_empty_02dac700,auto,void
 0x02dac730,bb_auto_empty_02dac730,auto,void
