@@ -23787,6 +23787,7 @@ auto_relay_member_call_02436040,edge,,9,9,0,0,074f87c891f4b861,2026-11-10
 auto_relay_member_call_024393f0,edge,,9,9,0,0,074f87c891f4b861,2026-11-10
 auto_relay_member_call_02dcb510,edge,,9,9,0,0,074f87c891f4b861,2026-11-10
 auto_relay_member_call_02de3900,edge,,9,9,0,0,074f87c891f4b861,2026-11-10
+auto_release_handle_record_018a3880,edge,,7,7,0,0,5a9861cc617cc10f,2026-11-10
 auto_release_held_block_017a85e0,edge,,2,2,0,0,2e31eee28dba68c0,2026-11-10
 auto_release_held_block_017a8c10,edge,,2,2,0,0,2e31eee28dba68c0,2026-11-10
 auto_release_held_block_01a02700,edge,,2,2,0,0,2e31eee28dba68c0,2026-11-10
