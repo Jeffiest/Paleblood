@@ -7064,6 +7064,7 @@ address,replacement,system,returns
 0x015ae7e0,bb_auto_empty_015ae7e0,auto,void
 0x015bc350,bb_auto_empty_015bc350,auto,void
 0x015d2cc0,bb_auto_empty_015d2cc0,auto,void
+0x015d6610,bb_misc_init_stream_guards_58b9d5c,misc,void
 0x015d6b10,bb_auto_return_zero_015d6b10,auto,i64
 0x015d6b20,bb_auto_destroy_then_release_015d6b20,auto,i64
 0x015d7490,bb_auto_empty_015d7490,auto,void

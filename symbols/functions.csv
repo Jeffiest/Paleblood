@@ -7065,6 +7065,7 @@ address,size,name,system,status,notes
 0x015ae7e0,1,auto_empty_015ae7e0,auto,edge-verified,Generated from the empty template
 0x015bc350,1,auto_empty_015bc350,auto,edge-verified,Generated from the empty template
 0x015d2cc0,1,auto_empty_015d2cc0,auto,edge-verified,Generated from the empty template
+0x015d6610,84,misc_init_stream_guards_58b9d5c,misc,edge-verified,Start-up step of a source file that uses the standard streams: constructs its two stream guards and registers their destroy functions
 0x015d6b10,3,auto_return_zero_015d6b10,auto,edge-verified,Generated from the return zero template
 0x015d6b20,28,auto_destroy_then_release_015d6b20,auto,edge-verified,Same instructions as misc_destroy_then_release with other addresses
 0x015d7490,1,auto_empty_015d7490,auto,edge-verified,Generated from the empty template
