@@ -39633,6 +39633,7 @@ misc_init_release_chain,edge,,4,4,0,0,e841d17605cf630b,2026-11-09
 misc_init_rows_fields_5940ea0,edge,,8,8,0,0,3958b2ac507ac022,2026-11-10
 misc_init_rows_fields_total_5940ef0,edge,,8,8,0,0,b0b721001999b1f6,2026-11-10
 misc_init_rows_total_5944010,edge,,8,8,0,0,b7625256805c8f98,2026-11-10
+misc_init_rows_total_fields_5946c40,edge,,8,8,0,0,25e69ce81a344d83,2026-11-10
 misc_init_shared_record_once,edge,,8,8,0,0,fe59d1d70e36e671,2026-11-09
 misc_init_shared_record_once_guarded,edge,,8,8,0,0,49c2ae0e3fa7e7ec,2026-11-09
 misc_init_value_record,edge,,8,8,0,0,57f649b02fe70774,2026-11-09

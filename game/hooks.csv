@@ -8062,6 +8062,7 @@ address,replacement,system,returns
 0x0170f9a0,bb_auto_tail_call_member_target_0170f9a0,auto,void
 0x0170f9d0,bb_auto_member_call_or_fallback_0170f9d0,auto,i64
 0x01711a50,bb_auto_initialize_static_wide_string_01711a50,auto,void
+0x01711bc0,bb_misc_init_rows_total_fields_5946c40,misc,void
 0x01712560,bb_auto_initialize_static_wide_string_01712560,auto,void
 0x017126b0,bb_auto_empty_017126b0,auto,void
 0x01712760,bb_auto_initialize_static_wide_string_01712760,auto,void
