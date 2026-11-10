@@ -1,5 +1,6 @@
 address,name,size,cases,home,addresses,exchange
 0x0040d170,misc_read_source_word,9,game/auto/near_read_pointed_word_0040d170_cases.py,game/misc,,slots
+0x00b69e20,misc_ref_holder_add_child,70,game/auto/near_ref_holder_add_child_00b69e20_cases.py,game/misc,0x058018b0 0x00819100,slots
 0x00bdd630,misc_tagged_link_address,9,game/auto/near_tagged_link_address_00bdd630_cases.py,game/misc,,slots
 0x00be16b0,misc_register_plain_type,113,game/misc/register_plain_type_cases.py,game/misc,0x05845228 0x04bb5c06 0x05801a70 0x0081e9b0,text
 0x00be43f0,misc_held_member_object_free,75,game/misc/held_member_object_free_cases.py,game/misc,0x00be4440 0x057e40f8,text

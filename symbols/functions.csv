@@ -1525,6 +1525,7 @@ address,size,name,system,status,notes
 0x00936930,9,auto_tagged_link_address_00936930,auto,edge-verified,Same instructions as misc_tagged_link_address with other addresses
 0x00936c80,4,auto_return_field_00936c80,auto,edge-verified,Generated from the return field template
 0x00938ad0,75,auto_held_member_object_free_00938ad0,auto,edge-verified,Same instructions as misc_held_member_object_free with other addresses and constants
+0x0093e9e0,70,auto_ref_holder_add_child_0093e9e0,auto,edge-verified,Same instructions as misc_ref_holder_add_child with other addresses and constants
 0x0093f220,9,auto_tagged_link_address_0093f220,auto,edge-verified,Same instructions as misc_tagged_link_address with other addresses and constants
 0x009407d0,1,auto_empty_009407d0,auto,edge-verified,Generated from the empty template
 0x00943b80,6,auto_return_constant_00943b80,auto,edge-verified,Generated from the return constant template
@@ -2248,6 +2249,19 @@ address,size,name,system,status,notes
 0x009f3380,5,auto_jump_thunk_009f3380,auto,edge-verified,Same instructions as misc_jump_thunk with other addresses
 0x009f35c0,8,auto_fixed_address_009f35c0,auto,edge-verified,Same instructions as misc_plain_type_address with other addresses
 0x009f4870,75,auto_held_member_object_free_009f4870,auto,edge-verified,Same instructions as misc_held_member_object_free with other addresses and constants
+0x009f8c30,88,auto_ref_holder_add_child_009f8c30,auto,edge-verified,Same instructions as misc_ref_holder_add_child with other addresses and constants
+0x009f8cd0,88,auto_ref_holder_add_child_009f8cd0,auto,edge-verified,Same instructions as misc_ref_holder_add_child with other addresses and constants
+0x009f8d70,88,auto_ref_holder_add_child_009f8d70,auto,edge-verified,Same instructions as misc_ref_holder_add_child with other addresses and constants
+0x009f8e10,88,auto_ref_holder_add_child_009f8e10,auto,edge-verified,Same instructions as misc_ref_holder_add_child with other addresses and constants
+0x009f8eb0,88,auto_ref_holder_add_child_009f8eb0,auto,edge-verified,Same instructions as misc_ref_holder_add_child with other addresses and constants
+0x009f8f50,88,auto_ref_holder_add_child_009f8f50,auto,edge-verified,Same instructions as misc_ref_holder_add_child with other addresses and constants
+0x009f8ff0,88,auto_ref_holder_add_child_009f8ff0,auto,edge-verified,Same instructions as misc_ref_holder_add_child with other addresses and constants
+0x009f9090,88,auto_ref_holder_add_child_009f9090,auto,edge-verified,Same instructions as misc_ref_holder_add_child with other addresses and constants
+0x009f9130,88,auto_ref_holder_add_child_009f9130,auto,edge-verified,Same instructions as misc_ref_holder_add_child with other addresses and constants
+0x009f91d0,88,auto_ref_holder_add_child_009f91d0,auto,edge-verified,Same instructions as misc_ref_holder_add_child with other addresses and constants
+0x009f9270,88,auto_ref_holder_add_child_009f9270,auto,edge-verified,Same instructions as misc_ref_holder_add_child with other addresses and constants
+0x009f9310,88,auto_ref_holder_add_child_009f9310,auto,edge-verified,Same instructions as misc_ref_holder_add_child with other addresses and constants
+0x009f93b0,88,auto_ref_holder_add_child_009f93b0,auto,edge-verified,Same instructions as misc_ref_holder_add_child with other addresses and constants
 0x009f9a00,1,auto_empty_009f9a00,auto,edge-verified,Generated from the empty template
 0x009f9a10,1,auto_empty_009f9a10,auto,edge-verified,Generated from the empty template
 0x009f9f90,5,auto_return_field_009f9f90,auto,edge-verified,Generated from the return field template
@@ -2385,6 +2399,8 @@ address,size,name,system,status,notes
 0x00a2f2a0,75,auto_held_member_object_free_00a2f2a0,auto,edge-verified,Same instructions as misc_held_member_object_free with other addresses and constants
 0x00a305b0,113,auto_register_plain_type_00a305b0,auto,edge-verified,Same instructions as misc_register_plain_type with other addresses and constants
 0x00a306c0,1,auto_empty_00a306c0,auto,edge-verified,Generated from the empty template
+0x00a33c50,88,auto_ref_holder_add_child_00a33c50,auto,edge-verified,Same instructions as misc_ref_holder_add_child with other addresses and constants
+0x00a33d20,88,auto_ref_holder_add_child_00a33d20,auto,edge-verified,Same instructions as misc_ref_holder_add_child with other addresses and constants
 0x00a33df0,75,auto_held_member_object_free_00a33df0,auto,edge-verified,Same instructions as misc_held_member_object_free with other addresses and constants
 0x00a379e0,5,auto_jump_thunk_00a379e0,auto,edge-verified,Same instructions as misc_jump_thunk with other addresses
 0x00a37b00,5,auto_jump_thunk_00a37b00,auto,edge-verified,Same instructions as misc_jump_thunk with other addresses
@@ -3625,6 +3641,7 @@ address,size,name,system,status,notes
 0x00cdce30,1,auto_empty_00cdce30,auto,edge-verified,Generated from the empty template
 0x00cdce40,1,auto_empty_00cdce40,auto,edge-verified,Generated from the empty template
 0x00cdd750,75,auto_held_member_object_free_00cdd750,auto,edge-verified,Same instructions as misc_held_member_object_free with other addresses and constants
+0x00cde4e0,88,auto_ref_holder_add_child_00cde4e0,auto,edge-verified,Same instructions as misc_ref_holder_add_child with other addresses and constants
 0x00cde5e0,5,auto_return_field_00cde5e0,auto,edge-verified,Generated from the return field template
 0x00cde5f0,5,auto_return_field_00cde5f0,auto,edge-verified,Generated from the return field template
 0x00cde600,5,auto_return_field_00cde600,auto,edge-verified,Generated from the return field template
@@ -3834,6 +3851,7 @@ address,size,name,system,status,notes
 0x00d496e0,75,auto_held_member_object_free_00d496e0,auto,edge-verified,Same instructions as misc_held_member_object_free with other addresses and constants
 0x00d49de0,8,auto_return_member_address_00d49de0,auto,edge-verified,Generated from the return member address template
 0x00d49fd0,5,auto_return_member_address_00d49fd0,auto,edge-verified,Generated from the return member address template
+0x00d4a070,70,auto_ref_holder_add_child_00d4a070,auto,edge-verified,Same instructions as misc_ref_holder_add_child with other addresses and constants
 0x00d4a110,5,auto_return_member_address_00d4a110,auto,edge-verified,Generated from the return member address template
 0x00d4d330,8,auto_fixed_address_00d4d330,auto,edge-verified,Same instructions as misc_plain_type_address with other addresses
 0x00d4d340,1,auto_empty_00d4d340,auto,edge-verified,Generated from the empty template
@@ -4534,6 +4552,7 @@ address,size,name,system,status,notes
 0x00e97cb0,8,auto_fixed_address_00e97cb0,auto,edge-verified,Same instructions as misc_plain_type_address with other addresses
 0x00e97db0,8,auto_return_member_address_00e97db0,auto,edge-verified,Generated from the return member address template
 0x00e97e70,8,auto_return_field_00e97e70,auto,edge-verified,Generated from the return field template
+0x00e982e0,88,auto_ref_holder_add_child_00e982e0,auto,edge-verified,Same instructions as misc_ref_holder_add_child with other addresses and constants
 0x00e98440,8,auto_fixed_address_00e98440,auto,edge-verified,Same instructions as misc_plain_type_address with other addresses
 0x00e98450,5,auto_jump_thunk_00e98450,auto,edge-verified,Same instructions as misc_jump_thunk with other addresses
 0x00e98470,8,auto_fixed_address_00e98470,auto,edge-verified,Same instructions as misc_plain_type_address with other addresses
@@ -4711,6 +4730,7 @@ address,size,name,system,status,notes
 0x00ec6be0,75,auto_held_member_object_free_00ec6be0,auto,edge-verified,Same instructions as misc_held_member_object_free with other addresses and constants
 0x00ec6c30,81,auto_bounded_range_object_free_secondary_00ec6c30,auto,edge-verified,Same instructions as misc_bounded_range_object_free_secondary with other addresses and constants
 0x00ec6f30,5,auto_return_field_00ec6f30,auto,edge-verified,Generated from the return field template
+0x00ec7f30,70,auto_ref_holder_add_child_00ec7f30,auto,edge-verified,Same instructions as misc_ref_holder_add_child with other addresses and constants
 0x00ec7fd0,4,auto_return_field_00ec7fd0,auto,edge-verified,Generated from the return field template
 0x00ec80f0,8,auto_return_field_00ec80f0,auto,edge-verified,Generated from the return field template
 0x00ec8510,5,auto_return_field_00ec8510,auto,edge-verified,Generated from the return field template
@@ -8439,6 +8459,7 @@ address,size,name,system,status,notes
 0x015380c0,5,auto_return_member_address_015380c0,auto,edge-verified,Generated from the return member address template
 0x015380e0,8,auto_return_field_015380e0,auto,edge-verified,Generated from the return field template
 0x015380f0,8,auto_return_field_015380f0,auto,edge-verified,Generated from the return field template
+0x01538410,88,auto_ref_holder_add_child_01538410,auto,edge-verified,Same instructions as misc_ref_holder_add_child with other addresses and constants
 0x0153ac60,5,auto_jump_thunk_0153ac60,auto,edge-verified,Same instructions as misc_jump_thunk with other addresses
 0x0153d300,75,auto_held_member_object_free_0153d300,auto,edge-verified,Same instructions as misc_held_member_object_free with other addresses
 0x0153d350,81,auto_bounded_range_object_free_secondary_0153d350,auto,edge-verified,Same instructions as misc_bounded_range_object_free_secondary with other addresses and constants
@@ -8467,6 +8488,7 @@ address,size,name,system,status,notes
 0x0154a710,81,auto_bounded_range_object_free_secondary_0154a710,auto,edge-verified,Same instructions as misc_bounded_range_object_free_secondary with other addresses and constants
 0x0154aa20,5,auto_jump_thunk_0154aa20,auto,edge-verified,Same instructions as misc_jump_thunk with other addresses
 0x0154aa40,5,auto_jump_thunk_0154aa40,auto,edge-verified,Same instructions as misc_jump_thunk with other addresses
+0x0154aa60,70,auto_ref_holder_add_child_0154aa60,auto,edge-verified,Same instructions as misc_ref_holder_add_child with other addresses and constants
 0x0154e600,75,auto_held_member_object_free_0154e600,auto,edge-verified,Same instructions as misc_held_member_object_free with other addresses and constants
 0x0154e650,81,auto_bounded_range_object_free_secondary_0154e650,auto,edge-verified,Same instructions as misc_bounded_range_object_free_secondary with other addresses and constants
 0x0154e6b0,81,auto_bounded_range_object_free_secondary_0154e6b0,auto,edge-verified,Same instructions as misc_bounded_range_object_free_secondary with other addresses and constants
@@ -8480,6 +8502,7 @@ address,size,name,system,status,notes
 0x01550a60,5,auto_jump_thunk_01550a60,auto,edge-verified,Same instructions as misc_jump_thunk with other addresses
 0x01551eb0,5,auto_jump_thunk_01551eb0,auto,edge-verified,Same instructions as misc_jump_thunk with other addresses
 0x01551ed0,5,auto_jump_thunk_01551ed0,auto,edge-verified,Same instructions as misc_jump_thunk with other addresses
+0x01551ef0,70,auto_ref_holder_add_child_01551ef0,auto,edge-verified,Same instructions as misc_ref_holder_add_child with other addresses and constants
 0x0155f740,5,auto_return_field_0155f740,auto,edge-verified,Generated from the return field template
 0x0155f920,5,auto_set_word_0155f920,auto,edge-verified,Same instructions as misc_set_value_word_130 with other addresses and constants
 0x015617f0,75,auto_held_member_object_free_015617f0,auto,edge-verified,Same instructions as misc_held_member_object_free with other addresses and constants
