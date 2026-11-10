@@ -4468,6 +4468,7 @@ address,size,name,system,status,notes
 0x0111b060,14,audio_fmod_output_driver_count,audio,edge-verified,FMOD Orbis AudioOut descriptor callback installed by 0x0111aed0; optional output receives one driver; return zero
 0x0111b0b0,37,audio_fmod_output_defaults,audio,edge-verified,FMOD output descriptor callback writes 132 then 48000 then 6 to optional outputs; sample-rate and speaker-mode meanings remain hypotheses
 0x0111b570,3,auto_return_zero_0111b570,auto,edge-verified,Generated from the return zero template
+0x0111b580,14,auto_fmod_output_driver_count_0111b580,auto,edge-verified,Same instructions as audio_fmod_output_driver_count with other addresses
 0x0111c440,3,auto_return_zero_0111c440,auto,edge-verified,Generated from the return zero template
 0x011252b0,3,auto_return_zero_011252b0,auto,edge-verified,Generated from the return zero template
 0x01125fd0,1,auto_empty_01125fd0,auto,edge-verified,Generated from the empty template
