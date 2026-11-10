@@ -27071,6 +27071,7 @@ address,replacement,system,returns
 0x0256e1a0,bb_auto_return_field_0256e1a0,auto,i64
 0x02571c60,bb_render_clear_swap_chain_curve,render,void
 0x02572290,bb_render_clear_swap_chain_cached_record,render,void
+0x02572770,bb_auto_clear_swap_chain_curve_02572770,auto,void
 0x025765c0,bb_auto_empty_025765c0,auto,void
 0x02577d30,bb_auto_empty_02577d30,auto,void
 0x02577e10,bb_auto_empty_02577e10,auto,void

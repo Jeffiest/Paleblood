@@ -27072,6 +27072,7 @@ address,size,name,system,status,notes
 0x0256e1a0,5,auto_return_field_0256e1a0,auto,edge-verified,Generated from the return field template
 0x02571c60,47,render_clear_swap_chain_curve,render,edge-verified,Release the swap-chain curve resource through its owner; clear only the resource after the callback.
 0x02572290,47,render_clear_swap_chain_cached_record,render,edge-verified,Release the swap-chain cached-record resource through its owner; clear only the resource after the callback.
+0x02572770,47,auto_clear_swap_chain_curve_02572770,auto,edge-verified,Same instructions as render_clear_swap_chain_curve with other addresses
 0x025765c0,1,auto_empty_025765c0,auto,edge-verified,Generated from the empty template
 0x02577d30,1,auto_empty_02577d30,auto,edge-verified,Generated from the empty template
 0x02577e10,1,auto_empty_02577e10,auto,edge-verified,Generated from the empty template
