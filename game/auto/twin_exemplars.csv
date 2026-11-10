@@ -15,6 +15,7 @@ address,name,size,cases,addresses
 0x00be93f0,misc_bounded_range_object_free_secondary,81,game/misc/bounded_range_object_free_secondary_cases.py,0x00be9450 0x057e40f8
 0x0111b060,audio_fmod_output_driver_count,14,game/audio/fmod_output_driver_count_cases.py,
 0x0111b0b0,audio_fmod_output_defaults,37,game/audio/fmod_output_defaults_cases.py,
+0x01140d90,misc_init_empty_list_586d918,35,game/misc/init_empty_list_586d918_cases.py,0x0586d918
 0x011c48f0,engine_ascii_to_lower,18,game/engine/ascii_to_lower_cases.py,
 0x01314320,engine_entry_manager_resolve,54,game/engine/entry_manager_resolve_cases.py,
 0x013988d0,misc_bind_vtable_56b4840,41,game/misc/bind_vtable_56b4840_cases.py,0x05ac59b8 0x056b4840 0x05ac59b0

@@ -4697,6 +4697,8 @@ address,size,name,system,status,notes
 0x01140e50,6,auto_return_constant_01140e50,auto,edge-verified,Generated from the return constant template
 0x01140fa0,6,auto_return_constant_01140fa0,auto,edge-verified,Generated from the return constant template
 0x01141530,3,auto_return_zero_01141530,auto,edge-verified,Generated from the return zero template
+0x01141540,35,auto_init_empty_list_01141540,auto,edge-verified,Same instructions as misc_init_empty_list_586d918 with other addresses
+0x01142b10,35,auto_init_empty_list_01142b10,auto,edge-verified,Same instructions as misc_init_empty_list_586d918 with other addresses
 0x01142e90,8,auto_return_field_01142e90,auto,edge-verified,Generated from the return field template
 0x011472f0,8,auto_return_field_011472f0,auto,edge-verified,Generated from the return field template
 0x0114bb80,3,auto_return_zero_0114bb80,auto,edge-verified,Generated from the return zero template
@@ -4705,24 +4707,36 @@ address,size,name,system,status,notes
 0x0114bd10,3,auto_return_zero_0114bd10,auto,edge-verified,Generated from the return zero template
 0x0114bd20,6,auto_return_constant_0114bd20,auto,edge-verified,Generated from the return constant template
 0x0114c300,3,auto_return_zero_0114c300,auto,edge-verified,Generated from the return zero template
+0x01156080,35,auto_init_empty_list_01156080,auto,edge-verified,Same instructions as misc_init_empty_list_586d918 with other addresses
+0x0115ddb0,35,auto_init_empty_list_0115ddb0,auto,edge-verified,Same instructions as misc_init_empty_list_586d918 with other addresses
+0x0115f8f0,35,auto_init_empty_list_0115f8f0,auto,edge-verified,Same instructions as misc_init_empty_list_586d918 with other addresses
+0x01169010,35,auto_init_empty_list_01169010,auto,edge-verified,Same instructions as misc_init_empty_list_586d918 with other addresses
 0x011690e0,3,auto_return_zero_011690e0,auto,edge-verified,Generated from the return zero template
 0x011690f0,3,auto_return_zero_011690f0,auto,edge-verified,Generated from the return zero template
 0x01169100,3,auto_return_zero_01169100,auto,edge-verified,Generated from the return zero template
 0x0116b300,3,auto_return_zero_0116b300,auto,edge-verified,Generated from the return zero template
 0x0116b310,3,auto_return_zero_0116b310,auto,edge-verified,Generated from the return zero template
+0x0116b320,35,auto_init_empty_list_0116b320,auto,edge-verified,Same instructions as misc_init_empty_list_586d918 with other addresses
 0x0116b400,3,auto_return_zero_0116b400,auto,edge-verified,Generated from the return zero template
 0x0116b4c0,3,auto_return_zero_0116b4c0,auto,edge-verified,Generated from the return zero template
 0x0116b7a0,3,auto_return_zero_0116b7a0,auto,edge-verified,Generated from the return zero template
 0x0116b850,3,auto_return_zero_0116b850,auto,edge-verified,Generated from the return zero template
+0x0116b860,35,auto_init_empty_list_0116b860,auto,edge-verified,Same instructions as misc_init_empty_list_586d918 with other addresses
+0x0116f6c0,35,auto_init_empty_list_0116f6c0,auto,edge-verified,Same instructions as misc_init_empty_list_586d918 with other addresses
+0x0116fdd0,35,auto_init_empty_list_0116fdd0,auto,edge-verified,Same instructions as misc_init_empty_list_586d918 with other addresses
 0x0116fea0,3,auto_return_zero_0116fea0,auto,edge-verified,Generated from the return zero template
 0x0116feb0,3,auto_return_zero_0116feb0,auto,edge-verified,Generated from the return zero template
 0x0116fec0,3,auto_return_zero_0116fec0,auto,edge-verified,Generated from the return zero template
 0x011702c0,3,auto_return_zero_011702c0,auto,edge-verified,Generated from the return zero template
 0x01170d20,3,auto_return_zero_01170d20,auto,edge-verified,Generated from the return zero template
+0x01170d30,35,auto_init_empty_list_01170d30,auto,edge-verified,Same instructions as misc_init_empty_list_586d918 with other addresses
 0x01170e00,3,auto_return_zero_01170e00,auto,edge-verified,Generated from the return zero template
 0x01170e20,3,auto_return_zero_01170e20,auto,edge-verified,Generated from the return zero template
 0x011710c0,3,auto_return_zero_011710c0,auto,edge-verified,Generated from the return zero template
 0x011710e0,3,auto_return_zero_011710e0,auto,edge-verified,Generated from the return zero template
+0x011710f0,35,auto_init_empty_list_011710f0,auto,edge-verified,Same instructions as misc_init_empty_list_586d918 with other addresses
+0x01172660,35,auto_init_empty_list_01172660,auto,edge-verified,Same instructions as misc_init_empty_list_586d918 with other addresses
+0x011792c0,35,auto_init_empty_list_011792c0,auto,edge-verified,Same instructions as misc_init_empty_list_586d918 with other addresses
 0x011792f0,6,auto_return_constant_011792f0,auto,edge-verified,Generated from the return constant template
 0x01179320,3,auto_return_zero_01179320,auto,edge-verified,Generated from the return zero template
 0x0117a480,6,auto_return_constant_0117a480,auto,edge-verified,Generated from the return constant template
