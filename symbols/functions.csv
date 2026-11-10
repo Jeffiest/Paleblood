@@ -8182,6 +8182,7 @@ address,size,name,system,status,notes
 0x016f94a0,205,auto_initialize_static_wide_string_016f94a0,auto,edge-verified,Same instructions as engine_initialize_static_wide_string_018867e0 with other addresses
 0x016f9f70,1,auto_empty_016f9f70,auto,edge-verified,Generated from the empty template
 0x016fa450,205,auto_initialize_static_wide_string_016fa450,auto,edge-verified,Same instructions as engine_initialize_static_wide_string_018867e0 with other addresses
+0x016fa520,162,misc_init_rows_total_marker_fields_5945ef0,misc,edge-verified,Copy three constant rows into the record at 0x05945ef0 and set its four fields its marker and its total.
 0x016fa5d0,1,auto_empty_016fa5d0,auto,edge-verified,Generated from the empty template
 0x016fa630,1,auto_empty_016fa630,auto,edge-verified,Generated from the empty template
 0x016fa870,205,auto_initialize_static_wide_string_016fa870,auto,edge-verified,Same instructions as engine_initialize_static_wide_string_018867e0 with other addresses
