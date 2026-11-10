@@ -39456,8 +39456,12 @@ loading_fios_directory_delete,edge,,20,20,0,0,5cad0c5d584713c7,2026-11-08
 loading_fios_open_default,edge,,18,18,0,0,d10a211bac268c7a,2026-11-08
 loading_fios_open_with_mode,edge,,37,37,0,0,566c29c843013a83,2026-11-08
 misc_alloc_block_with_value,edge,,5,5,0,0,914c3b0cf0e6e450,2026-11-09
+misc_allocate_aligned_chain_node,edge,,11,11,0,0,652e20329bee5812,2026-11-09
+misc_allocate_chain_node,edge,,7,7,0,0,4cf1f7816afb2a23,2026-11-09
 misc_append_indexed_node,edge,,8,8,0,0,624926113ffd4fc0,2026-11-09
 misc_apply_child_unless_flagged,edge,,10,10,0,0,0edb573c499dc1e9,2026-11-09
+misc_assign_text,edge,,12,12,0,0,ddaccfbbdbab2eda,2026-11-09
+misc_assign_text_narrow_capacity,edge,,13,13,0,0,d419eb7b851002d1,2026-11-09
 misc_attach_two_objects,edge,,6,6,0,0,013dec9a75a3c5ec,2026-11-09
 misc_base_delete_02242990,edge,,4,4,0,0,407b45e4fbe57d28,2026-11-10
 misc_base_delete_02242a40,edge,,4,4,0,0,001cd0fc2aed968e,2026-11-10
@@ -39588,6 +39592,7 @@ misc_init_keyed_handle,edge,,5,5,0,0,5baab1272f6a7e05,2026-11-09
 misc_init_keyed_handle_variant,edge,,6,6,0,0,b7d0651b14eb1306,2026-11-09
 misc_init_member_and_push,edge,,2,2,0,0,530234fd5d8fb0dd,2026-11-09
 misc_init_record_block,edge,,3,3,0,0,7bd22e5e16029ce2,2026-11-09
+misc_init_release_chain,edge,,4,4,0,0,e841d17605cf630b,2026-11-09
 misc_init_shared_record_once,edge,,8,8,0,0,fe59d1d70e36e671,2026-11-09
 misc_init_value_record,edge,,8,8,0,0,57f649b02fe70774,2026-11-09
 misc_init_vtable_subobject,edge,,7,7,0,0,be35856bcedd4623,2026-11-09
@@ -39658,6 +39663,7 @@ misc_register_type_pair,edge,,2,2,0,0,3496f52d7658b00a,2026-11-09
 misc_registry_latch_answer,edge,,8,8,0,0,b9d51c137a66bbbc,2026-11-09
 misc_relay_member_call,edge,,9,9,0,0,ab12523ea4f974bd,2026-11-10
 misc_release_after_empty_call,edge,,6,6,0,0,545042d61ebb4e42,2026-11-09
+misc_release_chain_nodes,edge,,4,4,0,0,d7c9dd140b2f4242,2026-11-09
 misc_release_entries_and_clear,edge,,13,13,0,0,83babd723232eff6,2026-11-09
 misc_release_entries_then_forward,edge,,14,14,0,0,5fa30e404e0403fc,2026-11-09
 misc_release_four_children,edge,,9,9,0,0,0916e3319b18bd4d,2026-11-09
