@@ -9,3 +9,4 @@ address,name,size,cases,addresses
 0x01887f70,misc_member_call_or_fallback,63,game/misc/member_call_or_fallback_cases.py,0x04dc0016
 0x02242980,misc_base_init_02242980,15,game/misc/base_init_02242980_cases.py,0x0566fa90
 0x02b3a3c0,misc_push_value_by_reference,218,game/misc/push_value_by_reference_cases.py,0x02b3ad50
+0x02b3bda0,engine_tree_destroy_nodes,81,game/engine/tree_destroy_nodes_cases.py,
