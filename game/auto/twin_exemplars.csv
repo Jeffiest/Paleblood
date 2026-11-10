@@ -53,6 +53,7 @@ address,name,size,cases,addresses
 0x01888520,misc_test_and_set_flag,15,game/misc/test_and_set_flag_cases.py,
 0x01888650,misc_forward_tagged_request,30,game/misc/forward_tagged_request_cases.py,0x04d55b90 0x02b62d00
 0x01888b30,misc_tail_call_offset_member_thunk,50,game/misc/tail_call_offset_member_thunk_cases.py,
+0x01888bf0,misc_call_member_with_text_record,150,game/misc/call_member_with_text_record_cases.py,0x057e3be0 0x02fbf228 0x02a2a310 0x02fbe4f8
 0x01911940,misc_init_rows_spaced_fields_total_5953390,153,game/misc/init_rows_spaced_fields_total_5953390_cases.py,0x04cf5340 0x05953390 0x04cf5350 0x059533a0 0x04cf5360 0x059533b0 0x059533c0 0x059533c8 0x059533cc 0x059533d0 0x04cf5370 0x04cf5380 0x04cf5390 0x059533d4
 0x019220d0,misc_init_rows_spaced_fields_5953fd0,89,game/misc/init_rows_spaced_fields_5953fd0_cases.py,0x04cf5c10 0x05953fd0 0x04cf5c20 0x05953fe0 0x04cf5c30 0x05953ff0 0x05954000 0x05954008 0x0595400c 0x05954010
 0x01e47df0,misc_release_held_block,38,game/misc/release_held_block_cases.py,0x01c00d20
