@@ -6844,6 +6844,7 @@ address,size,name,system,status,notes
 0x015db4c0,1,auto_empty_015db4c0,auto,edge-verified,Generated from the empty template
 0x015db5b0,1,auto_empty_015db5b0,auto,edge-verified,Generated from the empty template
 0x015db6c0,1,auto_empty_015db6c0,auto,edge-verified,Generated from the empty template
+0x015e5220,16,auto_record_tuple_parameter_supported_015e5220,auto,edge-verified,Same instructions as render_record_tuple_parameter_supported with other addresses
 0x015e5640,28,auto_destroy_then_release_015e5640,auto,edge-verified,Same instructions as misc_destroy_then_release with other addresses
 0x015e5d80,11,auto_return_constant_015e5d80,auto,edge-verified,Generated from the return constant template
 0x015e5de0,1,auto_empty_015e5de0,auto,edge-verified,Generated from the empty template
