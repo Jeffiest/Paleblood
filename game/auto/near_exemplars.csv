@@ -1,3 +1,4 @@
 address,name,size,cases,home,addresses,exchange
 0x00be43f0,misc_held_member_object_free,75,game/misc/held_member_object_free_cases.py,game/misc,0x00be4440 0x057e40f8,text
+0x00be93f0,misc_bounded_range_object_free_secondary,81,game/misc/bounded_range_object_free_secondary_cases.py,game/misc,0x00be9450 0x057e40f8,text
 0x02b3a500,misc_set_value_word_130,8,game/misc/set_value_word_130_cases.py,game/misc,,text
