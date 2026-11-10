@@ -22,6 +22,8 @@ address,name,exemplar,addresses,constants,exchange
 0x0060a650,auto_forward_child_tail_0060a650,misc_forward_child_tail,0x0060a670,@0=0xa0 d:0x8>0xa0,slots
 0x0060ac50,auto_forward_child_tail_0060ac50,misc_forward_child_tail,0x0060ac70,@0=0xa0 d:0x8>0xa0,slots
 0x0060d830,auto_set_word_0060d830,misc_set_value_word_130,,@0=0x40 d:0x130>0x40,slots
+0x00616f30,auto_set_flag_bits_00616f30,misc_mark_keyed_handle_active,,@0=0x5c @1=0x10 d:0x18>0x5c i1:0x1>0x10,slots
+0x00616f40,auto_set_flag_bits_00616f40,misc_mark_keyed_handle_active,,@0=0x5c @1=0x8 d:0x18>0x5c i1:0x1>0x8,slots
 0x0064c350,auto_forward_child_tail_0064c350,misc_forward_child_tail,0x0064c370,@0=0xa8 d:0x8>0xa8,slots
 0x0064c9f0,auto_forward_child_tail_0064c9f0,misc_forward_child_tail,0x0073abd0,@0=0x80 d:0x8>0x80,slots
 0x006bdb40,auto_read_pointed_word_006bdb40,misc_read_source_word,,@0=0x218 @1=0xc0 d:0x10>0x218 d:0x20>0xc0,slots
@@ -72,6 +74,7 @@ address,name,exemplar,addresses,constants,exchange
 0x0081a210,auto_held_member_object_free_0081a210,misc_held_member_object_free,0x0081a260 0x057e40f8,i4:0x80>0x50,text
 0x0081f1f0,auto_set_u32_word_0081f1f0,misc_set_u32_word_160,,@0=0x10 d:0x160>0x10,slots
 0x00820870,auto_set_word_00820870,misc_set_value_word_130,,@0=0x328 d:0x130>0x328,slots
+0x00822ce0,auto_set_flag_bits_00822ce0,misc_mark_keyed_handle_active,,@0=0x9 @1=0x80 d:0x18>0x9 i1:0x1>0x80,slots
 0x008235c0,auto_held_member_object_free_008235c0,misc_held_member_object_free,0x00823610 0x057e40f8,i4:0x80>0x358,text
 0x00826200,auto_held_member_object_free_00826200,misc_held_member_object_free,0x00826250 0x057e40f8,i4:0x80>0x30,text
 0x00829630,auto_set_u32_word_00829630,misc_set_u32_word_160,,@0=0x40 d:0x160>0x40,slots
@@ -383,6 +386,7 @@ address,name,exemplar,addresses,constants,exchange
 0x010f56c0,auto_set_u32_word_010f56c0,misc_set_u32_word_160,,@0=0x14 d:0x160>0x14,slots
 0x01100a30,auto_set_word_01100a30,misc_set_value_word_130,,@0=0x1b8 d:0x130>0x1b8,slots
 0x01100c40,auto_set_word_01100c40,misc_set_value_word_130,,@0=0x1b0 d:0x130>0x1b0,slots
+0x01100e10,auto_set_flag_bits_01100e10,misc_mark_keyed_handle_active,,@0=0x10 @1=0x1 d:0x18>0x10,slots
 0x01100e60,auto_query_owned_child_01100e60,misc_query_owned_child,,@0=0xe8 @2=0x40 d:0x30>0x40 d:0x30>0xe8,slots
 0x01101fd0,auto_set_word_01101fd0,misc_set_value_word_130,,@0=0xa0 d:0x130>0xa0,slots
 0x01101fe0,auto_set_word_01101fe0,misc_set_value_word_130,,@0=0xa8 d:0x130>0xa8,slots
@@ -417,6 +421,7 @@ address,name,exemplar,addresses,constants,exchange
 0x0138e550,auto_read_pointed_word_0138e550,misc_read_source_word,,@0=0x10 @1=0x18 d:0x20>0x18,slots
 0x01392a80,auto_set_word_01392a80,misc_set_value_word_130,,@0=0x18 d:0x130>0x18,slots
 0x01393360,auto_forward_child_tail_01393360,misc_forward_child_tail,0x01395950,@0=0x88 d:0x8>0x88,slots
+0x013a98b0,auto_set_flag_bits_013a98b0,misc_mark_keyed_handle_active,,@0=0x84 @1=0x1 d:0x18>0x84,slots
 0x013bbc80,auto_forward_child_tail_013bbc80,misc_forward_child_tail,0x01401720,@0=0x1d88 d:0x8>0x1d88,slots
 0x013beb40,auto_forward_child_tail_013beb40,misc_forward_child_tail,0x013bf4d0,@0=0xa8 d:0x8>0xa8,slots
 0x013beca0,auto_set_word_013beca0,misc_set_value_word_130,,@0=0x10 d:0x130>0x10,slots
@@ -453,6 +458,7 @@ address,name,exemplar,addresses,constants,exchange
 0x01476b30,auto_set_db_depth_control_01476b30,render_set_db_depth_control,,i4:0x200>0x204 i4:0xc07007ff>0xf7fe03f,text
 0x01476da0,auto_set_cb_target_mask_01476da0,render_set_cb_target_mask,,i4:0x8e>0x103,text
 0x01476e00,auto_set_db_depth_control_01476e00,render_set_db_depth_control,,i4:0x200>0x205 i4:0xc07007ff>0x393fff,text
+0x01484d40,auto_set_flag_bits_01484d40,misc_mark_keyed_handle_active,,@0=0x1 @1=0x20 d:0x18>0x1 i1:0x1>0x20,slots
 0x01485890,auto_set_word_01485890,misc_set_value_word_130,,@0=0x40 d:0x130>0x40,slots
 0x01486c80,auto_set_u32_word_01486c80,misc_set_u32_word_160,,@0=0x1c d:0x160>0x1c,slots
 0x01486c90,auto_set_u32_word_01486c90,misc_set_u32_word_160,,@0=0x24 d:0x160>0x24,slots
@@ -540,6 +546,7 @@ address,name,exemplar,addresses,constants,exchange
 0x0164e1c0,auto_set_u32_word_0164e1c0,misc_set_u32_word_160,,@0=0xb0 d:0x160>0xb0,slots
 0x0164f050,auto_tail_call_offset_member_thunk_0164f050,misc_tail_call_offset_member_thunk,,@8=0x8 d:0x10>0x8,slots
 0x01691b30,auto_set_u32_word_01691b30,misc_set_u32_word_160,,@0=0x1f8 d:0x160>0x1f8,slots
+0x01691d00,auto_set_flag_bits_01691d00,misc_mark_keyed_handle_active,,@0=0x6a @1=0x2 d:0x18>0x6a i1:0x1>0x2,slots
 0x01692d20,auto_set_u32_word_01692d20,misc_set_u32_word_160,,@0=0x9a8 d:0x160>0x9a8,slots
 0x016992d0,auto_tail_call_offset_member_thunk_016992d0,misc_tail_call_offset_member_thunk,,@8=0x8 d:0x10>0x8,slots
 0x0169a960,auto_set_word_0169a960,misc_set_value_word_130,,@0=0x10 d:0x130>0x10,slots
@@ -563,6 +570,7 @@ address,name,exemplar,addresses,constants,exchange
 0x016e5d80,auto_tail_call_offset_member_thunk_016e5d80,misc_tail_call_offset_member_thunk,,@8=0x8 d:0x10>0x8,slots
 0x016eb960,auto_release_held_block_016eb960,misc_release_held_block,0x01401720,@0=0x20 d:0x10>0x20,slots
 0x016edf10,auto_tail_call_offset_member_thunk_016edf10,misc_tail_call_offset_member_thunk,,@8=0x8 d:0x10>0x8,slots
+0x016ef090,auto_set_flag_bits_016ef090,misc_mark_keyed_handle_active,,@0=0x2e @1=0x1 d:0x18>0x2e,slots
 0x016f5000,auto_init_rows_total_marker_fields_016f5000,misc_init_rows_total_marker_fields_5945ef0,0x04cec960 0x05945e50 0x04cec970 0x05945e60 0x04cec980 0x05945e70 0x04cec990 0x04cec9a0 0x04cec9b0 0x05945e80 0x05945e84 0x05945e88 0x05945e8c 0x05945e90 0x05945e94,,text
 0x016fa220,auto_set_u32_word_016fa220,misc_set_u32_word_160,,@0=0x28 d:0x160>0x28,slots
 0x01705610,auto_set_u32_word_01705610,misc_set_u32_word_160,,@0=0x20 d:0x160>0x20,slots
@@ -572,6 +580,7 @@ address,name,exemplar,addresses,constants,exchange
 0x0170f930,auto_tail_call_offset_member_thunk_0170f930,misc_tail_call_offset_member_thunk,,@8=0x8 d:0x10>0x8,slots
 0x01799070,auto_init_rows_total_marker_fields_01799070,misc_init_rows_total_marker_fields_5945ef0,0x04cef150 0x0594b8f0 0x04cef160 0x0594b900 0x04cef170 0x0594b910 0x04cef180 0x04cef190 0x04cef1a0 0x0594b920 0x0594b924 0x0594b928 0x0594b92c 0x0594b930 0x0594b934,,text
 0x01799dd0,auto_set_u32_word_01799dd0,misc_set_u32_word_160,,@0=0x4 d:0x160>0x4,slots
+0x017a6e50,auto_set_flag_bits_017a6e50,misc_mark_keyed_handle_active,,@0=0x108 @1=0x1 d:0x18>0x108,slots
 0x017a9070,auto_set_u32_word_017a9070,misc_set_u32_word_160,,@0=0x18 d:0x160>0x18,slots
 0x017a9150,auto_set_u32_word_017a9150,misc_set_u32_word_160,,@0=0x18 d:0x160>0x18,slots
 0x017c3a70,auto_tail_call_offset_member_thunk_017c3a70,misc_tail_call_offset_member_thunk,,@8=0x8 d:0x10>0x8,slots
@@ -584,6 +593,7 @@ address,name,exemplar,addresses,constants,exchange
 0x017dca50,auto_init_rows_total_marker_fields_017dca50,misc_init_rows_total_marker_fields_5945ef0,0x04cf0940 0x0594ce70 0x04cf0950 0x0594ce80 0x04cf0960 0x0594ce90 0x04cf0970 0x04cf0980 0x04cf0990 0x0594cea0 0x0594cea4 0x0594cea8 0x0594ceac 0x0594ceb0 0x0594ceb4,,text
 0x017de950,auto_set_word_017de950,misc_set_value_word_130,,@0=0x30 d:0x130>0x30,slots
 0x017dec10,auto_forward_child_tail_017dec10,misc_forward_child_tail,0x01c78130,@0=0x30 d:0x8>0x30,slots
+0x01827e40,auto_set_flag_bits_01827e40,misc_mark_keyed_handle_active,,@0=0x204 @1=0x1 d:0x18>0x204,slots
 0x01829620,auto_tail_call_offset_member_thunk_01829620,misc_tail_call_offset_member_thunk,,@8=0x8 d:0x10>0x8,slots
 0x0182de20,auto_member_call_0182de20,misc_member_call_02242a10,,@0=0x18 @1=0x20 @2=0x28 d:0x10>0x18 d:0x18>0x20 d:0x20>0x28,slots
 0x0182fc80,auto_tail_call_offset_member_thunk_0182fc80,misc_tail_call_offset_member_thunk,,@8=0x8 d:0x10>0x8,slots
@@ -742,6 +752,7 @@ address,name,exemplar,addresses,constants,exchange
 0x01cab2e0,auto_release_held_block_01cab2e0,misc_release_held_block,0x01401720,@0=0x18 d:0x10>0x18,slots
 0x01cac460,auto_release_held_block_01cac460,misc_release_held_block,0x01401720,@0=0x18 d:0x10>0x18,slots
 0x01caccc0,auto_release_held_block_01caccc0,misc_release_held_block,0x01401720,@0=0x18 d:0x10>0x18,slots
+0x01cacfd0,auto_set_flag_bits_01cacfd0,misc_mark_keyed_handle_active,,@0=0x20 @1=0x1 d:0x18>0x20,slots
 0x01cad230,auto_release_held_block_01cad230,misc_release_held_block,0x01401720,@0=0x18 d:0x10>0x18,slots
 0x01cad990,auto_release_held_block_01cad990,misc_release_held_block,0x01401720,@0=0x18 d:0x10>0x18,slots
 0x01cae460,auto_release_held_block_01cae460,misc_release_held_block,0x01401720,@0=0x18 d:0x10>0x18,slots
@@ -754,6 +765,7 @@ address,name,exemplar,addresses,constants,exchange
 0x01cb5d80,auto_release_held_block_01cb5d80,misc_release_held_block,0x01401720,@0=0x18 d:0x10>0x18,slots
 0x01cc1b40,auto_read_pointed_word_01cc1b40,misc_read_source_word,,@0=0x58 @1=0xf0 d:0x10>0x58 d:0x20>0xf0,slots
 0x01ccd440,auto_set_u32_word_01ccd440,misc_set_u32_word_160,,@0=0x1ec d:0x160>0x1ec,slots
+0x01cd2ac0,auto_set_flag_bits_01cd2ac0,misc_mark_keyed_handle_active,,@0=0x358 @1=0x1 d:0x18>0x358,slots
 0x01cd7880,auto_tail_call_offset_member_thunk_01cd7880,misc_tail_call_offset_member_thunk,,@8=0x8 d:0x10>0x8,slots
 0x01cd9020,auto_init_rows_total_marker_fields_01cd9020,misc_init_rows_total_marker_fields_5945ef0,0x04d05fc0 0x0596fbb0 0x04d05fd0 0x0596fbc0 0x04d05fe0 0x0596fbd0 0x04d05ff0 0x04d06000 0x04d06010 0x0596fbe0 0x0596fbe4 0x0596fbe8 0x0596fbec 0x0596fbf0 0x0596fbf4,,text
 0x01ce8eb0,auto_tail_call_offset_member_thunk_01ce8eb0,misc_tail_call_offset_member_thunk,,@8=0x8 d:0x10>0x8,slots
@@ -833,15 +845,28 @@ address,name,exemplar,addresses,constants,exchange
 0x020a7900,auto_set_word_020a7900,misc_set_value_word_130,,@0=0x168 d:0x130>0x168,slots
 0x020b5a80,auto_tail_call_offset_member_thunk_020b5a80,misc_tail_call_offset_member_thunk,,@8=0x8 d:0x10>0x8,slots
 0x020b5b40,auto_tail_call_offset_member_thunk_020b5b40,misc_tail_call_offset_member_thunk,,@8=0x8 d:0x10>0x8,slots
+0x020bc1a0,auto_set_flag_bits_020bc1a0,misc_mark_keyed_handle_active,,@0=0x248 @1=0x2 d:0x18>0x248 i1:0x1>0x2,slots
 0x020be980,auto_tail_call_offset_member_thunk_020be980,misc_tail_call_offset_member_thunk,,@8=0x8 d:0x10>0x8,slots
 0x020c06b0,auto_set_u32_word_020c06b0,misc_set_u32_word_160,,@0=0xb0 d:0x160>0xb0,slots
 0x020c0e80,auto_tail_call_offset_member_thunk_020c0e80,misc_tail_call_offset_member_thunk,,@8=0x8 d:0x10>0x8,slots
+0x020c69a0,auto_set_flag_bits_020c69a0,misc_mark_keyed_handle_active,,@0=0x12c @1=0x2 d:0x18>0x12c i1:0x1>0x2,slots
 0x020c69b0,auto_set_u32_word_020c69b0,misc_set_u32_word_160,,@0=0x134 d:0x160>0x134,slots
 0x020c69c0,auto_set_u32_word_020c69c0,misc_set_u32_word_160,,@0=0x140 d:0x160>0x140,slots
+0x020c69d0,auto_set_flag_bits_020c69d0,misc_mark_keyed_handle_active,,@0=0x144 @1=0x2 d:0x18>0x144 i1:0x1>0x2,slots
+0x020c69e0,auto_set_flag_bits_020c69e0,misc_mark_keyed_handle_active,,@0=0x144 @1=0x8 d:0x18>0x144 i1:0x1>0x8,slots
+0x020c69f0,auto_set_flag_bits_020c69f0,misc_mark_keyed_handle_active,,@0=0x144 @1=0x10 d:0x18>0x144 i1:0x1>0x10,slots
+0x020c6a00,auto_set_flag_bits_020c6a00,misc_mark_keyed_handle_active,,@0=0x144 @1=0x20 d:0x18>0x144 i1:0x1>0x20,slots
+0x020c6a10,auto_set_flag_bits_020c6a10,misc_mark_keyed_handle_active,,@0=0x144 @1=0x40 d:0x18>0x144 i1:0x1>0x40,slots
 0x020cd370,auto_tail_call_offset_member_thunk_020cd370,misc_tail_call_offset_member_thunk,,@8=0x8 d:0x10>0x8,slots
 0x020da9b0,auto_release_held_block_020da9b0,misc_release_held_block,0x01401720,@0=0x58 d:0x10>0x58,slots
 0x020ee030,auto_set_word_020ee030,misc_set_value_word_130,,@0=0x8e0 d:0x130>0x8e0,slots
+0x020f4850,auto_set_flag_bits_020f4850,misc_mark_keyed_handle_active,,@0=0xdc @1=0x1 d:0x18>0xdc,slots
+0x020f4860,auto_set_flag_bits_020f4860,misc_mark_keyed_handle_active,,@0=0xdc @1=0x2 d:0x18>0xdc i1:0x1>0x2,slots
 0x020f49b0,auto_read_pointed_word_020f49b0,misc_read_source_word,,@0=0xd0 @1=0x8e0 d:0x10>0xd0 d:0x20>0x8e0,slots
+0x02100e30,auto_set_flag_bits_02100e30,misc_mark_keyed_handle_active,,@0=0xec @1=0x2 d:0x18>0xec i1:0x1>0x2,slots
+0x02100e50,auto_set_flag_bits_02100e50,misc_mark_keyed_handle_active,,@0=0xec @1=0x4 d:0x18>0xec i1:0x1>0x4,slots
+0x02100e80,auto_set_flag_bits_02100e80,misc_mark_keyed_handle_active,,@0=0xec @1=0x8 d:0x18>0xec i1:0x1>0x8,slots
+0x02100ea0,auto_set_flag_bits_02100ea0,misc_mark_keyed_handle_active,,@0=0xec @1=0x10 d:0x18>0xec i1:0x1>0x10,slots
 0x02106450,auto_set_u32_word_02106450,misc_set_u32_word_160,,@0=0x8 d:0x160>0x8,slots
 0x02108120,auto_tail_call_offset_member_thunk_02108120,misc_tail_call_offset_member_thunk,,@8=0x8 d:0x10>0x8,slots
 0x02120930,auto_set_word_02120930,misc_set_value_word_130,,@0=0x28 d:0x130>0x28,slots
@@ -849,6 +874,7 @@ address,name,exemplar,addresses,constants,exchange
 0x02120970,auto_set_word_02120970,misc_set_value_word_130,,@0=0x38 d:0x130>0x38,slots
 0x02122d70,auto_tail_call_offset_member_thunk_02122d70,misc_tail_call_offset_member_thunk,,@8=0x8 d:0x10>0x8,slots
 0x0212b2e0,auto_tail_call_offset_member_thunk_0212b2e0,misc_tail_call_offset_member_thunk,,@8=0x8 d:0x10>0x8,slots
+0x02136a80,auto_set_flag_bits_02136a80,misc_mark_keyed_handle_active,,@0=0x70 @1=0x1 d:0x18>0x70,slots
 0x0214edf0,auto_tail_call_offset_member_thunk_0214edf0,misc_tail_call_offset_member_thunk,,@8=0x8 d:0x10>0x8,slots
 0x0214eeb0,auto_member_call_0214eeb0,misc_member_call_02242a10,,@0=0x20 @1=0x28 @2=0x30 d:0x10>0x20 d:0x18>0x28 d:0x20>0x30,slots
 0x02150b80,auto_tail_call_offset_member_thunk_02150b80,misc_tail_call_offset_member_thunk,,@8=0x8 d:0x10>0x8,slots
@@ -877,6 +903,7 @@ address,name,exemplar,addresses,constants,exchange
 0x021b7820,auto_set_u32_word_021b7820,misc_set_u32_word_160,,@0=0x18 d:0x160>0x18,slots
 0x021b7830,auto_set_u32_word_021b7830,misc_set_u32_word_160,,@0=0x1c d:0x160>0x1c,slots
 0x021be1f0,auto_tail_call_offset_member_thunk_021be1f0,misc_tail_call_offset_member_thunk,,@8=0x8 d:0x10>0x8,slots
+0x021c09c0,auto_set_flag_bits_021c09c0,misc_mark_keyed_handle_active,,@0=0xd0 @1=0x2 d:0x18>0xd0 i1:0x1>0x2,slots
 0x021c5d50,auto_set_word_021c5d50,misc_set_value_word_130,,@0=0x10 d:0x130>0x10,slots
 0x021c6110,auto_set_word_021c6110,misc_set_value_word_130,,@0=0x10 d:0x130>0x10,slots
 0x021c7820,auto_set_word_021c7820,misc_set_value_word_130,,@0=0x10 d:0x130>0x10,slots
@@ -897,6 +924,8 @@ address,name,exemplar,addresses,constants,exchange
 0x022173d0,auto_held_member_object_free_022173d0,misc_held_member_object_free,0x00e783b0 0x057e40f8,i4:0x80>0xa0,text
 0x022174c0,auto_bounded_range_object_free_secondary_022174c0,misc_bounded_range_object_free_secondary,0x00e783b0 0x057e40f8,i4:0xc0>0xa0,text
 0x0221e630,auto_set_u32_word_0221e630,misc_set_u32_word_160,,@0=0x10 d:0x160>0x10,slots
+0x022211a0,auto_set_flag_bits_022211a0,misc_mark_keyed_handle_active,,@0=0x740 @1=0x2 d:0x18>0x740 i1:0x1>0x2,slots
+0x022219e0,auto_set_flag_bits_022219e0,misc_mark_keyed_handle_active,,@0=0x740 @1=0x2 d:0x18>0x740 i1:0x1>0x2,slots
 0x02222180,auto_tail_call_offset_member_thunk_02222180,misc_tail_call_offset_member_thunk,,@8=0x8 d:0x10>0x8,slots
 0x022280e0,auto_tail_call_offset_member_thunk_022280e0,misc_tail_call_offset_member_thunk,,@8=0x8 d:0x10>0x8,slots
 0x022331f0,auto_tail_call_offset_member_thunk_022331f0,misc_tail_call_offset_member_thunk,,@8=0x8 d:0x10>0x8,slots
@@ -913,6 +942,7 @@ address,name,exemplar,addresses,constants,exchange
 0x02268be0,auto_tail_call_offset_member_thunk_02268be0,misc_tail_call_offset_member_thunk,,@8=0x8 d:0x10>0x8,slots
 0x022737c0,auto_tail_call_offset_member_thunk_022737c0,misc_tail_call_offset_member_thunk,,@8=0x8 d:0x10>0x8,slots
 0x02274970,auto_tail_call_offset_member_thunk_02274970,misc_tail_call_offset_member_thunk,,@8=0x8 d:0x10>0x8,slots
+0x02276970,auto_set_flag_bits_02276970,misc_mark_keyed_handle_active,,@0=0x101 @1=0x1 d:0x18>0x101,slots
 0x02276e20,auto_member_call_02276e20,misc_member_call_02242a10,,@0=0x18 @1=0x20 @2=0x28 d:0x10>0x18 d:0x18>0x20 d:0x20>0x28,slots
 0x0227ab50,auto_tail_call_offset_member_thunk_0227ab50,misc_tail_call_offset_member_thunk,,@8=0x8 d:0x10>0x8,slots
 0x022a7810,auto_tail_call_offset_member_thunk_022a7810,misc_tail_call_offset_member_thunk,,@8=0x8 d:0x10>0x8,slots
@@ -928,6 +958,9 @@ address,name,exemplar,addresses,constants,exchange
 0x022f96d0,auto_set_word_022f96d0,misc_set_value_word_130,,@0=0x10 d:0x130>0x10,slots
 0x02363bc0,auto_tail_call_offset_member_thunk_02363bc0,misc_tail_call_offset_member_thunk,,@8=0x8 d:0x10>0x8,slots
 0x0236f0f0,auto_tail_call_offset_member_thunk_0236f0f0,misc_tail_call_offset_member_thunk,,@8=0x8 d:0x10>0x8,slots
+0x02373b80,auto_set_flag_bits_02373b80,misc_mark_keyed_handle_active,,@0=0x10 @1=0x1 d:0x18>0x10,slots
+0x02373b90,auto_set_flag_bits_02373b90,misc_mark_keyed_handle_active,,@0=0x10 @1=0x2 d:0x18>0x10 i1:0x1>0x2,slots
+0x02373c10,auto_set_flag_bits_02373c10,misc_mark_keyed_handle_active,,@0=0x10 @1=0x8 d:0x18>0x10 i1:0x1>0x8,slots
 0x0237d160,auto_tail_call_offset_member_thunk_0237d160,misc_tail_call_offset_member_thunk,,@8=0x8 d:0x10>0x8,slots
 0x0237d330,auto_tail_call_offset_member_thunk_0237d330,misc_tail_call_offset_member_thunk,,@8=0x8 d:0x10>0x8,slots
 0x0237d3f0,auto_member_call_0237d3f0,misc_member_call_02242a10,,@0=0x18 @1=0x20 @2=0x28 d:0x10>0x18 d:0x18>0x20 d:0x20>0x28,slots
@@ -965,6 +998,7 @@ address,name,exemplar,addresses,constants,exchange
 0x02432760,auto_member_call_02432760,misc_member_call_02242a10,,@0=0x20 @1=0x28 @2=0x30 d:0x10>0x20 d:0x18>0x28 d:0x20>0x30,slots
 0x024336f0,auto_set_u32_word_024336f0,misc_set_u32_word_160,,@0=0x10 d:0x160>0x10,slots
 0x02433730,auto_set_u32_word_02433730,misc_set_u32_word_160,,@0=0x18 d:0x160>0x18,slots
+0x02438fe0,auto_set_flag_bits_02438fe0,misc_mark_keyed_handle_active,,@0=0x40 @1=0x4 d:0x18>0x40 i1:0x1>0x4,slots
 0x0243a060,auto_tail_call_offset_member_thunk_0243a060,misc_tail_call_offset_member_thunk,,@8=0x8 d:0x10>0x8,slots
 0x02447440,auto_tail_call_offset_member_thunk_02447440,misc_tail_call_offset_member_thunk,,@8=0x8 d:0x10>0x8,slots
 0x02447820,auto_release_held_block_02447820,misc_release_held_block,0x01401720,@0=0x60 d:0x10>0x60,slots
@@ -999,6 +1033,9 @@ address,name,exemplar,addresses,constants,exchange
 0x0248be00,auto_set_word_0248be00,misc_set_value_word_130,,@0=0x38 d:0x130>0x38,slots
 0x0249d200,auto_set_u32_word_0249d200,misc_set_u32_word_160,,@0=0x468 d:0x160>0x468,slots
 0x024bd360,auto_release_held_block_024bd360,misc_release_held_block,0x024bd930,@0=0x8 d:0x10>0x8,slots
+0x024be110,auto_set_flag_bits_024be110,misc_mark_keyed_handle_active,,@0=0x31 @1=0x40 d:0x18>0x31 i1:0x1>0x40,slots
+0x024be120,auto_set_flag_bits_024be120,misc_mark_keyed_handle_active,,@0=0x31 @1=0x80 d:0x18>0x31 i1:0x1>0x80,slots
+0x024be130,auto_set_flag_bits_024be130,misc_mark_keyed_handle_active,,@0=0x31 @1=0x20 d:0x18>0x31 i1:0x1>0x20,slots
 0x024be140,auto_set_word_024be140,misc_set_value_word_130,,@0=0x70 d:0x130>0x70,slots
 0x024c1df0,auto_read_pointed_word_024c1df0,misc_read_source_word,,@0=0x8 @1=0x28 d:0x10>0x8 d:0x20>0x28,slots
 0x024de360,auto_set_u32_word_024de360,misc_set_u32_word_160,,@0=0x30 d:0x160>0x30,slots
@@ -1033,6 +1070,7 @@ address,name,exemplar,addresses,constants,exchange
 0x02759e10,auto_forward_child_tail_02759e10,misc_forward_child_tail,0x027286b0,@0=0x18 d:0x8>0x18,slots
 0x02776890,auto_set_u32_word_02776890,misc_set_u32_word_160,,@0=0x18 d:0x160>0x18,slots
 0x02776980,auto_set_u32_word_02776980,misc_set_u32_word_160,,@0=0x20 d:0x160>0x20,slots
+0x027854b0,auto_set_flag_bits_027854b0,misc_mark_keyed_handle_active,,@0=0x6b @1=0x20 d:0x18>0x6b i1:0x1>0x20,slots
 0x0278e2f0,auto_read_pointed_word_0278e2f0,misc_read_source_word,,@0=0x40 @1=0x1c0 d:0x10>0x40 d:0x20>0x1c0,slots
 0x0278e360,auto_read_pointed_word_0278e360,misc_read_source_word,,@0=0x40 @1=0x38 d:0x10>0x40 d:0x20>0x38,slots
 0x0278e380,auto_read_pointed_word_0278e380,misc_read_source_word,,@0=0x20 @1=0x38 d:0x10>0x20 d:0x20>0x38,slots
@@ -1104,6 +1142,7 @@ address,name,exemplar,addresses,constants,exchange
 0x02949bf0,auto_held_member_object_free_02949bf0,misc_held_member_object_free,0x02949c40 0x057e40f8,i4:0x80>0x28,text
 0x02949fc0,auto_held_member_object_free_02949fc0,misc_held_member_object_free,0x015219d0 0x057e40f8,i4:0x80>0x60,text
 0x0294b420,auto_held_member_object_free_0294b420,misc_held_member_object_free,0x015219d0 0x057e40f8,i4:0x80>0x70,text
+0x0294b4d0,auto_set_flag_bits_0294b4d0,misc_mark_keyed_handle_active,,@0=0x18 @1=0x2 i1:0x1>0x2,slots
 0x0294b540,auto_held_member_object_free_0294b540,misc_held_member_object_free,0x0294b5a0 0x057e40f8,i4:0x80>0x60,text
 0x0294b950,auto_held_member_object_free_0294b950,misc_held_member_object_free,0x0294b9a0 0x057e40f8,i4:0x80>0x60,text
 0x0294c160,auto_held_member_object_free_0294c160,misc_held_member_object_free,0x0294c1b0 0x057e40f8,i4:0x80>0x88,text
@@ -1198,6 +1237,7 @@ address,name,exemplar,addresses,constants,exchange
 0x02a0d010,auto_bounded_range_object_free_secondary_02a0d010,misc_bounded_range_object_free_secondary,0x00f43940 0x057e40f8,i4:0xc0>0x68,text
 0x02a0d090,auto_bounded_range_object_free_secondary_02a0d090,misc_bounded_range_object_free_secondary,0x00f43940 0x057e40f8,@0=0x40 @6=0x38 @9=0x68 d:-0x10>-0x40 d:-0x8>-0x38 i4:0xc0>0x68,slots
 0x02a0d100,auto_held_member_object_free_02a0d100,misc_held_member_object_free,0x00f842b0 0x057e40f8,i4:0x80>0x40,text
+0x02a0e330,auto_set_flag_bits_02a0e330,misc_mark_keyed_handle_active,,@0=0xc @1=0x2 d:0x18>0xc i1:0x1>0x2,slots
 0x02a0f0a0,auto_held_member_object_free_02a0f0a0,misc_held_member_object_free,0x00f43940 0x057e40f8,i4:0x80>0x68,text
 0x02a0f110,auto_bounded_range_object_free_secondary_02a0f110,misc_bounded_range_object_free_secondary,0x00f43940 0x057e40f8,i4:0xc0>0x68,text
 0x02a0f190,auto_bounded_range_object_free_secondary_02a0f190,misc_bounded_range_object_free_secondary,0x00f43940 0x057e40f8,@0=0x40 @6=0x38 @9=0x68 d:-0x10>-0x40 d:-0x8>-0x38 i4:0xc0>0x68,slots
@@ -1292,6 +1332,8 @@ address,name,exemplar,addresses,constants,exchange
 0x02c44b00,auto_query_owned_child_02c44b00,misc_query_owned_child,,@0=0x18 @2=0x48 d:0x30>0x18 d:0x30>0x48,slots
 0x02c45230,auto_query_owned_child_02c45230,misc_query_owned_child,,@0=0x18 @2=0x40 d:0x30>0x18 d:0x30>0x40,slots
 0x02c459c0,auto_query_owned_child_02c459c0,misc_query_owned_child,,@0=0x10 @2=0x48 d:0x30>0x10 d:0x30>0x48,slots
+0x02c4ff20,auto_set_flag_bits_02c4ff20,misc_mark_keyed_handle_active,,@0=0x88 @1=0x4 d:0x18>0x88 i1:0x1>0x4,slots
+0x02c50780,auto_set_flag_bits_02c50780,misc_mark_keyed_handle_active,,@0=0x88 @1=0x8 d:0x18>0x88 i1:0x1>0x8,slots
 0x02c69be0,auto_set_word_02c69be0,misc_set_value_word_130,,@0=0x18 d:0x130>0x18,slots
 0x02cbd130,auto_query_owned_child_02cbd130,misc_query_owned_child,,@0=0x8 @2=0x20 d:0x30>0x8 d:0x30>0x20,slots
 0x02cfa1b0,auto_set_u32_word_02cfa1b0,misc_set_u32_word_160,,@0=0x4 d:0x160>0x4,slots
