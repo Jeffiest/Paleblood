@@ -18,6 +18,7 @@ address,name,size,cases,addresses
 0x02242990,misc_base_delete_02242990,66,game/misc/base_delete_02242990_cases.py,0x0566fa90 0x057e40f8
 0x022429e0,misc_pair_matches_022429e0,45,game/misc/pair_matches_022429e0_cases.py,
 0x02242a10,misc_member_call_02242a10,30,game/misc/member_call_02242a10_cases.py,
+0x02242ea0,misc_held_block_delete_02242ea0,52,game/misc/held_block_delete_02242ea0_cases.py,0x0574f2a0 0x02fbe588
 0x026e82e0,misc_disarm_callback,22,game/misc/disarm_callback_cases.py,0x057b93b0
 0x026e8310,misc_invoke_callback,40,game/misc/invoke_callback_cases.py,
 0x02b3a3c0,misc_push_value_by_reference,218,game/misc/push_value_by_reference_cases.py,0x02b3ad50

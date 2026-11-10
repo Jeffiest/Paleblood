@@ -8568,6 +8568,7 @@ address,replacement,system,returns
 0x0179d440,bb_auto_call_record_member_target_0179d440,auto,void
 0x0179d4f0,bb_auto_empty_0179d4f0,auto,void
 0x0179d510,bb_auto_relay_member_call_0179d510,auto,void
+0x0179d820,bb_auto_held_block_delete_0179d820,auto,i64
 0x0179e280,bb_auto_empty_0179e280,auto,void
 0x0179e8a0,bb_auto_initialize_static_wide_string_0179e8a0,auto,void
 0x0179ea20,bb_auto_empty_0179ea20,auto,void
@@ -8778,6 +8779,7 @@ address,replacement,system,returns
 0x017d83f0,bb_auto_return_member_address_017d83f0,auto,i64
 0x017d85a0,bb_auto_initialize_static_wide_string_017d85a0,auto,void
 0x017d94a0,bb_auto_initialize_static_wide_string_017d94a0,auto,void
+0x017d96b0,bb_auto_held_block_delete_017d96b0,auto,i64
 0x017d9cb0,bb_auto_initialize_static_wide_string_017d9cb0,auto,void
 0x017dae90,bb_auto_initialize_static_wide_string_017dae90,auto,void
 0x017db190,bb_auto_initialize_static_wide_string_017db190,auto,void
@@ -26648,6 +26650,7 @@ address,replacement,system,returns
 0x02538c30,bb_auto_empty_02538c30,auto,void
 0x02538c40,bb_auto_return_field_02538c40,auto,i64
 0x0253b890,bb_auto_return_zero_0253b890,auto,i64
+0x02540f70,bb_auto_held_block_delete_02540f70,auto,i64
 0x02541000,bb_auto_fixed_address_02541000,auto,i64
 0x02541c40,bb_auto_empty_02541c40,auto,void
 0x02541c60,bb_auto_return_constant_02541c60,auto,i32
@@ -26661,6 +26664,7 @@ address,replacement,system,returns
 0x02541e20,bb_auto_fixed_address_02541e20,auto,i64
 0x02541e30,bb_auto_return_zero_02541e30,auto,i64
 0x025420b0,bb_auto_return_constant_025420b0,auto,i32
+0x02542f70,bb_auto_held_block_delete_02542f70,auto,i64
 0x02543000,bb_auto_fixed_address_02543000,auto,i64
 0x025434a0,bb_auto_destroy_then_release_025434a0,auto,i64
 0x025434c0,bb_auto_return_field_025434c0,auto,i64
@@ -26684,7 +26688,9 @@ address,replacement,system,returns
 0x02544b40,bb_auto_fixed_address_02544b40,auto,i64
 0x02544b50,bb_auto_return_zero_02544b50,auto,i64
 0x02544dd0,bb_auto_return_constant_02544dd0,auto,i32
+0x02545420,bb_auto_held_block_delete_02545420,auto,i64
 0x025454b0,bb_auto_fixed_address_025454b0,auto,i64
+0x02545990,bb_auto_held_block_delete_02545990,auto,i64
 0x025459e0,bb_auto_destroy_then_release_025459e0,auto,i64
 0x02545a00,bb_auto_return_field_02545a00,auto,i64
 0x02545a10,bb_auto_return_field_02545a10,auto,i64
@@ -26730,7 +26736,9 @@ address,replacement,system,returns
 0x02549660,bb_auto_fixed_address_02549660,auto,i64
 0x02549670,bb_auto_return_zero_02549670,auto,i64
 0x025498f0,bb_auto_return_constant_025498f0,auto,i32
+0x0254a030,bb_auto_held_block_delete_0254a030,auto,i64
 0x0254a0c0,bb_auto_fixed_address_0254a0c0,auto,i64
+0x0254a7a0,bb_auto_held_block_delete_0254a7a0,auto,i64
 0x0254a7f0,bb_auto_destroy_then_release_0254a7f0,auto,i64
 0x0254a810,bb_auto_return_field_0254a810,auto,i64
 0x0254a820,bb_auto_return_field_0254a820,auto,i64
@@ -26785,7 +26793,9 @@ address,replacement,system,returns
 0x02551540,bb_auto_fixed_address_02551540,auto,i64
 0x02551550,bb_auto_return_zero_02551550,auto,i64
 0x025517d0,bb_auto_return_constant_025517d0,auto,i32
+0x02551e60,bb_auto_held_block_delete_02551e60,auto,i64
 0x02551ef0,bb_auto_fixed_address_02551ef0,auto,i64
+0x025523d0,bb_auto_held_block_delete_025523d0,auto,i64
 0x02552420,bb_auto_destroy_then_release_02552420,auto,i64
 0x02552440,bb_auto_return_field_02552440,auto,i64
 0x02552450,bb_auto_return_field_02552450,auto,i64
@@ -26808,7 +26818,9 @@ address,replacement,system,returns
 0x02553a60,bb_auto_fixed_address_02553a60,auto,i64
 0x02553a70,bb_auto_return_zero_02553a70,auto,i64
 0x02553cf0,bb_auto_return_constant_02553cf0,auto,i32
+0x025545a0,bb_auto_held_block_delete_025545a0,auto,i64
 0x02554630,bb_auto_fixed_address_02554630,auto,i64
+0x02554e30,bb_auto_held_block_delete_02554e30,auto,i64
 0x02554e80,bb_auto_destroy_then_release_02554e80,auto,i64
 0x02554ea0,bb_auto_return_field_02554ea0,auto,i64
 0x02554eb0,bb_auto_return_field_02554eb0,auto,i64
@@ -26852,6 +26864,8 @@ address,replacement,system,returns
 0x02557220,bb_auto_return_constant_02557220,auto,i32
 0x02557230,bb_auto_destroy_then_release_02557230,auto,i64
 0x02557260,bb_auto_destroy_then_release_02557260,auto,i64
+0x02557ae0,bb_auto_held_block_delete_02557ae0,auto,i64
+0x02557b70,bb_auto_held_block_delete_02557b70,auto,i64
 0x025585c0,bb_auto_return_constant_025585c0,auto,i32
 0x025585d0,bb_auto_return_constant_025585d0,auto,i32
 0x025585e0,bb_auto_return_field_025585e0,auto,i32
@@ -26974,6 +26988,7 @@ address,replacement,system,returns
 0x02587f30,bb_auto_disarm_callback_02587f30,auto,void
 0x02587f60,bb_auto_invoke_callback_02587f60,auto,void
 0x02587f90,bb_auto_disarm_callback_02587f90,auto,void
+0x02588060,bb_auto_held_block_delete_02588060,auto,i64
 0x0258f490,bb_auto_empty_0258f490,auto,void
 0x02590f90,bb_auto_return_zero_02590f90,auto,i64
 0x02590fa0,bb_auto_empty_02590fa0,auto,void
@@ -27384,6 +27399,7 @@ address,replacement,system,returns
 0x027050f0,bb_auto_disarm_callback_027050f0,auto,void
 0x02705120,bb_auto_invoke_callback_02705120,auto,void
 0x02705160,bb_auto_destroy_then_release_02705160,auto,i64
+0x02705230,bb_auto_held_block_delete_02705230,auto,i64
 0x02705560,bb_auto_push_value_by_reference_02705560,auto,void
 0x02705dd0,bb_auto_push_value_by_reference_02705dd0,auto,void
 0x027071a0,bb_auto_push_value_by_reference_027071a0,auto,void
@@ -27397,6 +27413,7 @@ address,replacement,system,returns
 0x027092d0,bb_auto_return_constant_027092d0,auto,i8
 0x0270c160,bb_auto_empty_0270c160,auto,void
 0x027174d0,bb_auto_return_field_027174d0,auto,i32
+0x02717c90,bb_auto_held_block_delete_02717c90,auto,i64
 0x02719e70,bb_auto_destroy_then_release_02719e70,auto,i64
 0x02719e90,bb_auto_return_field_02719e90,auto,i64
 0x02719ea0,bb_auto_return_field_02719ea0,auto,i64
@@ -27908,6 +27925,7 @@ address,replacement,system,returns
 0x02783d60,bb_auto_empty_02783d60,auto,void
 0x02783d70,bb_auto_return_zero_02783d70,auto,i64
 0x02783d80,bb_auto_empty_02783d80,auto,void
+0x02783e30,bb_auto_held_block_delete_02783e30,auto,i64
 0x02784c80,bb_auto_empty_02784c80,auto,void
 0x027852a0,bb_auto_return_constant_027852a0,auto,i32
 0x02785310,bb_auto_bind_vtable_02785310,auto,void
