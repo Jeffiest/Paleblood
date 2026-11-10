@@ -4776,6 +4776,7 @@ address,size,name,system,status,notes
 0x0130d440,1,auto_empty_0130d440,auto,edge-verified,Generated from the empty template
 0x01313d20,28,auto_destroy_then_release_01313d20,auto,edge-verified,Same instructions as misc_destroy_then_release with other addresses
 0x01314320,54,engine_entry_manager_resolve,engine,edge-verified,Resolve an enabled low32 handle index with unsigned bounds; reject full-width handle and entry sentinels; return opaque table pointers unchanged
+0x01314360,54,auto_entry_manager_resolve_01314360,auto,edge-verified,Same instructions as engine_entry_manager_resolve with other addresses
 0x01315130,1,auto_empty_01315130,auto,edge-verified,Generated from the empty template
 0x01315140,3,auto_return_zero_01315140,auto,edge-verified,Generated from the return zero template
 0x01315150,3,auto_return_zero_01315150,auto,edge-verified,Generated from the return zero template

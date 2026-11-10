@@ -4775,6 +4775,7 @@ address,replacement,system,returns
 0x0130d440,bb_auto_empty_0130d440,auto,void
 0x01313d20,bb_auto_destroy_then_release_01313d20,auto,i64
 0x01314320,bb_engine_entry_manager_resolve,engine,i64
+0x01314360,bb_auto_entry_manager_resolve_01314360,auto,i64
 0x01315130,bb_auto_empty_01315130,auto,void
 0x01315140,bb_auto_return_zero_01315140,auto,i64
 0x01315150,bb_auto_return_zero_01315150,auto,i64
