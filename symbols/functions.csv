@@ -1059,6 +1059,7 @@ address,size,name,system,status,notes
 0x009407d0,1,auto_empty_009407d0,auto,edge-verified,Generated from the empty template
 0x00943b80,6,auto_return_constant_00943b80,auto,edge-verified,Generated from the return constant template
 0x0094bc00,5,auto_return_member_address_0094bc00,auto,edge-verified,Generated from the return member address template
+0x0094bc10,8,auto_lookup_second_list_address_0094bc10,auto,edge-verified,Same instructions as misc_lookup_second_list_address with other addresses
 0x0094bc20,8,auto_return_member_address_0094bc20,auto,edge-verified,Generated from the return member address template
 0x0094bc30,8,auto_return_member_address_0094bc30,auto,edge-verified,Generated from the return member address template
 0x0094e4f0,3,auto_return_zero_0094e4f0,auto,edge-verified,Generated from the return zero template
@@ -1075,6 +1076,7 @@ address,size,name,system,status,notes
 0x009533f0,1,auto_empty_009533f0,auto,edge-verified,Generated from the empty template
 0x009547d0,1,auto_empty_009547d0,auto,edge-verified,Generated from the empty template
 0x00958540,5,auto_return_member_address_00958540,auto,edge-verified,Generated from the return member address template
+0x00958550,8,auto_lookup_second_list_address_00958550,auto,edge-verified,Same instructions as misc_lookup_second_list_address with other addresses
 0x009591b0,9,auto_return_float_field_009591b0,auto,edge-verified,Generated from the return float field template
 0x009591c0,9,auto_return_float_field_009591c0,auto,edge-verified,Generated from the return float field template
 0x009591d0,9,auto_return_float_field_009591d0,auto,edge-verified,Generated from the return float field template
@@ -7797,6 +7799,7 @@ address,size,name,system,status,notes
 0x016ec880,205,auto_initialize_static_wide_string_016ec880,auto,edge-verified,Same instructions as engine_initialize_static_wide_string_018867e0 with other addresses
 0x016ed9d0,1,auto_empty_016ed9d0,auto,edge-verified,Generated from the empty template
 0x016edce0,205,auto_initialize_static_wide_string_016edce0,auto,edge-verified,Same instructions as engine_initialize_static_wide_string_018867e0 with other addresses
+0x016ede30,8,auto_lookup_second_list_address_016ede30,auto,edge-verified,Same instructions as misc_lookup_second_list_address with other addresses
 0x016ede90,1,auto_empty_016ede90,auto,edge-verified,Generated from the empty template
 0x016edef0,1,auto_empty_016edef0,auto,edge-verified,Generated from the empty template
 0x016edf50,1,auto_empty_016edf50,auto,edge-verified,Generated from the empty template
@@ -21566,6 +21569,7 @@ address,size,name,system,status,notes
 0x021364c0,205,auto_initialize_static_wide_string_021364c0,auto,edge-verified,Same instructions as engine_initialize_static_wide_string_018867e0 with other addresses
 0x02136660,205,auto_initialize_static_wide_string_02136660,auto,edge-verified,Same instructions as engine_initialize_static_wide_string_018867e0 with other addresses
 0x02136f30,205,auto_initialize_static_wide_string_02136f30,auto,edge-verified,Same instructions as engine_initialize_static_wide_string_018867e0 with other addresses
+0x021372c0,8,auto_lookup_second_list_address_021372c0,auto,edge-verified,Same instructions as misc_lookup_second_list_address with other addresses
 0x021372d0,8,auto_return_member_address_021372d0,auto,edge-verified,Generated from the return member address template
 0x02137980,205,auto_initialize_static_wide_string_02137980,auto,edge-verified,Same instructions as engine_initialize_static_wide_string_018867e0 with other addresses
 0x02137cb0,3,auto_return_zero_02137cb0,auto,edge-verified,Generated from the return zero template
