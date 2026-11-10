@@ -6688,6 +6688,7 @@ address,replacement,system,returns
 0x01489b60,bb_auto_record_step_user_pa_enabled_01489b60,auto,i8
 0x01489c30,bb_auto_record_step_user_pa_enabled_01489c30,auto,i8
 0x01489c40,bb_render_record_step_user_pa_enabled,render,i8
+0x01489c50,bb_auto_emit_present_context_section_01489c50,auto,i64
 0x0148bcc0,bb_auto_empty_0148bcc0,auto,void
 0x0148cb10,bb_auto_empty_0148cb10,auto,void
 0x0148cb20,bb_auto_empty_0148cb20,auto,void

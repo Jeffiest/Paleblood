@@ -6689,6 +6689,7 @@ address,size,name,system,status,notes
 0x01489b60,16,auto_record_step_user_pa_enabled_01489b60,auto,edge-verified,Same instructions as render_record_step_user_pa_enabled with other addresses
 0x01489c30,16,auto_record_step_user_pa_enabled_01489c30,auto,edge-verified,Same instructions as render_record_step_user_pa_enabled with other addresses
 0x01489c40,16,render_record_step_user_pa_enabled,render,edge-verified,"Query the actual import once; no cached global, fallback or service value is invented."
+0x01489c50,90,auto_emit_present_context_section_01489c50,auto,edge-verified,Same instructions as render_emit_present_context_section with other addresses
 0x0148bcc0,1,auto_empty_0148bcc0,auto,edge-verified,Generated from the empty template
 0x0148cb10,1,auto_empty_0148cb10,auto,edge-verified,Generated from the empty template
 0x0148cb20,1,auto_empty_0148cb20,auto,edge-verified,Generated from the empty template
