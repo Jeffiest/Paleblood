@@ -2015,6 +2015,7 @@ address,size,name,system,status,notes
 0x00ad7c30,7,auto_return_field_00ad7c30,auto,edge-verified,Generated from the return field template
 0x00ad7d60,3,auto_return_constant_00ad7d60,auto,edge-verified,Generated from the return constant template
 0x00ad7d70,8,auto_return_field_00ad7d70,auto,edge-verified,Generated from the return field template
+0x00ad8840,5,misc_jump_thunk,misc,edge-verified,One jump to another function with the six integer arguments passed on as they came
 0x00adaed0,1,auto_empty_00adaed0,auto,edge-verified,Generated from the empty template
 0x00adbc30,1,auto_empty_00adbc30,auto,edge-verified,Generated from the empty template
 0x00adbc40,1,auto_empty_00adbc40,auto,edge-verified,Generated from the empty template

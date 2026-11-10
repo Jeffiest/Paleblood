@@ -2014,6 +2014,7 @@ address,replacement,system,returns
 0x00ad7c30,bb_auto_return_field_00ad7c30,auto,i32
 0x00ad7d60,bb_auto_return_constant_00ad7d60,auto,i8
 0x00ad7d70,bb_auto_return_field_00ad7d70,auto,i64
+0x00ad8840,bb_misc_jump_thunk,misc,i64
 0x00adaed0,bb_auto_empty_00adaed0,auto,void
 0x00adbc30,bb_auto_empty_00adbc30,auto,void
 0x00adbc40,bb_auto_empty_00adbc40,auto,void
