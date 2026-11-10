@@ -38034,6 +38034,7 @@ address,replacement,system,returns
 0x02987a50,bb_auto_base_delete_02987a50,auto,void
 0x02987aa0,bb_auto_pair_matches_02987aa0,auto,i8
 0x02987af0,bb_auto_base_init_02987af0,auto,void
+0x02987b00,bb_auto_base_delete_02987b00,auto,void
 0x02987b50,bb_auto_base_init_02987b50,auto,void
 0x02987b60,bb_auto_base_delete_02987b60,auto,void
 0x02987bb0,bb_auto_pair_matches_02987bb0,auto,i8

@@ -38035,6 +38035,7 @@ address,size,name,system,status,notes
 0x02987a50,66,auto_base_delete_02987a50,auto,edge-verified,Same instructions as misc_base_delete_02242990 with other addresses
 0x02987aa0,45,auto_pair_matches_02987aa0,auto,edge-verified,Same instructions as misc_pair_matches_022429e0 with other addresses
 0x02987af0,15,auto_base_init_02987af0,auto,edge-verified,Same instructions as misc_base_init_02242980 with other addresses
+0x02987b00,66,auto_base_delete_02987b00,auto,edge-verified,Same instructions as misc_base_delete_02242990 with other addresses and constants
 0x02987b50,15,auto_base_init_02987b50,auto,edge-verified,Same instructions as misc_base_init_02242980 with other addresses
 0x02987b60,66,auto_base_delete_02987b60,auto,edge-verified,Same instructions as misc_base_delete_02242990 with other addresses
 0x02987bb0,45,auto_pair_matches_02987bb0,auto,edge-verified,Same instructions as misc_pair_matches_022429e0 with other addresses
