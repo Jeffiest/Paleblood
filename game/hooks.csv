@@ -4350,6 +4350,7 @@ address,replacement,system,returns
 0x010e6040,bb_auto_empty_010e6040,auto,void
 0x010e68d0,bb_auto_fixed_address_010e68d0,auto,i64
 0x010e6b60,bb_auto_return_field_010e6b60,auto,i64
+0x010e6db0,bb_auto_set_value_word_148_010e6db0,auto,void
 0x010e6f50,bb_auto_destroy_then_release_010e6f50,auto,i64
 0x010e7c80,bb_auto_destroy_then_release_010e7c80,auto,i64
 0x010e8910,bb_auto_return_field_010e8910,auto,i64

@@ -4351,6 +4351,7 @@ address,size,name,system,status,notes
 0x010e6040,1,auto_empty_010e6040,auto,edge-verified,Generated from the empty template
 0x010e68d0,8,auto_fixed_address_010e68d0,auto,edge-verified,Same instructions as misc_plain_type_address with other addresses
 0x010e6b60,8,auto_return_field_010e6b60,auto,edge-verified,Generated from the return field template
+0x010e6db0,8,auto_set_value_word_148_010e6db0,auto,edge-verified,Same instructions as misc_set_value_word_148 with other addresses
 0x010e6f50,28,auto_destroy_then_release_010e6f50,auto,edge-verified,Same instructions as misc_destroy_then_release with other addresses
 0x010e7c80,28,auto_destroy_then_release_010e7c80,auto,edge-verified,Same instructions as misc_destroy_then_release with other addresses
 0x010e8910,8,auto_return_field_010e8910,auto,edge-verified,Generated from the return field template
