@@ -7482,6 +7482,7 @@ address,size,name,system,status,notes
 0x0169b480,5,auto_return_member_address_0169b480,auto,edge-verified,Generated from the return member address template
 0x0169b490,5,auto_return_member_address_0169b490,auto,edge-verified,Generated from the return member address template
 0x0169b8d0,205,auto_initialize_static_wide_string_0169b8d0,auto,edge-verified,Same instructions as engine_initialize_static_wide_string_018867e0 with other addresses
+0x0169b9a0,113,misc_init_rows_total_5944010,misc,edge-verified,copy three constant rows into the record at 0x05944010 and set its total
 0x0169baf0,205,auto_initialize_static_wide_string_0169baf0,auto,edge-verified,Same instructions as engine_initialize_static_wide_string_018867e0 with other addresses
 0x0169bcd0,205,auto_initialize_static_wide_string_0169bcd0,auto,edge-verified,Same instructions as engine_initialize_static_wide_string_018867e0 with other addresses
 0x0169bf20,205,auto_initialize_static_wide_string_0169bf20,auto,edge-verified,Same instructions as engine_initialize_static_wide_string_018867e0 with other addresses

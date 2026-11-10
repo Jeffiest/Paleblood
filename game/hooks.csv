@@ -7481,6 +7481,7 @@ address,replacement,system,returns
 0x0169b480,bb_auto_return_member_address_0169b480,auto,i64
 0x0169b490,bb_auto_return_member_address_0169b490,auto,i64
 0x0169b8d0,bb_auto_initialize_static_wide_string_0169b8d0,auto,void
+0x0169b9a0,bb_misc_init_rows_total_5944010,misc,void
 0x0169baf0,bb_auto_initialize_static_wide_string_0169baf0,auto,void
 0x0169bcd0,bb_auto_initialize_static_wide_string_0169bcd0,auto,void
 0x0169bf20,bb_auto_initialize_static_wide_string_0169bf20,auto,void
