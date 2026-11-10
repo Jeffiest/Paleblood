@@ -11,6 +11,7 @@ address,name,size,cases,addresses
 0x01887ed0,misc_relay_member_call,57,game/misc/relay_member_call_cases.py,
 0x01887f40,misc_tail_call_member_target,39,game/misc/tail_call_member_target_cases.py,
 0x01887f70,misc_member_call_or_fallback,63,game/misc/member_call_or_fallback_cases.py,0x04dc0016
+0x018881b0,misc_set_vtable_after_call,31,game/misc/set_vtable_after_call_cases.py,0x01884e90 0x057225f0
 0x02242980,misc_base_init_02242980,15,game/misc/base_init_02242980_cases.py,0x0566fa90
 0x02242990,misc_base_delete_02242990,66,game/misc/base_delete_02242990_cases.py,0x0566fa90 0x057e40f8
 0x022429e0,misc_pair_matches_022429e0,45,game/misc/pair_matches_022429e0_cases.py,
