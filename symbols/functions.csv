@@ -6030,20 +6030,25 @@ address,size,name,system,status,notes
 0x0126e1d0,19,auto_begin_configure_holder_0126e1d0,auto,edge-verified,Same instructions as misc_begin_configure_holder with other addresses
 0x01271810,28,auto_destroy_then_release_01271810,auto,edge-verified,Same instructions as misc_destroy_then_release with other addresses
 0x012728c0,19,auto_begin_configure_holder_012728c0,auto,edge-verified,Same instructions as misc_begin_configure_holder with other addresses
+0x01274a90,40,auto_forward_with_mode_01274a90,auto,edge-verified,Same instructions as misc_forward_with_mode with other addresses and constants
 0x01274ac0,1,auto_empty_01274ac0,auto,edge-verified,Generated from the empty template
 0x012760a0,19,auto_begin_configure_holder_012760a0,auto,edge-verified,Same instructions as misc_begin_configure_holder with other addresses
 0x01278ae0,19,auto_begin_configure_holder_01278ae0,auto,edge-verified,Same instructions as misc_begin_configure_holder with other addresses
 0x012797f0,19,auto_begin_configure_holder_012797f0,auto,edge-verified,Same instructions as misc_begin_configure_holder with other addresses
+0x0127b270,40,auto_forward_with_mode_0127b270,auto,edge-verified,Same instructions as misc_forward_with_mode with other addresses and constants
 0x0127b2a0,1,auto_empty_0127b2a0,auto,edge-verified,Generated from the empty template
+0x0127d990,40,auto_forward_with_mode_0127d990,auto,edge-verified,Same instructions as misc_forward_with_mode with other addresses and constants
 0x0127d9c0,1,auto_empty_0127d9c0,auto,edge-verified,Generated from the empty template
 0x0127f210,19,auto_begin_configure_holder_0127f210,auto,edge-verified,Same instructions as misc_begin_configure_holder with other addresses
 0x01280e40,19,auto_begin_configure_holder_01280e40,auto,edge-verified,Same instructions as misc_begin_configure_holder with other addresses
 0x012825a0,19,auto_begin_configure_holder_012825a0,auto,edge-verified,Same instructions as misc_begin_configure_holder with other addresses
 0x01283950,19,auto_begin_configure_holder_01283950,auto,edge-verified,Same instructions as misc_begin_configure_holder with other addresses
 0x01285a50,19,auto_begin_configure_holder_01285a50,auto,edge-verified,Same instructions as misc_begin_configure_holder with other addresses
+0x012899b0,40,auto_forward_with_mode_012899b0,auto,edge-verified,Same instructions as misc_forward_with_mode with other addresses and constants
 0x012899e0,1,auto_empty_012899e0,auto,edge-verified,Generated from the empty template
 0x0128b330,19,auto_begin_configure_holder_0128b330,auto,edge-verified,Same instructions as misc_begin_configure_holder with other addresses
 0x0128ef80,19,auto_begin_configure_holder_0128ef80,auto,edge-verified,Same instructions as misc_begin_configure_holder with other addresses
+0x01291530,40,auto_forward_with_mode_01291530,auto,edge-verified,Same instructions as misc_forward_with_mode with other addresses and constants
 0x01291560,1,auto_empty_01291560,auto,edge-verified,Generated from the empty template
 0x01292780,28,auto_destroy_then_release_01292780,auto,edge-verified,Same instructions as misc_destroy_then_release with other addresses
 0x01293870,28,auto_destroy_then_release_01293870,auto,edge-verified,Same instructions as misc_destroy_then_release with other addresses
@@ -34552,37 +34557,46 @@ address,size,name,system,status,notes
 0x025df4b0,22,auto_disarm_callback_025df4b0,auto,edge-verified,Same instructions as misc_disarm_callback with other addresses
 0x025df4d0,5,auto_delete_object_thunk_025df4d0,auto,edge-verified,Same instructions as misc_delete_object_thunk with other addresses
 0x025df4e0,40,auto_invoke_callback_025df4e0,auto,edge-verified,Same instructions as misc_invoke_callback with other addresses
+0x025e1380,40,auto_forward_with_mode_025e1380,auto,edge-verified,Same instructions as misc_forward_with_mode with other addresses and constants
 0x025e13b0,1,auto_empty_025e13b0,auto,edge-verified,Generated from the empty template
 0x025e2150,22,auto_disarm_callback_025e2150,auto,edge-verified,Same instructions as misc_disarm_callback with other addresses
 0x025e2170,5,auto_delete_object_thunk_025e2170,auto,edge-verified,Same instructions as misc_delete_object_thunk with other addresses
 0x025e2180,40,auto_invoke_callback_025e2180,auto,edge-verified,Same instructions as misc_invoke_callback with other addresses
+0x025e6190,40,auto_forward_with_mode_025e6190,auto,edge-verified,Same instructions as misc_forward_with_mode with other addresses and constants
 0x025e61c0,1,auto_empty_025e61c0,auto,edge-verified,Generated from the empty template
 0x025e6f60,22,auto_disarm_callback_025e6f60,auto,edge-verified,Same instructions as misc_disarm_callback with other addresses
 0x025e6f80,5,auto_delete_object_thunk_025e6f80,auto,edge-verified,Same instructions as misc_delete_object_thunk with other addresses
 0x025e6f90,40,auto_invoke_callback_025e6f90,auto,edge-verified,Same instructions as misc_invoke_callback with other addresses
+0x025e9ff0,40,auto_forward_with_mode_025e9ff0,auto,edge-verified,Same instructions as misc_forward_with_mode with other addresses and constants
 0x025eae70,22,auto_disarm_callback_025eae70,auto,edge-verified,Same instructions as misc_disarm_callback with other addresses
 0x025eae90,5,auto_delete_object_thunk_025eae90,auto,edge-verified,Same instructions as misc_delete_object_thunk with other addresses
 0x025eaea0,40,auto_invoke_callback_025eaea0,auto,edge-verified,Same instructions as misc_invoke_callback with other addresses
+0x025ef1a0,40,auto_forward_with_mode_025ef1a0,auto,edge-verified,Same instructions as misc_forward_with_mode with other addresses and constants
 0x025ef1d0,1,auto_empty_025ef1d0,auto,edge-verified,Generated from the empty template
 0x025eff70,22,auto_disarm_callback_025eff70,auto,edge-verified,Same instructions as misc_disarm_callback with other addresses
 0x025eff90,5,auto_delete_object_thunk_025eff90,auto,edge-verified,Same instructions as misc_delete_object_thunk with other addresses
 0x025effa0,40,auto_invoke_callback_025effa0,auto,edge-verified,Same instructions as misc_invoke_callback with other addresses
+0x025f2a50,40,auto_forward_with_mode_025f2a50,auto,edge-verified,Same instructions as misc_forward_with_mode with other addresses and constants
 0x025f2a80,1,auto_empty_025f2a80,auto,edge-verified,Generated from the empty template
 0x025f3820,22,auto_disarm_callback_025f3820,auto,edge-verified,Same instructions as misc_disarm_callback with other addresses
 0x025f3840,5,auto_delete_object_thunk_025f3840,auto,edge-verified,Same instructions as misc_delete_object_thunk with other addresses
 0x025f3850,40,auto_invoke_callback_025f3850,auto,edge-verified,Same instructions as misc_invoke_callback with other addresses
+0x025f6770,40,auto_forward_with_mode_025f6770,auto,edge-verified,Same instructions as misc_forward_with_mode with other addresses and constants
 0x025f67a0,1,auto_empty_025f67a0,auto,edge-verified,Generated from the empty template
 0x025f7540,22,auto_disarm_callback_025f7540,auto,edge-verified,Same instructions as misc_disarm_callback with other addresses
 0x025f7560,5,auto_delete_object_thunk_025f7560,auto,edge-verified,Same instructions as misc_delete_object_thunk with other addresses
 0x025f7570,40,auto_invoke_callback_025f7570,auto,edge-verified,Same instructions as misc_invoke_callback with other addresses
+0x025fa320,40,auto_forward_with_mode_025fa320,auto,edge-verified,Same instructions as misc_forward_with_mode with other addresses and constants
 0x025fa350,1,auto_empty_025fa350,auto,edge-verified,Generated from the empty template
 0x025fb0f0,22,auto_disarm_callback_025fb0f0,auto,edge-verified,Same instructions as misc_disarm_callback with other addresses
 0x025fb110,5,auto_delete_object_thunk_025fb110,auto,edge-verified,Same instructions as misc_delete_object_thunk with other addresses
 0x025fb120,40,auto_invoke_callback_025fb120,auto,edge-verified,Same instructions as misc_invoke_callback with other addresses
+0x025fe830,40,auto_forward_with_mode_025fe830,auto,edge-verified,Same instructions as misc_forward_with_mode with other addresses and constants
 0x025fe860,1,auto_empty_025fe860,auto,edge-verified,Generated from the empty template
 0x025ff600,22,auto_disarm_callback_025ff600,auto,edge-verified,Same instructions as misc_disarm_callback with other addresses
 0x025ff620,5,auto_delete_object_thunk_025ff620,auto,edge-verified,Same instructions as misc_delete_object_thunk with other addresses
 0x025ff630,40,auto_invoke_callback_025ff630,auto,edge-verified,Same instructions as misc_invoke_callback with other addresses
+0x02604360,40,auto_forward_with_mode_02604360,auto,edge-verified,Same instructions as misc_forward_with_mode with other addresses and constants
 0x02604390,1,auto_empty_02604390,auto,edge-verified,Generated from the empty template
 0x02605130,22,auto_disarm_callback_02605130,auto,edge-verified,Same instructions as misc_disarm_callback with other addresses
 0x02605150,5,auto_delete_object_thunk_02605150,auto,edge-verified,Same instructions as misc_delete_object_thunk with other addresses
@@ -34614,13 +34628,16 @@ address,size,name,system,status,notes
 0x02618750,1,auto_empty_02618750,auto,edge-verified,Generated from the empty template
 0x02618760,1,auto_empty_02618760,auto,edge-verified,Generated from the empty template
 0x0261a610,28,auto_destroy_then_release_0261a610,auto,edge-verified,Same instructions as misc_destroy_then_release with other addresses
+0x0261c240,40,auto_forward_with_mode_0261c240,auto,edge-verified,Same instructions as misc_forward_with_mode with other addresses and constants
 0x0261ca90,22,auto_disarm_callback_0261ca90,auto,edge-verified,Same instructions as misc_disarm_callback with other addresses
 0x0261cab0,5,auto_delete_object_thunk_0261cab0,auto,edge-verified,Same instructions as misc_delete_object_thunk with other addresses
+0x0261ed80,43,auto_forward_with_mode_0261ed80,auto,edge-verified,Same instructions as misc_forward_with_mode with other addresses and constants
 0x0261fc60,22,auto_disarm_callback_0261fc60,auto,edge-verified,Same instructions as misc_disarm_callback with other addresses
 0x0261fc80,5,auto_delete_object_thunk_0261fc80,auto,edge-verified,Same instructions as misc_delete_object_thunk with other addresses
 0x0261fc90,40,auto_invoke_callback_0261fc90,auto,edge-verified,Same instructions as misc_invoke_callback with other addresses
 0x02622cb0,124,auto_destroy_chain_node_02622cb0,auto,edge-verified,Same instructions as misc_destroy_chain_node with other addresses
 0x02622d30,81,auto_tree_destroy_nodes_02622d30,auto,edge-verified,Same instructions as engine_tree_destroy_nodes with other addresses
+0x02625a70,40,auto_forward_with_mode_02625a70,auto,edge-verified,Same instructions as misc_forward_with_mode with other addresses and constants
 0x02625aa0,1,auto_empty_02625aa0,auto,edge-verified,Generated from the empty template
 0x02626570,22,auto_disarm_callback_02626570,auto,edge-verified,Same instructions as misc_disarm_callback with other addresses
 0x02626590,5,auto_delete_object_thunk_02626590,auto,edge-verified,Same instructions as misc_delete_object_thunk with other addresses
@@ -34628,11 +34645,13 @@ address,size,name,system,status,notes
 0x026265d0,1,auto_empty_026265d0,auto,edge-verified,Generated from the empty template
 0x026265e0,5,auto_delete_object_thunk_026265e0,auto,edge-verified,Same instructions as misc_delete_object_thunk with other addresses
 0x02628fd0,1,auto_empty_02628fd0,auto,edge-verified,Generated from the empty template
+0x0262d210,40,auto_forward_with_mode_0262d210,auto,edge-verified,Same instructions as misc_forward_with_mode with other addresses and constants
 0x0262f7a0,22,auto_disarm_callback_0262f7a0,auto,edge-verified,Same instructions as misc_disarm_callback with other addresses
 0x0262f7c0,5,auto_delete_object_thunk_0262f7c0,auto,edge-verified,Same instructions as misc_delete_object_thunk with other addresses
 0x0262f7d0,40,auto_invoke_callback_0262f7d0,auto,edge-verified,Same instructions as misc_invoke_callback with other addresses
 0x0262f800,1,auto_empty_0262f800,auto,edge-verified,Generated from the empty template
 0x0262f810,5,auto_delete_object_thunk_0262f810,auto,edge-verified,Same instructions as misc_delete_object_thunk with other addresses
+0x02632780,40,auto_forward_with_mode_02632780,auto,edge-verified,Same instructions as misc_forward_with_mode with other addresses and constants
 0x02633c60,22,auto_disarm_callback_02633c60,auto,edge-verified,Same instructions as misc_disarm_callback with other addresses
 0x02633c80,5,auto_delete_object_thunk_02633c80,auto,edge-verified,Same instructions as misc_delete_object_thunk with other addresses
 0x02633c90,40,auto_invoke_callback_02633c90,auto,edge-verified,Same instructions as misc_invoke_callback with other addresses
@@ -34640,10 +34659,12 @@ address,size,name,system,status,notes
 0x02633cd0,5,auto_delete_object_thunk_02633cd0,auto,edge-verified,Same instructions as misc_delete_object_thunk with other addresses
 0x02633ce0,1,auto_empty_02633ce0,auto,edge-verified,Generated from the empty template
 0x02633cf0,5,auto_delete_object_thunk_02633cf0,auto,edge-verified,Same instructions as misc_delete_object_thunk with other addresses
+0x02636f20,43,auto_forward_with_mode_02636f20,auto,edge-verified,Same instructions as misc_forward_with_mode with other addresses and constants
 0x02636f50,1,auto_empty_02636f50,auto,edge-verified,Generated from the empty template
 0x02637b00,22,auto_disarm_callback_02637b00,auto,edge-verified,Same instructions as misc_disarm_callback with other addresses
 0x02637b20,5,auto_delete_object_thunk_02637b20,auto,edge-verified,Same instructions as misc_delete_object_thunk with other addresses
 0x02637b30,40,auto_invoke_callback_02637b30,auto,edge-verified,Same instructions as misc_invoke_callback with other addresses
+0x0263a780,40,auto_forward_with_mode_0263a780,auto,edge-verified,Same instructions as misc_forward_with_mode with other addresses and constants
 0x0263b5c0,22,auto_disarm_callback_0263b5c0,auto,edge-verified,Same instructions as misc_disarm_callback with other addresses
 0x0263b5e0,5,auto_delete_object_thunk_0263b5e0,auto,edge-verified,Same instructions as misc_delete_object_thunk with other addresses
 0x0263b5f0,40,auto_invoke_callback_0263b5f0,auto,edge-verified,Same instructions as misc_invoke_callback with other addresses
@@ -34707,6 +34728,7 @@ address,size,name,system,status,notes
 0x02664830,28,auto_destroy_then_release_02664830,auto,edge-verified,Same instructions as misc_destroy_then_release with other addresses
 0x02665940,1,auto_empty_02665940,auto,edge-verified,Generated from the empty template
 0x026678a0,28,auto_destroy_then_release_026678a0,auto,edge-verified,Same instructions as misc_destroy_then_release with other addresses
+0x0266a0a0,40,auto_forward_with_mode_0266a0a0,auto,edge-verified,Same instructions as misc_forward_with_mode with other addresses and constants
 0x0266afe0,22,auto_disarm_callback_0266afe0,auto,edge-verified,Same instructions as misc_disarm_callback with other addresses
 0x0266b000,5,auto_delete_object_thunk_0266b000,auto,edge-verified,Same instructions as misc_delete_object_thunk with other addresses
 0x0266b010,40,auto_invoke_callback_0266b010,auto,edge-verified,Same instructions as misc_invoke_callback with other addresses
@@ -34833,6 +34855,7 @@ address,size,name,system,status,notes
 0x026d6540,28,auto_destroy_then_release_026d6540,auto,edge-verified,Same instructions as misc_destroy_then_release with other addresses
 0x026d76c0,22,auto_disarm_callback_026d76c0,auto,edge-verified,Same instructions as misc_disarm_callback with other addresses
 0x026d76e0,5,auto_delete_object_thunk_026d76e0,auto,edge-verified,Same instructions as misc_delete_object_thunk with other addresses
+0x026da650,40,auto_forward_with_mode_026da650,auto,edge-verified,Same instructions as misc_forward_with_mode with other addresses and constants
 0x026da680,1,auto_empty_026da680,auto,edge-verified,Generated from the empty template
 0x026db720,22,auto_disarm_callback_026db720,auto,edge-verified,Same instructions as misc_disarm_callback with other addresses
 0x026db740,5,auto_delete_object_thunk_026db740,auto,edge-verified,Same instructions as misc_delete_object_thunk with other addresses

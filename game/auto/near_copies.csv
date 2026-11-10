@@ -394,6 +394,11 @@ address,name,exemplar,addresses,constants,exchange
 0x011fb1b0,auto_query_owned_child_011fb1b0,misc_query_owned_child,,@0=0x10 @2=0x10 d:0x30>0x10,slots
 0x0124d580,auto_set_word_0124d580,misc_set_value_word_130,,@0=0x40 d:0x130>0x40,slots
 0x0125bab0,auto_release_held_block_0125bab0,misc_release_held_block,0x02592720,@0=0x18 d:0x10>0x18,slots
+0x01274a90,auto_forward_with_mode_01274a90,misc_forward_with_mode,0x05940dd8 0x02586da0,@2=0x60 d:0x80>0x60,slots
+0x0127b270,auto_forward_with_mode_0127b270,misc_forward_with_mode,0x05940dd8 0x02586da0,@2=0x5c d:0x80>0x5c,slots
+0x0127d990,auto_forward_with_mode_0127d990,misc_forward_with_mode,0x05940dd8 0x02586da0,@2=0x64 d:0x80>0x64,slots
+0x012899b0,auto_forward_with_mode_012899b0,misc_forward_with_mode,0x05940dd8 0x02586da0,@2=0x50 d:0x80>0x50,slots
+0x01291530,auto_forward_with_mode_01291530,misc_forward_with_mode,0x05940dd8 0x02586da0,@2=0x74 d:0x80>0x74,slots
 0x012a7710,auto_set_word_012a7710,misc_set_value_word_130,,@0=0x10 d:0x130>0x10,slots
 0x012a77d0,auto_forward_child_tail_012a77d0,misc_forward_child_tail,0x012a9b90,@0=0x10 d:0x8>0x10,slots
 0x012a84b0,auto_set_word_012a84b0,misc_set_value_word_130,,@0=0x10 d:0x130>0x10,slots
@@ -1053,15 +1058,33 @@ address,name,exemplar,addresses,constants,exchange
 0x02514fe0,auto_set_word_02514fe0,misc_set_value_word_130,,@0=0xb8 d:0x130>0xb8,slots
 0x02599d20,auto_set_u32_word_02599d20,misc_set_u32_word_160,,@0=0x100 d:0x160>0x100,slots
 0x025a8270,auto_release_held_block_025a8270,misc_release_held_block,0x02592660,@0=0x20 d:0x10>0x20,slots
+0x025e1380,auto_forward_with_mode_025e1380,misc_forward_with_mode,0x05940dd8 0x02586da0,@2=0x4c d:0x80>0x4c,slots
+0x025e6190,auto_forward_with_mode_025e6190,misc_forward_with_mode,0x05940dd8 0x02586da0,@2=0x3c d:0x80>0x3c,slots
+0x025e9ff0,auto_forward_with_mode_025e9ff0,misc_forward_with_mode,0x05940dd8 0x02586da0,@2=0x40 d:0x80>0x40,slots
+0x025ef1a0,auto_forward_with_mode_025ef1a0,misc_forward_with_mode,0x05940dd8 0x02586da0,@2=0x38 d:0x80>0x38,slots
+0x025f2a50,auto_forward_with_mode_025f2a50,misc_forward_with_mode,0x05940dd8 0x02586da0,@2=0x44 d:0x80>0x44,slots
+0x025f6770,auto_forward_with_mode_025f6770,misc_forward_with_mode,0x05940dd8 0x02586da0,@2=0x54 d:0x80>0x54,slots
+0x025fa320,auto_forward_with_mode_025fa320,misc_forward_with_mode,0x05940dd8 0x02586da0,@2=0x48 d:0x80>0x48,slots
+0x025fe830,auto_forward_with_mode_025fe830,misc_forward_with_mode,0x05940dd8 0x02586da0,@2=0x30 d:0x80>0x30,slots
+0x02604360,auto_forward_with_mode_02604360,misc_forward_with_mode,0x05940dd8 0x02586da0,@2=0x34 d:0x80>0x34,slots
+0x0261c240,auto_forward_with_mode_0261c240,misc_forward_with_mode,0x05940dd8 0x02586da0,@2=0x58 d:0x80>0x58,slots
+0x0261ed80,auto_forward_with_mode_0261ed80,misc_forward_with_mode,0x05940dd8 0x02586da0,@2=0x84 d:0x80>0x84,slots
+0x02625a70,auto_forward_with_mode_02625a70,misc_forward_with_mode,0x05940dd8 0x02586da0,@2=0x7c d:0x80>0x7c,slots
+0x0262d210,auto_forward_with_mode_0262d210,misc_forward_with_mode,0x05940dd8 0x02586da0,@2=0x68 d:0x80>0x68,slots
+0x02632780,auto_forward_with_mode_02632780,misc_forward_with_mode,0x05940dd8 0x02586da0,@2=0x6c d:0x80>0x6c,slots
+0x02636f20,auto_forward_with_mode_02636f20,misc_forward_with_mode,0x05940dd8 0x02586da0,@2=0x88 d:0x80>0x88,slots
+0x0263a780,auto_forward_with_mode_0263a780,misc_forward_with_mode,0x05940dd8 0x02586da0,@2=0x70 d:0x80>0x70,slots
 0x02658c30,auto_set_word_02658c30,misc_set_value_word_130,,@0=0xe0 d:0x130>0xe0,slots
 0x02660650,auto_set_u32_word_02660650,misc_set_u32_word_160,,@0=0x38 d:0x160>0x38,slots
 0x02660660,auto_set_word_02660660,misc_set_value_word_130,,@0=0x28 d:0x130>0x28,slots
 0x02663ec0,auto_query_owned_child_02663ec0,misc_query_owned_child,,@0=0x10 @2=0x70 d:0x30>0x10 d:0x30>0x70,slots
 0x02663f20,auto_query_owned_child_02663f20,misc_query_owned_child,,@0=0x10 @2=0x88 d:0x30>0x10 d:0x30>0x88,slots
+0x0266a0a0,auto_forward_with_mode_0266a0a0,misc_forward_with_mode,0x05940dd8 0x02586da0,@2=0x58 d:0x80>0x58,slots
 0x0267c900,auto_forward_child_tail_0267c900,misc_forward_child_tail,0x0267e9d0,@0=0x38 d:0x8>0x38,slots
 0x026907f0,auto_set_u32_word_026907f0,misc_set_u32_word_160,,@0=0x6fc d:0x160>0x6fc,slots
 0x02690800,auto_set_u32_word_02690800,misc_set_u32_word_160,,@0=0x700 d:0x160>0x700,slots
 0x0269d2a0,auto_set_u32_word_0269d2a0,misc_set_u32_word_160,,@0=0x6f4 d:0x160>0x6f4,slots
+0x026da650,auto_forward_with_mode_026da650,misc_forward_with_mode,0x05940dd8 0x02586da0,@2=0x78 d:0x80>0x78,slots
 0x026f2250,auto_forward_child_tail_026f2250,misc_forward_child_tail,0x01230ec0,@0=0x440 d:0x8>0x440,slots
 0x027049f0,auto_forward_child_tail_027049f0,misc_forward_child_tail,0x0131d630,@0=0x30 d:0x8>0x30,slots
 0x0271ca40,auto_read_pointed_word_0271ca40,misc_read_source_word,,@0=0x10 @1=0x18 d:0x20>0x18,slots
