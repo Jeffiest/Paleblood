@@ -7069,22 +7069,58 @@ address,size,name,system,status,notes
 0x015d6b10,3,auto_return_zero_015d6b10,auto,edge-verified,Generated from the return zero template
 0x015d6b20,28,auto_destroy_then_release_015d6b20,auto,edge-verified,Same instructions as misc_destroy_then_release with other addresses
 0x015d7490,1,auto_empty_015d7490,auto,edge-verified,Generated from the empty template
+0x015d9f40,84,auto_init_stream_guards_015d9f40,auto,edge-verified,Same instructions as misc_init_stream_guards_58b9d5c with other addresses
 0x015daff0,28,auto_destroy_then_release_015daff0,auto,edge-verified,Same instructions as misc_destroy_then_release with other addresses
+0x015db1f0,84,auto_init_stream_guards_015db1f0,auto,edge-verified,Same instructions as misc_init_stream_guards_58b9d5c with other addresses
 0x015db4c0,1,auto_empty_015db4c0,auto,edge-verified,Generated from the empty template
 0x015db5b0,1,auto_empty_015db5b0,auto,edge-verified,Generated from the empty template
 0x015db6c0,1,auto_empty_015db6c0,auto,edge-verified,Generated from the empty template
+0x015dbb80,84,auto_init_stream_guards_015dbb80,auto,edge-verified,Same instructions as misc_init_stream_guards_58b9d5c with other addresses
+0x015dc9a0,84,auto_init_stream_guards_015dc9a0,auto,edge-verified,Same instructions as misc_init_stream_guards_58b9d5c with other addresses
+0x015dd030,84,auto_init_stream_guards_015dd030,auto,edge-verified,Same instructions as misc_init_stream_guards_58b9d5c with other addresses
+0x015dd830,84,auto_init_stream_guards_015dd830,auto,edge-verified,Same instructions as misc_init_stream_guards_58b9d5c with other addresses
+0x015dea30,84,auto_init_stream_guards_015dea30,auto,edge-verified,Same instructions as misc_init_stream_guards_58b9d5c with other addresses
+0x015df510,84,auto_init_stream_guards_015df510,auto,edge-verified,Same instructions as misc_init_stream_guards_58b9d5c with other addresses
+0x015e16f0,84,auto_init_stream_guards_015e16f0,auto,edge-verified,Same instructions as misc_init_stream_guards_58b9d5c with other addresses
+0x015e2a10,84,auto_init_stream_guards_015e2a10,auto,edge-verified,Same instructions as misc_init_stream_guards_58b9d5c with other addresses
+0x015e2be0,84,auto_init_stream_guards_015e2be0,auto,edge-verified,Same instructions as misc_init_stream_guards_58b9d5c with other addresses
+0x015e36d0,84,auto_init_stream_guards_015e36d0,auto,edge-verified,Same instructions as misc_init_stream_guards_58b9d5c with other addresses
+0x015e37c0,84,auto_init_stream_guards_015e37c0,auto,edge-verified,Same instructions as misc_init_stream_guards_58b9d5c with other addresses
+0x015e38c0,84,auto_init_stream_guards_015e38c0,auto,edge-verified,Same instructions as misc_init_stream_guards_58b9d5c with other addresses
+0x015e3bb0,84,auto_init_stream_guards_015e3bb0,auto,edge-verified,Same instructions as misc_init_stream_guards_58b9d5c with other addresses
+0x015e3ca0,84,auto_init_stream_guards_015e3ca0,auto,edge-verified,Same instructions as misc_init_stream_guards_58b9d5c with other addresses
+0x015e3f30,84,auto_init_stream_guards_015e3f30,auto,edge-verified,Same instructions as misc_init_stream_guards_58b9d5c with other addresses
+0x015e4020,84,auto_init_stream_guards_015e4020,auto,edge-verified,Same instructions as misc_init_stream_guards_58b9d5c with other addresses
+0x015e4110,84,auto_init_stream_guards_015e4110,auto,edge-verified,Same instructions as misc_init_stream_guards_58b9d5c with other addresses
+0x015e4e60,84,auto_init_stream_guards_015e4e60,auto,edge-verified,Same instructions as misc_init_stream_guards_58b9d5c with other addresses
+0x015e5170,84,auto_init_stream_guards_015e5170,auto,edge-verified,Same instructions as misc_init_stream_guards_58b9d5c with other addresses
 0x015e5220,16,auto_record_tuple_parameter_supported_015e5220,auto,edge-verified,Same instructions as render_record_tuple_parameter_supported with other addresses
+0x015e53e0,84,auto_init_stream_guards_015e53e0,auto,edge-verified,Same instructions as misc_init_stream_guards_58b9d5c with other addresses
 0x015e5640,28,auto_destroy_then_release_015e5640,auto,edge-verified,Same instructions as misc_destroy_then_release with other addresses
+0x015e5820,84,auto_init_stream_guards_015e5820,auto,edge-verified,Same instructions as misc_init_stream_guards_58b9d5c with other addresses
+0x015e5c30,84,auto_init_stream_guards_015e5c30,auto,edge-verified,Same instructions as misc_init_stream_guards_58b9d5c with other addresses
+0x015e5d20,84,auto_init_stream_guards_015e5d20,auto,edge-verified,Same instructions as misc_init_stream_guards_58b9d5c with other addresses
 0x015e5d80,11,auto_return_constant_015e5d80,auto,edge-verified,Generated from the return constant template
 0x015e5de0,1,auto_empty_015e5de0,auto,edge-verified,Generated from the empty template
 0x015e61e0,1,auto_empty_015e61e0,auto,edge-verified,Generated from the empty template
 0x015e6e80,1,auto_empty_015e6e80,auto,edge-verified,Generated from the empty template
+0x015e71d0,84,auto_init_stream_guards_015e71d0,auto,edge-verified,Same instructions as misc_init_stream_guards_58b9d5c with other addresses
+0x015e7c30,84,auto_init_stream_guards_015e7c30,auto,edge-verified,Same instructions as misc_init_stream_guards_58b9d5c with other addresses
 0x015eb2f0,1,auto_empty_015eb2f0,auto,edge-verified,Generated from the empty template
 0x015ec0f0,1,auto_empty_015ec0f0,auto,edge-verified,Generated from the empty template
 0x015ec100,1,auto_empty_015ec100,auto,edge-verified,Generated from the empty template
+0x015ec700,84,auto_init_stream_guards_015ec700,auto,edge-verified,Same instructions as misc_init_stream_guards_58b9d5c with other addresses
+0x015ece80,84,auto_init_stream_guards_015ece80,auto,edge-verified,Same instructions as misc_init_stream_guards_58b9d5c with other addresses
+0x015edd50,84,auto_init_stream_guards_015edd50,auto,edge-verified,Same instructions as misc_init_stream_guards_58b9d5c with other addresses
 0x015ee8c0,28,auto_destroy_then_release_015ee8c0,auto,edge-verified,Same instructions as misc_destroy_then_release with other addresses
 0x015eee20,3,auto_return_zero_015eee20,auto,edge-verified,Generated from the return zero template
+0x015eeed0,84,auto_init_stream_guards_015eeed0,auto,edge-verified,Same instructions as misc_init_stream_guards_58b9d5c with other addresses
+0x015ef470,84,auto_init_stream_guards_015ef470,auto,edge-verified,Same instructions as misc_init_stream_guards_58b9d5c with other addresses
+0x015ef8b0,84,auto_init_stream_guards_015ef8b0,auto,edge-verified,Same instructions as misc_init_stream_guards_58b9d5c with other addresses
+0x015ef9a0,84,auto_init_stream_guards_015ef9a0,auto,edge-verified,Same instructions as misc_init_stream_guards_58b9d5c with other addresses
 0x015efa00,8,auto_return_member_address_015efa00,auto,edge-verified,Generated from the return member address template
+0x015efcd0,84,auto_init_stream_guards_015efcd0,auto,edge-verified,Same instructions as misc_init_stream_guards_58b9d5c with other addresses
+0x015f08d0,84,auto_init_stream_guards_015f08d0,auto,edge-verified,Same instructions as misc_init_stream_guards_58b9d5c with other addresses
 0x015f1d60,28,auto_record_tuple_classification_group_015f1d60,auto,edge-verified,Same instructions as render_record_tuple_classification_group with other addresses
 0x015f1e90,25,auto_record_tuple_alternate_classification_015f1e90,auto,edge-verified,Same instructions as render_record_tuple_alternate_classification with other addresses
 0x015f62e0,6,auto_return_constant_015f62e0,auto,edge-verified,Generated from the return constant template
@@ -27156,6 +27192,7 @@ address,size,name,system,status,notes
 0x02478c00,6,auto_return_constant_02478c00,auto,edge-verified,Generated from the return constant template
 0x02478cf0,1,auto_empty_02478cf0,auto,edge-verified,Generated from the empty template
 0x02478d40,28,auto_destroy_then_release_02478d40,auto,edge-verified,Same instructions as misc_destroy_then_release with other addresses
+0x0247bb90,84,auto_init_stream_guards_0247bb90,auto,edge-verified,Same instructions as misc_init_stream_guards_58b9d5c with other addresses
 0x0247c740,6,auto_return_constant_0247c740,auto,edge-verified,Generated from the return constant template
 0x0247c760,8,auto_return_field_0247c760,auto,edge-verified,Generated from the return field template
 0x0247c910,8,auto_return_member_address_0247c910,auto,edge-verified,Generated from the return member address template
@@ -27720,6 +27757,9 @@ address,size,name,system,status,notes
 0x024df600,4,auto_return_field_024df600,auto,edge-verified,Generated from the return field template
 0x024df6d0,1,auto_empty_024df6d0,auto,edge-verified,Generated from the empty template
 0x024df6e0,1,auto_empty_024df6e0,auto,edge-verified,Generated from the empty template
+0x024df780,84,auto_init_stream_guards_024df780,auto,edge-verified,Same instructions as misc_init_stream_guards_58b9d5c with other addresses
+0x024df8c0,84,auto_init_stream_guards_024df8c0,auto,edge-verified,Same instructions as misc_init_stream_guards_58b9d5c with other addresses
+0x024dfe90,84,auto_init_stream_guards_024dfe90,auto,edge-verified,Same instructions as misc_init_stream_guards_58b9d5c with other addresses
 0x024e0030,1,auto_empty_024e0030,auto,edge-verified,Generated from the empty template
 0x024e0040,28,auto_destroy_then_release_024e0040,auto,edge-verified,Same instructions as misc_destroy_then_release with other addresses
 0x024e1f00,8,auto_return_member_address_024e1f00,auto,edge-verified,Generated from the return member address template
@@ -27742,6 +27782,8 @@ address,size,name,system,status,notes
 0x024e2430,3,auto_return_zero_024e2430,auto,edge-verified,Generated from the return zero template
 0x024e2440,3,auto_return_zero_024e2440,auto,edge-verified,Generated from the return zero template
 0x024e2450,6,auto_return_constant_024e2450,auto,edge-verified,Generated from the return constant template
+0x024e24f0,84,auto_init_stream_guards_024e24f0,auto,edge-verified,Same instructions as misc_init_stream_guards_58b9d5c with other addresses
+0x024e2990,84,auto_init_stream_guards_024e2990,auto,edge-verified,Same instructions as misc_init_stream_guards_58b9d5c with other addresses
 0x024e84b0,3,auto_return_constant_024e84b0,auto,edge-verified,Generated from the return constant template
 0x024e8820,3,auto_return_constant_024e8820,auto,edge-verified,Generated from the return constant template
 0x024e9bc0,1,auto_empty_024e9bc0,auto,edge-verified,Generated from the empty template
@@ -32274,6 +32316,7 @@ address,size,name,system,status,notes
 0x02a3be60,1,auto_empty_02a3be60,auto,edge-verified,Generated from the empty template
 0x02a3c2f0,1,auto_empty_02a3c2f0,auto,edge-verified,Generated from the empty template
 0x02a3c300,1,auto_empty_02a3c300,auto,edge-verified,Generated from the empty template
+0x02a3c770,84,auto_init_stream_guards_02a3c770,auto,edge-verified,Same instructions as misc_init_stream_guards_58b9d5c with other addresses
 0x02a3c900,1,auto_empty_02a3c900,auto,edge-verified,Generated from the empty template
 0x02a3cf00,8,auto_return_member_address_02a3cf00,auto,edge-verified,Generated from the return member address template
 0x02a3cf10,8,auto_return_member_address_02a3cf10,auto,edge-verified,Generated from the return member address template
@@ -32286,6 +32329,7 @@ address,size,name,system,status,notes
 0x02a3f140,3,auto_return_zero_02a3f140,auto,edge-verified,Generated from the return zero template
 0x02a3f2c0,1,auto_empty_02a3f2c0,auto,edge-verified,Generated from the empty template
 0x02a3f2d0,1,auto_empty_02a3f2d0,auto,edge-verified,Generated from the empty template
+0x02a3f2f0,84,auto_init_stream_guards_02a3f2f0,auto,edge-verified,Same instructions as misc_init_stream_guards_58b9d5c with other addresses
 0x02a44030,1,auto_empty_02a44030,auto,edge-verified,Generated from the empty template
 0x02a44140,59,engine_wide_string_destroy,engine,edge-verified,WideString destructor; unsigned capacity >=8 frees even null; ignores owns; callback before capacity and size reset and two-byte terminator
 0x02a44280,1,auto_empty_02a44280,auto,edge-verified,Generated from the empty template
@@ -32482,8 +32526,10 @@ address,size,name,system,status,notes
 0x02a713e0,8,auto_fixed_address_02a713e0,auto,edge-verified,Same instructions as misc_plain_type_address with other addresses
 0x02a713f0,3,auto_return_zero_02a713f0,auto,edge-verified,Generated from the return zero template
 0x02a71540,6,auto_return_constant_02a71540,auto,edge-verified,Generated from the return constant template
+0x02a72590,84,auto_init_stream_guards_02a72590,auto,edge-verified,Same instructions as misc_init_stream_guards_58b9d5c with other addresses
 0x02a73900,81,auto_tree_destroy_nodes_02a73900,auto,edge-verified,Same instructions as engine_tree_destroy_nodes with other addresses
 0x02a74300,81,auto_tree_destroy_nodes_02a74300,auto,edge-verified,Same instructions as engine_tree_destroy_nodes with other addresses
+0x02a74820,84,auto_init_stream_guards_02a74820,auto,edge-verified,Same instructions as misc_init_stream_guards_58b9d5c with other addresses
 0x02a74970,1,auto_empty_02a74970,auto,edge-verified,Generated from the empty template
 0x02a74980,1,auto_empty_02a74980,auto,edge-verified,Generated from the empty template
 0x02a74aa0,4,auto_return_field_02a74aa0,auto,edge-verified,Generated from the return field template
@@ -32500,6 +32546,7 @@ address,size,name,system,status,notes
 0x02a74f60,3,auto_return_constant_02a74f60,auto,edge-verified,Generated from the return constant template
 0x02a74f70,3,auto_return_zero_02a74f70,auto,edge-verified,Generated from the return zero template
 0x02a74f80,6,auto_return_constant_02a74f80,auto,edge-verified,Generated from the return constant template
+0x02a751f0,84,auto_init_stream_guards_02a751f0,auto,edge-verified,Same instructions as misc_init_stream_guards_58b9d5c with other addresses
 0x02a75340,1,auto_empty_02a75340,auto,edge-verified,Generated from the empty template
 0x02a75350,1,auto_empty_02a75350,auto,edge-verified,Generated from the empty template
 0x02a75470,4,auto_return_field_02a75470,auto,edge-verified,Generated from the return field template
@@ -32514,14 +32561,18 @@ address,size,name,system,status,notes
 0x02a756b0,3,auto_return_constant_02a756b0,auto,edge-verified,Generated from the return constant template
 0x02a756c0,3,auto_return_zero_02a756c0,auto,edge-verified,Generated from the return zero template
 0x02a756d0,6,auto_return_constant_02a756d0,auto,edge-verified,Generated from the return constant template
+0x02a75810,84,auto_init_stream_guards_02a75810,auto,edge-verified,Same instructions as misc_init_stream_guards_58b9d5c with other addresses
 0x02a76100,5,auto_return_field_02a76100,auto,edge-verified,Generated from the return field template
 0x02a76110,218,auto_push_value_by_reference_02a76110,auto,edge-verified,Same instructions as misc_push_value_by_reference with other addresses
+0x02a76b30,84,auto_init_stream_guards_02a76b30,auto,edge-verified,Same instructions as misc_init_stream_guards_58b9d5c with other addresses
+0x02a77840,84,auto_init_stream_guards_02a77840,auto,edge-verified,Same instructions as misc_init_stream_guards_58b9d5c with other addresses
 0x02a77a80,218,auto_push_value_by_reference_02a77a80,auto,edge-verified,Same instructions as misc_push_value_by_reference with other addresses
 0x02a77da0,6,auto_return_float_field_02a77da0,auto,edge-verified,Generated from the return float field template
 0x02a77db0,6,auto_return_float_field_02a77db0,auto,edge-verified,Generated from the return float field template
 0x02a77dc0,7,auto_return_field_02a77dc0,auto,edge-verified,Generated from the return field template
 0x02a77dd0,7,auto_return_field_02a77dd0,auto,edge-verified,Generated from the return field template
 0x02a77de0,7,auto_return_field_02a77de0,auto,edge-verified,Generated from the return field template
+0x02a78720,84,auto_init_stream_guards_02a78720,auto,edge-verified,Same instructions as misc_init_stream_guards_58b9d5c with other addresses
 0x02a78780,1,auto_empty_02a78780,auto,edge-verified,Generated from the empty template
 0x02a78790,8,auto_fixed_address_02a78790,auto,edge-verified,Same instructions as misc_plain_type_address with other addresses
 0x02a78940,1,auto_empty_02a78940,auto,edge-verified,Generated from the empty template
@@ -32845,6 +32896,7 @@ address,size,name,system,status,notes
 0x02aa2e10,218,auto_push_value_by_reference_02aa2e10,auto,edge-verified,Same instructions as misc_push_value_by_reference with other addresses
 0x02aa37b0,28,auto_destroy_then_release_02aa37b0,auto,edge-verified,Same instructions as misc_destroy_then_release with other addresses
 0x02aa3e90,4,auto_return_field_02aa3e90,auto,edge-verified,Generated from the return field template
+0x02aa4990,84,auto_init_stream_guards_02aa4990,auto,edge-verified,Same instructions as misc_init_stream_guards_58b9d5c with other addresses
 0x02aa4b70,5,auto_return_member_address_02aa4b70,auto,edge-verified,Generated from the return member address template
 0x02aa4b80,5,auto_return_member_address_02aa4b80,auto,edge-verified,Generated from the return member address template
 0x02aa4d80,5,auto_return_member_address_02aa4d80,auto,edge-verified,Generated from the return member address template
@@ -32853,6 +32905,7 @@ address,size,name,system,status,notes
 0x02aa4e80,5,auto_return_field_02aa4e80,auto,edge-verified,Generated from the return field template
 0x02aa4e90,5,auto_return_field_02aa4e90,auto,edge-verified,Generated from the return field template
 0x02aa4ea0,4,auto_return_field_02aa4ea0,auto,edge-verified,Generated from the return field template
+0x02aa4f80,84,auto_init_stream_guards_02aa4f80,auto,edge-verified,Same instructions as misc_init_stream_guards_58b9d5c with other addresses
 0x02aa6650,3,auto_return_zero_02aa6650,auto,edge-verified,Generated from the return zero template
 0x02aa6af0,5,auto_return_field_02aa6af0,auto,edge-verified,Generated from the return field template
 0x02aa7100,5,auto_return_field_02aa7100,auto,edge-verified,Generated from the return field template
@@ -39196,6 +39249,7 @@ address,size,name,system,status,notes
 0x02e5fa90,1,auto_empty_02e5fa90,auto,edge-verified,Generated from the empty template
 0x02e60b70,218,auto_push_value_by_reference_02e60b70,auto,edge-verified,Same instructions as misc_push_value_by_reference with other addresses
 0x02e61130,6,auto_return_constant_02e61130,auto,edge-verified,Generated from the return constant template
+0x02e61220,84,auto_init_stream_guards_02e61220,auto,edge-verified,Same instructions as misc_init_stream_guards_58b9d5c with other addresses
 0x02e61670,1,auto_empty_02e61670,auto,edge-verified,Generated from the empty template
 0x02e61680,1,auto_empty_02e61680,auto,edge-verified,Generated from the empty template
 0x02e629a0,6,auto_return_constant_02e629a0,auto,edge-verified,Generated from the return constant template
