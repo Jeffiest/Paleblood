@@ -21086,6 +21086,7 @@ address,size,name,system,status,notes
 0x01dcc5f0,3,auto_return_zero_01dcc5f0,auto,edge-verified,Generated from the return zero template
 0x01dcc870,6,auto_return_constant_01dcc870,auto,edge-verified,Generated from the return constant template
 0x01dccb10,50,auto_member_owner_delete_01dccb10,auto,edge-verified,Same instructions as misc_member_owner_delete_02243fc0 with other addresses
+0x01dccb50,42,auto_member_owner_destroy_01dccb50,auto,edge-verified,Same instructions as misc_member_owner_destroy_02244000 with other addresses
 0x01dcce50,80,auto_forward_when_flagged_01dcce50,auto,edge-verified,Same instructions as misc_forward_when_flagged_022441c0 with other addresses
 0x01dccea0,1,auto_empty_01dccea0,auto,edge-verified,Generated from the empty template
 0x01dcd030,205,auto_initialize_static_wide_string_01dcd030,auto,edge-verified,Same instructions as engine_initialize_static_wide_string_018867e0 with other addresses
@@ -22304,6 +22305,7 @@ address,size,name,system,status,notes
 0x01e61fc0,3,auto_return_zero_01e61fc0,auto,edge-verified,Generated from the return zero template
 0x01e62240,6,auto_return_constant_01e62240,auto,edge-verified,Generated from the return constant template
 0x01e624e0,50,auto_member_owner_delete_01e624e0,auto,edge-verified,Same instructions as misc_member_owner_delete_02243fc0 with other addresses
+0x01e62520,42,auto_member_owner_destroy_01e62520,auto,edge-verified,Same instructions as misc_member_owner_destroy_02244000 with other addresses
 0x01e627a0,80,auto_forward_when_flagged_01e627a0,auto,edge-verified,Same instructions as misc_forward_when_flagged_022441c0 with other addresses
 0x01e62880,205,auto_initialize_static_wide_string_01e62880,auto,edge-verified,Same instructions as engine_initialize_static_wide_string_018867e0 with other addresses
 0x01e62d60,5,auto_jump_thunk_01e62d60,auto,edge-verified,Same instructions as misc_jump_thunk with other addresses
@@ -28311,6 +28313,7 @@ address,size,name,system,status,notes
 0x02145270,1,auto_empty_02145270,auto,edge-verified,Generated from the empty template
 0x021453b0,205,auto_initialize_static_wide_string_021453b0,auto,edge-verified,Same instructions as engine_initialize_static_wide_string_018867e0 with other addresses
 0x02145750,50,auto_member_owner_delete_02145750,auto,edge-verified,Same instructions as misc_member_owner_delete_02243fc0 with other addresses
+0x02145790,42,auto_member_owner_destroy_02145790,auto,edge-verified,Same instructions as misc_member_owner_destroy_02244000 with other addresses
 0x02145930,80,auto_forward_when_flagged_02145930,auto,edge-verified,Same instructions as misc_forward_when_flagged_022441c0 with other addresses
 0x021466e0,205,auto_initialize_static_wide_string_021466e0,auto,edge-verified,Same instructions as engine_initialize_static_wide_string_018867e0 with other addresses
 0x02146bc0,5,auto_jump_thunk_02146bc0,auto,edge-verified,Same instructions as misc_jump_thunk with other addresses
@@ -28340,6 +28343,7 @@ address,size,name,system,status,notes
 0x02148880,3,auto_return_zero_02148880,auto,edge-verified,Generated from the return zero template
 0x02148920,205,auto_initialize_static_wide_string_02148920,auto,edge-verified,Same instructions as engine_initialize_static_wide_string_018867e0 with other addresses
 0x02148cc0,50,auto_member_owner_delete_02148cc0,auto,edge-verified,Same instructions as misc_member_owner_delete_02243fc0 with other addresses
+0x02148d00,42,auto_member_owner_destroy_02148d00,auto,edge-verified,Same instructions as misc_member_owner_destroy_02244000 with other addresses
 0x02148d30,3,auto_return_zero_02148d30,auto,edge-verified,Generated from the return zero template
 0x02148d40,3,auto_return_constant_02148d40,auto,edge-verified,Generated from the return constant template
 0x02148de0,205,auto_initialize_static_wide_string_02148de0,auto,edge-verified,Same instructions as engine_initialize_static_wide_string_018867e0 with other addresses
@@ -28632,6 +28636,7 @@ address,size,name,system,status,notes
 0x02175160,3,auto_return_zero_02175160,auto,edge-verified,Generated from the return zero template
 0x021753e0,6,auto_return_constant_021753e0,auto,edge-verified,Generated from the return constant template
 0x02175680,50,auto_member_owner_delete_02175680,auto,edge-verified,Same instructions as misc_member_owner_delete_02243fc0 with other addresses
+0x021756c0,42,auto_member_owner_destroy_021756c0,auto,edge-verified,Same instructions as misc_member_owner_destroy_02244000 with other addresses
 0x02175880,80,auto_forward_when_flagged_02175880,auto,edge-verified,Same instructions as misc_forward_when_flagged_022441c0 with other addresses
 0x02175960,205,auto_initialize_static_wide_string_02175960,auto,edge-verified,Same instructions as engine_initialize_static_wide_string_018867e0 with other addresses
 0x02175e40,5,auto_jump_thunk_02175e40,auto,edge-verified,Same instructions as misc_jump_thunk with other addresses
@@ -28657,6 +28662,7 @@ address,size,name,system,status,notes
 0x02176aa0,3,auto_return_zero_02176aa0,auto,edge-verified,Generated from the return zero template
 0x02176d20,6,auto_return_constant_02176d20,auto,edge-verified,Generated from the return constant template
 0x02176fc0,50,auto_member_owner_delete_02176fc0,auto,edge-verified,Same instructions as misc_member_owner_delete_02243fc0 with other addresses
+0x02177000,42,auto_member_owner_destroy_02177000,auto,edge-verified,Same instructions as misc_member_owner_destroy_02244000 with other addresses
 0x021771c0,80,auto_forward_when_flagged_021771c0,auto,edge-verified,Same instructions as misc_forward_when_flagged_022441c0 with other addresses
 0x021772a0,205,auto_initialize_static_wide_string_021772a0,auto,edge-verified,Same instructions as engine_initialize_static_wide_string_018867e0 with other addresses
 0x02177780,5,auto_jump_thunk_02177780,auto,edge-verified,Same instructions as misc_jump_thunk with other addresses
@@ -28682,6 +28688,7 @@ address,size,name,system,status,notes
 0x021783e0,3,auto_return_zero_021783e0,auto,edge-verified,Generated from the return zero template
 0x02178660,6,auto_return_constant_02178660,auto,edge-verified,Generated from the return constant template
 0x02178900,50,auto_member_owner_delete_02178900,auto,edge-verified,Same instructions as misc_member_owner_delete_02243fc0 with other addresses
+0x02178940,42,auto_member_owner_destroy_02178940,auto,edge-verified,Same instructions as misc_member_owner_destroy_02244000 with other addresses
 0x02178b00,205,auto_initialize_static_wide_string_02178b00,auto,edge-verified,Same instructions as engine_initialize_static_wide_string_018867e0 with other addresses
 0x02178fe0,5,auto_jump_thunk_02178fe0,auto,edge-verified,Same instructions as misc_jump_thunk with other addresses
 0x02178ff0,28,auto_destroy_then_release_02178ff0,auto,edge-verified,Same instructions as misc_destroy_then_release with other addresses
@@ -28705,6 +28712,7 @@ address,size,name,system,status,notes
 0x02179dc0,3,auto_return_zero_02179dc0,auto,edge-verified,Generated from the return zero template
 0x0217a040,6,auto_return_constant_0217a040,auto,edge-verified,Generated from the return constant template
 0x0217a2e0,50,auto_member_owner_delete_0217a2e0,auto,edge-verified,Same instructions as misc_member_owner_delete_02243fc0 with other addresses
+0x0217a320,42,auto_member_owner_destroy_0217a320,auto,edge-verified,Same instructions as misc_member_owner_destroy_02244000 with other addresses
 0x0217a4f0,80,auto_forward_when_flagged_0217a4f0,auto,edge-verified,Same instructions as misc_forward_when_flagged_022441c0 with other addresses
 0x0217a5d0,205,auto_initialize_static_wide_string_0217a5d0,auto,edge-verified,Same instructions as engine_initialize_static_wide_string_018867e0 with other addresses
 0x0217aab0,5,auto_jump_thunk_0217aab0,auto,edge-verified,Same instructions as misc_jump_thunk with other addresses
@@ -28730,6 +28738,7 @@ address,size,name,system,status,notes
 0x0217b720,3,auto_return_zero_0217b720,auto,edge-verified,Generated from the return zero template
 0x0217b9a0,6,auto_return_constant_0217b9a0,auto,edge-verified,Generated from the return constant template
 0x0217bc40,50,auto_member_owner_delete_0217bc40,auto,edge-verified,Same instructions as misc_member_owner_delete_02243fc0 with other addresses
+0x0217bc80,42,auto_member_owner_destroy_0217bc80,auto,edge-verified,Same instructions as misc_member_owner_destroy_02244000 with other addresses
 0x0217be40,80,auto_forward_when_flagged_0217be40,auto,edge-verified,Same instructions as misc_forward_when_flagged_022441c0 with other addresses
 0x0217bf20,205,auto_initialize_static_wide_string_0217bf20,auto,edge-verified,Same instructions as engine_initialize_static_wide_string_018867e0 with other addresses
 0x0217c400,5,auto_jump_thunk_0217c400,auto,edge-verified,Same instructions as misc_jump_thunk with other addresses
@@ -28755,6 +28764,7 @@ address,size,name,system,status,notes
 0x0217d060,3,auto_return_zero_0217d060,auto,edge-verified,Generated from the return zero template
 0x0217d2e0,6,auto_return_constant_0217d2e0,auto,edge-verified,Generated from the return constant template
 0x0217d580,50,auto_member_owner_delete_0217d580,auto,edge-verified,Same instructions as misc_member_owner_delete_02243fc0 with other addresses
+0x0217d5c0,42,auto_member_owner_destroy_0217d5c0,auto,edge-verified,Same instructions as misc_member_owner_destroy_02244000 with other addresses
 0x0217d780,80,auto_forward_when_flagged_0217d780,auto,edge-verified,Same instructions as misc_forward_when_flagged_022441c0 with other addresses
 0x0217d860,205,auto_initialize_static_wide_string_0217d860,auto,edge-verified,Same instructions as engine_initialize_static_wide_string_018867e0 with other addresses
 0x0217dd40,5,auto_jump_thunk_0217dd40,auto,edge-verified,Same instructions as misc_jump_thunk with other addresses
@@ -28793,6 +28803,7 @@ address,size,name,system,status,notes
 0x0217f980,3,auto_return_zero_0217f980,auto,edge-verified,Generated from the return zero template
 0x0217fa20,6,auto_return_constant_0217fa20,auto,edge-verified,Generated from the return constant template
 0x0217fcc0,50,auto_member_owner_delete_0217fcc0,auto,edge-verified,Same instructions as misc_member_owner_delete_02243fc0 with other addresses
+0x0217fd00,42,auto_member_owner_destroy_0217fd00,auto,edge-verified,Same instructions as misc_member_owner_destroy_02244000 with other addresses
 0x0217fed0,80,auto_forward_when_flagged_0217fed0,auto,edge-verified,Same instructions as misc_forward_when_flagged_022441c0 with other addresses
 0x0217ffb0,205,engine_initialize_static_wide_string_0217ffb0,engine,edge-verified,Guarded static empty wide string; byte-only entry test; captured allocator; exact partial stores; destructor registration before full guard publication
 0x02180490,5,auto_jump_thunk_02180490,auto,edge-verified,Same instructions as misc_jump_thunk with other addresses
@@ -28910,6 +28921,7 @@ address,size,name,system,status,notes
 0x0218d0c0,3,auto_return_zero_0218d0c0,auto,edge-verified,Generated from the return zero template
 0x0218d160,6,auto_return_constant_0218d160,auto,edge-verified,Generated from the return constant template
 0x0218d400,50,auto_member_owner_delete_0218d400,auto,edge-verified,Same instructions as misc_member_owner_delete_02243fc0 with other addresses
+0x0218d440,42,auto_member_owner_destroy_0218d440,auto,edge-verified,Same instructions as misc_member_owner_destroy_02244000 with other addresses
 0x0218d600,80,auto_forward_when_flagged_0218d600,auto,edge-verified,Same instructions as misc_forward_when_flagged_022441c0 with other addresses
 0x0218d6e0,205,auto_initialize_static_wide_string_0218d6e0,auto,edge-verified,Same instructions as engine_initialize_static_wide_string_018867e0 with other addresses
 0x0218dbc0,5,auto_jump_thunk_0218dbc0,auto,edge-verified,Same instructions as misc_jump_thunk with other addresses
@@ -29273,6 +29285,7 @@ address,size,name,system,status,notes
 0x021c29d0,3,auto_return_zero_021c29d0,auto,edge-verified,Generated from the return zero template
 0x021c2c50,6,auto_return_constant_021c2c50,auto,edge-verified,Generated from the return constant template
 0x021c2f00,50,auto_member_owner_delete_021c2f00,auto,edge-verified,Same instructions as misc_member_owner_delete_02243fc0 with other addresses
+0x021c2f40,42,auto_member_owner_destroy_021c2f40,auto,edge-verified,Same instructions as misc_member_owner_destroy_02244000 with other addresses
 0x021c3120,80,auto_forward_when_flagged_021c3120,auto,edge-verified,Same instructions as misc_forward_when_flagged_022441c0 with other addresses
 0x021c3200,205,auto_initialize_static_wide_string_021c3200,auto,edge-verified,Same instructions as engine_initialize_static_wide_string_018867e0 with other addresses
 0x021c36e0,5,auto_jump_thunk_021c36e0,auto,edge-verified,Same instructions as misc_jump_thunk with other addresses
@@ -29300,6 +29313,7 @@ address,size,name,system,status,notes
 0x021c4220,3,auto_return_zero_021c4220,auto,edge-verified,Generated from the return zero template
 0x021c44a0,6,auto_return_constant_021c44a0,auto,edge-verified,Generated from the return constant template
 0x021c4730,50,auto_member_owner_delete_021c4730,auto,edge-verified,Same instructions as misc_member_owner_delete_02243fc0 with other addresses
+0x021c4770,42,auto_member_owner_destroy_021c4770,auto,edge-verified,Same instructions as misc_member_owner_destroy_02244000 with other addresses
 0x021c4830,7,auto_return_field_021c4830,auto,edge-verified,Generated from the return field template
 0x021c4960,205,auto_initialize_static_wide_string_021c4960,auto,edge-verified,Same instructions as engine_initialize_static_wide_string_018867e0 with other addresses
 0x021c4e40,5,auto_jump_thunk_021c4e40,auto,edge-verified,Same instructions as misc_jump_thunk with other addresses
@@ -29576,6 +29590,7 @@ address,size,name,system,status,notes
 0x02203210,5,auto_jump_thunk_02203210,auto,edge-verified,Same instructions as misc_jump_thunk with other addresses
 0x022032d0,205,auto_initialize_static_wide_string_022032d0,auto,edge-verified,Same instructions as engine_initialize_static_wide_string_018867e0 with other addresses
 0x02203670,50,auto_member_owner_delete_02203670,auto,edge-verified,Same instructions as misc_member_owner_delete_02243fc0 with other addresses
+0x022036b0,42,auto_member_owner_destroy_022036b0,auto,edge-verified,Same instructions as misc_member_owner_destroy_02244000 with other addresses
 0x02203840,80,auto_forward_when_flagged_02203840,auto,edge-verified,Same instructions as misc_forward_when_flagged_022441c0 with other addresses
 0x02203920,205,auto_initialize_static_wide_string_02203920,auto,edge-verified,Same instructions as engine_initialize_static_wide_string_018867e0 with other addresses
 0x02203e10,5,auto_jump_thunk_02203e10,auto,edge-verified,Same instructions as misc_jump_thunk with other addresses
@@ -29611,6 +29626,7 @@ address,size,name,system,status,notes
 0x02206780,3,auto_return_zero_02206780,auto,edge-verified,Generated from the return zero template
 0x02206a00,6,auto_return_constant_02206a00,auto,edge-verified,Generated from the return constant template
 0x02206ca0,50,auto_member_owner_delete_02206ca0,auto,edge-verified,Same instructions as misc_member_owner_delete_02243fc0 with other addresses
+0x02206ce0,42,auto_member_owner_destroy_02206ce0,auto,edge-verified,Same instructions as misc_member_owner_destroy_02244000 with other addresses
 0x02206e80,80,auto_forward_when_flagged_02206e80,auto,edge-verified,Same instructions as misc_forward_when_flagged_022441c0 with other addresses
 0x02206f60,205,auto_initialize_static_wide_string_02206f60,auto,edge-verified,Same instructions as engine_initialize_static_wide_string_018867e0 with other addresses
 0x02207450,5,auto_jump_thunk_02207450,auto,edge-verified,Same instructions as misc_jump_thunk with other addresses
@@ -29635,6 +29651,7 @@ address,size,name,system,status,notes
 0x02208180,3,auto_return_zero_02208180,auto,edge-verified,Generated from the return zero template
 0x02208400,6,auto_return_constant_02208400,auto,edge-verified,Generated from the return constant template
 0x022086a0,50,auto_member_owner_delete_022086a0,auto,edge-verified,Same instructions as misc_member_owner_delete_02243fc0 with other addresses
+0x022086e0,42,auto_member_owner_destroy_022086e0,auto,edge-verified,Same instructions as misc_member_owner_destroy_02244000 with other addresses
 0x02208890,80,auto_forward_when_flagged_02208890,auto,edge-verified,Same instructions as misc_forward_when_flagged_022441c0 with other addresses
 0x02208970,205,auto_initialize_static_wide_string_02208970,auto,edge-verified,Same instructions as engine_initialize_static_wide_string_018867e0 with other addresses
 0x02208e60,5,auto_jump_thunk_02208e60,auto,edge-verified,Same instructions as misc_jump_thunk with other addresses
@@ -29670,6 +29687,7 @@ address,size,name,system,status,notes
 0x0220aae0,3,auto_return_zero_0220aae0,auto,edge-verified,Generated from the return zero template
 0x0220ad60,6,auto_return_constant_0220ad60,auto,edge-verified,Generated from the return constant template
 0x0220b000,50,auto_member_owner_delete_0220b000,auto,edge-verified,Same instructions as misc_member_owner_delete_02243fc0 with other addresses
+0x0220b040,42,auto_member_owner_destroy_0220b040,auto,edge-verified,Same instructions as misc_member_owner_destroy_02244000 with other addresses
 0x0220b220,80,auto_forward_when_flagged_0220b220,auto,edge-verified,Same instructions as misc_forward_when_flagged_022441c0 with other addresses
 0x0220b300,205,auto_initialize_static_wide_string_0220b300,auto,edge-verified,Same instructions as engine_initialize_static_wide_string_018867e0 with other addresses
 0x0220b7e0,5,auto_jump_thunk_0220b7e0,auto,edge-verified,Same instructions as misc_jump_thunk with other addresses
@@ -30780,6 +30798,7 @@ address,size,name,system,status,notes
 0x022e48a0,3,auto_return_zero_022e48a0,auto,edge-verified,Generated from the return zero template
 0x022e4b20,6,auto_return_constant_022e4b20,auto,edge-verified,Generated from the return constant template
 0x022e4f00,50,auto_member_owner_delete_022e4f00,auto,edge-verified,Same instructions as misc_member_owner_delete_02243fc0 with other addresses
+0x022e4f40,42,auto_member_owner_destroy_022e4f40,auto,edge-verified,Same instructions as misc_member_owner_destroy_02244000 with other addresses
 0x022e51b0,80,auto_forward_when_flagged_022e51b0,auto,edge-verified,Same instructions as misc_forward_when_flagged_022441c0 with other addresses
 0x022e5290,205,auto_initialize_static_wide_string_022e5290,auto,edge-verified,Same instructions as engine_initialize_static_wide_string_018867e0 with other addresses
 0x022e5770,5,auto_jump_thunk_022e5770,auto,edge-verified,Same instructions as misc_jump_thunk with other addresses
@@ -30897,6 +30916,7 @@ address,size,name,system,status,notes
 0x022ef8e0,3,auto_return_zero_022ef8e0,auto,edge-verified,Generated from the return zero template
 0x022efb60,6,auto_return_constant_022efb60,auto,edge-verified,Generated from the return constant template
 0x022efe00,50,auto_member_owner_delete_022efe00,auto,edge-verified,Same instructions as misc_member_owner_delete_02243fc0 with other addresses
+0x022efe40,42,auto_member_owner_destroy_022efe40,auto,edge-verified,Same instructions as misc_member_owner_destroy_02244000 with other addresses
 0x022effe0,80,auto_forward_when_flagged_022effe0,auto,edge-verified,Same instructions as misc_forward_when_flagged_022441c0 with other addresses
 0x022f00c0,205,auto_initialize_static_wide_string_022f00c0,auto,edge-verified,Same instructions as engine_initialize_static_wide_string_018867e0 with other addresses
 0x022f05a0,5,auto_jump_thunk_022f05a0,auto,edge-verified,Same instructions as misc_jump_thunk with other addresses
@@ -30921,6 +30941,7 @@ address,size,name,system,status,notes
 0x022f1290,3,auto_return_zero_022f1290,auto,edge-verified,Generated from the return zero template
 0x022f1510,6,auto_return_constant_022f1510,auto,edge-verified,Generated from the return constant template
 0x022f15d0,50,auto_member_owner_delete_022f15d0,auto,edge-verified,Same instructions as misc_member_owner_delete_02243fc0 with other addresses
+0x022f1610,42,auto_member_owner_destroy_022f1610,auto,edge-verified,Same instructions as misc_member_owner_destroy_02244000 with other addresses
 0x022f1760,80,auto_forward_when_flagged_022f1760,auto,edge-verified,Same instructions as misc_forward_when_flagged_022441c0 with other addresses
 0x022f1840,205,auto_initialize_static_wide_string_022f1840,auto,edge-verified,Same instructions as engine_initialize_static_wide_string_018867e0 with other addresses
 0x022f2420,205,auto_initialize_static_wide_string_022f2420,auto,edge-verified,Same instructions as engine_initialize_static_wide_string_018867e0 with other addresses
@@ -30976,6 +30997,7 @@ address,size,name,system,status,notes
 0x022f7830,3,auto_return_zero_022f7830,auto,edge-verified,Generated from the return zero template
 0x022f7ab0,6,auto_return_constant_022f7ab0,auto,edge-verified,Generated from the return constant template
 0x022f7d50,50,auto_member_owner_delete_022f7d50,auto,edge-verified,Same instructions as misc_member_owner_delete_02243fc0 with other addresses
+0x022f7d90,42,auto_member_owner_destroy_022f7d90,auto,edge-verified,Same instructions as misc_member_owner_destroy_02244000 with other addresses
 0x022f7eb0,80,auto_forward_when_flagged_022f7eb0,auto,edge-verified,Same instructions as misc_forward_when_flagged_022441c0 with other addresses
 0x022f7f90,205,auto_initialize_static_wide_string_022f7f90,auto,edge-verified,Same instructions as engine_initialize_static_wide_string_018867e0 with other addresses
 0x022f8470,5,auto_jump_thunk_022f8470,auto,edge-verified,Same instructions as misc_jump_thunk with other addresses
@@ -31030,6 +31052,7 @@ address,size,name,system,status,notes
 0x02306d30,39,auto_tail_call_member_target_02306d30,auto,edge-verified,Same instructions as misc_tail_call_member_target with other addresses
 0x02306d60,63,auto_member_call_or_fallback_02306d60,auto,edge-verified,Same instructions as misc_member_call_or_fallback with other addresses
 0x02307030,50,auto_member_owner_delete_02307030,auto,edge-verified,Same instructions as misc_member_owner_delete_02243fc0 with other addresses
+0x02307070,42,auto_member_owner_destroy_02307070,auto,edge-verified,Same instructions as misc_member_owner_destroy_02244000 with other addresses
 0x02307230,80,auto_forward_when_flagged_02307230,auto,edge-verified,Same instructions as misc_forward_when_flagged_022441c0 with other addresses
 0x02307310,205,auto_initialize_static_wide_string_02307310,auto,edge-verified,Same instructions as engine_initialize_static_wide_string_018867e0 with other addresses
 0x023077f0,5,auto_jump_thunk_023077f0,auto,edge-verified,Same instructions as misc_jump_thunk with other addresses
@@ -31058,6 +31081,7 @@ address,size,name,system,status,notes
 0x02308ad0,3,auto_return_zero_02308ad0,auto,edge-verified,Generated from the return zero template
 0x02308d50,6,auto_return_constant_02308d50,auto,edge-verified,Generated from the return constant template
 0x02308ff0,50,auto_member_owner_delete_02308ff0,auto,edge-verified,Same instructions as misc_member_owner_delete_02243fc0 with other addresses
+0x02309030,42,auto_member_owner_destroy_02309030,auto,edge-verified,Same instructions as misc_member_owner_destroy_02244000 with other addresses
 0x02309210,80,auto_forward_when_flagged_02309210,auto,edge-verified,Same instructions as misc_forward_when_flagged_022441c0 with other addresses
 0x023092f0,205,auto_initialize_static_wide_string_023092f0,auto,edge-verified,Same instructions as engine_initialize_static_wide_string_018867e0 with other addresses
 0x023097d0,5,auto_jump_thunk_023097d0,auto,edge-verified,Same instructions as misc_jump_thunk with other addresses
