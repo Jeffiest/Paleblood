@@ -18,4 +18,5 @@ address,name,size,cases,addresses
 0x026e8310,misc_invoke_callback,40,game/misc/invoke_callback_cases.py,
 0x02b3a3c0,misc_push_value_by_reference,218,game/misc/push_value_by_reference_cases.py,0x02b3ad50
 0x02b3bda0,engine_tree_destroy_nodes,81,game/engine/tree_destroy_nodes_cases.py,
+0x02b3dfd0,misc_destroy_node_and_free,59,game/misc/destroy_node_and_free_cases.py,0x0247b720
 0x02b3e170,misc_set_link,5,game/misc/set_link_cases.py,
