@@ -12,10 +12,12 @@ constants as words:
   @N=VALUE       the constant in position N of the function is VALUE
   KIND:OLD>NEW   a constant that is OLD in the exemplar is NEW here; KIND is d for a displacement
                  and i1, i2, i4 or i8 for a constant of that many bytes
-The exemplar's case script is either a template (exchange "slots"), in which NEAR_SLOT_N stands for
-the constant in position N, or the script written for the exemplar (exchange "text"), in which each
-number that is one of the OLD constants is rewritten to the NEW one. Addresses are exchanged as for
-a twin (twin_cases.py). --script keeps the rewritten script in FILE.
+Its last field says how its cases are made, and picks the exemplar's row with the same word:
+  slots  from a template written for the family, in which NEAR_SLOT_N stands for the constant in
+         position N
+  text   from the script written for the exemplar, in which each number that is one of the OLD
+         constants is rewritten to the NEW one
+Addresses are exchanged as for a twin (twin_cases.py). --script keeps the rewritten script in FILE.
 """
 import csv
 import os
@@ -133,7 +135,8 @@ def rows(name):
     if near is None:
         raise SystemExit(f'{name} is not in near_copies.csv')
     with open(HERE / 'near_exemplars.csv', newline='') as stream:
-        exemplar = next(row for row in csv.DictReader(stream) if row['name'] == near['exemplar'])
+        exemplar = next(row for row in csv.DictReader(stream)
+                        if row['name'] == near['exemplar'] and row['exchange'] == near['exchange'])
     return near, exemplar
 
 
