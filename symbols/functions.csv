@@ -6956,15 +6956,19 @@ address,size,name,system,status,notes
 0x016255a0,1,auto_empty_016255a0,auto,edge-verified,Generated from the empty template
 0x016255c0,1,auto_empty_016255c0,auto,edge-verified,Generated from the empty template
 0x016260a0,205,auto_initialize_static_wide_string_016260a0,auto,edge-verified,Same instructions as engine_initialize_static_wide_string_018867e0 with other addresses
+0x01626170,89,auto_init_rows_fields_01626170,auto,edge-verified,Same instructions as misc_init_rows_fields_5940ea0 with other addresses
 0x01626310,4,auto_return_field_01626310,auto,edge-verified,Generated from the return field template
 0x01626320,4,auto_return_field_01626320,auto,edge-verified,Generated from the return field template
 0x016263c0,205,auto_initialize_static_wide_string_016263c0,auto,edge-verified,Same instructions as engine_initialize_static_wide_string_018867e0 with other addresses
+0x01626490,89,auto_init_rows_fields_01626490,auto,edge-verified,Same instructions as misc_init_rows_fields_5940ea0 with other addresses
 0x01626f80,205,auto_initialize_static_wide_string_01626f80,auto,edge-verified,Same instructions as engine_initialize_static_wide_string_018867e0 with other addresses
 0x01627cd0,205,auto_initialize_static_wide_string_01627cd0,auto,edge-verified,Same instructions as engine_initialize_static_wide_string_018867e0 with other addresses
+0x01627da0,89,auto_init_rows_fields_01627da0,auto,edge-verified,Same instructions as misc_init_rows_fields_5940ea0 with other addresses
 0x01628540,1,auto_empty_01628540,auto,edge-verified,Generated from the empty template
 0x01628550,1,auto_empty_01628550,auto,edge-verified,Generated from the empty template
 0x01628560,1,auto_empty_01628560,auto,edge-verified,Generated from the empty template
 0x0162a230,205,auto_initialize_static_wide_string_0162a230,auto,edge-verified,Same instructions as engine_initialize_static_wide_string_018867e0 with other addresses
+0x0162a300,89,auto_init_rows_fields_0162a300,auto,edge-verified,Same instructions as misc_init_rows_fields_5940ea0 with other addresses
 0x0162a360,1,auto_empty_0162a360,auto,edge-verified,Generated from the empty template
 0x0162a3c0,1,auto_empty_0162a3c0,auto,edge-verified,Generated from the empty template
 0x0162ade0,5,auto_set_link_0162ade0,auto,edge-verified,Same instructions as misc_set_link with other addresses
@@ -6987,6 +6991,7 @@ address,size,name,system,status,notes
 0x0162ee10,59,auto_wide_string_destroy_0162ee10,auto,edge-verified,Same instructions as engine_wide_string_destroy with other addresses
 0x0162f890,1,auto_empty_0162f890,auto,edge-verified,Generated from the empty template
 0x0162fa80,205,auto_initialize_static_wide_string_0162fa80,auto,edge-verified,Same instructions as engine_initialize_static_wide_string_018867e0 with other addresses
+0x0162fb50,89,auto_init_rows_fields_0162fb50,auto,edge-verified,Same instructions as misc_init_rows_fields_5940ea0 with other addresses
 0x0162fd70,6,auto_return_constant_0162fd70,auto,edge-verified,Generated from the return constant template
 0x01631540,205,auto_initialize_static_wide_string_01631540,auto,edge-verified,Same instructions as engine_initialize_static_wide_string_018867e0 with other addresses
 0x016322d0,205,auto_initialize_static_wide_string_016322d0,auto,edge-verified,Same instructions as engine_initialize_static_wide_string_018867e0 with other addresses
@@ -7011,6 +7016,7 @@ address,size,name,system,status,notes
 0x0163c800,1,auto_empty_0163c800,auto,edge-verified,Generated from the empty template
 0x0163da10,4,auto_return_field_0163da10,auto,edge-verified,Generated from the return field template
 0x0163e710,205,auto_initialize_static_wide_string_0163e710,auto,edge-verified,Same instructions as engine_initialize_static_wide_string_018867e0 with other addresses
+0x0163e7e0,89,auto_init_rows_fields_0163e7e0,auto,edge-verified,Same instructions as misc_init_rows_fields_5940ea0 with other addresses
 0x0163f120,1,auto_empty_0163f120,auto,edge-verified,Generated from the empty template
 0x0163f3e0,1,auto_empty_0163f3e0,auto,edge-verified,Generated from the empty template
 0x0163f680,205,auto_initialize_static_wide_string_0163f680,auto,edge-verified,Same instructions as engine_initialize_static_wide_string_018867e0 with other addresses
@@ -7045,6 +7051,7 @@ address,size,name,system,status,notes
 0x01643f50,205,auto_initialize_static_wide_string_01643f50,auto,edge-verified,Same instructions as engine_initialize_static_wide_string_018867e0 with other addresses
 0x01644070,28,auto_destroy_then_release_01644070,auto,edge-verified,Same instructions as misc_destroy_then_release with other addresses
 0x01644640,205,auto_initialize_static_wide_string_01644640,auto,edge-verified,Same instructions as engine_initialize_static_wide_string_018867e0 with other addresses
+0x01644710,89,auto_init_rows_fields_01644710,auto,edge-verified,Same instructions as misc_init_rows_fields_5940ea0 with other addresses
 0x01644780,28,auto_destroy_then_release_01644780,auto,edge-verified,Same instructions as misc_destroy_then_release with other addresses
 0x01644980,205,auto_initialize_static_wide_string_01644980,auto,edge-verified,Same instructions as engine_initialize_static_wide_string_018867e0 with other addresses
 0x01644aa0,28,auto_destroy_then_release_01644aa0,auto,edge-verified,Same instructions as misc_destroy_then_release with other addresses
@@ -7052,6 +7059,7 @@ address,size,name,system,status,notes
 0x016452a0,6,auto_return_constant_016452a0,auto,edge-verified,Generated from the return constant template
 0x016452b0,3,auto_return_zero_016452b0,auto,edge-verified,Generated from the return zero template
 0x01645350,205,auto_initialize_static_wide_string_01645350,auto,edge-verified,Same instructions as engine_initialize_static_wide_string_018867e0 with other addresses
+0x01645420,89,auto_init_rows_fields_01645420,auto,edge-verified,Same instructions as misc_init_rows_fields_5940ea0 with other addresses
 0x01645490,28,auto_destroy_then_release_01645490,auto,edge-verified,Same instructions as misc_destroy_then_release with other addresses
 0x01645b20,205,auto_initialize_static_wide_string_01645b20,auto,edge-verified,Same instructions as engine_initialize_static_wide_string_018867e0 with other addresses
 0x01645c40,28,auto_destroy_then_release_01645c40,auto,edge-verified,Same instructions as misc_destroy_then_release with other addresses
@@ -7063,6 +7071,7 @@ address,size,name,system,status,notes
 0x016471a0,31,auto_set_vtable_after_call_016471a0,auto,edge-verified,Same instructions as misc_set_vtable_after_call with other addresses
 0x01648000,3,auto_return_zero_01648000,auto,edge-verified,Generated from the return zero template
 0x016480a0,205,auto_initialize_static_wide_string_016480a0,auto,edge-verified,Same instructions as engine_initialize_static_wide_string_018867e0 with other addresses
+0x01648170,89,auto_init_rows_fields_01648170,auto,edge-verified,Same instructions as misc_init_rows_fields_5940ea0 with other addresses
 0x016481e0,28,auto_destroy_then_release_016481e0,auto,edge-verified,Same instructions as misc_destroy_then_release with other addresses
 0x01648210,28,auto_destroy_then_release_01648210,auto,edge-verified,Same instructions as misc_destroy_then_release with other addresses
 0x01648240,28,auto_destroy_then_release_01648240,auto,edge-verified,Same instructions as misc_destroy_then_release with other addresses
@@ -7083,6 +7092,7 @@ address,size,name,system,status,notes
 0x0164aea0,28,auto_destroy_then_release_0164aea0,auto,edge-verified,Same instructions as misc_destroy_then_release with other addresses
 0x0164ed00,1,auto_empty_0164ed00,auto,edge-verified,Generated from the empty template
 0x0164eea0,205,auto_initialize_static_wide_string_0164eea0,auto,edge-verified,Same instructions as engine_initialize_static_wide_string_018867e0 with other addresses
+0x0164ef70,89,auto_init_rows_fields_0164ef70,auto,edge-verified,Same instructions as misc_init_rows_fields_5940ea0 with other addresses
 0x0164efd0,1,auto_empty_0164efd0,auto,edge-verified,Generated from the empty template
 0x0164f030,1,auto_empty_0164f030,auto,edge-verified,Generated from the empty template
 0x016511c0,205,auto_initialize_static_wide_string_016511c0,auto,edge-verified,Same instructions as engine_initialize_static_wide_string_018867e0 with other addresses
@@ -7789,6 +7799,7 @@ address,size,name,system,status,notes
 0x016d0ef0,3,auto_return_zero_016d0ef0,auto,edge-verified,Generated from the return zero template
 0x016d1170,6,auto_return_constant_016d1170,auto,edge-verified,Generated from the return constant template
 0x016d1db0,205,auto_initialize_static_wide_string_016d1db0,auto,edge-verified,Same instructions as engine_initialize_static_wide_string_018867e0 with other addresses
+0x016d1e80,89,auto_init_rows_fields_016d1e80,auto,edge-verified,Same instructions as misc_init_rows_fields_5940ea0 with other addresses
 0x016d1ee0,218,auto_push_value_by_reference_016d1ee0,auto,edge-verified,Same instructions as misc_push_value_by_reference with other addresses
 0x016d3500,1,auto_empty_016d3500,auto,edge-verified,Generated from the empty template
 0x016d3750,205,auto_initialize_static_wide_string_016d3750,auto,edge-verified,Same instructions as engine_initialize_static_wide_string_018867e0 with other addresses
@@ -7797,6 +7808,7 @@ address,size,name,system,status,notes
 0x016d3980,1,auto_empty_016d3980,auto,edge-verified,Generated from the empty template
 0x016d5230,1,auto_empty_016d5230,auto,edge-verified,Generated from the empty template
 0x016d5380,205,auto_initialize_static_wide_string_016d5380,auto,edge-verified,Same instructions as engine_initialize_static_wide_string_018867e0 with other addresses
+0x016d5450,89,auto_init_rows_fields_016d5450,auto,edge-verified,Same instructions as misc_init_rows_fields_5940ea0 with other addresses
 0x016d54b0,1,auto_empty_016d54b0,auto,edge-verified,Generated from the empty template
 0x016d5510,1,auto_empty_016d5510,auto,edge-verified,Generated from the empty template
 0x016d6bf0,59,auto_wide_string_destroy_016d6bf0,auto,edge-verified,Same instructions as engine_wide_string_destroy with other addresses
@@ -7814,6 +7826,7 @@ address,size,name,system,status,notes
 0x016ddfb0,1,auto_empty_016ddfb0,auto,edge-verified,Generated from the empty template
 0x016df5a0,8,auto_fixed_address_016df5a0,auto,edge-verified,Same instructions as misc_plain_type_address with other addresses
 0x016df870,205,auto_initialize_static_wide_string_016df870,auto,edge-verified,Same instructions as engine_initialize_static_wide_string_018867e0 with other addresses
+0x016df940,89,auto_init_rows_fields_016df940,auto,edge-verified,Same instructions as misc_init_rows_fields_5940ea0 with other addresses
 0x016df9a0,1,auto_empty_016df9a0,auto,edge-verified,Generated from the empty template
 0x016dfa00,1,auto_empty_016dfa00,auto,edge-verified,Generated from the empty template
 0x016dfc80,81,auto_tree_destroy_nodes_016dfc80,auto,edge-verified,Same instructions as engine_tree_destroy_nodes with other addresses
@@ -7821,11 +7834,14 @@ address,size,name,system,status,notes
 0x016e0880,218,auto_push_value_by_reference_016e0880,auto,edge-verified,Same instructions as misc_push_value_by_reference with other addresses
 0x016e20b0,205,auto_initialize_static_wide_string_016e20b0,auto,edge-verified,Same instructions as engine_initialize_static_wide_string_018867e0 with other addresses
 0x016e5bd0,205,auto_initialize_static_wide_string_016e5bd0,auto,edge-verified,Same instructions as engine_initialize_static_wide_string_018867e0 with other addresses
+0x016e5ca0,89,auto_init_rows_fields_016e5ca0,auto,edge-verified,Same instructions as misc_init_rows_fields_5940ea0 with other addresses
 0x016e5d00,1,auto_empty_016e5d00,auto,edge-verified,Generated from the empty template
 0x016e5d60,1,auto_empty_016e5d60,auto,edge-verified,Generated from the empty template
 0x016e6270,1,auto_empty_016e6270,auto,edge-verified,Generated from the empty template
 0x016e64e0,205,auto_initialize_static_wide_string_016e64e0,auto,edge-verified,Same instructions as engine_initialize_static_wide_string_018867e0 with other addresses
+0x016e65b0,89,auto_init_rows_fields_016e65b0,auto,edge-verified,Same instructions as misc_init_rows_fields_5940ea0 with other addresses
 0x016e6a20,205,auto_initialize_static_wide_string_016e6a20,auto,edge-verified,Same instructions as engine_initialize_static_wide_string_018867e0 with other addresses
+0x016e6af0,89,auto_init_rows_fields_016e6af0,auto,edge-verified,Same instructions as misc_init_rows_fields_5940ea0 with other addresses
 0x016e6be0,205,auto_initialize_static_wide_string_016e6be0,auto,edge-verified,Same instructions as engine_initialize_static_wide_string_018867e0 with other addresses
 0x016e6f50,205,auto_initialize_static_wide_string_016e6f50,auto,edge-verified,Same instructions as engine_initialize_static_wide_string_018867e0 with other addresses
 0x016e73a0,205,auto_initialize_static_wide_string_016e73a0,auto,edge-verified,Same instructions as engine_initialize_static_wide_string_018867e0 with other addresses
@@ -7833,6 +7849,7 @@ address,size,name,system,status,notes
 0x016e7690,1,auto_empty_016e7690,auto,edge-verified,Generated from the empty template
 0x016e7a00,1,auto_empty_016e7a00,auto,edge-verified,Generated from the empty template
 0x016e7aa0,205,auto_initialize_static_wide_string_016e7aa0,auto,edge-verified,Same instructions as engine_initialize_static_wide_string_018867e0 with other addresses
+0x016e7b70,89,auto_init_rows_fields_016e7b70,auto,edge-verified,Same instructions as misc_init_rows_fields_5940ea0 with other addresses
 0x016e83e0,1,auto_empty_016e83e0,auto,edge-verified,Generated from the empty template
 0x016e83f0,1,auto_empty_016e83f0,auto,edge-verified,Generated from the empty template
 0x016e8490,205,auto_initialize_static_wide_string_016e8490,auto,edge-verified,Same instructions as engine_initialize_static_wide_string_018867e0 with other addresses
@@ -10695,6 +10712,7 @@ address,size,name,system,status,notes
 0x0192d6a0,205,auto_initialize_static_wide_string_0192d6a0,auto,edge-verified,Same instructions as engine_initialize_static_wide_string_018867e0 with other addresses
 0x0192d9d0,5,auto_set_link_0192d9d0,auto,edge-verified,Same instructions as misc_set_link with other addresses
 0x0192e690,205,auto_initialize_static_wide_string_0192e690,auto,edge-verified,Same instructions as engine_initialize_static_wide_string_018867e0 with other addresses
+0x0192e760,89,auto_init_rows_fields_0192e760,auto,edge-verified,Same instructions as misc_init_rows_fields_5940ea0 with other addresses
 0x0192e7c0,3,auto_return_zero_0192e7c0,auto,edge-verified,Generated from the return zero template
 0x0192e7d0,3,auto_return_zero_0192e7d0,auto,edge-verified,Generated from the return zero template
 0x0192e7e0,1,auto_empty_0192e7e0,auto,edge-verified,Generated from the empty template
@@ -10900,10 +10918,12 @@ address,size,name,system,status,notes
 0x019974e0,8,auto_fixed_address_019974e0,auto,edge-verified,Same instructions as misc_plain_type_address with other addresses
 0x01997580,205,auto_initialize_static_wide_string_01997580,auto,edge-verified,Same instructions as engine_initialize_static_wide_string_018867e0 with other addresses
 0x01998c90,205,auto_initialize_static_wide_string_01998c90,auto,edge-verified,Same instructions as engine_initialize_static_wide_string_018867e0 with other addresses
+0x01998d60,89,auto_init_rows_fields_01998d60,auto,edge-verified,Same instructions as misc_init_rows_fields_5940ea0 with other addresses
 0x01998dc0,1,auto_empty_01998dc0,auto,edge-verified,Generated from the empty template
 0x01998ee0,3,auto_return_constant_01998ee0,auto,edge-verified,Generated from the return constant template
 0x01998ef0,1,auto_empty_01998ef0,auto,edge-verified,Generated from the empty template
 0x01998f90,205,auto_initialize_static_wide_string_01998f90,auto,edge-verified,Same instructions as engine_initialize_static_wide_string_018867e0 with other addresses
+0x01999060,89,auto_init_rows_fields_01999060,auto,edge-verified,Same instructions as misc_init_rows_fields_5940ea0 with other addresses
 0x0199a260,8,auto_return_field_0199a260,auto,edge-verified,Generated from the return field template
 0x0199b350,205,auto_initialize_static_wide_string_0199b350,auto,edge-verified,Same instructions as engine_initialize_static_wide_string_018867e0 with other addresses
 0x0199cae0,4,auto_return_field_0199cae0,auto,edge-verified,Generated from the return field template
