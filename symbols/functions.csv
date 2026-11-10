@@ -27287,6 +27287,7 @@ address,size,name,system,status,notes
 0x0263b5f0,40,auto_invoke_callback_0263b5f0,auto,edge-verified,Same instructions as misc_invoke_callback with other addresses
 0x0263def0,124,auto_destroy_chain_node_0263def0,auto,edge-verified,Same instructions as misc_destroy_chain_node with other addresses
 0x0263e9c0,3,auto_return_constant_0263e9c0,auto,edge-verified,Generated from the return constant template
+0x0263ea10,43,auto_forward_with_mode_0263ea10,auto,edge-verified,Same instructions as misc_forward_with_mode with other addresses
 0x026435a0,22,auto_disarm_callback_026435a0,auto,edge-verified,Same instructions as misc_disarm_callback with other addresses
 0x026435d0,40,auto_invoke_callback_026435d0,auto,edge-verified,Same instructions as misc_invoke_callback with other addresses
 0x02646d00,1,auto_empty_02646d00,auto,edge-verified,Generated from the empty template

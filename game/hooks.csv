@@ -27286,6 +27286,7 @@ address,replacement,system,returns
 0x0263b5f0,bb_auto_invoke_callback_0263b5f0,auto,void
 0x0263def0,bb_auto_destroy_chain_node_0263def0,auto,void
 0x0263e9c0,bb_auto_return_constant_0263e9c0,auto,i8
+0x0263ea10,bb_auto_forward_with_mode_0263ea10,auto,i64
 0x026435a0,bb_auto_disarm_callback_026435a0,auto,void
 0x026435d0,bb_auto_invoke_callback_026435d0,auto,void
 0x02646d00,bb_auto_empty_02646d00,auto,void
