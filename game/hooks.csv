@@ -11506,6 +11506,7 @@ address,replacement,system,returns
 0x0189e430,bb_auto_tail_call_member_target_0189e430,auto,void
 0x0189e460,bb_auto_member_call_or_fallback_0189e460,auto,i64
 0x0189e890,bb_auto_push_value_by_reference_0189e890,auto,void
+0x0189e970,bb_misc_init_timed_record,misc,i64
 0x0189e9b0,bb_auto_destroy_then_release_0189e9b0,auto,i64
 0x0189e9d0,bb_auto_jump_thunk_0189e9d0,auto,i64
 0x0189ea20,bb_auto_bind_vtable_0189ea20,auto,void
