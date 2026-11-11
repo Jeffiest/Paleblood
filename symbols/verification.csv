@@ -45757,6 +45757,7 @@ misc_member_call_02242b70,edge,,11,11,0,0,edc9a325f6f7c7f2,2026-11-10
 misc_member_call_or_fallback,edge,,12,12,0,0,ecc06437c27e02f2,2026-11-10
 misc_member_owner_delete_02243fc0,edge,,4,4,0,0,cc87480956e57b0d,2026-11-09
 misc_member_owner_destroy_02244000,edge,,4,4,0,0,5ea671407c763fa6,2026-11-09
+misc_member_text_fallback_013a2df0,edge,,5,5,0,0,35d732cc8a2f963f,2026-11-11
 misc_notify_unflagged_record,edge,,16,16,0,0,4939877d9dfa9721,2026-11-09
 misc_object_slot_28_is_set,edge,,5,5,0,0,f00d5f4ebc717566,2026-11-10
 misc_owned_list_delete,edge,,14,14,0,0,3a756aa48b924277,2026-11-10
