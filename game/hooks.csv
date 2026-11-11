@@ -28392,6 +28392,7 @@ address,replacement,system,returns
 0x02253f90,bb_auto_fixed_address_02253f90,auto,i64
 0x02253fa0,bb_auto_fixed_address_02253fa0,auto,i64
 0x02253fb0,bb_auto_fixed_address_02253fb0,auto,i64
+0x022544b0,bb_misc_send_object_label,misc,void
 0x02254600,bb_misc_copy_record_fields,misc,i64
 0x02254640,bb_misc_construct_element_list_owner,misc,void
 0x02254740,bb_misc_destroy_element_list_owner,misc,i64
