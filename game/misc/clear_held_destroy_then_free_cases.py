@@ -34,7 +34,8 @@ def case(cid, held, free_result):
         stubs.append({'address': RELEASE, 'argc': 6, 'argi': [0, 1, 2, 3, 4, 5]})
     else:
         memory.append({'addr': 'buf:record+16', 'bytes': '00' * 8})
-    stubs.append({'address': FREE, 'argc': 6, 'argi': [0, 1, 2, 3, 4, 5], 'ret': free_result & MASK64})
+    # After a call the caller-saved argument registers are undefined, so only the record argument of the free is compared.
+    stubs.append({'address': FREE, 'argc': 6, 'argi': [0], 'ret': free_result & MASK64})
     return {'schema': 1, 'address': ADDRESS, 'id': cid, 'returns': 'i64',
             'args': args,
             'buffers': buffers, 'memory': memory, 'stubs': stubs, 'imports': []}
