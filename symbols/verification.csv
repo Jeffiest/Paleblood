@@ -45870,6 +45870,7 @@ misc_span_end,edge,,9,9,0,0,9d09d4146689b0a5,2026-11-09
 misc_span_forward,edge,,8,8,0,0,ad8232bd25beb25a,2026-11-09
 misc_store_pair,edge,,9,0,9,0,d8cc4e7f9a84080a,2026-11-09
 misc_store_request,edge,,14,14,0,0,109935e29a017c03,2026-11-11
+misc_store_value_and_flags_on_first_accepting_item,edge,,13,13,0,0,4a1bfc042a1fc093,2026-11-11
 misc_submit_request,edge,,8,8,0,0,29d1083ee2b94a5f,2026-11-11
 misc_tagged_link_address,edge,,8,8,0,0,421ad006857028d7,2026-11-09
 misc_tagged_name_matches,edge,,6,6,0,0,7adec809246cc043,2026-11-11

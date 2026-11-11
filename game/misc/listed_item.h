@@ -10,7 +10,7 @@ namespace misc {
 struct ListedItem;
 
 /** The bytes from the sink to the flag byte, which the sink occupies; its own layout is not known. */
-constexpr size_t listed_item_sink_size = 0x25;
+constexpr size_t listed_item_sink_size = 0x24;
 
 /**
  *
@@ -33,10 +33,15 @@ struct ListedItem {
     const ListedItemVtable *vtable;     /**< The item's vtable. */
     uint8_t unknown_0x0008[0xc0];
     uint8_t sink_region[listed_item_sink_size];   /**< The sink the accept routine works on; only its address is used here. */
+    uint8_t value_0xec;                 /**< A value the store routine writes beside the flags. */
     uint8_t flags_0xed;                 /**< Bits set by the marking routines. */
+    uint8_t unknown_0x00ee[0x3a];
+    uint8_t flags_0x128;                /**< Bits the list walk tests; bit 0x04 marks an item it accepts. */
 };
 static_assert(offsetof(ListedItem, vtable) == 0x00);
 static_assert(offsetof(ListedItem, sink_region) == 0xc8);
 static_assert(offsetof(ListedItem, flags_0xed) == 0xed);
+static_assert(offsetof(ListedItem, value_0xec) == 0xec);
+static_assert(offsetof(ListedItem, flags_0x128) == 0x128);
 
 }  // namespace misc
