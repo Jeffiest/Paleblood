@@ -28403,6 +28403,7 @@ address,size,name,system,status,notes
 0x02255230,239,misc_accepted_item_rank_above_two,misc,edge-verified,When the scan owner is ready scans a list for the first item the accept routine takes and reports whether that item ranks above two
 0x02255320,118,misc_both_item_lists_rank_above,misc,edge-verified,Reports whether every item of the first list ranks above five and every item of the second ranks above two each list walked to its first failure
 0x022553a0,156,misc_items_qualify_in_either_list,misc,edge-verified,Reports whether an item in either list qualifies the first by rank above six or flag 0x02 and the second by rank above four or flag 0x04 walking the second whatever the first gave
+0x02255440,284,misc_accepted_item_rank_flag_test,misc,edge-verified,When the scan source is ready scans a list for the first item the accept routine takes and reports whether that item is unflagged and ranks at most five
 0x02255560,72,misc_all_items_rank_above_three,misc,edge-verified,Reports whether every item of a list ranks above three asking each items rank slot in turn and stopping at the first that does not
 0x022555b0,87,misc_set_flag_on_first_accepting_item,misc,edge-verified,Sets flag bit 0x01 on the first item of a list whose sink the accept routine takes asking each item in turn and returns the last answer
 0x02255610,118,misc_store_value_and_flags_on_first_accepting_item,misc,edge-verified,Stores a value byte on the first item of a list whose sink the accept routine takes and rebuilds that items flag byte then returns the new flags
