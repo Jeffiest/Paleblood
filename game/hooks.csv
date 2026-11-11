@@ -21665,6 +21665,7 @@ address,replacement,system,returns
 0x01e8b9a0,bb_auto_bind_vtable_01e8b9a0,auto,void
 0x01e8b9d0,bb_auto_initialize_static_wide_string_01e8b9d0,auto,void
 0x01e8baa0,bb_auto_copy_block_01e8baa0,auto,void
+0x01e8bae0,bb_misc_store_word_and_count_01e8bae0,misc,i64
 0x01e8bb70,bb_misc_store_word_and_count_01e8bb70,misc,i64
 0x01e8c160,bb_auto_bind_vtable_01e8c160,auto,void
 0x01e8c190,bb_auto_bind_vtable_01e8c190,auto,void
