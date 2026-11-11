@@ -45827,6 +45827,7 @@ misc_replace_block_02242560,edge,,8,8,0,0,9d7e468cece9c57b,2026-11-09
 misc_replace_block_02242640,edge,,9,9,0,0,906776f696785121,2026-11-09
 misc_replace_block_02242710,edge,,9,9,0,0,2542a31e7cc1b57d,2026-11-09
 misc_replace_holder_object,edge,,14,14,0,0,02ca5dfd7f563365,2026-11-11
+misc_report_member_text_013a3260,edge,,5,5,0,0,5e1fca2399bd319c,2026-11-11
 misc_reset_listed_members,edge,,7,7,0,0,05d746a0ec655de6,2026-11-09
 misc_reset_then_release,edge,,4,4,0,0,69e09939e2f1c051,2026-11-09
 misc_resolve_either_key_slot,edge,,6,6,0,0,65d2cea0ad6c1707,2026-11-09

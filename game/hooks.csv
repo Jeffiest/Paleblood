@@ -5406,6 +5406,7 @@ address,replacement,system,returns
 0x013a2df0,bb_misc_member_text_fallback_013a2df0,misc,i64
 0x013a3020,bb_misc_member_object_013a3020,misc,i64
 0x013a3040,bb_misc_member_object_013a3040,misc,i64
+0x013a3260,bb_misc_report_member_text_013a3260,misc,void
 0x013a4bd0,bb_auto_bind_vtable_013a4bd0,auto,void
 0x013a4c00,bb_auto_bind_vtable_013a4c00,auto,void
 0x013a4c30,bb_auto_bind_vtable_013a4c30,auto,void
