@@ -35239,6 +35239,7 @@ address,replacement,system,returns
 0x026f6ce0,bb_misc_forward_child_slot_28_6ce0,misc,i64
 0x026f6cf0,bb_misc_forward_child_slot_30_6cf0,misc,i64
 0x026f6d00,bb_misc_forward_child_slot_38_6d00,misc,i64
+0x026f6d10,bb_misc_forward_child_slot_40_6d10,misc,i64
 0x026f6da0,bb_auto_jump_thunk_026f6da0,auto,i64
 0x026f7780,bb_auto_bind_vtable_026f7780,auto,void
 0x026f77b0,bb_auto_bind_vtable_026f77b0,auto,void
