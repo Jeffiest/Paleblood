@@ -39806,12 +39806,16 @@ address,replacement,system,returns
 0x02b476d0,bb_auto_bind_vtable_02b476d0,auto,void
 0x02b49a40,bb_auto_delete_object_thunk_02b49a40,auto,void
 0x02b4a2d0,bb_auto_delete_object_thunk_02b4a2d0,auto,void
+0x02b4a2f0,bb_misc_init_tagged_record,misc,i64
+0x02b4a380,bb_misc_init_tagged_record_alt,misc,i64
 0x02b4a410,bb_auto_fixed_address_02b4a410,auto,i64
 0x02b4a4b0,bb_auto_delete_object_thunk_02b4a4b0,auto,void
 0x02b4a5f0,bb_auto_fixed_address_02b4a5f0,auto,i64
 0x02b4a8d0,bb_auto_delete_object_thunk_02b4a8d0,auto,void
 0x02b4aa10,bb_auto_fixed_address_02b4aa10,auto,i64
 0x02b4af70,bb_auto_delete_object_thunk_02b4af70,auto,void
+0x02b4af90,bb_misc_clear_tagged_record,misc,i64
+0x02b4b010,bb_misc_clear_tagged_record_alt,misc,i64
 0x02b4b090,bb_auto_fixed_address_02b4b090,auto,i64
 0x02b4b0a0,bb_auto_jump_thunk_02b4b0a0,auto,i64
 0x02b4b0b0,bb_auto_destroy_then_release_02b4b0b0,auto,i64
@@ -39823,7 +39827,10 @@ address,replacement,system,returns
 0x02b4bcf0,bb_auto_bind_vtable_02b4bcf0,auto,void
 0x02b4bd20,bb_auto_bind_vtable_02b4bd20,auto,void
 0x02b4c050,bb_auto_delete_object_thunk_02b4c050,auto,void
+0x02b4c070,bb_misc_init_tagged_record_second,misc,i64
+0x02b4c100,bb_misc_init_tagged_record_third,misc,i64
 0x02b4c190,bb_auto_fixed_address_02b4c190,auto,i64
+0x02b4c1a0,bb_misc_create_value_object,misc,i64
 0x02b4c2e0,bb_auto_delete_object_thunk_02b4c2e0,auto,void
 0x02b4c420,bb_auto_fixed_address_02b4c420,auto,i64
 0x02b4c700,bb_auto_delete_object_thunk_02b4c700,auto,void

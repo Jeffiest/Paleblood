@@ -39807,12 +39807,16 @@ address,size,name,system,status,notes
 0x02b476d0,41,auto_bind_vtable_02b476d0,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
 0x02b49a40,5,auto_delete_object_thunk_02b49a40,auto,edge-verified,Same instructions as misc_delete_object_thunk with other addresses
 0x02b4a2d0,5,auto_delete_object_thunk_02b4a2d0,auto,edge-verified,Same instructions as misc_delete_object_thunk with other addresses
+0x02b4a2f0,129,misc_init_tagged_record,misc,edge-verified,Zeroes the body of a tagged record and stores the tag word and the vtable pointer then returns zero
+0x02b4a380,129,misc_init_tagged_record_alt,misc,edge-verified,Zeroes the body of a second tagged record and stores the tag word and the vtable pointer then returns zero
 0x02b4a410,8,auto_fixed_address_02b4a410,auto,edge-verified,Same instructions as misc_plain_type_address with other addresses
 0x02b4a4b0,5,auto_delete_object_thunk_02b4a4b0,auto,edge-verified,Same instructions as misc_delete_object_thunk with other addresses
 0x02b4a5f0,8,auto_fixed_address_02b4a5f0,auto,edge-verified,Same instructions as misc_plain_type_address with other addresses
 0x02b4a8d0,5,auto_delete_object_thunk_02b4a8d0,auto,edge-verified,Same instructions as misc_delete_object_thunk with other addresses
 0x02b4aa10,8,auto_fixed_address_02b4aa10,auto,edge-verified,Same instructions as misc_plain_type_address with other addresses
 0x02b4af70,5,auto_delete_object_thunk_02b4af70,auto,edge-verified,Same instructions as misc_delete_object_thunk with other addresses
+0x02b4af90,126,misc_clear_tagged_record,misc,edge-verified,Zeroes the vtable pointer and the body of a tagged record then stores the tag word and returns zero
+0x02b4b010,126,misc_clear_tagged_record_alt,misc,edge-verified,Zeroes the vtable pointer and the body of a second tagged record then stores the tag word and returns zero
 0x02b4b090,8,auto_fixed_address_02b4b090,auto,edge-verified,Same instructions as misc_plain_type_address with other addresses
 0x02b4b0a0,5,auto_jump_thunk_02b4b0a0,auto,edge-verified,Same instructions as misc_jump_thunk with other addresses
 0x02b4b0b0,28,auto_destroy_then_release_02b4b0b0,auto,edge-verified,Same instructions as misc_destroy_then_release with other addresses
@@ -39824,7 +39828,10 @@ address,size,name,system,status,notes
 0x02b4bcf0,41,auto_bind_vtable_02b4bcf0,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
 0x02b4bd20,41,auto_bind_vtable_02b4bd20,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
 0x02b4c050,5,auto_delete_object_thunk_02b4c050,auto,edge-verified,Same instructions as misc_delete_object_thunk with other addresses
+0x02b4c070,129,misc_init_tagged_record_second,misc,edge-verified,Zeroes the body of a third tagged record and stores the tag word and the vtable pointer then returns zero
+0x02b4c100,129,misc_init_tagged_record_third,misc,edge-verified,Zeroes the body of a fourth tagged record and stores the tag word and the vtable pointer then returns zero
 0x02b4c190,8,auto_fixed_address_02b4c190,auto,edge-verified,Same instructions as misc_plain_type_address with other addresses
+0x02b4c1a0,173,misc_create_value_object,misc,edge-verified,Creates a value object for a source record with its vtable set and both sub-objects initialized from the candidate word the selector picks
 0x02b4c2e0,5,auto_delete_object_thunk_02b4c2e0,auto,edge-verified,Same instructions as misc_delete_object_thunk with other addresses
 0x02b4c420,8,auto_fixed_address_02b4c420,auto,edge-verified,Same instructions as misc_plain_type_address with other addresses
 0x02b4c700,5,auto_delete_object_thunk_02b4c700,auto,edge-verified,Same instructions as misc_delete_object_thunk with other addresses
