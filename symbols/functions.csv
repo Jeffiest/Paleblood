@@ -2199,6 +2199,7 @@ address,size,name,system,status,notes
 0x00cb1220,8,auto_fixed_address_00cb1220,auto,edge-verified,Same instructions as misc_plain_type_address with other addresses
 0x00cb1240,8,auto_fixed_address_00cb1240,auto,edge-verified,Same instructions as misc_plain_type_address with other addresses
 0x00cb1460,8,auto_fixed_address_00cb1460,auto,edge-verified,Same instructions as misc_plain_type_address with other addresses
+0x00cb1480,94,misc_release_single_item,misc,edge-verified,Releases the held reference item at +0x20 dropping its reference and destroying it on the last one then clears the item pointer and its count
 0x00cb1590,8,auto_fixed_address_00cb1590,auto,edge-verified,Same instructions as misc_plain_type_address with other addresses
 0x00cb15a0,113,auto_register_plain_type_00cb15a0,auto,edge-verified,Same instructions as misc_register_plain_type with other addresses
 0x00cb1620,8,auto_fixed_address_00cb1620,auto,edge-verified,Same instructions as misc_plain_type_address with other addresses

@@ -2198,6 +2198,7 @@ address,replacement,system,returns
 0x00cb1220,bb_auto_fixed_address_00cb1220,auto,i64
 0x00cb1240,bb_auto_fixed_address_00cb1240,auto,i64
 0x00cb1460,bb_auto_fixed_address_00cb1460,auto,i64
+0x00cb1480,bb_misc_release_single_item,misc,void
 0x00cb1590,bb_auto_fixed_address_00cb1590,auto,i64
 0x00cb15a0,bb_auto_register_plain_type_00cb15a0,auto,void
 0x00cb1620,bb_auto_fixed_address_00cb1620,auto,i64
