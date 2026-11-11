@@ -11445,6 +11445,7 @@ address,replacement,system,returns
 0x01891050,bb_auto_bind_vtable_01891050,auto,void
 0x01891080,bb_auto_initialize_static_wide_string_01891080,auto,void
 0x01891190,bb_auto_setup_static_objects_01891190,auto,i64
+0x018921b0,bb_misc_dispatch_member_slots,misc,i64
 0x01892d10,bb_auto_jump_thunk_01892d10,auto,i64
 0x018935d0,bb_auto_bind_vtable_018935d0,auto,void
 0x01893600,bb_auto_bind_vtable_01893600,auto,void

@@ -45644,6 +45644,7 @@ misc_destroy_then_release,edge,,4,4,0,0,3e2ea31c54b1b109,2026-11-09
 misc_disarm_callback,edge,,7,7,0,0,a49db354307528b6,2026-11-09
 misc_dispatch_and_free_nodes,edge,,8,8,0,0,560d5709d5ca98c6,2026-11-09
 misc_dispatch_by_kind,edge,,9,9,0,0,104ca00b504059ae,2026-11-09
+misc_dispatch_member_slots,edge,,6,6,0,0,86e749b0a9c443e0,2026-11-11
 misc_dispatch_request,edge,,6,6,0,0,9d54d9ced0efd13a,2026-11-11
 misc_dispatch_stages_0_to_8,edge,,8,8,0,0,fbe3ada8082f824e,2026-11-09
 misc_dispatch_to_target,edge,,8,8,0,0,061c6400933c91c9,2026-11-11

@@ -11446,6 +11446,7 @@ address,size,name,system,status,notes
 0x01891050,41,auto_bind_vtable_01891050,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
 0x01891080,205,auto_initialize_static_wide_string_01891080,auto,edge-verified,Same instructions as engine_initialize_static_wide_string_018867e0 with other addresses
 0x01891190,472,auto_setup_static_objects_01891190,auto,edge-verified,Same instructions as misc_setup_static_objects_02243d30 with other addresses
+0x018921b0,133,misc_dispatch_member_slots,misc,edge-verified,Visits the member slots from the object index calling each with the status and step while the callee leaves the pending flag set up to 128 times
 0x01892d10,5,auto_jump_thunk_01892d10,auto,edge-verified,Same instructions as misc_jump_thunk with other addresses
 0x018935d0,41,auto_bind_vtable_018935d0,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
 0x01893600,41,auto_bind_vtable_01893600,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
