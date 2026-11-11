@@ -2069,6 +2069,7 @@ address,replacement,system,returns
 0x00c23930,bb_auto_held_member_object_free_00c23930,auto,i64
 0x00c24100,bb_auto_fixed_address_00c24100,auto,i64
 0x00c24110,bb_auto_jump_thunk_00c24110,auto,i64
+0x00c24320,bb_misc_replace_holder_and_hand_off,misc,void
 0x00c244a0,bb_misc_construct_derived_object,misc,i64
 0x00c244d0,bb_misc_delete_derived_object,misc,i64
 0x00c24590,bb_misc_release_derived_object,misc,i64
