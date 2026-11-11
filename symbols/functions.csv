@@ -39747,6 +39747,7 @@ address,size,name,system,status,notes
 0x02b4c070,129,misc_init_tagged_record_second,misc,edge-verified,Zeroes the body of a third tagged record and stores the tag word and the vtable pointer then returns zero
 0x02b4c100,129,misc_init_tagged_record_third,misc,edge-verified,Zeroes the body of a fourth tagged record and stores the tag word and the vtable pointer then returns zero
 0x02b4c190,8,auto_fixed_address_02b4c190,auto,edge-verified,Same instructions as misc_plain_type_address with other addresses
+0x02b4c1a0,173,misc_create_value_object,misc,edge-verified,Creates a value object for a source record with its vtable set and both sub-objects initialized from the candidate word the selector picks
 0x02b4c2e0,5,auto_delete_object_thunk_02b4c2e0,auto,edge-verified,Same instructions as misc_delete_object_thunk with other addresses
 0x02b4c420,8,auto_fixed_address_02b4c420,auto,edge-verified,Same instructions as misc_plain_type_address with other addresses
 0x02b4c700,5,auto_delete_object_thunk_02b4c700,auto,edge-verified,Same instructions as misc_delete_object_thunk with other addresses
