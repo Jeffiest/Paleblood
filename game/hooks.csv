@@ -11432,6 +11432,7 @@ address,replacement,system,returns
 0x0188e4d0,bb_misc_clear_held_then_chain_destroy,misc,i64
 0x0188e510,bb_misc_clear_held_destroy_then_free,misc,i64
 0x0188e550,bb_auto_member_call_0188e550,auto,i64
+0x0188e570,bb_misc_grow_element_storage,misc,void
 0x018904d0,bb_auto_tree_destroy_nodes_018904d0,auto,void
 0x01890b30,bb_auto_return_field_01890b30,auto,i64
 0x01890b40,bb_auto_bind_vtable_01890b40,auto,void
