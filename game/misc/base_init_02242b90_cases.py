@@ -4,8 +4,9 @@
 
 usage: base_init_02242b90_cases.py OUT_DIR
 
-The setup step (0x00f2d8b0) is a stub that receives the object and leaves it unchanged; the object then
-gets the other class's vtable. Covers garbage, zero and all-ones starting bytes.
+The setup step (0x00f2d8b0) is a stub that receives the object and the setup values of the second argument
+and leaves the object unchanged; the object then gets the other class's vtable. Covers garbage, zero and
+all-ones starting bytes.
 """
 import json
 from pathlib import Path
@@ -18,8 +19,9 @@ SETUP = '0x00f2d8b0'
 def case(cid, fill='ee'):
     """One construction: the setup stub runs first on the object, then the vtable is stored."""
     return {'schema': 1, 'address': ADDRESS, 'id': cid, 'returns': 'void',
-            'args': {'rdi': 'buf:obj'}, 'buffers': {'obj': {'size': 0x28, 'bytes': fill * 0x28}},
-            'memory': [], 'imports': [], 'stubs': [{'address': SETUP, 'argc': 1}]}
+            'args': {'rdi': 'buf:obj', 'rsi': 'buf:setup'},
+            'buffers': {'obj': {'size': 0x28, 'bytes': fill * 0x28}, 'setup': {'size': 0x10, 'bytes': 'a5' * 0x10}},
+            'memory': [], 'imports': [], 'stubs': [{'address': SETUP, 'argc': 2}]}
 
 
 CASES = [case('garbage_bytes'), case('zero_bytes', fill='00'), case('all_ones_bytes', fill='ff')]
