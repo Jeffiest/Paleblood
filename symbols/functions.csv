@@ -21669,6 +21669,7 @@ address,size,name,system,status,notes
 0x01e8bae0,132,misc_store_word_and_count_01e8bae0,misc,edge-verified,Stores a word then counts it in the shared keyed table when its key matches the word
 0x01e8bb70,132,misc_store_word_and_count_01e8bb70,misc,edge-verified,Stores a word then counts it in the shared keyed table when its key matches the word
 0x01e8bc00,164,misc_decrement_word_entry_01e8bc00,misc,edge-verified,Lowers the count of the shared table entry a stored word names and releases its slot when spent
+0x01e8bcb0,202,misc_move_word_release_old_01e8bcb0,misc,edge-verified,Replaces a stored word with the source word when they differ releasing the old word first
 0x01e8c160,41,auto_bind_vtable_01e8c160,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
 0x01e8c190,41,auto_bind_vtable_01e8c190,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
 0x01e8c1c0,41,auto_bind_vtable_01e8c1c0,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses

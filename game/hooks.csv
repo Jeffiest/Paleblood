@@ -21668,6 +21668,7 @@ address,replacement,system,returns
 0x01e8bae0,bb_misc_store_word_and_count_01e8bae0,misc,i64
 0x01e8bb70,bb_misc_store_word_and_count_01e8bb70,misc,i64
 0x01e8bc00,bb_misc_decrement_word_entry_01e8bc00,misc,void
+0x01e8bcb0,bb_misc_move_word_release_old_01e8bcb0,misc,i64
 0x01e8c160,bb_auto_bind_vtable_01e8c160,auto,void
 0x01e8c190,bb_auto_bind_vtable_01e8c190,auto,void
 0x01e8c1c0,bb_auto_bind_vtable_01e8c1c0,auto,void
