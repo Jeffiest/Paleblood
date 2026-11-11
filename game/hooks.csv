@@ -21624,6 +21624,7 @@ address,replacement,system,returns
 0x01e86850,bb_auto_copy_block_01e86850,auto,void
 0x01e86db0,bb_auto_return_member_address_01e86db0,auto,i64
 0x01e86dc0,bb_misc_count_keyed_entry_01e86dc0,misc,i64
+0x01e86e00,bb_misc_decrement_keyed_entry_01e86e00,misc,i64
 0x01e86e60,bb_misc_release_and_rekey_slot_01e86e60,misc,void
 0x01e88ea0,bb_auto_fixed_address_01e88ea0,auto,i64
 0x01e88eb0,bb_auto_bind_vtable_01e88eb0,auto,void

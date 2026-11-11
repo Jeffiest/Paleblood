@@ -45626,6 +45626,7 @@ misc_copy_pair_00be9d50,edge,,8,8,0,0,18426ff3f32717e0,2026-11-09
 misc_count_keyed_entry_01e86dc0,edge,,10,10,0,0,284271e38178f770,2026-11-11
 misc_count_subtree_leaves,edge,,10,10,0,0,76ae6fa4641c1b40,2026-11-09
 misc_create_checked,edge,,7,7,0,0,8c8b92540b6c67c2,2026-11-11
+misc_decrement_keyed_entry_01e86e00,edge,,9,9,0,0,048be1ea0b8a70d4,2026-11-11
 misc_delete_object_thunk,edge,,6,6,0,0,219308cbf84e73ff,2026-11-10
 misc_descriptor_type_address,edge,,1,1,0,0,43e00eb2669c1418,2026-11-09
 misc_destroy_chain_node,edge,,8,8,0,0,a8be83c959ded117,2026-11-10
