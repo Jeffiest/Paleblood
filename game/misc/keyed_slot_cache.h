@@ -27,10 +27,15 @@ struct SlotObjectVtable {
  */
 struct SlotObject {
     const SlotObjectVtable *vtable_0x00; /**< The object's vtable. */
+    uint32_t key_0x08;                   /**< Compared with a word when the slot is looked up. */
 };
+static_assert(offsetof(SlotObject, key_0x08) == 0x08);
 
 /** The number of slots, and of entries in the ring of recent slots. */
 constexpr size_t kKeyedSlotCount = 0x1000;
+
+/** The number of slot pointers the lookup can reach: every index that fits in sixteen bits except the all-ones one. */
+constexpr size_t kSlotLookupCount = 0xffff;
 
 /**
  *
@@ -48,5 +53,16 @@ struct KeyedSlotCache {
 static_assert(offsetof(KeyedSlotCache, slots_0x0008) == 0x0008 && offsetof(KeyedSlotCache, entries_0x8008) == 0x8008);
 static_assert(offsetof(KeyedSlotCache, ring_0x10008) == 0x10008 && offsetof(KeyedSlotCache, ring_position_0x1400c) == 0x1400c);
 static_assert(sizeof(KeyedSlotCache) == 0x14010);
+
+/**
+ *
+ * The same slot pointers as the lookup reads them: indexed by the low 16 bits of a word, without a bound check.
+ *
+ */
+struct SlotLookupTable {
+    uint8_t unknown_0x0000[0x0008];
+    SlotObject *slots_0x0008[kSlotLookupCount]; /**< The object a slot holds, or null. */
+};
+static_assert(offsetof(SlotLookupTable, slots_0x0008) == 0x0008);
 
 }  // namespace misc

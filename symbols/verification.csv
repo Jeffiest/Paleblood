@@ -45667,6 +45667,7 @@ misc_find_or_create_keyed_object_a,edge,,15,15,0,0,0de15824271257b5,2026-11-09
 misc_find_or_create_keyed_object_b,edge,,15,15,0,0,214eb9daec5457a1,2026-11-09
 misc_find_or_create_match,edge,,13,13,0,0,e41a9060d1844ef8,2026-11-09
 misc_find_record_index,edge,,14,14,0,0,751d3dfb822f3451,2026-11-09
+misc_find_slot_object_01e86fa0,edge,,9,9,0,0,2b0e988302e190ca,2026-11-11
 misc_find_third_link_index,edge,,7,7,0,0,c71e42ea97ed5e45,2026-11-10
 misc_finish_pending_block_offset,edge,,7,7,0,0,1a48d345aa161f68,2026-11-10
 misc_finish_tracked_update,edge,,15,15,0,0,4c6bb3089d2ad90f,2026-11-11
