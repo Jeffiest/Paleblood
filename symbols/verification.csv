@@ -45919,7 +45919,7 @@ render_emit_present_preparation_byte,edge,,18,18,0,0,53db19b5d95c9586,2026-11-06
 render_emit_present_preparation_scalar,edge,,20,20,0,0,40137647ab863b23,2026-11-06
 render_emit_present_release_delegate,edge,,8,8,0,0,44c6a754b371f521,2026-11-10
 render_emit_present_release_packet,edge,,14,14,0,0,49b21387b8cdc24b,2026-11-10
-render_emit_shader_link_words,edge,,23,23,0,0,b26629b2274dd99e,2026-11-10
+render_emit_shader_link_words,edge,,23,23,0,0,e97af2f040336289,2026-11-11
 render_finish_present_commands,edge,,12,12,0,0,3adf6995cef8857d,2026-11-10
 render_finish_present_context,edge,,2,2,0,0,b114815a2dd2f5c2,2026-11-10
 render_finish_record_shader,edge,,46,46,0,0,073880f2c3fe7a48,2026-11-10
@@ -46036,6 +46036,10 @@ render_swap_chain_present,edge,60,23,23,0,0,cecf62710c015474,2026-10-07
 render_swap_chain_present,edge,uncapped,23,23,0,0,cecf62710c015474,2026-10-07
 render_swap_chain_present_mode,edge,,19,19,0,0,e1616a0a330d07b9,2026-11-03
 render_swap_chain_submit,edge,,53,53,0,0,8424f6556ab52ba2,2026-11-03
+render_update_model_wind,edge,,120,120,0,0,4d23637bf11c299c,2026-11-10
+render_update_model_wind,edge,30,120,120,0,0,4d23637bf11c299c,2026-11-10
+render_update_model_wind,edge,60,120,120,0,0,4d23637bf11c299c,2026-11-10
+render_update_model_wind,edge,uncapped,120,120,0,0,4d23637bf11c299c,2026-11-10
 render_yebis_get_recursive_sample_parameters,recorded,,234,234,0,0,6e6f0aa41d5607ce,2026-10-07
 render_yebis_get_recursive_sample_parameters,recorded,30,234,234,0,0,6e6f0aa41d5607ce,2026-10-07
 render_yebis_get_recursive_sample_parameters,recorded,60,234,234,0,0,6e6f0aa41d5607ce,2026-10-07

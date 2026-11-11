@@ -35341,6 +35341,7 @@ address,size,name,system,status,notes
 0x02713700,41,auto_bind_vtable_02713700,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
 0x02713730,41,auto_bind_vtable_02713730,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
 0x02713760,49,auto_copy_block_02713760,auto,edge-verified,Same instructions as misc_copy_block_58b3240 with other addresses
+0x02713870,11646,render_update_model_wind,render,edge-verified,"Ages a model wind receiver's kept influences, lists the live ones and adds or refreshes one per attached wind source; applies selected frame-rate steps"
 0x027165f0,41,auto_bind_vtable_027165f0,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
 0x02716620,41,auto_bind_vtable_02716620,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
 0x02716650,41,auto_bind_vtable_02716650,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses

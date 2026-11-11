@@ -35340,6 +35340,7 @@ address,replacement,system,returns
 0x02713700,bb_auto_bind_vtable_02713700,auto,void
 0x02713730,bb_auto_bind_vtable_02713730,auto,void
 0x02713760,bb_auto_copy_block_02713760,auto,void
+0x02713870,bb_render_update_model_wind,render,void
 0x027165f0,bb_auto_bind_vtable_027165f0,auto,void
 0x02716620,bb_auto_bind_vtable_02716620,auto,void
 0x02716650,bb_auto_bind_vtable_02716650,auto,void

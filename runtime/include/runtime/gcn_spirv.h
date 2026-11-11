@@ -84,19 +84,31 @@ typedef struct {
     unsigned components;             /* the format's components, 1 to 4 */
     int sampled;                     /* a sampled image (reads only), not a storage image */
     int cube;                        /* a cube, bound as a 2D array of its faces (dim 2D, arrayed) */
+    uint32_t swizzle;                /* a storage image's DST_SEL (3 bits a component: 4-7 x, y, z, w), a permutation:
+                                        a load's component k is the texel's DST_SEL[k] - 4, a store writes it there;
+                                        0 is the identity (sampled images take theirs in the view) */
 } gcn_image_binding;
 
-enum { GCN_MAX_IMAGES = 8, GCN_IMAGE_READ = 1, GCN_IMAGE_WRITE = 2, GCN_IMAGE_SAMPLE = 4 /* read through image_sample */ };
+/* GCN_MAX_IMAGES: up to 16 images a program (Vulkan guarantees 16 sampled images per stage) */
+enum { GCN_MAX_IMAGES = 16, GCN_IMAGE_READ = 1, GCN_IMAGE_WRITE = 2, GCN_IMAGE_SAMPLE = 4 /* read through image_sample */ };
 
 typedef struct {
     gcn_resource_origin origin;
     unsigned access;                 /* GCN_IMAGE_READ | GCN_IMAGE_WRITE | GCN_IMAGE_SAMPLE */
 } gcn_image_resource;
 
+/* The buffer descriptors (V#, 4 words) a program's buffer and tbuffer stores write through, found the
+   same way, by origin, into buffers (up to max): a caller can bound the memory a dispatch may store to
+   (a store outside its descriptor's range writes nothing). *unknown is set when a store's descriptor has
+   no such origin (or there are more than max): its stores may reach any memory. 0, or -1 with the reason
+   (code that does not decode). */
+int gcn_buffer_store_resources(const uint32_t *code, size_t dwords, gcn_resource_origin *buffers, unsigned max, unsigned *count, int *unknown,
+                               char *error, size_t error_size);
+
 /* Samplers (S#, 4 words), which image_sample names by its SSAMP SGPRs, are found the same way (an
    s_load_dwordx4 for one from memory). The caller binds sampler j at set 0, binding image_count + j,
    and makes it from the descriptor. */
-enum { GCN_MAX_SAMPLERS = 8 };
+enum { GCN_MAX_SAMPLERS = 16 }; /* as GCN_MAX_IMAGES, Vulkan's least per-stage limit for each */
 
 /* The distinct sampler descriptors a program's image_sample instructions use, by origin. 0 and
    *count, or -1 with the reason. */
@@ -108,6 +120,12 @@ int gcn_sampler_resources(const uint32_t *code, size_t dwords, gcn_resource_orig
    descriptor whose origin is not one of the two above). */
 int gcn_image_resources(const uint32_t *code, size_t dwords, gcn_image_resource *resources, unsigned max, unsigned *count, char *error,
                         size_t error_size);
+
+/* The same for a program that calls a fetch shader (gcn_call_sgpr): the callee's code (callee_dwords
+   long, through its s_setpc_b64 return), so that a descriptor the call leaves alone keeps its origin
+   past the call. A descriptor the callee writes stops by name. */
+int gcn_called_image_resources(const uint32_t *code, size_t dwords, const uint32_t *callee, size_t callee_dwords,
+                               gcn_image_resource *resources, unsigned max, unsigned *count, char *error, size_t error_size);
 
 typedef struct {
     uint32_t local_size[3];  /* the workgroup's size */
@@ -152,6 +170,11 @@ typedef struct {
     const uint32_t *callee;
     size_t callee_dwords;
     uint64_t code_address;
+    /* the images it loads (image_load, image_load_mip: sampled images, read only), in set 0 from
+       binding first_binding on, after the pixel shader's images and samplers */
+    const gcn_image_binding *images;
+    unsigned image_count;
+    unsigned first_binding;
     uint32_t *user_data_read; /* when not NULL, set on success to the user SGPRs read before written (User data read, below) */
 } gcn_vertex_layout;
 
@@ -169,13 +192,21 @@ int gcn_translate_vertex(const uint32_t *code, size_t dwords, const gcn_vertex_l
                          uint32_t **spirv, size_t *spirv_word_count, char *error, size_t error_size);
 
 /* A pixel shader. Its inputs are the perspective-correct barycentrics at the pixel's centre (i, then j
-   in the next VGPR), which v_interp reads (attribute n is the input at location n, interpolated by the
-   GPU), and, when position_enable says so, the pixel's window position: x (bit 0) and y (bit 1) as
+   in the next VGPR), which v_interp reads (attribute n is the vertex output its SPI_PS_INPUT_CNTL
+   names, below, interpolated by the GPU), and, when position_enable says so, the pixel's window position: x (bit 0) and y (bit 1) as
    floats at the pixel's centre, from position_vgpr on (y in the next VGPR when both), and, when
    front_face is set, whether the primitive faces the viewer, in front_face_vgpr: 1 or 0 with
    front_face_all_bits (SPI_BARYC_CNTL's FRONT_FACE_ALL_BITS), otherwise a float whose sign says it
-   (1.0 front, -1.0 back), as shadPS4 fills that VGPR. Exports: mrt n becomes the output at location n. */
-enum { GCN_PIXEL_POSITION_X = 1, GCN_PIXEL_POSITION_Y = 2 };
+   (1.0 front, -1.0 back), as shadPS4 fills that VGPR. Exports: mrt n becomes the output at location n.
+
+   Which vertex shader output attribute n reads is SPI_PS_INPUT_CNTL_n's (input_controls; NULL: the
+   output at location n). Its fields (AMD's gfx_7_2_sh_mask.h; shadPS4's PsInputControl the same):
+   OFFSET bits 0-4, the vertex shader parameter read; DEFAULT_VAL bit 5 set, a constant instead, the
+   one DEFAULT_VAL bits 8-9 pick ((0,0,0,0), (0,0,0,1), (1,1,1,0), (1,1,1,1)); FLAT_SHADE bit 10,
+   the provoking vertex's value, not interpolated. */
+enum { GCN_PIXEL_POSITION_X = 1, GCN_PIXEL_POSITION_Y = 2, GCN_PIXEL_INPUTS = 32 };
+enum { GCN_PS_INPUT_OFFSET_MASK = 0x1f, GCN_PS_INPUT_USE_DEFAULT = 0x20, GCN_PS_INPUT_DEFAULT_SHIFT = 8, GCN_PS_INPUT_DEFAULT_MASK = 3,
+       GCN_PS_INPUT_FLAT_SHADE = 0x400 };
 typedef struct {
     unsigned user_sgprs;
     unsigned barycentric_vgpr;
@@ -189,6 +220,7 @@ typedef struct {
     unsigned image_count;
     const gcn_resource_origin *samplers;
     unsigned sampler_count;
+    const uint32_t *input_controls; /* GCN_PIXEL_INPUTS SPI_PS_INPUT_CNTL words, or NULL (above) */
     uint32_t *user_data_read; /* when not NULL, set on success to the user SGPRs read before written (User data read, below) */
 } gcn_pixel_layout;
 

@@ -307,6 +307,21 @@ static const uint32_t pack_halves[] = {
 
 /* Per lane i, a one-component format store of i at i * 4 bytes (buffer_store_format_x, the
    descriptor's format). */
+/* Per lane i, (i, i + 1, i + 2, i + 3) stored with one buffer_store_dwordx4 at i * 16 bytes plus the
+   instruction offset `offset`: a multi-dword store, at an address that is a multiple of its 16 bytes
+   (offset 0) or not (offset 4). */
+#define STORE_DWORDX4(offset) {                                                                  \
+    0x34020084, /* v_lshlrev_b32_e32 v1, 4, v0 */                                                \
+    0x7e080300, /* v_mov_b32_e32 v4, v0 */                                                       \
+    0x4a0a0081, /* v_add_i32_e32 v5, vcc, 1, v0 */                                               \
+    0x4a0c0082, /* v_add_i32_e32 v6, vcc, 2, v0 */                                               \
+    0x4a0e0083, /* v_add_i32_e32 v7, vcc, 3, v0 */                                               \
+    0xe0781000 | (offset), 0x80010401, /* buffer_store_dwordx4 v[4:7], v1, s[4:7], 0 offen offset:... */ \
+    0xbf810000, /* s_endpgm */                                                                   \
+}
+static const uint32_t store_dwordx4_aligned[] = STORE_DWORDX4(0);
+static const uint32_t store_dwordx4_unaligned[] = STORE_DWORDX4(4);
+
 static const uint32_t store_format_x[] = {
     0x34020082, /* v_lshlrev_b32_e32 v1, 2, v0 */
     0xe0101000, 0x80010001, /* buffer_store_format_x v0, v1, s[4:7], 0 offen */
@@ -367,6 +382,53 @@ static const uint32_t image_fill[] = {
     0x7e020300, /* v_mov_b32_e32 v1, v0 */
     0x7e040280, /* v_mov_b32_e32 v2, 0 */
     0xf0200f00, 0x00020401, /* image_store v[4:7], v[1:2], s[8:15] dmask:0xf */
+    0xbf810000, /* s_endpgm */
+};
+
+/* Per lane i, texel (i, 0, 1) of the 3D image in s[8:15] (slice 1) set to (float(i), 1.0, 2.0, 0.5). */
+static const uint32_t image_fill_3d[] = {
+    0x7e080d00, /* v_cvt_f32_u32_e32 v4, v0 */
+    0x7e0a02f2, /* v_mov_b32_e32 v5, 1.0 */
+    0x7e0c02f4, /* v_mov_b32_e32 v6, 2.0 */
+    0x7e0e02f0, /* v_mov_b32_e32 v7, 0.5 */
+    0x7e020300, /* v_mov_b32_e32 v1, v0 */
+    0x7e040280, /* v_mov_b32_e32 v2, 0 */
+    0x7e060281, /* v_mov_b32_e32 v3, 1 */
+    0xf0200f00, 0x00020401, /* image_store v[4:7], v[1:3], s[8:15] dmask:0xf */
+    0xbf810000, /* s_endpgm */
+};
+
+/* Per lane i, texel (i, 0, z) of the 3D image in s[8:15] stored as four dwords at i * 16 bytes of the
+   buffer in s[0:3]; z is 1 here, 0 in image_to_buffer_3d_slice0. */
+static const uint32_t image_to_buffer_3d[] = {
+    0x7e020300, /* v_mov_b32_e32 v1, v0 */
+    0x7e040280, /* v_mov_b32_e32 v2, 0 */
+    0x7e060281, /* v_mov_b32_e32 v3, 1 */
+    0xf0000f00, 0x00020401, /* image_load v[4:7], v[1:3], s[8:15] dmask:0xf */
+    0xbf8c0f70, /* s_waitcnt vmcnt(0) */
+    0x34060084, /* v_lshlrev_b32_e32 v3, 4, v0 */
+    0xe0781000, 0x80000403, /* buffer_store_dwordx4 v[4:7], v3, s[0:3], 0 offen */
+    0xbf810000, /* s_endpgm */
+};
+
+static const uint32_t image_to_buffer_3d_slice0[] = {
+    0x7e020300, /* v_mov_b32_e32 v1, v0 */
+    0x7e040280, /* v_mov_b32_e32 v2, 0 */
+    0x7e060280, /* v_mov_b32_e32 v3, 0 */
+    0xf0000f00, 0x00020401, /* image_load v[4:7], v[1:3], s[8:15] dmask:0xf */
+    0xbf8c0f70, /* s_waitcnt vmcnt(0) */
+    0x34060084, /* v_lshlrev_b32_e32 v3, 4, v0 */
+    0xe0781000, 0x80000403, /* buffer_store_dwordx4 v[4:7], v3, s[0:3], 0 offen */
+    0xbf810000, /* s_endpgm */
+};
+
+/* Per lane i, texel (i, 0) of the image in s[8:15] gets float(i) as the shader's w component alone
+   (DMASK 8): with DST_SEL (0, 0, 0, x) it lands in a one-component image's x. */
+static const uint32_t image_fill_alpha[] = {
+    0x7e080d00, /* v_cvt_f32_u32_e32 v4, v0 */
+    0x7e020300, /* v_mov_b32_e32 v1, v0 */
+    0x7e040280, /* v_mov_b32_e32 v2, 0 */
+    0xf0200800, 0x00020401, /* image_store v4, v[1:2], s[8:15] dmask:0x8 */
     0xbf810000, /* s_endpgm */
 };
 
@@ -449,6 +511,17 @@ static const uint32_t vertex_position_color[] = {
     0xbf810000, /* s_endpgm */
 };
 
+/* As vertex_position_color, but the position also goes out as parameter 0 and the colour as parameter 1. */
+static const uint32_t vertex_colour_second[] = {
+    0xebf32000, 0x80000100, /* tbuffer_load_format_xyzw v[1:4], v0, s[0:3], 0 format:[BUF_DATA_FORMAT_32_32_32_32,BUF_NUM_FORMAT_FLOAT] idxen */
+    0xebf32000, 0x80010500, /* tbuffer_load_format_xyzw v[5:8], v0, s[4:7], 0 format:[BUF_DATA_FORMAT_32_32_32_32,BUF_NUM_FORMAT_FLOAT] idxen */
+    0xbf8c0f70, /* s_waitcnt vmcnt(0) */
+    0xf800020f, 0x04030201, /* exp param0, v1, v2, v3, v4 */
+    0xf800021f, 0x08070605, /* exp param1, v5, v6, v7, v8 */
+    0xf80008cf, 0x04030201, /* exp pos0, v1, v2, v3, v4 done */
+    0xbf810000, /* s_endpgm */
+};
+
 /* As vertex_position_color, through a fetch shader as the game's vertex shaders do: the program calls
    the code at the address in s[0:1] (s_swappc_b64, the return address into s[0:1]), which loads the two
    buffer descriptors from the table at the pointer in s[2:3] and the vertex's position and colour by
@@ -468,6 +541,37 @@ static const uint32_t fetch_position_color[] = {
     0xe00c2000, 0x80010100, /* buffer_load_format_xyzw v[1:4], v0, s[4:7], 0 idxen */
     0xe00c2000, 0x80020500, /* buffer_load_format_xyzw v[5:8], v0, s[8:11], 0 idxen */
     0xbf8c0f70, /* s_waitcnt vmcnt(0) */
+    0xbe802000, /* s_setpc_b64 s[0:1] */
+};
+
+/* A vertex shader that calls its fetch shader (fetch_position_only writes s[4:7]), then loads a
+   texel at (0, 0), level 0, of the image whose descriptor is in its user data's s[8:15], and exports
+   it as parameter 0. */
+static const uint32_t vertex_fetch_then_image[] = {
+    0xbe802100,             /* s_swappc_b64 s[0:1], s[0:1] */
+    0x7e1a0280,             /* v_mov_b32 v13, 0 */
+    0x7e1c0280,             /* v_mov_b32 v14, 0 */
+    0x7e1e0280,             /* v_mov_b32 v15, 0 */
+    0xf0040f00, 0x0002090d, /* image_load_mip v[9:12], v[13:15], s[8:15] dmask 0xf */
+    0xbf8c0f70,             /* s_waitcnt vmcnt(0) */
+    0xf800020f, 0x0c0b0a09, /* exp param0, v9, v10, v11, v12 */
+    0xf80008cf, 0x04030201, /* exp pos0, v1, v2, v3, v4 done */
+    0xbf810000,             /* s_endpgm */
+};
+
+/* The position only: one vertex buffer, its descriptor loaded into s[4:7]. */
+static const uint32_t fetch_position_only[] = {
+    0xc0820300,             /* s_load_dwordx4 s[4:7], s[2:3], 0x0 */
+    0xbf8c007f,             /* s_waitcnt lgkmcnt(0) */
+    0xe00c2000, 0x80010100, /* buffer_load_format_xyzw v[1:4], v0, s[4:7], 0 idxen */
+    0xbf8c0f70,             /* s_waitcnt vmcnt(0) */
+    0xbe802000,             /* s_setpc_b64 s[0:1] */
+};
+
+/* A fetch shader that loads into s[8:11] too: the image's descriptor no longer survives the call. */
+static const uint32_t fetch_into_image_sgprs[] = {
+    0xc0840300, /* s_load_dwordx4 s[8:11], s[2:3], 0x0 */
+    0xbf8c007f, /* s_waitcnt lgkmcnt(0) */
     0xbe802000, /* s_setpc_b64 s[0:1] */
 };
 
@@ -599,6 +703,16 @@ static const uint32_t pixel_minified[] = {
     0xf0800f00, 0x00610604, /* image_sample v[6:9], v[4:5], s[4:11], s[12:15] dmask:0xf */
     0xbf8c0f70, /* s_waitcnt vmcnt(0) */
     0xf800180f, 0x09080706, /* exp mrt0, v6, v7, v8, v9 done vm */
+    0xbf810000, /* s_endpgm */
+};
+
+/* pixel_minified sampling at level 0 whatever the derivatives (image_sample_lz: no LOD VGPR). */
+static const uint32_t pixel_level_zero[] = {
+    0x100804ff, 0x3d800000, /* v_mul_f32_e32 v4, 0x3d800000 (1/16), v2 */
+    0x100a06ff, 0x3d800000, /* v_mul_f32_e32 v5, 0x3d800000 (1/16), v3 */
+    0xf09c0f00, 0x00610704, /* image_sample_lz v[7:10], v[4:5], s[4:11], s[12:15] dmask:0xf */
+    0xbf8c0f70, /* s_waitcnt vmcnt(0) */
+    0xf800180f, 0x0a090807, /* exp mrt0, v7, v8, v9, v10 done vm */
     0xbf810000, /* s_endpgm */
 };
 
