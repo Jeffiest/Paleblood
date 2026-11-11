@@ -51,7 +51,7 @@ struct FormattedName {
     uint8_t unknown_0x10[0x8];
     uint64_t size_0x18;           /**< Zero before the formatter runs. */
     uint64_t capacity_0x20;       /**< Seven while the text is inline, at least eight once it is on the heap. */
-    engine::Allocator *allocator_0x28;  /**< The allocator the heap text is freed through. */
+    engine::Allocator *allocator_0x28; /**< Allocator that frees the heap text, set before the formatter runs. */
     bool flag_0x30;               /**< Set before the formatter runs. */
 
     /**
