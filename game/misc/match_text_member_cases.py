@@ -80,7 +80,7 @@ def case(cid, text_len=3, heap=True, enabled=1, member='buf', copy_disables=Fals
         if matcher_writes is not None and member == 'holder':
             writes.append({'arg': 0, 'offset': FIELD[matcher_writes][0], 'bytes': FIELD[matcher_writes][1]})
             st[matcher_writes] = False
-        stubs.append({'address': MEMBER_MATCHER, 'argc': 1, 'argi': [0],
+        stubs.append({'address': MEMBER_MATCHER, 'argc': 2, 'argi': [0, 1],
                       'ret': 'buf:matcher' if matcher else 0, 'writes': writes})
         matcher_ptr = matcher
     if text_len >= 8:

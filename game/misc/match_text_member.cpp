@@ -12,7 +12,7 @@
 namespace {
 
 RT_ORIGINAL(0x013a3110, fn_013a3110, void(misc::TextScratch *copy, misc::TextMemberHolder *holder, uint64_t key));
-RT_ORIGINAL(0x013abad0, fn_013abad0, misc::TextMatcher *(void *member));
+RT_ORIGINAL(0x013abad0, fn_013abad0, misc::TextMatcher *(void *member, const void *text));
 RT_ORIGINAL(0x013abac0, fn_013abac0, misc::TextValue *(void *member, uint64_t argument, uint64_t *tag, uint32_t flag));
 RT_ORIGINAL(0x013aeaf0, fn_013aeaf0, void(void *scratch, const uint8_t *name));
 RT_ORIGINAL(0x013aebc0, fn_013aebc0, void(void *scratch));
@@ -38,11 +38,13 @@ extern "C" void *bb_misc_match_text_member_013a0920(misc::TextMemberHolder *hold
 
     misc::TextScratch copy;
     fn_013a3110(&copy, holder, key);
-    const bool has_text = copy.length < misc::text_scratch_heap_capacity || copy.heap_data != nullptr;
+    const void *text_data = copy.length < misc::text_scratch_heap_capacity
+                                ? static_cast<const void *>(copy.inline_data)
+                                : copy.heap_data;
 
     misc::TextMatcher *matcher = nullptr;
-    if (has_text && holder->enabled_0x00 != 0 && holder->member_0x18 != nullptr)
-        matcher = fn_013abad0(holder->member_0x18);
+    if (text_data != nullptr && holder->enabled_0x00 != 0 && holder->member_0x18 != nullptr)
+        matcher = fn_013abad0(holder->member_0x18, text_data);
 
     if (copy.length >= misc::text_scratch_heap_capacity) copy.allocator->free(copy.heap_data);
     if (matcher == nullptr) return nullptr;
