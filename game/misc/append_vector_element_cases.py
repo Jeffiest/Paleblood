@@ -78,6 +78,8 @@ CASES = [
     case('append_null_end_with_capacity', end=0, capacity=2, value='outside', end_null=True),
     case('append_stored_full_reserve_end_null', end=2, capacity=2, value=0, reserve=True,
          new_count=grown(2), reserve_end_null=True),
+    case('append_first_stored_full_grows', end=3, capacity=3, value=0, reserve=True, new_count=grown(3)),
+    case('append_end_position_full_grows', end=3, capacity=3, value=3, reserve=True, new_count=grown(3)),
 ]
 
 
