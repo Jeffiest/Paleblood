@@ -5405,6 +5405,7 @@ address,size,name,system,status,notes
 0x013a2bd0,91,misc_match_member_text_013a2bd0,misc,edge-verified,Returns the member matcher result for the text or else the member value for the text and argument
 0x013a2c30,447,misc_compose_member_match_013a2c30,misc,edge-verified,Joins two texts and returns the member matcher result for the joined name or else the member value
 0x013a2df0,89,misc_member_text_fallback_013a2df0,misc,edge-verified,Gives the member value for the text unless the member matcher accepts the text
+0x013a2e50,449,misc_compose_member_value_013a2e50,misc,edge-verified,Joins two texts and returns the member value for the joined name unless its matcher accepts it
 0x013a3020,22,misc_member_object_013a3020,misc,edge-verified,Returns the routine result for the member of an enabled holder
 0x013a3040,22,misc_member_object_013a3040,misc,edge-verified,Returns the second routine result for the member of an enabled holder
 0x013a3060,164,misc_match_text_key_013a3060,misc,edge-verified,Copies the key text through a holder and returns the member matcher result for it
