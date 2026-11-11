@@ -11407,6 +11407,7 @@ address,replacement,system,returns
 0x0188dfa0,bb_auto_initialize_static_wide_string_0188dfa0,auto,void
 0x0188e0f0,bb_misc_init_byte_record_or_allocate,misc,i64
 0x0188e130,bb_misc_init_byte_record_or_allocate_0188e130,misc,i64
+0x0188e190,bb_misc_release_then_optional_delete,misc,i64
 0x0188e1c0,bb_auto_empty_0188e1c0,auto,void
 0x0188e1d0,bb_auto_delete_object_thunk_0188e1d0,auto,void
 0x0188e1f0,bb_auto_empty_0188e1f0,auto,void
