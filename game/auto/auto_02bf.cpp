@@ -4,25 +4,6 @@
 
 /**
  *
- * Does nothing.
- *
- */
-extern "C" void bb_auto_empty_02bf4dd0()
-{
-}
-
-/**
- *
- * Returns zero.
- *
- */
-extern "C" uint64_t bb_auto_return_zero_02bfbba0()
-{
-    return 0;
-}
-
-/**
- *
  * The part of the object that auto_return_field_02bfbbd0 reads.
  *
  */

@@ -72,16 +72,22 @@ def game_index(root: str) -> tuple[dict[str, list[str]], dict[str, str]]:
     return _indexes[key]
 
 
-def defining_files(root: str, name: str) -> list[str]:
-    """Files under game/ that define the replacement bb_<name>."""
-    return list(game_index(root)[0].get(name, []))
+def defining_files(root: str, name: str, family: bool = False) -> list[str]:
+    """Files under game/ that define the replacement bb_<name> (with family, also the
+    bb_<name>_<value> replacements of a parameterized family)."""
+    files = game_index(root)[0]
+    if not family:
+        return list(files.get(name, []))
+    prefix = name + '_'
+    return sorted({path for known, paths in files.items()
+                   if known == name or known.startswith(prefix) for path in paths})
 
 
-def source_files(root: str, name: str) -> list[str]:
+def source_files(root: str, name: str, family: bool = False) -> list[str]:
     """The defining files and every header they include from game/ or runtime/include/."""
     search = [os.path.join(root, 'game'), os.path.join(root, 'runtime', 'include')]
     seen: set[str] = set()
-    todo = [os.path.join(root, p) for p in defining_files(root, name)]
+    todo = [os.path.join(root, p) for p in defining_files(root, name, family)]
     while todo:
         path = os.path.normpath(todo.pop())
         if path in seen or not os.path.isfile(path):
@@ -98,8 +104,8 @@ def source_files(root: str, name: str) -> list[str]:
     return sorted(os.path.relpath(p, root).replace(os.sep, '/') for p in seen)
 
 
-def source_hash(root: str, name: str) -> str:
-    files = source_files(root, name)
+def source_hash(root: str, name: str, family: bool = False) -> str:
+    files = source_files(root, name, family)
     if not files:
         return ''
     h = hashlib.sha256()

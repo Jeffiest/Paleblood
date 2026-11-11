@@ -5,7 +5,7 @@
 #include <cstddef>
 #include <cstdint>
 #include "../engine/allocator.h"
-#include "../loading/fios.h"
+#include "../misc/thread_allocator.h"
 #include "../misc/dual_held_member_object.h"
 #include "runtime/original.h"
 
@@ -48,7 +48,7 @@ uint32_t block_size_of(const misc::DualHeldMemberObject *object)
 extern "C" uint64_t bb_auto_dual_held_member_object_free_00aa4ce0(misc::DualHeldMemberObject *object)
 {
     release_object(object);
-    engine::Allocator *allocator = loading::fios::thread_allocator();
+    engine::Allocator *allocator = misc::thread_allocator();
     return reinterpret_cast<const SizedFreeVtable *>(allocator->vtable)
         ->free_sized(allocator, object, block_size_of(object));
 }
@@ -94,7 +94,7 @@ uint32_t block_size_of(const misc::DualHeldMemberObject *object)
 extern "C" uint64_t bb_auto_dual_held_member_object_free_00c11530(misc::DualHeldMemberObject *object)
 {
     release_object(object);
-    engine::Allocator *allocator = loading::fios::thread_allocator();
+    engine::Allocator *allocator = misc::thread_allocator();
     return reinterpret_cast<const SizedFreeVtable *>(allocator->vtable)
         ->free_sized(allocator, object, block_size_of(object));
 }
@@ -140,7 +140,7 @@ uint32_t block_size_of(const misc::DualHeldMemberObject *object)
 extern "C" uint64_t bb_auto_dual_held_member_object_free_00c939b0(misc::DualHeldMemberObject *object)
 {
     release_object(object);
-    engine::Allocator *allocator = loading::fios::thread_allocator();
+    engine::Allocator *allocator = misc::thread_allocator();
     return reinterpret_cast<const SizedFreeVtable *>(allocator->vtable)
         ->free_sized(allocator, object, block_size_of(object));
 }
@@ -186,7 +186,7 @@ uint32_t block_size_of(const misc::DualHeldMemberObject *object)
 extern "C" uint64_t bb_auto_dual_held_member_object_free_00ecf1a0(misc::DualHeldMemberObject *object)
 {
     release_object(object);
-    engine::Allocator *allocator = loading::fios::thread_allocator();
+    engine::Allocator *allocator = misc::thread_allocator();
     return reinterpret_cast<const SizedFreeVtable *>(allocator->vtable)
         ->free_sized(allocator, object, block_size_of(object));
 }
@@ -232,7 +232,7 @@ uint32_t block_size_of(const misc::DualHeldMemberObject *object)
 extern "C" uint64_t bb_auto_dual_held_member_object_free_00f983f0(misc::DualHeldMemberObject *object)
 {
     release_object(object);
-    engine::Allocator *allocator = loading::fios::thread_allocator();
+    engine::Allocator *allocator = misc::thread_allocator();
     return reinterpret_cast<const SizedFreeVtable *>(allocator->vtable)
         ->free_sized(allocator, object, block_size_of(object));
 }
@@ -278,7 +278,7 @@ uint32_t block_size_of(const misc::DualHeldMemberObject *object)
 extern "C" uint64_t bb_auto_dual_held_member_object_free_028ce490(misc::DualHeldMemberObject *object)
 {
     release_object(object);
-    engine::Allocator *allocator = loading::fios::thread_allocator();
+    engine::Allocator *allocator = misc::thread_allocator();
     return reinterpret_cast<const SizedFreeVtable *>(allocator->vtable)
         ->free_sized(allocator, object, block_size_of(object));
 }
@@ -324,7 +324,7 @@ uint32_t block_size_of(const misc::DualHeldMemberObject *object)
 extern "C" uint64_t bb_auto_dual_held_member_object_free_0294ceb0(misc::DualHeldMemberObject *object)
 {
     release_object(object);
-    engine::Allocator *allocator = loading::fios::thread_allocator();
+    engine::Allocator *allocator = misc::thread_allocator();
     return reinterpret_cast<const SizedFreeVtable *>(allocator->vtable)
         ->free_sized(allocator, object, block_size_of(object));
 }
@@ -370,7 +370,7 @@ uint32_t block_size_of(const misc::DualHeldMemberObject *object)
 extern "C" uint64_t bb_auto_dual_held_member_object_free_02956190(misc::DualHeldMemberObject *object)
 {
     release_object(object);
-    engine::Allocator *allocator = loading::fios::thread_allocator();
+    engine::Allocator *allocator = misc::thread_allocator();
     return reinterpret_cast<const SizedFreeVtable *>(allocator->vtable)
         ->free_sized(allocator, object, block_size_of(object));
 }

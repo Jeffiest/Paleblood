@@ -41,7 +41,8 @@ def words(root: str) -> tuple[list[tuple[str, re.Pattern]], dict[str, str]]:
     for rel, col, label in (('symbols/functions.csv', 'name', 'function name'),
                             ('symbols/functions.csv', 'address', 'address'),
                             ('game/hooks.csv', 'address', 'address'),
-                            ('game/module_hooks.csv', 'offset', 'module offset')):
+                            ('game/module_hooks.csv', 'offset', 'module offset'),
+                            ('game/module_hooks.csv', 'first_bytes', 'module bytes')):
         p = os.path.join(root, rel)
         if not os.path.isfile(p):
             continue

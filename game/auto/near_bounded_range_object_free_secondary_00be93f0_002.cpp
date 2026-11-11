@@ -4,7 +4,7 @@
 #include <cstddef>
 #include <cstdint>
 #include "../engine/allocator.h"
-#include "../loading/fios.h"
+#include "../misc/thread_allocator.h"
 #include "runtime/original.h"
 
 // auto_bounded_range_object_free_secondary_00946d00: misc_bounded_range_object_free_secondary with other addresses and constants.
@@ -53,7 +53,7 @@ extern "C" uint64_t bb_auto_bounded_range_object_free_secondary_00946d00(uint8_t
 {
     uint8_t *const object = secondary - secondary_base_offset;
     release_object(object);
-    engine::Allocator *allocator = loading::fios::thread_allocator();
+    engine::Allocator *allocator = misc::thread_allocator();
     return reinterpret_cast<const SizedFreeVtable *>(allocator->vtable)
         ->free_sized(allocator, object, block_size_of(secondary));
 }
@@ -106,7 +106,7 @@ extern "C" uint64_t bb_auto_bounded_range_object_free_secondary_0094c0c0(uint8_t
 {
     uint8_t *const object = secondary - secondary_base_offset;
     release_object(object);
-    engine::Allocator *allocator = loading::fios::thread_allocator();
+    engine::Allocator *allocator = misc::thread_allocator();
     return reinterpret_cast<const SizedFreeVtable *>(allocator->vtable)
         ->free_sized(allocator, object, block_size_of(secondary));
 }
@@ -159,7 +159,7 @@ extern "C" uint64_t bb_auto_bounded_range_object_free_secondary_009b92a0(uint8_t
 {
     uint8_t *const object = secondary - secondary_base_offset;
     release_object(object);
-    engine::Allocator *allocator = loading::fios::thread_allocator();
+    engine::Allocator *allocator = misc::thread_allocator();
     return reinterpret_cast<const SizedFreeVtable *>(allocator->vtable)
         ->free_sized(allocator, object, block_size_of(secondary));
 }
@@ -212,7 +212,7 @@ extern "C" uint64_t bb_auto_bounded_range_object_free_secondary_009c4ad0(uint8_t
 {
     uint8_t *const object = secondary - secondary_base_offset;
     release_object(object);
-    engine::Allocator *allocator = loading::fios::thread_allocator();
+    engine::Allocator *allocator = misc::thread_allocator();
     return reinterpret_cast<const SizedFreeVtable *>(allocator->vtable)
         ->free_sized(allocator, object, block_size_of(secondary));
 }
@@ -265,7 +265,7 @@ extern "C" uint64_t bb_auto_bounded_range_object_free_secondary_009d0d70(uint8_t
 {
     uint8_t *const object = secondary - secondary_base_offset;
     release_object(object);
-    engine::Allocator *allocator = loading::fios::thread_allocator();
+    engine::Allocator *allocator = misc::thread_allocator();
     return reinterpret_cast<const SizedFreeVtable *>(allocator->vtable)
         ->free_sized(allocator, object, block_size_of(secondary));
 }
@@ -318,7 +318,7 @@ extern "C" uint64_t bb_auto_bounded_range_object_free_secondary_00a06600(uint8_t
 {
     uint8_t *const object = secondary - secondary_base_offset;
     release_object(object);
-    engine::Allocator *allocator = loading::fios::thread_allocator();
+    engine::Allocator *allocator = misc::thread_allocator();
     return reinterpret_cast<const SizedFreeVtable *>(allocator->vtable)
         ->free_sized(allocator, object, block_size_of(secondary));
 }
@@ -371,7 +371,7 @@ extern "C" uint64_t bb_auto_bounded_range_object_free_secondary_00a06660(uint8_t
 {
     uint8_t *const object = secondary - secondary_base_offset;
     release_object(object);
-    engine::Allocator *allocator = loading::fios::thread_allocator();
+    engine::Allocator *allocator = misc::thread_allocator();
     return reinterpret_cast<const SizedFreeVtable *>(allocator->vtable)
         ->free_sized(allocator, object, block_size_of(secondary));
 }
@@ -424,7 +424,7 @@ extern "C" uint64_t bb_auto_bounded_range_object_free_secondary_00a066c0(uint8_t
 {
     uint8_t *const object = secondary - secondary_base_offset;
     release_object(object);
-    engine::Allocator *allocator = loading::fios::thread_allocator();
+    engine::Allocator *allocator = misc::thread_allocator();
     return reinterpret_cast<const SizedFreeVtable *>(allocator->vtable)
         ->free_sized(allocator, object, block_size_of(secondary));
 }
@@ -477,7 +477,7 @@ extern "C" uint64_t bb_auto_bounded_range_object_free_secondary_00a06720(uint8_t
 {
     uint8_t *const object = secondary - secondary_base_offset;
     release_object(object);
-    engine::Allocator *allocator = loading::fios::thread_allocator();
+    engine::Allocator *allocator = misc::thread_allocator();
     return reinterpret_cast<const SizedFreeVtable *>(allocator->vtable)
         ->free_sized(allocator, object, block_size_of(secondary));
 }
@@ -530,7 +530,7 @@ extern "C" uint64_t bb_auto_bounded_range_object_free_secondary_00a6a390(uint8_t
 {
     uint8_t *const object = secondary - secondary_base_offset;
     release_object(object);
-    engine::Allocator *allocator = loading::fios::thread_allocator();
+    engine::Allocator *allocator = misc::thread_allocator();
     return reinterpret_cast<const SizedFreeVtable *>(allocator->vtable)
         ->free_sized(allocator, object, block_size_of(secondary));
 }
@@ -583,7 +583,7 @@ extern "C" uint64_t bb_auto_bounded_range_object_free_secondary_00a7bfb0(uint8_t
 {
     uint8_t *const object = secondary - secondary_base_offset;
     release_object(object);
-    engine::Allocator *allocator = loading::fios::thread_allocator();
+    engine::Allocator *allocator = misc::thread_allocator();
     return reinterpret_cast<const SizedFreeVtable *>(allocator->vtable)
         ->free_sized(allocator, object, block_size_of(secondary));
 }
@@ -636,7 +636,7 @@ extern "C" uint64_t bb_auto_bounded_range_object_free_secondary_00a8a9d0(uint8_t
 {
     uint8_t *const object = secondary - secondary_base_offset;
     release_object(object);
-    engine::Allocator *allocator = loading::fios::thread_allocator();
+    engine::Allocator *allocator = misc::thread_allocator();
     return reinterpret_cast<const SizedFreeVtable *>(allocator->vtable)
         ->free_sized(allocator, object, block_size_of(secondary));
 }
@@ -689,7 +689,7 @@ extern "C" uint64_t bb_auto_bounded_range_object_free_secondary_00a8aa30(uint8_t
 {
     uint8_t *const object = secondary - secondary_base_offset;
     release_object(object);
-    engine::Allocator *allocator = loading::fios::thread_allocator();
+    engine::Allocator *allocator = misc::thread_allocator();
     return reinterpret_cast<const SizedFreeVtable *>(allocator->vtable)
         ->free_sized(allocator, object, block_size_of(secondary));
 }
@@ -742,7 +742,7 @@ extern "C" uint64_t bb_auto_bounded_range_object_free_secondary_00a8aa90(uint8_t
 {
     uint8_t *const object = secondary - secondary_base_offset;
     release_object(object);
-    engine::Allocator *allocator = loading::fios::thread_allocator();
+    engine::Allocator *allocator = misc::thread_allocator();
     return reinterpret_cast<const SizedFreeVtable *>(allocator->vtable)
         ->free_sized(allocator, object, block_size_of(secondary));
 }
@@ -795,7 +795,7 @@ extern "C" uint64_t bb_auto_bounded_range_object_free_secondary_00a8aaf0(uint8_t
 {
     uint8_t *const object = secondary - secondary_base_offset;
     release_object(object);
-    engine::Allocator *allocator = loading::fios::thread_allocator();
+    engine::Allocator *allocator = misc::thread_allocator();
     return reinterpret_cast<const SizedFreeVtable *>(allocator->vtable)
         ->free_sized(allocator, object, block_size_of(secondary));
 }
@@ -848,7 +848,7 @@ extern "C" uint64_t bb_auto_bounded_range_object_free_secondary_00a93b90(uint8_t
 {
     uint8_t *const object = secondary - secondary_base_offset;
     release_object(object);
-    engine::Allocator *allocator = loading::fios::thread_allocator();
+    engine::Allocator *allocator = misc::thread_allocator();
     return reinterpret_cast<const SizedFreeVtable *>(allocator->vtable)
         ->free_sized(allocator, object, block_size_of(secondary));
 }
@@ -901,7 +901,7 @@ extern "C" uint64_t bb_auto_bounded_range_object_free_secondary_00a93bf0(uint8_t
 {
     uint8_t *const object = secondary - secondary_base_offset;
     release_object(object);
-    engine::Allocator *allocator = loading::fios::thread_allocator();
+    engine::Allocator *allocator = misc::thread_allocator();
     return reinterpret_cast<const SizedFreeVtable *>(allocator->vtable)
         ->free_sized(allocator, object, block_size_of(secondary));
 }
@@ -954,7 +954,7 @@ extern "C" uint64_t bb_auto_bounded_range_object_free_secondary_00d27390(uint8_t
 {
     uint8_t *const object = secondary - secondary_base_offset;
     release_object(object);
-    engine::Allocator *allocator = loading::fios::thread_allocator();
+    engine::Allocator *allocator = misc::thread_allocator();
     return reinterpret_cast<const SizedFreeVtable *>(allocator->vtable)
         ->free_sized(allocator, object, block_size_of(secondary));
 }
@@ -1007,7 +1007,7 @@ extern "C" uint64_t bb_auto_bounded_range_object_free_secondary_00d27e40(uint8_t
 {
     uint8_t *const object = secondary - secondary_base_offset;
     release_object(object);
-    engine::Allocator *allocator = loading::fios::thread_allocator();
+    engine::Allocator *allocator = misc::thread_allocator();
     return reinterpret_cast<const SizedFreeVtable *>(allocator->vtable)
         ->free_sized(allocator, object, block_size_of(secondary));
 }
@@ -1060,7 +1060,7 @@ extern "C" uint64_t bb_auto_bounded_range_object_free_secondary_00d27ea0(uint8_t
 {
     uint8_t *const object = secondary - secondary_base_offset;
     release_object(object);
-    engine::Allocator *allocator = loading::fios::thread_allocator();
+    engine::Allocator *allocator = misc::thread_allocator();
     return reinterpret_cast<const SizedFreeVtable *>(allocator->vtable)
         ->free_sized(allocator, object, block_size_of(secondary));
 }
@@ -1113,7 +1113,7 @@ extern "C" uint64_t bb_auto_bounded_range_object_free_secondary_00d295f0(uint8_t
 {
     uint8_t *const object = secondary - secondary_base_offset;
     release_object(object);
-    engine::Allocator *allocator = loading::fios::thread_allocator();
+    engine::Allocator *allocator = misc::thread_allocator();
     return reinterpret_cast<const SizedFreeVtable *>(allocator->vtable)
         ->free_sized(allocator, object, block_size_of(secondary));
 }
@@ -1166,7 +1166,7 @@ extern "C" uint64_t bb_auto_bounded_range_object_free_secondary_00d29650(uint8_t
 {
     uint8_t *const object = secondary - secondary_base_offset;
     release_object(object);
-    engine::Allocator *allocator = loading::fios::thread_allocator();
+    engine::Allocator *allocator = misc::thread_allocator();
     return reinterpret_cast<const SizedFreeVtable *>(allocator->vtable)
         ->free_sized(allocator, object, block_size_of(secondary));
 }
@@ -1219,7 +1219,7 @@ extern "C" uint64_t bb_auto_bounded_range_object_free_secondary_00d38370(uint8_t
 {
     uint8_t *const object = secondary - secondary_base_offset;
     release_object(object);
-    engine::Allocator *allocator = loading::fios::thread_allocator();
+    engine::Allocator *allocator = misc::thread_allocator();
     return reinterpret_cast<const SizedFreeVtable *>(allocator->vtable)
         ->free_sized(allocator, object, block_size_of(secondary));
 }
@@ -1272,7 +1272,7 @@ extern "C" uint64_t bb_auto_bounded_range_object_free_secondary_00d383d0(uint8_t
 {
     uint8_t *const object = secondary - secondary_base_offset;
     release_object(object);
-    engine::Allocator *allocator = loading::fios::thread_allocator();
+    engine::Allocator *allocator = misc::thread_allocator();
     return reinterpret_cast<const SizedFreeVtable *>(allocator->vtable)
         ->free_sized(allocator, object, block_size_of(secondary));
 }
@@ -1325,7 +1325,7 @@ extern "C" uint64_t bb_auto_bounded_range_object_free_secondary_00e97790(uint8_t
 {
     uint8_t *const object = secondary - secondary_base_offset;
     release_object(object);
-    engine::Allocator *allocator = loading::fios::thread_allocator();
+    engine::Allocator *allocator = misc::thread_allocator();
     return reinterpret_cast<const SizedFreeVtable *>(allocator->vtable)
         ->free_sized(allocator, object, block_size_of(secondary));
 }
@@ -1378,7 +1378,7 @@ extern "C" uint64_t bb_auto_bounded_range_object_free_secondary_00e9df40(uint8_t
 {
     uint8_t *const object = secondary - secondary_base_offset;
     release_object(object);
-    engine::Allocator *allocator = loading::fios::thread_allocator();
+    engine::Allocator *allocator = misc::thread_allocator();
     return reinterpret_cast<const SizedFreeVtable *>(allocator->vtable)
         ->free_sized(allocator, object, block_size_of(secondary));
 }
@@ -1431,7 +1431,7 @@ extern "C" uint64_t bb_auto_bounded_range_object_free_secondary_00e9dfa0(uint8_t
 {
     uint8_t *const object = secondary - secondary_base_offset;
     release_object(object);
-    engine::Allocator *allocator = loading::fios::thread_allocator();
+    engine::Allocator *allocator = misc::thread_allocator();
     return reinterpret_cast<const SizedFreeVtable *>(allocator->vtable)
         ->free_sized(allocator, object, block_size_of(secondary));
 }
@@ -1484,7 +1484,7 @@ extern "C" uint64_t bb_auto_bounded_range_object_free_secondary_00e9e000(uint8_t
 {
     uint8_t *const object = secondary - secondary_base_offset;
     release_object(object);
-    engine::Allocator *allocator = loading::fios::thread_allocator();
+    engine::Allocator *allocator = misc::thread_allocator();
     return reinterpret_cast<const SizedFreeVtable *>(allocator->vtable)
         ->free_sized(allocator, object, block_size_of(secondary));
 }
@@ -1537,7 +1537,7 @@ extern "C" uint64_t bb_auto_bounded_range_object_free_secondary_00ea26b0(uint8_t
 {
     uint8_t *const object = secondary - secondary_base_offset;
     release_object(object);
-    engine::Allocator *allocator = loading::fios::thread_allocator();
+    engine::Allocator *allocator = misc::thread_allocator();
     return reinterpret_cast<const SizedFreeVtable *>(allocator->vtable)
         ->free_sized(allocator, object, block_size_of(secondary));
 }
@@ -1590,7 +1590,7 @@ extern "C" uint64_t bb_auto_bounded_range_object_free_secondary_00ea2710(uint8_t
 {
     uint8_t *const object = secondary - secondary_base_offset;
     release_object(object);
-    engine::Allocator *allocator = loading::fios::thread_allocator();
+    engine::Allocator *allocator = misc::thread_allocator();
     return reinterpret_cast<const SizedFreeVtable *>(allocator->vtable)
         ->free_sized(allocator, object, block_size_of(secondary));
 }
@@ -1643,7 +1643,7 @@ extern "C" uint64_t bb_auto_bounded_range_object_free_secondary_00ea2770(uint8_t
 {
     uint8_t *const object = secondary - secondary_base_offset;
     release_object(object);
-    engine::Allocator *allocator = loading::fios::thread_allocator();
+    engine::Allocator *allocator = misc::thread_allocator();
     return reinterpret_cast<const SizedFreeVtable *>(allocator->vtable)
         ->free_sized(allocator, object, block_size_of(secondary));
 }
@@ -1696,7 +1696,7 @@ extern "C" uint64_t bb_auto_bounded_range_object_free_secondary_00ea7630(uint8_t
 {
     uint8_t *const object = secondary - secondary_base_offset;
     release_object(object);
-    engine::Allocator *allocator = loading::fios::thread_allocator();
+    engine::Allocator *allocator = misc::thread_allocator();
     return reinterpret_cast<const SizedFreeVtable *>(allocator->vtable)
         ->free_sized(allocator, object, block_size_of(secondary));
 }
@@ -1749,7 +1749,7 @@ extern "C" uint64_t bb_auto_bounded_range_object_free_secondary_00ea7690(uint8_t
 {
     uint8_t *const object = secondary - secondary_base_offset;
     release_object(object);
-    engine::Allocator *allocator = loading::fios::thread_allocator();
+    engine::Allocator *allocator = misc::thread_allocator();
     return reinterpret_cast<const SizedFreeVtable *>(allocator->vtable)
         ->free_sized(allocator, object, block_size_of(secondary));
 }
@@ -1802,7 +1802,7 @@ extern "C" uint64_t bb_auto_bounded_range_object_free_secondary_00ea76f0(uint8_t
 {
     uint8_t *const object = secondary - secondary_base_offset;
     release_object(object);
-    engine::Allocator *allocator = loading::fios::thread_allocator();
+    engine::Allocator *allocator = misc::thread_allocator();
     return reinterpret_cast<const SizedFreeVtable *>(allocator->vtable)
         ->free_sized(allocator, object, block_size_of(secondary));
 }
@@ -1855,7 +1855,7 @@ extern "C" uint64_t bb_auto_bounded_range_object_free_secondary_00eb0c50(uint8_t
 {
     uint8_t *const object = secondary - secondary_base_offset;
     release_object(object);
-    engine::Allocator *allocator = loading::fios::thread_allocator();
+    engine::Allocator *allocator = misc::thread_allocator();
     return reinterpret_cast<const SizedFreeVtable *>(allocator->vtable)
         ->free_sized(allocator, object, block_size_of(secondary));
 }
@@ -1908,7 +1908,7 @@ extern "C" uint64_t bb_auto_bounded_range_object_free_secondary_00eb0cb0(uint8_t
 {
     uint8_t *const object = secondary - secondary_base_offset;
     release_object(object);
-    engine::Allocator *allocator = loading::fios::thread_allocator();
+    engine::Allocator *allocator = misc::thread_allocator();
     return reinterpret_cast<const SizedFreeVtable *>(allocator->vtable)
         ->free_sized(allocator, object, block_size_of(secondary));
 }
@@ -1961,7 +1961,7 @@ extern "C" uint64_t bb_auto_bounded_range_object_free_secondary_00eb0d10(uint8_t
 {
     uint8_t *const object = secondary - secondary_base_offset;
     release_object(object);
-    engine::Allocator *allocator = loading::fios::thread_allocator();
+    engine::Allocator *allocator = misc::thread_allocator();
     return reinterpret_cast<const SizedFreeVtable *>(allocator->vtable)
         ->free_sized(allocator, object, block_size_of(secondary));
 }
@@ -2014,7 +2014,7 @@ extern "C" uint64_t bb_auto_bounded_range_object_free_secondary_00f6c5f0(uint8_t
 {
     uint8_t *const object = secondary - secondary_base_offset;
     release_object(object);
-    engine::Allocator *allocator = loading::fios::thread_allocator();
+    engine::Allocator *allocator = misc::thread_allocator();
     return reinterpret_cast<const SizedFreeVtable *>(allocator->vtable)
         ->free_sized(allocator, object, block_size_of(secondary));
 }
@@ -2067,7 +2067,7 @@ extern "C" uint64_t bb_auto_bounded_range_object_free_secondary_0152f190(uint8_t
 {
     uint8_t *const object = secondary - secondary_base_offset;
     release_object(object);
-    engine::Allocator *allocator = loading::fios::thread_allocator();
+    engine::Allocator *allocator = misc::thread_allocator();
     return reinterpret_cast<const SizedFreeVtable *>(allocator->vtable)
         ->free_sized(allocator, object, block_size_of(secondary));
 }
@@ -2120,7 +2120,7 @@ extern "C" uint64_t bb_auto_bounded_range_object_free_secondary_0152f1f0(uint8_t
 {
     uint8_t *const object = secondary - secondary_base_offset;
     release_object(object);
-    engine::Allocator *allocator = loading::fios::thread_allocator();
+    engine::Allocator *allocator = misc::thread_allocator();
     return reinterpret_cast<const SizedFreeVtable *>(allocator->vtable)
         ->free_sized(allocator, object, block_size_of(secondary));
 }
@@ -2173,7 +2173,7 @@ extern "C" uint64_t bb_auto_bounded_range_object_free_secondary_0152f250(uint8_t
 {
     uint8_t *const object = secondary - secondary_base_offset;
     release_object(object);
-    engine::Allocator *allocator = loading::fios::thread_allocator();
+    engine::Allocator *allocator = misc::thread_allocator();
     return reinterpret_cast<const SizedFreeVtable *>(allocator->vtable)
         ->free_sized(allocator, object, block_size_of(secondary));
 }
@@ -2226,7 +2226,7 @@ extern "C" uint64_t bb_auto_bounded_range_object_free_secondary_0152f2b0(uint8_t
 {
     uint8_t *const object = secondary - secondary_base_offset;
     release_object(object);
-    engine::Allocator *allocator = loading::fios::thread_allocator();
+    engine::Allocator *allocator = misc::thread_allocator();
     return reinterpret_cast<const SizedFreeVtable *>(allocator->vtable)
         ->free_sized(allocator, object, block_size_of(secondary));
 }
@@ -2279,7 +2279,7 @@ extern "C" uint64_t bb_auto_bounded_range_object_free_secondary_0152f310(uint8_t
 {
     uint8_t *const object = secondary - secondary_base_offset;
     release_object(object);
-    engine::Allocator *allocator = loading::fios::thread_allocator();
+    engine::Allocator *allocator = misc::thread_allocator();
     return reinterpret_cast<const SizedFreeVtable *>(allocator->vtable)
         ->free_sized(allocator, object, block_size_of(secondary));
 }
@@ -2332,7 +2332,7 @@ extern "C" uint64_t bb_auto_bounded_range_object_free_secondary_015309d0(uint8_t
 {
     uint8_t *const object = secondary - secondary_base_offset;
     release_object(object);
-    engine::Allocator *allocator = loading::fios::thread_allocator();
+    engine::Allocator *allocator = misc::thread_allocator();
     return reinterpret_cast<const SizedFreeVtable *>(allocator->vtable)
         ->free_sized(allocator, object, block_size_of(secondary));
 }
@@ -2385,7 +2385,7 @@ extern "C" uint64_t bb_auto_bounded_range_object_free_secondary_01530a30(uint8_t
 {
     uint8_t *const object = secondary - secondary_base_offset;
     release_object(object);
-    engine::Allocator *allocator = loading::fios::thread_allocator();
+    engine::Allocator *allocator = misc::thread_allocator();
     return reinterpret_cast<const SizedFreeVtable *>(allocator->vtable)
         ->free_sized(allocator, object, block_size_of(secondary));
 }
@@ -2438,7 +2438,7 @@ extern "C" uint64_t bb_auto_bounded_range_object_free_secondary_01533230(uint8_t
 {
     uint8_t *const object = secondary - secondary_base_offset;
     release_object(object);
-    engine::Allocator *allocator = loading::fios::thread_allocator();
+    engine::Allocator *allocator = misc::thread_allocator();
     return reinterpret_cast<const SizedFreeVtable *>(allocator->vtable)
         ->free_sized(allocator, object, block_size_of(secondary));
 }
@@ -2491,7 +2491,7 @@ extern "C" uint64_t bb_auto_bounded_range_object_free_secondary_01534c20(uint8_t
 {
     uint8_t *const object = secondary - secondary_base_offset;
     release_object(object);
-    engine::Allocator *allocator = loading::fios::thread_allocator();
+    engine::Allocator *allocator = misc::thread_allocator();
     return reinterpret_cast<const SizedFreeVtable *>(allocator->vtable)
         ->free_sized(allocator, object, block_size_of(secondary));
 }
@@ -2544,7 +2544,7 @@ extern "C" uint64_t bb_auto_bounded_range_object_free_secondary_0153d3b0(uint8_t
 {
     uint8_t *const object = secondary - secondary_base_offset;
     release_object(object);
-    engine::Allocator *allocator = loading::fios::thread_allocator();
+    engine::Allocator *allocator = misc::thread_allocator();
     return reinterpret_cast<const SizedFreeVtable *>(allocator->vtable)
         ->free_sized(allocator, object, block_size_of(secondary));
 }
@@ -2597,7 +2597,7 @@ extern "C" uint64_t bb_auto_bounded_range_object_free_secondary_0153d410(uint8_t
 {
     uint8_t *const object = secondary - secondary_base_offset;
     release_object(object);
-    engine::Allocator *allocator = loading::fios::thread_allocator();
+    engine::Allocator *allocator = misc::thread_allocator();
     return reinterpret_cast<const SizedFreeVtable *>(allocator->vtable)
         ->free_sized(allocator, object, block_size_of(secondary));
 }
@@ -2650,7 +2650,7 @@ extern "C" uint64_t bb_auto_bounded_range_object_free_secondary_015403a0(uint8_t
 {
     uint8_t *const object = secondary - secondary_base_offset;
     release_object(object);
-    engine::Allocator *allocator = loading::fios::thread_allocator();
+    engine::Allocator *allocator = misc::thread_allocator();
     return reinterpret_cast<const SizedFreeVtable *>(allocator->vtable)
         ->free_sized(allocator, object, block_size_of(secondary));
 }
@@ -2703,7 +2703,7 @@ extern "C" uint64_t bb_auto_bounded_range_object_free_secondary_01540400(uint8_t
 {
     uint8_t *const object = secondary - secondary_base_offset;
     release_object(object);
-    engine::Allocator *allocator = loading::fios::thread_allocator();
+    engine::Allocator *allocator = misc::thread_allocator();
     return reinterpret_cast<const SizedFreeVtable *>(allocator->vtable)
         ->free_sized(allocator, object, block_size_of(secondary));
 }
@@ -2756,7 +2756,7 @@ extern "C" uint64_t bb_auto_bounded_range_object_free_secondary_01540460(uint8_t
 {
     uint8_t *const object = secondary - secondary_base_offset;
     release_object(object);
-    engine::Allocator *allocator = loading::fios::thread_allocator();
+    engine::Allocator *allocator = misc::thread_allocator();
     return reinterpret_cast<const SizedFreeVtable *>(allocator->vtable)
         ->free_sized(allocator, object, block_size_of(secondary));
 }
@@ -2809,7 +2809,7 @@ extern "C" uint64_t bb_auto_bounded_range_object_free_secondary_01548050(uint8_t
 {
     uint8_t *const object = secondary - secondary_base_offset;
     release_object(object);
-    engine::Allocator *allocator = loading::fios::thread_allocator();
+    engine::Allocator *allocator = misc::thread_allocator();
     return reinterpret_cast<const SizedFreeVtable *>(allocator->vtable)
         ->free_sized(allocator, object, block_size_of(secondary));
 }
@@ -2862,7 +2862,7 @@ extern "C" uint64_t bb_auto_bounded_range_object_free_secondary_015480b0(uint8_t
 {
     uint8_t *const object = secondary - secondary_base_offset;
     release_object(object);
-    engine::Allocator *allocator = loading::fios::thread_allocator();
+    engine::Allocator *allocator = misc::thread_allocator();
     return reinterpret_cast<const SizedFreeVtable *>(allocator->vtable)
         ->free_sized(allocator, object, block_size_of(secondary));
 }
@@ -2915,7 +2915,7 @@ extern "C" uint64_t bb_auto_bounded_range_object_free_secondary_01548110(uint8_t
 {
     uint8_t *const object = secondary - secondary_base_offset;
     release_object(object);
-    engine::Allocator *allocator = loading::fios::thread_allocator();
+    engine::Allocator *allocator = misc::thread_allocator();
     return reinterpret_cast<const SizedFreeVtable *>(allocator->vtable)
         ->free_sized(allocator, object, block_size_of(secondary));
 }
@@ -2968,7 +2968,7 @@ extern "C" uint64_t bb_auto_bounded_range_object_free_secondary_0154a020(uint8_t
 {
     uint8_t *const object = secondary - secondary_base_offset;
     release_object(object);
-    engine::Allocator *allocator = loading::fios::thread_allocator();
+    engine::Allocator *allocator = misc::thread_allocator();
     return reinterpret_cast<const SizedFreeVtable *>(allocator->vtable)
         ->free_sized(allocator, object, block_size_of(secondary));
 }
@@ -3021,7 +3021,7 @@ extern "C" uint64_t bb_auto_bounded_range_object_free_secondary_0154a080(uint8_t
 {
     uint8_t *const object = secondary - secondary_base_offset;
     release_object(object);
-    engine::Allocator *allocator = loading::fios::thread_allocator();
+    engine::Allocator *allocator = misc::thread_allocator();
     return reinterpret_cast<const SizedFreeVtable *>(allocator->vtable)
         ->free_sized(allocator, object, block_size_of(secondary));
 }
@@ -3074,7 +3074,7 @@ extern "C" uint64_t bb_auto_bounded_range_object_free_secondary_0154a650(uint8_t
 {
     uint8_t *const object = secondary - secondary_base_offset;
     release_object(object);
-    engine::Allocator *allocator = loading::fios::thread_allocator();
+    engine::Allocator *allocator = misc::thread_allocator();
     return reinterpret_cast<const SizedFreeVtable *>(allocator->vtable)
         ->free_sized(allocator, object, block_size_of(secondary));
 }
@@ -3127,7 +3127,7 @@ extern "C" uint64_t bb_auto_bounded_range_object_free_secondary_0154a6b0(uint8_t
 {
     uint8_t *const object = secondary - secondary_base_offset;
     release_object(object);
-    engine::Allocator *allocator = loading::fios::thread_allocator();
+    engine::Allocator *allocator = misc::thread_allocator();
     return reinterpret_cast<const SizedFreeVtable *>(allocator->vtable)
         ->free_sized(allocator, object, block_size_of(secondary));
 }
@@ -3180,7 +3180,7 @@ extern "C" uint64_t bb_auto_bounded_range_object_free_secondary_0154a710(uint8_t
 {
     uint8_t *const object = secondary - secondary_base_offset;
     release_object(object);
-    engine::Allocator *allocator = loading::fios::thread_allocator();
+    engine::Allocator *allocator = misc::thread_allocator();
     return reinterpret_cast<const SizedFreeVtable *>(allocator->vtable)
         ->free_sized(allocator, object, block_size_of(secondary));
 }
@@ -3233,7 +3233,7 @@ extern "C" uint64_t bb_auto_bounded_range_object_free_secondary_0154e6b0(uint8_t
 {
     uint8_t *const object = secondary - secondary_base_offset;
     release_object(object);
-    engine::Allocator *allocator = loading::fios::thread_allocator();
+    engine::Allocator *allocator = misc::thread_allocator();
     return reinterpret_cast<const SizedFreeVtable *>(allocator->vtable)
         ->free_sized(allocator, object, block_size_of(secondary));
 }
@@ -3286,7 +3286,7 @@ extern "C" uint64_t bb_auto_bounded_range_object_free_secondary_0154e710(uint8_t
 {
     uint8_t *const object = secondary - secondary_base_offset;
     release_object(object);
-    engine::Allocator *allocator = loading::fios::thread_allocator();
+    engine::Allocator *allocator = misc::thread_allocator();
     return reinterpret_cast<const SizedFreeVtable *>(allocator->vtable)
         ->free_sized(allocator, object, block_size_of(secondary));
 }
@@ -3339,7 +3339,7 @@ extern "C" uint64_t bb_auto_bounded_range_object_free_secondary_0154e770(uint8_t
 {
     uint8_t *const object = secondary - secondary_base_offset;
     release_object(object);
-    engine::Allocator *allocator = loading::fios::thread_allocator();
+    engine::Allocator *allocator = misc::thread_allocator();
     return reinterpret_cast<const SizedFreeVtable *>(allocator->vtable)
         ->free_sized(allocator, object, block_size_of(secondary));
 }
@@ -3392,7 +3392,7 @@ extern "C" uint64_t bb_auto_bounded_range_object_free_secondary_01550650(uint8_t
 {
     uint8_t *const object = secondary - secondary_base_offset;
     release_object(object);
-    engine::Allocator *allocator = loading::fios::thread_allocator();
+    engine::Allocator *allocator = misc::thread_allocator();
     return reinterpret_cast<const SizedFreeVtable *>(allocator->vtable)
         ->free_sized(allocator, object, block_size_of(secondary));
 }
@@ -3445,7 +3445,7 @@ extern "C" uint64_t bb_auto_bounded_range_object_free_secondary_015506b0(uint8_t
 {
     uint8_t *const object = secondary - secondary_base_offset;
     release_object(object);
-    engine::Allocator *allocator = loading::fios::thread_allocator();
+    engine::Allocator *allocator = misc::thread_allocator();
     return reinterpret_cast<const SizedFreeVtable *>(allocator->vtable)
         ->free_sized(allocator, object, block_size_of(secondary));
 }
@@ -3498,7 +3498,7 @@ extern "C" uint64_t bb_auto_bounded_range_object_free_secondary_01550710(uint8_t
 {
     uint8_t *const object = secondary - secondary_base_offset;
     release_object(object);
-    engine::Allocator *allocator = loading::fios::thread_allocator();
+    engine::Allocator *allocator = misc::thread_allocator();
     return reinterpret_cast<const SizedFreeVtable *>(allocator->vtable)
         ->free_sized(allocator, object, block_size_of(secondary));
 }
@@ -3551,7 +3551,7 @@ extern "C" uint64_t bb_auto_bounded_range_object_free_secondary_015618a0(uint8_t
 {
     uint8_t *const object = secondary - secondary_base_offset;
     release_object(object);
-    engine::Allocator *allocator = loading::fios::thread_allocator();
+    engine::Allocator *allocator = misc::thread_allocator();
     return reinterpret_cast<const SizedFreeVtable *>(allocator->vtable)
         ->free_sized(allocator, object, block_size_of(secondary));
 }
@@ -3604,7 +3604,7 @@ extern "C" uint64_t bb_auto_bounded_range_object_free_secondary_01561900(uint8_t
 {
     uint8_t *const object = secondary - secondary_base_offset;
     release_object(object);
-    engine::Allocator *allocator = loading::fios::thread_allocator();
+    engine::Allocator *allocator = misc::thread_allocator();
     return reinterpret_cast<const SizedFreeVtable *>(allocator->vtable)
         ->free_sized(allocator, object, block_size_of(secondary));
 }
@@ -3657,7 +3657,7 @@ extern "C" uint64_t bb_auto_bounded_range_object_free_secondary_0292adf0(uint8_t
 {
     uint8_t *const object = secondary - secondary_base_offset;
     release_object(object);
-    engine::Allocator *allocator = loading::fios::thread_allocator();
+    engine::Allocator *allocator = misc::thread_allocator();
     return reinterpret_cast<const SizedFreeVtable *>(allocator->vtable)
         ->free_sized(allocator, object, block_size_of(secondary));
 }
@@ -3710,7 +3710,7 @@ extern "C" uint64_t bb_auto_bounded_range_object_free_secondary_029bb3b0(uint8_t
 {
     uint8_t *const object = secondary - secondary_base_offset;
     release_object(object);
-    engine::Allocator *allocator = loading::fios::thread_allocator();
+    engine::Allocator *allocator = misc::thread_allocator();
     return reinterpret_cast<const SizedFreeVtable *>(allocator->vtable)
         ->free_sized(allocator, object, block_size_of(secondary));
 }
@@ -3763,7 +3763,7 @@ extern "C" uint64_t bb_auto_bounded_range_object_free_secondary_029bb420(uint8_t
 {
     uint8_t *const object = secondary - secondary_base_offset;
     release_object(object);
-    engine::Allocator *allocator = loading::fios::thread_allocator();
+    engine::Allocator *allocator = misc::thread_allocator();
     return reinterpret_cast<const SizedFreeVtable *>(allocator->vtable)
         ->free_sized(allocator, object, block_size_of(secondary));
 }
@@ -3816,7 +3816,7 @@ extern "C" uint64_t bb_auto_bounded_range_object_free_secondary_029bb580(uint8_t
 {
     uint8_t *const object = secondary - secondary_base_offset;
     release_object(object);
-    engine::Allocator *allocator = loading::fios::thread_allocator();
+    engine::Allocator *allocator = misc::thread_allocator();
     return reinterpret_cast<const SizedFreeVtable *>(allocator->vtable)
         ->free_sized(allocator, object, block_size_of(secondary));
 }
@@ -3869,7 +3869,7 @@ extern "C" uint64_t bb_auto_bounded_range_object_free_secondary_029bb5f0(uint8_t
 {
     uint8_t *const object = secondary - secondary_base_offset;
     release_object(object);
-    engine::Allocator *allocator = loading::fios::thread_allocator();
+    engine::Allocator *allocator = misc::thread_allocator();
     return reinterpret_cast<const SizedFreeVtable *>(allocator->vtable)
         ->free_sized(allocator, object, block_size_of(secondary));
 }
@@ -3922,7 +3922,7 @@ extern "C" uint64_t bb_auto_bounded_range_object_free_secondary_029bb750(uint8_t
 {
     uint8_t *const object = secondary - secondary_base_offset;
     release_object(object);
-    engine::Allocator *allocator = loading::fios::thread_allocator();
+    engine::Allocator *allocator = misc::thread_allocator();
     return reinterpret_cast<const SizedFreeVtable *>(allocator->vtable)
         ->free_sized(allocator, object, block_size_of(secondary));
 }
@@ -3975,7 +3975,7 @@ extern "C" uint64_t bb_auto_bounded_range_object_free_secondary_029bb7c0(uint8_t
 {
     uint8_t *const object = secondary - secondary_base_offset;
     release_object(object);
-    engine::Allocator *allocator = loading::fios::thread_allocator();
+    engine::Allocator *allocator = misc::thread_allocator();
     return reinterpret_cast<const SizedFreeVtable *>(allocator->vtable)
         ->free_sized(allocator, object, block_size_of(secondary));
 }
@@ -4028,7 +4028,7 @@ extern "C" uint64_t bb_auto_bounded_range_object_free_secondary_029bb920(uint8_t
 {
     uint8_t *const object = secondary - secondary_base_offset;
     release_object(object);
-    engine::Allocator *allocator = loading::fios::thread_allocator();
+    engine::Allocator *allocator = misc::thread_allocator();
     return reinterpret_cast<const SizedFreeVtable *>(allocator->vtable)
         ->free_sized(allocator, object, block_size_of(secondary));
 }
@@ -4081,7 +4081,7 @@ extern "C" uint64_t bb_auto_bounded_range_object_free_secondary_029bb990(uint8_t
 {
     uint8_t *const object = secondary - secondary_base_offset;
     release_object(object);
-    engine::Allocator *allocator = loading::fios::thread_allocator();
+    engine::Allocator *allocator = misc::thread_allocator();
     return reinterpret_cast<const SizedFreeVtable *>(allocator->vtable)
         ->free_sized(allocator, object, block_size_of(secondary));
 }
@@ -4134,7 +4134,7 @@ extern "C" uint64_t bb_auto_bounded_range_object_free_secondary_029bbaf0(uint8_t
 {
     uint8_t *const object = secondary - secondary_base_offset;
     release_object(object);
-    engine::Allocator *allocator = loading::fios::thread_allocator();
+    engine::Allocator *allocator = misc::thread_allocator();
     return reinterpret_cast<const SizedFreeVtable *>(allocator->vtable)
         ->free_sized(allocator, object, block_size_of(secondary));
 }
@@ -4187,7 +4187,7 @@ extern "C" uint64_t bb_auto_bounded_range_object_free_secondary_029bbb60(uint8_t
 {
     uint8_t *const object = secondary - secondary_base_offset;
     release_object(object);
-    engine::Allocator *allocator = loading::fios::thread_allocator();
+    engine::Allocator *allocator = misc::thread_allocator();
     return reinterpret_cast<const SizedFreeVtable *>(allocator->vtable)
         ->free_sized(allocator, object, block_size_of(secondary));
 }
@@ -4240,7 +4240,7 @@ extern "C" uint64_t bb_auto_bounded_range_object_free_secondary_029bbcc0(uint8_t
 {
     uint8_t *const object = secondary - secondary_base_offset;
     release_object(object);
-    engine::Allocator *allocator = loading::fios::thread_allocator();
+    engine::Allocator *allocator = misc::thread_allocator();
     return reinterpret_cast<const SizedFreeVtable *>(allocator->vtable)
         ->free_sized(allocator, object, block_size_of(secondary));
 }
@@ -4293,7 +4293,7 @@ extern "C" uint64_t bb_auto_bounded_range_object_free_secondary_029bbd30(uint8_t
 {
     uint8_t *const object = secondary - secondary_base_offset;
     release_object(object);
-    engine::Allocator *allocator = loading::fios::thread_allocator();
+    engine::Allocator *allocator = misc::thread_allocator();
     return reinterpret_cast<const SizedFreeVtable *>(allocator->vtable)
         ->free_sized(allocator, object, block_size_of(secondary));
 }
@@ -4346,7 +4346,7 @@ extern "C" uint64_t bb_auto_bounded_range_object_free_secondary_02a06500(uint8_t
 {
     uint8_t *const object = secondary - secondary_base_offset;
     release_object(object);
-    engine::Allocator *allocator = loading::fios::thread_allocator();
+    engine::Allocator *allocator = misc::thread_allocator();
     return reinterpret_cast<const SizedFreeVtable *>(allocator->vtable)
         ->free_sized(allocator, object, block_size_of(secondary));
 }
@@ -4399,7 +4399,7 @@ extern "C" uint64_t bb_auto_bounded_range_object_free_secondary_02a0ac00(uint8_t
 {
     uint8_t *const object = secondary - secondary_base_offset;
     release_object(object);
-    engine::Allocator *allocator = loading::fios::thread_allocator();
+    engine::Allocator *allocator = misc::thread_allocator();
     return reinterpret_cast<const SizedFreeVtable *>(allocator->vtable)
         ->free_sized(allocator, object, block_size_of(secondary));
 }
@@ -4452,7 +4452,7 @@ extern "C" uint64_t bb_auto_bounded_range_object_free_secondary_02a0b4a0(uint8_t
 {
     uint8_t *const object = secondary - secondary_base_offset;
     release_object(object);
-    engine::Allocator *allocator = loading::fios::thread_allocator();
+    engine::Allocator *allocator = misc::thread_allocator();
     return reinterpret_cast<const SizedFreeVtable *>(allocator->vtable)
         ->free_sized(allocator, object, block_size_of(secondary));
 }
@@ -4505,7 +4505,7 @@ extern "C" uint64_t bb_auto_bounded_range_object_free_secondary_02a0b900(uint8_t
 {
     uint8_t *const object = secondary - secondary_base_offset;
     release_object(object);
-    engine::Allocator *allocator = loading::fios::thread_allocator();
+    engine::Allocator *allocator = misc::thread_allocator();
     return reinterpret_cast<const SizedFreeVtable *>(allocator->vtable)
         ->free_sized(allocator, object, block_size_of(secondary));
 }
@@ -4558,7 +4558,7 @@ extern "C" uint64_t bb_auto_bounded_range_object_free_secondary_02a0cf30(uint8_t
 {
     uint8_t *const object = secondary - secondary_base_offset;
     release_object(object);
-    engine::Allocator *allocator = loading::fios::thread_allocator();
+    engine::Allocator *allocator = misc::thread_allocator();
     return reinterpret_cast<const SizedFreeVtable *>(allocator->vtable)
         ->free_sized(allocator, object, block_size_of(secondary));
 }
@@ -4611,7 +4611,7 @@ extern "C" uint64_t bb_auto_bounded_range_object_free_secondary_02a0d090(uint8_t
 {
     uint8_t *const object = secondary - secondary_base_offset;
     release_object(object);
-    engine::Allocator *allocator = loading::fios::thread_allocator();
+    engine::Allocator *allocator = misc::thread_allocator();
     return reinterpret_cast<const SizedFreeVtable *>(allocator->vtable)
         ->free_sized(allocator, object, block_size_of(secondary));
 }
@@ -4664,7 +4664,7 @@ extern "C" uint64_t bb_auto_bounded_range_object_free_secondary_02a0f190(uint8_t
 {
     uint8_t *const object = secondary - secondary_base_offset;
     release_object(object);
-    engine::Allocator *allocator = loading::fios::thread_allocator();
+    engine::Allocator *allocator = misc::thread_allocator();
     return reinterpret_cast<const SizedFreeVtable *>(allocator->vtable)
         ->free_sized(allocator, object, block_size_of(secondary));
 }
@@ -4717,7 +4717,7 @@ extern "C" uint64_t bb_auto_bounded_range_object_free_secondary_02de1810(uint8_t
 {
     uint8_t *const object = secondary - secondary_base_offset;
     release_object(object);
-    engine::Allocator *allocator = loading::fios::thread_allocator();
+    engine::Allocator *allocator = misc::thread_allocator();
     return reinterpret_cast<const SizedFreeVtable *>(allocator->vtable)
         ->free_sized(allocator, object, block_size_of(secondary));
 }
@@ -4770,7 +4770,7 @@ extern "C" uint64_t bb_auto_bounded_range_object_free_secondary_02de1880(uint8_t
 {
     uint8_t *const object = secondary - secondary_base_offset;
     release_object(object);
-    engine::Allocator *allocator = loading::fios::thread_allocator();
+    engine::Allocator *allocator = misc::thread_allocator();
     return reinterpret_cast<const SizedFreeVtable *>(allocator->vtable)
         ->free_sized(allocator, object, block_size_of(secondary));
 }
@@ -4823,7 +4823,7 @@ extern "C" uint64_t bb_auto_bounded_range_object_free_secondary_02e0e2d0(uint8_t
 {
     uint8_t *const object = secondary - secondary_base_offset;
     release_object(object);
-    engine::Allocator *allocator = loading::fios::thread_allocator();
+    engine::Allocator *allocator = misc::thread_allocator();
     return reinterpret_cast<const SizedFreeVtable *>(allocator->vtable)
         ->free_sized(allocator, object, block_size_of(secondary));
 }
@@ -4876,7 +4876,7 @@ extern "C" uint64_t bb_auto_bounded_range_object_free_secondary_02e0e340(uint8_t
 {
     uint8_t *const object = secondary - secondary_base_offset;
     release_object(object);
-    engine::Allocator *allocator = loading::fios::thread_allocator();
+    engine::Allocator *allocator = misc::thread_allocator();
     return reinterpret_cast<const SizedFreeVtable *>(allocator->vtable)
         ->free_sized(allocator, object, block_size_of(secondary));
 }
@@ -4929,7 +4929,7 @@ extern "C" uint64_t bb_auto_bounded_range_object_free_secondary_02e0e6d0(uint8_t
 {
     uint8_t *const object = secondary - secondary_base_offset;
     release_object(object);
-    engine::Allocator *allocator = loading::fios::thread_allocator();
+    engine::Allocator *allocator = misc::thread_allocator();
     return reinterpret_cast<const SizedFreeVtable *>(allocator->vtable)
         ->free_sized(allocator, object, block_size_of(secondary));
 }
@@ -4982,7 +4982,7 @@ extern "C" uint64_t bb_auto_bounded_range_object_free_secondary_02e0e740(uint8_t
 {
     uint8_t *const object = secondary - secondary_base_offset;
     release_object(object);
-    engine::Allocator *allocator = loading::fios::thread_allocator();
+    engine::Allocator *allocator = misc::thread_allocator();
     return reinterpret_cast<const SizedFreeVtable *>(allocator->vtable)
         ->free_sized(allocator, object, block_size_of(secondary));
 }

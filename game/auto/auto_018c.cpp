@@ -7,15 +7,6 @@
  * Does nothing.
  *
  */
-extern "C" void bb_auto_empty_018c0630()
-{
-}
-
-/**
- *
- * Does nothing.
- *
- */
 extern "C" void bb_auto_empty_018c1090()
 {
 }
@@ -35,24 +26,6 @@ extern "C" void bb_auto_empty_018c1160()
  *
  */
 extern "C" void bb_auto_empty_018c11c0()
-{
-}
-
-/**
- *
- * Does nothing.
- *
- */
-extern "C" void bb_auto_empty_018c3d30()
-{
-}
-
-/**
- *
- * Does nothing.
- *
- */
-extern "C" void bb_auto_empty_018c46b0()
 {
 }
 
@@ -89,15 +62,6 @@ extern "C" void bb_auto_empty_018c66a0()
  *
  */
 extern "C" void bb_auto_empty_018c6770()
-{
-}
-
-/**
- *
- * Does nothing.
- *
- */
-extern "C" void bb_auto_empty_018c77b0()
 {
 }
 
@@ -145,56 +109,7 @@ extern "C" uint8_t bb_auto_return_constant_018c9ae0()
  * Does nothing.
  *
  */
-extern "C" void bb_auto_empty_018ca670()
-{
-}
-
-/**
- *
- * Returns zero.
- *
- */
-extern "C" uint64_t bb_auto_return_zero_018ca680()
-{
-    return 0;
-}
-
-/**
- *
- * Does nothing.
- *
- */
 extern "C" void bb_auto_empty_018ca6c0()
-{
-}
-
-/**
- *
- * The part of the object that auto_return_member_address_018ca6e0 reads.
- *
- */
-struct Object018ca6e0 {
-    uint8_t unknown_0x0000[0x8];
-    uint8_t member_0x0008; /**< Read by auto_return_member_address_018ca6e0; meaning unknown. */
-};
-static_assert(offsetof(Object018ca6e0, member_0x0008) == 0x8);
-
-/**
- *
- * Returns the address of a member of its object.
- *
- */
-extern "C" void *bb_auto_return_member_address_018ca6e0(Object018ca6e0 *self)
-{
-    return &self->member_0x0008;
-}
-
-/**
- *
- * Does nothing.
- *
- */
-extern "C" void bb_auto_empty_018cbe50()
 {
 }
 

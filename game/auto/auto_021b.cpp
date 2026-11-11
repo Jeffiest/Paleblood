@@ -4,30 +4,12 @@
 
 /**
  *
- * Does nothing.
- *
- */
-extern "C" void bb_auto_empty_021b4e30()
-{
-}
-
-/**
- *
  * Returns zero.
  *
  */
 extern "C" uint64_t bb_auto_return_zero_021b4e40()
 {
     return 0;
-}
-
-/**
- *
- * Does nothing.
- *
- */
-extern "C" void bb_auto_empty_021b53a0()
-{
 }
 
 /**
@@ -88,33 +70,6 @@ static_assert(offsetof(Object021bb900, value_0x028c) == 0x28c);
 extern "C" uint8_t bb_auto_return_field_021bb900(const Object021bb900 *self)
 {
     return self->value_0x028c;
-}
-
-/**
- *
- * Does nothing.
- *
- */
-extern "C" void bb_auto_empty_021bcbb0()
-{
-}
-
-/**
- *
- * Does nothing.
- *
- */
-extern "C" void bb_auto_empty_021bcbc0()
-{
-}
-
-/**
- *
- * Does nothing.
- *
- */
-extern "C" void bb_auto_empty_021bcbd0()
-{
 }
 
 /**
@@ -237,51 +192,6 @@ extern "C" void bb_auto_empty_021be170()
  *
  */
 extern "C" void bb_auto_empty_021be1d0()
-{
-}
-
-/**
- *
- * Does nothing.
- *
- */
-extern "C" void bb_auto_empty_021be4e0()
-{
-}
-
-/**
- *
- * Does nothing.
- *
- */
-extern "C" void bb_auto_empty_021be4f0()
-{
-}
-
-/**
- *
- * Does nothing.
- *
- */
-extern "C" void bb_auto_empty_021be760()
-{
-}
-
-/**
- *
- * Does nothing.
- *
- */
-extern "C" void bb_auto_empty_021be770()
-{
-}
-
-/**
- *
- * Does nothing.
- *
- */
-extern "C" void bb_auto_empty_021be780()
 {
 }
 

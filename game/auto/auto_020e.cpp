@@ -28,15 +28,6 @@ extern "C" uint64_t bb_auto_return_field_020e71c0(const Object020e71c0 *self)
  * Does nothing.
  *
  */
-extern "C" void bb_auto_empty_020e7760()
-{
-}
-
-/**
- *
- * Does nothing.
- *
- */
 extern "C" void bb_auto_empty_020e7bd0()
 {
 }
@@ -47,15 +38,6 @@ extern "C" void bb_auto_empty_020e7bd0()
  *
  */
 extern "C" void bb_auto_empty_020e7d80()
-{
-}
-
-/**
- *
- * Does nothing.
- *
- */
-extern "C" void bb_auto_empty_020e80e0()
 {
 }
 
@@ -82,25 +64,7 @@ extern "C" void bb_auto_empty_020e8660()
  * Does nothing.
  *
  */
-extern "C" void bb_auto_empty_020e9170()
-{
-}
-
-/**
- *
- * Does nothing.
- *
- */
 extern "C" void bb_auto_empty_020e9670()
-{
-}
-
-/**
- *
- * Does nothing.
- *
- */
-extern "C" void bb_auto_empty_020ea590()
 {
 }
 
@@ -118,25 +82,7 @@ extern "C" void bb_auto_empty_020ea760()
  * Does nothing.
  *
  */
-extern "C" void bb_auto_empty_020eac40()
-{
-}
-
-/**
- *
- * Does nothing.
- *
- */
 extern "C" void bb_auto_empty_020eaf60()
-{
-}
-
-/**
- *
- * Does nothing.
- *
- */
-extern "C" void bb_auto_empty_020eb1e0()
 {
 }
 
@@ -154,61 +100,7 @@ extern "C" void bb_auto_empty_020eb2e0()
  * Does nothing.
  *
  */
-extern "C" void bb_auto_empty_020eb750()
-{
-}
-
-/**
- *
- * Does nothing.
- *
- */
-extern "C" void bb_auto_empty_020ebc30()
-{
-}
-
-/**
- *
- * Does nothing.
- *
- */
-extern "C" void bb_auto_empty_020ebcc0()
-{
-}
-
-/**
- *
- * Does nothing.
- *
- */
 extern "C" void bb_auto_empty_020ebcd0()
-{
-}
-
-/**
- *
- * Does nothing.
- *
- */
-extern "C" void bb_auto_empty_020ebe90()
-{
-}
-
-/**
- *
- * Does nothing.
- *
- */
-extern "C" void bb_auto_empty_020ec1b0()
-{
-}
-
-/**
- *
- * Does nothing.
- *
- */
-extern "C" void bb_auto_empty_020ecde0()
 {
 }
 
@@ -231,27 +123,6 @@ static_assert(offsetof(Object020edd20, member_0x0238) == 0x238);
 extern "C" void *bb_auto_return_member_address_020edd20(Object020edd20 *self)
 {
     return &self->member_0x0238;
-}
-
-/**
- *
- * The part of the object that auto_return_member_address_020edd50 reads.
- *
- */
-struct Object020edd50 {
-    uint8_t unknown_0x0000[0x18];
-    uint8_t member_0x0018; /**< Read by auto_return_member_address_020edd50; meaning unknown. */
-};
-static_assert(offsetof(Object020edd50, member_0x0018) == 0x18);
-
-/**
- *
- * Returns the address of a member of its object.
- *
- */
-extern "C" void *bb_auto_return_member_address_020edd50(Object020edd50 *self)
-{
-    return &self->member_0x0018;
 }
 
 /**

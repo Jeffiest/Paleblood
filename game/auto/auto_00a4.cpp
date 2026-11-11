@@ -22,39 +22,3 @@ extern "C" void *bb_auto_return_member_address_00a42310(Object00a42310 *self)
 {
     return &self->member_0x00f0;
 }
-
-/**
- *
- * Does nothing.
- *
- */
-extern "C" void bb_auto_empty_00a42d00()
-{
-}
-
-/**
- *
- * Does nothing.
- *
- */
-extern "C" void bb_auto_empty_00a42d10()
-{
-}
-
-/**
- *
- * Does nothing.
- *
- */
-extern "C" void bb_auto_empty_00a44200()
-{
-}
-
-/**
- *
- * Does nothing.
- *
- */
-extern "C" void bb_auto_empty_00a44250()
-{
-}

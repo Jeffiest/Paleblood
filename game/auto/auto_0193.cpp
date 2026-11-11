@@ -4,24 +4,6 @@
 
 /**
  *
- * Does nothing.
- *
- */
-extern "C" void bb_auto_empty_019363a0()
-{
-}
-
-/**
- *
- * Does nothing.
- *
- */
-extern "C" void bb_auto_empty_01936dc0()
-{
-}
-
-/**
- *
  * The part of the object that auto_return_float_field_01937110 reads.
  *
  */

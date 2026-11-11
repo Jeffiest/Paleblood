@@ -7,31 +7,6 @@
 
 namespace render {}
 
-// auto_record_step_user_pa_enabled_01489b60: render_record_step_user_pa_enabled with other addresses.
-namespace twin_01489b60 {
-namespace render { using namespace ::render; }
-
-// Normalize the user-PA query result to the byte predicate used by record-step dispatch.
-
-
-
-namespace render {
-// Record-step dispatch tests the low 32 bits of the original query result for zero.
-RT_ORIGINAL(0x02fc06c8, native_is_user_pa_enabled, uint32_t());
-
-// Return one when the query's low DWORD is nonzero, otherwise zero.
-RT_ORIGINAL(0x01489b60, record_step_user_pa_enabled, uint8_t());
-}  // namespace render
-
-// Query the actual import once; no cached global, fallback or service value is invented.
-
-extern "C" uint8_t bb_auto_record_step_user_pa_enabled_01489b60()
-{
-    return static_cast<uint8_t>(render::native_is_user_pa_enabled() != 0);
-}
-
-}  // namespace twin_01489b60
-
 // auto_record_step_user_pa_enabled_01489c30: render_record_step_user_pa_enabled with other addresses.
 namespace twin_01489c30 {
 namespace render { using namespace ::render; }

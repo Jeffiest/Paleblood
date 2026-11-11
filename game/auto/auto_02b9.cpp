@@ -4,57 +4,6 @@
 
 /**
  *
- * The part of the object that auto_return_field_02b9a310 reads.
- *
- */
-struct Object02b9a310 {
-    uint8_t unknown_0x0000[0x8];
-    uint32_t value_0x0008; /**< Read by auto_return_field_02b9a310; meaning unknown. */
-};
-static_assert(offsetof(Object02b9a310, value_0x0008) == 0x8);
-
-/**
- *
- * Returns a field of its object.
- *
- */
-extern "C" uint32_t bb_auto_return_field_02b9a310(const Object02b9a310 *self)
-{
-    return self->value_0x0008;
-}
-
-/**
- *
- * Does nothing.
- *
- */
-extern "C" void bb_auto_empty_02b9a420()
-{
-}
-
-/**
- *
- * The part of the object that auto_return_field_02b9a430 reads.
- *
- */
-struct Object02b9a430 {
-    uint8_t unknown_0x0000[0x8];
-    uint64_t value_0x0008; /**< Read by auto_return_field_02b9a430; meaning unknown. */
-};
-static_assert(offsetof(Object02b9a430, value_0x0008) == 0x8);
-
-/**
- *
- * Returns a field of its object.
- *
- */
-extern "C" uint64_t bb_auto_return_field_02b9a430(const Object02b9a430 *self)
-{
-    return self->value_0x0008;
-}
-
-/**
- *
  * The part of the object that auto_return_field_02b9a440 reads.
  *
  */
@@ -72,16 +21,6 @@ static_assert(offsetof(Object02b9a440, value_0x0008) == 0x8);
 extern "C" uint64_t bb_auto_return_field_02b9a440(const Object02b9a440 *self)
 {
     return self->value_0x0008;
-}
-
-/**
- *
- * Returns zero.
- *
- */
-extern "C" uint64_t bb_auto_return_zero_02b9bdd0()
-{
-    return 0;
 }
 
 /**
@@ -136,27 +75,6 @@ static_assert(offsetof(Object02b9eef0, value_0x00f8) == 0xf8);
 extern "C" uint32_t bb_auto_return_field_02b9eef0(const Object02b9eef0 *self)
 {
     return self->value_0x00f8;
-}
-
-/**
- *
- * The part of the object that auto_return_field_02b9f540 reads.
- *
- */
-struct Object02b9f540 {
-    uint8_t unknown_0x0000[0x70];
-    uint64_t value_0x0070; /**< Read by auto_return_field_02b9f540; meaning unknown. */
-};
-static_assert(offsetof(Object02b9f540, value_0x0070) == 0x70);
-
-/**
- *
- * Returns a field of its object.
- *
- */
-extern "C" uint64_t bb_auto_return_field_02b9f540(const Object02b9f540 *self)
-{
-    return self->value_0x0070;
 }
 
 /**

@@ -3,7 +3,7 @@
 #include <cstdint>
 
 #include "../engine/allocator.h"
-#include "../loading/fios.h"
+#include "thread_allocator.h"
 #include "bounded_range_object.h"
 #include "runtime/original.h"
 
@@ -43,7 +43,7 @@ uint32_t block_size_of(const misc::BoundedRangeObject *object)
 extern "C" uint64_t bb_misc_bounded_range_object_free(misc::BoundedRangeObject *object)
 {
     release_object(object);
-    engine::Allocator *allocator = loading::fios::thread_allocator();
+    engine::Allocator *allocator = misc::thread_allocator();
     return reinterpret_cast<const SizedFreeVtable *>(allocator->vtable)
         ->free_sized(allocator, object, block_size_of(object));
 }

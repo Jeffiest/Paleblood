@@ -4,24 +4,6 @@
 
 /**
  *
- * Does nothing.
- *
- */
-extern "C" void bb_auto_empty_00e97180()
-{
-}
-
-/**
- *
- * Does nothing.
- *
- */
-extern "C" void bb_auto_empty_00e971a0()
-{
-}
-
-/**
- *
  * The part of the object that auto_return_member_address_00e97db0 reads.
  *
  */

@@ -16,30 +16,6 @@ extern "C" uint8_t bb_auto_return_constant_00ac5e80()
 
 /**
  *
- * Returns a fixed value whose meaning is unknown.
- *
- */
-constexpr uint32_t value_00ac63d0 = 0x1;
-
-extern "C" uint32_t bb_auto_return_constant_00ac63d0()
-{
-    return value_00ac63d0;
-}
-
-/**
- *
- * Returns a fixed value whose meaning is unknown.
- *
- */
-constexpr uint32_t value_00ac63f0 = 0x40;
-
-extern "C" uint32_t bb_auto_return_constant_00ac63f0()
-{
-    return value_00ac63f0;
-}
-
-/**
- *
  * The part of the object that auto_return_float_field_00acad20 reads.
  *
  */

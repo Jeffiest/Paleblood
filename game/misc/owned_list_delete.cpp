@@ -2,7 +2,7 @@
 #include "owned_list.h"
 
 #include "../engine/allocator.h"
-#include "../loading/fios.h"
+#include "thread_allocator.h"
 
 namespace {
 
@@ -42,7 +42,7 @@ extern "C" uint64_t bb_misc_owned_list_delete(misc::OwnedList *list)
     list->tail = nullptr;
     list->head = nullptr;
 
-    engine::Allocator *allocator = loading::fios::thread_allocator();
+    engine::Allocator *allocator = misc::thread_allocator();
     const uint32_t size_tag = list->tag >> misc::size_tag_shift;
     const uint32_t size = size_tag == misc::size_tag_default ? misc::owned_list_default_size : size_tag;
     return reinterpret_cast<const SizedFreeVtable *>(allocator->vtable)->free_sized(allocator, list, size);

@@ -6,7 +6,7 @@
 #include <cstdint>
 #include "../engine/allocator.h"
 #include "../engine/engine.h"
-#include "../loading/fios.h"
+#include "../misc/thread_allocator.h"
 #include "../misc/base_object.h"
 
 // auto_base_delete_00f6f510: misc_base_delete_02242990 with other addresses.
@@ -39,7 +39,7 @@ extern "C" void bb_auto_base_delete_00f6f510(misc::BaseObject *self)
     misc::base_init(self);
     if (self == nullptr) return;
 
-    engine::Allocator *allocator = loading::fios::thread_allocator();
+    engine::Allocator *allocator = misc::thread_allocator();
     reinterpret_cast<const SizedFreeVtable *>(allocator->vtable)->free_sized(allocator, self, base_object_size);
 }
 
@@ -75,7 +75,7 @@ extern "C" void bb_auto_base_delete_00f70d90(misc::BaseObject *self)
     misc::base_init(self);
     if (self == nullptr) return;
 
-    engine::Allocator *allocator = loading::fios::thread_allocator();
+    engine::Allocator *allocator = misc::thread_allocator();
     reinterpret_cast<const SizedFreeVtable *>(allocator->vtable)->free_sized(allocator, self, base_object_size);
 }
 
@@ -111,7 +111,7 @@ extern "C" void bb_auto_base_delete_00f70e40(misc::BaseObject *self)
     misc::base_init(self);
     if (self == nullptr) return;
 
-    engine::Allocator *allocator = loading::fios::thread_allocator();
+    engine::Allocator *allocator = misc::thread_allocator();
     reinterpret_cast<const SizedFreeVtable *>(allocator->vtable)->free_sized(allocator, self, base_object_size);
 }
 
@@ -147,7 +147,7 @@ extern "C" void bb_auto_base_delete_00f70ef0(misc::BaseObject *self)
     misc::base_init(self);
     if (self == nullptr) return;
 
-    engine::Allocator *allocator = loading::fios::thread_allocator();
+    engine::Allocator *allocator = misc::thread_allocator();
     reinterpret_cast<const SizedFreeVtable *>(allocator->vtable)->free_sized(allocator, self, base_object_size);
 }
 
@@ -183,7 +183,7 @@ extern "C" void bb_auto_base_delete_00f70fa0(misc::BaseObject *self)
     misc::base_init(self);
     if (self == nullptr) return;
 
-    engine::Allocator *allocator = loading::fios::thread_allocator();
+    engine::Allocator *allocator = misc::thread_allocator();
     reinterpret_cast<const SizedFreeVtable *>(allocator->vtable)->free_sized(allocator, self, base_object_size);
 }
 
@@ -219,7 +219,7 @@ extern "C" void bb_auto_base_delete_021dbbc0(misc::BaseObject *self)
     misc::base_init(self);
     if (self == nullptr) return;
 
-    engine::Allocator *allocator = loading::fios::thread_allocator();
+    engine::Allocator *allocator = misc::thread_allocator();
     reinterpret_cast<const SizedFreeVtable *>(allocator->vtable)->free_sized(allocator, self, base_object_size);
 }
 
@@ -255,7 +255,7 @@ extern "C" void bb_auto_base_delete_021dbc80(misc::BaseObject *self)
     misc::base_init(self);
     if (self == nullptr) return;
 
-    engine::Allocator *allocator = loading::fios::thread_allocator();
+    engine::Allocator *allocator = misc::thread_allocator();
     reinterpret_cast<const SizedFreeVtable *>(allocator->vtable)->free_sized(allocator, self, base_object_size);
 }
 
@@ -291,7 +291,7 @@ extern "C" void bb_auto_base_delete_02987a50(misc::BaseObject *self)
     misc::base_init(self);
     if (self == nullptr) return;
 
-    engine::Allocator *allocator = loading::fios::thread_allocator();
+    engine::Allocator *allocator = misc::thread_allocator();
     reinterpret_cast<const SizedFreeVtable *>(allocator->vtable)->free_sized(allocator, self, base_object_size);
 }
 
@@ -327,7 +327,7 @@ extern "C" void bb_auto_base_delete_02987b60(misc::BaseObject *self)
     misc::base_init(self);
     if (self == nullptr) return;
 
-    engine::Allocator *allocator = loading::fios::thread_allocator();
+    engine::Allocator *allocator = misc::thread_allocator();
     reinterpret_cast<const SizedFreeVtable *>(allocator->vtable)->free_sized(allocator, self, base_object_size);
 }
 
@@ -363,7 +363,7 @@ extern "C" void bb_auto_base_delete_02987c20(misc::BaseObject *self)
     misc::base_init(self);
     if (self == nullptr) return;
 
-    engine::Allocator *allocator = loading::fios::thread_allocator();
+    engine::Allocator *allocator = misc::thread_allocator();
     reinterpret_cast<const SizedFreeVtable *>(allocator->vtable)->free_sized(allocator, self, base_object_size);
 }
 
@@ -399,7 +399,7 @@ extern "C" void bb_auto_base_delete_029dab80(misc::BaseObject *self)
     misc::base_init(self);
     if (self == nullptr) return;
 
-    engine::Allocator *allocator = loading::fios::thread_allocator();
+    engine::Allocator *allocator = misc::thread_allocator();
     reinterpret_cast<const SizedFreeVtable *>(allocator->vtable)->free_sized(allocator, self, base_object_size);
 }
 
@@ -435,7 +435,7 @@ extern "C" void bb_auto_base_delete_029dac30(misc::BaseObject *self)
     misc::base_init(self);
     if (self == nullptr) return;
 
-    engine::Allocator *allocator = loading::fios::thread_allocator();
+    engine::Allocator *allocator = misc::thread_allocator();
     reinterpret_cast<const SizedFreeVtable *>(allocator->vtable)->free_sized(allocator, self, base_object_size);
 }
 
@@ -471,7 +471,7 @@ extern "C" void bb_auto_base_delete_029dace0(misc::BaseObject *self)
     misc::base_init(self);
     if (self == nullptr) return;
 
-    engine::Allocator *allocator = loading::fios::thread_allocator();
+    engine::Allocator *allocator = misc::thread_allocator();
     reinterpret_cast<const SizedFreeVtable *>(allocator->vtable)->free_sized(allocator, self, base_object_size);
 }
 
@@ -507,7 +507,7 @@ extern "C" void bb_auto_base_delete_02a03d80(misc::BaseObject *self)
     misc::base_init(self);
     if (self == nullptr) return;
 
-    engine::Allocator *allocator = loading::fios::thread_allocator();
+    engine::Allocator *allocator = misc::thread_allocator();
     reinterpret_cast<const SizedFreeVtable *>(allocator->vtable)->free_sized(allocator, self, base_object_size);
 }
 
@@ -543,7 +543,7 @@ extern "C" void bb_auto_base_delete_02a04ae0(misc::BaseObject *self)
     misc::base_init(self);
     if (self == nullptr) return;
 
-    engine::Allocator *allocator = loading::fios::thread_allocator();
+    engine::Allocator *allocator = misc::thread_allocator();
     reinterpret_cast<const SizedFreeVtable *>(allocator->vtable)->free_sized(allocator, self, base_object_size);
 }
 
@@ -579,7 +579,7 @@ extern "C" void bb_auto_base_delete_02a04d80(misc::BaseObject *self)
     misc::base_init(self);
     if (self == nullptr) return;
 
-    engine::Allocator *allocator = loading::fios::thread_allocator();
+    engine::Allocator *allocator = misc::thread_allocator();
     reinterpret_cast<const SizedFreeVtable *>(allocator->vtable)->free_sized(allocator, self, base_object_size);
 }
 
@@ -615,7 +615,7 @@ extern "C" void bb_auto_base_delete_02a04e30(misc::BaseObject *self)
     misc::base_init(self);
     if (self == nullptr) return;
 
-    engine::Allocator *allocator = loading::fios::thread_allocator();
+    engine::Allocator *allocator = misc::thread_allocator();
     reinterpret_cast<const SizedFreeVtable *>(allocator->vtable)->free_sized(allocator, self, base_object_size);
 }
 
@@ -651,7 +651,7 @@ extern "C" void bb_auto_base_delete_02a06170(misc::BaseObject *self)
     misc::base_init(self);
     if (self == nullptr) return;
 
-    engine::Allocator *allocator = loading::fios::thread_allocator();
+    engine::Allocator *allocator = misc::thread_allocator();
     reinterpret_cast<const SizedFreeVtable *>(allocator->vtable)->free_sized(allocator, self, base_object_size);
 }
 
@@ -687,7 +687,7 @@ extern "C" void bb_auto_base_delete_02a06a00(misc::BaseObject *self)
     misc::base_init(self);
     if (self == nullptr) return;
 
-    engine::Allocator *allocator = loading::fios::thread_allocator();
+    engine::Allocator *allocator = misc::thread_allocator();
     reinterpret_cast<const SizedFreeVtable *>(allocator->vtable)->free_sized(allocator, self, base_object_size);
 }
 
@@ -723,7 +723,7 @@ extern "C" void bb_auto_base_delete_02a06ac0(misc::BaseObject *self)
     misc::base_init(self);
     if (self == nullptr) return;
 
-    engine::Allocator *allocator = loading::fios::thread_allocator();
+    engine::Allocator *allocator = misc::thread_allocator();
     reinterpret_cast<const SizedFreeVtable *>(allocator->vtable)->free_sized(allocator, self, base_object_size);
 }
 
@@ -759,7 +759,7 @@ extern "C" void bb_auto_base_delete_02a06b70(misc::BaseObject *self)
     misc::base_init(self);
     if (self == nullptr) return;
 
-    engine::Allocator *allocator = loading::fios::thread_allocator();
+    engine::Allocator *allocator = misc::thread_allocator();
     reinterpret_cast<const SizedFreeVtable *>(allocator->vtable)->free_sized(allocator, self, base_object_size);
 }
 
@@ -795,7 +795,7 @@ extern "C" void bb_auto_base_delete_02a072c0(misc::BaseObject *self)
     misc::base_init(self);
     if (self == nullptr) return;
 
-    engine::Allocator *allocator = loading::fios::thread_allocator();
+    engine::Allocator *allocator = misc::thread_allocator();
     reinterpret_cast<const SizedFreeVtable *>(allocator->vtable)->free_sized(allocator, self, base_object_size);
 }
 
@@ -831,7 +831,7 @@ extern "C" void bb_auto_base_delete_02a07520(misc::BaseObject *self)
     misc::base_init(self);
     if (self == nullptr) return;
 
-    engine::Allocator *allocator = loading::fios::thread_allocator();
+    engine::Allocator *allocator = misc::thread_allocator();
     reinterpret_cast<const SizedFreeVtable *>(allocator->vtable)->free_sized(allocator, self, base_object_size);
 }
 
@@ -867,7 +867,7 @@ extern "C" void bb_auto_base_delete_02a075d0(misc::BaseObject *self)
     misc::base_init(self);
     if (self == nullptr) return;
 
-    engine::Allocator *allocator = loading::fios::thread_allocator();
+    engine::Allocator *allocator = misc::thread_allocator();
     reinterpret_cast<const SizedFreeVtable *>(allocator->vtable)->free_sized(allocator, self, base_object_size);
 }
 
@@ -903,7 +903,7 @@ extern "C" void bb_auto_base_delete_02a07690(misc::BaseObject *self)
     misc::base_init(self);
     if (self == nullptr) return;
 
-    engine::Allocator *allocator = loading::fios::thread_allocator();
+    engine::Allocator *allocator = misc::thread_allocator();
     reinterpret_cast<const SizedFreeVtable *>(allocator->vtable)->free_sized(allocator, self, base_object_size);
 }
 
@@ -939,7 +939,7 @@ extern "C" void bb_auto_base_delete_02a094f0(misc::BaseObject *self)
     misc::base_init(self);
     if (self == nullptr) return;
 
-    engine::Allocator *allocator = loading::fios::thread_allocator();
+    engine::Allocator *allocator = misc::thread_allocator();
     reinterpret_cast<const SizedFreeVtable *>(allocator->vtable)->free_sized(allocator, self, base_object_size);
 }
 
@@ -975,7 +975,7 @@ extern "C" void bb_auto_base_delete_02a0b990(misc::BaseObject *self)
     misc::base_init(self);
     if (self == nullptr) return;
 
-    engine::Allocator *allocator = loading::fios::thread_allocator();
+    engine::Allocator *allocator = misc::thread_allocator();
     reinterpret_cast<const SizedFreeVtable *>(allocator->vtable)->free_sized(allocator, self, base_object_size);
 }
 
@@ -1011,7 +1011,7 @@ extern "C" void bb_auto_base_delete_02a0c0c0(misc::BaseObject *self)
     misc::base_init(self);
     if (self == nullptr) return;
 
-    engine::Allocator *allocator = loading::fios::thread_allocator();
+    engine::Allocator *allocator = misc::thread_allocator();
     reinterpret_cast<const SizedFreeVtable *>(allocator->vtable)->free_sized(allocator, self, base_object_size);
 }
 
@@ -1047,7 +1047,7 @@ extern "C" void bb_auto_base_delete_02a0c170(misc::BaseObject *self)
     misc::base_init(self);
     if (self == nullptr) return;
 
-    engine::Allocator *allocator = loading::fios::thread_allocator();
+    engine::Allocator *allocator = misc::thread_allocator();
     reinterpret_cast<const SizedFreeVtable *>(allocator->vtable)->free_sized(allocator, self, base_object_size);
 }
 
@@ -1083,7 +1083,7 @@ extern "C" void bb_auto_base_delete_02a0c220(misc::BaseObject *self)
     misc::base_init(self);
     if (self == nullptr) return;
 
-    engine::Allocator *allocator = loading::fios::thread_allocator();
+    engine::Allocator *allocator = misc::thread_allocator();
     reinterpret_cast<const SizedFreeVtable *>(allocator->vtable)->free_sized(allocator, self, base_object_size);
 }
 
@@ -1119,7 +1119,7 @@ extern "C" void bb_auto_base_delete_02a0c2d0(misc::BaseObject *self)
     misc::base_init(self);
     if (self == nullptr) return;
 
-    engine::Allocator *allocator = loading::fios::thread_allocator();
+    engine::Allocator *allocator = misc::thread_allocator();
     reinterpret_cast<const SizedFreeVtable *>(allocator->vtable)->free_sized(allocator, self, base_object_size);
 }
 
@@ -1155,7 +1155,7 @@ extern "C" void bb_auto_base_delete_02a0d190(misc::BaseObject *self)
     misc::base_init(self);
     if (self == nullptr) return;
 
-    engine::Allocator *allocator = loading::fios::thread_allocator();
+    engine::Allocator *allocator = misc::thread_allocator();
     reinterpret_cast<const SizedFreeVtable *>(allocator->vtable)->free_sized(allocator, self, base_object_size);
 }
 
@@ -1191,7 +1191,7 @@ extern "C" void bb_auto_base_delete_02a0db40(misc::BaseObject *self)
     misc::base_init(self);
     if (self == nullptr) return;
 
-    engine::Allocator *allocator = loading::fios::thread_allocator();
+    engine::Allocator *allocator = misc::thread_allocator();
     reinterpret_cast<const SizedFreeVtable *>(allocator->vtable)->free_sized(allocator, self, base_object_size);
 }
 
@@ -1227,7 +1227,7 @@ extern "C" void bb_auto_base_delete_02a0dbf0(misc::BaseObject *self)
     misc::base_init(self);
     if (self == nullptr) return;
 
-    engine::Allocator *allocator = loading::fios::thread_allocator();
+    engine::Allocator *allocator = misc::thread_allocator();
     reinterpret_cast<const SizedFreeVtable *>(allocator->vtable)->free_sized(allocator, self, base_object_size);
 }
 
@@ -1263,7 +1263,7 @@ extern "C" void bb_auto_base_delete_02a0dd70(misc::BaseObject *self)
     misc::base_init(self);
     if (self == nullptr) return;
 
-    engine::Allocator *allocator = loading::fios::thread_allocator();
+    engine::Allocator *allocator = misc::thread_allocator();
     reinterpret_cast<const SizedFreeVtable *>(allocator->vtable)->free_sized(allocator, self, base_object_size);
 }
 
@@ -1299,7 +1299,7 @@ extern "C" void bb_auto_base_delete_02a0e370(misc::BaseObject *self)
     misc::base_init(self);
     if (self == nullptr) return;
 
-    engine::Allocator *allocator = loading::fios::thread_allocator();
+    engine::Allocator *allocator = misc::thread_allocator();
     reinterpret_cast<const SizedFreeVtable *>(allocator->vtable)->free_sized(allocator, self, base_object_size);
 }
 
@@ -1335,7 +1335,7 @@ extern "C" void bb_auto_base_delete_02e17230(misc::BaseObject *self)
     misc::base_init(self);
     if (self == nullptr) return;
 
-    engine::Allocator *allocator = loading::fios::thread_allocator();
+    engine::Allocator *allocator = misc::thread_allocator();
     reinterpret_cast<const SizedFreeVtable *>(allocator->vtable)->free_sized(allocator, self, base_object_size);
 }
 
@@ -1371,7 +1371,7 @@ extern "C" void bb_auto_base_delete_02e172e0(misc::BaseObject *self)
     misc::base_init(self);
     if (self == nullptr) return;
 
-    engine::Allocator *allocator = loading::fios::thread_allocator();
+    engine::Allocator *allocator = misc::thread_allocator();
     reinterpret_cast<const SizedFreeVtable *>(allocator->vtable)->free_sized(allocator, self, base_object_size);
 }
 
@@ -1407,7 +1407,7 @@ extern "C" void bb_auto_base_delete_02e173a0(misc::BaseObject *self)
     misc::base_init(self);
     if (self == nullptr) return;
 
-    engine::Allocator *allocator = loading::fios::thread_allocator();
+    engine::Allocator *allocator = misc::thread_allocator();
     reinterpret_cast<const SizedFreeVtable *>(allocator->vtable)->free_sized(allocator, self, base_object_size);
 }
 
@@ -1443,7 +1443,7 @@ extern "C" void bb_auto_base_delete_02e17550(misc::BaseObject *self)
     misc::base_init(self);
     if (self == nullptr) return;
 
-    engine::Allocator *allocator = loading::fios::thread_allocator();
+    engine::Allocator *allocator = misc::thread_allocator();
     reinterpret_cast<const SizedFreeVtable *>(allocator->vtable)->free_sized(allocator, self, base_object_size);
 }
 

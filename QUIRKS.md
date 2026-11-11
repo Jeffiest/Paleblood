@@ -132,8 +132,10 @@ SelfUtil build produced the ELF.
 ## Hooks
 
 - The hook is a 14-byte absolute jump (`jmp [rip+0]` plus the target) written over the start of
-  the original function. Shorter functions cannot be hooked that way: their replacements are
-  built and verified like any other, and `tools/gen_hooks.py` leaves them out of the installed
+  the original function. Shorter functions cannot be hooked that way, except function family
+  members, whose jump overwrites only the compiler's NOP padding up to the next function
+  ([docs/FAMILIES.md](docs/FAMILIES.md)). The replacement of any other shorter function is
+  built and verified like any other, and `tools/gen_hooks.py` leaves it out of the installed
   hook table.
 - Nothing may jump into the first 14 bytes of a hooked function from elsewhere: check the
   references to the function's start region in Ghidra before hooking.

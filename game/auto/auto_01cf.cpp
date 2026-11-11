@@ -25,30 +25,6 @@ extern "C" void *bb_auto_return_member_address_01cf3a00(Object01cf3a00 *self)
 
 /**
  *
- * Returns a fixed value whose meaning is unknown.
- *
- */
-constexpr uint32_t value_01cf9620 = 0x1;
-
-extern "C" uint32_t bb_auto_return_constant_01cf9620()
-{
-    return value_01cf9620;
-}
-
-/**
- *
- * Returns a fixed value whose meaning is unknown.
- *
- */
-constexpr uint32_t value_01cf96f0 = 0x1;
-
-extern "C" uint32_t bb_auto_return_constant_01cf96f0()
-{
-    return value_01cf96f0;
-}
-
-/**
- *
  * The part of the object that auto_return_field_01cf9710 reads.
  *
  */
@@ -66,26 +42,6 @@ static_assert(offsetof(Object01cf9710, value_0x0400) == 0x400);
 extern "C" uint64_t bb_auto_return_field_01cf9710(const Object01cf9710 *self)
 {
     return self->value_0x0400;
-}
-
-/**
- *
- * Returns zero.
- *
- */
-extern "C" uint64_t bb_auto_return_zero_01cfafb0()
-{
-    return 0;
-}
-
-/**
- *
- * Returns zero.
- *
- */
-extern "C" uint64_t bb_auto_return_zero_01cfafc0()
-{
-    return 0;
 }
 
 /**
@@ -128,23 +84,4 @@ static_assert(offsetof(Object01cfd960, value_0x03c0) == 0x3c0);
 extern "C" uint64_t bb_auto_return_field_01cfd960(const Object01cfd960 *self)
 {
     return self->value_0x03c0;
-}
-
-/**
- *
- * Returns zero.
- *
- */
-extern "C" uint64_t bb_auto_return_zero_01cfe4b0()
-{
-    return 0;
-}
-
-/**
- *
- * Does nothing.
- *
- */
-extern "C" void bb_auto_empty_01cfe4c0()
-{
 }

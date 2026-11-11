@@ -4,42 +4,6 @@
 
 /**
  *
- * Does nothing.
- *
- */
-extern "C" void bb_auto_empty_00d38ec0()
-{
-}
-
-/**
- *
- * Does nothing.
- *
- */
-extern "C" void bb_auto_empty_00d38ed0()
-{
-}
-
-/**
- *
- * Does nothing.
- *
- */
-extern "C" void bb_auto_empty_00d39120()
-{
-}
-
-/**
- *
- * Does nothing.
- *
- */
-extern "C" void bb_auto_empty_00d39130()
-{
-}
-
-/**
- *
  * Returns a fixed value whose meaning is unknown.
  *
  */

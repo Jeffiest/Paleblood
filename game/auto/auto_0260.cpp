@@ -4,15 +4,6 @@
 
 /**
  *
- * Does nothing.
- *
- */
-extern "C" void bb_auto_empty_02604390()
-{
-}
-
-/**
- *
  * The part of the object that auto_return_field_0260b470 reads.
  *
  */

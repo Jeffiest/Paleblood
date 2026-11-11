@@ -4,48 +4,6 @@
 
 /**
  *
- * Does nothing.
- *
- */
-extern "C" void bb_auto_empty_009407d0()
-{
-}
-
-/**
- *
- * Returns a fixed value whose meaning is unknown.
- *
- */
-constexpr uint32_t value_00943b80 = 0xc;
-
-extern "C" uint32_t bb_auto_return_constant_00943b80()
-{
-    return value_00943b80;
-}
-
-/**
- *
- * The part of the object that auto_return_member_address_0094bc00 reads.
- *
- */
-struct Object0094bc00 {
-    uint8_t unknown_0x0000[0x70];
-    uint8_t member_0x0070; /**< Read by auto_return_member_address_0094bc00; meaning unknown. */
-};
-static_assert(offsetof(Object0094bc00, member_0x0070) == 0x70);
-
-/**
- *
- * Returns the address of a member of its object.
- *
- */
-extern "C" void *bb_auto_return_member_address_0094bc00(Object0094bc00 *self)
-{
-    return &self->member_0x0070;
-}
-
-/**
- *
  * The part of the object that auto_return_member_address_0094bc20 reads.
  *
  */
@@ -84,86 +42,6 @@ static_assert(offsetof(Object0094bc30, member_0x00a0) == 0xa0);
 extern "C" void *bb_auto_return_member_address_0094bc30(Object0094bc30 *self)
 {
     return &self->member_0x00a0;
-}
-
-/**
- *
- * Returns zero.
- *
- */
-extern "C" uint64_t bb_auto_return_zero_0094e4f0()
-{
-    return 0;
-}
-
-/**
- *
- * Returns zero.
- *
- */
-extern "C" uint64_t bb_auto_return_zero_0094e500()
-{
-    return 0;
-}
-
-/**
- *
- * Returns zero.
- *
- */
-extern "C" uint64_t bb_auto_return_zero_0094e510()
-{
-    return 0;
-}
-
-/**
- *
- * Returns zero.
- *
- */
-extern "C" uint64_t bb_auto_return_zero_0094e520()
-{
-    return 0;
-}
-
-/**
- *
- * Returns zero.
- *
- */
-extern "C" uint64_t bb_auto_return_zero_0094e530()
-{
-    return 0;
-}
-
-/**
- *
- * Returns zero.
- *
- */
-extern "C" uint64_t bb_auto_return_zero_0094e540()
-{
-    return 0;
-}
-
-/**
- *
- * Returns zero.
- *
- */
-extern "C" uint64_t bb_auto_return_zero_0094e550()
-{
-    return 0;
-}
-
-/**
- *
- * Returns zero.
- *
- */
-extern "C" uint64_t bb_auto_return_zero_0094e560()
-{
-    return 0;
 }
 
 /**

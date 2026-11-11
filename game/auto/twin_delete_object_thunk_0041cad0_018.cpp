@@ -592,90 +592,6 @@ extern "C" void bb_auto_delete_object_thunk_01489a30(void *object)
 
 }  // namespace twin_01489a30
 
-// auto_delete_object_thunk_01489a40: misc_delete_object_thunk with other addresses.
-namespace twin_01489a40 {
-
-// Misc: frees the object it is given with the library's operator delete, and does nothing else.
-//
-// auto_delete_object_thunk_01489a40 (0x01489a40) is a single jump to the import stub of operator delete(void *)
-// at 0x02fc0618. It sits in a table of member functions: the deleting entry of a type that has nothing
-// of its own to destroy.
-
-namespace {
-
-RT_ORIGINAL(0x02fc0618, fn_02fc0618, void(void *object));
-
-}  // namespace
-
-/**
- *
- * Frees the object with the library's operator delete, as a tail call. Nothing is returned.
- *
- * The object is passed on as it came, a null pointer included.
- */
-extern "C" void bb_auto_delete_object_thunk_01489a40(void *object)
-{
-    fn_02fc0618(object);
-}
-
-}  // namespace twin_01489a40
-
-// auto_delete_object_thunk_01489a50: misc_delete_object_thunk with other addresses.
-namespace twin_01489a50 {
-
-// Misc: frees the object it is given with the library's operator delete, and does nothing else.
-//
-// auto_delete_object_thunk_01489a50 (0x01489a50) is a single jump to the import stub of operator delete(void *)
-// at 0x02fc0628. It sits in a table of member functions: the deleting entry of a type that has nothing
-// of its own to destroy.
-
-namespace {
-
-RT_ORIGINAL(0x02fc0628, fn_02fc0628, void(void *object));
-
-}  // namespace
-
-/**
- *
- * Frees the object with the library's operator delete, as a tail call. Nothing is returned.
- *
- * The object is passed on as it came, a null pointer included.
- */
-extern "C" void bb_auto_delete_object_thunk_01489a50(void *object)
-{
-    fn_02fc0628(object);
-}
-
-}  // namespace twin_01489a50
-
-// auto_delete_object_thunk_01489a70: misc_delete_object_thunk with other addresses.
-namespace twin_01489a70 {
-
-// Misc: frees the object it is given with the library's operator delete, and does nothing else.
-//
-// auto_delete_object_thunk_01489a70 (0x01489a70) is a single jump to the import stub of operator delete(void *)
-// at 0x02fc0648. It sits in a table of member functions: the deleting entry of a type that has nothing
-// of its own to destroy.
-
-namespace {
-
-RT_ORIGINAL(0x02fc0648, fn_02fc0648, void(void *object));
-
-}  // namespace
-
-/**
- *
- * Frees the object with the library's operator delete, as a tail call. Nothing is returned.
- *
- * The object is passed on as it came, a null pointer included.
- */
-extern "C" void bb_auto_delete_object_thunk_01489a70(void *object)
-{
-    fn_02fc0648(object);
-}
-
-}  // namespace twin_01489a70
-
 // auto_delete_object_thunk_01489b10: misc_delete_object_thunk with other addresses.
 namespace twin_01489b10 {
 
@@ -760,34 +676,6 @@ extern "C" void bb_auto_delete_object_thunk_01489b30(void *object)
 
 }  // namespace twin_01489b30
 
-// auto_delete_object_thunk_01489b40: misc_delete_object_thunk with other addresses.
-namespace twin_01489b40 {
-
-// Misc: frees the object it is given with the library's operator delete, and does nothing else.
-//
-// auto_delete_object_thunk_01489b40 (0x01489b40) is a single jump to the import stub of operator delete(void *)
-// at 0x02fc06a8. It sits in a table of member functions: the deleting entry of a type that has nothing
-// of its own to destroy.
-
-namespace {
-
-RT_ORIGINAL(0x02fc06a8, fn_02fc06a8, void(void *object));
-
-}  // namespace
-
-/**
- *
- * Frees the object with the library's operator delete, as a tail call. Nothing is returned.
- *
- * The object is passed on as it came, a null pointer included.
- */
-extern "C" void bb_auto_delete_object_thunk_01489b40(void *object)
-{
-    fn_02fc06a8(object);
-}
-
-}  // namespace twin_01489b40
-
 // auto_delete_object_thunk_01489b50: misc_delete_object_thunk with other addresses.
 namespace twin_01489b50 {
 
@@ -815,34 +703,6 @@ extern "C" void bb_auto_delete_object_thunk_01489b50(void *object)
 }
 
 }  // namespace twin_01489b50
-
-// auto_delete_object_thunk_01489b70: misc_delete_object_thunk with other addresses.
-namespace twin_01489b70 {
-
-// Misc: frees the object it is given with the library's operator delete, and does nothing else.
-//
-// auto_delete_object_thunk_01489b70 (0x01489b70) is a single jump to the import stub of operator delete(void *)
-// at 0x02fc06d8. It sits in a table of member functions: the deleting entry of a type that has nothing
-// of its own to destroy.
-
-namespace {
-
-RT_ORIGINAL(0x02fc06d8, fn_02fc06d8, void(void *object));
-
-}  // namespace
-
-/**
- *
- * Frees the object with the library's operator delete, as a tail call. Nothing is returned.
- *
- * The object is passed on as it came, a null pointer included.
- */
-extern "C" void bb_auto_delete_object_thunk_01489b70(void *object)
-{
-    fn_02fc06d8(object);
-}
-
-}  // namespace twin_01489b70
 
 // auto_delete_object_thunk_01489b80: misc_delete_object_thunk with other addresses.
 namespace twin_01489b80 {

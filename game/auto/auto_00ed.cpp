@@ -4,70 +4,6 @@
 
 /**
  *
- * Does nothing.
- *
- */
-extern "C" void bb_auto_empty_00ed1660()
-{
-}
-
-/**
- *
- * Does nothing.
- *
- */
-extern "C" void bb_auto_empty_00ed1670()
-{
-}
-
-/**
- *
- * Does nothing.
- *
- */
-extern "C" void bb_auto_empty_00ed4210()
-{
-}
-
-/**
- *
- * Does nothing.
- *
- */
-extern "C" void bb_auto_empty_00ed4b10()
-{
-}
-
-/**
- *
- * Returns zero.
- *
- */
-extern "C" uint64_t bb_auto_return_zero_00ed4c40()
-{
-    return 0;
-}
-
-/**
- *
- * Does nothing.
- *
- */
-extern "C" void bb_auto_empty_00ed4c50()
-{
-}
-
-/**
- *
- * Does nothing.
- *
- */
-extern "C" void bb_auto_empty_00ed4cb0()
-{
-}
-
-/**
- *
  * The part of the object that auto_return_float_field_00ed4cf0 reads.
  *
  */
@@ -110,15 +46,6 @@ extern "C" void *bb_auto_return_member_address_00ed4d40(Object00ed4d40 *self)
 
 /**
  *
- * Does nothing.
- *
- */
-extern "C" void bb_auto_empty_00ed4ff0()
-{
-}
-
-/**
- *
  * The part of the object that auto_return_field_00ed5000 reads.
  *
  */
@@ -136,16 +63,6 @@ static_assert(offsetof(Object00ed5000, value_0x00b0) == 0xb0);
 extern "C" uint64_t bb_auto_return_field_00ed5000(const Object00ed5000 *self)
 {
     return self->value_0x00b0;
-}
-
-/**
- *
- * Returns zero.
- *
- */
-extern "C" uint64_t bb_auto_return_zero_00ed5010()
-{
-    return 0;
 }
 
 /**

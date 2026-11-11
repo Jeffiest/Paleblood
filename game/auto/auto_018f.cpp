@@ -7,15 +7,6 @@
  * Does nothing.
  *
  */
-extern "C" void bb_auto_empty_018f0770()
-{
-}
-
-/**
- *
- * Does nothing.
- *
- */
 extern "C" void bb_auto_empty_018f0b10()
 {
 }
@@ -100,68 +91,6 @@ extern "C" void bb_auto_empty_018f6010()
 
 /**
  *
- * Returns zero.
- *
- */
-extern "C" uint64_t bb_auto_return_zero_018f9950()
-{
-    return 0;
-}
-
-/**
- *
- * Returns a fixed value whose meaning is unknown.
- *
- */
-constexpr uint32_t value_018fc650 = 0x2;
-
-extern "C" uint32_t bb_auto_return_constant_018fc650()
-{
-    return value_018fc650;
-}
-
-/**
- *
- * Returns a fixed value whose meaning is unknown.
- *
- */
-constexpr uint32_t value_018fc8f0 = 0x1;
-
-extern "C" uint32_t bb_auto_return_constant_018fc8f0()
-{
-    return value_018fc8f0;
-}
-
-/**
- *
- * Returns zero.
- *
- */
-extern "C" uint64_t bb_auto_return_zero_018fcb90()
-{
-    return 0;
-}
-
-/**
- *
- * Does nothing.
- *
- */
-extern "C" void bb_auto_empty_018fddf0()
-{
-}
-
-/**
- *
- * Does nothing.
- *
- */
-extern "C" void bb_auto_empty_018fdf60()
-{
-}
-
-/**
- *
  * Returns a fixed value whose meaning is unknown.
  *
  */
@@ -174,67 +103,10 @@ extern "C" uint8_t bb_auto_return_constant_018fe190()
 
 /**
  *
- * Returns zero.
- *
- */
-extern "C" uint64_t bb_auto_return_zero_018fedc0()
-{
-    return 0;
-}
-
-/**
- *
- * Does nothing.
- *
- */
-extern "C" void bb_auto_empty_018ff030()
-{
-}
-
-/**
- *
- * Does nothing.
- *
- */
-extern "C" void bb_auto_empty_018ff040()
-{
-}
-
-/**
- *
  * Does nothing.
  *
  */
 extern "C" void bb_auto_empty_018ff050()
-{
-}
-
-/**
- *
- * Returns zero.
- *
- */
-extern "C" uint64_t bb_auto_return_zero_018ff200()
-{
-    return 0;
-}
-
-/**
- *
- * Returns zero.
- *
- */
-extern "C" uint64_t bb_auto_return_zero_018ff210()
-{
-    return 0;
-}
-
-/**
- *
- * Does nothing.
- *
- */
-extern "C" void bb_auto_empty_018ff5b0()
 {
 }
 

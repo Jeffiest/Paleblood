@@ -252,6 +252,26 @@ static void fast_copies(void)
         }
 }
 
+/* Every texel lies at its micro tile's first texel plus its place in rt_tiling_micro_spread's table,
+   for every mode and element size, two slices (the form the renderer's GPU copies take). */
+static void micro_spreads(void)
+{
+    static const unsigned modes[] = {8, 9, 10, 13, 14, 31};
+    for (size_t m = 0; m < COUNT(modes); m++)
+        for (unsigned b = 0; b < 5; b++) {
+            const rt_tiling t = layout(modes[m], 1u << b, 256, 130);
+            uint64_t spread[RT_TILING_MICRO_TEXELS];
+            rt_tiling_micro_spread(&t, spread);
+            int ok = 1;
+            for (uint32_t s = 0; s < 2; s++)
+                for (uint32_t y = 0; y < 130; y++)
+                    for (uint32_t x = 0; x < 256; x++)
+                        ok &= rt_tiling_offset(&t, x, y, s) == rt_tiling_offset(&t, x & ~7u, y & ~7u, s) + spread[(y & 7) * 8 + (x & 7)];
+            if (!ok) fprintf(stderr, "tiling %u, %u bytes: micro spread differs\n", modes[m], 1u << b);
+            CHECK(ok);
+        }
+}
+
 static void refusals(void)
 {
     rt_tiling t;
@@ -262,14 +282,45 @@ static void refusals(void)
     CHECK(rt_tiling_layout(THIN_2D, 3, 128, 64, &t, error, sizeof error) == -1 && strstr(error, "3 bytes"));
 }
 
+/* Mip chains (rt_tiling_mip_chain), worked by hand from the rules in tiling.c. */
+static void mip_chains(void)
+{
+    rt_tiling_level levels[RT_TILING_MAX_LEVELS];
+    char error[160] = "";
+    /* the character creation screen's 16x16 BC1 texture: 1D thin, POW2_PAD, five levels; every level is
+       one micro tile of 8x8 blocks (512 bytes), the smaller ones padded up to it */
+    CHECK(rt_tiling_mip_chain(THIN_1D, 8, 4, 1, 16, 16, 16, 16, 5, 1, levels, error, sizeof error) == 0);
+    for (unsigned m = 0; m < 5; m++) {
+        CHECK(levels[m].offset == 512u * m && levels[m].layout.pitch == 8 && levels[m].layout.height == 8);
+        CHECK(levels[m].layout.tiling_index == THIN_1D && levels[m].columns == (m < 2 ? 4u >> m : 1u));
+    }
+    /* 2D thin, 4-byte texels, 256x256, nine levels: macro tiled (128x64 texels per macro tile) while a
+       level spans one, then micro tiled in the thin order, each level at least 256 bytes */
+    static const uint64_t offsets[9] = {0, 262144, 327680, 344064, 348160, 349184, 349440, 349696, 349952};
+    static const uint32_t pitches[9] = {256, 128, 64, 32, 16, 8, 8, 8, 8};
+    CHECK(rt_tiling_mip_chain(THIN_2D, 4, 1, 0, 256, 256, 256, 256, 9, 1, levels, error, sizeof error) == 0);
+    for (unsigned m = 0; m < 9; m++) {
+        CHECK(levels[m].offset == offsets[m] && levels[m].layout.pitch == pitches[m]);
+        CHECK(levels[m].layout.kind == (m < 2 ? RT_TILING_2D : RT_TILING_1D));
+    }
+    /* two slices: each level holds both before the next level starts */
+    CHECK(rt_tiling_mip_chain(THIN_1D, 8, 4, 1, 16, 16, 16, 16, 2, 2, levels, error, sizeof error) == 0 && levels[1].offset == 1024);
+    /* linear, 1-byte texels, 16x4 then 8x2: pitches of 64 grown to a 256-element slice */
+    CHECK(rt_tiling_mip_chain(8, 1, 1, 0, 64, 4, 16, 4, 2, 1, levels, error, sizeof error) == 0);
+    CHECK(levels[0].layout.pitch == 64 && levels[1].offset == 256 && levels[1].layout.pitch == 128);
+    CHECK(rt_tiling_mip_chain(THIN_1D, 8, 3, 1, 16, 16, 16, 16, 2, 1, levels, error, sizeof error) == -1);
+}
+
 int main(void)
 {
+    mip_chains();
     hand_worked();
     mutants();
     macro_tiles();
     permutations();
     detiling();
     fast_copies();
+    micro_spreads();
     refusals();
     if (failures) {
         fprintf(stderr, "%d failure(s)\n", failures);

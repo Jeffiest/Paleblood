@@ -4,16 +4,6 @@
 
 /**
  *
- * Returns zero.
- *
- */
-extern "C" uint64_t bb_auto_return_zero_024d7b00()
-{
-    return 0;
-}
-
-/**
- *
  * The part of the object that auto_return_field_024daf50 reads.
  *
  */
@@ -31,16 +21,6 @@ static_assert(offsetof(Object024daf50, value_0x04c0) == 0x4c0);
 extern "C" uint32_t bb_auto_return_field_024daf50(const Object024daf50 *self)
 {
     return self->value_0x04c0;
-}
-
-/**
- *
- * Returns zero.
- *
- */
-extern "C" uint64_t bb_auto_return_zero_024dc2e0()
-{
-    return 0;
 }
 
 /**
@@ -118,56 +98,6 @@ extern "C" void bb_auto_empty_024de540()
  *
  */
 extern "C" void bb_auto_empty_024deec0()
-{
-}
-
-/**
- *
- * The part of the object that auto_return_field_024df580 reads.
- *
- */
-struct Object024df580 {
-    uint8_t unknown_0x0000[0x8];
-    uint64_t value_0x0008; /**< Read by auto_return_field_024df580; meaning unknown. */
-};
-static_assert(offsetof(Object024df580, value_0x0008) == 0x8);
-
-/**
- *
- * Returns a field of its object.
- *
- */
-extern "C" uint64_t bb_auto_return_field_024df580(const Object024df580 *self)
-{
-    return self->value_0x0008;
-}
-
-/**
- *
- * The part of the object that auto_return_field_024df600 reads.
- *
- */
-struct Object024df600 {
-    uint64_t value_0x0000; /**< Read by auto_return_field_024df600; meaning unknown. */
-};
-static_assert(offsetof(Object024df600, value_0x0000) == 0x0);
-
-/**
- *
- * Returns a field of its object.
- *
- */
-extern "C" uint64_t bb_auto_return_field_024df600(const Object024df600 *self)
-{
-    return self->value_0x0000;
-}
-
-/**
- *
- * Does nothing.
- *
- */
-extern "C" void bb_auto_empty_024df6d0()
 {
 }
 

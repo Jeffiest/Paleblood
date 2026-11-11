@@ -13,15 +13,6 @@ extern "C" void bb_auto_empty_012b0840()
 
 /**
  *
- * Does nothing.
- *
- */
-extern "C" void bb_auto_empty_012bd290()
-{
-}
-
-/**
- *
  * Returns a fixed value whose meaning is unknown.
  *
  */

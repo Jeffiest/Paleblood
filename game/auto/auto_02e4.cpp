@@ -25,16 +25,6 @@ extern "C" uint32_t bb_auto_return_field_02e42920(const Object02e42920 *self)
 
 /**
  *
- * Returns zero.
- *
- */
-extern "C" uint64_t bb_auto_return_zero_02e42930()
-{
-    return 0;
-}
-
-/**
- *
  * The part of the object that auto_return_field_02e429a0 reads.
  *
  */
@@ -287,18 +277,6 @@ extern "C" uint32_t bb_auto_return_field_02e496f0(const Object02e496f0 *self)
 
 /**
  *
- * Returns a fixed value whose meaning is unknown.
- *
- */
-constexpr uint32_t value_02e49760 = 0x80004005;
-
-extern "C" uint32_t bb_auto_return_constant_02e49760()
-{
-    return value_02e49760;
-}
-
-/**
- *
  * The part of the object that auto_return_field_02e4aff0 reads.
  *
  */
@@ -320,18 +298,6 @@ extern "C" uint32_t bb_auto_return_field_02e4aff0(const Object02e4aff0 *self)
 
 /**
  *
- * Returns a fixed value whose meaning is unknown.
- *
- */
-constexpr uint32_t value_02e4b530 = 0x80004005;
-
-extern "C" uint32_t bb_auto_return_constant_02e4b530()
-{
-    return value_02e4b530;
-}
-
-/**
- *
  * The part of the object that auto_return_field_02e4be70 reads.
  *
  */
@@ -349,66 +315,4 @@ static_assert(offsetof(Object02e4be70, value_0x00c0) == 0xc0);
 extern "C" uint32_t bb_auto_return_field_02e4be70(const Object02e4be70 *self)
 {
     return self->value_0x00c0;
-}
-
-/**
- *
- * Returns a fixed value whose meaning is unknown.
- *
- */
-constexpr uint32_t value_02e4bef0 = 0x80004005;
-
-extern "C" uint32_t bb_auto_return_constant_02e4bef0()
-{
-    return value_02e4bef0;
-}
-
-/**
- *
- * Returns a fixed value whose meaning is unknown.
- *
- */
-constexpr uint32_t value_02e4dd00 = 0x1;
-
-extern "C" uint32_t bb_auto_return_constant_02e4dd00()
-{
-    return value_02e4dd00;
-}
-
-/**
- *
- * Does nothing.
- *
- */
-extern "C" void bb_auto_empty_02e4df40()
-{
-}
-
-/**
- *
- * Returns zero.
- *
- */
-extern "C" uint64_t bb_auto_return_zero_02e4f070()
-{
-    return 0;
-}
-
-/**
- *
- * Does nothing.
- *
- */
-extern "C" void bb_auto_empty_02e4f090()
-{
-}
-
-/**
- *
- * Returns zero.
- *
- */
-extern "C" uint64_t bb_auto_return_zero_02e4fc20()
-{
-    return 0;
 }

@@ -10,6 +10,7 @@
 #include <stdint.h>
 #include <string.h>
 #include <time.h>
+#include <unistd.h>
 
 /* The process parameter block: the executable's PT_SCE_PROCPARAM segment as mapped. */
 static void *kernel_get_proc_param(void)
@@ -41,21 +42,17 @@ RT_SYSLIB("libkernel", __error, rt_guest_errno);
    (symbols/imports.csv, two rows naming one call): the loader binds an import by library and NID
    (runtime/boot.c), so each library needs its own entry, both pointing here.
 
-   The PS4's system page size is not established by any evidence we can cite. The target's ELF
-   headers bound it at best, and only under assumptions about the PS4 loader; the guest itself just
-   rejects a non-power-of-two and caches whatever it gets, so it never states the number. The full
-   record - what is observed, what is inferred and on which premise, and what remains open - is in
-   docs/runtime-syscalls.md, section "getpagesize: observed, inferred, unknown".
+   It answers 16384 (16 KiB), the maintainer's ruling of 2026-11-10. The PS4's own number is not
+   measured (docs/runtime-syscalls.md, "getpagesize: observed, inferred, unknown"), but every source
+   we can cite points the same way: shadPS4's kernel answers 16 KiB, as do a family of native
+   ports and the Astrr00 port (facts only); all sixteen PT_LOAD segments of the target's
+   images are aligned to 0x4000; and the runtime's own memory calls work in 16 KiB pages. The
+   guest only needs a power of two (its callers reject anything else) and caches it. */
+enum { GUEST_PAGE_SIZE = 0x4000 };
 
-   So the call fails loudly instead of returning an invented number or the host's page size. It is
-   registered with RT_SYSLIB_UNRESOLVED: the boot gets a named diagnostic if it reaches this, and
-   coverage leaves the import unchecked, since a diagnostic is not an implementation. */
-static void kernel_getpagesize(void)
-{
-    rt_fatal("getpagesize", "the PS4 system page size is not established by public evidence");
-}
-RT_SYSLIB_UNRESOLVED("libScePosix", getpagesize, kernel_getpagesize);
-RT_SYSLIB_UNRESOLVED("libkernel", getpagesize, kernel_getpagesize);
+static int32_t kernel_getpagesize(void) { return GUEST_PAGE_SIZE; }
+RT_SYSLIB("libScePosix", getpagesize, kernel_getpagesize);
+RT_SYSLIB("libkernel", getpagesize, kernel_getpagesize);
 
 /* memcpy and memset, imported by libSceFios2.elf from libSceLibcInternal (symbols/imports.csv). ISO C
    (7.24.2.1 and 7.24.6.1) fixes their whole result for valid arguments: memcpy copies n bytes from
@@ -168,3 +165,17 @@ static void kernel_stack_chk_fail(void)
     rt_fatal("__stack_chk_fail", "the guest's stack protector found a stack frame overwritten");
 }
 RT_SYSLIB("libkernel", __stack_chk_fail, kernel_stack_chk_fail);
+
+/* _exit(int status), imported by libc.elf from libkernel: POSIX, and FreeBSD _exit(2) has the same
+   void(int) shape and never returns. It ends the process at once: no atexit handlers run, no stdio
+   buffer is flushed, and the parent sees the status's low 8 bits. The host's _exit does exactly
+   that. When the boot harness set rt_exit_observer, it first records the exit as the run's outcome
+   (runtime/boot.c) and does not return; if it does return, the process ends as usual. */
+void (*rt_exit_observer)(int status);
+
+static _Noreturn void kernel_exit(int status)
+{
+    if (rt_exit_observer) rt_exit_observer(status);
+    _exit(status);
+}
+RT_SYSLIB("libkernel", _exit, kernel_exit);

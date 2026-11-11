@@ -5,7 +5,7 @@
 #include <cstddef>
 #include <cstdint>
 #include "../engine/allocator.h"
-#include "../loading/fios.h"
+#include "../misc/thread_allocator.h"
 #include "../misc/bounded_range_object.h"
 #include "runtime/original.h"
 
@@ -51,7 +51,7 @@ extern "C" uint64_t bb_auto_bounded_range_object_free_secondary_02dabeb0(misc::B
     misc::BoundedRangeObject *object = reinterpret_cast<misc::BoundedRangeObject *>(
         reinterpret_cast<uint8_t *>(secondary) - misc::secondary_base_offset);
     release_object(object);
-    engine::Allocator *allocator = loading::fios::thread_allocator();
+    engine::Allocator *allocator = misc::thread_allocator();
     return reinterpret_cast<const SizedFreeVtable *>(allocator->vtable)
         ->free_sized(allocator, object, block_size_of(object));
 }

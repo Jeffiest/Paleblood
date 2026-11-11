@@ -4,15 +4,6 @@
 
 /**
  *
- * Does nothing.
- *
- */
-extern "C" void bb_auto_empty_02ab82a0()
-{
-}
-
-/**
- *
  * The part of the object that auto_return_field_02ab9a50 reads.
  *
  */
@@ -37,53 +28,6 @@ extern "C" uint8_t bb_auto_return_field_02ab9a50(const Object02ab9a50 *self)
  * Returns zero.
  *
  */
-extern "C" uint64_t bb_auto_return_zero_02ab9c00()
-{
-    return 0;
-}
-
-/**
- *
- * Does nothing.
- *
- */
-extern "C" void bb_auto_empty_02ab9c10()
-{
-}
-
-/**
- *
- * Does nothing.
- *
- */
-extern "C" void bb_auto_empty_02ab9c20()
-{
-}
-
-/**
- *
- * Does nothing.
- *
- */
-extern "C" void bb_auto_empty_02ab9c30()
-{
-}
-
-/**
- *
- * Returns zero.
- *
- */
-extern "C" uint64_t bb_auto_return_zero_02ab9c40()
-{
-    return 0;
-}
-
-/**
- *
- * Returns zero.
- *
- */
 extern "C" uint64_t bb_auto_return_zero_02ab9c50()
 {
     return 0;
@@ -95,14 +39,5 @@ extern "C" uint64_t bb_auto_return_zero_02ab9c50()
  *
  */
 extern "C" void bb_auto_empty_02abb4a0()
-{
-}
-
-/**
- *
- * Does nothing.
- *
- */
-extern "C" void bb_auto_empty_02abb8d0()
 {
 }

@@ -43,13 +43,3 @@ extern "C" uint32_t bb_auto_return_field_00ff92a0(const Object00ff92a0 *self)
 {
     return self->value_0x03e8;
 }
-
-/**
- *
- * Returns zero.
- *
- */
-extern "C" uint64_t bb_auto_return_zero_00ffef30()
-{
-    return 0;
-}

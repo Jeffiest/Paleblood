@@ -14,6 +14,7 @@ if(NOT CMAKE_BUILD_TYPE AND NOT CMAKE_CONFIGURATION_TYPES)
 endif()
 add_compile_options(-Wall -Wextra -Werror)
 
+option(PB_ENABLE_METAL_EXECUTOR "Build the Metal draw executor and its pinned shader converter" OFF)
 option(PB_METAL_ONLY "Build only the standalone macOS Metal platform unit" OFF)
 option(PB_ENABLE_METAL_SMOKE_TEST "Build/register the real-device offscreen Metal test" OFF)
 if(APPLE AND CMAKE_SYSTEM_NAME STREQUAL "Darwin")
@@ -22,7 +23,7 @@ if(APPLE AND CMAKE_SYSTEM_NAME STREQUAL "Darwin")
     if(PB_METAL_ONLY)
         return()
     endif()
-elseif(PB_METAL_ONLY OR PB_ENABLE_METAL_SMOKE_TEST)
+elseif(PB_METAL_ONLY OR PB_ENABLE_METAL_SMOKE_TEST OR PB_ENABLE_METAL_EXECUTOR)
     message(FATAL_ERROR "Metal options require macOS and an Apple SDK")
 endif()
 
@@ -106,13 +107,14 @@ add_executable(test_syslib test/test_syslib.c ${PB_TEST_SYSLIB_TESTS} runtime/pr
                runtime/display/display.c runtime/display/display_window_none.c runtime/renderer/renderer_none.c
                runtime/audio/audio_host_none.c runtime/input/input.c runtime/input/input_script.c runtime/input/input_host_none.c ${PB_MEDIA_SOURCES})
 target_include_directories(test_syslib PRIVATE runtime/include)
-target_link_libraries(test_syslib PRIVATE atrac9)
+target_link_libraries(test_syslib PRIVATE atrac9 pbhost_time)
 if(PB_FFMPEG_FOUND)
     # The movie player's tests encode a short movie of their own with the same libraries.
     target_link_libraries(test_syslib PRIVATE PkgConfig::PB_FFMPEG)
     target_compile_definitions(test_syslib PRIVATE PB_TEST_MEDIA=1)
 endif()
 add_test(NAME syslib COMMAND test_syslib)
+include(cmake/HostTimeTests.cmake)
 # The renderer's GCN shader decoder (docs/RENDERER.md), its test, and pbgcn for the shader census.
 add_library(pbgcn_decode STATIC runtime/renderer/gcn_decode.c)
 target_include_directories(pbgcn_decode PUBLIC runtime/include)
@@ -136,7 +138,7 @@ target_include_directories(pbtiling PUBLIC runtime/include)
 add_executable(test_tiling test/test_tiling.c)
 target_link_libraries(test_tiling PRIVATE pbtiling)
 add_test(NAME tiling COMMAND test_tiling)
-add_library(pbgcn_spirv STATIC runtime/renderer/spirv.c runtime/renderer/gcn_spirv.c runtime/renderer/rect_list.c)
+add_library(pbgcn_spirv STATIC runtime/renderer/spirv.c runtime/renderer/gcn_spirv.c runtime/renderer/rect_list.c runtime/renderer/tile_copy.c)
 target_include_directories(pbgcn_spirv PUBLIC runtime/include)
 target_link_libraries(pbgcn_spirv PUBLIC pbgcn_decode)
 add_executable(test_gcn_spirv test/test_gcn_spirv.c)
@@ -150,7 +152,8 @@ if(PB_TEST_VULKAN_FOUND)
     add_executable(test_gcn_compute test/test_gcn_compute.c)
     target_link_libraries(test_gcn_compute PRIVATE pbgcn_spirv PkgConfig::PB_TEST_VULKAN m)
     add_test(NAME gcn_compute COMMAND test_gcn_compute)
-    set_tests_properties(gcn_compute PROPERTIES SKIP_RETURN_CODE 77)
+    add_test(NAME gcn_compute_wave64 COMMAND test_gcn_compute --wave64)
+    set_tests_properties(gcn_compute gcn_compute_wave64 PROPERTIES SKIP_RETURN_CODE 77)
     # The draw executor (docs/RENDERER.md, phase 3) runs recorded calls on a Vulkan GPU.
     add_library(pbrender_executor STATIC runtime/renderer/render_executor.c)
     target_include_directories(pbrender_executor PUBLIC runtime/include)
@@ -177,6 +180,7 @@ add_test(NAME validate_functions COMMAND ${Python3_EXECUTABLE} ${PROJECT_SOURCE_
 add_test(NAME check_agnostic COMMAND ${Python3_EXECUTABLE} ${PROJECT_SOURCE_DIR}/tools/check_agnostic.py)
 add_test(NAME float_flags COMMAND ${Python3_EXECUTABLE} ${PROJECT_SOURCE_DIR}/tools/check_float_flags.py ${CMAKE_BINARY_DIR})
 add_test(NAME progress_readme COMMAND ${Python3_EXECUTABLE} ${PROJECT_SOURCE_DIR}/tools/progress.py --check)
+add_test(NAME source_files COMMAND ${Python3_EXECUTABLE} ${PROJECT_SOURCE_DIR}/tools/source_files.py --check)
 
 # Compiled-SDK wire validation over the loader-owned process parameters.
 add_executable(test_compiled_sdk test/test_compiled_sdk.c
@@ -187,10 +191,26 @@ set_tests_properties(compiled_sdk PROPERTIES TIMEOUT 10)
 
 # Exercise the registered direct-memory calls, including rejected ranges before host mapping.
 add_executable(test_direct_memory_bounds test/test_direct_memory_bounds.c
-               runtime/syslib/kernel_memory.c runtime/syslib/table.c runtime/process.c)
+               runtime/syslib/kernel_memory.c runtime/syslib/kernel.c runtime/syslib/table.c runtime/process.c)
 target_include_directories(test_direct_memory_bounds PRIVATE runtime/include)
 add_test(NAME direct_memory_bounds COMMAND test_direct_memory_bounds)
 set_tests_properties(direct_memory_bounds PROPERTIES TIMEOUT 20)
+
+# The table is immutable in the original image. This unit uses owned values so
+# the last valid entry and a one-past access are independently observable.
+add_executable(test_present_encoding_units game/render/tests/test_present_encoding_units.cpp
+               game/render/present_encoding_units.cpp)
+target_include_directories(test_present_encoding_units PRIVATE runtime/include)
+target_compile_options(test_present_encoding_units PRIVATE
+                       -ffp-contract=off -fno-fast-math)
+if(CMAKE_CXX_COMPILER_ID STREQUAL "GNU")
+    target_compile_options(test_present_encoding_units PRIVATE
+                           -fsanitize=bounds -fsanitize-undefined-trap-on-error)
+elseif(CMAKE_CXX_COMPILER_ID MATCHES "Clang")
+    target_compile_options(test_present_encoding_units PRIVATE
+                           -fsanitize=bounds -fsanitize-trap=bounds)
+endif()
+add_test(NAME present_encoding_units COMMAND test_present_encoding_units)
 # Owned per-thread module blocks and the actual TLS registry entry.
 find_package(Threads REQUIRED)
 add_executable(test_module_tls test/test_module_tls.c runtime/syslib/kernel_tls.c
@@ -199,8 +219,21 @@ target_include_directories(test_module_tls PRIVATE runtime/include)
 target_link_libraries(test_module_tls PRIVATE Threads::Threads)
 add_test(NAME module_tls COMMAND test_module_tls)
 set_tests_properties(module_tls PROPERTIES TIMEOUT 10)
+include(cmake/HostFileStatTests.cmake)
 
 add_test(NAME module_tls_boot
          COMMAND ${Python3_EXECUTABLE} ${PROJECT_SOURCE_DIR}/test/test_module_tls_boot.py -v)
 set_tests_properties(module_tls_boot PROPERTIES TIMEOUT 30
     ENVIRONMENT "BB_PBBOOT=$<TARGET_FILE:pbboot>")
+
+
+# Full-width module arguments and proven early invalid-ID statuses.
+add_executable(test_sysmodule_ids test/test_sysmodule_ids.c
+               runtime/syslib/table.c runtime/syslib/kernel_sysmodule.c)
+target_include_directories(test_sysmodule_ids PRIVATE runtime/include)
+add_test(NAME sysmodule_ids COMMAND test_sysmodule_ids)
+set_tests_properties(sysmodule_ids PROPERTIES TIMEOUT 10)
+
+# Deliberately wrong replacements for the function families' mutation tests (tools/verify.py
+# family); a test library, never loaded by the runtime.
+add_library(bbfamily_mutants SHARED test/family_mutants.c)

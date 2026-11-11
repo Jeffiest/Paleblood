@@ -4,16 +4,6 @@
 
 /**
  *
- * Returns zero.
- *
- */
-extern "C" uint64_t bb_auto_return_zero_00fd2710()
-{
-    return 0;
-}
-
-/**
- *
  * The part of the object that auto_return_float_field_00fd2790 reads.
  *
  */
@@ -283,16 +273,6 @@ static_assert(offsetof(Object00fda1c0, value_0x0584) == 0x584);
 extern "C" float bb_auto_return_float_field_00fda1c0(const Object00fda1c0 *self)
 {
     return self->value_0x0584;
-}
-
-/**
- *
- * Returns zero.
- *
- */
-extern "C" uint64_t bb_auto_return_zero_00fdac20()
-{
-    return 0;
 }
 
 /**

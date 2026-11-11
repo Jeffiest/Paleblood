@@ -7,33 +7,6 @@
  * Does nothing.
  *
  */
-extern "C" void bb_auto_empty_01c123f0()
-{
-}
-
-/**
- *
- * Does nothing.
- *
- */
-extern "C" void bb_auto_empty_01c13170()
-{
-}
-
-/**
- *
- * Does nothing.
- *
- */
-extern "C" void bb_auto_empty_01c136a0()
-{
-}
-
-/**
- *
- * Does nothing.
- *
- */
 extern "C" void bb_auto_empty_01c14e70()
 {
 }
@@ -44,15 +17,6 @@ extern "C" void bb_auto_empty_01c14e70()
  *
  */
 extern "C" void bb_auto_empty_01c14ed0()
-{
-}
-
-/**
- *
- * Does nothing.
- *
- */
-extern "C" void bb_auto_empty_01c153f0()
 {
 }
 
@@ -121,15 +85,6 @@ extern "C" void *bb_auto_return_member_address_01c157c0(Object01c157c0 *self)
 
 /**
  *
- * Does nothing.
- *
- */
-extern "C" void bb_auto_empty_01c15a50()
-{
-}
-
-/**
- *
  * The part of the object that auto_return_field_01c15d80 reads.
  *
  */
@@ -151,87 +106,11 @@ extern "C" uint8_t bb_auto_return_field_01c15d80(const Object01c15d80 *self)
 
 /**
  *
- * The part of the object that auto_return_member_address_01c15da0 reads.
- *
- */
-struct Object01c15da0 {
-    uint8_t unknown_0x0000[0x20];
-    uint8_t member_0x0020; /**< Read by auto_return_member_address_01c15da0; meaning unknown. */
-};
-static_assert(offsetof(Object01c15da0, member_0x0020) == 0x20);
-
-/**
- *
- * Returns the address of a member of its object.
- *
- */
-extern "C" void *bb_auto_return_member_address_01c15da0(Object01c15da0 *self)
-{
-    return &self->member_0x0020;
-}
-
-/**
- *
- * Does nothing.
- *
- */
-extern "C" void bb_auto_empty_01c16310()
-{
-}
-
-/**
- *
- * Does nothing.
- *
- */
-extern "C" void bb_auto_empty_01c163e0()
-{
-}
-
-/**
- *
- * Does nothing.
- *
- */
-extern "C" void bb_auto_empty_01c186b0()
-{
-}
-
-/**
- *
- * Does nothing.
- *
- */
-extern "C" void bb_auto_empty_01c1ad30()
-{
-}
-
-/**
- *
  * Does nothing.
  *
  */
 extern "C" void bb_auto_empty_01c1b8e0()
 {
-}
-
-/**
- *
- * Does nothing.
- *
- */
-extern "C" void bb_auto_empty_01c1bce0()
-{
-}
-
-/**
- *
- * Returns zero.
- *
- */
-extern "C" uint64_t bb_auto_return_zero_01c1bd30()
-{
-    return 0;
 }
 
 /**
@@ -244,15 +123,6 @@ constexpr uint8_t value_01c1bd40 = 0x1;
 extern "C" uint8_t bb_auto_return_constant_01c1bd40()
 {
     return value_01c1bd40;
-}
-
-/**
- *
- * Does nothing.
- *
- */
-extern "C" void bb_auto_empty_01c1f050()
-{
 }
 
 /**

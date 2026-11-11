@@ -25,16 +25,6 @@ extern "C" uint64_t bb_auto_return_field_02514fd0(const Object02514fd0 *self)
 
 /**
  *
- * Returns zero.
- *
- */
-extern "C" uint64_t bb_auto_return_zero_025155e0()
-{
-    return 0;
-}
-
-/**
- *
  * Returns a fixed value whose meaning is unknown.
  *
  */

@@ -82,12 +82,3 @@ extern "C" void bb_auto_empty_005e8a00()
 extern "C" void bb_auto_empty_005e8d00()
 {
 }
-
-/**
- *
- * Does nothing.
- *
- */
-extern "C" void bb_auto_empty_005efb80()
-{
-}

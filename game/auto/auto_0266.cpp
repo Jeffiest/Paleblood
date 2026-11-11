@@ -28,15 +28,6 @@ extern "C" uint64_t bb_auto_return_field_026601f0(const Object026601f0 *self)
  * Does nothing.
  *
  */
-extern "C" void bb_auto_empty_02660620()
-{
-}
-
-/**
- *
- * Does nothing.
- *
- */
 extern "C" void bb_auto_empty_02662200()
 {
 }

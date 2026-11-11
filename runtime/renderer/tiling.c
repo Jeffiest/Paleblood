@@ -156,13 +156,92 @@ uint64_t rt_tiling_offset(const rt_tiling *t, uint32_t x, uint32_t y, uint32_t s
 
 uint64_t rt_tiling_size(const rt_tiling *t, uint32_t slices) { return slices * t->slice_bytes; }
 
-/* Copies between the tiled image and linear rows, a micro tile at a time: within one, a texel's place is
-   the micro tile's first texel's plus its element offset (micro_index x element size), the part past
-   the 256-byte pipe interleave moving up to the channel rows of a 2D layout. That holds because a micro
-   tile starts on a 256-byte boundary of its channel (2D: its offset there is a whole number of micro
-   tiles of 256 bytes or more, or of ones that divide 256 and so never cross it) and keeps one pipe and
-   bank throughout (they depend on coordinate bits 3 and up). test/test_tiling.c checks it against
+static uint32_t next_power_of_two(uint32_t v)
+{
+    uint32_t p = 1;
+    while (p < v) p <<= 1;
+    return p;
+}
+
+static uint32_t align_up(uint32_t v, uint32_t to) { return (v + to - 1) / to * to; }
+
+/* Mip chains, as AMD's address library lays them out for GFX7 and shadPS4's texture_cache/tile.h
+   (ComputeImageSize) follows: level m spans (pitch >> m) x (height >> m) texels, in 4x4 blocks for
+   block-compressed elements (rounded up), at least 1, each rounded up to a power of two with
+   POW2_PAD; the levels lie one after another from the base, each level's slices together. A level
+   keeps a 2D-tiled image's macro tiling while it spans at least one macro tile (level 0 always);
+   a smaller level, and every level of a 1D-tiled image, is micro tiled: its pitch and height
+   rounded up to 8 elements, the pitch grown by 8 until a slice is a whole number of 256 bytes. A
+   linear level's pitch is rounded up to max(8, 64 / element bytes) elements and grown by that until
+   a slice's elements are a multiple of max(64, 256 / element bytes). The 1D layout a 2D image's
+   small levels use keeps its micro tile order (9 for display, 13 for thin). */
+int rt_tiling_mip_chain(unsigned tiling_index, unsigned element_bytes, unsigned block, int pow2, uint32_t pitch, uint32_t height,
+                        uint32_t width, uint32_t visible_height, unsigned levels, uint32_t slices, rt_tiling_level *out, char *error,
+                        size_t error_size)
+{
+    if (!levels || levels > RT_TILING_MAX_LEVELS) return failed(error, error_size, "an image of %u levels", levels);
+    if (block != 1 && block != 4) return failed(error, error_size, "elements of %ux%u texels", block, block);
+    /* the mode's kind, micro tile order and macro tile size (a pitch every mode takes) */
+    enum { ANY_PITCH = 4096 };
+    rt_tiling top;
+    if (rt_tiling_layout(tiling_index, element_bytes, ANY_PITCH, MICRO, &top, error, error_size)) return -1;
+    top.pitch = pitch / block;
+    uint64_t offset = 0;
+    for (unsigned m = 0; m < levels; m++) {
+        uint32_t w = pitch >> m, h = height >> m;
+        if (block > 1) w = (w + block - 1) / block, h = (h + block - 1) / block;
+        if (!w) w = 1;
+        if (!h) h = 1;
+        if (pow2) w = next_power_of_two(w), h = next_power_of_two(h);
+        rt_tiling_level *const level = &out[m];
+        uint32_t level_pitch, level_height;
+        unsigned index = tiling_index;
+        if (top.kind == RT_TILING_LINEAR) {
+            const uint32_t pitch_align = element_bytes >= 8 ? MICRO : 64 / element_bytes;
+            const uint32_t slice_align = element_bytes >= 4 ? 64 : 256 / element_bytes;
+            level_pitch = align_up(w, pitch_align), level_height = h;
+            while ((uint64_t)level_pitch * level_height % slice_align) level_pitch += pitch_align;
+        } else if (top.kind == RT_TILING_2D && (m == 0 || (w >= top.macro_width && h >= top.macro_height))) {
+            level_pitch = m == 0 ? top.pitch : align_up(w, top.macro_width), level_height = h;
+        } else {
+            index = top.micro == RT_MICRO_THIN ? THIN_1D_THIN : DISPLAY_1D_THIN;
+            level_pitch = align_up(w, MICRO), level_height = align_up(h, MICRO);
+            while ((uint64_t)level_pitch * level_height * element_bytes % PIPE_INTERLEAVE) level_pitch += MICRO;
+        }
+        if (m == 0 && top.kind != RT_TILING_2D) level_pitch = top.pitch > level_pitch ? top.pitch : level_pitch;
+        if (rt_tiling_layout(index, element_bytes, level_pitch, level_height, &level->layout, error, error_size)) return -1;
+        level->offset = offset;
+        const uint32_t visible_w = width >> m, visible_h = visible_height >> m;
+        level->columns = ((visible_w ? visible_w : 1) + block - 1) / block;
+        level->rows = ((visible_h ? visible_h : 1) + block - 1) / block;
+        offset += rt_tiling_size(&level->layout, slices);
+    }
+    return 0;
+}
+
+/* Within a micro tile, a texel's place is the micro tile's first texel's plus its element offset
+   (micro_index x element size), the part past the 256-byte pipe interleave moving up to the channel
+   rows of a 2D layout. That holds because a micro tile starts on a 256-byte boundary of its channel
+   (2D: its offset there is a whole number of micro tiles of 256 bytes or more, or of ones that divide
+   256 and so never cross it) and keeps one pipe and bank throughout (they depend on coordinate bits 3
+   and up). A linear layout's rows are pitch texels apart. test/test_tiling.c checks it against
    rt_tiling_offset for every mode and element size. */
+void rt_tiling_micro_spread(const rt_tiling *t, uint64_t spread[RT_TILING_MICRO_TEXELS])
+{
+    const uint64_t element = t->element_bytes;
+    const unsigned channel_shift = t->kind == RT_TILING_2D ? PIPE_INTERLEAVE_BITS + log2_of(t->pipes) + log2_of(t->banks) : PIPE_INTERLEAVE_BITS;
+    for (uint32_t j = 0; j < MICRO; j++)
+        for (uint32_t i = 0; i < MICRO; i++) {
+            if (t->kind == RT_TILING_LINEAR) {
+                spread[j * MICRO + i] = ((uint64_t)j * t->pitch + i) * element;
+                continue;
+            }
+            const uint64_t m = micro_index(t, i, j) * element;
+            spread[j * MICRO + i] = t->kind == RT_TILING_2D ? (m & (PIPE_INTERLEAVE - 1)) + ((m >> PIPE_INTERLEAVE_BITS) << channel_shift) : m;
+        }
+}
+
+/* Copies between the tiled image and linear rows, a micro tile at a time (rt_tiling_micro_spread). */
 static void copy_texels(const rt_tiling *t, uint8_t *tiled, uint8_t *linear, uint32_t width, uint32_t height, uint32_t slices, int to_tiled)
 {
     const size_t element = t->element_bytes, row = (size_t)width * element;
@@ -175,13 +254,8 @@ static void copy_texels(const rt_tiling *t, uint8_t *tiled, uint8_t *linear, uin
             }
         return;
     }
-    const unsigned channel_shift = t->kind == RT_TILING_2D ? PIPE_INTERLEAVE_BITS + log2_of(t->pipes) + log2_of(t->banks) : PIPE_INTERLEAVE_BITS;
     uint64_t spread[MICRO_TEXELS];
-    for (uint32_t j = 0; j < MICRO; j++)
-        for (uint32_t i = 0; i < MICRO; i++) {
-            const uint64_t m = micro_index(t, i, j) * element;
-            spread[j * MICRO + i] = t->kind == RT_TILING_2D ? (m & (PIPE_INTERLEAVE - 1)) + ((m >> PIPE_INTERLEAVE_BITS) << channel_shift) : m;
-        }
+    rt_tiling_micro_spread(t, spread);
     for (uint32_t s = 0; s < slices; s++, linear += row * height)
         for (uint32_t ty = 0; ty < height; ty += MICRO)
             for (uint32_t tx = 0; tx < width; tx += MICRO) {

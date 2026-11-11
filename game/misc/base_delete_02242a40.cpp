@@ -4,7 +4,7 @@
 
 #include "../engine/allocator.h"
 #include "../engine/engine.h"
-#include "../loading/fios.h"
+#include "thread_allocator.h"
 #include "base_object.h"
 
 namespace {
@@ -34,6 +34,6 @@ extern "C" void bb_misc_base_delete_02242a40(misc::BaseObject *self)
     misc::base_init(self);
     if (self == nullptr) return;
 
-    engine::Allocator *allocator = loading::fios::thread_allocator();
+    engine::Allocator *allocator = misc::thread_allocator();
     reinterpret_cast<const SizedFreeVtable *>(allocator->vtable)->free_sized(allocator, self, base_object_size);
 }

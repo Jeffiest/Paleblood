@@ -6,7 +6,7 @@
 #include <cstdint>
 #include "../engine/allocator.h"
 #include "../engine/engine.h"
-#include "../loading/fios.h"
+#include "../misc/thread_allocator.h"
 #include "../misc/base_object.h"
 
 // auto_base_delete_02987b00: misc_base_delete_02242990 with other addresses and constants.
@@ -39,7 +39,7 @@ extern "C" void bb_auto_base_delete_02987b00(misc::BaseObject *self)
     misc::base_init(self);
     if (self == nullptr) return;
 
-    engine::Allocator *allocator = loading::fios::thread_allocator();
+    engine::Allocator *allocator = misc::thread_allocator();
     reinterpret_cast<const SizedFreeVtable *>(allocator->vtable)->free_sized(allocator, self, base_object_size);
 }
 

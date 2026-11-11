@@ -73,15 +73,6 @@ extern "C" void bb_auto_empty_018aa4b0()
  * Does nothing.
  *
  */
-extern "C" void bb_auto_empty_018ac9c0()
-{
-}
-
-/**
- *
- * Does nothing.
- *
- */
 extern "C" void bb_auto_empty_018ad490()
 {
 }
@@ -92,42 +83,6 @@ extern "C" void bb_auto_empty_018ad490()
  *
  */
 extern "C" void bb_auto_empty_018ad560()
-{
-}
-
-/**
- *
- * Does nothing.
- *
- */
-extern "C" void bb_auto_empty_018aeda0()
-{
-}
-
-/**
- *
- * Does nothing.
- *
- */
-extern "C" void bb_auto_empty_018af1f0()
-{
-}
-
-/**
- *
- * Does nothing.
- *
- */
-extern "C" void bb_auto_empty_018af8c0()
-{
-}
-
-/**
- *
- * Does nothing.
- *
- */
-extern "C" void bb_auto_empty_018af8d0()
 {
 }
 

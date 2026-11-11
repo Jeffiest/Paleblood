@@ -25,36 +25,6 @@ extern "C" void bb_auto_empty_016222b0()
  * Does nothing.
  *
  */
-extern "C" void bb_auto_empty_01622e60()
-{
-}
-
-/**
- *
- * The part of the object that auto_return_field_01624290 reads.
- *
- */
-struct Object01624290 {
-    uint8_t unknown_0x0000[0x10];
-    uint64_t value_0x0010; /**< Read by auto_return_field_01624290; meaning unknown. */
-};
-static_assert(offsetof(Object01624290, value_0x0010) == 0x10);
-
-/**
- *
- * Returns a field of its object.
- *
- */
-extern "C" uint64_t bb_auto_return_field_01624290(const Object01624290 *self)
-{
-    return self->value_0x0010;
-}
-
-/**
- *
- * Does nothing.
- *
- */
 extern "C" void bb_auto_empty_016255a0()
 {
 }
@@ -115,33 +85,6 @@ extern "C" uint32_t bb_auto_return_field_01626320(const Object01626320 *self)
  * Does nothing.
  *
  */
-extern "C" void bb_auto_empty_01628540()
-{
-}
-
-/**
- *
- * Does nothing.
- *
- */
-extern "C" void bb_auto_empty_01628550()
-{
-}
-
-/**
- *
- * Does nothing.
- *
- */
-extern "C" void bb_auto_empty_01628560()
-{
-}
-
-/**
- *
- * Does nothing.
- *
- */
 extern "C" void bb_auto_empty_0162a360()
 {
 }
@@ -190,42 +133,11 @@ extern "C" uint8_t bb_auto_return_constant_0162eb30()
 
 /**
  *
- * Returns zero.
- *
- */
-extern "C" uint64_t bb_auto_return_zero_0162eb40()
-{
-    return 0;
-}
-
-/**
- *
  * Does nothing.
  *
  */
 extern "C" void bb_auto_empty_0162eb80()
 {
-}
-
-/**
- *
- * The part of the object that auto_return_member_address_0162eba0 reads.
- *
- */
-struct Object0162eba0 {
-    uint8_t unknown_0x0000[0x8];
-    uint8_t member_0x0008; /**< Read by auto_return_member_address_0162eba0; meaning unknown. */
-};
-static_assert(offsetof(Object0162eba0, member_0x0008) == 0x8);
-
-/**
- *
- * Returns the address of a member of its object.
- *
- */
-extern "C" void *bb_auto_return_member_address_0162eba0(Object0162eba0 *self)
-{
-    return &self->member_0x0008;
 }
 
 /**
@@ -262,25 +174,4 @@ extern "C" void bb_auto_empty_0162ece0()
  */
 extern "C" void bb_auto_empty_0162edb0()
 {
-}
-
-/**
- *
- * Does nothing.
- *
- */
-extern "C" void bb_auto_empty_0162f890()
-{
-}
-
-/**
- *
- * Returns a fixed value whose meaning is unknown.
- *
- */
-constexpr uint32_t value_0162fd70 = 0x29;
-
-extern "C" uint32_t bb_auto_return_constant_0162fd70()
-{
-    return value_0162fd70;
 }

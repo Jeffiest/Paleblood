@@ -1,137 +1,88 @@
 // SPDX-License-Identifier: GPL-2.0-or-later
+// File and directory handle objects over libSceFios2, and the per-thread allocator that owns
+// them. Field and call shapes follow the public FIOS2 API (SceFiosOpenParams, SceFiosFH/DH).
 #pragma once
 
 #include <cstddef>
 #include <cstdint>
 
-#include "../engine/allocator.h"
-#include "../engine/thread.h"
 #include "runtime/original.h"
 
 namespace loading::fios {
 
-/**
- *
- * Options the file open wrappers pass to sceFiosFHOpenSync.
- */
-struct OpenOptions {
-    uint32_t flags;             /**< Open flags: the wrapper's mode argument, or 1, zero-extended. */
-    uint8_t unknown_0x04[0x14];
+// SceFiosOpenParams.
+struct OpenParams {
+    uint16_t open_flags;
+    uint16_t operation_flags;
+    uint32_t reserved;
+    void *buffer;
+    uint64_t buffer_length;
 };
-static_assert(offsetof(OpenOptions, flags) == 0x00);
-static_assert(sizeof(OpenOptions) == 0x18);
+static_assert(sizeof(OpenParams) == 0x18 && offsetof(OpenParams, buffer) == 0x8);
 
-/**
- *
- * A heap object describing one open Fios file.
- */
-struct FileObject {
-    const void *vtable; /**< Vtable address point of the file object's class. */
-    uint32_t tag;       /**< Size tag, see object_tag_default. */
-    int32_t handle;     /**< Fios file handle from sceFiosFHOpenSync. */
-    bool valid;         /**< Whether the object's handle is usable; set by each wrapper. */
-    uint8_t unknown_0x11[7];
+using FileHandle = int32_t;        // SceFiosFH
+using DirectoryHandle = int32_t;   // SceFiosDH
+constexpr uint16_t open_read = 0x0001;   // SCE_FIOS_O_READ
+
+RT_ORIGINAL(0x02fbee78, fh_open_sync, int32_t(const void *attributes, FileHandle *out, const char *path,
+                                              const OpenParams *params));
+RT_ORIGINAL(0x02fbece8, dh_close_sync, int32_t(const void *attributes, DirectoryHandle handle));
+
+// The thread's allocator, through the thread-local holder: the two slots used here.
+struct ThreadAllocator;
+struct ThreadAllocatorVtable {
+    void *unknown_slots[2];
+    void *(*allocate)(ThreadAllocator *, uint64_t size);
+    void (*free_sized)(ThreadAllocator *, void *data, uint32_t size);
 };
-static_assert(offsetof(FileObject, tag) == 0x08);
-static_assert(offsetof(FileObject, handle) == 0x0c);
-static_assert(offsetof(FileObject, valid) == 0x10);
-static_assert(sizeof(FileObject) == 0x18);
-
-/**
- *
- * A heap object for one open Fios directory.
- */
-struct FileDirectory {
-    const void *vtable;           /**< The directory class's vtable, stored as is (no address point). */
-    uint32_t tag;                 /**< Size tag: the high 16 bits are the object's size, 0xffff for the default. */
-    uint8_t unknown_0x0c[0x0c];
-    uint64_t tagged_pointer_0x18; /**< A tagged pointer, released by tagged_slot_release. */
-    uint64_t tagged_pointer_0x20; /**< A tagged pointer, released by tagged_slot_release. */
-    int32_t directory;            /**< Fios directory handle, zero once closed. */
-    uint8_t unknown_0x2c[4];
-    void *block;                  /**< Heap block freed with the object's allocator, or null. */
+static_assert(offsetof(ThreadAllocatorVtable, allocate) == 0x10 && offsetof(ThreadAllocatorVtable, free_sized) == 0x18);
+struct ThreadAllocator {
+    const ThreadAllocatorVtable *vtable;
 };
-static_assert(offsetof(FileDirectory, tag) == 0x08);
-static_assert(offsetof(FileDirectory, tagged_pointer_0x18) == 0x18);
-static_assert(offsetof(FileDirectory, tagged_pointer_0x20) == 0x20);
-static_assert(offsetof(FileDirectory, directory) == 0x28);
-static_assert(offsetof(FileDirectory, block) == 0x30);
-static_assert(sizeof(FileDirectory) == 0x38);
-
-// The tag word the file wrappers store: the high half is the default size (0xffff), the low half 1.
-constexpr uint32_t object_tag_default = 0xffff0001;
-// The size tag's high half when the object has its default size.
-constexpr uint32_t tag_size_default = 0xffff;
-// How far the size sits in a tag word.
-constexpr int tag_size_shift = 16;
-// The size a directory object is freed with when its tag says default.
-constexpr uint32_t directory_default_size = 0x38;
-// Operation argument of the Fios calls: the wrappers always pass 0.
-constexpr uint32_t fios_op_default = 0;
-
-/**
- *
- * Opens a file for synchronous access (sceFiosFHOpenSync).
- *
- * Returns 0 and writes the handle to `handle` on success.
- */
-RT_ORIGINAL(0x02fbee78, fh_open_sync, int32_t(uint32_t op, int32_t *handle, const char *path, OpenOptions *options));
-
-/**
- *
- * Closes a Fios directory (sceFiosDHCloseSync).
- */
-RT_ORIGINAL(0x02fbece8, dh_close_sync, int32_t(uint32_t op, int32_t directory));
-
-/**
- *
- * Frees a heap block that has a 16-byte header before it, through the allocator's sized free slot.
- *
- * A null block is ignored.
- */
-RT_ORIGINAL(0x00829a90, heap_block_free, void(engine::Allocator *allocator, void *block));
-
-/**
- *
- * Releases a tagged pointer slot.
- *
- * A value above 1 whose low bit is set is freed at value - 1, and the slot is then cleared.
- */
-RT_ORIGINAL(0x00836840, tagged_slot_release, void(uint64_t *slot));
-
-// The thread-local offset of the thread's allocator holder.
-RT_GLOBAL(0x057e40f8, thread_allocator_offset, const int64_t);
-
-/**
- *
- * The thread's allocator holder, reached from the thread pointer.
- */
 struct ThreadAllocatorHolder {
     uint8_t unknown_0x00[0x58];
-    engine::Allocator *allocator;
+    ThreadAllocator *allocator;
 };
 static_assert(offsetof(ThreadAllocatorHolder, allocator) == 0x58);
+RT_GLOBAL(0x057e40f8, thread_allocator_offset, const int64_t);
+// Frees a block that has a 16-byte header in front of it (its size at -8); null is ignored.
+RT_ORIGINAL(0x00829a90, allocator_free_headed, void(ThreadAllocator *, void *data));
+// Releases a tagged string pointer (bit 0: owned by the thread allocator) and clears it.
+RT_ORIGINAL(0x00836840, tagged_string_release, void(uintptr_t *string));
 
-/**
- *
- * The allocator vtable prefix up to its sized free slot, which sits at 0x18.
- *
- * Only the sized free slot is named here; the shared allocator header leaves that slot unnamed.
- */
-struct AllocatorSizedFreeVtable {
-    uint8_t unknown_0x00[0x18];
-    void (*free_sized)(engine::Allocator *allocator, void *block, uint32_t size);
+// The header these engine objects share after their vtable: a count that starts at 1 (its
+// meaning is not confirmed here) and an allocation size, where size_default means the class's
+// own size (the deleting destructor frees that many bytes).
+struct ObjectHeader {
+    uint16_t count;
+    uint16_t allocation_size;
 };
-static_assert(offsetof(AllocatorSizedFreeVtable, free_sized) == 0x18);
+constexpr uint16_t initial_count = 1;
+constexpr uint16_t size_default = 0xffff;
 
-/**
- *
- * The thread's allocator, read again on each call as the originals do.
- */
-inline engine::Allocator *thread_allocator()
-{
-    auto *holder = *reinterpret_cast<ThreadAllocatorHolder **>(engine::thread_pointer() + thread_allocator_offset.get());
-    return holder->allocator;
-}
+// What 0x00857cd0 and 0x0085cda0 return: a FIOS file handle in an engine object.
+struct FileObject {
+    const void *vtable;
+    ObjectHeader header;
+    FileHandle handle;
+    uint8_t is_open;
+};
+static_assert(offsetof(FileObject, header) == 0x8 && offsetof(FileObject, handle) == 0xc);
+static_assert(offsetof(FileObject, is_open) == 0x10 && sizeof(FileObject) == 0x18);
+
+// A directory being listed; only what the destructor touches is named.
+struct DirectoryObject {
+    const void *vtable;
+    ObjectHeader header;
+    uint8_t unknown_0x0c[0xc];
+    uintptr_t path;            // two tagged path strings (bit 0: owned), released second first
+    uintptr_t path_second;
+    DirectoryHandle handle;    // 0 when not open
+    uint8_t unknown_0x2c[0x4];
+    void *entries;             // a headed block from the thread allocator, or null
+};
+static_assert(offsetof(DirectoryObject, path) == 0x18 && offsetof(DirectoryObject, path_second) == 0x20 && offsetof(DirectoryObject, handle) == 0x28);
+static_assert(offsetof(DirectoryObject, entries) == 0x30);
+constexpr uint32_t directory_object_size = 0x38;
 
 }  // namespace loading::fios

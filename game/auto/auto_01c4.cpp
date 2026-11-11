@@ -31,24 +31,6 @@ extern "C" void bb_auto_empty_01c46bd0()
 
 /**
  *
- * Does nothing.
- *
- */
-extern "C" void bb_auto_empty_01c48ef0()
-{
-}
-
-/**
- *
- * Does nothing.
- *
- */
-extern "C" void bb_auto_empty_01c4c8e0()
-{
-}
-
-/**
- *
  * Returns a fixed value whose meaning is unknown.
  *
  */

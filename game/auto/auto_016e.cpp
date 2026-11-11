@@ -4,56 +4,6 @@
 
 /**
  *
- * Returns zero.
- *
- */
-extern "C" uint64_t bb_auto_return_zero_016eb390()
-{
-    return 0;
-}
-
-/**
- *
- * Returns zero.
- *
- */
-extern "C" uint64_t bb_auto_return_zero_016eb3a0()
-{
-    return 0;
-}
-
-/**
- *
- * Returns zero.
- *
- */
-extern "C" uint64_t bb_auto_return_zero_016ee9e0()
-{
-    return 0;
-}
-
-/**
- *
- * Returns zero.
- *
- */
-extern "C" uint64_t bb_auto_return_zero_016ee9f0()
-{
-    return 0;
-}
-
-/**
- *
- * Returns zero.
- *
- */
-extern "C" uint64_t bb_auto_return_zero_016eea00()
-{
-    return 0;
-}
-
-/**
- *
  * Does nothing.
  *
  */
@@ -75,34 +25,7 @@ extern "C" void bb_auto_empty_016e5d60()
  * Does nothing.
  *
  */
-extern "C" void bb_auto_empty_016e6270()
-{
-}
-
-/**
- *
- * Does nothing.
- *
- */
-extern "C" void bb_auto_empty_016e7690()
-{
-}
-
-/**
- *
- * Does nothing.
- *
- */
 extern "C" void bb_auto_empty_016e7a00()
-{
-}
-
-/**
- *
- * Does nothing.
- *
- */
-extern "C" void bb_auto_empty_016e83e0()
 {
 }
 
@@ -141,43 +64,7 @@ extern "C" uint32_t bb_auto_return_field_016ea220(const Object016ea220 *self)
  * Does nothing.
  *
  */
-extern "C" void bb_auto_empty_016eb370()
-{
-}
-
-/**
- *
- * Does nothing.
- *
- */
-extern "C" void bb_auto_empty_016eb380()
-{
-}
-
-/**
- *
- * Does nothing.
- *
- */
 extern "C" void bb_auto_empty_016eb9a0()
-{
-}
-
-/**
- *
- * Does nothing.
- *
- */
-extern "C" void bb_auto_empty_016ebe20()
-{
-}
-
-/**
- *
- * Does nothing.
- *
- */
-extern "C" void bb_auto_empty_016ebe30()
 {
 }
 
@@ -196,15 +83,6 @@ extern "C" void bb_auto_empty_016ebe40()
  *
  */
 extern "C" void bb_auto_empty_016ec7e0()
-{
-}
-
-/**
- *
- * Does nothing.
- *
- */
-extern "C" void bb_auto_empty_016ed9d0()
 {
 }
 
@@ -232,23 +110,5 @@ extern "C" void bb_auto_empty_016edef0()
  *
  */
 extern "C" void bb_auto_empty_016edf50()
-{
-}
-
-/**
- *
- * Does nothing.
- *
- */
-extern "C" void bb_auto_empty_016eea10()
-{
-}
-
-/**
- *
- * Does nothing.
- *
- */
-extern "C" void bb_auto_empty_016eea20()
 {
 }

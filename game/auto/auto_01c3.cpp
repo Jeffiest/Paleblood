@@ -4,94 +4,10 @@
 
 /**
  *
- * Returns zero.
- *
- */
-extern "C" uint64_t bb_auto_return_zero_01c30700()
-{
-    return 0;
-}
-
-/**
- *
- * Returns zero.
- *
- */
-extern "C" uint64_t bb_auto_return_zero_01c30710()
-{
-    return 0;
-}
-
-/**
- *
- * Does nothing.
- *
- */
-extern "C" void bb_auto_empty_01c30730()
-{
-}
-
-/**
- *
- * Does nothing.
- *
- */
-extern "C" void bb_auto_empty_01c30740()
-{
-}
-
-/**
- *
- * Returns zero.
- *
- */
-extern "C" uint64_t bb_auto_return_zero_01c30750()
-{
-    return 0;
-}
-
-/**
- *
- * Does nothing.
- *
- */
-extern "C" void bb_auto_empty_01c30760()
-{
-}
-
-/**
- *
- * Does nothing.
- *
- */
-extern "C" void bb_auto_empty_01c30770()
-{
-}
-
-/**
- *
  * Does nothing.
  *
  */
 extern "C" void bb_auto_empty_01c30780()
-{
-}
-
-/**
- *
- * Does nothing.
- *
- */
-extern "C" void bb_auto_empty_01c33140()
-{
-}
-
-/**
- *
- * Does nothing.
- *
- */
-extern "C" void bb_auto_empty_01c334b0()
 {
 }
 
@@ -110,15 +26,6 @@ extern "C" void bb_auto_empty_01c334c0()
  *
  */
 extern "C" void bb_auto_empty_01c33670()
-{
-}
-
-/**
- *
- * Does nothing.
- *
- */
-extern "C" void bb_auto_empty_01c33d40()
 {
 }
 
@@ -289,66 +196,6 @@ extern "C" void bb_auto_empty_01c34fb0()
  * Does nothing.
  *
  */
-extern "C" void bb_auto_empty_01c35b30()
-{
-}
-
-/**
- *
- * Does nothing.
- *
- */
-extern "C" void bb_auto_empty_01c35b40()
-{
-}
-
-/**
- *
- * The part of the object that auto_return_field_01c38b20 reads.
- *
- */
-struct Object01c38b20 {
-    uint8_t unknown_0x0000[0x20];
-    uint64_t value_0x0020; /**< Read by auto_return_field_01c38b20; meaning unknown. */
-};
-static_assert(offsetof(Object01c38b20, value_0x0020) == 0x20);
-
-/**
- *
- * Returns a field of its object.
- *
- */
-extern "C" uint64_t bb_auto_return_field_01c38b20(const Object01c38b20 *self)
-{
-    return self->value_0x0020;
-}
-
-/**
- *
- * The part of the object that auto_return_field_01c38b30 reads.
- *
- */
-struct Object01c38b30 {
-    uint8_t unknown_0x0000[0x20];
-    uint64_t value_0x0020; /**< Read by auto_return_field_01c38b30; meaning unknown. */
-};
-static_assert(offsetof(Object01c38b30, value_0x0020) == 0x20);
-
-/**
- *
- * Returns a field of its object.
- *
- */
-extern "C" uint64_t bb_auto_return_field_01c38b30(const Object01c38b30 *self)
-{
-    return self->value_0x0020;
-}
-
-/**
- *
- * Does nothing.
- *
- */
 extern "C" void bb_auto_empty_01c3bdf0()
 {
 }
@@ -394,42 +241,6 @@ extern "C" void bb_auto_empty_01c3c440()
  * Does nothing.
  *
  */
-extern "C" void bb_auto_empty_01c3c540()
-{
-}
-
-/**
- *
- * Does nothing.
- *
- */
-extern "C" void bb_auto_empty_01c3c550()
-{
-}
-
-/**
- *
- * Does nothing.
- *
- */
-extern "C" void bb_auto_empty_01c3c560()
-{
-}
-
-/**
- *
- * Does nothing.
- *
- */
-extern "C" void bb_auto_empty_01c3c570()
-{
-}
-
-/**
- *
- * Does nothing.
- *
- */
 extern "C" void bb_auto_empty_01c3c580()
 {
 }
@@ -457,15 +268,6 @@ extern "C" void bb_auto_empty_01c3ccd0()
  * Does nothing.
  *
  */
-extern "C" void bb_auto_empty_01c3df00()
-{
-}
-
-/**
- *
- * Does nothing.
- *
- */
 extern "C" void bb_auto_empty_01c3e200()
 {
 }
@@ -485,23 +287,5 @@ extern "C" void bb_auto_empty_01c3e260()
  *
  */
 extern "C" void bb_auto_empty_01c3e2c0()
-{
-}
-
-/**
- *
- * Does nothing.
- *
- */
-extern "C" void bb_auto_empty_01c3fb20()
-{
-}
-
-/**
- *
- * Does nothing.
- *
- */
-extern "C" void bb_auto_empty_01c3fec0()
 {
 }

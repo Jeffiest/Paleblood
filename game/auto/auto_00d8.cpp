@@ -4,24 +4,6 @@
 
 /**
  *
- * Does nothing.
- *
- */
-extern "C" void bb_auto_empty_00d84400()
-{
-}
-
-/**
- *
- * Does nothing.
- *
- */
-extern "C" void bb_auto_empty_00d84410()
-{
-}
-
-/**
- *
  * The part of the object that auto_return_float_field_00d84430 reads.
  *
  */
@@ -43,54 +25,6 @@ extern "C" float bb_auto_return_float_field_00d84430(const Object00d84430 *self)
 
 /**
  *
- * Does nothing.
- *
- */
-extern "C" void bb_auto_empty_00d85280()
-{
-}
-
-/**
- *
- * Does nothing.
- *
- */
-extern "C" void bb_auto_empty_00d854a0()
-{
-}
-
-/**
- *
- * Does nothing.
- *
- */
-extern "C" void bb_auto_empty_00d857b0()
-{
-}
-
-/**
- *
- * Does nothing.
- *
- */
-extern "C" void bb_auto_empty_00d857c0()
-{
-}
-
-/**
- *
- * Returns a fixed value whose meaning is unknown.
- *
- */
-constexpr uint32_t value_00d86dc0 = 0x1;
-
-extern "C" uint32_t bb_auto_return_constant_00d86dc0()
-{
-    return value_00d86dc0;
-}
-
-/**
- *
  * Returns a fixed value whose meaning is unknown.
  *
  */
@@ -99,58 +33,4 @@ constexpr uint8_t value_00d87100 = 0x1;
 extern "C" uint8_t bb_auto_return_constant_00d87100()
 {
     return value_00d87100;
-}
-
-/**
- *
- * Does nothing.
- *
- */
-extern "C" void bb_auto_empty_00d876e0()
-{
-}
-
-/**
- *
- * Does nothing.
- *
- */
-extern "C" void bb_auto_empty_00d876f0()
-{
-}
-
-/**
- *
- * Does nothing.
- *
- */
-extern "C" void bb_auto_empty_00d87d50()
-{
-}
-
-/**
- *
- * Does nothing.
- *
- */
-extern "C" void bb_auto_empty_00d87d60()
-{
-}
-
-/**
- *
- * Does nothing.
- *
- */
-extern "C" void bb_auto_empty_00d8a320()
-{
-}
-
-/**
- *
- * Does nothing.
- *
- */
-extern "C" void bb_auto_empty_00d8a330()
-{
 }

@@ -16,15 +16,6 @@ extern "C" void bb_auto_empty_01963090()
  * Does nothing.
  *
  */
-extern "C" void bb_auto_empty_0196a310()
-{
-}
-
-/**
- *
- * Does nothing.
- *
- */
 extern "C" void bb_auto_empty_0196f450()
 {
 }

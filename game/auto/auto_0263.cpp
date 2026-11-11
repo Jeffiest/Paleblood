@@ -22,15 +22,6 @@ extern "C" void bb_auto_empty_02633ce0()
 
 /**
  *
- * Does nothing.
- *
- */
-extern "C" void bb_auto_empty_02636f50()
-{
-}
-
-/**
- *
  * Returns a fixed value whose meaning is unknown.
  *
  */

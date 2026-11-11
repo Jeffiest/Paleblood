@@ -16,96 +16,12 @@ extern "C" uint8_t bb_auto_return_constant_023c0420()
 
 /**
  *
- * The part of the object that auto_return_field_023c0430 reads.
- *
- */
-struct Object023c0430 {
-    uint8_t unknown_0x0000[0x18];
-    uint64_t value_0x0018; /**< Read by auto_return_field_023c0430; meaning unknown. */
-};
-static_assert(offsetof(Object023c0430, value_0x0018) == 0x18);
-
-/**
- *
- * Returns a field of its object.
- *
- */
-extern "C" uint64_t bb_auto_return_field_023c0430(const Object023c0430 *self)
-{
-    return self->value_0x0018;
-}
-
-/**
- *
- * The part of the object that auto_return_field_023c0440 reads.
- *
- */
-struct Object023c0440 {
-    uint8_t unknown_0x0000[0x38];
-    uint64_t value_0x0038; /**< Read by auto_return_field_023c0440; meaning unknown. */
-};
-static_assert(offsetof(Object023c0440, value_0x0038) == 0x38);
-
-/**
- *
- * Returns a field of its object.
- *
- */
-extern "C" uint64_t bb_auto_return_field_023c0440(const Object023c0440 *self)
-{
-    return self->value_0x0038;
-}
-
-/**
- *
- * The part of the object that auto_return_field_023c04c0 reads.
- *
- */
-struct Object023c04c0 {
-    uint8_t unknown_0x0000[0x40];
-    uint64_t value_0x0040; /**< Read by auto_return_field_023c04c0; meaning unknown. */
-};
-static_assert(offsetof(Object023c04c0, value_0x0040) == 0x40);
-
-/**
- *
- * Returns a field of its object.
- *
- */
-extern "C" uint64_t bb_auto_return_field_023c04c0(const Object023c04c0 *self)
-{
-    return self->value_0x0040;
-}
-
-/**
- *
  * Returns zero.
  *
  */
 extern "C" uint64_t bb_auto_return_zero_023c0c60()
 {
     return 0;
-}
-
-/**
- *
- * The part of the object that auto_return_member_address_023c4610 reads.
- *
- */
-struct Object023c4610 {
-    uint8_t unknown_0x0000[0x8];
-    uint8_t member_0x0008; /**< Read by auto_return_member_address_023c4610; meaning unknown. */
-};
-static_assert(offsetof(Object023c4610, member_0x0008) == 0x8);
-
-/**
- *
- * Returns the address of a member of its object.
- *
- */
-extern "C" void *bb_auto_return_member_address_023c4610(Object023c4610 *self)
-{
-    return &self->member_0x0008;
 }
 
 /**
@@ -224,27 +140,6 @@ extern "C" void bb_auto_empty_023c4720()
 
 /**
  *
- * The part of the object that auto_return_member_address_023c5130 reads.
- *
- */
-struct Object023c5130 {
-    uint8_t unknown_0x0000[0x8];
-    uint8_t member_0x0008; /**< Read by auto_return_member_address_023c5130; meaning unknown. */
-};
-static_assert(offsetof(Object023c5130, member_0x0008) == 0x8);
-
-/**
- *
- * Returns the address of a member of its object.
- *
- */
-extern "C" void *bb_auto_return_member_address_023c5130(Object023c5130 *self)
-{
-    return &self->member_0x0008;
-}
-
-/**
- *
  * The part of the object that auto_return_field_023c5140 reads.
  *
  */
@@ -355,27 +250,6 @@ extern "C" uint64_t bb_auto_return_field_023c51a0(const Object023c51a0 *self)
  */
 extern "C" void bb_auto_empty_023c51b0()
 {
-}
-
-/**
- *
- * The part of the object that auto_return_member_address_023c5c60 reads.
- *
- */
-struct Object023c5c60 {
-    uint8_t unknown_0x0000[0x8];
-    uint8_t member_0x0008; /**< Read by auto_return_member_address_023c5c60; meaning unknown. */
-};
-static_assert(offsetof(Object023c5c60, member_0x0008) == 0x8);
-
-/**
- *
- * Returns the address of a member of its object.
- *
- */
-extern "C" void *bb_auto_return_member_address_023c5c60(Object023c5c60 *self)
-{
-    return &self->member_0x0008;
 }
 
 /**
@@ -494,27 +368,6 @@ extern "C" void bb_auto_empty_023c5ce0()
 
 /**
  *
- * The part of the object that auto_return_member_address_023c64c0 reads.
- *
- */
-struct Object023c64c0 {
-    uint8_t unknown_0x0000[0x8];
-    uint8_t member_0x0008; /**< Read by auto_return_member_address_023c64c0; meaning unknown. */
-};
-static_assert(offsetof(Object023c64c0, member_0x0008) == 0x8);
-
-/**
- *
- * Returns the address of a member of its object.
- *
- */
-extern "C" void *bb_auto_return_member_address_023c64c0(Object023c64c0 *self)
-{
-    return &self->member_0x0008;
-}
-
-/**
- *
  * The part of the object that auto_return_field_023c64d0 reads.
  *
  */
@@ -625,27 +478,6 @@ extern "C" uint64_t bb_auto_return_field_023c6530(const Object023c6530 *self)
  */
 extern "C" void bb_auto_empty_023c6540()
 {
-}
-
-/**
- *
- * The part of the object that auto_return_member_address_023c6ff0 reads.
- *
- */
-struct Object023c6ff0 {
-    uint8_t unknown_0x0000[0x8];
-    uint8_t member_0x0008; /**< Read by auto_return_member_address_023c6ff0; meaning unknown. */
-};
-static_assert(offsetof(Object023c6ff0, member_0x0008) == 0x8);
-
-/**
- *
- * Returns the address of a member of its object.
- *
- */
-extern "C" void *bb_auto_return_member_address_023c6ff0(Object023c6ff0 *self)
-{
-    return &self->member_0x0008;
 }
 
 /**
@@ -767,15 +599,6 @@ extern "C" void bb_auto_empty_023c7070()
  * Does nothing.
  *
  */
-extern "C" void bb_auto_empty_023ca0b0()
-{
-}
-
-/**
- *
- * Does nothing.
- *
- */
 extern "C" void bb_auto_empty_023cc070()
 {
 }
@@ -786,15 +609,6 @@ extern "C" void bb_auto_empty_023cc070()
  *
  */
 extern "C" void bb_auto_empty_023cc0d0()
-{
-}
-
-/**
- *
- * Does nothing.
- *
- */
-extern "C" void bb_auto_empty_023cc710()
 {
 }
 
@@ -827,16 +641,6 @@ static_assert(offsetof(Object023cd890, value_0x0168) == 0x168);
 extern "C" uint8_t bb_auto_return_field_023cd890(const Object023cd890 *self)
 {
     return self->value_0x0168;
-}
-
-/**
- *
- * Returns zero.
- *
- */
-extern "C" uint64_t bb_auto_return_zero_023cd8a0()
-{
-    return 0;
 }
 
 /**

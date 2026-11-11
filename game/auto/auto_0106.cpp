@@ -67,28 +67,6 @@ extern "C" float bb_auto_return_float_field_01060c50(const Object01060c50 *self)
 
 /**
  *
- * Returns zero.
- *
- */
-extern "C" uint64_t bb_auto_return_zero_01066890()
-{
-    return 0;
-}
-
-/**
- *
- * Returns a fixed value whose meaning is unknown.
- *
- */
-constexpr uint32_t value_0106c9e0 = 0x1;
-
-extern "C" uint32_t bb_auto_return_constant_0106c9e0()
-{
-    return value_0106c9e0;
-}
-
-/**
- *
  * The part of the object that auto_return_field_0106c9f0 reads.
  *
  */

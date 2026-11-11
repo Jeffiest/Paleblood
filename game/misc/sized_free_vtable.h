@@ -6,7 +6,7 @@
 #include <cstdint>
 
 #include "../engine/allocator.h"
-#include "../loading/fios.h"
+#include "thread_allocator.h"
 
 namespace misc {
 
@@ -28,7 +28,7 @@ static_assert(offsetof(SizedFreeVtable, free_sized) == 0x18);
  */
 inline uint64_t thread_sized_free(void *block, uint32_t size)
 {
-    engine::Allocator *allocator = loading::fios::thread_allocator();
+    engine::Allocator *allocator = misc::thread_allocator();
     return reinterpret_cast<const SizedFreeVtable *>(allocator->vtable)->free_sized(allocator, block, size);
 }
 

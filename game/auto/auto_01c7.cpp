@@ -25,15 +25,6 @@ extern "C" uint32_t bb_auto_return_field_01c76050(const Object01c76050 *self)
 
 /**
  *
- * Does nothing.
- *
- */
-extern "C" void bb_auto_empty_01c777c0()
-{
-}
-
-/**
- *
  * The part of the object that auto_return_field_01c777d0 reads.
  *
  */
@@ -51,15 +42,6 @@ static_assert(offsetof(Object01c777d0, value_0x00a8) == 0xa8);
 extern "C" uint32_t bb_auto_return_field_01c777d0(const Object01c777d0 *self)
 {
     return self->value_0x00a8;
-}
-
-/**
- *
- * Does nothing.
- *
- */
-extern "C" void bb_auto_empty_01c79e50()
-{
 }
 
 /**

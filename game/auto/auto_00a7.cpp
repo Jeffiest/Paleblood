@@ -4,18 +4,6 @@
 
 /**
  *
- * Returns a fixed value whose meaning is unknown.
- *
- */
-constexpr uint32_t value_00a7ac50 = 0x3;
-
-extern "C" uint32_t bb_auto_return_constant_00a7ac50()
-{
-    return value_00a7ac50;
-}
-
-/**
- *
  * Does nothing.
  *
  */

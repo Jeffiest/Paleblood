@@ -4,18 +4,6 @@
 
 /**
  *
- * Returns a fixed value whose meaning is unknown.
- *
- */
-constexpr uint32_t value_00dc1e10 = 0x3;
-
-extern "C" uint32_t bb_auto_return_constant_00dc1e10()
-{
-    return value_00dc1e10;
-}
-
-/**
- *
  * The part of the object that auto_return_field_00dc2260 reads.
  *
  */

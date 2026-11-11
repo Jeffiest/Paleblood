@@ -7,177 +7,8 @@
  * Does nothing.
  *
  */
-extern "C" void bb_auto_empty_010b12d0()
-{
-}
-
-/**
- *
- * Does nothing.
- *
- */
-extern "C" void bb_auto_empty_010b4240()
-{
-}
-
-/**
- *
- * Does nothing.
- *
- */
-extern "C" void bb_auto_empty_010b4250()
-{
-}
-
-/**
- *
- * Does nothing.
- *
- */
-extern "C" void bb_auto_empty_010b4260()
-{
-}
-
-/**
- *
- * Does nothing.
- *
- */
-extern "C" void bb_auto_empty_010b4270()
-{
-}
-
-/**
- *
- * Does nothing.
- *
- */
-extern "C" void bb_auto_empty_010b4280()
-{
-}
-
-/**
- *
- * Does nothing.
- *
- */
-extern "C" void bb_auto_empty_010b4290()
-{
-}
-
-/**
- *
- * Does nothing.
- *
- */
-extern "C" void bb_auto_empty_010b4480()
-{
-}
-
-/**
- *
- * Does nothing.
- *
- */
 extern "C" void bb_auto_empty_010b9850()
 {
-}
-
-/**
- *
- * Does nothing.
- *
- */
-extern "C" void bb_auto_empty_010ba500()
-{
-}
-
-/**
- *
- * Does nothing.
- *
- */
-extern "C" void bb_auto_empty_010bafd0()
-{
-}
-
-/**
- *
- * Does nothing.
- *
- */
-extern "C" void bb_auto_empty_010bafe0()
-{
-}
-
-/**
- *
- * Does nothing.
- *
- */
-extern "C" void bb_auto_empty_010bcc60()
-{
-}
-
-/**
- *
- * Does nothing.
- *
- */
-extern "C" void bb_auto_empty_010bf740()
-{
-}
-
-/**
- *
- * Returns zero.
- *
- */
-extern "C" uint64_t bb_auto_return_zero_010b42c0()
-{
-    return 0;
-}
-
-/**
- *
- * Returns zero.
- *
- */
-extern "C" uint64_t bb_auto_return_zero_010b42f0()
-{
-    return 0;
-}
-
-/**
- *
- * Returns zero.
- *
- */
-extern "C" uint64_t bb_auto_return_zero_010b4400()
-{
-    return 0;
-}
-
-/**
- *
- * Returns zero.
- *
- */
-extern "C" uint64_t bb_auto_return_zero_010b4410()
-{
-    return 0;
-}
-
-/**
- *
- * Returns a fixed value whose meaning is unknown.
- *
- */
-constexpr uint32_t value_010b4470 = 0x1;
-
-extern "C" uint32_t bb_auto_return_constant_010b4470()
-{
-    return value_010b4470;
 }
 
 /**
@@ -276,48 +107,6 @@ extern "C" uint8_t bb_auto_return_field_010b90c0(const Object010b90c0 *self)
 
 /**
  *
- * Returns zero.
- *
- */
-extern "C" uint64_t bb_auto_return_zero_010b90d0()
-{
-    return 0;
-}
-
-/**
- *
- * Returns zero.
- *
- */
-extern "C" uint64_t bb_auto_return_zero_010b90e0()
-{
-    return 0;
-}
-
-/**
- *
- * Returns zero.
- *
- */
-extern "C" uint64_t bb_auto_return_zero_010b90f0()
-{
-    return 0;
-}
-
-/**
- *
- * Returns a fixed value whose meaning is unknown.
- *
- */
-constexpr uint32_t value_010b9100 = 0x12;
-
-extern "C" uint32_t bb_auto_return_constant_010b9100()
-{
-    return value_010b9100;
-}
-
-/**
- *
  * The part of the object that auto_return_field_010b9c80 reads.
  *
  */
@@ -361,16 +150,6 @@ extern "C" uint64_t bb_auto_return_zero_010bcc70()
 
 /**
  *
- * Returns zero.
- *
- */
-extern "C" uint64_t bb_auto_return_zero_010bcd10()
-{
-    return 0;
-}
-
-/**
- *
  * The part of the object that auto_return_field_010bf730 reads.
  *
  */
@@ -388,24 +167,4 @@ static_assert(offsetof(Object010bf730, value_0x0020) == 0x20);
 extern "C" uint8_t bb_auto_return_field_010bf730(const Object010bf730 *self)
 {
     return self->value_0x0020;
-}
-
-/**
- *
- * Returns zero.
- *
- */
-extern "C" uint64_t bb_auto_return_zero_010bf8f0()
-{
-    return 0;
-}
-
-/**
- *
- * Returns zero.
- *
- */
-extern "C" uint64_t bb_auto_return_zero_010bfe00()
-{
-    return 0;
 }

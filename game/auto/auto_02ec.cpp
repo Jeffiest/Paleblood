@@ -4,15 +4,6 @@
 
 /**
  *
- * Does nothing.
- *
- */
-extern "C" void bb_auto_empty_02ec0be0()
-{
-}
-
-/**
- *
  * Returns a fixed value whose meaning is unknown.
  *
  */

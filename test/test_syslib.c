@@ -23,6 +23,7 @@
 #include <stdio.h>
 #include <string.h>
 #include <sys/mman.h>
+#include <sys/resource.h>
 #include <sys/wait.h>
 #include <time.h>
 #include <stdlib.h>
@@ -76,7 +77,7 @@ typedef int (*f_attr_get)(void *, void **);
 typedef uint32_t (*f_u32_u32)(uint32_t);
 typedef uint16_t (*f_u16_u16)(uint16_t);
 typedef int (*f_inet_pton)(int, const char *, void *);
-typedef int32_t (*f_sysmodule)(uint16_t);
+typedef int32_t (*f_sysmodule)(uint32_t);
 
 static void *net_inet_pton_entry;
 static int net_pton_unknown_family(void)
@@ -306,9 +307,9 @@ static f_sysmodule sysmodule_load, sysmodule_is_loaded, sysmodule_unload;
 static void load_not_a_stub(void) { sysmodule_load(NOT_A_STUB_ID); }
 static void is_loaded_not_a_stub(void) { sysmodule_is_loaded(NOT_A_STUB_ID); }
 static void unload_not_a_stub(void) { sysmodule_unload(NOT_A_STUB_ID); }
-static void load_stub_again(void) { sysmodule_load(STUB_ID); }
 static void is_loaded_other_stub(void) { sysmodule_is_loaded(OTHER_STUB_ID); }
 static void unload_other_stub(void) { sysmodule_unload(OTHER_STUB_ID); }
+static void unload_wide_stub(void) { sysmodule_unload(UINT32_C(0xabcd0000) | STUB_ID); }
 
 /* Thread creation will read an attribute's detach state through rt_thread_attr_detach_state. A
    state the guest did not set is one the system supplies, which is not established, so the read
@@ -890,8 +891,6 @@ static const int32_t ao_unity[8] = {32768, 32768, 32768, 32768, 32768, 32768, 32
 static void ao_volume_extra_channel(void) { ao_volume_fn(ao_stereo_port, 0x7, ao_unity); }
 static void ao_volume_unknown_port(void) { ao_volume_fn(99, 0x3, ao_unity); }
 typedef int32_t (*f_ao_output)(int32_t, const void *);
-static f_ao_output ao_output_fn;
-static void ao_output_no_samples(void) { ao_output_fn(1, NULL); }
 static void ao_volume_too_loud(void) { const int32_t v[8] = {40000}; ao_volume_fn(ao_stereo_port, 0x1, v); }
 
 /* sceKernelStat under /app0, served from a scratch directory. */
@@ -921,6 +920,60 @@ static void data_open_no_folder(void)
 {
     rt_process.data_dir = NULL;
     kopen_fn("/data/cache.bin", 0x602, 0777);
+}
+/* sceKernelWrite and sceKernelPwrite on a /data file. The stops are checked by reason in a child:
+   the host would answer some of these requests with an error, which stops the process too and
+   would hide a missing guard. */
+typedef int64_t (*f_kwrite)(int32_t, const void *, uint64_t);
+typedef int64_t (*f_kpwrite)(int32_t, const void *, uint64_t, int64_t);
+static f_kwrite kwrite_fn;
+static f_kpwrite kpwrite_fn;
+static int32_t write_fd, write_append_fd, write_read_only_fd;
+static void write_too_many(void) { kwrite_fn(write_fd, "x", 0x80000000u); } /* INT_MAX + 1 */
+static void write_too_many_read_only(void) { kwrite_fn(write_read_only_fd, "x", 0x80000000u); }
+static void pwrite_too_many(void) { kpwrite_fn(write_fd, "x", 0x80000000u, 0); }
+static void pwrite_too_many_read_only(void) { kpwrite_fn(write_read_only_fd, "x", 0x80000000u, 0); }
+static void write_no_buffer(void) { kwrite_fn(write_fd, NULL, 1); }
+static void pwrite_no_buffer(void) { kpwrite_fn(write_fd, NULL, 1, 0); }
+static void pwrite_append(void) { kpwrite_fn(write_append_fd, "x", 1, 0); }
+static const char *write_expected_function, *write_expected_reason;
+static void write_observe_stop(const char *function, const char *reason)
+{
+    _exit(!strcmp(function, write_expected_function) && strstr(reason, write_expected_reason) ? 0 : 1);
+}
+static int write_stops_with(void (*call)(void), const char *function, const char *reason)
+{
+    const pid_t child = fork();
+    if (child == 0) {
+        write_expected_function = function;
+        write_expected_reason = reason;
+        rt_fatal_observer = write_observe_stop;
+        call();
+        _exit(2); /* the call returned, so it did not stop */
+    }
+    int status = 0;
+    if (waitpid(child, &status, 0) < 0) return 0;
+    return WIFEXITED(status) && WEXITSTATUS(status) == 0;
+}
+/* The answer is the host's count, not the request: in a child, a 4-byte file size limit
+   (RLIMIT_FSIZE) makes the host write only up to it. SIGXFSZ is ignored, so the host answers with
+   the short count instead of ending the process. */
+static int write_returns_short_count(void)
+{
+    const pid_t child = fork();
+    if (child == 0) {
+        write_expected_function = write_expected_reason = ""; /* any stop is a failure */
+        rt_fatal_observer = write_observe_stop;
+        signal(SIGXFSZ, SIG_IGN);
+        const struct rlimit limit = {4, 4};
+        const int32_t fd = kopen_fn("/data/short.bin", 0x602, 0644);
+        if (fd < 3 || setrlimit(RLIMIT_FSIZE, &limit)) _exit(3);
+        const int ok = kwrite_fn(fd, "0123456789", 10) == 4 && kpwrite_fn(fd, "abcdefgh", 8, 2) == 2;
+        _exit(ok ? 0 : 1);
+    }
+    int status = 0;
+    if (waitpid(child, &status, 0) < 0) return 0;
+    return WIFEXITED(status) && WEXITSTATUS(status) == 0;
 }
 
 /* GNM compute queues. */
@@ -1523,7 +1576,7 @@ int main(void)
     CHECK(is_implemented("libSceNetCtl", "sceNetCtlCheckCallback"));
     CHECK(is_implemented("libSceNetCtl", "sceNetCtlRegisterCallback"));
     CHECK(is_implemented("libSceNetCtl", "sceNetCtlUnregisterCallback"));
-    CHECK(!is_implemented("libSceNetCtl", "sceNetCtlGetInfo"));
+    CHECK(is_implemented("libSceNetCtl", "sceNetCtlGetInfo")); /* test/syslib/netctl_info.c */
     CHECK(is_implemented("libSceNetCtl", "sceNetCtlGetNatInfo"));
     if (failures) return 1;
     netctl_shared = mmap(NULL, 4096, PROT_READ | PROT_WRITE, MAP_SHARED | MAP_ANONYMOUS, -1, 0);
@@ -1572,12 +1625,16 @@ int main(void)
     CHECK(sysmodule_load(STUB_ID) == 0 && rt_process.stub_modules[0].loaded);
     CHECK(!rt_process.stub_modules[1].loaded);        /* only the module asked for */
     CHECK(sysmodule_is_loaded(STUB_ID) == 0);
-    CHECK(died_in_fatal(load_stub_again));
+    /* A second load succeeds and is counted (the dialogs load their module per open). */
+    CHECK(sysmodule_load(STUB_ID) == 0 && rt_process.stub_modules[0].loaded == 2);
+    CHECK(sysmodule_unload(STUB_ID) == 0 && rt_process.stub_modules[0].loaded == 1);
+    CHECK(sysmodule_is_loaded(STUB_ID) == 0);
     CHECK(sysmodule_unload(STUB_ID) == 0 && !rt_process.stub_modules[0].loaded);
     CHECK(sysmodule_load(STUB_ID) == 0 && sysmodule_is_loaded(STUB_ID) == 0);
-    /* the id is 16 bits: the upper half of the register the guest passes it in is not part of it */
-    CHECK(((int32_t (*)(uint32_t))(void *)sysmodule_unload)(UINT32_C(0xabcd0000) | STUB_ID) == 0);
-    CHECK(!rt_process.stub_modules[0].loaded);
+    /* A full-width request cannot unload the declared stub with matching low bits. */
+    CHECK(died_in_fatal(unload_wide_stub));
+    CHECK(sysmodule_is_loaded(STUB_ID) == 0);
+    CHECK(sysmodule_unload(STUB_ID) == 0 && !rt_process.stub_modules[0].loaded);
 
     /* Every answer the PS4 has not established stops the process instead of guessing, and the two
        structure calls stop before writing through a buffer whose layout is not established. */
@@ -1599,16 +1656,12 @@ int main(void)
     CHECK(netctl_unregister(netctl_id_b) == 0);
     CHECK(netctl_check() == 0 && netctl_callbacks_run == 0);
 
-    /* the target page size has no public source, so both entries stop by name */
-    void (*posix_getpagesize)(void) = (void (*)(void))fn("libScePosix", "getpagesize");
-    void (*kernel_getpagesize)(void) = (void (*)(void))fn("libkernel", "getpagesize");
-    CHECK(died_in_fatal(posix_getpagesize));
-    CHECK(died_in_fatal(kernel_getpagesize));
-    /* Registered so a boot that reaches the call names it, but not counted as implemented: the
-       fatal alone does not prove the classification, since an absent entry would also never be
-       reported as implemented. */
-    CHECK(!is_implemented("libScePosix", "getpagesize"));
-    CHECK(!is_implemented("libkernel", "getpagesize"));
+    /* getpagesize answers 16 KiB from both libraries (the maintainer's ruling) */
+    int32_t (*posix_getpagesize)(void) = (int32_t (*)(void))fn("libScePosix", "getpagesize");
+    int32_t (*kernel_getpagesize)(void) = (int32_t (*)(void))fn("libkernel", "getpagesize");
+    CHECK(posix_getpagesize && posix_getpagesize() == 0x4000);
+    CHECK(kernel_getpagesize && kernel_getpagesize() == 0x4000);
+    CHECK(is_implemented("libScePosix", "getpagesize") && is_implemented("libkernel", "getpagesize"));
 
     /* memcpy and memset (libSceLibcInternal): ISO C fixes the bytes written and the returned
        destination. The guard bytes past n prove nothing beyond n is touched. */
@@ -2643,8 +2696,14 @@ int main(void)
             for (int i = 0; i < 20; i++) CHECK(ao_output(port, block) == 0);
             const long elapsed = elapsed_us(&start);
             CHECK(elapsed >= 100000 && elapsed < 300000);
-            ao_output_fn = ao_output;
-            CHECK(died_in_fatal(ao_output_no_samples));
+            /* no block (NULL): wait for room, hand nothing over, so the timeline does not move on;
+               three such calls take about one block (5.33 ms), not three (16 ms), as shadPS4's and
+               PS4Recomp's waits for room without queueing */
+            clock_gettime(CLOCK_MONOTONIC, &start);
+            for (int i = 0; i < 3; i++) CHECK(ao_output(port, NULL) == 0);
+            CHECK(elapsed_us(&start) < 10000);
+            CHECK(ao_output(port, block) == 0); /* the next block about a block after the last one */
+            CHECK(elapsed_us(&start) < 15000);
         }
         /* sceAudioOutGetPortState: nothing is heard, so output (the first 16 bits) is 0. */
         typedef int32_t (*f_ao_state)(int32_t, void *);
@@ -2767,6 +2826,67 @@ int main(void)
                     cfd = kopen("/data/cache.bin", 0x602, 0777); /* truncate starts it over */
                     CHECK(cfd >= 3 && kread(cfd, buf, 4) == 0 && kclose(cfd) == 0);
                     CHECK(kopen("/data/missing.bin", 0, 0) == (int32_t)0x80020002u);
+
+                    /* Writing: sceKernelWrite and sceKernelPwrite. Guest open flags: O_WRONLY 1,
+                       O_RDWR 2, O_APPEND 0x8, O_CREAT 0x200, O_TRUNC 0x400. */
+                    kwrite_fn = (f_kwrite)fn("libkernel", "sceKernelWrite");
+                    kpwrite_fn = (f_kpwrite)fn("libkernel", "sceKernelPwrite");
+                    CHECK(kwrite_fn && kpwrite_fn);
+                    CHECK(is_implemented("libkernel", "sceKernelWrite") && is_implemented("libkernel", "sceKernelPwrite"));
+                    if (kwrite_fn && kpwrite_fn) {
+                        char written[600];
+                        snprintf(written, sizeof written, "%s/written.bin", data);
+                        write_fd = kopen("/data/written.bin", 0x602, 0644);
+                        CHECK(write_fd >= 3);
+                        CHECK(kwrite_fn(write_fd, "hello", 5) == 5);
+                        CHECK(kwrite_fn(write_fd, NULL, 0) == 0 && kwrite_fn(write_fd, "x", 0) == 0); /* zero bytes */
+                        CHECK(kpwrite_fn(write_fd, "J", 1, 0) == 1);
+                        CHECK(klseek(write_fd, 0, 1) == 5); /* the pwrite left the position after "hello" */
+                        CHECK(kwrite_fn(write_fd, "!", 1) == 1);
+                        CHECK(kpread(write_fd, buf, 16, 0) == 6 && !memcmp(buf, "Jello!", 6));
+                        CHECK(kpwrite_fn(write_fd, "z", 1, 8) == 1); /* past the end: a hole of zero bytes */
+                        CHECK(kpread(write_fd, buf, 16, 0) == 9 && !memcmp(buf, "Jello!\0\0z", 9));
+                        CHECK(kpwrite_fn(write_fd, "q", 1, -1) == (int32_t)0x80020016u); /* EINVAL */
+                        CHECK(kpwrite_fn(write_fd, NULL, 0, 0) == 0);
+                        CHECK(kfstat(write_fd, st) == 0 && (memcpy(&size, st + 0x48, 8), size == 9));
+                        /* EBADF: descriptors that are not open for writing. */
+                        const int32_t rfd = kopen("/data/written.bin", 0, 0);
+                        CHECK(rfd >= 3 && kwrite_fn(rfd, "w", 1) == (int32_t)0x80020009u);
+                        CHECK(kpwrite_fn(rfd, "w", 1, 0) == (int32_t)0x80020009u);
+                        CHECK(kpwrite_fn(rfd, "w", 1, -1) == (int32_t)0x80020009u); /* the descriptor before the offset */
+                        /* Exactly INT_MAX bytes passes the size check (which comes first), so the
+                           descriptor answers; the buffer is never read. */
+                        CHECK(kwrite_fn(rfd, "w", 0x7fffffff) == (int32_t)0x80020009u);
+                        CHECK(kpwrite_fn(rfd, "w", 0x7fffffff, 0) == (int32_t)0x80020009u);
+                        write_read_only_fd = rfd; /* one byte more stops before the descriptor answers */
+                        CHECK(write_stops_with(write_too_many_read_only, "sceKernelWrite", "more than INT_MAX"));
+                        CHECK(write_stops_with(pwrite_too_many_read_only, "sceKernelPwrite", "more than INT_MAX"));
+                        CHECK(kclose(rfd) == 0 && kwrite_fn(rfd, "w", 1) == (int32_t)0x80020009u); /* closed */
+                        const int32_t afd = kopen("/app0/data.bin", 0, 0);
+                        CHECK(afd >= 3 && kwrite_fn(afd, "w", 1) == (int32_t)0x80020009u);
+                        CHECK(kpwrite_fn(afd, "w", 1, 0) == (int32_t)0x80020009u && kclose(afd) == 0);
+                        CHECK(kwrite_fn(1, "w", 1) == (int32_t)0x80020009u && kpwrite_fn(2, "w", 1, 0) == (int32_t)0x80020009u);
+                        FILE *a = fopen(file, "rb");
+                        char app0_bytes[16] = {0};
+                        CHECK(a && fread(app0_bytes, 1, sizeof app0_bytes, a) == 10 && !memcmp(app0_bytes, "0123456789", 10));
+                        if (a) fclose(a);
+                        CHECK(kpread(write_fd, buf, 16, 0) == 9 && !memcmp(buf, "Jello!\0\0z", 9)); /* still unchanged */
+                        /* O_WRONLY | O_APPEND: each write goes to the end. */
+                        write_append_fd = kopen("/data/written.bin", 0x9, 0);
+                        CHECK(write_append_fd >= 3 && kwrite_fn(write_append_fd, "+", 1) == 1);
+                        CHECK(kpread(write_fd, buf, 16, 0) == 10 && !memcmp(buf, "Jello!\0\0z+", 10));
+                        CHECK(write_stops_with(write_too_many, "sceKernelWrite", "more than INT_MAX"));
+                        CHECK(write_stops_with(pwrite_too_many, "sceKernelPwrite", "more than INT_MAX"));
+                        CHECK(write_stops_with(write_no_buffer, "sceKernelWrite", "no buffer"));
+                        CHECK(write_stops_with(pwrite_no_buffer, "sceKernelPwrite", "no buffer"));
+                        CHECK(write_stops_with(pwrite_append, "sceKernelPwrite", "O_APPEND"));
+                        CHECK(kclose(write_append_fd) == 0 && kclose(write_fd) == 0);
+                        unlink(written);
+                        kopen_fn = kopen;
+                        CHECK(write_returns_short_count());
+                        snprintf(written, sizeof written, "%s/short.bin", data);
+                        unlink(written);
+                    }
                     kopen_fn = kopen;
                     CHECK(died_in_fatal(kstat_data_dotdot));
                     CHECK(died_in_fatal(data_open_odd_flag));
@@ -3001,8 +3121,10 @@ int main(void)
         CHECK(vo_status_fn(vo_handle, st) == 0);
         memcpy(&count, st, 8); memcpy(&arg, st + 0x18, 8); memcpy(&current, st + 0x38, 4);
         CHECK(count == 1 && arg == 77 && current == 1);
-        /* The flip presented buffer 1: counted, and captured as frame 0 with the pixel in place. */
+        /* The flip presented buffer 1: counted, and captured as frame 0 with the pixel in place
+           (written by the display's own thread: waited for). */
         CHECK(rt_display_presented(vo_handle) == 1);
+        rt_display_capture_wait();
         if (capture) {
             char frame_path[600];
             snprintf(frame_path, sizeof frame_path, "%s/frame-000000.ppm", capture);
@@ -3020,6 +3142,34 @@ int main(void)
                 fclose(ppm);
             }
             remove(frame_path);
+        }
+        /* Back-to-back flips queue their frames for the display's writer thread (more of them than it
+           has slots): once waited for, each is on disk, in order, with the pixel it had at its flip. */
+        if (capture && host_a) {
+            enum { QUICK_FLIPS = 7 };
+            for (uint32_t k = 0; k < QUICK_FLIPS; k++) {
+                host_a[1920 + 1] = 0x00010203u * (k + 1);
+                CHECK(vo_flip_fn(vo_handle, 0, 2, 100 + k) == 0); /* hsync: no vblank wait */
+            }
+            int32_t got = 0; /* the flip events: one pending event per queue, as a kqueue keeps them */
+            CHECK(eq_wait_fn(flips, ev, 1, &got, NULL) == 0 && got == 1);
+            rt_display_capture_wait();
+            for (uint32_t k = 0; k < QUICK_FLIPS; k++) {
+                char frame_path[600];
+                snprintf(frame_path, sizeof frame_path, "%s/frame-%06u.ppm", capture, k + 1);
+                FILE *ppm = fopen(frame_path, "rb");
+                CHECK(ppm != NULL);
+                if (!ppm) continue;
+                char magic[3] = {0};
+                unsigned w = 0, h = 0, max = 0;
+                unsigned char rgb[3] = {0};
+                CHECK(fscanf(ppm, "%2s %u %u %u", magic, &w, &h, &max) == 4 && w == 1920 && h == 1080);
+                fgetc(ppm);
+                CHECK(fseek(ppm, (long)(1920 + 1) * 3, SEEK_CUR) == 0 && fread(rgb, 1, 3, ppm) == 3);
+                CHECK(rgb[0] == k + 1 && rgb[1] == 2 * (k + 1) && rgb[2] == 3 * (k + 1));
+                fclose(ppm);
+                remove(frame_path);
+            }
         }
         rt_display_configure(RT_DISPLAY_HEADLESS, NULL); /* stop capturing: writing a frame would skew the timing */
         /* A vsync flip completes at the next 60 Hz tick: within one period. */
@@ -3073,6 +3223,21 @@ int main(void)
             CHECK(eq_wait_fn(flips, ev, 1, &n, NULL) == 0 && n == 1 && (memcpy(&data, ev + 16, 8), data == 79));
             CHECK(vo_status_fn(vo_handle, st) == 0 && (memcpy(&arg, st + 0x18, 8), arg == 79));
             CHECK(died_in_fatal(gnm_submit_unknown));
+            /* 70 buffers in one call, as the character creation screen submits them: each one's
+               end-of-work write lands, in order (the last value stays) */
+            {
+                enum { MANY = 70 };
+                static uint32_t many[MANY][6];
+                void *many_buffers[MANY];
+                uint32_t many_bytes[MANY];
+                for (uint32_t k = 0; k < MANY; k++) {
+                    const uint32_t eop_words[6] = {0xc0044700u, 0x528, (uint32_t)eop, (uint32_t)(eop >> 32) | 0x40000000u, k + 1, 0x1};
+                    memcpy(many[k], eop_words, sizeof eop_words);
+                    many_buffers[k] = many[k], many_bytes[k] = sizeof many[k];
+                }
+                end_of_frame = 0;
+                CHECK(gnm_submit_fn(MANY, many_buffers, many_bytes, NULL, NULL) == 0 && end_of_frame == 0x100000000ull + MANY);
+            }
             /* the constant arrays present with empty entries, as 0x0149bf3a passes them: no constant buffer */
             void *no_constants[1] = {NULL};
             uint32_t no_constant_bytes[1] = {0};
@@ -3101,6 +3266,7 @@ int main(void)
         }
         CHECK(died_in_fatal(vo_flip_bad_buffer));
         CHECK(died_in_fatal(vo_open_other));
+        rt_display_capture_wait();
         if (capture) { /* every later flip was captured too */
             for (uint64_t k = 0; k < rt_display_presented(vo_handle); k++) {
                 char frame_path[600];

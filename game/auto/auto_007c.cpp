@@ -4,18 +4,6 @@
 
 /**
  *
- * Returns a fixed value whose meaning is unknown.
- *
- */
-constexpr uint32_t value_007c7b70 = 0x2911;
-
-extern "C" uint32_t bb_auto_return_constant_007c7b70()
-{
-    return value_007c7b70;
-}
-
-/**
- *
  * The part of the object that auto_return_field_007cc6c0 reads.
  *
  */

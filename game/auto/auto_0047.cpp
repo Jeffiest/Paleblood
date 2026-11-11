@@ -22,21 +22,3 @@ extern "C" uint32_t bb_auto_return_field_004749c0(const Object004749c0 *self)
 {
     return self->value_0x00cc;
 }
-
-/**
- *
- * Does nothing.
- *
- */
-extern "C" void bb_auto_empty_00478dd0()
-{
-}
-
-/**
- *
- * Does nothing.
- *
- */
-extern "C" void bb_auto_empty_0047aa30()
-{
-}

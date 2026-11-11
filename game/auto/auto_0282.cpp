@@ -31,30 +31,6 @@ extern "C" uint8_t bb_auto_return_constant_028255b0()
  * Returns a fixed value whose meaning is unknown.
  *
  */
-constexpr uint32_t value_02826860 = 0x1c;
-
-extern "C" uint32_t bb_auto_return_constant_02826860()
-{
-    return value_02826860;
-}
-
-/**
- *
- * Returns a fixed value whose meaning is unknown.
- *
- */
-constexpr uint32_t value_028268c0 = 0x1c;
-
-extern "C" uint32_t bb_auto_return_constant_028268c0()
-{
-    return value_028268c0;
-}
-
-/**
- *
- * Returns a fixed value whose meaning is unknown.
- *
- */
 constexpr uint8_t value_02826b10 = 0x1;
 
 extern "C" uint8_t bb_auto_return_constant_02826b10()
@@ -72,27 +48,6 @@ constexpr uint8_t value_02826bc0 = 0x1;
 extern "C" uint8_t bb_auto_return_constant_02826bc0()
 {
     return value_02826bc0;
-}
-
-/**
- *
- * Does nothing.
- *
- */
-extern "C" void bb_auto_empty_028271b0()
-{
-}
-
-/**
- *
- * Returns a fixed value whose meaning is unknown.
- *
- */
-constexpr uint32_t value_028271c0 = 0x1d;
-
-extern "C" uint32_t bb_auto_return_constant_028271c0()
-{
-    return value_028271c0;
 }
 
 /**
@@ -162,40 +117,4 @@ constexpr uint8_t value_028281a0 = 0x1;
 extern "C" uint8_t bb_auto_return_constant_028281a0()
 {
     return value_028281a0;
-}
-
-/**
- *
- * Does nothing.
- *
- */
-extern "C" void bb_auto_empty_02829bf0()
-{
-}
-
-/**
- *
- * Does nothing.
- *
- */
-extern "C" void bb_auto_empty_02829c00()
-{
-}
-
-/**
- *
- * Does nothing.
- *
- */
-extern "C" void bb_auto_empty_0282aa50()
-{
-}
-
-/**
- *
- * Does nothing.
- *
- */
-extern "C" void bb_auto_empty_0282ac90()
-{
 }

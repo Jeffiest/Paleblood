@@ -7,25 +7,7 @@
  * Does nothing.
  *
  */
-extern "C" void bb_auto_empty_02625aa0()
-{
-}
-
-/**
- *
- * Does nothing.
- *
- */
 extern "C" void bb_auto_empty_026265d0()
-{
-}
-
-/**
- *
- * Does nothing.
- *
- */
-extern "C" void bb_auto_empty_02628fd0()
 {
 }
 
