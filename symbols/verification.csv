@@ -45749,6 +45749,7 @@ misc_lookup_second_list_address,edge,,2,2,0,0,8cf5724938f98806,2026-11-10
 misc_lookup_second_word,edge,,8,8,0,0,9c16e51e581db5c8,2026-11-10
 misc_lookup_value_or_zero,edge,,9,9,0,0,67f3d5fde109f9b3,2026-11-11
 misc_mark_bounded_matches,edge,,20,20,0,0,b415b935a15afd94,2026-11-09
+misc_mark_flagged_member,edge,,5,5,0,0,d4e867c0c5b5d7d6,2026-11-11
 misc_mark_keyed_handle_active,edge,,5,5,0,0,9767443fdd5d87fc,2026-11-09
 misc_member_call_02242a10,edge,,11,11,0,0,b6644aba98004797,2026-11-10
 misc_member_call_02242ac0,edge,,11,11,0,0,30a1ffe2633ea205,2026-11-10
