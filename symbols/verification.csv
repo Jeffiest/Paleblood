@@ -45764,6 +45764,7 @@ misc_pair_matches_02242a90,edge,,14,14,0,0,63f385f7f3510e8f,2026-11-09
 misc_pair_matches_02242b40,edge,,14,14,0,0,ae2c1d3647d5244d,2026-11-09
 misc_plain_type_address,edge,,1,1,0,0,80a2e8f92ca741fa,2026-11-09
 misc_pool_append_node,edge,,10,10,0,0,4fef8c2f87a39ad3,2026-11-11
+misc_pool_cursor_allocate,edge,,10,10,0,0,2ce81dfdd5674204,2026-11-11
 misc_prepare_forward,edge,,6,6,0,0,543c3d001ccdac0f,2026-11-09
 misc_prepare_listed_values,edge,,11,11,0,0,a1127feac57f491a,2026-11-10
 misc_prepare_then_release,edge,,2,2,0,0,570c1836a2c4cd35,2026-11-11

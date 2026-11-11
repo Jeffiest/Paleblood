@@ -75,6 +75,7 @@ address,size,name,system,status,notes
 0x00414510,70,auto_init_identity_rows_00414510,auto,edge-verified,Same instructions as misc_init_identity_rows_5ac5570 with other addresses
 0x00414b70,28,misc_init_release_chain,misc,edge-verified,Initializes a release chain with an empty head and the given value stored in the last word
 0x00414b90,67,misc_release_chain_nodes,misc,edge-verified,Hands each node of a release chain back to the scratch service in chain order moving the head on after each release
+0x00414be0,173,misc_pool_cursor_allocate,misc,edge-verified,Hands out a block from the chain cursor region refilling it from the allocator when short or takes a direct block for large sizes linked at the head
 0x00414c90,60,misc_allocate_chain_node,misc,edge-verified,Allocates a release chain node from its allocator and links it at the head returning the payload address or null
 0x00414cd0,141,misc_allocate_aligned_chain_node,misc,edge-verified,Allocates a release chain node with an alignment padding the payload and returns the address past the aligned offset or null
 0x00415af0,42,auto_prepare_forward_00415af0,auto,edge-verified,Same instructions as misc_prepare_forward with other addresses
