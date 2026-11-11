@@ -45592,6 +45592,7 @@ misc_call_record_member_target,edge,,12,12,0,0,5c35c57ca751fcf4,2026-11-10
 misc_call_then_forward,edge,,4,4,0,0,818ff73fa1c91dbd,2026-11-09
 misc_call_then_release,edge,,6,6,0,0,6448081417772e6c,2026-11-09
 misc_call_then_release_01888bd0,edge,,6,6,0,0,c522943d83802d1e,2026-11-09
+misc_call_with_counted_records_01e87f90,edge,,5,5,0,0,b6f83b6d947ac16e,2026-11-11
 misc_chain_contains,edge,,9,9,0,0,8b4669a2c9b3075e,2026-11-09
 misc_chain_leaf_flag,edge,,6,6,0,0,1e265fb6c6640d38,2026-11-09
 misc_chain_ready_or_group_bit,edge,,29,29,0,0,47ee6d285c740872,2026-11-09

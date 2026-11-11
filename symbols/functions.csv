@@ -21628,6 +21628,7 @@ address,size,name,system,status,notes
 0x01e86e00,92,misc_decrement_keyed_entry_01e86e00,misc,edge-verified,Lowers the count of a keyed table entry when its key matches and releases the slot once the count runs out
 0x01e86e60,312,misc_release_and_rekey_slot_01e86e60,misc,edge-verified,Releases the object a cache slot holds then gives the slot a new key and pushes it onto the recent ring
 0x01e86fa0,66,misc_find_slot_object_01e86fa0,misc,edge-verified,Returns the object in the slot a word names when the object key equals the word
+0x01e87f90,178,misc_call_with_counted_records_01e87f90,misc,edge-verified,Calls the fill routine with two counted records and a counter then returns the object it was given
 0x01e88ea0,8,auto_fixed_address_01e88ea0,auto,edge-verified,Same instructions as misc_plain_type_address with other addresses
 0x01e88eb0,41,auto_bind_vtable_01e88eb0,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
 0x01e88ee0,41,auto_bind_vtable_01e88ee0,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
