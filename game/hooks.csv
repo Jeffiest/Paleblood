@@ -21668,6 +21668,13 @@ address,replacement,system,returns
 0x01e86780,bb_auto_initialize_static_wide_string_01e86780,auto,void
 0x01e86850,bb_auto_copy_block_01e86850,auto,void
 0x01e86db0,bb_auto_return_member_address_01e86db0,auto,i64
+0x01e86dc0,bb_misc_count_keyed_entry_01e86dc0,misc,i64
+0x01e86e00,bb_misc_decrement_keyed_entry_01e86e00,misc,i64
+0x01e86e60,bb_misc_release_and_rekey_slot_01e86e60,misc,void
+0x01e86fa0,bb_misc_find_slot_object_01e86fa0,misc,i64
+0x01e87f90,bb_misc_call_with_counted_records_01e87f90,misc,i64
+0x01e88630,bb_misc_check_guards_clear_01e88630,misc,void
+0x01e886c0,bb_misc_check_guards_copy_word_01e886c0,misc,i64
 0x01e88ea0,bb_auto_fixed_address_01e88ea0,auto,i64
 0x01e88eb0,bb_auto_bind_vtable_01e88eb0,auto,void
 0x01e88ee0,bb_auto_bind_vtable_01e88ee0,auto,void
@@ -21703,6 +21710,11 @@ address,replacement,system,returns
 0x01e8b9a0,bb_auto_bind_vtable_01e8b9a0,auto,void
 0x01e8b9d0,bb_auto_initialize_static_wide_string_01e8b9d0,auto,void
 0x01e8baa0,bb_auto_copy_block_01e8baa0,auto,void
+0x01e8bae0,bb_misc_store_word_and_count_01e8bae0,misc,i64
+0x01e8bb70,bb_misc_store_word_and_count_01e8bb70,misc,i64
+0x01e8bc00,bb_misc_decrement_word_entry_01e8bc00,misc,void
+0x01e8bcb0,bb_misc_move_word_release_old_01e8bcb0,misc,i64
+0x01e8bd80,bb_misc_count_source_release_stored_01e8bd80,misc,i64
 0x01e8c160,bb_auto_bind_vtable_01e8c160,auto,void
 0x01e8c190,bb_auto_bind_vtable_01e8c190,auto,void
 0x01e8c1c0,bb_auto_bind_vtable_01e8c1c0,auto,void
