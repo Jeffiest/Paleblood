@@ -5406,6 +5406,7 @@ address,size,name,system,status,notes
 0x013a2c30,447,misc_compose_member_match_013a2c30,misc,edge-verified,Joins two texts and returns the member matcher result for the joined name or else the member value
 0x013a2df0,89,misc_member_text_fallback_013a2df0,misc,edge-verified,Gives the member value for the text unless the member matcher accepts the text
 0x013a3020,22,misc_member_object_013a3020,misc,edge-verified,Returns the routine result for the member of an enabled holder
+0x013a3040,22,misc_member_object_013a3040,misc,edge-verified,Returns the second routine result for the member of an enabled holder
 0x013a4bd0,41,auto_bind_vtable_013a4bd0,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
 0x013a4c00,41,auto_bind_vtable_013a4c00,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
 0x013a4c30,41,auto_bind_vtable_013a4c30,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
