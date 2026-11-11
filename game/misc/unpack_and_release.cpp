@@ -3,18 +3,19 @@
 
 /**
  *
- * Unpacks a counted handle into a value and drops the handle's reference.
+ * Makes a counted handle from a text, unpacks it into a value and drops the handle's reference.
  *
- * The handle is first read into a value, then unpacked into a second one. The block the handle
+ * The handle is made from the text in the second argument (the first is not used), then unpacked
+ * into three words, of which the first is the value. The block the handle
  * points at loses a reference; when that was the last one, the dispatcher is told to destroy it.
  * The result is the unpacked value when the unpack succeeded, and -1 otherwise.
  */
-extern "C" int64_t bb_misc_unpack_and_release(void)
+extern "C" int64_t bb_misc_unpack_and_release(void *, const char *text)
 {
     uint64_t handle = 0;
-    misc::fn_0045c700(&handle);
+    misc::fn_0045c700(&handle, text);
 
-    uint64_t unpacked = 0;
+    misc::UnpackedHandle unpacked{};
     const bool ok = misc::fn_00465400(&unpacked, &handle);
 
     auto *block = reinterpret_cast<misc::CountedBlock *>(handle & ~misc::handle_tag_bits);
@@ -24,5 +25,5 @@ extern "C" int64_t bb_misc_unpack_and_release(void)
         dispatcher->vtable->slot_0x68(dispatcher, block);
     }
 
-    return ok ? static_cast<int64_t>(unpacked) : -1;
+    return ok ? static_cast<int64_t>(unpacked.value) : -1;
 }

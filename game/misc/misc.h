@@ -1058,8 +1058,20 @@ struct CountedBlock {
 };
 static_assert(offsetof(CountedBlock, count) == 0x08);
 
-RT_ORIGINAL(0x0045c700, fn_0045c700, void(uint64_t *value));
-RT_ORIGINAL(0x00465400, fn_00465400, bool(uint64_t *out, const uint64_t *value));
+/**
+ *
+ * What unpacking a counted handle fills in: three words, of which the first is the value.
+ *
+ */
+struct UnpackedHandle {
+    uint64_t value;
+    uint64_t unknown_0x08;
+    uint64_t unknown_0x10;
+};
+static_assert(sizeof(UnpackedHandle) == 0x18);
+
+RT_ORIGINAL(0x0045c700, fn_0045c700, void(uint64_t *value, const char *text));
+RT_ORIGINAL(0x00465400, fn_00465400, bool(UnpackedHandle *out, const uint64_t *value));
 
 /** Offset of the vtable pointer a child holder is given, inside the table at its address. */
 constexpr uint64_t holder_vtable_offset = 0x10;

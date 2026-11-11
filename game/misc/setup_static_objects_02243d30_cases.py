@@ -12,7 +12,7 @@ lookup, the target's allocator info (a virtual call through slot 0x20, which wri
 report are stubs, in call order. A probe that publishes the second object is written through the probe's
 argument. Covers an already published entry, guarded and unguarded first setups, both probe outcomes, an
 already-done first object, a failed guard, a manager lookup, a valid and an invalid target heap, and the
-publish check after the first object.
+publish check after the first object. The value returned is the published object's address.
 """
 import json
 from pathlib import Path
@@ -89,7 +89,7 @@ def case(cid, published=False, first_guard=0, first_done=0, acquire1=1, probe=1,
         stubs.append({'address': INFO, 'argc': 3, 'writes': info_writes})
         if not flags & 0x20:
             stubs.append({'address': FATAL, 'argc': 3})
-    return {'schema': 1, 'address': ADDRESS, 'id': cid, 'returns': 'void', 'args': {},
+    return {'schema': 1, 'address': ADDRESS, 'id': cid, 'returns': 'i64', 'args': {},
             'buffers': buffers, 'memory': memory, 'imports': [], 'stubs': stubs}
 
 

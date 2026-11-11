@@ -60,12 +60,13 @@ constexpr int32_t line_invalid_heap = 0x3e;
  * Sets up the two static objects once. The first object is given its vtable and a flag, which the probes
  * may clear; it is marked done after its guard. The second object takes the target held in the global slot
  * (found from the manager when the slot is empty), its target's allocator info is checked, and the object
- * is published last, so the publish check comes after the first object's setup.
+ * is published last, so the publish check comes after the first object's setup. The published object is
+ * returned on every path: the callers go on to fill it in.
  *
  */
-extern "C" void bb_misc_setup_static_objects_02243d30()
+extern "C" void *bb_misc_setup_static_objects_02243d30()
 {
-    if (second_published.get() != nullptr) return;
+    if (second_published.get() != nullptr) return second_published.get();
     if (first_guard.get() == 0 && guard_acquire(first_guard.address()) != 0) {
         first_done.get() = 0;
         guard_release(first_guard.address());
@@ -77,7 +78,7 @@ extern "C" void bb_misc_setup_static_objects_02243d30()
         if (probe_first(&object) == 0 && probe_sub(object.unknown_0x08) == 0) object.flag = 1;
         first_done.get() = 1;
     }
-    if (second_published.get() != nullptr) return;
+    if (second_published.get() != nullptr) return second_published.get();
     if (second_guard.get() == 0 && guard_acquire(second_guard.address()) != 0) guard_release(second_guard.address());
     TargetedObject &object = second_object.get();
     object.word_0x08 = 0;
@@ -99,4 +100,5 @@ extern "C" void bb_misc_setup_static_objects_02243d30()
     object.word_0x48 = 0;
     object.word_0x40 = 0;
     second_published.get() = &object;
+    return &object;
 }

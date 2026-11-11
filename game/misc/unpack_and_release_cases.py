@@ -20,17 +20,18 @@ MASK64 = (1 << 64) - 1
 
 
 def case(cid, ok=True, unpacked=0x77, count=2, tag=0x3):
-    """One call. The handle read stub writes the block address with the tag bits set; the unpack
-    stub writes the unpacked value and returns ok. The dispatcher is called only when the count was
-    one."""
-    stubs = [{'address': READ_HANDLE, 'argc': 1, 'writes': [{'arg': 0, 'pointer': f'block+{tag}',
+    """One call. The handle stub is given the text of the second argument and writes the block
+    address with the tag bits set; the unpack stub fills its three words (the value first) and
+    returns ok. The dispatcher is called only when the count was one."""
+    stubs = [{'address': READ_HANDLE, 'argc': 2, 'writes': [{'arg': 0, 'pointer': f'block+{tag}',
                                                              'offset': 0}]},
              {'address': UNPACK, 'argc': 2, 'ret': 1 if ok else 0,
-              'writes': [{'arg': 0, 'bytes': struct.pack('<Q', unpacked & MASK64).hex()}]}]
+              'writes': [{'arg': 0, 'bytes': struct.pack('<Q', unpacked & MASK64).hex() + 'b1' * 8 + 'c2' * 8}]}]
     if count == 1:
         stubs.append({'address': DESTROY_DISPATCH, 'argc': 2})
-    return {'schema': 1, 'address': ADDRESS, 'id': cid, 'returns': 'i64', 'args': {},
-            'buffers': {'block': {'size': 0x20,
+    return {'schema': 1, 'address': ADDRESS, 'id': cid, 'returns': 'i64', 'args': {'rdi': '0x5a5a5a5a', 'rsi': 'buf:text'},
+            'buffers': {'text': {'size': 0x10, 'bytes': '61622e63' + '00' * 0xc},
+                        'block': {'size': 0x20,
                                   'bytes': '00' * 8 + struct.pack('<I', count & 0xffffffff).hex() + '00' * 0x14},
                         'disp': {'size': 0x8},
                         'dvt': {'size': 0x80}},
