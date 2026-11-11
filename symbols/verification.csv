@@ -45602,7 +45602,7 @@ misc_child_idle,edge,,10,10,0,0,737d142cc040e869,2026-11-11
 misc_child_ready_after_checks,edge,,14,14,0,0,689d16a605bf5bb0,2026-11-09
 misc_clear_flagged_tag,edge,,6,6,0,0,a27f003e89e8beb5,2026-11-09
 misc_clear_flagged_tag_alt,edge,,6,6,0,0,4324bfada71dd207,2026-11-09
-misc_clear_held_then_chain_destroy,edge,,4,4,0,0,95aa360c63e59eb8,2026-11-11
+misc_clear_held_then_chain_destroy,edge,,4,4,0,0,e270f2250bff2587,2026-11-11
 misc_clear_id_list_022430f0,edge,,5,5,0,0,8d14115bb7de3d16,2026-11-09
 misc_clear_pending_four_keys,edge,,15,15,0,0,e408ac5368aed16d,2026-11-09
 misc_clear_two_words,edge,,4,4,0,0,fd76028ce27c1369,2026-11-09

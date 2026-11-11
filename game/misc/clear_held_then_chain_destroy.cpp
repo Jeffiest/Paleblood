@@ -1,5 +1,5 @@
 // SPDX-License-Identifier: GPL-2.0-or-later
-// Misc: sets a record's vtable, releases and clears its held pointer when one is set, then tail-calls the base destructor.
+// Misc: sets a record's vtable, releases and clears its held pointer when one is set, then returns with RAX as it stands.
 #include <cstddef>
 #include <cstdint>
 
@@ -17,23 +17,26 @@ static_assert(offsetof(HeldRecord, held) == 0x10);
 
 RT_GLOBAL(0x057b1fb0, held_record_vtable, uint8_t);
 
-RT_ORIGINAL(0x02450560, release_held, void(void *held));
-RT_ORIGINAL(0x013e5c40, base_destroy, uint64_t(HeldRecord *record));
+RT_ORIGINAL(0x02450560, release_held, uint64_t(void *held));
 
 }  // namespace
 
 /**
  *
- * Sets the record's vtable, releases the held pointer and clears it, then runs the base destructor.
+ * Sets the record's vtable, releases the held pointer and clears it, then returns the value left in RAX.
  *
- * The base destructor's result is returned. Nothing is released when no pointer is held.
+ * The chained base destructor at 0x013e5c40 is a bare return, so the replacement does not call it: the
+ * value left in RAX is the record vtable when nothing was released, and the release call's result otherwise.
+ * The argument registers after the record are not used.
  */
-extern "C" uint64_t bb_misc_clear_held_then_chain_destroy(HeldRecord *record)
+extern "C" uint64_t bb_misc_clear_held_then_chain_destroy(HeldRecord *record, uint64_t, uint64_t, uint64_t,
+                                                          uint64_t, uint64_t)
 {
     record->vtable = held_record_vtable.address();
+    uint64_t result = reinterpret_cast<uint64_t>(record->vtable);
     if (record->held != nullptr) {
-        release_held(record->held);
+        result = release_held(record->held);
         record->held = nullptr;
     }
-    return base_destroy(record);
+    return result;
 }

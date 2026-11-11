@@ -11430,7 +11430,7 @@ address,size,name,system,status,notes
 0x0188e440,28,auto_destroy_then_release_0188e440,auto,edge-verified,Same instructions as misc_destroy_then_release with other addresses
 0x0188e460,39,auto_tail_call_member_target_0188e460,auto,edge-verified,Same instructions as misc_tail_call_member_target with other addresses
 0x0188e490,63,auto_member_call_or_fallback_0188e490,auto,edge-verified,Same instructions as misc_member_call_or_fallback with other addresses
-0x0188e4d0,55,misc_clear_held_then_chain_destroy,misc,edge-verified,Sets the record vtable releases and clears the held pointer at 0x10 when set then tail-calls the base destructor at 0x013e5c40 returning its result
+0x0188e4d0,55,misc_clear_held_then_chain_destroy,misc,edge-verified,Sets the record vtable and releases then clears the held pointer at 0x10 when set returning RAX as left (the vtable or the release result) since the chained 0x013e5c40 is a bare return
 0x0188e550,30,auto_member_call_0188e550,auto,edge-verified,Same instructions as misc_member_call_02242a10 with other addresses and constants
 0x018904d0,81,auto_tree_destroy_nodes_018904d0,auto,edge-verified,Same instructions as engine_tree_destroy_nodes with other addresses
 0x01890b30,5,auto_return_field_01890b30,auto,edge-verified,Generated from the return field template
