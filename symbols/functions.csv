@@ -5400,6 +5400,7 @@ address,size,name,system,status,notes
 0x0139f730,41,auto_bind_vtable_0139f730,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
 0x0139f760,49,auto_copy_block_0139f760,auto,edge-verified,Same instructions as misc_copy_block_58b3240 with other addresses
 0x013a0920,443,misc_match_text_member_013a0920,misc,edge-verified,Looks up a member text through a holder and matches it with a matcher; reports the text otherwise
+0x013a1850,155,misc_ensure_shared_instance_013a1850,misc,edge-verified,Creates the shared instance once for the holder owner after a lookup and finishes the record
 0x013a4bd0,41,auto_bind_vtable_013a4bd0,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
 0x013a4c00,41,auto_bind_vtable_013a4c00,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
 0x013a4c30,41,auto_bind_vtable_013a4c30,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses

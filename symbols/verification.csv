@@ -45656,6 +45656,7 @@ misc_element_table_call_each,edge,,4,4,0,0,2c16847e2bcf6d9b,2026-11-09
 misc_emit_through_fresh_sink,edge,,4,4,0,0,19d40b8290836c05,2026-11-11
 misc_emit_through_lookup,edge,,4,4,0,0,154f171e0924f511,2026-11-11
 misc_enable_owner_target,edge,,6,6,0,0,ab5ba15acc4d6d73,2026-11-09
+misc_ensure_shared_instance_013a1850,edge,,4,4,0,0,3f58ac4e9e279812,2026-11-11
 misc_entry_for_key,edge,,9,9,0,0,05562ce18d85b046,2026-11-09
 misc_entry_ref_accept,edge,,15,15,0,0,be3be074b348091e,2026-11-10
 misc_fill_item_table,edge,,10,10,0,0,121719f0b60da0e7,2026-11-09
