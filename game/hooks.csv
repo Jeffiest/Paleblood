@@ -28399,6 +28399,7 @@ address,replacement,system,returns
 0x022547b0,bb_misc_release_element_list_owner_in_place,misc,i64
 0x02254830,bb_misc_clear_node_lists,misc,i64
 0x02254da0,bb_auto_jump_thunk_02254da0,auto,i64
+0x02255320,bb_misc_both_item_lists_rank_above,misc,i8
 0x02255560,bb_misc_all_items_rank_above_three,misc,i8
 0x022555b0,bb_misc_set_flag_on_first_accepting_item,misc,i8
 0x02255690,bb_misc_set_flag_on_first_accepting_item_8,misc,i8
