@@ -11466,6 +11466,7 @@ address,size,name,system,status,notes
 0x01894690,8,auto_fixed_address_01894690,auto,edge-verified,Same instructions as misc_plain_type_address with other addresses
 0x018946a0,8,auto_fixed_address_018946a0,auto,edge-verified,Same instructions as misc_plain_type_address with other addresses
 0x018946b0,8,auto_fixed_address_018946b0,auto,edge-verified,Same instructions as misc_plain_type_address with other addresses
+0x01895250,257,misc_append_vector_element,misc,edge-verified,Appends a copy of a 0xd8-byte element to a vector growing its storage first when full and copying from the storage after growth when the element is stored in the vector
 0x01895b30,41,auto_bind_vtable_01895b30,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
 0x01895b60,41,auto_bind_vtable_01895b60,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
 0x01895b90,41,auto_bind_vtable_01895b90,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses

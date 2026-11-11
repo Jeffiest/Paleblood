@@ -11465,6 +11465,7 @@ address,replacement,system,returns
 0x01894690,bb_auto_fixed_address_01894690,auto,i64
 0x018946a0,bb_auto_fixed_address_018946a0,auto,i64
 0x018946b0,bb_auto_fixed_address_018946b0,auto,i64
+0x01895250,bb_misc_append_vector_element,misc,void
 0x01895b30,bb_auto_bind_vtable_01895b30,auto,void
 0x01895b60,bb_auto_bind_vtable_01895b60,auto,void
 0x01895b90,bb_auto_bind_vtable_01895b90,auto,void
