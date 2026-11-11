@@ -32,7 +32,7 @@ def case(cid, held, release_result=0):
     if held:
         buffers['held'] = {'size': 0x10, 'bytes': '33' * 0x10}
         memory.append({'addr': 'buf:record+16', 'pointer': 'held'})
-        stubs.append({'address': RELEASE, 'argc': 1, 'argi': [0], 'ret': release_result & MASK64})
+        stubs.append({'address': RELEASE, 'argc': 6, 'argi': [0, 1, 2, 3, 4, 5], 'ret': release_result & MASK64})
     else:
         memory.append({'addr': 'buf:record+16', 'bytes': '00' * 8})
     return {'schema': 1, 'address': ADDRESS, 'id': cid, 'returns': 'i64',

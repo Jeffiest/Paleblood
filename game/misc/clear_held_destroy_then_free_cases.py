@@ -26,15 +26,17 @@ def case(cid, held, free_result):
     buffers = {'record': {'size': RECORD_SIZE, 'bytes': 'ee' * RECORD_SIZE}}
     memory = []
     stubs = []
+    args = {'rdi': 'buf:record', 'rsi': '0x1111111111111111', 'rdx': '0x2222222222222222',
+            'rcx': '0x3333333333333333', 'r8': '0x4444444444444444', 'r9': '0x5555555555555555'}
     if held:
         buffers['held'] = {'size': 0x10, 'bytes': '33' * 0x10}
         memory.append({'addr': 'buf:record+16', 'pointer': 'held'})
-        stubs.append({'address': RELEASE, 'argc': 1, 'argi': [0]})
+        stubs.append({'address': RELEASE, 'argc': 6, 'argi': [0, 1, 2, 3, 4, 5]})
     else:
         memory.append({'addr': 'buf:record+16', 'bytes': '00' * 8})
-    stubs.append({'address': FREE, 'argc': 1, 'argi': [0], 'ret': free_result & MASK64})
+    stubs.append({'address': FREE, 'argc': 6, 'argi': [0, 1, 2, 3, 4, 5], 'ret': free_result & MASK64})
     return {'schema': 1, 'address': ADDRESS, 'id': cid, 'returns': 'i64',
-            'args': {'rdi': 'buf:record'},
+            'args': args,
             'buffers': buffers, 'memory': memory, 'stubs': stubs, 'imports': []}
 
 
