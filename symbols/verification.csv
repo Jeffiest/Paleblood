@@ -45814,6 +45814,7 @@ misc_release_owner_with_holder,edge,,14,14,0,0,68b66dbc58e955be,2026-11-09
 misc_release_pair,edge,,8,8,0,0,35af01fa31edbc2e,2026-11-09
 misc_release_resource_holder,edge,,13,13,0,0,83eb76bd2da027c8,2026-11-09
 misc_release_slot_item,edge,,12,12,0,0,9ed33a859aceef50,2026-11-09
+misc_release_two_base_object,edge,,6,6,0,0,fcd00c8e7dd3c9b3,2026-11-11
 misc_remove_member_from_list,edge,,3,3,0,0,6492899f7408a790,2026-11-11
 misc_remove_stored_value_if_present,edge,,7,7,0,0,29c24ad785ad10db,2026-11-09
 misc_remove_value_from_vector,edge,,10,10,0,0,bb5afec1a13ffc37,2026-11-09

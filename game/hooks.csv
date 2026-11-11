@@ -80,6 +80,7 @@ address,replacement,system,returns
 0x00414be0,bb_misc_pool_cursor_allocate,misc,i64
 0x00414c90,bb_misc_allocate_chain_node,misc,i64
 0x00414cd0,bb_misc_allocate_aligned_chain_node,misc,i64
+0x00414f20,bb_misc_release_two_base_object,misc,i64
 0x00415af0,bb_auto_prepare_forward_00415af0,auto,i64
 0x00418d80,bb_auto_return_field_00418d80,auto,i64
 0x00419190,bb_auto_prepare_forward_00419190,auto,i64
