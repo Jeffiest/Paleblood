@@ -5,7 +5,13 @@
 #include <cstddef>
 #include <cstdint>
 
+#include "runtime/original.h"
+
 namespace misc {
+
+// The shared counter table the engine keeps, and the name the missing-singleton report gives for it.
+RT_GLOBAL(0x0593e990, keyed_counter_table, struct KeyedCounterTable *);
+RT_GLOBAL(0x04d35616, keyed_counter_table_name, const char);
 
 /**
  *
