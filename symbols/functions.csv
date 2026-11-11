@@ -11506,6 +11506,7 @@ address,size,name,system,status,notes
 0x0189e410,28,auto_destroy_then_release_0189e410,auto,edge-verified,Same instructions as misc_destroy_then_release with other addresses
 0x0189e430,39,auto_tail_call_member_target_0189e430,auto,edge-verified,Same instructions as misc_tail_call_member_target with other addresses
 0x0189e460,63,auto_member_call_or_fallback_0189e460,auto,edge-verified,Same instructions as misc_member_call_or_fallback with other addresses
+0x0189e790,251,misc_grow_word_storage,misc,edge-verified,Grows the list of 8-byte words to the requested count moving the stored words into a new block and freeing the old one or reporting the refused allocation
 0x0189e890,218,auto_push_value_by_reference_0189e890,auto,edge-verified,Same instructions as misc_push_value_by_reference with other addresses
 0x0189e970,52,misc_init_timed_record,misc,edge-verified,Initializes the base record then sets the vtable both five second timer fields and a zero counter returning the packed timer pair left in RAX
 0x0189e9b0,28,auto_destroy_then_release_0189e9b0,auto,edge-verified,Same instructions as misc_destroy_then_release with other addresses
