@@ -2071,6 +2071,7 @@ address,size,name,system,status,notes
 0x00c24100,8,auto_fixed_address_00c24100,auto,edge-verified,Same instructions as misc_plain_type_address with other addresses
 0x00c24110,5,auto_jump_thunk_00c24110,auto,edge-verified,Same instructions as misc_jump_thunk with other addresses
 0x00c244a0,35,misc_construct_derived_object,misc,edge-verified,Runs the base constructor on the object then stores the derived vtable address point in its first word and returns it
+0x00c244d0,184,misc_delete_derived_object,misc,edge-verified,Deleting destructor of a derived object: stores its vtable drops its held reference runs the base destructor then frees the block through the thread allocator and returns the free result
 0x00c24700,56,misc_copy_source_vector_pair,misc,edge-verified,Copies the source vector at +0x1e0 to the first output and the +0x1a0 vector plus the addend +0x30 vector when present to the second; returns the addend
 0x00c24740,20,misc_copy_source_vector,misc,edge-verified,Copies the source vector at +0x230 to the output; returns the source pointer
 0x00c24760,16,misc_child_pointer_present,misc,edge-verified,Reports whether the owner's holder at +0xb0 has a non-null child at +0x10
