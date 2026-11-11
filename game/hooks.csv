@@ -21628,6 +21628,7 @@ address,replacement,system,returns
 0x01e86e60,bb_misc_release_and_rekey_slot_01e86e60,misc,void
 0x01e86fa0,bb_misc_find_slot_object_01e86fa0,misc,i64
 0x01e87f90,bb_misc_call_with_counted_records_01e87f90,misc,i64
+0x01e88630,bb_misc_check_guards_clear_01e88630,misc,void
 0x01e88ea0,bb_auto_fixed_address_01e88ea0,auto,i64
 0x01e88eb0,bb_auto_bind_vtable_01e88eb0,auto,void
 0x01e88ee0,bb_auto_bind_vtable_01e88ee0,auto,void

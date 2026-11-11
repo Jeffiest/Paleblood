@@ -45597,6 +45597,7 @@ misc_chain_contains,edge,,9,9,0,0,8b4669a2c9b3075e,2026-11-09
 misc_chain_leaf_flag,edge,,6,6,0,0,1e265fb6c6640d38,2026-11-09
 misc_chain_ready_or_group_bit,edge,,29,29,0,0,47ee6d285c740872,2026-11-09
 misc_chain_search,edge,,24,24,0,0,9025f7eefef211ad,2026-11-09
+misc_check_guards_clear_01e88630,edge,,5,5,0,0,89521b553bc3ff7f,2026-11-11
 misc_child_call_or_zero,edge,,8,8,0,0,217911d6de284616,2026-11-10
 misc_child_call_with_flag,edge,,10,10,0,0,abb3f9fc8b81bbd1,2026-11-09
 misc_child_idle,edge,,10,10,0,0,737d142cc040e869,2026-11-11

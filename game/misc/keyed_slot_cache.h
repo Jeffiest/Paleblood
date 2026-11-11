@@ -49,10 +49,15 @@ struct KeyedSlotCache {
     uint32_t ring_0x10008[kKeyedSlotCount];             /**< The most recent slots, written in order. */
     uint8_t unknown_0x14008[0x0004];
     int32_t ring_position_0x1400c;                      /**< The ring entry most recently written. */
+    uint8_t unknown_0x14010[0x0018];
+    void *held_block_0x14028;                           /**< A block held outside the slots, or null. */
+    uint8_t must_be_clear_0x14030;                      /**< Nonzero is a fatal report when the cache is checked. */
+    uint8_t must_be_clear_0x14031;                      /**< Nonzero is a fatal report when the cache is checked. */
 };
 static_assert(offsetof(KeyedSlotCache, slots_0x0008) == 0x0008 && offsetof(KeyedSlotCache, entries_0x8008) == 0x8008);
 static_assert(offsetof(KeyedSlotCache, ring_0x10008) == 0x10008 && offsetof(KeyedSlotCache, ring_position_0x1400c) == 0x1400c);
-static_assert(sizeof(KeyedSlotCache) == 0x14010);
+static_assert(offsetof(KeyedSlotCache, held_block_0x14028) == 0x14028);
+static_assert(offsetof(KeyedSlotCache, must_be_clear_0x14030) == 0x14030 && offsetof(KeyedSlotCache, must_be_clear_0x14031) == 0x14031);
 
 /**
  *
