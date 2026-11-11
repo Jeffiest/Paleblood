@@ -2071,6 +2071,7 @@ address,replacement,system,returns
 0x00c24110,bb_auto_jump_thunk_00c24110,auto,i64
 0x00c244a0,bb_misc_construct_derived_object,misc,i64
 0x00c244d0,bb_misc_delete_derived_object,misc,i64
+0x00c24590,bb_misc_release_derived_object,misc,i64
 0x00c24700,bb_misc_copy_source_vector_pair,misc,i64
 0x00c24740,bb_misc_copy_source_vector,misc,i64
 0x00c24760,bb_misc_child_pointer_present,misc,i8
