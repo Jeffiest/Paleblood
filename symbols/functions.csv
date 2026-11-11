@@ -2195,6 +2195,7 @@ address,size,name,system,status,notes
 0x00ca6c50,5,auto_jump_thunk_00ca6c50,auto,edge-verified,Same instructions as misc_jump_thunk with other addresses
 0x00ca6c60,5,auto_jump_thunk_00ca6c60,auto,edge-verified,Same instructions as misc_jump_thunk with other addresses
 0x00caa310,5,auto_jump_thunk_00caa310,auto,edge-verified,Same instructions as misc_jump_thunk with other addresses
+0x00cb1040,73,misc_apply_each_slot,misc,edge-verified,Visits each slot of a table in order reading a value from the source for each and storing it back into the slot
 0x00cb11f0,8,auto_fixed_address_00cb11f0,auto,edge-verified,Same instructions as misc_plain_type_address with other addresses
 0x00cb1220,8,auto_fixed_address_00cb1220,auto,edge-verified,Same instructions as misc_plain_type_address with other addresses
 0x00cb1240,8,auto_fixed_address_00cb1240,auto,edge-verified,Same instructions as misc_plain_type_address with other addresses

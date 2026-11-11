@@ -2194,6 +2194,7 @@ address,replacement,system,returns
 0x00ca6c50,bb_auto_jump_thunk_00ca6c50,auto,i64
 0x00ca6c60,bb_auto_jump_thunk_00ca6c60,auto,i64
 0x00caa310,bb_auto_jump_thunk_00caa310,auto,i64
+0x00cb1040,bb_misc_apply_each_slot,misc,void
 0x00cb11f0,bb_auto_fixed_address_00cb11f0,auto,i64
 0x00cb1220,bb_auto_fixed_address_00cb1220,auto,i64
 0x00cb1240,bb_auto_fixed_address_00cb1240,auto,i64
