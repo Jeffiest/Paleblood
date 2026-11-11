@@ -11412,6 +11412,7 @@ address,replacement,system,returns
 0x0188e1d0,bb_auto_delete_object_thunk_0188e1d0,auto,void
 0x0188e1f0,bb_auto_empty_0188e1f0,auto,void
 0x0188e200,bb_auto_delete_object_thunk_0188e200,auto,void
+0x0188e210,bb_misc_invoke_member_pointer,misc,i64
 0x0188e240,bb_auto_empty_0188e240,auto,void
 0x0188e250,bb_auto_delete_object_thunk_0188e250,auto,void
 0x0188e260,bb_auto_tail_call_offset_member_thunk_0188e260,auto,i64

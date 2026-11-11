@@ -45733,6 +45733,7 @@ misc_insert_scaled_entry,edge,,14,14,0,0,e3acf78e83086835,2026-11-11
 misc_insert_scaled_entry_alt,edge,,14,14,0,0,644e903626291129,2026-11-11
 misc_int_queue_push_source,edge,,6,6,0,0,e8a2d1a264c83ce3,2026-11-09
 misc_invoke_callback,edge,,11,11,0,0,707f82bd276ea347,2026-11-10
+misc_invoke_member_pointer,edge,,8,8,0,0,2f4bb7a80b4b7019,2026-11-11
 misc_item_set_apply,edge,,7,7,0,0,3e64a8b3cef8e8af,2026-11-09
 misc_jump_thunk,edge,,13,13,0,0,b6549180176f362a,2026-11-10
 misc_keep_last_path_component,edge,,5,5,0,0,6cad338706f09742,2026-11-11

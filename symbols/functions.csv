@@ -11413,6 +11413,7 @@ address,size,name,system,status,notes
 0x0188e1d0,5,auto_delete_object_thunk_0188e1d0,auto,edge-verified,Same instructions as misc_delete_object_thunk with other addresses
 0x0188e1f0,1,auto_empty_0188e1f0,auto,edge-verified,Generated from the empty template
 0x0188e200,5,auto_delete_object_thunk_0188e200,auto,edge-verified,Same instructions as misc_delete_object_thunk with other addresses
+0x0188e210,43,misc_invoke_member_pointer,misc,edge-verified,Calls a member function pointer on its adjusted subobject passing the other arguments on or returns the pointer when the function or subobject is empty
 0x0188e240,1,auto_empty_0188e240,auto,edge-verified,Generated from the empty template
 0x0188e250,5,auto_delete_object_thunk_0188e250,auto,edge-verified,Same instructions as misc_delete_object_thunk with other addresses
 0x0188e260,50,auto_tail_call_offset_member_thunk_0188e260,auto,edge-verified,Same instructions as misc_tail_call_offset_member_thunk with other addresses
