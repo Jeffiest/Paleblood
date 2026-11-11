@@ -11509,6 +11509,7 @@ address,replacement,system,returns
 0x0189e970,bb_misc_init_timed_record,misc,i64
 0x0189e9b0,bb_auto_destroy_then_release_0189e9b0,auto,i64
 0x0189e9d0,bb_auto_jump_thunk_0189e9d0,auto,i64
+0x0189e9e0,bb_misc_tick_timed_record,misc,void
 0x0189ea20,bb_auto_bind_vtable_0189ea20,auto,void
 0x0189ea50,bb_auto_bind_vtable_0189ea50,auto,void
 0x0189ea80,bb_auto_bind_vtable_0189ea80,auto,void

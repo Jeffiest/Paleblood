@@ -45882,6 +45882,7 @@ misc_task_object_destroy,edge,,11,11,0,0,5768d850e8a7ebef,2026-11-09
 misc_teardown_record,edge,,5,5,0,0,0184fcf7fc0c0e68,2026-11-11
 misc_teardown_record_entries,edge,,17,17,0,0,9a7680d046c2c465,2026-11-11
 misc_test_and_set_flag,edge,,6,6,0,0,7aa9c6c0213a07af,2026-11-09
+misc_tick_timed_record,edge,,6,6,0,0,743b0b1baf111da8,2026-11-11
 misc_unpack_and_release,edge,,7,7,0,0,83111d910b68eca2,2026-11-11
 misc_update_owned_entries,edge,,11,11,0,0,5a57696d2430974b,2026-11-10
 misc_value_unless_flagged,edge,,10,10,0,0,0011306c9c7b9d5c,2026-11-11

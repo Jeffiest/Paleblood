@@ -11510,6 +11510,7 @@ address,size,name,system,status,notes
 0x0189e970,52,misc_init_timed_record,misc,edge-verified,Initializes the base record then sets the vtable both five second timer fields and a zero counter returning the packed timer pair left in RAX
 0x0189e9b0,28,auto_destroy_then_release_0189e9b0,auto,edge-verified,Same instructions as misc_destroy_then_release with other addresses
 0x0189e9d0,5,auto_jump_thunk_0189e9d0,auto,edge-verified,Same instructions as misc_jump_thunk with other addresses
+0x0189e9e0,54,misc_tick_timed_record,misc,edge-verified,Subtracts the step from the remaining time and when it is no longer above zero reloads it from the period and advances the counter to a limit of three
 0x0189ea20,41,auto_bind_vtable_0189ea20,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
 0x0189ea50,41,auto_bind_vtable_0189ea50,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
 0x0189ea80,41,auto_bind_vtable_0189ea80,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
