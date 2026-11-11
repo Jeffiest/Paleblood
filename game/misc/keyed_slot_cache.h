@@ -9,15 +9,15 @@
 
 namespace misc {
 
-struct SlotObject;
+struct CachedSlotObject;
 
 /**
  *
  * The vtable of an object a slot holds: its first entry destroys the object.
  *
  */
-struct SlotObjectVtable {
-    void (*destroy_0x00)(SlotObject *self); /**< Destroys the object; the slot's allocator frees it afterwards. */
+struct CachedSlotObjectVtable {
+    void (*destroy_0x00)(CachedSlotObject *self); /**< Destroys the object; the slot's allocator frees it afterwards. */
 };
 
 /**
@@ -25,11 +25,11 @@ struct SlotObjectVtable {
  * An object a slot holds: its first word is its vtable.
  *
  */
-struct SlotObject {
-    const SlotObjectVtable *vtable_0x00; /**< The object's vtable. */
+struct CachedSlotObject {
+    const CachedSlotObjectVtable *vtable_0x00; /**< The object's vtable. */
     uint32_t key_0x08;                   /**< Compared with a word when the slot is looked up. */
 };
-static_assert(offsetof(SlotObject, key_0x08) == 0x08);
+static_assert(offsetof(CachedSlotObject, key_0x08) == 0x08);
 
 /** The number of slots, and of entries in the ring of recent slots. */
 constexpr size_t kKeyedSlotCount = 0x1000;
@@ -44,7 +44,7 @@ constexpr size_t kSlotLookupCount = 0xffff;
  */
 struct KeyedSlotCache {
     uint8_t unknown_0x0000[0x0008];
-    SlotObject *slots_0x0008[kKeyedSlotCount];          /**< The object a slot holds, or null. */
+    CachedSlotObject *slots_0x0008[kKeyedSlotCount];          /**< The object a slot holds, or null. */
     KeyedCounterEntry entries_0x8008[kKeyedSlotCount];  /**< The key and count of each slot. */
     uint32_t ring_0x10008[kKeyedSlotCount];             /**< The most recent slots, written in order. */
     uint8_t unknown_0x14008[0x0004];
@@ -66,7 +66,7 @@ static_assert(offsetof(KeyedSlotCache, must_be_clear_0x14030) == 0x14030 && offs
  */
 struct SlotLookupTable {
     uint8_t unknown_0x0000[0x0008];
-    SlotObject *slots_0x0008[kSlotLookupCount]; /**< The object a slot holds, or null. */
+    CachedSlotObject *slots_0x0008[kSlotLookupCount]; /**< The object a slot holds, or null. */
 };
 static_assert(offsetof(SlotLookupTable, slots_0x0008) == 0x0008);
 

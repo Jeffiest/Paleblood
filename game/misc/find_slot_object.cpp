@@ -18,7 +18,7 @@ constexpr uint32_t kLow16Mask = 0xffff;       /**< The index part of a word; all
  * The slot is taken from the low 16 bits of the word and is not checked against the cache's size.
  *
  */
-extern "C" misc::SlotObject *bb_misc_find_slot_object_01e86fa0(const misc::SlotLookupTable *table, const uint32_t *word)
+extern "C" misc::CachedSlotObject *bb_misc_find_slot_object_01e86fa0(const misc::SlotLookupTable *table, const uint32_t *word)
 {
     const uint32_t value = *word;
     uint32_t index = value & kLow24Mask;
@@ -26,7 +26,7 @@ extern "C" misc::SlotObject *bb_misc_find_slot_object_01e86fa0(const misc::SlotL
     if ((index & kIndexFlag) == 0 || value == 0) return nullptr;
     index &= kLow16Mask;
     if (index == kLow16Mask) return nullptr;
-    misc::SlotObject *object = table->slots_0x0008[index];
+    misc::CachedSlotObject *object = table->slots_0x0008[index];
     if (object == nullptr) return nullptr;
     if (object->key_0x08 != value) return nullptr;
     return object;

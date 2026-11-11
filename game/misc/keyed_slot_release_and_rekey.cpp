@@ -53,7 +53,7 @@ extern "C" void bb_misc_release_and_rekey_slot_01e86e60(misc::KeyedSlotCache *ca
     if (index > misc::kKeyedSlotCount - 1) return;
     const uint32_t slot = index;
 
-    misc::SlotObject *object = cache->slots_0x0008[slot];
+    misc::CachedSlotObject *object = cache->slots_0x0008[slot];
     if (object != nullptr) {
         engine::Allocator *allocator = allocator_of(object);
         object->vtable_0x00->destroy_0x00(object);
