@@ -4,26 +4,17 @@
 #include <cstdint>
 
 #include "runtime/original.h"
+#include "timed_record.h"
 
 namespace {
+
+using misc::TimedRecord;
 
 /** The two timer fields' starting value, in seconds. */
 constexpr float initial_timer_seconds = 5.0f;
 
 /** The value the original leaves in RAX: the two starting floats packed into one word. */
 constexpr uint64_t packed_timer_pair = 0x40a0000040a00000;
-
-/** A timed record: a vtable pointer, the period and remaining time at 0x68 and 0x6c, and a counter at 0x70. */
-struct TimedRecord {
-    const void *vtable;      /**< The record's vtable block. */
-    uint8_t unknown_0x08[0x60];
-    float period_0x68;       /**< The starting value the remaining time is reloaded with. */
-    float remaining_0x6c;    /**< The time left before the next reload. */
-    int32_t counter_0x70;    /**< Starts cleared. */
-};
-static_assert(offsetof(TimedRecord, period_0x68) == 0x68);
-static_assert(offsetof(TimedRecord, remaining_0x6c) == 0x6c);
-static_assert(offsetof(TimedRecord, counter_0x70) == 0x70);
 
 RT_GLOBAL(0x05722910, timed_record_vtable, uint8_t);
 
