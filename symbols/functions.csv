@@ -21630,6 +21630,7 @@ address,size,name,system,status,notes
 0x01e86fa0,66,misc_find_slot_object_01e86fa0,misc,edge-verified,Returns the object in the slot a word names when the object key equals the word
 0x01e87f90,178,misc_call_with_counted_records_01e87f90,misc,edge-verified,Calls the fill routine with two counted records and a counter then returns the object it was given
 0x01e88630,129,misc_check_guards_clear_01e88630,misc,edge-verified,Checks the guards of a keyed slot cache reporting the bad ones then clears its first flag
+0x01e886c0,145,misc_check_guards_copy_word_01e886c0,misc,edge-verified,Checks the guards of a keyed slot cache reporting the bad ones then copies a word out
 0x01e88ea0,8,auto_fixed_address_01e88ea0,auto,edge-verified,Same instructions as misc_plain_type_address with other addresses
 0x01e88eb0,41,auto_bind_vtable_01e88eb0,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
 0x01e88ee0,41,auto_bind_vtable_01e88ee0,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
