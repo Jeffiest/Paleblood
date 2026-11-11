@@ -28450,7 +28450,21 @@ address,size,name,system,status,notes
 0x02253f90,8,auto_fixed_address_02253f90,auto,edge-verified,Same instructions as misc_plain_type_address with other addresses
 0x02253fa0,8,auto_fixed_address_02253fa0,auto,edge-verified,Same instructions as misc_plain_type_address with other addresses
 0x02253fb0,8,auto_fixed_address_02253fb0,auto,edge-verified,Same instructions as misc_plain_type_address with other addresses
+0x022544b0,321,misc_send_object_label,misc,edge-verified,Sends the name of a pending label source to its receiver: formats it in a local record from the thread allocator and frees its heap text after the receiver takes it
+0x02254600,52,misc_copy_record_fields,misc,edge-verified,Copies the mode identifiers pointer count link and extra words of a source record into a destination record and stores the key and flag Returns the source second identifier zero-extended
+0x02254640,224,misc_construct_element_list_owner,misc,edge-verified,Constructs an owner of two node lists: stores its vtable empties both lists and stores the shared allocator for each array after a validity check of each allocator
+0x02254740,102,misc_destroy_element_list_owner,misc,edge-verified,Destructor of an owner of two node lists: stores its vtable empties the lists then frees the second array and the first array through their allocators and returns the release routine result
+0x022547b0,122,misc_release_element_list_owner_in_place,misc,edge-verified,Releases an owner of two node lists without freeing it: stores its vtable empties the lists frees the second then first array and returns the last free result or the list clear result
+0x02254830,185,misc_clear_node_lists,misc,edge-verified,Empties two node lists of an owner: each non-null node is destroyed through its vtable slot 8 and freed through its allocator then each end is set to its begin Returns the last free result
 0x02254da0,5,auto_jump_thunk_02254da0,auto,edge-verified,Same instructions as misc_jump_thunk with other addresses
+0x02255230,239,misc_accepted_item_rank_above_two,misc,edge-verified,When the scan owner is ready scans a list for the first item the accept routine takes and reports whether that item ranks above two
+0x02255320,118,misc_both_item_lists_rank_above,misc,edge-verified,Reports whether every item of the first list ranks above five and every item of the second ranks above two each list walked to its first failure
+0x022553a0,156,misc_items_qualify_in_either_list,misc,edge-verified,Reports whether an item in either list qualifies the first by rank above six or flag 0x02 and the second by rank above four or flag 0x04 walking the second whatever the first gave
+0x02255440,284,misc_accepted_item_rank_flag_test,misc,edge-verified,When the scan source is ready scans a list for the first item the accept routine takes and reports whether that item is unflagged and ranks at most five
+0x02255560,72,misc_all_items_rank_above_three,misc,edge-verified,Reports whether every item of a list ranks above three asking each items rank slot in turn and stopping at the first that does not
+0x022555b0,87,misc_set_flag_on_first_accepting_item,misc,edge-verified,Sets flag bit 0x01 on the first item of a list whose sink the accept routine takes asking each item in turn and returns the last answer
+0x02255610,118,misc_store_value_and_flags_on_first_accepting_item,misc,edge-verified,Stores a value byte on the first item of a list whose sink the accept routine takes and rebuilds that items flag byte then returns the new flags
+0x02255690,87,misc_set_flag_on_first_accepting_item_8,misc,edge-verified,Sets flag bit 0x08 on the first item of a list whose sink the accept routine takes asking each item in turn and returns the last answer
 0x02255870,41,auto_bind_vtable_02255870,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
 0x022558a0,41,auto_bind_vtable_022558a0,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
 0x022558d0,41,auto_bind_vtable_022558d0,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
