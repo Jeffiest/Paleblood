@@ -5,8 +5,8 @@
 usage: clear_held_destroy_then_free_cases.py OUT_DIR
 
 The record's vtable word is replaced by the record vtable at 0x057b1fb0, the held pointer at +0x10 is released
-(0x02450560) and cleared when it is set, the base destructor (0x013e5c40) runs, then the record is freed through
-0x02fbe588 and that result is returned. Covers a record with and without a held pointer, and free results of
+(0x02450560) and cleared when it is set; the chained base destructor (0x013e5c40) is a bare return and runs
+unscripted. The record is then freed through 0x02fbe588 and that result is returned. Covers a record with and without a held pointer, and free results of
 zero and all ones.
 """
 import json
@@ -32,7 +32,6 @@ def case(cid, held, free_result):
         stubs.append({'address': RELEASE, 'argc': 1, 'argi': [0]})
     else:
         memory.append({'addr': 'buf:record+16', 'bytes': '00' * 8})
-    stubs.append({'address': BASE_DESTROY, 'argc': 1, 'argi': [0]})
     stubs.append({'address': FREE, 'argc': 1, 'argi': [0], 'ret': free_result & MASK64})
     return {'schema': 1, 'address': ADDRESS, 'id': cid, 'returns': 'i64',
             'args': {'rdi': 'buf:record'},

@@ -1,5 +1,5 @@
 // SPDX-License-Identifier: GPL-2.0-or-later
-// Misc: sets a record's vtable, releases and clears its held pointer when one is set, runs the base destructor, then frees the record.
+// Misc: sets a record's vtable, releases and clears its held pointer when one is set, then frees the record.
 #include <cstddef>
 #include <cstdint>
 
@@ -17,17 +17,17 @@ static_assert(offsetof(HeldRecord, held) == 0x10);
 
 RT_GLOBAL(0x057b1fb0, held_record_vtable, uint8_t);
 
-RT_ORIGINAL(0x02450560, release_held, void(void *held));
-RT_ORIGINAL(0x013e5c40, base_destroy, void(HeldRecord *record));
+RT_ORIGINAL(0x02450560, release_held, uint64_t(void *held));
 RT_ORIGINAL(0x02fbe588, free_record, uint64_t(HeldRecord *record));
 
 }  // namespace
 
 /**
  *
- * Sets the record's vtable, releases the held pointer and clears it, runs the base destructor, then frees the record.
+ * Sets the record's vtable, releases the held pointer and clears it, then frees the record.
  *
- * The free call's result is returned. Nothing is released when no pointer is held.
+ * The chained base destructor at 0x013e5c40 is a bare return, so the replacement does not call it. The
+ * free call's result is returned. Nothing is released when no pointer is held.
  */
 extern "C" uint64_t bb_misc_clear_held_destroy_then_free(HeldRecord *record)
 {
@@ -36,6 +36,5 @@ extern "C" uint64_t bb_misc_clear_held_destroy_then_free(HeldRecord *record)
         release_held(record->held);
         record->held = nullptr;
     }
-    base_destroy(record);
     return free_record(record);
 }
