@@ -5400,6 +5400,7 @@ address,replacement,system,returns
 0x0139f760,bb_auto_copy_block_0139f760,auto,void
 0x013a0920,bb_misc_match_text_member_013a0920,misc,i64
 0x013a1850,bb_misc_ensure_shared_instance_013a1850,misc,void
+0x013a2a40,bb_misc_compose_member_text_013a2a40,misc,i64
 0x013a2bd0,bb_misc_match_member_text_013a2bd0,misc,i64
 0x013a2df0,bb_misc_member_text_fallback_013a2df0,misc,i64
 0x013a4bd0,bb_auto_bind_vtable_013a4bd0,auto,void
