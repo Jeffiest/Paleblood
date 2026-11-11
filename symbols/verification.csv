@@ -45692,6 +45692,7 @@ misc_free_flagged_payload_then_release,edge,,7,7,0,0,f8182296fbc917e4,2026-11-10
 misc_gated_clear_value,edge,,5,3,2,0,351aa0b611603a91,2026-11-09
 misc_gated_read_bit,edge,,8,8,0,0,c4e1e1c4f4b89dcc,2026-11-09
 misc_gated_store_value,edge,,6,6,0,0,df2446ff7fd5897a,2026-11-09
+misc_hand_off_two_arrays,edge,,8,8,0,0,c72f2c6cef9e56bf,2026-11-11
 misc_has_marked_record,edge,,10,10,0,0,33a580adf5c74a91,2026-11-10
 misc_held_block_delete_02242ea0,edge,,5,5,0,0,a26573f0674ea49e,2026-11-09
 misc_held_block_destroy_02242ee0,edge,,5,5,0,0,0e9c32eabec69d0e,2026-11-09
