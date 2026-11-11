@@ -7,7 +7,7 @@
 
 namespace {
 
-RT_ORIGINAL(0x013ac0a0, fn_013ac0a0, void *(void *member, uint64_t first, uint64_t second));
+RT_ORIGINAL(0x013ac0a0, fn_013ac0a0, void *(void *member));
 
 }  // namespace
 
@@ -16,8 +16,8 @@ RT_ORIGINAL(0x013ac0a0, fn_013ac0a0, void *(void *member, uint64_t first, uint64
  * Returns nothing unless the holder is enabled and has a member; then returns the routine's result for the member.
  *
  */
-extern "C" void *bb_misc_member_object_013a3040(misc::TextMemberHolder *holder, uint64_t first, uint64_t second)
+extern "C" void *bb_misc_member_object_013a3040(misc::TextMemberHolder *holder)
 {
     if (holder->enabled_0x00 == 0 || holder->member_0x18 == nullptr) return nullptr;
-    return fn_013ac0a0(holder->member_0x18, first, second);
+    return fn_013ac0a0(holder->member_0x18);
 }

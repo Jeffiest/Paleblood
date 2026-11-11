@@ -25,8 +25,8 @@ def case(cid, enabled=1, member=True, result=True):
     m = [{'addr': 'buf:holder+24', 'pointer': 'member'} if member else {'addr': 'buf:holder+24', 'bytes': '00' * 8}]
     stubs = []
     if enabled and member:
-        stubs.append({'address': ROUTINE, 'argc': 3, 'argi': [0, 1, 2], 'ret': 'buf:obj' if result else 0})
-    return {'schema': 1, 'address': ADDRESS, 'id': cid, 'returns': 'i64', 'args': {'rdi': 'buf:holder', 'rsi': 0x1234, 'rdx': 0x5678},
+        stubs.append({'address': ROUTINE, 'argc': 1, 'argi': [0], 'ret': 'buf:obj' if result else 0})
+    return {'schema': 1, 'address': ADDRESS, 'id': cid, 'returns': 'i64', 'args': {'rdi': 'buf:holder'},
             'buffers': b, 'memory': m, 'stubs': stubs, 'imports': []}
 
 
