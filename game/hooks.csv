@@ -11438,10 +11438,14 @@ address,replacement,system,returns
 0x0188df40,bb_auto_bind_vtable_0188df40,auto,void
 0x0188df70,bb_auto_bind_vtable_0188df70,auto,void
 0x0188dfa0,bb_auto_initialize_static_wide_string_0188dfa0,auto,void
+0x0188e0f0,bb_misc_init_byte_record_or_allocate,misc,i64
+0x0188e130,bb_misc_init_byte_record_or_allocate_0188e130,misc,i64
+0x0188e190,bb_misc_release_then_optional_delete,misc,i64
 0x0188e1c0,bb_auto_empty_0188e1c0,auto,void
 0x0188e1d0,bb_auto_delete_object_thunk_0188e1d0,auto,void
 0x0188e1f0,bb_auto_empty_0188e1f0,auto,void
 0x0188e200,bb_auto_delete_object_thunk_0188e200,auto,void
+0x0188e210,bb_misc_invoke_member_pointer,misc,i64
 0x0188e240,bb_auto_empty_0188e240,auto,void
 0x0188e250,bb_auto_delete_object_thunk_0188e250,auto,void
 0x0188e260,bb_auto_tail_call_offset_member_thunk_0188e260,auto,i64
@@ -11458,7 +11462,10 @@ address,replacement,system,returns
 0x0188e440,bb_auto_destroy_then_release_0188e440,auto,i64
 0x0188e460,bb_auto_tail_call_member_target_0188e460,auto,void
 0x0188e490,bb_auto_member_call_or_fallback_0188e490,auto,i64
+0x0188e4d0,bb_misc_clear_held_then_chain_destroy,misc,i64
+0x0188e510,bb_misc_clear_held_destroy_then_free,misc,i64
 0x0188e550,bb_auto_member_call_0188e550,auto,i64
+0x0188e570,bb_misc_grow_element_storage,misc,void
 0x018904d0,bb_auto_tree_destroy_nodes_018904d0,auto,void
 0x01890b30,bb_auto_return_field_01890b30,auto,i64
 0x01890b40,bb_auto_bind_vtable_01890b40,auto,void
@@ -11471,6 +11478,7 @@ address,replacement,system,returns
 0x01891050,bb_auto_bind_vtable_01891050,auto,void
 0x01891080,bb_auto_initialize_static_wide_string_01891080,auto,void
 0x01891190,bb_auto_setup_static_objects_01891190,auto,i64
+0x018921b0,bb_misc_dispatch_member_slots,misc,i64
 0x01892d10,bb_auto_jump_thunk_01892d10,auto,i64
 0x018935d0,bb_auto_bind_vtable_018935d0,auto,void
 0x01893600,bb_auto_bind_vtable_01893600,auto,void
@@ -11490,6 +11498,7 @@ address,replacement,system,returns
 0x01894690,bb_auto_fixed_address_01894690,auto,i64
 0x018946a0,bb_auto_fixed_address_018946a0,auto,i64
 0x018946b0,bb_auto_fixed_address_018946b0,auto,i64
+0x01895250,bb_misc_append_vector_element,misc,void
 0x01895b30,bb_auto_bind_vtable_01895b30,auto,void
 0x01895b60,bb_auto_bind_vtable_01895b60,auto,void
 0x01895b90,bb_auto_bind_vtable_01895b90,auto,void
@@ -11529,9 +11538,12 @@ address,replacement,system,returns
 0x0189e410,bb_auto_destroy_then_release_0189e410,auto,i64
 0x0189e430,bb_auto_tail_call_member_target_0189e430,auto,void
 0x0189e460,bb_auto_member_call_or_fallback_0189e460,auto,i64
+0x0189e790,bb_misc_grow_word_storage,misc,void
 0x0189e890,bb_auto_push_value_by_reference_0189e890,auto,void
+0x0189e970,bb_misc_init_timed_record,misc,i64
 0x0189e9b0,bb_auto_destroy_then_release_0189e9b0,auto,i64
 0x0189e9d0,bb_auto_jump_thunk_0189e9d0,auto,i64
+0x0189e9e0,bb_misc_tick_timed_record,misc,void
 0x0189ea20,bb_auto_bind_vtable_0189ea20,auto,void
 0x0189ea50,bb_auto_bind_vtable_0189ea50,auto,void
 0x0189ea80,bb_auto_bind_vtable_0189ea80,auto,void

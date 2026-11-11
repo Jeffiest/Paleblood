@@ -11439,10 +11439,14 @@ address,size,name,system,status,notes
 0x0188df40,41,auto_bind_vtable_0188df40,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
 0x0188df70,41,auto_bind_vtable_0188df70,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
 0x0188dfa0,205,auto_initialize_static_wide_string_0188dfa0,auto,edge-verified,Same instructions as engine_initialize_static_wide_string_018867e0 with other addresses
+0x0188e0f0,60,misc_init_byte_record_or_allocate,misc,edge-verified,Stores the vtable and the source byte at 0x08 into the given record or a new 16-byte block and returns it; reports allocation failure
+0x0188e130,60,misc_init_byte_record_or_allocate_0188e130,misc,edge-verified,Stores the vtable and the source byte at 0x08 into the given record or a new 16-byte block and returns it; reports allocation failure
+0x0188e190,41,misc_release_then_optional_delete,misc,edge-verified,Calls the release slot at 0x28 of the object vtable then tail-calls the free at 0x02fbe588 when the flag low byte is set and returns the last callee result
 0x0188e1c0,1,auto_empty_0188e1c0,auto,edge-verified,Generated from the empty template
 0x0188e1d0,5,auto_delete_object_thunk_0188e1d0,auto,edge-verified,Same instructions as misc_delete_object_thunk with other addresses
 0x0188e1f0,1,auto_empty_0188e1f0,auto,edge-verified,Generated from the empty template
 0x0188e200,5,auto_delete_object_thunk_0188e200,auto,edge-verified,Same instructions as misc_delete_object_thunk with other addresses
+0x0188e210,43,misc_invoke_member_pointer,misc,edge-verified,Calls a member function pointer on its adjusted subobject passing the other arguments on or returns the pointer when the function or subobject is empty
 0x0188e240,1,auto_empty_0188e240,auto,edge-verified,Generated from the empty template
 0x0188e250,5,auto_delete_object_thunk_0188e250,auto,edge-verified,Same instructions as misc_delete_object_thunk with other addresses
 0x0188e260,50,auto_tail_call_offset_member_thunk_0188e260,auto,edge-verified,Same instructions as misc_tail_call_offset_member_thunk with other addresses
@@ -11459,7 +11463,10 @@ address,size,name,system,status,notes
 0x0188e440,28,auto_destroy_then_release_0188e440,auto,edge-verified,Same instructions as misc_destroy_then_release with other addresses
 0x0188e460,39,auto_tail_call_member_target_0188e460,auto,edge-verified,Same instructions as misc_tail_call_member_target with other addresses
 0x0188e490,63,auto_member_call_or_fallback_0188e490,auto,edge-verified,Same instructions as misc_member_call_or_fallback with other addresses
+0x0188e4d0,55,misc_clear_held_then_chain_destroy,misc,edge-verified,Sets the record vtable and releases then clears the held pointer at 0x10 when set returning RAX as left (the vtable or the release result) since the chained 0x013e5c40 is a bare return
+0x0188e510,63,misc_clear_held_destroy_then_free,misc,edge-verified,Sets the record vtable releases and clears the held pointer at 0x10 when set then frees the record through 0x02fbe588 and returns its result
 0x0188e550,30,auto_member_call_0188e550,auto,edge-verified,Same instructions as misc_member_call_02242a10 with other addresses and constants
+0x0188e570,245,misc_grow_element_storage,misc,edge-verified,Grows the list storage to the requested element count moving the stored elements into a new block and freeing the old one or reporting the refused allocation
 0x018904d0,81,auto_tree_destroy_nodes_018904d0,auto,edge-verified,Same instructions as engine_tree_destroy_nodes with other addresses
 0x01890b30,5,auto_return_field_01890b30,auto,edge-verified,Generated from the return field template
 0x01890b40,41,auto_bind_vtable_01890b40,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
@@ -11472,6 +11479,7 @@ address,size,name,system,status,notes
 0x01891050,41,auto_bind_vtable_01891050,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
 0x01891080,205,auto_initialize_static_wide_string_01891080,auto,edge-verified,Same instructions as engine_initialize_static_wide_string_018867e0 with other addresses
 0x01891190,472,auto_setup_static_objects_01891190,auto,edge-verified,Same instructions as misc_setup_static_objects_02243d30 with other addresses
+0x018921b0,133,misc_dispatch_member_slots,misc,edge-verified,Visits the member slots from the object index calling each with the status and step while the callee leaves the pending flag set up to 128 times
 0x01892d10,5,auto_jump_thunk_01892d10,auto,edge-verified,Same instructions as misc_jump_thunk with other addresses
 0x018935d0,41,auto_bind_vtable_018935d0,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
 0x01893600,41,auto_bind_vtable_01893600,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
@@ -11491,6 +11499,7 @@ address,size,name,system,status,notes
 0x01894690,8,auto_fixed_address_01894690,auto,edge-verified,Same instructions as misc_plain_type_address with other addresses
 0x018946a0,8,auto_fixed_address_018946a0,auto,edge-verified,Same instructions as misc_plain_type_address with other addresses
 0x018946b0,8,auto_fixed_address_018946b0,auto,edge-verified,Same instructions as misc_plain_type_address with other addresses
+0x01895250,257,misc_append_vector_element,misc,edge-verified,Appends a copy of a 0xd8-byte element to a vector growing its storage first when full and copying from the storage after growth when the element is stored in the vector
 0x01895b30,41,auto_bind_vtable_01895b30,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
 0x01895b60,41,auto_bind_vtable_01895b60,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
 0x01895b90,41,auto_bind_vtable_01895b90,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
@@ -11530,9 +11539,12 @@ address,size,name,system,status,notes
 0x0189e410,28,auto_destroy_then_release_0189e410,auto,edge-verified,Same instructions as misc_destroy_then_release with other addresses
 0x0189e430,39,auto_tail_call_member_target_0189e430,auto,edge-verified,Same instructions as misc_tail_call_member_target with other addresses
 0x0189e460,63,auto_member_call_or_fallback_0189e460,auto,edge-verified,Same instructions as misc_member_call_or_fallback with other addresses
+0x0189e790,251,misc_grow_word_storage,misc,edge-verified,Grows the list of 8-byte words to the requested count moving the stored words into a new block and freeing the old one or reporting the refused allocation
 0x0189e890,218,auto_push_value_by_reference_0189e890,auto,edge-verified,Same instructions as misc_push_value_by_reference with other addresses
+0x0189e970,52,misc_init_timed_record,misc,edge-verified,Initializes the base record then sets the vtable both five second timer fields and a zero counter returning the packed timer pair left in RAX
 0x0189e9b0,28,auto_destroy_then_release_0189e9b0,auto,edge-verified,Same instructions as misc_destroy_then_release with other addresses
 0x0189e9d0,5,auto_jump_thunk_0189e9d0,auto,edge-verified,Same instructions as misc_jump_thunk with other addresses
+0x0189e9e0,54,misc_tick_timed_record,misc,edge-verified,Subtracts the step from the remaining time and when it is no longer above zero reloads it from the period and advances the counter to a limit of three
 0x0189ea20,41,auto_bind_vtable_0189ea20,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
 0x0189ea50,41,auto_bind_vtable_0189ea50,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
 0x0189ea80,41,auto_bind_vtable_0189ea80,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
