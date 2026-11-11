@@ -39723,6 +39723,7 @@ address,replacement,system,returns
 0x02b49a40,bb_auto_delete_object_thunk_02b49a40,auto,void
 0x02b4a2d0,bb_auto_delete_object_thunk_02b4a2d0,auto,void
 0x02b4a2f0,bb_misc_init_tagged_record,misc,i64
+0x02b4a380,bb_misc_init_tagged_record_alt,misc,i64
 0x02b4a410,bb_auto_fixed_address_02b4a410,auto,i64
 0x02b4a4b0,bb_auto_delete_object_thunk_02b4a4b0,auto,void
 0x02b4a5f0,bb_auto_fixed_address_02b4a5f0,auto,i64
