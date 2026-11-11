@@ -5,6 +5,7 @@
 #include <cstddef>
 #include <cstdint>
 
+#include "../engine/engine.h"
 #include "runtime/original.h"
 
 namespace misc {
@@ -38,5 +39,24 @@ struct KeyedCounterTable {
 };
 static_assert(offsetof(KeyedCounterTable, entries_0x8008) == 0x8008);
 static_assert(sizeof(KeyedCounterTable) == 0x88000);
+
+/**
+ *
+ * The shared counter table, which the engine must have: a missing one is reported by name, then read again.
+ *
+ * The two arguments are the registers after the first three that the report passes on: the report does not read them.
+ *
+ */
+inline KeyedCounterTable *require_counter_table(uint64_t report_arg_0, uint64_t report_arg_1)
+{
+    KeyedCounterTable *table = keyed_counter_table.get();
+    if (table == nullptr) {
+        engine::fatal_error(engine::singleton_check_file.address(), engine::singleton_check_line,
+                            engine::singleton_check_message.address(), keyed_counter_table_name.address(),
+                            report_arg_0, report_arg_1);
+        table = keyed_counter_table.get();
+    }
+    return table;
+}
 
 }  // namespace misc

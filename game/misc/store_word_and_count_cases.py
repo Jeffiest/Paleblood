@@ -38,9 +38,9 @@ def case(cid, word, entries=(), table=True):
             memory.append({'addr': f'buf:table+{ENTRIES_OFFSET + ENTRY_SIZE * index:#x}',
                            'bytes': le32(key) + le32(count)})
     else:
-        stubs.append({'address': NAME_FATAL, 'argc': 4})
+        stubs.append({'address': NAME_FATAL, 'argc': 6})
     return {'schema': 1, 'address': ADDRESS, 'id': cid, 'returns': 'i64',
-            'args': {'rdi': 'buf:dest', 'rsi': 'buf:word'},
+            'args': {'rdi': 'buf:dest', 'rsi': 'buf:word', 'r8': '0x0', 'r9': '0x0'},
             'buffers': {'dest': {'size': 4}, 'word': {'size': 4, 'bytes': le32(word)},
                         'table': {'size': TABLE_SIZE}},
             'memory': memory, 'stubs': stubs, 'imports': []}

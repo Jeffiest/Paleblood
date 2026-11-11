@@ -21,13 +21,16 @@ constexpr uint32_t kLow16Mask = 0xffff;       /**< The index part of a word; all
  *
  * Returns the word, as the original leaves it in RAX.
  *
+ * The last two integer registers are the arguments a missing-table report passes on: the report does not read them.
+ *
  */
-extern "C" uint64_t bb_misc_store_word_and_count_01e8bb70(uint32_t *destination, const uint32_t *word)
+extern "C" uint64_t bb_misc_store_word_and_count_01e8bb70(uint32_t *destination, const uint32_t *word, uint64_t,
+                                                          uint64_t, uint64_t report_arg_0, uint64_t report_arg_1)
 {
     const uint32_t value = *word;
     *destination = value;
     if (value == 0) return value;
-    misc::KeyedCounterTable *table = engine::require(misc::keyed_counter_table, misc::keyed_counter_table_name.address());
+    misc::KeyedCounterTable *table = misc::require_counter_table(report_arg_0, report_arg_1);
     uint32_t index = value & kLow24Mask;
     if (index == kLow24Mask) index = kNoIndex;
     if ((index & kIndexFlag) == 0) return value;
