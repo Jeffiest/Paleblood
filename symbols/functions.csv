@@ -35223,6 +35223,7 @@ address,size,name,system,status,notes
 0x026f3d30,124,misc_destroy_chain_node_3d30,misc,edge-verified,Destroys a chain of tree nodes by destroying each left child first then freeing the buffer and the node
 0x026f3db0,124,misc_destroy_chain_node_3db0,misc,edge-verified,Destroys a chain of tree nodes by destroying each left child first then freeing the buffer and the node
 0x026f3e30,124,misc_destroy_chain_node_3e30,misc,edge-verified,Destroys a chain of tree nodes by destroying each left child first then freeing the buffer and the node
+0x026f4330,451,misc_destroy_chain_lists,misc,edge-verified,Sets the object vtable then releases its six chain lists by destroying each chain then relinking and freeing its sentinel and zeroing its count
 0x026f4500,81,auto_tree_destroy_nodes_026f4500,auto,edge-verified,Same instructions as engine_tree_destroy_nodes with other addresses
 0x026f47c0,218,auto_push_value_by_reference_026f47c0,auto,edge-verified,Same instructions as misc_push_value_by_reference with other addresses
 0x026f6b90,41,auto_bind_vtable_026f6b90,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses

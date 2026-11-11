@@ -35222,6 +35222,7 @@ address,replacement,system,returns
 0x026f3d30,bb_misc_destroy_chain_node_3d30,misc,void
 0x026f3db0,bb_misc_destroy_chain_node_3db0,misc,void
 0x026f3e30,bb_misc_destroy_chain_node_3e30,misc,void
+0x026f4330,bb_misc_destroy_chain_lists,misc,void
 0x026f4500,bb_auto_tree_destroy_nodes_026f4500,auto,void
 0x026f47c0,bb_auto_push_value_by_reference_026f47c0,auto,void
 0x026f6b90,bb_auto_bind_vtable_026f6b90,auto,void

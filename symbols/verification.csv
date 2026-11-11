@@ -45627,6 +45627,7 @@ misc_count_subtree_leaves,edge,,10,10,0,0,76ae6fa4641c1b40,2026-11-09
 misc_create_checked,edge,,7,7,0,0,8c8b92540b6c67c2,2026-11-11
 misc_delete_object_thunk,edge,,6,6,0,0,219308cbf84e73ff,2026-11-10
 misc_descriptor_type_address,edge,,1,1,0,0,43e00eb2669c1418,2026-11-09
+misc_destroy_chain_lists,edge,,2,2,0,0,b2173b0902b43ef2,2026-11-11
 misc_destroy_chain_node,edge,,8,8,0,0,a8be83c959ded117,2026-11-10
 misc_destroy_chain_node_3c30,edge,,6,6,0,0,dcf0b8fa2e61950d,2026-11-09
 misc_destroy_chain_node_3cb0,edge,,6,6,0,0,1ef08f7700b951fe,2026-11-09
