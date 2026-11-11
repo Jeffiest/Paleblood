@@ -1,0 +1,23 @@
+// SPDX-License-Identifier: GPL-2.0-or-later
+// Misc: hands the member of an enabled holder to its routine and returns what that routine gives.
+#include <cstdint>
+
+#include "runtime/original.h"
+#include "text_member_holder.h"
+
+namespace {
+
+RT_ORIGINAL(0x013ac0a0, fn_013ac0a0, void *(void *member));
+
+}  // namespace
+
+/**
+ *
+ * Returns nothing unless the holder is enabled and has a member; then returns the routine's result for the member.
+ *
+ */
+extern "C" void *bb_misc_member_object_013a3040(misc::TextMemberHolder *holder)
+{
+    if (holder->enabled_0x00 == 0 || holder->member_0x18 == nullptr) return nullptr;
+    return fn_013ac0a0(holder->member_0x18);
+}

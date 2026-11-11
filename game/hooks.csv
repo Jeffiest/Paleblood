@@ -5420,6 +5420,17 @@ address,replacement,system,returns
 0x0139f700,bb_auto_bind_vtable_0139f700,auto,void
 0x0139f730,bb_auto_bind_vtable_0139f730,auto,void
 0x0139f760,bb_auto_copy_block_0139f760,auto,void
+0x013a0920,bb_misc_match_text_member_013a0920,misc,i64
+0x013a1850,bb_misc_ensure_shared_instance_013a1850,misc,void
+0x013a2a40,bb_misc_compose_member_text_013a2a40,misc,i64
+0x013a2bd0,bb_misc_match_member_text_013a2bd0,misc,i64
+0x013a2c30,bb_misc_compose_member_match_013a2c30,misc,i64
+0x013a2df0,bb_misc_member_text_fallback_013a2df0,misc,i64
+0x013a2e50,bb_misc_compose_member_value_013a2e50,misc,i64
+0x013a3020,bb_misc_member_object_013a3020,misc,i64
+0x013a3040,bb_misc_member_object_013a3040,misc,i64
+0x013a3060,bb_misc_match_text_key_013a3060,misc,i64
+0x013a3260,bb_misc_report_member_text_013a3260,misc,void
 0x013a4bd0,bb_auto_bind_vtable_013a4bd0,auto,void
 0x013a4c00,bb_auto_bind_vtable_013a4c00,auto,void
 0x013a4c30,bb_auto_bind_vtable_013a4c30,auto,void
