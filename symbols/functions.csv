@@ -35230,6 +35230,7 @@ address,size,name,system,status,notes
 0x026f6bc0,41,auto_bind_vtable_026f6bc0,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
 0x026f6bf0,41,auto_bind_vtable_026f6bf0,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
 0x026f6c20,59,auto_destroy_node_and_free_026f6c20,auto,edge-verified,Same instructions as misc_destroy_node_and_free with other addresses
+0x026f6c60,21,misc_inline_or_heap_buffer_6c60,misc,edge-verified,Returns the address of the inline buffer below a capacity of eight else the heap pointer stored in the buffer
 0x026f6da0,5,auto_jump_thunk_026f6da0,auto,edge-verified,Same instructions as misc_jump_thunk with other addresses
 0x026f7780,41,auto_bind_vtable_026f7780,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
 0x026f77b0,41,auto_bind_vtable_026f77b0,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses

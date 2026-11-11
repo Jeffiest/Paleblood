@@ -35229,6 +35229,7 @@ address,replacement,system,returns
 0x026f6bc0,bb_auto_bind_vtable_026f6bc0,auto,void
 0x026f6bf0,bb_auto_bind_vtable_026f6bf0,auto,void
 0x026f6c20,bb_auto_destroy_node_and_free_026f6c20,auto,void
+0x026f6c60,bb_misc_inline_or_heap_buffer_6c60,misc,i64
 0x026f6da0,bb_auto_jump_thunk_026f6da0,auto,i64
 0x026f7780,bb_auto_bind_vtable_026f7780,auto,void
 0x026f77b0,bb_auto_bind_vtable_026f77b0,auto,void
