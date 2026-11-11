@@ -11406,6 +11406,7 @@ address,size,name,system,status,notes
 0x0188df40,41,auto_bind_vtable_0188df40,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
 0x0188df70,41,auto_bind_vtable_0188df70,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
 0x0188dfa0,205,auto_initialize_static_wide_string_0188dfa0,auto,edge-verified,Same instructions as engine_initialize_static_wide_string_018867e0 with other addresses
+0x0188e0f0,60,misc_init_byte_record_or_allocate,misc,edge-verified,Stores the vtable and the source byte at 0x08 into the given record or a new 16-byte block and returns it; reports allocation failure
 0x0188e1c0,1,auto_empty_0188e1c0,auto,edge-verified,Generated from the empty template
 0x0188e1d0,5,auto_delete_object_thunk_0188e1d0,auto,edge-verified,Same instructions as misc_delete_object_thunk with other addresses
 0x0188e1f0,1,auto_empty_0188e1f0,auto,edge-verified,Generated from the empty template
