@@ -5,23 +5,13 @@
 #include "../engine/allocator.h"
 #include "destroyable_node.h"
 #include "element_list_owner.h"
+#include "free_returning_vtable.h"
 #include "runtime/original.h"
 
 namespace {
 
 /** The allocator a node was created with, found from the node's address. */
 RT_ORIGINAL(0x0247b720, allocator_of, engine::Allocator *(misc::DestroyableNode *node));
-
-/**
- *
- * The allocator's vtable as this routine reads it: its free slot returns the value it leaves in RAX.
- *
- */
-struct FreeReturningVtable {
-    uint8_t unknown_0x0000[0x70];
-    uint64_t (*free)(engine::Allocator *allocator, void *data);
-};
-static_assert(offsetof(FreeReturningVtable, free) == 0x70);
 
 }  // namespace
 
@@ -38,7 +28,7 @@ uint64_t destroy_and_free_node(misc::DestroyableNode *node)
 {
     engine::Allocator *allocator = allocator_of(node);
     node->vtable->destroy(node);
-    return reinterpret_cast<const FreeReturningVtable *>(allocator->vtable)->free(allocator, node);
+    return reinterpret_cast<const misc::FreeReturningVtable *>(allocator->vtable)->free(allocator, node);
 }
 
 }  // namespace

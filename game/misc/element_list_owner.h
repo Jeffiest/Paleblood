@@ -31,7 +31,7 @@ struct ElementListOwner {
     uint8_t unknown_0x0008[0x08];
     DestroyableNode **first_begin_0x10;    /**< The first node pointer of the first list, also its array. */
     DestroyableNode **first_end_0x18;      /**< One past the last node pointer of the first list. */
-    uint8_t unknown_0x0020[0x08];
+    DestroyableNode **first_capacity_0x20; /**< The end of the first list's array. */
     engine::Allocator *first_allocator_0x28; /**< Releases the first list's array. */
     uint8_t unknown_0x0030[0x08];
     DestroyableNode **second_begin_0x38;   /**< The first node pointer of the second list, also its array. */
@@ -42,6 +42,7 @@ struct ElementListOwner {
 static_assert(offsetof(ElementListOwner, vtable) == 0x00);
 static_assert(offsetof(ElementListOwner, first_begin_0x10) == 0x10);
 static_assert(offsetof(ElementListOwner, first_end_0x18) == 0x18);
+static_assert(offsetof(ElementListOwner, first_capacity_0x20) == 0x20);
 static_assert(offsetof(ElementListOwner, first_allocator_0x28) == 0x28);
 static_assert(offsetof(ElementListOwner, second_begin_0x38) == 0x38);
 static_assert(offsetof(ElementListOwner, second_end_0x40) == 0x40);
