@@ -39745,6 +39745,7 @@ address,size,name,system,status,notes
 0x02b4bd20,41,auto_bind_vtable_02b4bd20,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
 0x02b4c050,5,auto_delete_object_thunk_02b4c050,auto,edge-verified,Same instructions as misc_delete_object_thunk with other addresses
 0x02b4c070,129,misc_init_tagged_record_second,misc,edge-verified,Zeroes the body of a third tagged record and stores the tag word and the vtable pointer then returns zero
+0x02b4c100,129,misc_init_tagged_record_third,misc,edge-verified,Zeroes the body of a fourth tagged record and stores the tag word and the vtable pointer then returns zero
 0x02b4c190,8,auto_fixed_address_02b4c190,auto,edge-verified,Same instructions as misc_plain_type_address with other addresses
 0x02b4c2e0,5,auto_delete_object_thunk_02b4c2e0,auto,edge-verified,Same instructions as misc_delete_object_thunk with other addresses
 0x02b4c420,8,auto_fixed_address_02b4c420,auto,edge-verified,Same instructions as misc_plain_type_address with other addresses
