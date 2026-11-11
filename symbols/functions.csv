@@ -39731,6 +39731,7 @@ address,size,name,system,status,notes
 0x02b4a8d0,5,auto_delete_object_thunk_02b4a8d0,auto,edge-verified,Same instructions as misc_delete_object_thunk with other addresses
 0x02b4aa10,8,auto_fixed_address_02b4aa10,auto,edge-verified,Same instructions as misc_plain_type_address with other addresses
 0x02b4af70,5,auto_delete_object_thunk_02b4af70,auto,edge-verified,Same instructions as misc_delete_object_thunk with other addresses
+0x02b4af90,126,misc_clear_tagged_record,misc,edge-verified,Zeroes the vtable pointer and the body of a tagged record then stores the tag word and returns zero
 0x02b4b090,8,auto_fixed_address_02b4b090,auto,edge-verified,Same instructions as misc_plain_type_address with other addresses
 0x02b4b0a0,5,auto_jump_thunk_02b4b0a0,auto,edge-verified,Same instructions as misc_jump_thunk with other addresses
 0x02b4b0b0,28,auto_destroy_then_release_02b4b0b0,auto,edge-verified,Same instructions as misc_destroy_then_release with other addresses
