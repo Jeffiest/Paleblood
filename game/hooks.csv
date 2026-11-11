@@ -74,6 +74,7 @@ address,replacement,system,returns
 0x004144c0,bb_auto_init_identity_rows_004144c0,auto,void
 0x00414510,bb_auto_init_identity_rows_00414510,auto,void
 0x00414920,bb_misc_format_eight_words,misc,i64
+0x00414a70,bb_misc_format_four_bytes,misc,i64
 0x00414b70,bb_misc_init_release_chain,misc,void
 0x00414b90,bb_misc_release_chain_nodes,misc,void
 0x00414be0,bb_misc_pool_cursor_allocate,misc,i64

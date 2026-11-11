@@ -45670,6 +45670,7 @@ misc_finish_pending_block_offset,edge,,7,7,0,0,1a48d345aa161f68,2026-11-10
 misc_finish_tracked_update,edge,,15,15,0,0,4c6bb3089d2ad90f,2026-11-11
 misc_flush_owner_once,edge,,5,5,0,0,45aa1a8e622f9bb7,2026-11-09
 misc_format_eight_words,edge,,4,4,0,0,75c7b88b2a345875,2026-11-11
+misc_format_four_bytes,edge,,4,4,0,0,2b141a3e2729dce2,2026-11-11
 misc_forward_child_tail,edge,,5,5,0,0,989f574c6f35b10e,2026-11-10
 misc_forward_index_02242c30,edge,,11,11,0,0,7f0cf449db39903b,2026-11-09
 misc_forward_member_call,edge,,7,7,0,0,0844241ef3780559,2026-11-09
