@@ -35294,12 +35294,25 @@ address,size,name,system,status,notes
 0x026f3d30,124,misc_destroy_chain_node_3d30,misc,edge-verified,Destroys a chain of tree nodes by destroying each left child first then freeing the buffer and the node
 0x026f3db0,124,misc_destroy_chain_node_3db0,misc,edge-verified,Destroys a chain of tree nodes by destroying each left child first then freeing the buffer and the node
 0x026f3e30,124,misc_destroy_chain_node_3e30,misc,edge-verified,Destroys a chain of tree nodes by destroying each left child first then freeing the buffer and the node
+0x026f4330,451,misc_destroy_chain_lists,misc,edge-verified,Sets the object vtable then releases its six chain lists by destroying each chain then relinking and freeing its sentinel and zeroing its count
 0x026f4500,81,auto_tree_destroy_nodes_026f4500,auto,edge-verified,Same instructions as engine_tree_destroy_nodes with other addresses
 0x026f47c0,218,auto_push_value_by_reference_026f47c0,auto,edge-verified,Same instructions as misc_push_value_by_reference with other addresses
 0x026f6b90,41,auto_bind_vtable_026f6b90,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
 0x026f6bc0,41,auto_bind_vtable_026f6bc0,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
 0x026f6bf0,41,auto_bind_vtable_026f6bf0,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
 0x026f6c20,59,auto_destroy_node_and_free_026f6c20,auto,edge-verified,Same instructions as misc_destroy_node_and_free with other addresses
+0x026f6c60,21,misc_inline_or_heap_buffer_6c60,misc,edge-verified,Returns the address of the inline buffer below a capacity of eight else the heap pointer stored in the buffer
+0x026f6c80,15,misc_forward_child_slot_38_6c80,misc,edge-verified,Forwards the reference child to the routine in its slot at +0x38 with a zero second argument and returns the result
+0x026f6c90,15,misc_forward_child_slot_40_6c90,misc,edge-verified,Forwards the reference child to the routine in its slot at +0x40 with a zero second argument and returns the result
+0x026f6ca0,15,misc_forward_child_slot_28_6ca0,misc,edge-verified,Forwards the reference child to the routine in its slot at +0x28 with a zero second argument and returns the result
+0x026f6cb0,15,misc_forward_child_slot_20_6cb0,misc,edge-verified,Forwards the reference child to the routine in its slot at +0x20 with a zero second argument and returns the result
+0x026f6cc0,15,misc_forward_child_slot_30_6cc0,misc,edge-verified,Forwards the reference child to the routine in its slot at +0x30 with a zero second argument and returns the result
+0x026f6cd0,15,misc_forward_child_slot_20_6cd0,misc,edge-verified,Forwards the reference child to the routine in its slot at +0x20 with a zero second argument and returns the result
+0x026f6ce0,15,misc_forward_child_slot_28_6ce0,misc,edge-verified,Forwards the reference child to the routine in its slot at +0x28 with a zero second argument and returns the result
+0x026f6cf0,15,misc_forward_child_slot_30_6cf0,misc,edge-verified,Forwards the reference child to the routine in its slot at +0x30 with a zero second argument and returns the result
+0x026f6d00,15,misc_forward_child_slot_38_6d00,misc,edge-verified,Forwards the reference child to the routine in its slot at +0x38 with a zero second argument and returns the result
+0x026f6d10,15,misc_forward_child_slot_40_6d10,misc,edge-verified,Forwards the reference child to the routine in its slot at +0x40 with a zero second argument and returns the result
+0x026f6d20,117,misc_init_defaulted_record_6d20,misc,edge-verified,Initializes the base then gives the record its vtable and sets its indices counts value scale and cleared words and returns the vtable
 0x026f6da0,5,auto_jump_thunk_026f6da0,auto,edge-verified,Same instructions as misc_jump_thunk with other addresses
 0x026f7780,41,auto_bind_vtable_026f7780,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
 0x026f77b0,41,auto_bind_vtable_026f77b0,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
