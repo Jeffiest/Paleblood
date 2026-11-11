@@ -1,0 +1,63 @@
+// SPDX-License-Identifier: GPL-2.0-or-later
+// Misc: when the scan owner is ready, scans a list for the first item the accept routine takes and reports whether that item ranks above two.
+#include <cstddef>
+#include <cstdint>
+
+#include "../engine/engine.h"
+#include "accept_scan.h"
+#include "item_list.h"
+#include "listed_item.h"
+#include "runtime/original.h"
+#include "scan_owner.h"
+#include "scan_source.h"
+
+namespace {
+
+RT_GLOBAL(0x0593d6d0, scan_owner, misc::ScanOwner *);
+RT_GLOBAL(0x05940290, scan_source, misc::ScanSource *);
+RT_GLOBAL(0x04d3b369, scan_file, const char);
+RT_GLOBAL(0x04d3b3bd, scan_format, const char);
+RT_GLOBAL(0x04d3a906, scan_argument, const char);
+constexpr int32_t scan_line = 0xb1;
+
+RT_ORIGINAL(0x0108fb30, begin_scan, void(misc::AcceptScan *scan));
+RT_ORIGINAL(0x010a1570, finish_scan, void(misc::AcceptScan *scan));
+RT_ORIGINAL(0x010a1c70, sink_accepts, uint8_t(void *sink, void *context));
+
+constexpr int32_t rank_limit = 2;
+constexpr int32_t ready_owner_state = 3;
+
+}  // namespace
+
+/**
+ *
+ * Scans a list for the first item the accept routine takes, when the scan owner is in its ready state, and reports
+ * whether that item ranks above two.
+ *
+ * Nothing is scanned unless the owner's state word reads three. A missing scan source is a fatal error, after which the
+ * scan goes on. A null item that is taken, or no item at all, reports false.
+ *
+ */
+extern "C" uint8_t bb_misc_accepted_item_rank_above_two(misc::ItemList *list)
+{
+    if (scan_owner.get()->state_0x84 != ready_owner_state) return false;
+    if (scan_source.get() == nullptr) {
+        engine::fatal_error(scan_file.address(), scan_line, scan_format.address(), scan_argument.address());
+    }
+
+    misc::AcceptScan scan;
+    begin_scan(&scan);
+    misc::ListedItem **const end = list->end_0x18;
+    for (misc::ListedItem **slot = list->begin_0x10; slot != end; ++slot) {
+        misc::ListedItem *item = *slot;
+        // The sink is addressed from the item's base even when the item is null, as the original does.
+        const auto sink_address = reinterpret_cast<uintptr_t>(item) + offsetof(misc::ListedItem, sink_region);
+        if (sink_accepts(reinterpret_cast<void *>(sink_address), &scan) != 0) {
+            finish_scan(&scan);
+            if (item == nullptr) return false;
+            return item->vtable->rank_0x58(item) > rank_limit;
+        }
+    }
+    finish_scan(&scan);
+    return false;
+}
