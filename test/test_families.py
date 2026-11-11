@@ -180,7 +180,7 @@ class Tables(unittest.TestCase):
             f.write('// changed\n')
         self.assertTrue(any('without a current, passing edge result' in e for e in self.errors()))
 
-    def test_duplicate_results_and_source_named_members_are_refused(self):
+    def test_duplicate_results_are_refused_and_a_source_may_name_a_member(self):
         source = fam.source_hash(self.d, {'family': 'returns_zero', 'system': 'leaf'})
         row = ['leaf_returns_zero_00401000', 'edge', '', '3', '3', '0', '0', source, '2026-11-10']
         write_csv(os.path.join(self.d, 'symbols', 'families', 'returns_zero.verification.csv'),
@@ -190,7 +190,8 @@ class Tables(unittest.TestCase):
         os.remove(os.path.join(self.d, 'symbols', 'families', 'returns_zero.verification.csv'))
         with open(os.path.join(self.d, 'game', 'leaf', 'observed.c'), 'w') as f:
             f.write('/* observed at 0x00401010u */\n')
-        self.assertTrue(any('names 0x00401010' in e for e in self.errors()))
+        # Fork: a listed member may be named by a source as a callee (docs/FAMILIES.md).
+        self.assertFalse(any('names 0x00401010' in e for e in self.errors()))
 
     def test_value_must_fit_the_shape(self):
         self.family(['returns_zero', 'leaf', '31 c0 c3', 'i64', '2', '6', 'xor eax, eax; ret'])
