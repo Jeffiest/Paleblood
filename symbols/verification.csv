@@ -45726,6 +45726,7 @@ misc_init_shared_record_once_guarded,edge,,8,8,0,0,49c2ae0e3fa7e7ec,2026-11-09
 misc_init_stream_guards_58b9d5c,edge,,10,10,0,0,54331b61c4ab8c46,2026-11-10
 misc_init_tagged_record,edge,,7,7,0,0,9ef08d15b27d9f9d,2026-11-11
 misc_init_tagged_record_alt,edge,,7,7,0,0,25431bc5c5e7a624,2026-11-11
+misc_init_tagged_record_second,edge,,7,7,0,0,f461650d8cd64ef0,2026-11-11
 misc_init_value_record,edge,,8,8,0,0,57f649b02fe70774,2026-11-09
 misc_init_vtable_subobject,edge,,7,7,0,0,be35856bcedd4623,2026-11-09
 misc_inline_text_destroy,edge,,6,6,0,0,2f0aafea2a74b5d6,2026-11-09
