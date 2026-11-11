@@ -28402,6 +28402,7 @@ address,size,name,system,status,notes
 0x02254da0,5,auto_jump_thunk_02254da0,auto,edge-verified,Same instructions as misc_jump_thunk with other addresses
 0x02255560,72,misc_all_items_rank_above_three,misc,edge-verified,Reports whether every item of a list ranks above three asking each items rank slot in turn and stopping at the first that does not
 0x022555b0,87,misc_set_flag_on_first_accepting_item,misc,edge-verified,Sets flag bit 0x01 on the first item of a list whose sink the accept routine takes asking each item in turn and returns the last answer
+0x02255690,87,misc_set_flag_on_first_accepting_item_8,misc,edge-verified,Sets flag bit 0x08 on the first item of a list whose sink the accept routine takes asking each item in turn and returns the last answer
 0x02255870,41,auto_bind_vtable_02255870,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
 0x022558a0,41,auto_bind_vtable_022558a0,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
 0x022558d0,41,auto_bind_vtable_022558d0,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
