@@ -28393,6 +28393,7 @@ address,replacement,system,returns
 0x02253fa0,bb_auto_fixed_address_02253fa0,auto,i64
 0x02253fb0,bb_auto_fixed_address_02253fb0,auto,i64
 0x02254600,bb_misc_copy_record_fields,misc,i64
+0x02254740,bb_misc_destroy_element_list_owner,misc,i64
 0x02254830,bb_misc_clear_node_lists,misc,i64
 0x02254da0,bb_auto_jump_thunk_02254da0,auto,i64
 0x02255870,bb_auto_bind_vtable_02255870,auto,void

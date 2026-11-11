@@ -28394,6 +28394,7 @@ address,size,name,system,status,notes
 0x02253fa0,8,auto_fixed_address_02253fa0,auto,edge-verified,Same instructions as misc_plain_type_address with other addresses
 0x02253fb0,8,auto_fixed_address_02253fb0,auto,edge-verified,Same instructions as misc_plain_type_address with other addresses
 0x02254600,52,misc_copy_record_fields,misc,edge-verified,Copies the mode identifiers pointer count link and extra words of a source record into a destination record and stores the key and flag Returns the source second identifier zero-extended
+0x02254740,102,misc_destroy_element_list_owner,misc,edge-verified,Destructor of an owner of two node lists: stores its vtable empties the lists then frees the second array and the first array through their allocators and returns the release routine result
 0x02254830,185,misc_clear_node_lists,misc,edge-verified,Empties two node lists of an owner: each non-null node is destroyed through its vtable slot 8 and freed through its allocator then each end is set to its begin Returns the last free result
 0x02254da0,5,auto_jump_thunk_02254da0,auto,edge-verified,Same instructions as misc_jump_thunk with other addresses
 0x02255870,41,auto_bind_vtable_02255870,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
