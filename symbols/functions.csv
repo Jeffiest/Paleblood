@@ -21624,6 +21624,7 @@ address,size,name,system,status,notes
 0x01e86780,205,auto_initialize_static_wide_string_01e86780,auto,edge-verified,Same instructions as engine_initialize_static_wide_string_018867e0 with other addresses
 0x01e86850,49,auto_copy_block_01e86850,auto,edge-verified,Same instructions as misc_copy_block_58b3240 with other addresses
 0x01e86db0,8,auto_return_member_address_01e86db0,auto,edge-verified,Generated from the return member address template
+0x01e86dc0,64,misc_count_keyed_entry_01e86dc0,misc,edge-verified,Counts a value in a keyed table when its low bits name an entry whose key equals the value
 0x01e88ea0,8,auto_fixed_address_01e88ea0,auto,edge-verified,Same instructions as misc_plain_type_address with other addresses
 0x01e88eb0,41,auto_bind_vtable_01e88eb0,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
 0x01e88ee0,41,auto_bind_vtable_01e88ee0,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
