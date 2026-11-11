@@ -2080,6 +2080,14 @@ address,size,name,system,status,notes
 0x00c23930,75,auto_held_member_object_free_00c23930,auto,edge-verified,Same instructions as misc_held_member_object_free with other addresses and constants
 0x00c24100,8,auto_fixed_address_00c24100,auto,edge-verified,Same instructions as misc_plain_type_address with other addresses
 0x00c24110,5,auto_jump_thunk_00c24110,auto,edge-verified,Same instructions as misc_jump_thunk with other addresses
+0x00c24320,375,misc_replace_holder_and_hand_off,misc,edge-verified,Replaces the object's held item counting the new one and dropping the old then hands two arrays built from its branches to the object and frees the owned ones
+0x00c244a0,35,misc_construct_derived_object,misc,edge-verified,Runs the base constructor on the object then stores the derived vtable address point in its first word and returns it
+0x00c244d0,184,misc_delete_derived_object,misc,edge-verified,Deleting destructor of a derived object: stores its vtable drops its held reference runs the base destructor then frees the block through the thread allocator and returns the free result
+0x00c24590,128,misc_release_derived_object,misc,edge-verified,Destructor of a derived object that is not freed: stores its vtable drops its held reference then tail-calls the base destructor and returns its result
+0x00c24610,234,misc_hand_off_two_arrays,misc,edge-verified,Fills two stack arrays from a source then hands them to the object and frees the owned storage of the second then the first
+0x00c24700,56,misc_copy_source_vector_pair,misc,edge-verified,Copies the source vector at +0x1e0 to the first output and the +0x1a0 vector plus the addend +0x30 vector when present to the second; returns the addend
+0x00c24740,20,misc_copy_source_vector,misc,edge-verified,Copies the source vector at +0x230 to the output; returns the source pointer
+0x00c24760,16,misc_child_pointer_present,misc,edge-verified,Reports whether the owner's holder at +0xb0 has a non-null child at +0x10
 0x00c25720,8,auto_fixed_address_00c25720,auto,edge-verified,Same instructions as misc_plain_type_address with other addresses
 0x00c25730,5,auto_jump_thunk_00c25730,auto,edge-verified,Same instructions as misc_jump_thunk with other addresses
 0x00c25d60,8,auto_return_field_00c25d60,auto,edge-verified,Generated from the return field template
@@ -2197,10 +2205,14 @@ address,size,name,system,status,notes
 0x00ca6c50,5,auto_jump_thunk_00ca6c50,auto,edge-verified,Same instructions as misc_jump_thunk with other addresses
 0x00ca6c60,5,auto_jump_thunk_00ca6c60,auto,edge-verified,Same instructions as misc_jump_thunk with other addresses
 0x00caa310,5,auto_jump_thunk_00caa310,auto,edge-verified,Same instructions as misc_jump_thunk with other addresses
+0x00cb1040,73,misc_apply_each_slot,misc,edge-verified,Visits each slot of a table in order reading a value from the source for each and storing it back into the slot
+0x00cb1090,351,misc_find_or_add_record,misc,edge-verified,Finds the record of a key or adds it copying the source record appending the key row values and storing the index in the index table
 0x00cb11f0,8,auto_fixed_address_00cb11f0,auto,edge-verified,Same instructions as misc_plain_type_address with other addresses
 0x00cb1220,8,auto_fixed_address_00cb1220,auto,edge-verified,Same instructions as misc_plain_type_address with other addresses
 0x00cb1240,8,auto_fixed_address_00cb1240,auto,edge-verified,Same instructions as misc_plain_type_address with other addresses
+0x00cb1260,503,misc_register_three_types,misc,edge-verified,Registers three types with their names tables and kinds then fills each static descriptor and returns the third descriptor address
 0x00cb1460,8,auto_fixed_address_00cb1460,auto,edge-verified,Same instructions as misc_plain_type_address with other addresses
+0x00cb1480,94,misc_release_single_item,misc,edge-verified,Releases the held reference item at +0x20 dropping its reference and destroying it on the last one then clears the item pointer and its count
 0x00cb1590,8,auto_fixed_address_00cb1590,auto,edge-verified,Same instructions as misc_plain_type_address with other addresses
 0x00cb15a0,113,auto_register_plain_type_00cb15a0,auto,edge-verified,Same instructions as misc_register_plain_type with other addresses
 0x00cb1620,8,auto_fixed_address_00cb1620,auto,edge-verified,Same instructions as misc_plain_type_address with other addresses
