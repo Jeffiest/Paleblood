@@ -2369,6 +2369,7 @@ address,replacement,system,returns
 0x00cec240,bb_auto_fixed_address_00cec240,auto,i64
 0x00cec250,bb_auto_jump_thunk_00cec250,auto,i64
 0x00cec270,bb_auto_fixed_address_00cec270,auto,i64
+0x00cec3e0,bb_misc_init_config_defaults,misc,void
 0x00cec450,bb_misc_clear_quad_record,misc,void
 0x00cf8c50,bb_auto_held_member_object_free_00cf8c50,auto,i64
 0x00cf9260,bb_auto_return_float_field_00cf9260,auto,f32
