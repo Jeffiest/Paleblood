@@ -28527,6 +28527,7 @@ address,size,name,system,status,notes
 0x022555b0,87,misc_set_flag_on_first_accepting_item,misc,edge-verified,Sets flag bit 0x01 on the first item of a list whose sink the accept routine takes asking each item in turn and returns the last answer
 0x02255610,118,misc_store_value_and_flags_on_first_accepting_item,misc,edge-verified,Stores a value byte on the first item of a list whose sink the accept routine takes and rebuilds that items flag byte then returns the new flags
 0x02255690,87,misc_set_flag_on_first_accepting_item_8,misc,edge-verified,Sets flag bit 0x08 on the first item of a list whose sink the accept routine takes asking each item in turn and returns the last answer
+0x022556f0,354,misc_update_and_drop_finished,misc,edge-verified,Advances both sweep lists of an owner by one step: each item is updated then if it reports finished it is removed from its manager disposed and taken out of the list
 0x02255870,41,auto_bind_vtable_02255870,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
 0x022558a0,41,auto_bind_vtable_022558a0,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
 0x022558d0,41,auto_bind_vtable_022558d0,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
@@ -28587,6 +28588,16 @@ address,size,name,system,status,notes
 0x0225aa10,8,auto_fixed_address_0225aa10,auto,edge-verified,Same instructions as misc_plain_type_address with other addresses
 0x0225aa20,8,auto_fixed_address_0225aa20,auto,edge-verified,Same instructions as misc_plain_type_address with other addresses
 0x0225aa30,8,auto_fixed_address_0225aa30,auto,edge-verified,Same instructions as misc_plain_type_address with other addresses
+0x0225b540,28,misc_reset_then_free_text_block,misc,edge-verified,Resets a text block through the reset routine then tail-calls the library release routine with the same block and returns its result
+0x0225b560,272,misc_reset_text_block,misc,edge-verified,Sets the vtable of a text block then empties its three text slots in the order third second first; a heap slot loses its ownership flag and a capacity of 0x40 or more goes to the fatal report
+0x0225b670,123,misc_dispose_and_remove_item,misc,edge-verified,Disposes a sweep item then removes it from its manager found in the thread cache or by lookup; returns the remove result
+0x0225b6f0,216,misc_finish_text_request,misc,edge-verified,Finishes a waiting text request by appending or assigning its text then moving its state and dropping one reference; returns the state or the old count or the destroy or fatal result
+0x0225b7d0,8,misc_clear_pointer_slot,misc,edge-verified,Clears the pointer slot at the first argument to null and leaves RAX alone
+0x0225b7e0,16,misc_copy_retained_reference,misc,edge-verified,Copies the pointer in the source slot to the destination slot and takes a reference on the object when it is not null; returns the pointer
+0x0225b7f0,20,misc_clear_and_forward_source,misc,edge-verified,Clears the slot at the first argument to null; with a source it tail-calls the routine at 0x0225b8e0 with a zero flag and returns its result; without one returns zero
+0x0225b810,7,misc_forward_with_zero_flag,misc,edge-verified,Tail call to the routine at 0x0225b8e0 with the two arguments and a zero third argument; returns its result
+0x0225b820,78,misc_release_counted_slot,misc,edge-verified,Drops the reference a slot holds on a counted object and clears the slot; returns the count read or the destroy result on the last reference or the fatal report result for a count not above zero
+0x0225b870,106,misc_assign_reference,misc,edge-verified,Makes a reference slot hold the object the source slot holds releasing its old object unless it is the same and retaining the new one; returns the slot address
 0x0225bd70,41,auto_bind_vtable_0225bd70,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
 0x0225bda0,41,auto_bind_vtable_0225bda0,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
 0x0225bdd0,41,auto_bind_vtable_0225bdd0,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
@@ -28595,6 +28606,7 @@ address,size,name,system,status,notes
 0x0225bf50,472,auto_setup_static_objects_0225bf50,auto,edge-verified,Same instructions as misc_setup_static_objects_02243d30 with other addresses
 0x0225c130,472,auto_setup_static_objects_0225c130,auto,edge-verified,Same instructions as misc_setup_static_objects_02243d30 with other addresses
 0x0225c310,472,auto_setup_static_objects_0225c310,auto,edge-verified,Same instructions as misc_setup_static_objects_02243d30 with other addresses
+0x0225c4f0,463,misc_construct_config_reader,misc,edge-verified,Builds a config reader from a source opened through a global and a cursor whose first entry builds the member; an entry without its usable flag goes to the fatal report
 0x0225cab0,41,auto_bind_vtable_0225cab0,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
 0x0225cae0,41,auto_bind_vtable_0225cae0,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
 0x0225cb10,41,auto_bind_vtable_0225cb10,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses

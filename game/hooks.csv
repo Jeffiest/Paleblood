@@ -28526,6 +28526,7 @@ address,replacement,system,returns
 0x022555b0,bb_misc_set_flag_on_first_accepting_item,misc,i8
 0x02255610,bb_misc_store_value_and_flags_on_first_accepting_item,misc,i8
 0x02255690,bb_misc_set_flag_on_first_accepting_item_8,misc,i8
+0x022556f0,bb_misc_update_and_drop_finished,misc,void
 0x02255870,bb_auto_bind_vtable_02255870,auto,void
 0x022558a0,bb_auto_bind_vtable_022558a0,auto,void
 0x022558d0,bb_auto_bind_vtable_022558d0,auto,void
@@ -28586,6 +28587,16 @@ address,replacement,system,returns
 0x0225aa10,bb_auto_fixed_address_0225aa10,auto,i64
 0x0225aa20,bb_auto_fixed_address_0225aa20,auto,i64
 0x0225aa30,bb_auto_fixed_address_0225aa30,auto,i64
+0x0225b540,bb_misc_reset_then_free_text_block,misc,i64
+0x0225b560,bb_misc_reset_text_block,misc,i64
+0x0225b670,bb_misc_dispose_and_remove_item,misc,i64
+0x0225b6f0,bb_misc_finish_text_request,misc,i64
+0x0225b7d0,bb_misc_clear_pointer_slot,misc,void
+0x0225b7e0,bb_misc_copy_retained_reference,misc,i64
+0x0225b7f0,bb_misc_clear_and_forward_source,misc,i64
+0x0225b810,bb_misc_forward_with_zero_flag,misc,i64
+0x0225b820,bb_misc_release_counted_slot,misc,i64
+0x0225b870,bb_misc_assign_reference,misc,i64
 0x0225bd70,bb_auto_bind_vtable_0225bd70,auto,void
 0x0225bda0,bb_auto_bind_vtable_0225bda0,auto,void
 0x0225bdd0,bb_auto_bind_vtable_0225bdd0,auto,void
@@ -28594,6 +28605,7 @@ address,replacement,system,returns
 0x0225bf50,bb_auto_setup_static_objects_0225bf50,auto,i64
 0x0225c130,bb_auto_setup_static_objects_0225c130,auto,i64
 0x0225c310,bb_auto_setup_static_objects_0225c310,auto,i64
+0x0225c4f0,bb_misc_construct_config_reader,misc,void
 0x0225cab0,bb_auto_bind_vtable_0225cab0,auto,void
 0x0225cae0,bb_auto_bind_vtable_0225cae0,auto,void
 0x0225cb10,bb_auto_bind_vtable_0225cb10,auto,void
