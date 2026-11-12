@@ -111,7 +111,8 @@ struct WindSystem {
     uint32_t receiver_capacity;
     uint8_t reset_pending;     // one-shot, set by the system's reset
     uint8_t settling;          // set by the reset, cleared after a count of updates
-    uint8_t unknown_0x4e[0x6];
+    uint8_t unknown_0x4e[0x2];
+    uint32_t settle_count;     // set by the reset to the number of updates the settling lasts
     uint8_t disabled;
 };
 static_assert(offsetof(WindSystem, receivers) == 0x8 && offsetof(WindSystem, receiver_capacity) == 0x48);

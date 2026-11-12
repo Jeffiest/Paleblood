@@ -46127,6 +46127,7 @@ physics_instance_construct_01c0c2b0,edge,60,21,21,0,0,ca3412adb293c909,2026-10-0
 physics_instance_construct_01c0c2b0,edge,uncapped,21,21,0,0,ca3412adb293c909,2026-10-07
 physics_list_append_pair,edge,,24,24,0,0,bee7dcade03f39e2,2026-11-09
 render_allocate_shader_upload,edge,,40,40,0,0,48df8d1e68143c6f,2026-11-05
+render_begin_wind_settle,edge,,7,7,0,0,eb1bad765eebde83,2026-11-12
 render_build_present_source_record,edge,,105,105,0,0,1c9e410dd4d00fed,2026-11-10
 render_build_shader_link_words,edge,,30,30,0,0,0179f06c079fc316,2026-11-10
 render_calculate_record_descriptor_level_offset,edge,,30,30,0,0,a5d954dded06630e,2026-11-05

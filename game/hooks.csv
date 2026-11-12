@@ -35560,6 +35560,7 @@ address,replacement,system,returns
 0x02713470,bb_auto_bind_vtable_02713470,auto,void
 0x027134a0,bb_auto_copy_block_027134a0,auto,void
 0x02713690,bb_render_get_wind_system,render,i64
+0x027136a0,bb_render_begin_wind_settle,render,void
 0x027136d0,bb_auto_bind_vtable_027136d0,auto,void
 0x02713700,bb_auto_bind_vtable_02713700,auto,void
 0x02713730,bb_auto_bind_vtable_02713730,auto,void
