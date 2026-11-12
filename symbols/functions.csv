@@ -39860,6 +39860,8 @@ address,size,name,system,status,notes
 0x02b4dd30,5,auto_delete_object_thunk_02b4dd30,auto,edge-verified,Same instructions as misc_delete_object_thunk with other addresses
 0x02b4de70,8,auto_fixed_address_02b4de70,auto,edge-verified,Same instructions as misc_plain_type_address with other addresses
 0x02b4e370,5,auto_delete_object_thunk_02b4e370,auto,edge-verified,Same instructions as misc_delete_object_thunk with other addresses
+0x02b4e390,126,misc_clear_record_tag_02b4e390,misc,edge-verified,Clears the fifteen words of a 0x80 record from the last to the first then stores the first argument in the tag word and returns zero
+0x02b4e410,126,misc_clear_record_tag_02b4e410,misc,original,Clears the fifteen words of a 0x80 record from the last to the first then stores the first argument in the tag word and returns zero
 0x02b4e490,8,auto_fixed_address_02b4e490,auto,edge-verified,Same instructions as misc_plain_type_address with other addresses
 0x02b4e530,5,auto_jump_thunk_02b4e530,auto,edge-verified,Same instructions as misc_jump_thunk with other addresses
 0x02b4e540,28,auto_destroy_then_release_02b4e540,auto,edge-verified,Same instructions as misc_destroy_then_release with other addresses
