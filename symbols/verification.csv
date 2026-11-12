@@ -45763,6 +45763,7 @@ misc_init_item_table,edge,,11,11,0,0,a01f279af0fefd7b,2026-11-09
 misc_init_keyed_handle,edge,,5,5,0,0,5baab1272f6a7e05,2026-11-09
 misc_init_keyed_handle_variant,edge,,6,6,0,0,b7d0651b14eb1306,2026-11-09
 misc_init_member_and_push,edge,,2,2,0,0,aa6da41813569882,2026-11-11
+misc_init_named_vtable_object_013b5080,edge,,3,3,0,0,6b073c796e1b735d,2026-11-12
 misc_init_record_block,edge,,3,3,0,0,197bd7896465d3f5,2026-11-11
 misc_init_release_chain,edge,,4,4,0,0,fbd892b0ce8a8064,2026-11-10
 misc_init_rows_fields_5940ea0,edge,,8,8,0,0,3958b2ac507ac022,2026-11-10
