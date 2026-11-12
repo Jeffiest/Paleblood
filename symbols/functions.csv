@@ -5638,6 +5638,7 @@ address,size,name,system,status,notes
 0x013b9850,41,auto_bind_vtable_013b9850,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
 0x013b9880,49,auto_copy_block_013b9880,auto,edge-verified,Same instructions as misc_copy_block_58b3240 with other addresses
 0x013b9b70,28,auto_destroy_then_release_013b9b70,auto,edge-verified,Same instructions as misc_destroy_then_release with other addresses
+0x013ba170,53,misc_release_pending_field_013ba170,misc,edge-verified,Releases the pending handle of a holder through the release context when both are set then clears the handle
 0x013ba540,8,auto_fixed_address_013ba540,auto,edge-verified,Same instructions as misc_plain_type_address with other addresses
 0x013ba550,41,auto_bind_vtable_013ba550,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
 0x013ba580,41,auto_bind_vtable_013ba580,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
