@@ -3212,6 +3212,7 @@ address,size,name,system,status,notes
 0x00f240a0,8,auto_fixed_address_00f240a0,auto,edge-verified,Same instructions as misc_plain_type_address with other addresses
 0x00f240b0,5,auto_jump_thunk_00f240b0,auto,edge-verified,Same instructions as misc_jump_thunk with other addresses
 0x00f24280,8,auto_fixed_address_00f24280,auto,edge-verified,Same instructions as misc_plain_type_address with other addresses
+0x00f24590,540,misc_update_pose_records,misc,edge-verified,Reset pool count then add five records built from a default and the measured length of a direction vector.
 0x00f24f00,8,auto_fixed_address_00f24f00,auto,edge-verified,Same instructions as misc_plain_type_address with other addresses
 0x00f24f10,15,auto_base_init_00f24f10,auto,edge-verified,Same instructions as misc_base_init_02242980 with other addresses
 0x00f24ff0,8,auto_fixed_address_00f24ff0,auto,edge-verified,Same instructions as misc_plain_type_address with other addresses

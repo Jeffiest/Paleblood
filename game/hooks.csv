@@ -3211,6 +3211,7 @@ address,replacement,system,returns
 0x00f240a0,bb_auto_fixed_address_00f240a0,auto,i64
 0x00f240b0,bb_auto_jump_thunk_00f240b0,auto,i64
 0x00f24280,bb_auto_fixed_address_00f24280,auto,i64
+0x00f24590,bb_misc_update_pose_records,misc,void
 0x00f24f00,bb_auto_fixed_address_00f24f00,auto,i64
 0x00f24f10,bb_auto_base_init_00f24f10,auto,void
 0x00f24ff0,bb_auto_fixed_address_00f24ff0,auto,i64
