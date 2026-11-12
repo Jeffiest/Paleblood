@@ -21716,6 +21716,7 @@ address,size,name,system,status,notes
 0x01e8bc00,164,misc_decrement_word_entry_01e8bc00,misc,edge-verified,Lowers the count of the shared table entry a stored word names and releases its slot when spent
 0x01e8bcb0,202,misc_move_word_release_old_01e8bcb0,misc,edge-verified,Replaces a stored word with the source word when they differ releasing the old word first
 0x01e8bd80,310,misc_count_source_release_stored_01e8bd80,misc,edge-verified,Counts up the source word entry lowers or releases the stored word entry then stores the source word
+0x01e8bed0,310,misc_assign_counted_word_01e8bed0,misc,edge-verified,Assigns one stored word from another moving the counts of the shared table entries the two words name
 0x01e8c160,41,auto_bind_vtable_01e8c160,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
 0x01e8c190,41,auto_bind_vtable_01e8c190,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
 0x01e8c1c0,41,auto_bind_vtable_01e8c1c0,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
