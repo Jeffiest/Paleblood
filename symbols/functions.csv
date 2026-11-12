@@ -35544,6 +35544,7 @@ address,size,name,system,status,notes
 0x0270d130,49,auto_copy_block_0270d130,auto,edge-verified,Same instructions as misc_copy_block_58b3240 with other addresses
 0x0270ffc0,16,misc_entry_address_1f88,misc,edge-verified,Returns the address of an entry in the 0x38-byte table at offset 0x1f88 of its object with a sign-extended index
 0x0270ffd0,15,misc_entry_address_0120,misc,edge-verified,Returns the address of an entry in the 0x38-byte table at offset 0x120 of its object with a zero-extended index
+0x0270ffe0,302,misc_init_ordered_map,misc,edge-verified,Zeroes the owner first block then allocates and links a head node as an empty ordered map and zeroes its table at +0x120
 0x02710110,41,auto_bind_vtable_02710110,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
 0x02710140,41,auto_bind_vtable_02710140,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
 0x02710170,41,auto_bind_vtable_02710170,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
