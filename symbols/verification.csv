@@ -45553,6 +45553,9 @@ misc_append_indexed_node,edge,,8,8,0,0,657ea723fafdae02,2026-11-11
 misc_append_vector_element,edge,,10,10,0,0,b2cbe77678865af7,2026-11-11
 misc_apply_child_unless_flagged,edge,,10,10,0,0,0edb573c499dc1e9,2026-11-09
 misc_apply_each_slot,edge,,5,5,0,0,3e19a5a9de1ff003,2026-11-11
+misc_apply_source_to_counted_block_01e91b50,edge,,6,6,0,0,1412d1691803626e,2026-11-12
+misc_apply_source_to_counted_block_01e91bc0,edge,,6,6,0,0,22270476624ef00f,2026-11-12
+misc_assign_block_slot_word_01e91990,edge,,11,11,0,0,9721d3fe82428849,2026-11-12
 misc_assign_counted_word_01e8bed0,edge,,20,20,0,0,1185ed4236acc738,2026-11-12
 misc_assign_counted_word_value_01e8c020,edge,,20,20,0,0,711df31b594d162a,2026-11-12
 misc_assign_masked_counted_word_01e90b20,edge,,6,6,0,0,9816439561b45e67,2026-11-12
@@ -45592,6 +45595,7 @@ misc_bounded_range_object_free,edge,,6,6,0,0,3ae1664bf5a7944f,2026-11-10
 misc_bounded_range_object_free_secondary,edge,,6,6,0,0,8aa8ea59b82f9be9,2026-11-10
 misc_bounded_range_object_init,edge,,2,2,0,0,0cdb501f7c0fa1b2,2026-11-09
 misc_build_block_object_02244030,edge,,8,8,0,0,38e27fd9a7ca14d4,2026-11-09
+misc_build_counted_word_block_01e91810,edge,,3,3,0,0,f38284bd1a10d483,2026-11-12
 misc_build_counted_word_object_01e90aa0,edge,,2,2,0,0,c8ca5b1098088fc1,2026-11-12
 misc_build_object_block,edge,,5,5,0,0,a29a195f36f9bfda,2026-11-09
 misc_bump_allocate_block,edge,,11,11,0,0,51b5523399a9cd0b,2026-11-09
@@ -45733,6 +45737,7 @@ misc_entry_for_key,edge,,9,9,0,0,05562ce18d85b046,2026-11-09
 misc_entry_ref_accept,edge,,15,15,0,0,be3be074b348091e,2026-11-10
 misc_fill_counted_word_object_01e90c20,edge,,6,6,0,0,499c0256e160b4b5,2026-11-12
 misc_fill_item_table,edge,,10,10,0,0,121719f0b60da0e7,2026-11-09
+misc_fill_unset_block_masks_01e91ac0,edge,,10,10,0,0,b19f11f0a8d63855,2026-11-12
 misc_fill_word_cursor_block_01e8d3c0,edge,,8,8,0,0,569fa4cd327f58dd,2026-11-12
 misc_find_keyed_record,edge,,12,12,0,0,aa7bec0c95586fc5,2026-11-12
 misc_find_largest_value_at_most,edge,,12,12,0,0,3ea1d78637ccfe72,2026-11-11
@@ -45921,6 +45926,7 @@ misc_query_each_table_item_kind7,edge,,8,8,0,0,9389258c9ce6aab9,2026-11-09
 misc_query_owned_child,edge,,7,7,0,0,4d45e2adc7a50a34,2026-11-09
 misc_read_probe_flag,edge,,5,5,0,0,15634ecc6ad354d8,2026-11-09
 misc_read_source_word,edge,,5,5,0,0,636871755dc2bb87,2026-11-11
+misc_read_strided_word_01e91980,edge,,9,9,0,0,8a54dc671de6a8bf,2026-11-12
 misc_record_link_address,edge,,7,7,0,0,4f386509179ac666,2026-11-11
 misc_record_link_address_00be6f70,edge,,7,7,0,0,f9025401889793d9,2026-11-11
 misc_record_probe_values,edge,,6,6,0,0,6e47fc1c63e208ea,2026-11-09
@@ -45986,6 +45992,7 @@ misc_replace_holder_and_hand_off,edge,,11,11,0,0,9ce23107883dfdf5,2026-11-11
 misc_replace_holder_object,edge,,14,14,0,0,02ca5dfd7f563365,2026-11-11
 misc_report_member_text_013a3260,edge,,5,5,0,0,5e1fca2399bd319c,2026-11-11
 misc_reserve_words_locked,edge,,4,4,0,0,de4bd122cf6350e2,2026-11-12
+misc_reset_counted_word_block_01e91880,edge,,3,3,0,0,c6411aa9b1148835,2026-11-12
 misc_reset_counted_word_object_01e90ac0,edge,,3,3,0,0,57a3a5a9729e3a24,2026-11-12
 misc_reset_indexed_slot_record,edge,,3,3,0,0,36cfe1f6a1ec4c99,2026-11-12
 misc_reset_listed_members,edge,,7,7,0,0,05d746a0ec655de6,2026-11-09
@@ -46043,6 +46050,7 @@ misc_small_type_address,edge,,1,1,0,0,d46fd6cde073b9c8,2026-11-09
 misc_span_end,edge,,9,9,0,0,9d09d4146689b0a5,2026-11-09
 misc_span_forward,edge,,8,8,0,0,ad8232bd25beb25a,2026-11-09
 misc_start_word_cursor_01e8d380,edge,,9,9,0,0,9304e918e3a92510,2026-11-12
+misc_store_and_clear_block_slot_01e91a50,edge,,7,7,0,0,0cafcf5e46a963ea,2026-11-12
 misc_store_keyed_counter_record,edge,,5,5,0,0,0bde0aeb4580a20b,2026-11-12
 misc_store_keyed_record_locked,edge,,6,6,0,0,70599a9a1c1ed538,2026-11-12
 misc_store_pair,edge,,9,0,9,0,d8cc4e7f9a84080a,2026-11-09
