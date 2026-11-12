@@ -16148,6 +16148,7 @@ address,replacement,system,returns
 0x01b50f30,bb_auto_fixed_address_01b50f30,auto,i64
 0x01b50f40,bb_auto_fixed_address_01b50f40,auto,i64
 0x01b55110,bb_auto_release_held_block_01b55110,auto,void
+0x01b55140,bb_misc_register_listener_tasks_01b55140,misc,void
 0x01b55d20,bb_auto_bind_vtable_01b55d20,auto,void
 0x01b55d50,bb_auto_bind_vtable_01b55d50,auto,void
 0x01b55d80,bb_auto_bind_vtable_01b55d80,auto,void

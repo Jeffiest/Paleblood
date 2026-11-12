@@ -16149,6 +16149,7 @@ address,size,name,system,status,notes
 0x01b50f30,8,auto_fixed_address_01b50f30,auto,edge-verified,Same instructions as misc_plain_type_address with other addresses
 0x01b50f40,8,auto_fixed_address_01b50f40,auto,edge-verified,Same instructions as misc_plain_type_address with other addresses
 0x01b55110,44,auto_release_held_block_01b55110,auto,edge-verified,Same instructions as misc_release_held_block with other addresses and constants
+0x01b55140,679,misc_register_listener_tasks_01b55140,misc,edge-verified,Looks up a named list then offers it 75 tasks and attaches two more to each accepted one or destroys a refused one
 0x01b55d20,41,auto_bind_vtable_01b55d20,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
 0x01b55d50,41,auto_bind_vtable_01b55d50,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
 0x01b55d80,41,auto_bind_vtable_01b55d80,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
