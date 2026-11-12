@@ -21888,6 +21888,7 @@ address,replacement,system,returns
 0x01e917c0,bb_auto_delete_object_thunk_01e917c0,auto,void
 0x01e917d0,bb_auto_tail_call_offset_member_thunk_01e917d0,auto,i64
 0x01e91810,bb_misc_build_counted_word_block_01e91810,misc,i64
+0x01e91880,bb_misc_reset_counted_word_block_01e91880,misc,void
 0x01e91980,bb_misc_read_strided_word_01e91980,misc,i64
 0x01e91d70,bb_auto_bind_vtable_01e91d70,auto,void
 0x01e91da0,bb_auto_bind_vtable_01e91da0,auto,void
