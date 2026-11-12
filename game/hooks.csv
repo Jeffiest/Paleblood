@@ -3372,6 +3372,7 @@ address,replacement,system,returns
 0x00f63980,bb_auto_base_init_00f63980,auto,void
 0x00f64300,bb_auto_fixed_address_00f64300,auto,i64
 0x00f64310,bb_auto_base_init_00f64310,auto,void
+0x00f6b990,bb_misc_rebalance_cluster_centers,misc,void
 0x00f6bcb0,bb_misc_nearest_point_search,misc,i32
 0x00f6bf20,bb_auto_fixed_address_00f6bf20,auto,i64
 0x00f6c030,bb_auto_fixed_address_00f6c030,auto,i64
