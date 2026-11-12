@@ -11637,6 +11637,10 @@ address,size,name,system,status,notes
 0x018a4160,102,auto_call_member_with_flagged_record_018a4160,auto,edge-verified,Same instructions as misc_call_member_with_flagged_record with other addresses
 0x018a41d0,3,auto_return_constant_018a41d0,auto,edge-verified,Generated from the return constant template
 0x018a4310,28,auto_destroy_then_release_018a4310,auto,edge-verified,Same instructions as misc_destroy_then_release with other addresses
+0x018a9bd0,46,misc_forward_when_ready,misc,edge-verified,Tests the slot at object+0x40 with 0x010a1400 and returns its result when the low byte is clear; otherwise tail-calls 0x01086b20 with the same slot
+0x018a9c00,92,misc_record_registry_flag,misc,edge-verified,Returns the registry flag: a non-negative flag gives whether it is set otherwise bit 22 of the registry mode word; a missing registry goes through the fatal report and is fetched again
+0x018a9c60,192,misc_attach_record_when_accepted,misc,edge-verified,Destroys the held record and clears the owner slot at 0xc0 then with an acceptor builds a factory record and keeps it only when the acceptor accepts (AL) and otherwise holds nothing
+0x018a9d20,375,misc_format_diagnostic_line,misc,edge-verified,Formats a kind-two event line: a label first then the kind name the numeric fields the source text the two flag values the indexed name and the scale into the event name
 0x018aa2d0,41,auto_bind_vtable_018aa2d0,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
 0x018aa300,41,auto_bind_vtable_018aa300,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
 0x018aa330,41,auto_bind_vtable_018aa330,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
@@ -11689,6 +11693,7 @@ address,size,name,system,status,notes
 0x018ae470,150,auto_call_member_with_text_record_018ae470,auto,edge-verified,Same instructions as misc_call_member_with_text_record with other addresses
 0x018ae510,102,auto_call_member_with_record_018ae510,auto,edge-verified,Same instructions as misc_call_member_with_record with other addresses
 0x018ae580,102,auto_call_member_with_flagged_record_018ae580,auto,edge-verified,Same instructions as misc_call_member_with_flagged_record with other addresses
+0x018ae5f0,429,misc_construct_chain_pair,misc,edge-verified,Builds the owner: vtable then two empty chain lists each with a self-linked sentinel node from the shared allocator; failed nodes throw via the thread flag
 0x018ae7a0,28,auto_destroy_then_release_018ae7a0,auto,edge-verified,Same instructions as misc_destroy_then_release with other addresses
 0x018afb50,41,auto_bind_vtable_018afb50,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
 0x018afb80,41,auto_bind_vtable_018afb80,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
@@ -11758,6 +11763,8 @@ address,size,name,system,status,notes
 0x018b4200,472,auto_setup_static_objects_018b4200,auto,edge-verified,Same instructions as misc_setup_static_objects_02243d30 with other addresses
 0x018b43e0,472,auto_setup_static_objects_018b43e0,auto,edge-verified,Same instructions as misc_setup_static_objects_02243d30 with other addresses
 0x018b45c0,472,auto_setup_static_objects_018b45c0,auto,edge-verified,Same instructions as misc_setup_static_objects_02243d30 with other addresses
+0x018b47a0,29,misc_dispose_then_finish,misc,edge-verified,Disposes the object through its dispose slot then returns the result of the finish helper 0x018bf0e0 on the same object
+0x018b47c0,202,misc_unregister_range_then_finish,misc,edge-verified,Unregisters a registered object range through a temporary holder then releases the holder and finishes the object
 0x018badb0,3,auto_return_constant_018badb0,auto,edge-verified,Generated from the return constant template
 0x018bb610,41,auto_bind_vtable_018bb610,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
 0x018bb640,41,auto_bind_vtable_018bb640,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
@@ -11778,12 +11785,25 @@ address,size,name,system,status,notes
 0x018bdc60,5,auto_delete_object_thunk_018bdc60,auto,edge-verified,Same instructions as misc_delete_object_thunk with other addresses
 0x018bdcb0,5,auto_jump_thunk_018bdcb0,auto,edge-verified,Same instructions as misc_jump_thunk with other addresses
 0x018bdcc0,28,auto_destroy_then_release_018bdcc0,auto,edge-verified,Same instructions as misc_destroy_then_release with other addresses
+0x018bddd0,86,misc_copy_wide_clone_record,misc,edge-verified,Fills a wide clone record from four source words in the given record or a new block; a failed block allocation throws and the record address is returned
+0x018bde70,41,misc_finish_record,misc,edge-verified,Finishes the record through its finish slot and returns its result; with the release flag set the block is freed by the tail call and the free result is returned
 0x018bdea0,1,auto_empty_018bdea0,auto,edge-verified,Generated from the empty template
 0x018bdeb0,5,auto_delete_object_thunk_018bdeb0,auto,edge-verified,Same instructions as misc_delete_object_thunk with other addresses
+0x018bded0,78,misc_copy_narrow_clone_record,misc,edge-verified,Fills a narrow clone record from three source words in the given record or a new block; a failed block allocation throws and the record address is returned
+0x018bdf20,78,misc_copy_narrow_clone_record_alt,misc,edge-verified,Same copy as misc_copy_narrow_clone_record for the second narrow clone record routine at 0x018bdf20
+0x018bdfa0,41,misc_finish_record_alt,misc,edge-verified,Same finish-and-release routine as misc_finish_record at 0x018bdfa0
 0x018bdfd0,1,auto_empty_018bdfd0,auto,edge-verified,Generated from the empty template
 0x018bdfe0,5,auto_delete_object_thunk_018bdfe0,auto,edge-verified,Same instructions as misc_delete_object_thunk with other addresses
+0x018be000,62,misc_copy_key_clone_record,misc,edge-verified,Fills a key clone record from the source key word in the given record or a new block; a failed block allocation throws and the record address is returned
+0x018be040,62,misc_copy_key_clone_record_alt,misc,edge-verified,Same copy as misc_copy_key_clone_record for the second key clone routine at 0x018be040
+0x018be080,21,misc_set_inner_setting,misc,edge-verified,Copies the source value into the inner setting block of the holder and sets its enabled byte; returns the block address
+0x018be0b0,41,misc_finish_record_alt2,misc,edge-verified,Same finish-and-release routine as misc_finish_record at 0x018be0b0
 0x018be0e0,1,auto_empty_018be0e0,auto,edge-verified,Generated from the empty template
 0x018be0f0,5,auto_delete_object_thunk_018be0f0,auto,edge-verified,Same instructions as misc_delete_object_thunk with other addresses
+0x018be110,119,misc_release_record_base,misc,edge-verified,Releases a destructible record: disposes its base then the flagged helper and frees the heap text then returns the base finish result
+0x018be190,127,misc_release_record_and_free,misc,edge-verified,Releases a destructible record like misc_release_record_base then frees the record block and returns the free result
+0x018be210,119,misc_release_record_base_alt,misc,edge-verified,Same release routine as misc_release_record_base at 0x018be210
+0x018be290,127,misc_release_record_and_free_alt,misc,edge-verified,Same release-and-free routine as misc_release_record_and_free at 0x018be290
 0x018be310,5,auto_jump_thunk_018be310,auto,edge-verified,Same instructions as misc_jump_thunk with other addresses
 0x018be320,28,auto_destroy_then_release_018be320,auto,edge-verified,Same instructions as misc_destroy_then_release with other addresses
 0x018be360,8,auto_fixed_address_018be360,auto,edge-verified,Same instructions as misc_plain_type_address with other addresses

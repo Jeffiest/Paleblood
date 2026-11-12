@@ -16,9 +16,12 @@ namespace misc {
  *
  */
 struct RecordRegistry {
-    uint8_t unknown_0x0000[0xc80];
+    uint8_t unknown_0x0000[0xa60];
+    uint64_t mode_word_0xa60;   /**< A mode word: its bit 22 is the mode bit that the registry flag reads. */
+    uint8_t unknown_0xa68[0x218];
     KeyedRecordTable *table; /**< The table every keyed record is kept in. */
 };
+static_assert(offsetof(RecordRegistry, mode_word_0xa60) == 0xa60);
 static_assert(offsetof(RecordRegistry, table) == 0xc80);
 
 RT_GLOBAL(0x0593b120, record_registry, RecordRegistry *);
