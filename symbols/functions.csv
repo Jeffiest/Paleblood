@@ -5526,6 +5526,7 @@ address,size,name,system,status,notes
 0x013b4d80,41,auto_bind_vtable_013b4d80,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
 0x013b4db0,41,auto_bind_vtable_013b4db0,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
 0x013b4de0,49,auto_copy_block_013b4de0,auto,edge-verified,Same instructions as misc_copy_block_58b3240 with other addresses
+0x013b4e20,392,misc_init_slot_table_013b4e20,misc,edge-verified,Sets the values of a table of slots in order then marks the slots of the second group and returns the last mark
 0x013b4fb0,41,auto_bind_vtable_013b4fb0,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
 0x013b4fe0,41,auto_bind_vtable_013b4fe0,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
 0x013b5010,41,auto_bind_vtable_013b5010,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses

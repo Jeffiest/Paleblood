@@ -5525,6 +5525,7 @@ address,replacement,system,returns
 0x013b4d80,bb_auto_bind_vtable_013b4d80,auto,void
 0x013b4db0,bb_auto_bind_vtable_013b4db0,auto,void
 0x013b4de0,bb_auto_copy_block_013b4de0,auto,void
+0x013b4e20,bb_misc_init_slot_table_013b4e20,misc,i64
 0x013b4fb0,bb_auto_bind_vtable_013b4fb0,auto,void
 0x013b4fe0,bb_auto_bind_vtable_013b4fe0,auto,void
 0x013b5010,bb_auto_bind_vtable_013b5010,auto,void
