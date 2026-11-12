@@ -5555,6 +5555,7 @@ address,size,name,system,status,notes
 0x013b5540,10,misc_tail_call_kind_013b5540,misc,edge-verified,Tail-calls the shared routine with a fixed kind argument and passes the other argument registers through
 0x013b5550,10,misc_tail_call_kind_013b5550,misc,edge-verified,Tail-calls the shared routine with a fixed kind argument and passes the other argument registers through
 0x013b5560,10,misc_tail_call_kind_013b5560,misc,edge-verified,Tail-calls the shared routine with a fixed kind argument and passes the other argument registers through
+0x013b5570,10,misc_tail_call_kind_013b5570,misc,edge-verified,Tail-calls the shared routine with a fixed kind argument and passes the other argument registers through
 0x013b5fd0,41,auto_bind_vtable_013b5fd0,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
 0x013b6000,41,auto_bind_vtable_013b6000,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
 0x013b6030,41,auto_bind_vtable_013b6030,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
