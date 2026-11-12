@@ -45773,6 +45773,7 @@ misc_finish_pending_block_offset,edge,,7,7,0,0,1a48d345aa161f68,2026-11-10
 misc_finish_record,edge,,4,4,0,0,1038fac591ab82d1,2026-11-12
 misc_finish_record_alt,edge,,4,4,0,0,9b7bb6b005343ab0,2026-11-12
 misc_finish_record_alt2,edge,,4,4,0,0,36beeecf436fcae5,2026-11-12
+misc_finish_registry_slots_and_report,edge,,4,4,0,0,27581778c5227c20,2026-11-12
 misc_finish_text_request,edge,,9,9,0,0,8cb2e99c9204dc92,2026-11-12
 misc_finish_tracked_update,edge,,15,15,0,0,4c6bb3089d2ad90f,2026-11-11
 misc_flush_owner_once,edge,,5,5,0,0,45aa1a8e622f9bb7,2026-11-09

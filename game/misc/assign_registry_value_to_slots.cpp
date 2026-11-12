@@ -3,25 +3,13 @@
 #include <cstddef>
 #include <cstdint>
 
+#include "registry_slot_list.h"
 #include "runtime/original.h"
 
 namespace {
 
-/** One slot of the list: a block of 0x4b0 bytes whose contents are filled by the slot routine. */
-struct RegistrySlot {
-    uint8_t unknown_0x00[0x4b0];
-};
-static_assert(sizeof(RegistrySlot) == 0x4b0);
-
-/** A list of slots: the slot array at 0x10 and the number of slots to fill at 0x28. */
-struct RegistrySlotList {
-    uint8_t unknown_0x00[0x10];
-    RegistrySlot *slots;     /**< The slot array, each slot 0x4b0 bytes. */
-    uint8_t unknown_0x18[0x10];
-    uint32_t count;          /**< The number of slots that receive the value. */
-};
-static_assert(offsetof(RegistrySlotList, slots) == 0x10);
-static_assert(offsetof(RegistrySlotList, count) == 0x28);
+using misc::RegistrySlot;
+using misc::RegistrySlotList;
 
 /** The record registry: null when no registry exists. */
 RT_GLOBAL(0x058b3570, record_registry, void *);
