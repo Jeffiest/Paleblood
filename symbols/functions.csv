@@ -3363,6 +3363,7 @@ address,size,name,system,status,notes
 0x00f4f9f0,15,auto_base_init_00f4f9f0,auto,edge-verified,Same instructions as misc_base_init_02242980 with other addresses
 0x00f4fa10,8,auto_fixed_address_00f4fa10,auto,edge-verified,Same instructions as misc_plain_type_address with other addresses
 0x00f4fa20,15,auto_base_init_00f4fa20,auto,edge-verified,Same instructions as misc_base_init_02242980 with other addresses
+0x00f4fcf0,616,misc_init_slot_pool_with_lists,misc,edge-verified,Builds a slot pool: slot setup via 0x00f4ff60 then resizes a list array and gives each list a first zero item
 0x00f514b0,8,auto_fixed_address_00f514b0,auto,edge-verified,Same instructions as misc_plain_type_address with other addresses
 0x00f514d0,8,auto_fixed_address_00f514d0,auto,edge-verified,Same instructions as misc_plain_type_address with other addresses
 0x00f53b30,75,auto_held_member_object_free_00f53b30,auto,edge-verified,Same instructions as misc_held_member_object_free with other addresses and constants

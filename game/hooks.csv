@@ -3362,6 +3362,7 @@ address,replacement,system,returns
 0x00f4f9f0,bb_auto_base_init_00f4f9f0,auto,void
 0x00f4fa10,bb_auto_fixed_address_00f4fa10,auto,i64
 0x00f4fa20,bb_auto_base_init_00f4fa20,auto,void
+0x00f4fcf0,bb_misc_init_slot_pool_with_lists,misc,i64
 0x00f514b0,bb_auto_fixed_address_00f514b0,auto,i64
 0x00f514d0,bb_auto_fixed_address_00f514d0,auto,i64
 0x00f53b30,bb_auto_held_member_object_free_00f53b30,auto,i64
