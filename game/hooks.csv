@@ -21975,6 +21975,7 @@ address,replacement,system,returns
 0x01e94880,bb_auto_initialize_static_wide_string_01e94880,auto,void
 0x01e94950,bb_auto_copy_block_01e94950,auto,void
 0x01e94c80,bb_misc_visit_block_slot00_01e94c80,misc,i64
+0x01e94d10,bb_misc_visit_block_slot08_01e94d10,misc,i64
 0x01e94ef0,bb_auto_bind_vtable_01e94ef0,auto,void
 0x01e94f20,bb_auto_bind_vtable_01e94f20,auto,void
 0x01e94f50,bb_auto_bind_vtable_01e94f50,auto,void
