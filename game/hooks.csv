@@ -5642,6 +5642,7 @@ address,replacement,system,returns
 0x013ba1d0,bb_misc_forward_first_entry_alt_013ba1d0,misc,i64
 0x013ba1f0,bb_misc_forward_second_entry_013ba1f0,misc,i64
 0x013ba210,bb_misc_second_entry_address_013ba210,misc,i64
+0x013ba220,bb_misc_forward_second_entry_alt_013ba220,misc,i64
 0x013ba540,bb_auto_fixed_address_013ba540,auto,i64
 0x013ba550,bb_auto_bind_vtable_013ba550,auto,void
 0x013ba580,bb_auto_bind_vtable_013ba580,auto,void
