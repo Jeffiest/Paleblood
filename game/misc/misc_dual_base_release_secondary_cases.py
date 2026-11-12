@@ -45,7 +45,10 @@ def case(cid, held=None, word=0x0):
             'memory': memory, 'imports': [], 'stubs': stubs}
 
 
-UNREACHABLE = {}
+# The compare-exchange retry only repeats when another thread changes the word between the read and the exchange.
+UNREACHABLE = {
+    '0x00cd435d': ('taken', 'compare-exchange retry needs another thread to change the word between read and exchange'),
+}
 
 CASES = [
     case('no_item'),
