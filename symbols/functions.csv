@@ -142,6 +142,7 @@ address,size,name,system,status,notes
 0x00439920,5,auto_delete_object_thunk_00439920,auto,edge-verified,Same instructions as misc_delete_object_thunk with other addresses
 0x00439f90,5,auto_delete_object_thunk_00439f90,auto,edge-verified,Same instructions as misc_delete_object_thunk with other addresses
 0x0043a7c0,541,misc_bind_slot_node_0043a7c0,misc,edge-verified,Binds a source object into a key-sorted slot table: finds or creates the node for its 16-bit key and stores the source in the slots
+0x0043a9f0,541,misc_bind_slot_node_0043a9f0,misc,edge-verified,Same as misc_bind_slot_node_0043a7c0 but the key bytes are read one byte further into the source's bank
 0x0043b1e0,76,auto_init_identity_rows_0043b1e0,auto,edge-verified,Same instructions as misc_init_identity_rows_5ac5540 with other addresses
 0x0043b230,70,auto_init_identity_rows_0043b230,auto,edge-verified,Same instructions as misc_init_identity_rows_5ac5570 with other addresses
 0x0043c910,42,auto_prepare_forward_0043c910,auto,edge-verified,Same instructions as misc_prepare_forward with other addresses
