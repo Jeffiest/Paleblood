@@ -46112,6 +46112,7 @@ misc_step_tracked_timer,edge,,16,16,0,0,fb346bdd72a9c55f,2026-11-12
 misc_store_and_clear_block_slot_01e91a50,edge,,7,7,0,0,0cafcf5e46a963ea,2026-11-12
 misc_store_keyed_counter_record,edge,,5,5,0,0,0bde0aeb4580a20b,2026-11-12
 misc_store_keyed_record_locked,edge,,6,6,0,0,70599a9a1c1ed538,2026-11-12
+misc_store_lookup_scales,edge,,8,8,0,0,b7357ba2ea0299f2,2026-11-12
 misc_store_pair,edge,,9,0,9,0,d8cc4e7f9a84080a,2026-11-09
 misc_store_request,edge,,14,14,0,0,109935e29a017c03,2026-11-11
 misc_store_slot_word,edge,,5,5,0,0,f43e1dbd478c9e4b,2026-11-12
