@@ -198,6 +198,7 @@ address,replacement,system,returns
 0x00466810,bb_frame_timing_posix_sleep_ms,frame_timing,i8
 0x0046b030,bb_auto_jump_thunk_0046b030,auto,i64
 0x0046b340,bb_misc_tagged_entry_equal,misc,i32
+0x0046b420,bb_misc_tagged_entry_merge,misc,i64
 0x0046d060,bb_auto_prepare_forward_0046d060,auto,i64
 0x004749c0,bb_auto_return_field_004749c0,auto,i32
 0x00482c90,bb_auto_delete_object_thunk_00482c90,auto,void

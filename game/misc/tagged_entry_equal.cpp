@@ -2,29 +2,14 @@
 #include <cstddef>
 #include <cstdint>
 
+#include "flagged_text_entry.h"
+
 #include "runtime/original.h"
 
 namespace {
 
-struct TaggedEntry {
-    uint8_t unknown_0x00[0x10];
-    uint64_t tagged_text;   /**< pointer to the text, low two bits are tags */
-    uint8_t unknown_0x18[0x20];
-    uint64_t identity;   /**< compared when the texts are not both comparable */
-    uint32_t key_and_tag;   /**< low 24 bits are the key, the top byte a tag */
-    float weight;   /**< compared after scaling */
-    uint16_t level;   /**< compared after scaling */
-    uint8_t option_bits;   /**< bit 3 must match */
-    uint8_t unknown_0x4b;
-    uint16_t flags;   /**< bit 2: text is comparable, bit 11: identity is compared */
-};
-static_assert(offsetof(TaggedEntry, tagged_text) == 0x10);
-static_assert(offsetof(TaggedEntry, identity) == 0x38);
-static_assert(offsetof(TaggedEntry, key_and_tag) == 0x40);
-static_assert(offsetof(TaggedEntry, weight) == 0x44);
-static_assert(offsetof(TaggedEntry, level) == 0x48);
-static_assert(offsetof(TaggedEntry, option_bits) == 0x4a);
-static_assert(offsetof(TaggedEntry, flags) == 0x4c);
+using misc::FlaggedTextEntry;
+
 
 constexpr uint16_t flag_text_comparable = 0x4;
 constexpr uint16_t flag_identity_compared = 0x800;
@@ -37,7 +22,7 @@ constexpr uint64_t text_offset = 0xc;
 RT_ORIGINAL(0x0045e440, fn_0045e440, int32_t(uint64_t first_text, uint64_t second_text));
 RT_GLOBAL(0x04b3e538, scale, const float);
 
-uint64_t text_address(const TaggedEntry *entry)
+uint64_t text_address(const FlaggedTextEntry *entry)
 {
     return (entry->tagged_text & ~tag_bits_mask) + text_offset;
 }
@@ -50,7 +35,7 @@ uint64_t text_address(const TaggedEntry *entry)
  *
  * Returns 1 when everything matches and 0 at the first difference.
  */
-extern "C" uint32_t bb_misc_tagged_entry_equal(const TaggedEntry *first, const TaggedEntry *second)
+extern "C" uint32_t bb_misc_tagged_entry_equal(const FlaggedTextEntry *first, const FlaggedTextEntry *second)
 {
     bool text_equal = false;
     if ((first->flags & flag_text_comparable) && (second->flags & flag_text_comparable))

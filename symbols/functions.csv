@@ -199,6 +199,7 @@ address,size,name,system,status,notes
 0x00466810,19,frame_timing_posix_sleep_ms,frame_timing,edge-verified,Sleep milliseconds through POSIX usleep (32-bit multiply wraps); ignore its result and return true
 0x0046b030,5,auto_jump_thunk_0046b030,auto,edge-verified,Same instructions as misc_jump_thunk with other addresses
 0x0046b340,222,misc_tagged_entry_equal,misc,edge-verified,Compares two tagged entries: text or identity then key and tag then scaled level then option bit then scaled weight; returns 1 when equal
+0x0046b420,782,misc_tagged_entry_merge,misc,edge-verified,Copies the fields a source tagged entry marks as present onto a destination that starts as a copy of a base entry; returns the destination
 0x0046d060,42,auto_prepare_forward_0046d060,auto,edge-verified,Same instructions as misc_prepare_forward with other addresses
 0x004749c0,7,auto_return_field_004749c0,auto,edge-verified,Generated from the return field template
 0x00482c90,5,auto_delete_object_thunk_00482c90,auto,edge-verified,Same instructions as misc_delete_object_thunk with other addresses

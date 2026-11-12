@@ -46118,6 +46118,7 @@ misc_streamed_record_read,edge,,16,16,0,0,8fa82675b8d186b0,2026-11-12
 misc_streamed_record_release,edge,,5,5,0,0,0a2d28fa7ba5ccd0,2026-11-12
 misc_submit_request,edge,,8,8,0,0,29d1083ee2b94a5f,2026-11-11
 misc_tagged_entry_equal,edge,,28,28,0,0,6b9f5b064f8ef65c,2026-11-12
+misc_tagged_entry_merge,edge,,43,43,0,0,f79e137455e13bb9,2026-11-12
 misc_tagged_link_address,edge,,8,8,0,0,421ad006857028d7,2026-11-09
 misc_tagged_name_matches,edge,,6,6,0,0,7adec809246cc043,2026-11-11
 misc_tail_call_kind_013b54b0,edge,,3,3,0,0,242c51ffdb4e5c3a,2026-11-12
