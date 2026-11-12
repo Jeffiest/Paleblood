@@ -87,7 +87,17 @@ address,replacement,system,returns
 0x00415100,bb_misc_mark_flagged_member,misc,void
 0x00415120,bb_misc_release_pending_lists,misc,void
 0x004153f0,bb_misc_find_largest_value_at_most,misc,i64
+0x00415a20,bb_misc_store_keyed_record_locked,misc,void
 0x00415af0,bb_auto_prepare_forward_00415af0,auto,i64
+0x004166b0,bb_misc_get_or_create_cached_object,misc,i64
+0x00416770,bb_misc_copy_source_and_build_node,misc,i64
+0x00417e70,bb_misc_finish_node_state,misc,i64
+0x00417fd0,bb_misc_copy_capped_buffer,misc,i32
+0x00418010,bb_misc_allocate_capped_buffer_copy,misc,void
+0x00418060,bb_misc_store_keyed_counter_record,misc,i64
+0x00418120,bb_misc_find_keyed_record,misc,i8
+0x00418290,bb_misc_find_list_entry_value,misc,i64
+0x004182c0,bb_misc_run_locked_set_operation,misc,i32
 0x00418d80,bb_auto_return_field_00418d80,auto,i64
 0x00419190,bb_auto_prepare_forward_00419190,auto,i64
 0x00419700,bb_auto_prepare_forward_00419700,auto,i64
