@@ -45622,6 +45622,7 @@ misc_call_with_kind_three_013b5180,edge,,5,5,0,0,312b7eab93a77e29,2026-11-12
 misc_call_with_zero_kind_013b50f0,edge,,4,4,0,0,1fb1f82ef884608d,2026-11-12
 misc_chain_bone_pose_copy_roots,edge,,7,7,0,0,922944ad58add34f,2026-11-12
 misc_chain_bone_pose_in_place,edge,,7,7,0,0,1b247661e7695e2b,2026-11-12
+misc_chain_bone_pose_with_root,edge,,7,7,0,0,278c4a09bdf1e0c4,2026-11-12
 misc_chain_contains,edge,,9,9,0,0,8b4669a2c9b3075e,2026-11-09
 misc_chain_leaf_flag,edge,,6,6,0,0,1e265fb6c6640d38,2026-11-09
 misc_chain_ready_or_group_bit,edge,,29,29,0,0,47ee6d285c740872,2026-11-09
