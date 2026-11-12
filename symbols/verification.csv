@@ -45786,6 +45786,7 @@ misc_init_rows_total_marker_fields_5945ef0,edge,,8,8,0,0,f1f9e4f09e48b6da,2026-1
 misc_init_rows_total_marker_fields_59464b0,edge,,8,8,0,0,37b87012924a3e5c,2026-11-10
 misc_init_shared_record_once,edge,,8,8,0,0,fe59d1d70e36e671,2026-11-09
 misc_init_shared_record_once_guarded,edge,,8,8,0,0,49c2ae0e3fa7e7ec,2026-11-09
+misc_init_sourced_item,edge,,4,4,0,0,57532081a1e17335,2026-11-12
 misc_init_stream_guards_58b9d5c,edge,,10,10,0,0,54331b61c4ab8c46,2026-11-10
 misc_init_tagged_record,edge,,7,7,0,0,9ef08d15b27d9f9d,2026-11-11
 misc_init_tagged_record_alt,edge,,7,7,0,0,25431bc5c5e7a624,2026-11-11
