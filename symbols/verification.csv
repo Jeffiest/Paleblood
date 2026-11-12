@@ -45921,6 +45921,7 @@ misc_query_each_table_item_kind7,edge,,8,8,0,0,9389258c9ce6aab9,2026-11-09
 misc_query_owned_child,edge,,7,7,0,0,4d45e2adc7a50a34,2026-11-09
 misc_read_probe_flag,edge,,5,5,0,0,15634ecc6ad354d8,2026-11-09
 misc_read_source_word,edge,,5,5,0,0,636871755dc2bb87,2026-11-11
+misc_read_strided_word_01e91980,edge,,9,9,0,0,8a54dc671de6a8bf,2026-11-12
 misc_record_link_address,edge,,7,7,0,0,4f386509179ac666,2026-11-11
 misc_record_link_address_00be6f70,edge,,7,7,0,0,f9025401889793d9,2026-11-11
 misc_record_probe_values,edge,,6,6,0,0,6e47fc1c63e208ea,2026-11-09

@@ -21887,6 +21887,7 @@ address,replacement,system,returns
 0x01e917b0,bb_auto_empty_01e917b0,auto,void
 0x01e917c0,bb_auto_delete_object_thunk_01e917c0,auto,void
 0x01e917d0,bb_auto_tail_call_offset_member_thunk_01e917d0,auto,i64
+0x01e91980,bb_misc_read_strided_word_01e91980,misc,i64
 0x01e91d70,bb_auto_bind_vtable_01e91d70,auto,void
 0x01e91da0,bb_auto_bind_vtable_01e91da0,auto,void
 0x01e91dd0,bb_auto_bind_vtable_01e91dd0,auto,void
