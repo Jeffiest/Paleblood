@@ -45670,6 +45670,7 @@ misc_destroy_chain_node_3e30,edge,,6,6,0,0,791307ca21d3e7ed,2026-11-09
 misc_destroy_element_list_owner,edge,,10,10,0,0,902ac2d538c4c6db,2026-11-11
 misc_destroy_flagged_pair_tail,edge,,8,8,0,0,8741669789d21822,2026-11-10
 misc_destroy_flagged_pair_then_release,edge,,10,10,0,0,191c1d403abb0b53,2026-11-10
+misc_destroy_member_then_forward,edge,,2,2,0,0,eb090449de102d88,2026-11-12
 misc_destroy_node_and_free,edge,,4,4,0,0,87a3bcfe4b4127d6,2026-11-10
 misc_destroy_node_slot_00_and_free,edge,,4,0,4,0,dcb0a4d7bca79049,2026-11-09
 misc_destroy_owned_block_pair,edge,,6,6,0,0,64758a3e67a59f68,2026-11-10
