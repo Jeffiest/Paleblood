@@ -5436,6 +5436,7 @@ address,size,name,system,status,notes
 0x013a4c00,41,auto_bind_vtable_013a4c00,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
 0x013a4c30,41,auto_bind_vtable_013a4c30,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
 0x013a4c60,49,auto_copy_block_013a4c60,auto,edge-verified,Same instructions as misc_copy_block_58b3240 with other addresses
+0x013a4ca0,395,misc_init_text_pair_record_013a4ca0,misc,edge-verified,Fills a text pair record with its allocator two names an empty second name the flag bit and fixed metrics and blocks
 0x013a5030,41,auto_bind_vtable_013a5030,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
 0x013a5060,41,auto_bind_vtable_013a5060,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
 0x013a5090,41,auto_bind_vtable_013a5090,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses

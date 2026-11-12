@@ -5435,6 +5435,7 @@ address,replacement,system,returns
 0x013a4c00,bb_auto_bind_vtable_013a4c00,auto,void
 0x013a4c30,bb_auto_bind_vtable_013a4c30,auto,void
 0x013a4c60,bb_auto_copy_block_013a4c60,auto,void
+0x013a4ca0,bb_misc_init_text_pair_record_013a4ca0,misc,void
 0x013a5030,bb_auto_bind_vtable_013a5030,auto,void
 0x013a5060,bb_auto_bind_vtable_013a5060,auto,void
 0x013a5090,bb_auto_bind_vtable_013a5090,auto,void
