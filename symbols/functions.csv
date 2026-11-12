@@ -95,6 +95,7 @@ address,size,name,system,status,notes
 0x00417fd0,56,misc_copy_capped_buffer,misc,edge-verified,Copies the view's buffer into a destination limited to the smaller of the count and the view's capacity and returns that limit
 0x00418010,80,misc_allocate_capped_buffer_copy,misc,edge-verified,Takes a buffer of the size from the view's allocator and when one is taken sets the capacity to the size and copies the source into it
 0x00418060,187,misc_store_keyed_counter_record,misc,edge-verified,Numbers a record from the cache counter and files it under the key hash in the cache table under the cache lock when its level is low
+0x00418120,363,misc_find_keyed_record,misc,edge-verified,Looks a key up in the cache table under the lock when the level is low and gives a found slot's flag and object to the record
 0x00418290,39,misc_find_list_entry_value,misc,edge-verified,Walks the object's list from its head and returns the value of the first entry whose 32-bit key matches or zero when none does
 0x004182c0,71,misc_run_locked_set_operation,misc,edge-verified,Runs a set operation on the object's set region under its lock and returns the result of releasing the lock
 0x00418d80,8,auto_return_field_00418d80,auto,edge-verified,Generated from the return field template
