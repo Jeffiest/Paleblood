@@ -28701,6 +28701,9 @@ address,replacement,system,returns
 0x0225c130,bb_auto_setup_static_objects_0225c130,auto,i64
 0x0225c310,bb_auto_setup_static_objects_0225c310,auto,i64
 0x0225c4f0,bb_misc_construct_config_reader,misc,void
+0x0225c6c0,bb_misc_restart_tracked_timer,misc,void
+0x0225c890,bb_misc_step_tracked_timer,misc,void
+0x0225caa0,bb_misc_set_field_minus_one,misc,void
 0x0225cab0,bb_auto_bind_vtable_0225cab0,auto,void
 0x0225cae0,bb_auto_bind_vtable_0225cae0,auto,void
 0x0225cb10,bb_auto_bind_vtable_0225cb10,auto,void
@@ -28744,6 +28747,9 @@ address,replacement,system,returns
 0x0225f150,bb_auto_setup_static_objects_0225f150,auto,i64
 0x0225f330,bb_auto_setup_static_objects_0225f330,auto,i64
 0x0225f510,bb_auto_setup_static_objects_0225f510,auto,i64
+0x0225fac0,bb_misc_refresh_slot_copy,misc,i64
+0x0225faf0,bb_misc_tick_tracked_timer_label,misc,void
+0x0225fbf0,bb_misc_advance_counted_range,misc,i64
 0x02260410,bb_auto_empty_02260410,auto,void
 0x02260420,bb_auto_bind_vtable_02260420,auto,void
 0x02260450,bb_auto_bind_vtable_02260450,auto,void
