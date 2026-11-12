@@ -45970,6 +45970,7 @@ misc_unpack_and_release,edge,,7,7,0,0,83111d910b68eca2,2026-11-11
 misc_update_owned_entries,edge,,11,11,0,0,5a57696d2430974b,2026-11-10
 misc_value_unless_flagged,edge,,10,10,0,0,0011306c9c7b9d5c,2026-11-11
 misc_word_cursor_first_value_01e8d470,edge,,4,4,0,0,cc04ca6bc9a461ed,2026-11-12
+misc_word_cursor_item_01e8d490,edge,,4,4,0,0,9ad8d2c73ffe71b5,2026-11-12
 misc_word_cursor_second_value_01e8d480,edge,,4,4,0,0,6dad5bf1f7908d28,2026-11-12
 misc_write_indexed_field_pairs,edge,,16,16,0,0,c3c642b30c812564,2026-11-11
 physics_instance_construct_01c0c2b0,recorded,,119,119,0,0,ca3412adb293c909,2026-10-07
