@@ -45639,6 +45639,7 @@ misc_clear_id_list_022430f0,edge,,5,5,0,0,8d14115bb7de3d16,2026-11-09
 misc_clear_node_lists,edge,,16,16,0,0,374c145b31891748,2026-11-11
 misc_clear_pending_four_keys,edge,,15,15,0,0,e408ac5368aed16d,2026-11-09
 misc_clear_pointer_slot,edge,,3,3,0,0,8fe8d4982c70aec3,2026-11-12
+misc_clear_quad_record,edge,,7,7,0,0,c3951722b431bcea,2026-11-12
 misc_clear_record_tag_02b4cd60,edge,,6,6,0,0,960bde9d03a65c86,2026-11-12
 misc_clear_record_tag_02b4cde0,edge,,6,6,0,0,a00c02ef9352fdac,2026-11-12
 misc_clear_record_tag_02b4e390,edge,,6,6,0,0,14b2f076db211669,2026-11-12

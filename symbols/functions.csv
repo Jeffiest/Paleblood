@@ -2370,6 +2370,7 @@ address,size,name,system,status,notes
 0x00cec240,8,auto_fixed_address_00cec240,auto,edge-verified,Same instructions as misc_plain_type_address with other addresses
 0x00cec250,5,auto_jump_thunk_00cec250,auto,edge-verified,Same instructions as misc_jump_thunk with other addresses
 0x00cec270,8,auto_fixed_address_00cec270,auto,edge-verified,Same instructions as misc_plain_type_address with other addresses
+0x00cec450,32,misc_clear_quad_record,misc,edge-verified,Clears the four 64-bit words of a record to zero and returns nothing; the original leaves RAX alone
 0x00cf8c50,75,auto_held_member_object_free_00cf8c50,auto,edge-verified,Same instructions as misc_held_member_object_free with other addresses and constants
 0x00cf9260,6,auto_return_float_field_00cf9260,auto,edge-verified,Generated from the return float field template
 0x00cf94d0,15,auto_base_init_00cf94d0,auto,edge-verified,Same instructions as misc_base_init_02242980 with other addresses
