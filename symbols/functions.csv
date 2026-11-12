@@ -5672,6 +5672,7 @@ address,size,name,system,status,notes
 0x013ba300,168,misc_finish_registry_slots_and_report,misc,edge-verified,Releases the slots of a registry list from last to first then reports the registry name through the holder
 0x013ba3b0,111,misc_release_two_slot_arrays,misc,edge-verified,Calls the slot routine on each slot of a first then a second slot array and returns the last call result or zero when both are empty
 0x013ba420,154,misc_run_slot_routines_on_pair,misc,edge-verified,Runs two slot routines and then a third on each slot of a pairs second then first slot array and returns the last third result
+0x013ba4c0,87,misc_assign_second_slot_source,misc,edge-verified,Makes the pairs second slot array hold an index by growing it when the index is at or past its count then passes the slot and a source to the assignment routine and returns its result
 0x013ba520,26,misc_forward_indexed_slot_call,misc,edge-verified,Passes a call for the slot at an index of a pairs second array to the slot routine with a 32-bit and a 64-bit argument and returns its result
 0x013ba540,8,auto_fixed_address_013ba540,auto,edge-verified,Same instructions as misc_plain_type_address with other addresses
 0x013ba550,41,auto_bind_vtable_013ba550,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
