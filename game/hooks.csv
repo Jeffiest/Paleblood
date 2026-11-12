@@ -21893,6 +21893,7 @@ address,replacement,system,returns
 0x01e91990,bb_misc_assign_block_slot_word_01e91990,misc,i64
 0x01e91a50,bb_misc_store_and_clear_block_slot_01e91a50,misc,i64
 0x01e91ac0,bb_misc_fill_unset_block_masks_01e91ac0,misc,i64
+0x01e91b50,bb_misc_apply_source_to_counted_block_01e91b50,misc,i64
 0x01e91d70,bb_auto_bind_vtable_01e91d70,auto,void
 0x01e91da0,bb_auto_bind_vtable_01e91da0,auto,void
 0x01e91dd0,bb_auto_bind_vtable_01e91dd0,auto,void

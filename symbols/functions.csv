@@ -21894,6 +21894,7 @@ address,size,name,system,status,notes
 0x01e91990,185,misc_assign_block_slot_word_01e91990,misc,edge-verified,Assigns a source word to one counted word slot of a block when the slot mask shares a bit with the value its word cursor gives and returns one when assigned
 0x01e91a50,96,misc_store_and_clear_block_slot_01e91a50,misc,edge-verified,Stores a counted word block slot word in a destination counting it then assigns the zero word to the slot and returns the destination
 0x01e91ac0,133,misc_fill_unset_block_masks_01e91ac0,misc,edge-verified,Copies each unset slot mask of a counted word block from the source block where the source mask is set and returns the first copy with a changed flag
+0x01e91b50,106,misc_apply_source_to_counted_block_01e91b50,misc,edge-verified,Fills the kind of a counted word block from a source then applies the source to its objects through their virtual tables and returns the last result
 0x01e91d70,41,auto_bind_vtable_01e91d70,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
 0x01e91da0,41,auto_bind_vtable_01e91da0,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
 0x01e91dd0,41,auto_bind_vtable_01e91dd0,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses

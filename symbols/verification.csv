@@ -45553,6 +45553,7 @@ misc_append_indexed_node,edge,,8,8,0,0,657ea723fafdae02,2026-11-11
 misc_append_vector_element,edge,,10,10,0,0,b2cbe77678865af7,2026-11-11
 misc_apply_child_unless_flagged,edge,,10,10,0,0,0edb573c499dc1e9,2026-11-09
 misc_apply_each_slot,edge,,5,5,0,0,3e19a5a9de1ff003,2026-11-11
+misc_apply_source_to_counted_block_01e91b50,edge,,6,6,0,0,1412d1691803626e,2026-11-12
 misc_assign_block_slot_word_01e91990,edge,,11,11,0,0,9721d3fe82428849,2026-11-12
 misc_assign_counted_word_01e8bed0,edge,,20,20,0,0,1185ed4236acc738,2026-11-12
 misc_assign_counted_word_value_01e8c020,edge,,20,20,0,0,711df31b594d162a,2026-11-12

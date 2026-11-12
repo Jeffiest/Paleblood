@@ -36,4 +36,14 @@ static_assert(offsetof(CountedWordBlock, vtable_0x00) == 0x0 && offsetof(Counted
 static_assert(offsetof(CountedWordBlock, slots) == 0x10);
 static_assert(sizeof(CountedWordBlock) == 0x60);
 
+/**
+ *
+ * The virtual table of a counted word object, whose first slot takes the object and the source it is applied from.
+ *
+ */
+struct CountedWordObjectVtable {
+    uint64_t (*apply_0x00)(CountedWordObject *object, const CountedWordSource *source); /**< Slot 0x00: applies the source. */
+};
+static_assert(offsetof(CountedWordObjectVtable, apply_0x00) == 0x0);
+
 }  // namespace misc
