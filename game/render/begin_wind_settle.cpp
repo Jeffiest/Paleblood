@@ -20,16 +20,17 @@ constexpr uint32_t settle_update_count = 0x3c;
 /**
  *
  * Starts the wind system's settling when a system exists and the caller requests it: the reset flag and the settling
- * flag are set and the settling count is loaded. The request is read from its low byte only.
+ * flag are set and the settling count is loaded. The request is read from its low byte only. The function returns
+ * the system address it read, which the original leaves in RAX at every return.
  *
  */
-extern "C" void bb_render_begin_wind_settle(uint8_t request)
+extern "C" uint64_t bb_render_begin_wind_settle(uint8_t request)
 {
     render::wind::WindSystem *system = render::wind::wind_system_instance.get();
-    if (system == nullptr || request != settle_requested) {
-        return;
+    if (system != nullptr && request == settle_requested) {
+        system->reset_pending = flag_set;
+        system->settling = flag_set;
+        system->settle_count = settle_update_count;
     }
-    system->reset_pending = flag_set;
-    system->settling = flag_set;
-    system->settle_count = settle_update_count;
+    return reinterpret_cast<uintptr_t>(system);
 }

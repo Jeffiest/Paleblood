@@ -24,7 +24,7 @@ def case(cid, rdi, system=True):
     memory = [{'addr': WIND_SYSTEM_GLOBAL,
                'pointer': 'system' if system else None}] if system else \
              [{'addr': WIND_SYSTEM_GLOBAL, 'bytes': struct.pack('<Q', 0).hex()}]
-    return {'schema': 1, 'address': ADDRESS, 'id': cid, 'returns': 'void',
+    return {'schema': 1, 'address': ADDRESS, 'id': cid, 'returns': 'i64',
             'args': {'rdi': hex(rdi & MASK64)},
             'buffers': {'system': {'size': SYSTEM_BYTES, 'bytes': 'aa' * SYSTEM_BYTES}},
             'memory': memory, 'imports': [], 'stubs': []}
