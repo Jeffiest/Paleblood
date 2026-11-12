@@ -45899,6 +45899,7 @@ misc_release_owner_slots,edge,,13,13,0,0,5aaa77c07f2c3d3f,2026-11-11
 misc_release_owner_with_holder,edge,,14,14,0,0,68b66dbc58e955be,2026-11-09
 misc_release_pair,edge,,8,8,0,0,35af01fa31edbc2e,2026-11-09
 misc_release_pending_lists,edge,,9,9,0,0,9a41b8c717090201,2026-11-11
+misc_release_record_and_free,edge,,5,5,0,0,af7996229b8ca0a4,2026-11-12
 misc_release_record_base,edge,,6,6,0,0,b05f4f7e24f1fddf,2026-11-12
 misc_release_record_base_alt,edge,,6,6,0,0,a958822414d6be41,2026-11-12
 misc_release_resource_holder,edge,,13,13,0,0,83eb76bd2da027c8,2026-11-09
