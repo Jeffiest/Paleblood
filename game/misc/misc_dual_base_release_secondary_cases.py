@@ -36,8 +36,8 @@ def case(cid, held=None, word=0x0):
                    {'addr': 'buf:item+0x0', 'pointer': 'vt'},
                    {'addr': 'buf:item+0x8', 'bytes': u32(word)}]
         if word >= 0x10000 and (word & 0xffff) == 1:
-            stubs.append({'address': DESTROY, 'argc': 1})
-    return {'schema': 1, 'address': ADDRESS, 'id': cid, 'returns': 'void',
+            stubs.append({'address': DESTROY, 'argc': 1, 'ret': 0x55})
+    return {'schema': 1, 'address': ADDRESS, 'id': cid, 'returns': 'i64',
             'args': {'rdi': f'buf:obj+{SECONDARY:#x}'},
             'buffers': {'obj': {'size': OBJECT_SIZE, 'bytes': object_bytes},
                         'item': {'size': ITEM_SIZE, 'bytes': '00' * ITEM_SIZE},
@@ -54,6 +54,7 @@ CASES = [
     case('no_item'),
     case('uncounted_item', held=True, word=0x0),
     case('counted_item_kept', held=True, word=0x10005),
+    case('counted_word_at_threshold_kept', held=True, word=0x10000),
     case('counted_last_reference_destroyed', held=True, word=0x10001),
 ]
 
