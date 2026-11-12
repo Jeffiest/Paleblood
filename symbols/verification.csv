@@ -45744,6 +45744,8 @@ misc_emit_through_fresh_sink,edge,,4,4,0,0,19d40b8290836c05,2026-11-11
 misc_emit_through_lookup,edge,,4,4,0,0,154f171e0924f511,2026-11-11
 misc_enable_owner_target,edge,,6,6,0,0,ab5ba15acc4d6d73,2026-11-09
 misc_ensure_shared_instance_013a1850,edge,,4,4,0,0,3f58ac4e9e279812,2026-11-11
+misc_entry_address_0120,edge,,7,7,0,0,861f459514e8fcc8,2026-11-12
+misc_entry_address_1f88,edge,,9,9,0,0,5fd888f7063b6a0d,2026-11-12
 misc_entry_for_key,edge,,9,9,0,0,05562ce18d85b046,2026-11-09
 misc_entry_ref_accept,edge,,15,15,0,0,be3be074b348091e,2026-11-10
 misc_fill_counted_word_object_01e90c20,edge,,6,6,0,0,499c0256e160b4b5,2026-11-12
@@ -45815,6 +45817,7 @@ misc_grow_element_storage_locked,edge,,7,7,0,0,71cbdc4f6a1a03b7,2026-11-12
 misc_grow_full_element_storage,edge,,6,6,0,0,8f363789b9600c12,2026-11-12
 misc_grow_word_block,edge,,7,7,0,0,80a65077ff972d6e,2026-11-12
 misc_grow_word_block_02707280,edge,,7,7,0,0,bed2d5bd882ca547,2026-11-12
+misc_grow_word_block_027077a0,edge,,7,7,0,0,bc40e6ef607141a9,2026-11-12
 misc_grow_word_storage,edge,,7,7,0,0,e2a59da545d2b482,2026-11-11
 misc_grow_word_storage_01e8d280,edge,,7,7,0,0,ca0729c0a2d5770f,2026-11-12
 misc_hand_off_two_arrays,edge,,8,8,0,0,f284d8f577cc65a9,2026-11-11
@@ -45849,6 +45852,7 @@ misc_init_member_and_push,edge,,2,2,0,0,aa6da41813569882,2026-11-11
 misc_init_name_pair_013b92f0,edge,,10,10,0,0,df5c9b7975efdad0,2026-11-12
 misc_init_named_vtable_object_013b5080,edge,,3,3,0,0,6b073c796e1b735d,2026-11-12
 misc_init_named_vtable_plain_013b5440,edge,,3,3,0,0,afa53194f4b9aa2a,2026-11-12
+misc_init_ordered_map,edge,,6,6,0,0,dc98d7291b7ce7e4,2026-11-12
 misc_init_record_block,edge,,3,3,0,0,197bd7896465d3f5,2026-11-11
 misc_init_release_chain,edge,,4,4,0,0,fbd892b0ce8a8064,2026-11-10
 misc_init_rows_fields_5940ea0,edge,,8,8,0,0,3958b2ac507ac022,2026-11-10
@@ -46167,6 +46171,7 @@ physics_instance_construct_01c0c2b0,edge,60,21,21,0,0,ca3412adb293c909,2026-10-0
 physics_instance_construct_01c0c2b0,edge,uncapped,21,21,0,0,ca3412adb293c909,2026-10-07
 physics_list_append_pair,edge,,24,24,0,0,bee7dcade03f39e2,2026-11-09
 render_allocate_shader_upload,edge,,40,40,0,0,48df8d1e68143c6f,2026-11-05
+render_begin_wind_settle,edge,,7,7,0,0,e2d30d1720a136fb,2026-11-12
 render_build_present_source_record,edge,,105,105,0,0,1c9e410dd4d00fed,2026-11-10
 render_build_shader_link_words,edge,,30,30,0,0,0179f06c079fc316,2026-11-10
 render_calculate_record_descriptor_level_offset,edge,,30,30,0,0,a5d954dded06630e,2026-11-05
@@ -46190,6 +46195,8 @@ render_configure_viewport,edge,,11,11,0,0,f15d9c1438c4fd09,2026-11-06
 render_configure_viewport_and_guard_band,edge,,26,26,0,0,67cbc6eee27c8769,2026-11-10
 render_convert_constructor_record,edge,,98,98,0,0,8bd5968199c5fb5d,2026-11-10
 render_convert_record_descriptor_classification,edge,,236,236,0,0,a130fb1ef6469c41,2026-11-05
+render_create_wind_objects,edge,,5,5,0,0,b268f3bea27f87e9,2026-11-12
+render_create_wind_part,edge,,5,5,0,0,d50e749b3be34d13,2026-11-12
 render_emit_draw_index_auto,edge,,14,14,0,0,ee788ee6a611a7a0,2026-11-10
 render_emit_event_write,edge,,17,17,0,0,d1a112029c3a3e46,2026-11-06
 render_emit_num_instances,edge,,14,14,0,0,60c78aac624b1dfe,2026-11-06
@@ -46214,6 +46221,7 @@ render_frame_update_02377bd0,edge,30,12,12,0,0,dd4fcc5a0d365609,2026-10-31
 render_frame_update_02377bd0,edge,60,12,12,0,0,dd4fcc5a0d365609,2026-10-31
 render_frame_update_02377bd0,edge,uncapped,12,12,0,0,dd4fcc5a0d365609,2026-10-31
 render_get_record_descriptor_size,edge,,12,12,0,0,81442ce48c3e1089,2026-11-10
+render_get_wind_system,edge,,3,3,0,0,342249c0f99fd6a7,2026-11-12
 render_initialize_pair_record_descriptor,edge,,33,33,0,0,63a1e970d620584f,2026-11-10
 render_initialize_record_geometry_flags,edge,,70,70,0,0,0ef232dc6bf3c570,2026-11-10
 render_initialize_record_level_descriptor,edge,,51,51,0,0,a36426b67c294984,2026-11-05

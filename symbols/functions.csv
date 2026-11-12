@@ -35555,6 +35555,7 @@ address,size,name,system,status,notes
 0x027071a0,218,auto_push_value_by_reference_027071a0,auto,edge-verified,Same instructions as misc_push_value_by_reference with other addresses
 0x02707280,251,misc_grow_word_block_02707280,misc,edge-verified,Grows a list of 8-byte words to a new block for the requested count moving the stored words across and freeing the old block (second copy)
 0x02707380,16,misc_throw_prebuilt_error_02707380,misc,edge-verified,Raises the prebuilt error object through the throw helper which never returns (second copy)
+0x027077a0,251,misc_grow_word_block_027077a0,misc,edge-verified,Grows a list of 8-byte words to a new block for the requested count moving the stored words across and freeing the old block (third copy)
 0x02707fd0,28,auto_destroy_then_release_02707fd0,auto,edge-verified,Same instructions as misc_destroy_then_release with other addresses
 0x02708780,28,auto_destroy_then_release_02708780,auto,edge-verified,Same instructions as misc_destroy_then_release with other addresses
 0x027091d0,3,auto_return_constant_027091d0,auto,edge-verified,Generated from the return constant template
@@ -35577,6 +35578,9 @@ address,size,name,system,status,notes
 0x0270d0d0,41,auto_bind_vtable_0270d0d0,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
 0x0270d100,41,auto_bind_vtable_0270d100,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
 0x0270d130,49,auto_copy_block_0270d130,auto,edge-verified,Same instructions as misc_copy_block_58b3240 with other addresses
+0x0270ffc0,16,misc_entry_address_1f88,misc,edge-verified,Returns the address of an entry in the 0x38-byte table at offset 0x1f88 of its object with a sign-extended index
+0x0270ffd0,15,misc_entry_address_0120,misc,edge-verified,Returns the address of an entry in the 0x38-byte table at offset 0x120 of its object with a zero-extended index
+0x0270ffe0,302,misc_init_ordered_map,misc,edge-verified,Zeroes the owner first block then allocates and links a head node as an empty ordered map and zeroes its table at +0x120
 0x02710110,41,auto_bind_vtable_02710110,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
 0x02710140,41,auto_bind_vtable_02710140,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
 0x02710170,41,auto_bind_vtable_02710170,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
@@ -35592,6 +35596,10 @@ address,size,name,system,status,notes
 0x02713440,41,auto_bind_vtable_02713440,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
 0x02713470,41,auto_bind_vtable_02713470,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
 0x027134a0,49,auto_copy_block_027134a0,auto,edge-verified,Same instructions as misc_copy_block_58b3240 with other addresses
+0x027134e0,134,render_create_wind_objects,render,edge-verified,Takes a 0x110-byte block and a 0x1a0-byte block from the allocator initialising both through their callees and reports whether the first was taken
+0x027135f0,79,render_create_wind_part,render,edge-verified,Takes a 0x78-byte wind part block from the allocator and initialises it through two callees reporting whether the block was taken
+0x02713690,11,render_get_wind_system,render,edge-verified,Returns the wind system instance address from its global or null before the system exists
+0x027136a0,37,render_begin_wind_settle,render,edge-verified,Starts the wind system settling when a system exists and the request byte is one: sets the reset and settling flags and the count
 0x027136d0,41,auto_bind_vtable_027136d0,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
 0x02713700,41,auto_bind_vtable_02713700,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
 0x02713730,41,auto_bind_vtable_02713730,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses

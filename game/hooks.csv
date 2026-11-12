@@ -35554,6 +35554,7 @@ address,replacement,system,returns
 0x027071a0,bb_auto_push_value_by_reference_027071a0,auto,void
 0x02707280,bb_misc_grow_word_block_02707280,misc,void
 0x02707380,bb_misc_throw_prebuilt_error_02707380,misc,void
+0x027077a0,bb_misc_grow_word_block_027077a0,misc,void
 0x02707fd0,bb_auto_destroy_then_release_02707fd0,auto,i64
 0x02708780,bb_auto_destroy_then_release_02708780,auto,i64
 0x027091d0,bb_auto_return_constant_027091d0,auto,i8
@@ -35576,6 +35577,9 @@ address,replacement,system,returns
 0x0270d0d0,bb_auto_bind_vtable_0270d0d0,auto,void
 0x0270d100,bb_auto_bind_vtable_0270d100,auto,void
 0x0270d130,bb_auto_copy_block_0270d130,auto,void
+0x0270ffc0,bb_misc_entry_address_1f88,misc,i64
+0x0270ffd0,bb_misc_entry_address_0120,misc,i64
+0x0270ffe0,bb_misc_init_ordered_map,misc,void
 0x02710110,bb_auto_bind_vtable_02710110,auto,void
 0x02710140,bb_auto_bind_vtable_02710140,auto,void
 0x02710170,bb_auto_bind_vtable_02710170,auto,void
@@ -35591,6 +35595,10 @@ address,replacement,system,returns
 0x02713440,bb_auto_bind_vtable_02713440,auto,void
 0x02713470,bb_auto_bind_vtable_02713470,auto,void
 0x027134a0,bb_auto_copy_block_027134a0,auto,void
+0x027134e0,bb_render_create_wind_objects,render,i8
+0x027135f0,bb_render_create_wind_part,render,i8
+0x02713690,bb_render_get_wind_system,render,i64
+0x027136a0,bb_render_begin_wind_settle,render,i64
 0x027136d0,bb_auto_bind_vtable_027136d0,auto,void
 0x02713700,bb_auto_bind_vtable_02713700,auto,void
 0x02713730,bb_auto_bind_vtable_02713730,auto,void
