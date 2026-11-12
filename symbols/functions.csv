@@ -2457,6 +2457,7 @@ address,size,name,system,status,notes
 0x00d39110,8,auto_fixed_address_00d39110,auto,edge-verified,Same instructions as misc_plain_type_address with other addresses
 0x00d391f0,8,auto_fixed_address_00d391f0,auto,edge-verified,Same instructions as misc_plain_type_address with other addresses
 0x00d39200,5,auto_jump_thunk_00d39200,auto,edge-verified,Same instructions as misc_jump_thunk with other addresses
+0x00d39d50,276,misc_register_indexed_members,misc,edge-verified,Makes a keyed slot table from the thread allocator then registers the group indexed members in it and copies a source word into two fields
 0x00d39e70,75,auto_held_member_object_free_00d39e70,auto,edge-verified,Same instructions as misc_held_member_object_free with other addresses and constants
 0x00d3b7f0,3,auto_return_constant_00d3b7f0,auto,edge-verified,Generated from the return constant template
 0x00d42310,75,auto_held_member_object_free_00d42310,auto,edge-verified,Same instructions as misc_held_member_object_free with other addresses and constants

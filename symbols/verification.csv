@@ -45981,6 +45981,7 @@ misc_register_fixed_type_descriptor,edge,,2,2,0,0,b1c8e186dcc845a6,2026-11-12
 misc_register_forwarding_type,edge,,2,2,0,0,072daa6f4470d195,2026-11-12
 misc_register_four_types,edge,,3,3,0,0,e358ac7c13c3d8bb,2026-11-12
 misc_register_handle_record,edge,,4,4,0,0,b590850d06a3763b,2026-11-09
+misc_register_indexed_members,edge,,11,11,0,0,50250e8c4130b301,2026-11-12
 misc_register_plain_type,edge,,1,1,0,0,99a6735cfe801470,2026-11-09
 misc_register_sized_type,edge,,2,2,0,0,eda0e0ecfeebb39b,2026-11-12
 misc_register_three_types,edge,,2,2,0,0,78d8d69d148cd1ac,2026-11-11
