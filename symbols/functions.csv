@@ -28528,6 +28528,7 @@ address,size,name,system,status,notes
 0x0225aa30,8,auto_fixed_address_0225aa30,auto,edge-verified,Same instructions as misc_plain_type_address with other addresses
 0x0225b7d0,8,misc_clear_pointer_slot,misc,edge-verified,Clears the pointer slot at the first argument to null and leaves RAX alone
 0x0225b7e0,16,misc_copy_retained_reference,misc,edge-verified,Copies the pointer in the source slot to the destination slot and takes a reference on the object when it is not null; returns the pointer
+0x0225b7f0,20,misc_clear_and_forward_source,misc,edge-verified,Clears the slot at the first argument to null; with a source it tail-calls the routine at 0x0225b8e0 with a zero flag and returns its result; without one returns zero
 0x0225b810,7,misc_forward_with_zero_flag,misc,edge-verified,Tail call to the routine at 0x0225b8e0 with the two arguments and a zero third argument; returns its result
 0x0225bd70,41,auto_bind_vtable_0225bd70,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
 0x0225bda0,41,auto_bind_vtable_0225bda0,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses

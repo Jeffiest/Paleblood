@@ -45610,6 +45610,7 @@ misc_child_call_with_flag,edge,,10,10,0,0,abb3f9fc8b81bbd1,2026-11-09
 misc_child_idle,edge,,10,10,0,0,737d142cc040e869,2026-11-11
 misc_child_pointer_present,edge,,6,6,0,0,72af9cfee943dfc0,2026-11-11
 misc_child_ready_after_checks,edge,,14,14,0,0,689d16a605bf5bb0,2026-11-09
+misc_clear_and_forward_source,edge,,5,5,0,0,40fde26f34ee422b,2026-11-12
 misc_clear_flagged_tag,edge,,6,6,0,0,a27f003e89e8beb5,2026-11-09
 misc_clear_flagged_tag_alt,edge,,6,6,0,0,4324bfada71dd207,2026-11-09
 misc_clear_held_destroy_then_free,edge,,4,4,0,0,f2d9f6b518277e3c,2026-11-11
