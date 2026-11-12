@@ -104,6 +104,7 @@ address,replacement,system,returns
 0x00418570,bb_misc_set_lookup_locked,misc,i8
 0x00418c60,bb_misc_copy_entry_locked,misc,i64
 0x00418ce0,bb_misc_copy_second_entry_locked,misc,i8
+0x00418d50,bb_misc_read_second_capacity_locked,misc,i32
 0x00418d80,bb_auto_return_field_00418d80,auto,i64
 0x00419190,bb_auto_prepare_forward_00419190,auto,i64
 0x00419700,bb_auto_prepare_forward_00419700,auto,i64
