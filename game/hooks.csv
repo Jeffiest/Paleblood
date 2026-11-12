@@ -2317,7 +2317,11 @@ address,replacement,system,returns
 0x00cd4580,bb_misc_copy_slot_record,misc,void
 0x00cd4720,bb_auto_held_member_object_free_00cd4720,auto,i64
 0x00cd4770,bb_auto_bounded_range_object_free_secondary_00cd4770,auto,i64
+0x00cdccc0,bb_misc_reserve_two_slots_then_visit,misc,i32
+0x00cdce00,bb_misc_forward_embedded_context,misc,i64
 0x00cdce20,bb_auto_fixed_address_00cdce20,auto,i64
+0x00cdce50,bb_misc_register_fixed_type_descriptor,misc,i64
+0x00cdcf10,bb_misc_init_tuning_record,misc,void
 0x00cdd750,bb_auto_held_member_object_free_00cdd750,auto,i64
 0x00cde4e0,bb_auto_ref_holder_add_child_00cde4e0,auto,void
 0x00ce2c50,bb_auto_base_init_00ce2c50,auto,void
@@ -2347,7 +2351,13 @@ address,replacement,system,returns
 0x00ce4c90,bb_auto_fixed_address_00ce4c90,auto,i64
 0x00ce4ca0,bb_auto_jump_thunk_00ce4ca0,auto,i64
 0x00ce73d0,bb_auto_fixed_address_00ce73d0,auto,i64
+0x00ce7410,bb_misc_register_vtable_type_descriptor,misc,void
+0x00ce7690,bb_misc_init_cleared_link_record,misc,void
 0x00ce76d0,bb_auto_base_init_00ce76d0,auto,void
+0x00ce76e0,bb_misc_init_sample_record,misc,void
+0x00ce7730,bb_misc_init_slot_record,misc,void
+0x00ce7800,bb_misc_clear_trailing_links,misc,void
+0x00ce7830,bb_misc_fill_two_slot_blocks,misc,i64
 0x00cebc50,bb_auto_fixed_address_00cebc50,auto,i64
 0x00cebc60,bb_auto_base_init_00cebc60,auto,void
 0x00cebc80,bb_auto_fixed_address_00cebc80,auto,i64

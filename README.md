@@ -46,9 +46,9 @@ It is made by people who love this game and want it to outlive the hardware it w
 | | Functions | Bytes |
 |---|---:|---:|
 | Target (Ghidra export) | 179038 | 43760147 |
-| Replaced | 64231 (35.88%) | 2206914 (5.04%) |
+| Replaced | 64241 (35.88%) | 2208358 (5.05%) |
 | of which in 19 function families | 18019 (10.06%) | 62426 (0.14%) |
-| Edge-verified | 64231 (35.88%) | 2206914 (5.04%) |
+| Edge-verified | 64241 (35.88%) | 2208358 (5.05%) |
 | Verified | 21 (0.01%) | 14010 (0.03%) |
 
 Each row includes the next: verified functions are also edge-verified and replaced.
