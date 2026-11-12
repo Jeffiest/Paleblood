@@ -5542,6 +5542,7 @@ address,replacement,system,returns
 0x013b53a0,bb_auto_bind_vtable_013b53a0,auto,void
 0x013b53d0,bb_auto_bind_vtable_013b53d0,auto,void
 0x013b5400,bb_auto_copy_block_013b5400,auto,void
+0x013b5440,bb_misc_init_named_vtable_plain_013b5440,misc,i64
 0x013b5480,bb_auto_destroy_then_release_013b5480,auto,i64
 0x013b54a0,bb_auto_jump_thunk_013b54a0,auto,i64
 0x013b54b0,bb_misc_tail_call_kind_013b54b0,misc,i64
