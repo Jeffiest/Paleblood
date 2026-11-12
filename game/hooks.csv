@@ -39841,6 +39841,7 @@ address,replacement,system,returns
 0x02b4cd60,bb_misc_clear_record_tag_02b4cd60,misc,i64
 0x02b4cde0,bb_misc_clear_record_tag_02b4cde0,misc,i64
 0x02b4ce60,bb_auto_fixed_address_02b4ce60,auto,i64
+0x02b4ce70,bb_misc_create_source_object_02b4ce70,misc,i64
 0x02b4cf10,bb_auto_jump_thunk_02b4cf10,auto,i64
 0x02b4cf20,bb_auto_destroy_then_release_02b4cf20,auto,i64
 0x02b4cf60,bb_auto_fixed_address_02b4cf60,auto,i64
