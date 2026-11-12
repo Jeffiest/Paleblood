@@ -11763,6 +11763,7 @@ address,size,name,system,status,notes
 0x018bdf20,78,misc_copy_narrow_clone_record_alt,misc,edge-verified,Same copy as misc_copy_narrow_clone_record for the second narrow clone record routine at 0x018bdf20
 0x018bdfd0,1,auto_empty_018bdfd0,auto,edge-verified,Generated from the empty template
 0x018bdfe0,5,auto_delete_object_thunk_018bdfe0,auto,edge-verified,Same instructions as misc_delete_object_thunk with other addresses
+0x018be000,62,misc_copy_key_clone_record,misc,edge-verified,Fills a key clone record from the source key word in the given record or a new block; a failed block allocation throws and the record address is returned
 0x018be0e0,1,auto_empty_018be0e0,auto,edge-verified,Generated from the empty template
 0x018be0f0,5,auto_delete_object_thunk_018be0f0,auto,edge-verified,Same instructions as misc_delete_object_thunk with other addresses
 0x018be310,5,auto_jump_thunk_018be310,auto,edge-verified,Same instructions as misc_jump_thunk with other addresses
