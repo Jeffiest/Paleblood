@@ -5533,6 +5533,7 @@ address,size,name,system,status,notes
 0x013b5080,58,misc_init_named_vtable_object_013b5080,misc,edge-verified,Runs the base set-up on a named object then stores its class vtable clears a word and stores the default name
 0x013b50c0,28,auto_destroy_then_release_013b50c0,auto,edge-verified,Same instructions as misc_destroy_then_release with other addresses
 0x013b50e0,5,auto_jump_thunk_013b50e0,auto,edge-verified,Same instructions as misc_jump_thunk with other addresses
+0x013b50f0,7,misc_call_with_zero_kind_013b50f0,misc,edge-verified,Tail call to the shared routine with its second argument set to zero and the other argument registers passed through
 0x013b5370,41,auto_bind_vtable_013b5370,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
 0x013b53a0,41,auto_bind_vtable_013b53a0,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
 0x013b53d0,41,auto_bind_vtable_013b53d0,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
