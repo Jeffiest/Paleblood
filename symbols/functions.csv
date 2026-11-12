@@ -40019,6 +40019,7 @@ address,size,name,system,status,notes
 0x02b4fa80,8,auto_fixed_address_02b4fa80,auto,edge-verified,Same instructions as misc_plain_type_address with other addresses
 0x02b4fd60,5,auto_delete_object_thunk_02b4fd60,auto,edge-verified,Same instructions as misc_delete_object_thunk with other addresses
 0x02b4fea0,8,auto_fixed_address_02b4fea0,auto,edge-verified,Same instructions as misc_plain_type_address with other addresses
+0x02b50530,318,misc_append_singleton_record_02b50530,misc,edge-verified,Appends a record of the source slot value and source or the record singleton to the owner record list and returns nothing
 0x02b50670,411,misc_pair_singleton_dispatch_02b50670,misc,edge-verified,Stores the pair dispatch holder vtable then takes the pair singleton and tail-calls its slot 0x60 with the results of its slots 0x10 and 0x18
 0x02b50810,271,misc_pair_singleton_for_source_02b50810,misc,edge-verified,Fills a caller pair with the pair singleton and the source factory object word or with zeros when the source is ready
 0x02b50920,5,auto_delete_object_thunk_02b50920,auto,edge-verified,Same instructions as misc_delete_object_thunk with other addresses
