@@ -11609,6 +11609,7 @@ address,size,name,system,status,notes
 0x018a41d0,3,auto_return_constant_018a41d0,auto,edge-verified,Generated from the return constant template
 0x018a4310,28,auto_destroy_then_release_018a4310,auto,edge-verified,Same instructions as misc_destroy_then_release with other addresses
 0x018a9bd0,46,misc_forward_when_ready,misc,edge-verified,Tests the slot at object+0x40 with 0x010a1400 and returns its result when the low byte is clear; otherwise tail-calls 0x01086b20 with the same slot
+0x018a9c00,92,misc_record_registry_flag,misc,edge-verified,Returns the registry flag: a non-negative flag gives whether it is set otherwise bit 22 of the registry mode word; a missing registry goes through the fatal report and is fetched again
 0x018a9c60,192,misc_attach_record_when_accepted,misc,edge-verified,Destroys the held record and clears the owner slot at 0xc0 then with an acceptor builds a factory record and keeps it only when the acceptor accepts (AL) and otherwise holds nothing
 0x018aa2d0,41,auto_bind_vtable_018aa2d0,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
 0x018aa300,41,auto_bind_vtable_018aa300,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses

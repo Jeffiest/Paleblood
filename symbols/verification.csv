@@ -45855,6 +45855,7 @@ misc_read_source_word,edge,,5,5,0,0,636871755dc2bb87,2026-11-11
 misc_record_link_address,edge,,7,7,0,0,4f386509179ac666,2026-11-11
 misc_record_link_address_00be6f70,edge,,7,7,0,0,f9025401889793d9,2026-11-11
 misc_record_probe_values,edge,,6,6,0,0,6e47fc1c63e208ea,2026-11-09
+misc_record_registry_flag,edge,,8,8,0,0,674bbd3717bdcd30,2026-11-12
 misc_ref_holder_add_child,edge,,6,6,0,0,f2af305194d9c70b,2026-11-10
 misc_ref_holder_attach,edge,,9,9,0,0,a5a70cc531c10f7f,2026-11-10
 misc_ref_holder_detach,edge,,9,9,0,0,8e46684ed109c170,2026-11-10
