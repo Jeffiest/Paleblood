@@ -35365,6 +35365,7 @@ address,size,name,system,status,notes
 0x026fc690,41,auto_bind_vtable_026fc690,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
 0x026fc6c0,49,auto_copy_block_026fc6c0,auto,edge-verified,Same instructions as misc_copy_block_58b3240 with other addresses
 0x026fc750,18,misc_copy_word_triple,misc,edge-verified,Copies three words from a source record into a target record and returns the last word read
+0x026fc770,322,misc_get_published_object_once,misc,edge-verified,Returns the published static object after building the first static object and the published object once
 0x026fc8c0,41,auto_bind_vtable_026fc8c0,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
 0x026fc8f0,41,auto_bind_vtable_026fc8f0,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
 0x026fc920,41,auto_bind_vtable_026fc920,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
