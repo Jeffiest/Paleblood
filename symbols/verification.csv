@@ -45698,6 +45698,7 @@ misc_fill_item_table,edge,,10,10,0,0,121719f0b60da0e7,2026-11-09
 misc_find_largest_value_at_most,edge,,12,12,0,0,3ea1d78637ccfe72,2026-11-11
 misc_find_leaf_index,edge,,14,14,0,0,84f984031fa6cd6a,2026-11-09
 misc_find_link_index,edge,,7,7,0,0,1c1708a201dc55cf,2026-11-10
+misc_find_list_entry_value,edge,,6,6,0,0,3d86e20b34fb7c7f,2026-11-12
 misc_find_or_add_record,edge,,7,7,0,0,a5918802ba3df8ff,2026-11-11
 misc_find_or_create_keyed_object_a,edge,,15,15,0,0,0de15824271257b5,2026-11-09
 misc_find_or_create_keyed_object_b,edge,,15,15,0,0,214eb9daec5457a1,2026-11-09
