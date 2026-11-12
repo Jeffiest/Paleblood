@@ -45673,6 +45673,7 @@ misc_destroy_node_and_free,edge,,4,4,0,0,87a3bcfe4b4127d6,2026-11-10
 misc_destroy_node_slot_00_and_free,edge,,4,0,4,0,dcb0a4d7bca79049,2026-11-09
 misc_destroy_owned_block_pair,edge,,6,6,0,0,64758a3e67a59f68,2026-11-10
 misc_destroy_then_release,edge,,4,4,0,0,3e2ea31c54b1b109,2026-11-09
+misc_detach_pending_object_02b4cfb0,edge,,10,10,0,0,383752b1788cd997,2026-11-12
 misc_disarm_callback,edge,,7,7,0,0,a49db354307528b6,2026-11-09
 misc_dispatch_and_free_nodes,edge,,8,8,0,0,560d5709d5ca98c6,2026-11-09
 misc_dispatch_by_kind,edge,,9,9,0,0,104ca00b504059ae,2026-11-09

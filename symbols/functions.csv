@@ -39849,6 +39849,7 @@ address,size,name,system,status,notes
 0x02b4cf70,8,auto_fixed_address_02b4cf70,auto,edge-verified,Same instructions as misc_plain_type_address with other addresses
 0x02b4cf80,8,auto_fixed_address_02b4cf80,auto,edge-verified,Same instructions as misc_plain_type_address with other addresses
 0x02b4cf90,8,auto_fixed_address_02b4cf90,auto,edge-verified,Same instructions as misc_plain_type_address with other addresses
+0x02b4cfb0,319,misc_detach_pending_object_02b4cfb0,misc,edge-verified,Takes the pending object off a list when the shared singleton is on it and passes it to the target slot 0x70 then clears the pending word
 0x02b4d780,28,auto_destroy_then_release_02b4d780,auto,edge-verified,Same instructions as misc_destroy_then_release with other addresses
 0x02b4d7a0,5,auto_jump_thunk_02b4d7a0,auto,edge-verified,Same instructions as misc_jump_thunk with other addresses
 0x02b4d7f0,41,auto_bind_vtable_02b4d7f0,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses

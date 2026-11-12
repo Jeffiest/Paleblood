@@ -39848,6 +39848,7 @@ address,replacement,system,returns
 0x02b4cf70,bb_auto_fixed_address_02b4cf70,auto,i64
 0x02b4cf80,bb_auto_fixed_address_02b4cf80,auto,i64
 0x02b4cf90,bb_auto_fixed_address_02b4cf90,auto,i64
+0x02b4cfb0,bb_misc_detach_pending_object_02b4cfb0,misc,i64
 0x02b4d780,bb_auto_destroy_then_release_02b4d780,auto,i64
 0x02b4d7a0,bb_auto_jump_thunk_02b4d7a0,auto,i64
 0x02b4d7f0,bb_auto_bind_vtable_02b4d7f0,auto,void
