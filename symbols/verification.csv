@@ -45599,6 +45599,7 @@ misc_call_then_forward,edge,,4,4,0,0,818ff73fa1c91dbd,2026-11-09
 misc_call_then_release,edge,,6,6,0,0,6448081417772e6c,2026-11-09
 misc_call_then_release_01888bd0,edge,,6,6,0,0,c522943d83802d1e,2026-11-09
 misc_call_with_counted_records_01e87f90,edge,,5,5,0,0,b6f83b6d947ac16e,2026-11-11
+misc_call_with_kind_three_013b5180,edge,,5,5,0,0,312b7eab93a77e29,2026-11-12
 misc_call_with_zero_kind_013b50f0,edge,,4,4,0,0,1fb1f82ef884608d,2026-11-12
 misc_chain_contains,edge,,9,9,0,0,8b4669a2c9b3075e,2026-11-09
 misc_chain_leaf_flag,edge,,6,6,0,0,1e265fb6c6640d38,2026-11-09

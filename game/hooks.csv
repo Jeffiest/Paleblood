@@ -5533,6 +5533,7 @@ address,replacement,system,returns
 0x013b50c0,bb_auto_destroy_then_release_013b50c0,auto,i64
 0x013b50e0,bb_auto_jump_thunk_013b50e0,auto,i64
 0x013b50f0,bb_misc_call_with_zero_kind_013b50f0,misc,i64
+0x013b5180,bb_misc_call_with_kind_three_013b5180,misc,i8
 0x013b5370,bb_auto_bind_vtable_013b5370,auto,void
 0x013b53a0,bb_auto_bind_vtable_013b53a0,auto,void
 0x013b53d0,bb_auto_bind_vtable_013b53d0,auto,void
