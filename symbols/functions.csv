@@ -40102,6 +40102,7 @@ address,size,name,system,status,notes
 0x02b516f0,5,auto_delete_object_thunk_02b516f0,auto,edge-verified,Same instructions as misc_delete_object_thunk with other addresses
 0x02b51830,8,auto_fixed_address_02b51830,auto,edge-verified,Same instructions as misc_plain_type_address with other addresses
 0x02b53560,5,auto_delete_object_thunk_02b53560,auto,edge-verified,Same instructions as misc_delete_object_thunk with other addresses
+0x02b53580,126,misc_clear_record_tag_02b53580,misc,edge-verified,Clears the fifteen words of a 0x80 record from the last to the first then stores the first argument in the tag word and returns zero
 0x02b53680,8,auto_fixed_address_02b53680,auto,edge-verified,Same instructions as misc_plain_type_address with other addresses
 0x02b53690,5,auto_jump_thunk_02b53690,auto,edge-verified,Same instructions as misc_jump_thunk with other addresses
 0x02b536a0,28,auto_destroy_then_release_02b536a0,auto,edge-verified,Same instructions as misc_destroy_then_release with other addresses
