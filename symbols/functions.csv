@@ -4332,6 +4332,7 @@ address,size,name,system,status,notes
 0x0124f740,41,auto_bind_vtable_0124f740,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
 0x0124f770,41,auto_bind_vtable_0124f770,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
 0x0124f7a0,41,auto_bind_vtable_0124f7a0,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x0124faa0,538,misc_build_element_table,misc,edge-verified,Allocates an element table and a record buffer from a source description then fills the records through two lookup tables
 0x01250230,41,auto_bind_vtable_01250230,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
 0x01250260,41,auto_bind_vtable_01250260,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
 0x01250290,41,auto_bind_vtable_01250290,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses

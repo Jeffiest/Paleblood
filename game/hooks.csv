@@ -4331,6 +4331,7 @@ address,replacement,system,returns
 0x0124f740,bb_auto_bind_vtable_0124f740,auto,void
 0x0124f770,bb_auto_bind_vtable_0124f770,auto,void
 0x0124f7a0,bb_auto_bind_vtable_0124f7a0,auto,void
+0x0124faa0,bb_misc_build_element_table,misc,i8
 0x01250230,bb_auto_bind_vtable_01250230,auto,void
 0x01250260,bb_auto_bind_vtable_01250260,auto,void
 0x01250290,bb_auto_bind_vtable_01250290,auto,void
