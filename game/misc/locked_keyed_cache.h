@@ -28,7 +28,10 @@ static_assert(offsetof(KeyedCacheTable, block_0x0000) == 0x00);
 struct KeyedCacheRecord {
     int32_t kept_flag;                  /**< Zero when the table did not keep the object. */
     uint8_t unknown_0x0004[0x4];
-    KeyedCacheObject *object;           /**< The object the caller holds a reference to. */
+    union {
+        KeyedCacheObject *object;       /**< The object the caller holds a reference to. */
+        uint32_t counter_0x08;          /**< A counter word, for the records that carry one instead. */
+    };
 };
 static_assert(offsetof(KeyedCacheRecord, kept_flag) == 0x00);
 static_assert(offsetof(KeyedCacheRecord, object) == 0x08);
@@ -56,11 +59,14 @@ constexpr size_t cache_lock_size = 0x10;
 struct LockedKeyedCache {
     uint8_t unknown_0x0000[0xe4];
     int32_t level_0xe4;                 /**< Signed; the lock is taken while it is below two. */
-    uint8_t unknown_0x00e8[0x60];
+    uint8_t unknown_0x00e8[0x58];
+    uint32_t counter_0x0140;            /**< A counter the record inserts number their records with. */
+    uint8_t unknown_0x0144[0x4];
     uint8_t lock_0x0148[cache_lock_size]; /**< The lock object; its address is passed to the lock calls. */
     KeyedCacheTable table_0x0158;       /**< The table of keyed entries. */
 };
 static_assert(offsetof(LockedKeyedCache, level_0xe4) == 0xe4);
+static_assert(offsetof(LockedKeyedCache, counter_0x0140) == 0x140);
 static_assert(offsetof(LockedKeyedCache, lock_0x0148) == 0x148);
 static_assert(offsetof(LockedKeyedCache, table_0x0158) == 0x158);
 
