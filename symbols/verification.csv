@@ -45658,6 +45658,7 @@ misc_create_value_object,edge,,8,8,0,0,aa23f35aae1a87f4,2026-11-11
 misc_decrement_keyed_entry_01e86e00,edge,,9,9,0,0,7e2320e3b5b81a6c,2026-11-11
 misc_decrement_word_entry_01e8bc00,edge,,9,9,0,0,9a9bac64050ba15b,2026-11-11
 misc_delete_derived_object,edge,,8,8,0,0,9a0f36e392ba0ca7,2026-11-11
+misc_delete_dual_base,edge,,7,7,0,0,1bd56aafb3e91bc3,2026-11-12
 misc_delete_object_thunk,edge,,6,6,0,0,219308cbf84e73ff,2026-11-10
 misc_descriptor_type_address,edge,,1,1,0,0,43e00eb2669c1418,2026-11-09
 misc_destroy_chain_lists,edge,,2,2,0,0,b2173b0902b43ef2,2026-11-11

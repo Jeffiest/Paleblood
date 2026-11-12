@@ -30,7 +30,8 @@ constexpr size_t dual_base_secondary_offset = 0x10;
  */
 struct DualBaseObject {
     const void *primary_vtable;   /**< Primary base's vtable address point, at 0x00. */
-    uint8_t unknown_0x0008[0x08];
+    uint32_t size_word_0x08;      /**< Block size in the high half (0xffff for the default size), at 0x08. */
+    uint8_t unknown_0x000c[0x04];
     const void *secondary_vtable; /**< Secondary base's vtable, at 0x10. */
     uint8_t unknown_0x0018[0x08];
     RefItem *held;                /**< Counted item the object holds, at 0x20; null when there is none. */
