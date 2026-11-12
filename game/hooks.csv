@@ -21958,6 +21958,7 @@ address,replacement,system,returns
 0x01e93780,bb_auto_bind_vtable_01e93780,auto,void
 0x01e937b0,bb_auto_initialize_static_wide_string_01e937b0,auto,void
 0x01e93880,bb_auto_copy_block_01e93880,auto,void
+0x01e938c0,bb_misc_build_counted_block_record_01e938c0,misc,void
 0x01e93a20,bb_misc_destroy_counted_block_record_01e93a20,misc,i64
 0x01e93ad0,bb_misc_reset_counted_block_record_01e93ad0,misc,void
 0x01e93bb0,bb_misc_visit_block_slot00_01e93bb0,misc,i64

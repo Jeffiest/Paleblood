@@ -24,10 +24,13 @@ RT_GLOBAL(0x057997d0, counted_block_record_final_vtable, const uint8_t);
  */
 struct CountedBlockRecord {
     const void *vtable;             /**< The record's virtual table, set to one of two tables while it is used. */
-    uint8_t unknown_0x0008[0x18];
+    uint8_t unknown_0x0008[0x10];
+    uint32_t first_word;            /**< Set to zero when the record is built. */
+    uint32_t second_word;           /**< Set to zero when the record is built. */
     CountedWordBlock block;         /**< The counted word block the record holds. */
 };
 static_assert(offsetof(CountedBlockRecord, vtable) == 0x0);
+static_assert(offsetof(CountedBlockRecord, first_word) == 0x18 && offsetof(CountedBlockRecord, second_word) == 0x1c);
 static_assert(offsetof(CountedBlockRecord, block) == 0x20);
 static_assert(sizeof(CountedBlockRecord) == 0x80);
 

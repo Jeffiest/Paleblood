@@ -21959,6 +21959,7 @@ address,size,name,system,status,notes
 0x01e93780,41,auto_bind_vtable_01e93780,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
 0x01e937b0,205,auto_initialize_static_wide_string_01e937b0,auto,edge-verified,Same instructions as engine_initialize_static_wide_string_018867e0 with other addresses
 0x01e93880,49,auto_copy_block_01e93880,auto,edge-verified,Same instructions as misc_copy_block_58b3240 with other addresses
+0x01e938c0,338,misc_build_counted_block_record_01e938c0,misc,edge-verified,Builds a counted block record: its tables and two cleared words then a counted word block with five default objects and binds the objects to a registry entry when found
 0x01e93a20,165,misc_destroy_counted_block_record_01e93a20,misc,edge-verified,Resets a counted block record then sets its final table and registers it with the registry when set then tail-calls the release routine and returns its result
 0x01e93ad0,152,misc_reset_counted_block_record_01e93ad0,misc,edge-verified,Resets a counted block record then sets its final table and registers it with the registry when set and leaves the record alive
 0x01e93bb0,142,misc_visit_block_slot00_01e93bb0,misc,edge-verified,Walks a field block with a visitor: three fields then four member objects through slot 0 and tail-calls the tail member slot 0 returning its result
