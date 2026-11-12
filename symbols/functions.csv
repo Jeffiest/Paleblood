@@ -1351,6 +1351,7 @@ address,size,name,system,status,notes
 0x009f3370,8,auto_fixed_address_009f3370,auto,edge-verified,Same instructions as misc_plain_type_address with other addresses
 0x009f3380,5,auto_jump_thunk_009f3380,auto,edge-verified,Same instructions as misc_jump_thunk with other addresses
 0x009f35c0,8,auto_fixed_address_009f35c0,auto,edge-verified,Same instructions as misc_plain_type_address with other addresses
+0x009f3660,546,misc_init_slot_table_object,misc,edge-verified,Initialise a slot-table object: vtable and size word and 17 empty pointer slots and status and flags words; caller overwrites RAX.
 0x009f4870,75,auto_held_member_object_free_009f4870,auto,edge-verified,Same instructions as misc_held_member_object_free with other addresses and constants
 0x009f8c30,88,auto_ref_holder_add_child_009f8c30,auto,edge-verified,Same instructions as misc_ref_holder_add_child with other addresses and constants
 0x009f8cd0,88,auto_ref_holder_add_child_009f8cd0,auto,edge-verified,Same instructions as misc_ref_holder_add_child with other addresses and constants
