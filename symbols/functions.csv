@@ -28794,6 +28794,7 @@ address,size,name,system,status,notes
 0x02263850,8,auto_fixed_address_02263850,auto,edge-verified,Same instructions as misc_plain_type_address with other addresses
 0x02263860,8,auto_fixed_address_02263860,auto,edge-verified,Same instructions as misc_plain_type_address with other addresses
 0x02264240,28,auto_destroy_then_release_02264240,auto,edge-verified,Same instructions as misc_destroy_then_release with other addresses
+0x02264260,505,misc_teardown_owner_02264260,misc,edge-verified,Tears down an owner: destroys its object and second list releases its single pointer then frees its first list and returns the last free result
 0x02265bb0,5,auto_jump_thunk_02265bb0,auto,edge-verified,Same instructions as misc_jump_thunk with other addresses
 0x02266600,41,auto_bind_vtable_02266600,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
 0x02266630,41,auto_bind_vtable_02266630,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
