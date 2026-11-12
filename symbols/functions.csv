@@ -12014,6 +12014,7 @@ address,size,name,system,status,notes
 0x018cc340,102,auto_call_member_with_flagged_record_018cc340,auto,edge-verified,Same instructions as misc_call_member_with_flagged_record with other addresses
 0x018cc8a0,28,auto_destroy_then_release_018cc8a0,auto,edge-verified,Same instructions as misc_destroy_then_release with other addresses
 0x018cc8c0,179,misc_streamed_record_release,misc,edge-verified,Releases a streamed record: clears its two child objects through their owners then releases the member and the body (tail call)
+0x018cc980,278,misc_streamed_record_read,misc,edge-verified,Reads a streamed record from a reader: header and body and member and a tag then the first child then two blocks and a stamp then the second child
 0x018cf500,8,auto_return_member_address_018cf500,auto,edge-verified,Generated from the return member address template
 0x018cf760,8,auto_return_member_address_018cf760,auto,edge-verified,Generated from the return member address template
 0x018cf770,8,auto_return_member_address_018cf770,auto,edge-verified,Generated from the return member address template

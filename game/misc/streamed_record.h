@@ -30,16 +30,42 @@ constexpr std::size_t streamed_member_bytes = 0x78;
 constexpr std::size_t streamed_block_bytes = 0x30;
 
 struct RecordChild;
+struct RecordReader;
 
 /**
  *
- * The vtable of a child: its first slot releases the child.
+ * The vtable of the stream a record is read from: its read slot fills a buffer and returns the count.
+ *
+ */
+struct RecordReaderVtable {
+    uint8_t unknown_0x0000[0x20];
+    int64_t (*read_bytes)(RecordReader *reader, void *destination, uint32_t size); /**< Slot at 0x20. */
+};
+static_assert(offsetof(RecordReaderVtable, read_bytes) == 0x20);
+
+/**
+ *
+ * A stream a record is read from: its vtable is its first field.
+ *
+ */
+struct RecordReader {
+    const RecordReaderVtable *vtable;
+};
+static_assert(offsetof(RecordReader, vtable) == 0x00);
+
+/**
+ *
+ * The vtable of a child: its first slot releases the child, and its read slot reads the child from a
+ * stream and returns the result in RAX.
  *
  */
 struct RecordChildVtable {
-    void (*release)(RecordChild *child); /**< Slot at 0x00: releases the child. */
+    void (*release)(RecordChild *child);                          /**< Slot at 0x00: releases the child. */
+    uint8_t unknown_0x0008[0x8];
+    uint64_t (*read)(RecordChild *child, RecordReader *reader);  /**< Slot at 0x10: reads the child. */
 };
 static_assert(offsetof(RecordChildVtable, release) == 0x00);
+static_assert(offsetof(RecordChildVtable, read) == 0x10);
 
 /**
  *
