@@ -35390,6 +35390,7 @@ address,size,name,system,status,notes
 0x02705790,368,misc_grow_element_storage_locked,misc,edge-verified,Grows a list of elements under the thread lock when its capacity is short and frees the old block
 0x02705900,187,misc_push_walk_node,misc,edge-verified,Appends a node to one of two value vectors of an owner choosing the second when its list holds a matching enabled entry
 0x02705dd0,218,auto_push_value_by_reference_02705dd0,auto,edge-verified,Same instructions as misc_push_value_by_reference with other addresses
+0x02706bc0,16,misc_throw_prebuilt_error,misc,edge-verified,Raises the prebuilt error object through the throw helper which never returns
 0x027071a0,218,auto_push_value_by_reference_027071a0,auto,edge-verified,Same instructions as misc_push_value_by_reference with other addresses
 0x02707fd0,28,auto_destroy_then_release_02707fd0,auto,edge-verified,Same instructions as misc_destroy_then_release with other addresses
 0x02708780,28,auto_destroy_then_release_02708780,auto,edge-verified,Same instructions as misc_destroy_then_release with other addresses
