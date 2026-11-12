@@ -141,6 +141,8 @@ address,replacement,system,returns
 0x00439600,bb_auto_delete_object_thunk_00439600,auto,void
 0x00439920,bb_auto_delete_object_thunk_00439920,auto,void
 0x00439f90,bb_auto_delete_object_thunk_00439f90,auto,void
+0x0043a7c0,bb_misc_bind_slot_node_0043a7c0,misc,i64
+0x0043a9f0,bb_misc_bind_slot_node_0043a9f0,misc,i64
 0x0043b1e0,bb_auto_init_identity_rows_0043b1e0,auto,void
 0x0043b230,bb_auto_init_identity_rows_0043b230,auto,void
 0x0043c910,bb_auto_prepare_forward_0043c910,auto,i64
@@ -195,6 +197,8 @@ address,replacement,system,returns
 0x00465ae0,bb_auto_return_constant_00465ae0,auto,i8
 0x00466810,bb_frame_timing_posix_sleep_ms,frame_timing,i8
 0x0046b030,bb_auto_jump_thunk_0046b030,auto,i64
+0x0046b340,bb_misc_tagged_entry_equal,misc,i32
+0x0046b420,bb_misc_tagged_entry_merge,misc,i64
 0x0046d060,bb_auto_prepare_forward_0046d060,auto,i64
 0x004749c0,bb_auto_return_field_004749c0,auto,i32
 0x00482c90,bb_auto_delete_object_thunk_00482c90,auto,void

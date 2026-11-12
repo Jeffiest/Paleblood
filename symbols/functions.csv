@@ -141,6 +141,8 @@ address,size,name,system,status,notes
 0x00439600,5,auto_delete_object_thunk_00439600,auto,edge-verified,Same instructions as misc_delete_object_thunk with other addresses
 0x00439920,5,auto_delete_object_thunk_00439920,auto,edge-verified,Same instructions as misc_delete_object_thunk with other addresses
 0x00439f90,5,auto_delete_object_thunk_00439f90,auto,edge-verified,Same instructions as misc_delete_object_thunk with other addresses
+0x0043a7c0,541,misc_bind_slot_node_0043a7c0,misc,edge-verified,Binds a source object into a key-sorted slot table: finds or creates the node for its 16-bit key and stores the source in the slots
+0x0043a9f0,541,misc_bind_slot_node_0043a9f0,misc,edge-verified,Same as misc_bind_slot_node_0043a7c0 but the key bytes are read one byte further into the source's bank
 0x0043b1e0,76,auto_init_identity_rows_0043b1e0,auto,edge-verified,Same instructions as misc_init_identity_rows_5ac5540 with other addresses
 0x0043b230,70,auto_init_identity_rows_0043b230,auto,edge-verified,Same instructions as misc_init_identity_rows_5ac5570 with other addresses
 0x0043c910,42,auto_prepare_forward_0043c910,auto,edge-verified,Same instructions as misc_prepare_forward with other addresses
@@ -196,6 +198,8 @@ address,size,name,system,status,notes
 0x00465ae0,3,auto_return_constant_00465ae0,auto,edge-verified,Generated from the return constant template
 0x00466810,19,frame_timing_posix_sleep_ms,frame_timing,edge-verified,Sleep milliseconds through POSIX usleep (32-bit multiply wraps); ignore its result and return true
 0x0046b030,5,auto_jump_thunk_0046b030,auto,edge-verified,Same instructions as misc_jump_thunk with other addresses
+0x0046b340,222,misc_tagged_entry_equal,misc,edge-verified,Compares two tagged entries: text or identity then key and tag then scaled level then option bit then scaled weight; returns 1 when equal
+0x0046b420,782,misc_tagged_entry_merge,misc,edge-verified,Copies the fields a source tagged entry marks as present onto a destination that starts as a copy of a base entry; returns the destination
 0x0046d060,42,auto_prepare_forward_0046d060,auto,edge-verified,Same instructions as misc_prepare_forward with other addresses
 0x004749c0,7,auto_return_field_004749c0,auto,edge-verified,Generated from the return field template
 0x00482c90,5,auto_delete_object_thunk_00482c90,auto,edge-verified,Same instructions as misc_delete_object_thunk with other addresses
