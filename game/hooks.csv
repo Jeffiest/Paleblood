@@ -108,6 +108,7 @@ address,replacement,system,returns
 0x00418d80,bb_auto_return_field_00418d80,auto,i64
 0x00418d90,bb_misc_replace_held_reference,misc,i64
 0x00418e50,bb_misc_assign_text_from_node40,misc,i64
+0x00418e90,bb_misc_assign_text_from_node20,misc,i64
 0x00419190,bb_auto_prepare_forward_00419190,auto,i64
 0x00419700,bb_auto_prepare_forward_00419700,auto,i64
 0x0041a7d0,bb_auto_prepare_forward_0041a7d0,auto,i64
