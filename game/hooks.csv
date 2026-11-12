@@ -2989,6 +2989,7 @@ address,replacement,system,returns
 0x00e97190,bb_auto_fixed_address_00e97190,auto,i64
 0x00e971b0,bb_auto_fixed_address_00e971b0,auto,i64
 0x00e971c0,bb_auto_jump_thunk_00e971c0,auto,i64
+0x00e971e0,bb_misc_register_types_with_limits,misc,void
 0x00e976e0,bb_auto_held_member_object_free_00e976e0,auto,i64
 0x00e97730,bb_auto_bounded_range_object_free_secondary_00e97730,auto,i64
 0x00e97790,bb_auto_bounded_range_object_free_secondary_00e97790,auto,i64

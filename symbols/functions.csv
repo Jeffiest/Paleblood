@@ -2990,6 +2990,7 @@ address,size,name,system,status,notes
 0x00e97190,8,auto_fixed_address_00e97190,auto,edge-verified,Same instructions as misc_plain_type_address with other addresses
 0x00e971b0,8,auto_fixed_address_00e971b0,auto,edge-verified,Same instructions as misc_plain_type_address with other addresses
 0x00e971c0,5,auto_jump_thunk_00e971c0,auto,edge-verified,Same instructions as misc_jump_thunk with other addresses
+0x00e971e0,766,misc_register_types_with_limits,misc,edge-verified,Fill three float limit blocks and register three types with their static descriptors; the third vtable comes from a record initialiser.
 0x00e976e0,75,auto_held_member_object_free_00e976e0,auto,edge-verified,Same instructions as misc_held_member_object_free with other addresses and constants
 0x00e97730,81,auto_bounded_range_object_free_secondary_00e97730,auto,edge-verified,Same instructions as misc_bounded_range_object_free_secondary with other addresses and constants
 0x00e97790,81,auto_bounded_range_object_free_secondary_00e97790,auto,edge-verified,Same instructions as misc_bounded_range_object_free_secondary with other addresses and constants
