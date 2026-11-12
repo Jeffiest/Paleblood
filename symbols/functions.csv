@@ -40020,6 +40020,7 @@ address,size,name,system,status,notes
 0x02b4fd60,5,auto_delete_object_thunk_02b4fd60,auto,edge-verified,Same instructions as misc_delete_object_thunk with other addresses
 0x02b4fea0,8,auto_fixed_address_02b4fea0,auto,edge-verified,Same instructions as misc_plain_type_address with other addresses
 0x02b50920,5,auto_delete_object_thunk_02b50920,auto,edge-verified,Same instructions as misc_delete_object_thunk with other addresses
+0x02b50940,126,misc_clear_record_tag_02b50940,misc,edge-verified,Clears the fifteen words of a 0x80 record from the last to the first then stores the first argument in the tag word and returns zero
 0x02b50a40,8,auto_fixed_address_02b50a40,auto,edge-verified,Same instructions as misc_plain_type_address with other addresses
 0x02b50ae0,5,auto_jump_thunk_02b50ae0,auto,edge-verified,Same instructions as misc_jump_thunk with other addresses
 0x02b50af0,28,auto_destroy_then_release_02b50af0,auto,edge-verified,Same instructions as misc_destroy_then_release with other addresses

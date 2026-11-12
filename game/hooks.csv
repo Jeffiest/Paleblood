@@ -40019,6 +40019,7 @@ address,replacement,system,returns
 0x02b4fd60,bb_auto_delete_object_thunk_02b4fd60,auto,void
 0x02b4fea0,bb_auto_fixed_address_02b4fea0,auto,i64
 0x02b50920,bb_auto_delete_object_thunk_02b50920,auto,void
+0x02b50940,bb_misc_clear_record_tag_02b50940,misc,i64
 0x02b50a40,bb_auto_fixed_address_02b50a40,auto,i64
 0x02b50ae0,bb_auto_jump_thunk_02b50ae0,auto,i64
 0x02b50af0,bb_auto_destroy_then_release_02b50af0,auto,i64
