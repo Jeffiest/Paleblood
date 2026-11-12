@@ -39859,6 +39859,7 @@ address,size,name,system,status,notes
 0x02b4da50,8,auto_fixed_address_02b4da50,auto,edge-verified,Same instructions as misc_plain_type_address with other addresses
 0x02b4dd30,5,auto_delete_object_thunk_02b4dd30,auto,edge-verified,Same instructions as misc_delete_object_thunk with other addresses
 0x02b4de70,8,auto_fixed_address_02b4de70,auto,edge-verified,Same instructions as misc_plain_type_address with other addresses
+0x02b4e260,271,misc_second_singleton_pair_for_source,misc,edge-verified,Fills a caller pair with the second shared singleton and the source object word or with zeros when the source is ready
 0x02b4e370,5,auto_delete_object_thunk_02b4e370,auto,edge-verified,Same instructions as misc_delete_object_thunk with other addresses
 0x02b4e390,126,misc_clear_record_tag_02b4e390,misc,edge-verified,Clears the fifteen words of a 0x80 record from the last to the first then stores the first argument in the tag word and returns zero
 0x02b4e410,126,misc_clear_record_tag_02b4e410,misc,edge-verified,Clears the fifteen words of a 0x80 record from the last to the first then stores the first argument in the tag word and returns zero
