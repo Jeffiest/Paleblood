@@ -45905,6 +45905,7 @@ misc_jump_thunk,edge,,13,13,0,0,b6549180176f362a,2026-11-10
 misc_keep_last_path_component,edge,,5,5,0,0,6cad338706f09742,2026-11-11
 misc_keyed_pool_append,edge,,10,10,0,0,f946803606847db2,2026-11-11
 misc_level_bucket_plus_chain_bytes,edge,,34,34,0,0,20e718d73f8690da,2026-11-12
+misc_level_chain_minus_lookups,edge,,34,34,0,0,21dabfaafc8a14c7,2026-11-12
 misc_linked_object_free,edge,,8,8,0,0,e4f391884bebee5f,2026-11-09
 misc_linked_object_init,edge,,5,5,0,0,1c8b766b4b95638e,2026-11-09
 misc_linked_object_release,edge,,5,5,0,0,c2999da8db24c3b6,2026-11-10

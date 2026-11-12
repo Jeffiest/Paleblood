@@ -12104,6 +12104,7 @@ address,replacement,system,returns
 0x018e0140,bb_misc_count_nonnegative_entries,misc,i32
 0x018e01d0,bb_misc_entry_address_by_index,misc,i64
 0x018e01e0,bb_misc_level_bucket_plus_chain_bytes,misc,i32
+0x018e02c0,bb_misc_level_chain_minus_lookups,misc,i32
 0x018e1800,bb_auto_bind_vtable_018e1800,auto,void
 0x018e1830,bb_auto_bind_vtable_018e1830,auto,void
 0x018e1860,bb_auto_bind_vtable_018e1860,auto,void
