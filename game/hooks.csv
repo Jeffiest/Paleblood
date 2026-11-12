@@ -35313,6 +35313,7 @@ address,replacement,system,returns
 0x026f6d10,bb_misc_forward_child_slot_40_6d10,misc,i64
 0x026f6d20,bb_misc_init_defaulted_record_6d20,misc,i64
 0x026f6da0,bb_auto_jump_thunk_026f6da0,auto,i64
+0x026f7720,bb_misc_reset_indexed_slot_record,misc,void
 0x026f7780,bb_auto_bind_vtable_026f7780,auto,void
 0x026f77b0,bb_auto_bind_vtable_026f77b0,auto,void
 0x026f77e0,bb_auto_bind_vtable_026f77e0,auto,void

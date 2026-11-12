@@ -35314,6 +35314,7 @@ address,size,name,system,status,notes
 0x026f6d10,15,misc_forward_child_slot_40_6d10,misc,edge-verified,Forwards the reference child to the routine in its slot at +0x40 with a zero second argument and returns the result
 0x026f6d20,117,misc_init_defaulted_record_6d20,misc,edge-verified,Initializes the base then gives the record its vtable and sets its indices counts value scale and cleared words and returns the vtable
 0x026f6da0,5,auto_jump_thunk_026f6da0,auto,edge-verified,Same instructions as misc_jump_thunk with other addresses
+0x026f7720,71,misc_reset_indexed_slot_record,misc,edge-verified,Resets an indexed slot record: two empty slots default scale and cleared state words
 0x026f7780,41,auto_bind_vtable_026f7780,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
 0x026f77b0,41,auto_bind_vtable_026f77b0,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
 0x026f77e0,41,auto_bind_vtable_026f77e0,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
