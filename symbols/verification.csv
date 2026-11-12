@@ -45909,6 +45909,7 @@ misc_linked_object_release,edge,,5,5,0,0,c2999da8db24c3b6,2026-11-10
 misc_list_all_exceed_one,edge,,12,12,0,0,9d15f22d0f823a8a,2026-11-09
 misc_lookup_entry_link,edge,,8,8,0,0,8815e3b313e4bb25,2026-11-10
 misc_lookup_entry_word,edge,,8,8,0,0,66fdf306fa1eec41,2026-11-10
+misc_lookup_member_slot,edge,,12,12,0,0,093f2d6f6a90ac18,2026-11-12
 misc_lookup_record_payload,edge,,9,9,0,0,5169279261948fae,2026-11-11
 misc_lookup_second_link,edge,,8,8,0,0,14eeb14175ffc7d4,2026-11-10
 misc_lookup_second_list_address,edge,,2,2,0,0,8cf5724938f98806,2026-11-10

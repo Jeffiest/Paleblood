@@ -2458,6 +2458,7 @@ address,replacement,system,returns
 0x00d39200,bb_auto_jump_thunk_00d39200,auto,i64
 0x00d39d50,bb_misc_register_indexed_members,misc,void
 0x00d39e70,bb_auto_held_member_object_free_00d39e70,auto,i64
+0x00d3a5e0,bb_misc_lookup_member_slot,misc,i64
 0x00d3b7f0,bb_auto_return_constant_00d3b7f0,auto,i8
 0x00d42310,bb_auto_held_member_object_free_00d42310,auto,i64
 0x00d42c90,bb_auto_held_member_object_free_00d42c90,auto,i64
