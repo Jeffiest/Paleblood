@@ -12099,6 +12099,7 @@ address,size,name,system,status,notes
 0x018dfbd0,5,auto_delete_object_thunk_018dfbd0,auto,edge-verified,Same instructions as misc_delete_object_thunk with other addresses
 0x018dfbe0,57,auto_relay_member_call_018dfbe0,auto,edge-verified,Same instructions as misc_relay_member_call with other addresses
 0x018dffb0,120,misc_register_record_named,misc,edge-verified,Registers the record under a fixed name with the registry when one exists and does nothing otherwise
+0x018e0030,73,misc_read_header_pair,misc,edge-verified,Reads a 0x60-byte header block then a 4-byte trailer word through the reader vtable slot 0x20 and returns whether both reads were complete
 0x018e1800,41,auto_bind_vtable_018e1800,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
 0x018e1830,41,auto_bind_vtable_018e1830,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
 0x018e1860,41,auto_bind_vtable_018e1860,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses

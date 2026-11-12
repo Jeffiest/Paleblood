@@ -12098,6 +12098,7 @@ address,replacement,system,returns
 0x018dfbd0,bb_auto_delete_object_thunk_018dfbd0,auto,void
 0x018dfbe0,bb_auto_relay_member_call_018dfbe0,auto,void
 0x018dffb0,bb_misc_register_record_named,misc,void
+0x018e0030,bb_misc_read_header_pair,misc,i8
 0x018e1800,bb_auto_bind_vtable_018e1800,auto,void
 0x018e1830,bb_auto_bind_vtable_018e1830,auto,void
 0x018e1860,bb_auto_bind_vtable_018e1860,auto,void
