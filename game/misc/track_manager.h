@@ -14,8 +14,10 @@ namespace misc {
 struct TrackRecord {
     uint8_t unknown_0x0000[0x920];
     uint32_t frames;                /**< The frame count a timer on this track is reloaded with. */
+    uint32_t start_frames;          /**< The frame count a timer on this track starts with. */
 };
 static_assert(offsetof(TrackRecord, frames) == 0x920);
+static_assert(offsetof(TrackRecord, start_frames) == 0x924);
 
 /**
  *
