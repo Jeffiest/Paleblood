@@ -21888,6 +21888,7 @@ address,size,name,system,status,notes
 0x01e917b0,1,auto_empty_01e917b0,auto,edge-verified,Generated from the empty template
 0x01e917c0,5,auto_delete_object_thunk_01e917c0,auto,edge-verified,Same instructions as misc_delete_object_thunk with other addresses
 0x01e917d0,50,auto_tail_call_offset_member_thunk_01e917d0,auto,edge-verified,Same instructions as misc_tail_call_offset_member_thunk with other addresses and constants
+0x01e91810,110,misc_build_counted_word_block_01e91810,misc,edge-verified,Builds a counted word block with its own virtual table a kind of one and five counted word objects with default masks
 0x01e91980,16,misc_read_strided_word_01e91980,misc,edge-verified,Copies one 32-bit word from a strided table of 16-byte entries into a destination and returns the destination address
 0x01e91d70,41,auto_bind_vtable_01e91d70,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
 0x01e91da0,41,auto_bind_vtable_01e91da0,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
