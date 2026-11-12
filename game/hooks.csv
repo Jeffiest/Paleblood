@@ -90,6 +90,7 @@ address,replacement,system,returns
 0x00415a20,bb_misc_store_keyed_record_locked,misc,void
 0x00415af0,bb_auto_prepare_forward_00415af0,auto,i64
 0x004166b0,bb_misc_get_or_create_cached_object,misc,i64
+0x00416770,bb_misc_copy_source_and_build_node,misc,i64
 0x00418d80,bb_auto_return_field_00418d80,auto,i64
 0x00419190,bb_auto_prepare_forward_00419190,auto,i64
 0x00419700,bb_auto_prepare_forward_00419700,auto,i64

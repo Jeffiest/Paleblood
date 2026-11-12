@@ -90,6 +90,7 @@ address,size,name,system,status,notes
 0x00415a20,206,misc_store_keyed_record_locked,misc,edge-verified,Files an object reference under a key in a lock-guarded cache when its level is below two; the caller reference is released when the table did not keep it
 0x00415af0,42,auto_prepare_forward_00415af0,auto,edge-verified,Same instructions as misc_prepare_forward with other addresses
 0x004166b0,189,misc_get_or_create_cached_object,misc,edge-verified,Returns the held cached object or creates one through the cache's factory and releases any object the create left behind then holds the new one
+0x00416770,190,misc_copy_source_and_build_node,misc,edge-verified,Copies a source into a node build state and runs the slot builder on it then finishes the node when the state has one and returns the tail result
 0x00418d80,8,auto_return_field_00418d80,auto,edge-verified,Generated from the return field template
 0x00419190,42,auto_prepare_forward_00419190,auto,edge-verified,Same instructions as misc_prepare_forward with other addresses
 0x00419700,42,auto_prepare_forward_00419700,auto,edge-verified,Same instructions as misc_prepare_forward with other addresses
