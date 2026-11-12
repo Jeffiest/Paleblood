@@ -5668,6 +5668,7 @@ address,size,name,system,status,notes
 0x013ba1f0,23,misc_forward_second_entry_013ba1f0,misc,edge-verified,Passes a call for an entry of the second array to the library routine 0x014471e0 with the caller registers and returns its result
 0x013ba210,14,misc_second_entry_address_013ba210,misc,edge-verified,Returns the address of an entry of the second array of an entry array holder from the index scaled by the entry stride
 0x013ba220,23,misc_forward_second_entry_alt_013ba220,misc,edge-verified,Passes a call for an entry of the second array to the library routine 0x01447160 with the caller registers and returns its result
+0x013ba240,181,misc_assign_registry_value_to_slots,misc,edge-verified,Looks up a registry name and when absent looks up a value by key and hands it to each slot of a list
 0x013ba540,8,auto_fixed_address_013ba540,auto,edge-verified,Same instructions as misc_plain_type_address with other addresses
 0x013ba550,41,auto_bind_vtable_013ba550,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
 0x013ba580,41,auto_bind_vtable_013ba580,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
