@@ -5670,6 +5670,7 @@ address,replacement,system,returns
 0x013ba240,bb_misc_assign_registry_value_to_slots,misc,void
 0x013ba300,bb_misc_finish_registry_slots_and_report,misc,void
 0x013ba3b0,bb_misc_release_two_slot_arrays,misc,i64
+0x013ba420,bb_misc_run_slot_routines_on_pair,misc,i64
 0x013ba540,bb_auto_fixed_address_013ba540,auto,i64
 0x013ba550,bb_auto_bind_vtable_013ba550,auto,void
 0x013ba580,bb_auto_bind_vtable_013ba580,auto,void
