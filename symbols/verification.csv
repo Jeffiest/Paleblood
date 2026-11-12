@@ -45693,6 +45693,7 @@ misc_copy_source_vector_pair,edge,,9,9,0,0,c7b2c171888a3a37,2026-11-11
 misc_copy_wide_clone_record,edge,,3,3,0,0,b5fde2e16670a7e5,2026-11-12
 misc_copy_word_triple,edge,,4,4,0,0,68c22a0614f82cf1,2026-11-12
 misc_count_keyed_entry_01e86dc0,edge,,10,10,0,0,303ec7bada4657e3,2026-11-11
+misc_count_nonnegative_entries,edge,,13,13,0,0,5a371ce35ae94e81,2026-11-12
 misc_count_source_release_stored_01e8bd80,edge,,14,14,0,0,e21235b56b1010ab,2026-11-11
 misc_count_subtree_leaves,edge,,10,10,0,0,76ae6fa4641c1b40,2026-11-09
 misc_create_checked,edge,,7,7,0,0,8c8b92540b6c67c2,2026-11-11
