@@ -2264,6 +2264,7 @@ address,replacement,system,returns
 0x00cc7e20,bb_misc_resolve_run_handle,misc,i32
 0x00cc7f30,bb_misc_copy_snapshot,misc,void
 0x00cc7f50,bb_misc_append_counted_item,misc,i64
+0x00cc8090,bb_misc_remove_counted_item,misc,void
 0x00cc8210,bb_misc_store_snapshot_scale,misc,void
 0x00cd1720,bb_auto_fixed_address_00cd1720,auto,i64
 0x00cd1a20,bb_auto_fixed_address_00cd1a20,auto,i64
