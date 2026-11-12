@@ -2309,6 +2309,7 @@ address,size,name,system,status,notes
 0x00cdce00,30,misc_forward_embedded_context,misc,edge-verified,Forwards the context plus two arguments to a routine on the object at offset 0x114 and returns its result
 0x00cdce20,8,auto_fixed_address_00cdce20,auto,edge-verified,Same instructions as misc_plain_type_address with other addresses
 0x00cdce50,178,misc_register_fixed_type_descriptor,misc,edge-verified,Registers a fixed 0x30 byte type descriptor at 0x0584b828 with two names and two methods and instance size 4 then returns its address
+0x00cdcf10,173,misc_init_tuning_record,misc,edge-verified,Initialises a 0x140 byte tuning record with flags scales indices and counts then clears its two sub-records and copies the header block
 0x00cdd750,75,auto_held_member_object_free_00cdd750,auto,edge-verified,Same instructions as misc_held_member_object_free with other addresses and constants
 0x00cde4e0,88,auto_ref_holder_add_child_00cde4e0,auto,edge-verified,Same instructions as misc_ref_holder_add_child with other addresses and constants
 0x00ce2c50,15,auto_base_init_00ce2c50,auto,edge-verified,Same instructions as misc_base_init_02242980 with other addresses

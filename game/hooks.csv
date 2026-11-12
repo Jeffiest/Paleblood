@@ -2308,6 +2308,7 @@ address,replacement,system,returns
 0x00cdce00,bb_misc_forward_embedded_context,misc,i64
 0x00cdce20,bb_auto_fixed_address_00cdce20,auto,i64
 0x00cdce50,bb_misc_register_fixed_type_descriptor,misc,i64
+0x00cdcf10,bb_misc_init_tuning_record,misc,void
 0x00cdd750,bb_auto_held_member_object_free_00cdd750,auto,i64
 0x00cde4e0,bb_auto_ref_holder_add_child_00cde4e0,auto,void
 0x00ce2c50,bb_auto_base_init_00ce2c50,auto,void
