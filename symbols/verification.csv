@@ -45740,6 +45740,7 @@ misc_gated_read_bit,edge,,8,8,0,0,c4e1e1c4f4b89dcc,2026-11-09
 misc_gated_store_value,edge,,6,6,0,0,df2446ff7fd5897a,2026-11-09
 misc_grow_element_storage,edge,,7,7,0,0,84b7519cc6c7baef,2026-11-11
 misc_grow_word_storage,edge,,7,7,0,0,e2a59da545d2b482,2026-11-11
+misc_grow_word_storage_01e8d280,edge,,7,7,0,0,ca0729c0a2d5770f,2026-11-12
 misc_hand_off_two_arrays,edge,,8,8,0,0,f284d8f577cc65a9,2026-11-11
 misc_has_marked_record,edge,,10,10,0,0,33a580adf5c74a91,2026-11-10
 misc_held_block_delete_02242ea0,edge,,5,5,0,0,a26573f0674ea49e,2026-11-09
