@@ -45874,6 +45874,7 @@ misc_release_after_empty_call,edge,,6,6,0,0,545042d61ebb4e42,2026-11-09
 misc_release_after_empty_call_01888b80,edge,,6,6,0,0,ebe11fdf2ab01e5b,2026-11-09
 misc_release_and_rekey_slot_01e86e60,edge,,12,12,0,0,82c0b67214eaa150,2026-11-11
 misc_release_chain_nodes,edge,,4,4,0,0,560cb4abc9995538,2026-11-11
+misc_release_counted_slot,edge,,7,7,0,0,9352f5b10c336935,2026-11-12
 misc_release_derived_object,edge,,6,6,0,0,9fb5fa89b888cc4e,2026-11-11
 misc_release_element_list_owner_in_place,edge,,11,11,0,0,a4a2fd21c5c3af15,2026-11-11
 misc_release_entries_and_clear,edge,,13,13,0,0,83babd723232eff6,2026-11-09

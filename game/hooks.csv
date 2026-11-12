@@ -28531,6 +28531,7 @@ address,replacement,system,returns
 0x0225b7e0,bb_misc_copy_retained_reference,misc,i64
 0x0225b7f0,bb_misc_clear_and_forward_source,misc,i64
 0x0225b810,bb_misc_forward_with_zero_flag,misc,i64
+0x0225b820,bb_misc_release_counted_slot,misc,i64
 0x0225bd70,bb_auto_bind_vtable_0225bd70,auto,void
 0x0225bda0,bb_auto_bind_vtable_0225bda0,auto,void
 0x0225bdd0,bb_auto_bind_vtable_0225bdd0,auto,void
