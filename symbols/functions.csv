@@ -35315,6 +35315,7 @@ address,size,name,system,status,notes
 0x026f6d20,117,misc_init_defaulted_record_6d20,misc,edge-verified,Initializes the base then gives the record its vtable and sets its indices counts value scale and cleared words and returns the vtable
 0x026f6da0,5,auto_jump_thunk_026f6da0,auto,edge-verified,Same instructions as misc_jump_thunk with other addresses
 0x026f7720,71,misc_reset_indexed_slot_record,misc,edge-verified,Resets an indexed slot record: two empty slots default scale and cleared state words
+0x026f7770,7,misc_store_slot_word,misc,edge-verified,Stores a 32-bit value into the slot array of an indexed slot record at the given index and returns the index
 0x026f7780,41,auto_bind_vtable_026f7780,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
 0x026f77b0,41,auto_bind_vtable_026f77b0,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
 0x026f77e0,41,auto_bind_vtable_026f77e0,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
