@@ -21735,6 +21735,7 @@ address,size,name,system,status,notes
 0x01e8d160,49,auto_copy_block_01e8d160,auto,edge-verified,Same instructions as misc_copy_block_58b3240 with other addresses
 0x01e8d1a0,218,auto_push_value_by_reference_01e8d1a0,auto,edge-verified,Same instructions as misc_push_value_by_reference with other addresses
 0x01e8d380,48,misc_start_word_cursor_01e8d380,misc,edge-verified,Starts a word cursor from a word clearing its block and passing a handler-tagged negative word on
+0x01e8d470,15,misc_word_cursor_first_value_01e8d470,misc,edge-verified,Reads the first header value of a word cursor block or zero when the cursor has no block
 0x01e8e200,41,auto_bind_vtable_01e8e200,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
 0x01e8e230,41,auto_bind_vtable_01e8e230,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
 0x01e8e260,41,auto_bind_vtable_01e8e260,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
