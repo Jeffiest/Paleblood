@@ -12103,6 +12103,7 @@ address,size,name,system,status,notes
 0x018e0080,71,misc_read_header_pair_narrow,misc,edge-verified,Reads a header block then a trailing word through the reader vtable slot 0x20 comparing only the low 32 bits of each count
 0x018e00d0,111,misc_copy_pair_record,misc,edge-verified,Copies the 0x68-byte block at 0x10 and the 32-bit word at 0x78 from the source record to the destination and returns the word zero-extended
 0x018e0140,131,misc_count_nonnegative_entries,misc,edge-verified,Counts the twelve 8-byte entries from offset 0x18 whose signed dword is not negative and returns the count
+0x018e01d0,16,misc_entry_address_by_index,misc,edge-verified,Returns the address of the entry at the index in a twelve-entry record or null when the unsigned index is above eleven
 0x018e1800,41,auto_bind_vtable_018e1800,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
 0x018e1830,41,auto_bind_vtable_018e1830,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
 0x018e1860,41,auto_bind_vtable_018e1860,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
