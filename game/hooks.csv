@@ -40192,6 +40192,7 @@ address,replacement,system,returns
 0x02ba9040,bb_auto_bind_vtable_02ba9040,auto,void
 0x02ba93e0,bb_auto_delete_object_thunk_02ba93e0,auto,void
 0x02ba9400,bb_misc_init_tagged_record_02ba9400,misc,i64
+0x02ba9490,bb_misc_init_tagged_record_02ba9490,misc,i64
 0x02ba9520,bb_auto_fixed_address_02ba9520,auto,i64
 0x02ba95c0,bb_auto_delete_object_thunk_02ba95c0,auto,void
 0x02ba9700,bb_auto_fixed_address_02ba9700,auto,i64

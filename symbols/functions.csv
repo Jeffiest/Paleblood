@@ -40193,6 +40193,7 @@ address,size,name,system,status,notes
 0x02ba9040,41,auto_bind_vtable_02ba9040,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
 0x02ba93e0,5,auto_delete_object_thunk_02ba93e0,auto,edge-verified,Same instructions as misc_delete_object_thunk with other addresses
 0x02ba9400,129,misc_init_tagged_record_02ba9400,misc,edge-verified,Zeroes the body of a tagged record and stores the tag word and the vtable pointer then returns zero
+0x02ba9490,129,misc_init_tagged_record_02ba9490,misc,edge-verified,Zeroes the body of a tagged record and stores the tag word and the vtable pointer then returns zero
 0x02ba9520,8,auto_fixed_address_02ba9520,auto,edge-verified,Same instructions as misc_plain_type_address with other addresses
 0x02ba95c0,5,auto_delete_object_thunk_02ba95c0,auto,edge-verified,Same instructions as misc_delete_object_thunk with other addresses
 0x02ba9700,8,auto_fixed_address_02ba9700,auto,edge-verified,Same instructions as misc_plain_type_address with other addresses
