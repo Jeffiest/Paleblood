@@ -5537,6 +5537,7 @@ address,replacement,system,returns
 0x013b5100,bb_misc_select_mode_then_call_013b5100,misc,i8
 0x013b5180,bb_misc_call_with_kind_three_013b5180,misc,i8
 0x013b5350,bb_misc_set_active_flag_013b5350,misc,void
+0x013b5360,bb_misc_set_alternate_flag_013b5360,misc,void
 0x013b5370,bb_auto_bind_vtable_013b5370,auto,void
 0x013b53a0,bb_auto_bind_vtable_013b53a0,auto,void
 0x013b53d0,bb_auto_bind_vtable_013b53d0,auto,void
