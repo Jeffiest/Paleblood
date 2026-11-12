@@ -45947,6 +45947,7 @@ misc_pool_cursor_allocate,edge,,10,10,0,0,2ce81dfdd5674204,2026-11-11
 misc_prepare_forward,edge,,6,6,0,0,543c3d001ccdac0f,2026-11-09
 misc_prepare_listed_values,edge,,11,11,0,0,a1127feac57f491a,2026-11-10
 misc_prepare_then_release,edge,,2,2,0,0,570c1836a2c4cd35,2026-11-11
+misc_process_element_range,edge,,9,9,0,0,f6fec42087e9d544,2026-11-12
 misc_push_front_locked,edge,,2,2,0,0,9ee01a0ba2aef23e,2026-11-11
 misc_push_value_by_reference,edge,,10,10,0,0,5632a92f56a053c6,2026-11-09
 misc_push_value_from_pointer,edge,,10,10,0,0,27f97f9617a02206,2026-11-09
