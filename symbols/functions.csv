@@ -4340,6 +4340,7 @@ address,size,name,system,status,notes
 0x01251180,41,auto_bind_vtable_01251180,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
 0x012511b0,41,auto_bind_vtable_012511b0,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
 0x012511e0,41,auto_bind_vtable_012511e0,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x012516e0,329,misc_chain_bone_pose_copy_roots,misc,edge-verified,Chains each bone matrix onto its parent in the output pose copying roots from the source pose
 0x01251e00,41,auto_bind_vtable_01251e00,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
 0x01251e30,41,auto_bind_vtable_01251e30,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
 0x01251e60,41,auto_bind_vtable_01251e60,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
