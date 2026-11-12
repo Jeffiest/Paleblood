@@ -45965,6 +45965,7 @@ misc_tail_call_kind_013b54b0,edge,,3,3,0,0,242c51ffdb4e5c3a,2026-11-12
 misc_tail_call_kind_013b54c0,edge,,3,3,0,0,16dd1c42a6c5bdbb,2026-11-12
 misc_tail_call_kind_013b54d0,edge,,3,3,0,0,e9f83e36dcbeb293,2026-11-12
 misc_tail_call_kind_013b54e0,edge,,3,3,0,0,19ebca73a730cc47,2026-11-12
+misc_tail_call_kind_013b54f0,edge,,3,3,0,0,40477638dbe2a233,2026-11-12
 misc_tail_call_member_target,edge,,9,9,0,0,bd4517fcdeaa5379,2026-11-10
 misc_tail_call_offset_member_thunk,edge,,8,8,0,0,39c74a32efeb829f,2026-11-09
 misc_take_pending_node,edge,,10,10,0,0,b0a3c6903ff808ee,2026-11-11
