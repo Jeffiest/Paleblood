@@ -2305,6 +2305,7 @@ address,replacement,system,returns
 0x00cd4580,bb_misc_copy_slot_record,misc,void
 0x00cd4720,bb_auto_held_member_object_free_00cd4720,auto,i64
 0x00cd4770,bb_auto_bounded_range_object_free_secondary_00cd4770,auto,i64
+0x00cdccc0,bb_misc_reserve_two_slots_then_visit,misc,i32
 0x00cdce00,bb_misc_forward_embedded_context,misc,i64
 0x00cdce20,bb_auto_fixed_address_00cdce20,auto,i64
 0x00cdce50,bb_misc_register_fixed_type_descriptor,misc,i64
