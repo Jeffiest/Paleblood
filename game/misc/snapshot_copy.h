@@ -18,10 +18,13 @@ constexpr size_t snapshot_word_count = 2;
 struct SnapshotSource {
     uint8_t unknown_0x0000[0x10];
     uint64_t words_0x10[snapshot_word_count]; /**< Copied as they are to the snapshot's words. */
-    uint8_t unknown_0x0020[0x70];
+    uint8_t unknown_0x0020[0x28];
+    void *target_0x48;       /**< Object that the source tells about each new snapshot; null when there is none. */
+    uint8_t unknown_0x0050[0x40];
     float scale_0x90;        /**< Copied to the snapshot's scale. */
 };
 static_assert(offsetof(SnapshotSource, words_0x10) == 0x10);
+static_assert(offsetof(SnapshotSource, target_0x48) == 0x48);
 static_assert(offsetof(SnapshotSource, scale_0x90) == 0x90);
 static_assert(sizeof(SnapshotSource) == 0x98);
 
