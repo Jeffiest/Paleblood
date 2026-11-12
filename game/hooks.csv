@@ -40102,6 +40102,7 @@ address,replacement,system,returns
 0x02b51830,bb_auto_fixed_address_02b51830,auto,i64
 0x02b53560,bb_auto_delete_object_thunk_02b53560,auto,void
 0x02b53580,bb_misc_clear_record_tag_02b53580,misc,i64
+0x02b53600,bb_misc_clear_record_tag_02b53600,misc,i64
 0x02b53680,bb_auto_fixed_address_02b53680,auto,i64
 0x02b53690,bb_auto_jump_thunk_02b53690,auto,i64
 0x02b536a0,bb_auto_destroy_then_release_02b536a0,auto,i64
