@@ -35363,6 +35363,7 @@ address,replacement,system,returns
 0x026fc660,bb_auto_bind_vtable_026fc660,auto,void
 0x026fc690,bb_auto_bind_vtable_026fc690,auto,void
 0x026fc6c0,bb_auto_copy_block_026fc6c0,auto,void
+0x026fc750,bb_misc_copy_word_triple,misc,i64
 0x026fc8c0,bb_auto_bind_vtable_026fc8c0,auto,void
 0x026fc8f0,bb_auto_bind_vtable_026fc8f0,auto,void
 0x026fc920,bb_auto_bind_vtable_026fc920,auto,void
