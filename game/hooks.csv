@@ -40025,6 +40025,7 @@ address,replacement,system,returns
 0x02b50940,bb_misc_clear_record_tag_02b50940,misc,i64
 0x02b509c0,bb_misc_clear_record_tag_02b509c0,misc,i64
 0x02b50a40,bb_auto_fixed_address_02b50a40,auto,i64
+0x02b50a50,bb_misc_create_context_word_object_02b50a50,misc,i64
 0x02b50ae0,bb_auto_jump_thunk_02b50ae0,auto,i64
 0x02b50af0,bb_auto_destroy_then_release_02b50af0,auto,i64
 0x02b50b30,bb_auto_fixed_address_02b50b30,auto,i64

@@ -40026,6 +40026,7 @@ address,size,name,system,status,notes
 0x02b50940,126,misc_clear_record_tag_02b50940,misc,edge-verified,Clears the fifteen words of a 0x80 record from the last to the first then stores the first argument in the tag word and returns zero
 0x02b509c0,126,misc_clear_record_tag_02b509c0,misc,edge-verified,Clears the fifteen words of a 0x80 record from the last to the first then stores the first argument in the tag word and returns zero
 0x02b50a40,8,auto_fixed_address_02b50a40,auto,edge-verified,Same instructions as misc_plain_type_address with other addresses
+0x02b50a50,139,misc_create_context_word_object_02b50a50,misc,edge-verified,Creates a two-word context object from the source allocation argument or the cached one and clears its second word
 0x02b50ae0,5,auto_jump_thunk_02b50ae0,auto,edge-verified,Same instructions as misc_jump_thunk with other addresses
 0x02b50af0,28,auto_destroy_then_release_02b50af0,auto,edge-verified,Same instructions as misc_destroy_then_release with other addresses
 0x02b50b30,8,auto_fixed_address_02b50b30,auto,edge-verified,Same instructions as misc_plain_type_address with other addresses
