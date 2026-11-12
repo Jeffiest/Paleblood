@@ -40191,6 +40191,7 @@ address,size,name,system,status,notes
 0x02ba8fe0,41,auto_bind_vtable_02ba8fe0,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
 0x02ba9010,41,auto_bind_vtable_02ba9010,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
 0x02ba9040,41,auto_bind_vtable_02ba9040,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x02ba9070,411,misc_alt_singleton_dispatch_02ba9070,misc,edge-verified,Stores the dispatch holder vtable then takes the alternate singleton and tail-calls its slot 0x60 with the results of its slots 0x10 and 0x18
 0x02ba93e0,5,auto_delete_object_thunk_02ba93e0,auto,edge-verified,Same instructions as misc_delete_object_thunk with other addresses
 0x02ba9400,129,misc_init_tagged_record_02ba9400,misc,edge-verified,Zeroes the body of a tagged record and stores the tag word and the vtable pointer then returns zero
 0x02ba9490,129,misc_init_tagged_record_02ba9490,misc,edge-verified,Zeroes the body of a tagged record and stores the tag word and the vtable pointer then returns zero
