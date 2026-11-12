@@ -35,7 +35,10 @@ struct TrackedTimer {
     int32_t track_index;            /**< The track the timer is registered on, or minus one for none. */
     uint8_t unknown_0x00d0[0x08];
     float remaining;                /**< The time left on the timer, in seconds. */
+    uint8_t unknown_0x00dc[0x48];
+    uint32_t reset_word;            /**< Cleared at the start of each label step. */
 };
+static_assert(offsetof(TrackedTimer, reset_word) == 0x124);
 static_assert(offsetof(TrackedTimer, vtable) == 0x00);
 static_assert(offsetof(TrackedTimer, hold_count) == 0x50);
 static_assert(offsetof(TrackedTimer, step_count) == 0x54);

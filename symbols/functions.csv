@@ -28703,6 +28703,7 @@ address,size,name,system,status,notes
 0x0225f330,472,auto_setup_static_objects_0225f330,auto,edge-verified,Same instructions as misc_setup_static_objects_02243d30 with other addresses
 0x0225f510,472,auto_setup_static_objects_0225f510,auto,edge-verified,Same instructions as misc_setup_static_objects_02243d30 with other addresses
 0x0225fac0,42,misc_refresh_slot_copy,misc,edge-verified,Runs the six-argument helper on the record then copies its source word into the copy and clears the flag; returns the source word
+0x0225faf0,254,misc_tick_tracked_timer_label,misc,edge-verified,Clears the timer reset word runs its after-step hook and counts the step then labels the timer every seventh hold
 0x02260410,1,auto_empty_02260410,auto,edge-verified,Generated from the empty template
 0x02260420,41,auto_bind_vtable_02260420,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
 0x02260450,41,auto_bind_vtable_02260450,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
