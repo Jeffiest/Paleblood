@@ -46173,6 +46173,7 @@ misc_update_and_drop_finished,edge,,16,16,0,0,41639a6ba13a7bde,2026-11-12
 misc_update_owned_entries,edge,,11,11,0,0,5a57696d2430974b,2026-11-10
 misc_update_pose_records,edge,,12,12,0,0,a3421dc14beb2a10,2026-11-12
 misc_value_unless_flagged,edge,,10,10,0,0,0011306c9c7b9d5c,2026-11-11
+misc_visit_block_slot00_01e93bb0,edge,,7,7,0,0,af84016cb5e475c1,2026-11-12
 misc_word_cursor_first_value_01e8d470,edge,,4,4,0,0,cc04ca6bc9a461ed,2026-11-12
 misc_word_cursor_item_01e8d490,edge,,4,4,0,0,9ad8d2c73ffe71b5,2026-11-12
 misc_word_cursor_second_value_01e8d480,edge,,4,4,0,0,6dad5bf1f7908d28,2026-11-12
