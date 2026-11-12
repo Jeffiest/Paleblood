@@ -11664,6 +11664,7 @@ address,size,name,system,status,notes
 0x018ae470,150,auto_call_member_with_text_record_018ae470,auto,edge-verified,Same instructions as misc_call_member_with_text_record with other addresses
 0x018ae510,102,auto_call_member_with_record_018ae510,auto,edge-verified,Same instructions as misc_call_member_with_record with other addresses
 0x018ae580,102,auto_call_member_with_flagged_record_018ae580,auto,edge-verified,Same instructions as misc_call_member_with_flagged_record with other addresses
+0x018ae5f0,429,misc_construct_chain_pair,misc,edge-verified,Builds the owner: vtable then two empty chain lists each with a self-linked sentinel node from the shared allocator; failed nodes throw via the thread flag
 0x018ae7a0,28,auto_destroy_then_release_018ae7a0,auto,edge-verified,Same instructions as misc_destroy_then_release with other addresses
 0x018afb50,41,auto_bind_vtable_018afb50,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
 0x018afb80,41,auto_bind_vtable_018afb80,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses

@@ -11663,6 +11663,7 @@ address,replacement,system,returns
 0x018ae470,bb_auto_call_member_with_text_record_018ae470,auto,void
 0x018ae510,bb_auto_call_member_with_record_018ae510,auto,void
 0x018ae580,bb_auto_call_member_with_flagged_record_018ae580,auto,void
+0x018ae5f0,bb_misc_construct_chain_pair,misc,void
 0x018ae7a0,bb_auto_destroy_then_release_018ae7a0,auto,i64
 0x018afb50,bb_auto_bind_vtable_018afb50,auto,void
 0x018afb80,bb_auto_bind_vtable_018afb80,auto,void
