@@ -45941,6 +45941,7 @@ misc_object_slot_28_is_set,edge,,5,5,0,0,f00d5f4ebc717566,2026-11-10
 misc_owned_list_delete,edge,,14,14,0,0,3a756aa48b924277,2026-11-10
 misc_owned_list_destroy,edge,,7,7,0,0,0f2ccedf84ca65ca,2026-11-10
 misc_owned_list_init,edge,,8,8,0,0,9a9880e1854665a5,2026-11-10
+misc_pair_list_lookup_02ba9210,edge,,25,25,0,0,027d519c2d3d274e,2026-11-12
 misc_pair_matches_022429e0,edge,,14,14,0,0,16f2f4af838336f9,2026-11-09
 misc_pair_matches_02242a90,edge,,14,14,0,0,63f385f7f3510e8f,2026-11-09
 misc_pair_matches_02242b40,edge,,14,14,0,0,ae2c1d3647d5244d,2026-11-09

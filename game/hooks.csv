@@ -40191,6 +40191,7 @@ address,replacement,system,returns
 0x02ba9010,bb_auto_bind_vtable_02ba9010,auto,void
 0x02ba9040,bb_auto_bind_vtable_02ba9040,auto,void
 0x02ba9070,bb_misc_alt_singleton_dispatch_02ba9070,misc,i64
+0x02ba9210,bb_misc_pair_list_lookup_02ba9210,misc,i64
 0x02ba93e0,bb_auto_delete_object_thunk_02ba93e0,auto,void
 0x02ba9400,bb_misc_init_tagged_record_02ba9400,misc,i64
 0x02ba9490,bb_misc_init_tagged_record_02ba9490,misc,i64
