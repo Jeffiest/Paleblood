@@ -3373,6 +3373,7 @@ address,size,name,system,status,notes
 0x00f63980,15,auto_base_init_00f63980,auto,edge-verified,Same instructions as misc_base_init_02242980 with other addresses
 0x00f64300,8,auto_fixed_address_00f64300,auto,edge-verified,Same instructions as misc_plain_type_address with other addresses
 0x00f64310,15,auto_base_init_00f64310,auto,edge-verified,Same instructions as misc_base_init_02242980 with other addresses
+0x00f6bcb0,307,misc_nearest_point_search,misc,edge-verified,Finds the nearest point of a set to a position four points at a time and stores its index; returns the count
 0x00f6bf20,8,auto_fixed_address_00f6bf20,auto,edge-verified,Same instructions as misc_plain_type_address with other addresses
 0x00f6c030,8,auto_fixed_address_00f6c030,auto,edge-verified,Same instructions as misc_plain_type_address with other addresses
 0x00f6c060,8,auto_fixed_address_00f6c060,auto,edge-verified,Same instructions as misc_plain_type_address with other addresses
