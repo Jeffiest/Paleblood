@@ -5551,6 +5551,7 @@ address,replacement,system,returns
 0x013b5510,bb_misc_tail_call_kind_013b5510,misc,i64
 0x013b5520,bb_misc_tail_call_kind_013b5520,misc,i64
 0x013b5530,bb_misc_tail_call_kind_013b5530,misc,i64
+0x013b5540,bb_misc_tail_call_kind_013b5540,misc,i64
 0x013b5fd0,bb_auto_bind_vtable_013b5fd0,auto,void
 0x013b6000,bb_auto_bind_vtable_013b6000,auto,void
 0x013b6030,bb_auto_bind_vtable_013b6030,auto,void
