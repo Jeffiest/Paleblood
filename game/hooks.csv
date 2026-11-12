@@ -11761,10 +11761,12 @@ address,replacement,system,returns
 0x018bdeb0,bb_auto_delete_object_thunk_018bdeb0,auto,void
 0x018bded0,bb_misc_copy_narrow_clone_record,misc,i64
 0x018bdf20,bb_misc_copy_narrow_clone_record_alt,misc,i64
+0x018bdfa0,bb_misc_finish_record_alt,misc,i64
 0x018bdfd0,bb_auto_empty_018bdfd0,auto,void
 0x018bdfe0,bb_auto_delete_object_thunk_018bdfe0,auto,void
 0x018be000,bb_misc_copy_key_clone_record,misc,i64
 0x018be040,bb_misc_copy_key_clone_record_alt,misc,i64
+0x018be0b0,bb_misc_finish_record_alt2,misc,i64
 0x018be0e0,bb_auto_empty_018be0e0,auto,void
 0x018be0f0,bb_auto_delete_object_thunk_018be0f0,auto,void
 0x018be310,bb_auto_jump_thunk_018be310,auto,i64
