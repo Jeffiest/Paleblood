@@ -39863,6 +39863,7 @@ address,replacement,system,returns
 0x02b4e390,bb_misc_clear_record_tag_02b4e390,misc,i64
 0x02b4e410,bb_misc_clear_record_tag_02b4e410,misc,i64
 0x02b4e490,bb_auto_fixed_address_02b4e490,auto,i64
+0x02b4e4a0,bb_misc_create_small_source_object_02b4e4a0,misc,i64
 0x02b4e530,bb_auto_jump_thunk_02b4e530,auto,i64
 0x02b4e540,bb_auto_destroy_then_release_02b4e540,auto,i64
 0x02b4e580,bb_auto_fixed_address_02b4e580,auto,i64
