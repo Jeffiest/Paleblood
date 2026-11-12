@@ -25,9 +25,9 @@ def case(cid, word, handler_ret=None):
     """A cursor holding garbage and a word; when the word's tag is the handler's, the handler stub returns handler_ret."""
     stubs = []
     if handler_ret is not None:
-        stubs.append({'address': HANDLER, 'argc': 2, 'ret': handler_ret})
+        stubs.append({'address': HANDLER, 'argc': 6, 'ret': handler_ret})
     return {'schema': 1, 'address': ADDRESS, 'id': cid, 'returns': 'i64',
-            'args': {'rdi': 'buf:cursor', 'rsi': 'buf:word'},
+            'args': {'rdi': 'buf:cursor', 'rsi': 'buf:word', 'r8': '0x0', 'r9': '0x0'},
             'buffers': {'cursor': {'size': CURSOR_SIZE, 'bytes': le32(NEVER_SET) * (CURSOR_SIZE // 4)},
                         'word': {'size': 4, 'bytes': le32(word)}},
             'memory': [], 'stubs': stubs, 'imports': []}
