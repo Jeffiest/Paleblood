@@ -98,7 +98,17 @@ address,size,name,system,status,notes
 0x00418120,363,misc_find_keyed_record,misc,edge-verified,Looks a key up in the cache table under the lock when the level is low and gives a found slot's flag and object to the record
 0x00418290,39,misc_find_list_entry_value,misc,edge-verified,Walks the object's list from its head and returns the value of the first entry whose 32-bit key matches or zero when none does
 0x004182c0,71,misc_run_locked_set_operation,misc,edge-verified,Runs a set operation on the object's set region under its lock and returns the result of releasing the lock
+0x00418310,168,misc_append_record_or_report,misc,edge-verified,Appends the record to the first array under the list lock when it has room and otherwise reports the overflow to the source sink
+0x004183c0,174,misc_append_counted_record_or_report,misc,edge-verified,Appends the record to the second array under the list lock when it has room and counts it and otherwise reports the overflow to the source sink
+0x00418470,246,misc_index_record_locked,misc,edge-verified,Looks a key up in the owner slot table and links the value to the slot payload under the owner lock when its level is low
+0x00418570,131,misc_set_lookup_locked,misc,edge-verified,Queries the list set with a key value and flags under the list lock when its level is low and returns the low byte of the query
+0x00418c60,124,misc_copy_entry_locked,misc,edge-verified,Copies the list entry at the index into the caller record and returns the record with the copy under the list lock when its level is low
+0x00418ce0,101,misc_copy_second_entry_locked,misc,edge-verified,Copies a second array entry into the caller record when the unsigned index is below the capacity under the list lock and returns whether it copied
+0x00418d50,46,misc_read_second_capacity_locked,misc,edge-verified,Reads the low 32 bits of the second capacity of the list under its lock and returns them
 0x00418d80,8,auto_return_field_00418d80,auto,edge-verified,Generated from the return field template
+0x00418d90,50,misc_replace_held_reference,misc,edge-verified,Releases the held object of the owner then takes a reference on the new object and holds it
+0x00418e50,51,misc_assign_text_from_node40,misc,edge-verified,Assigns the text that the source node names through its tagged word to the target and returns the target
+0x00418e90,51,misc_assign_text_from_node20,misc,edge-verified,Assigns the text that the source node held at 0x20 names through its tagged word to the target and returns the target
 0x00419190,42,auto_prepare_forward_00419190,auto,edge-verified,Same instructions as misc_prepare_forward with other addresses
 0x00419700,42,auto_prepare_forward_00419700,auto,edge-verified,Same instructions as misc_prepare_forward with other addresses
 0x0041a7d0,42,auto_prepare_forward_0041a7d0,auto,edge-verified,Same instructions as misc_prepare_forward with other addresses
