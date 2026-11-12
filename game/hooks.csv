@@ -21959,6 +21959,7 @@ address,replacement,system,returns
 0x01e937b0,bb_auto_initialize_static_wide_string_01e937b0,auto,void
 0x01e93880,bb_auto_copy_block_01e93880,auto,void
 0x01e93bb0,bb_misc_visit_block_slot00_01e93bb0,misc,i64
+0x01e93c40,bb_misc_visit_block_slot08_01e93c40,misc,i64
 0x01e93e20,bb_auto_bind_vtable_01e93e20,auto,void
 0x01e93e50,bb_auto_bind_vtable_01e93e50,auto,void
 0x01e93e80,bb_auto_bind_vtable_01e93e80,auto,void
