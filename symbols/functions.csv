@@ -11759,6 +11759,7 @@ address,size,name,system,status,notes
 0x018bddd0,86,misc_copy_wide_clone_record,misc,edge-verified,Fills a wide clone record from four source words in the given record or a new block; a failed block allocation throws and the record address is returned
 0x018bdea0,1,auto_empty_018bdea0,auto,edge-verified,Generated from the empty template
 0x018bdeb0,5,auto_delete_object_thunk_018bdeb0,auto,edge-verified,Same instructions as misc_delete_object_thunk with other addresses
+0x018bded0,78,misc_copy_narrow_clone_record,misc,edge-verified,Fills a narrow clone record from three source words in the given record or a new block; a failed block allocation throws and the record address is returned
 0x018bdfd0,1,auto_empty_018bdfd0,auto,edge-verified,Generated from the empty template
 0x018bdfe0,5,auto_delete_object_thunk_018bdfe0,auto,edge-verified,Same instructions as misc_delete_object_thunk with other addresses
 0x018be0e0,1,auto_empty_018be0e0,auto,edge-verified,Generated from the empty template
