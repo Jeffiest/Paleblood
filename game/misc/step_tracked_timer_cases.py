@@ -81,7 +81,7 @@ def case(cid, enabled=1, suspended=0, frozen=0, locked=0, armed=0, index=-1, rem
         memory.append({'addr': f'buf:manager+{0x18}', 'pointer': 'track'})
     stubs = []
     if enabled and not (suspended or frozen or locked) and (armed or remaining - delta < 0.0) and index != -1:
-        stubs.append({'address': SET_TRACK, 'argc': 3, 'argi': [0, 1, 2]})
+        stubs.append({'address': SET_TRACK, 'argc': 3, 'argi': [0, 1, 2], 'argmem': [{'arg': 1, 'size': 8}]})
     return {'schema': 1, 'address': ADDRESS, 'id': cid, 'returns': 'void',
             'args': {'rdi': 'buf:timer', 'rsi': 'buf:timing'},
             'buffers': {'gate': gate, 'timer': timer, 'timing': timing, 'manager': manager, 'track': track},
