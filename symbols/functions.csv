@@ -11771,6 +11771,7 @@ address,size,name,system,status,notes
 0x018be0b0,41,misc_finish_record_alt2,misc,edge-verified,Same finish-and-release routine as misc_finish_record at 0x018be0b0
 0x018be0e0,1,auto_empty_018be0e0,auto,edge-verified,Generated from the empty template
 0x018be0f0,5,auto_delete_object_thunk_018be0f0,auto,edge-verified,Same instructions as misc_delete_object_thunk with other addresses
+0x018be110,119,misc_release_record_base,misc,edge-verified,Releases a destructible record: disposes its base then the flagged helper and frees the heap text then returns the base finish result
 0x018be310,5,auto_jump_thunk_018be310,auto,edge-verified,Same instructions as misc_jump_thunk with other addresses
 0x018be320,28,auto_destroy_then_release_018be320,auto,edge-verified,Same instructions as misc_destroy_then_release with other addresses
 0x018be360,8,auto_fixed_address_018be360,auto,edge-verified,Same instructions as misc_plain_type_address with other addresses
