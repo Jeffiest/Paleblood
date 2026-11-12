@@ -39838,6 +39838,7 @@ address,replacement,system,returns
 0x02b4ca90,bb_misc_forward_singleton_dispatch,misc,i64
 0x02b4cc30,bb_misc_singleton_result_for_source,misc,i64
 0x02b4cd40,bb_auto_delete_object_thunk_02b4cd40,auto,void
+0x02b4cd60,bb_misc_clear_record_tag_02b4cd60,misc,i64
 0x02b4ce60,bb_auto_fixed_address_02b4ce60,auto,i64
 0x02b4cf10,bb_auto_jump_thunk_02b4cf10,auto,i64
 0x02b4cf20,bb_auto_destroy_then_release_02b4cf20,auto,i64

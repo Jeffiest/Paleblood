@@ -39839,6 +39839,7 @@ address,size,name,system,status,notes
 0x02b4ca90,411,misc_forward_singleton_dispatch,misc,edge-verified,Stores the holder vtable then takes the shared singleton and tail-calls its slot 0x60 with the results of its slots 0x10 and 0x18
 0x02b4cc30,271,misc_singleton_result_for_source,misc,edge-verified,Fills a caller pair with the shared singleton and the source routine result or with zeros when the source is ready
 0x02b4cd40,5,auto_delete_object_thunk_02b4cd40,auto,edge-verified,Same instructions as misc_delete_object_thunk with other addresses
+0x02b4cd60,126,misc_clear_record_tag_02b4cd60,misc,edge-verified,Clears the fifteen words of a 0x80 record from the last to the first then stores the first argument in the tag word and returns zero
 0x02b4ce60,8,auto_fixed_address_02b4ce60,auto,edge-verified,Same instructions as misc_plain_type_address with other addresses
 0x02b4cf10,5,auto_jump_thunk_02b4cf10,auto,edge-verified,Same instructions as misc_jump_thunk with other addresses
 0x02b4cf20,28,auto_destroy_then_release_02b4cf20,auto,edge-verified,Same instructions as misc_destroy_then_release with other addresses
