@@ -45713,6 +45713,7 @@ misc_destroy_chain_node_3cb0,edge,,6,6,0,0,1ef08f7700b951fe,2026-11-09
 misc_destroy_chain_node_3d30,edge,,6,6,0,0,ccd5b020e92597f2,2026-11-09
 misc_destroy_chain_node_3db0,edge,,6,6,0,0,fbfc1fd0135e0891,2026-11-09
 misc_destroy_chain_node_3e30,edge,,6,6,0,0,791307ca21d3e7ed,2026-11-09
+misc_destroy_counted_block_record_01e93a20,edge,,8,8,0,0,4a096625bd75c91f,2026-11-12
 misc_destroy_element_list_owner,edge,,10,10,0,0,902ac2d538c4c6db,2026-11-11
 misc_destroy_flagged_pair_tail,edge,,8,8,0,0,8741669789d21822,2026-11-10
 misc_destroy_flagged_pair_then_release,edge,,10,10,0,0,191c1d403abb0b53,2026-11-10
