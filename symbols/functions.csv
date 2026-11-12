@@ -5627,6 +5627,7 @@ address,size,name,system,status,notes
 0x013b9250,41,auto_bind_vtable_013b9250,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
 0x013b9280,41,auto_bind_vtable_013b9280,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
 0x013b92b0,49,auto_copy_block_013b92b0,auto,edge-verified,Same instructions as misc_copy_block_58b3240 with other addresses
+0x013b94b0,101,misc_destroy_name_pair_013b94b0,misc,edge-verified,Destroys a name pair object by releasing and emptying the second name then releasing the first and tail-calling the library free
 0x013b95b0,15,misc_name_pair_first_text_013b95b0,misc,edge-verified,Returns the characters of the first name of a name pair object from its inline buffer or its heap buffer
 0x013b95c0,15,misc_name_pair_second_text_013b95c0,misc,edge-verified,Returns the characters of the second name of a name pair object from its inline buffer or its heap buffer
 0x013b95d0,8,auto_return_field_013b95d0,auto,edge-verified,Generated from the return field template

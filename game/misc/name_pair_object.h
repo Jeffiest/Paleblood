@@ -7,8 +7,12 @@
 
 #include "../engine/allocator.h"
 #include "../engine/wide_string.h"
+#include "inline_text.h"
 
 namespace misc {
+
+/** The class vtable of the name pair object, pointed at the address point. */
+RT_GLOBAL(0x056f39a0, name_pair_vtable, const uint8_t);
 
 /**
  *
@@ -34,6 +38,19 @@ static_assert(offsetof(NamePairObject, second_name) == 0x48 && offsetof(NamePair
 inline const char16_t *name_text(const engine::WideString *name)
 {
     return name->capacity < engine::wide_string_inline_capacity ? name->inline_text : name->heap;
+}
+
+/**
+ *
+ * Makes a name an empty inline text: its capacity is the inline capacity, its size is zero and its first character is
+ * the terminator. Its heap buffer, if any, must already be released.
+ *
+ */
+inline void reset_name(engine::WideString *name)
+{
+    name->capacity = inline_text_inline_capacity;
+    name->size = 0;
+    name->inline_text[0] = u'\0';
 }
 
 }  // namespace misc
