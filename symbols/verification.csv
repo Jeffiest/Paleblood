@@ -45908,6 +45908,7 @@ misc_reset_then_release,edge,,4,4,0,0,69e09939e2f1c051,2026-11-09
 misc_resolve_either_key_slot,edge,,6,6,0,0,65d2cea0ad6c1707,2026-11-09
 misc_resolve_key_slot,edge,,5,5,0,0,8fde76650f8e15ca,2026-11-10
 misc_resolve_request_target,edge,,7,7,0,0,ffb34c89938a235e,2026-11-11
+misc_resolve_run_handle,edge,,18,18,0,0,96951d1975b3ac47,2026-11-12
 misc_resolve_then_forward,edge,,9,9,0,0,273ab8e3d61d40cc,2026-11-11
 misc_run_four_stages,edge,,9,9,0,0,50f8c01a90988cfc,2026-11-09
 misc_run_stages_for_pair,edge,,10,10,0,0,818830b9ec64b42f,2026-11-09
@@ -46139,3 +46140,4 @@ render_yebis_get_recursive_sample_parameters,edge,,23,23,0,0,6e6f0aa41d5607ce,20
 render_yebis_get_recursive_sample_parameters,edge,30,23,23,0,0,6e6f0aa41d5607ce,2026-10-07
 render_yebis_get_recursive_sample_parameters,edge,60,23,23,0,0,6e6f0aa41d5607ce,2026-10-07
 render_yebis_get_recursive_sample_parameters,edge,uncapped,23,23,0,0,6e6f0aa41d5607ce,2026-10-07
+resolve_run_handle,edge,,18,18,0,0,,2026-11-12
