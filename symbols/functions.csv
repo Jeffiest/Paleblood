@@ -40034,14 +40034,22 @@ address,size,name,system,status,notes
 0x02b4fa80,8,auto_fixed_address_02b4fa80,auto,edge-verified,Same instructions as misc_plain_type_address with other addresses
 0x02b4fd60,5,auto_delete_object_thunk_02b4fd60,auto,edge-verified,Same instructions as misc_delete_object_thunk with other addresses
 0x02b4fea0,8,auto_fixed_address_02b4fea0,auto,edge-verified,Same instructions as misc_plain_type_address with other addresses
+0x02b50530,318,misc_append_singleton_record_02b50530,misc,edge-verified,Appends a record of the source slot value and source or the record singleton to the owner record list and returns nothing
+0x02b50670,411,misc_pair_singleton_dispatch_02b50670,misc,edge-verified,Stores the pair dispatch holder vtable then takes the pair singleton and tail-calls its slot 0x60 with the results of its slots 0x10 and 0x18
+0x02b50810,271,misc_pair_singleton_for_source_02b50810,misc,edge-verified,Fills a caller pair with the pair singleton and the source factory object word or with zeros when the source is ready
 0x02b50920,5,auto_delete_object_thunk_02b50920,auto,edge-verified,Same instructions as misc_delete_object_thunk with other addresses
+0x02b50940,126,misc_clear_record_tag_02b50940,misc,edge-verified,Clears the fifteen words of a 0x80 record from the last to the first then stores the first argument in the tag word and returns zero
+0x02b509c0,126,misc_clear_record_tag_02b509c0,misc,edge-verified,Clears the fifteen words of a 0x80 record from the last to the first then stores the first argument in the tag word and returns zero
 0x02b50a40,8,auto_fixed_address_02b50a40,auto,edge-verified,Same instructions as misc_plain_type_address with other addresses
+0x02b50a50,139,misc_create_context_word_object_02b50a50,misc,edge-verified,Creates a two-word context object from the source allocation argument or the cached one and clears its second word
 0x02b50ae0,5,auto_jump_thunk_02b50ae0,auto,edge-verified,Same instructions as misc_jump_thunk with other addresses
 0x02b50af0,28,auto_destroy_then_release_02b50af0,auto,edge-verified,Same instructions as misc_destroy_then_release with other addresses
 0x02b50b30,8,auto_fixed_address_02b50b30,auto,edge-verified,Same instructions as misc_plain_type_address with other addresses
 0x02b50b40,8,auto_fixed_address_02b50b40,auto,edge-verified,Same instructions as misc_plain_type_address with other addresses
 0x02b50b50,8,auto_fixed_address_02b50b50,auto,edge-verified,Same instructions as misc_plain_type_address with other addresses
 0x02b50b60,8,auto_fixed_address_02b50b60,auto,edge-verified,Same instructions as misc_plain_type_address with other addresses
+0x02b50b80,319,misc_release_chain_member_02b50b80,misc,edge-verified,Releases the holder object when the pair singleton is on its chain then calls the object slot 0 and the target slot 0x70
+0x02b50cd0,411,misc_record_singleton_dispatch_02b50cd0,misc,edge-verified,Stores the dispatch holder vtable then takes the record singleton and tail-calls its slot 0x60 with the results of its slots 0x10 and 0x18
 0x02b50fd0,5,auto_delete_object_thunk_02b50fd0,auto,edge-verified,Same instructions as misc_delete_object_thunk with other addresses
 0x02b51110,8,auto_fixed_address_02b51110,auto,edge-verified,Same instructions as misc_plain_type_address with other addresses
 0x02b512d0,5,auto_delete_object_thunk_02b512d0,auto,edge-verified,Same instructions as misc_delete_object_thunk with other addresses
