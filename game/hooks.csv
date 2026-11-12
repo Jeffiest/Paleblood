@@ -2341,6 +2341,7 @@ address,replacement,system,returns
 0x00ce73d0,bb_auto_fixed_address_00ce73d0,auto,i64
 0x00ce7690,bb_misc_init_cleared_link_record,misc,void
 0x00ce76d0,bb_auto_base_init_00ce76d0,auto,void
+0x00ce7800,bb_misc_clear_trailing_links,misc,void
 0x00cebc50,bb_auto_fixed_address_00cebc50,auto,i64
 0x00cebc60,bb_auto_base_init_00cebc60,auto,void
 0x00cebc80,bb_auto_fixed_address_00cebc80,auto,i64
