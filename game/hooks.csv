@@ -2268,6 +2268,7 @@ address,replacement,system,returns
 0x00cc8210,bb_misc_store_snapshot_scale,misc,void
 0x00cd1720,bb_auto_fixed_address_00cd1720,auto,i64
 0x00cd1a20,bb_auto_fixed_address_00cd1a20,auto,i64
+0x00cd1b00,bb_misc_init_field_defaults,misc,void
 0x00cd1b90,bb_misc_init_field_copy,misc,void
 0x00cd20e0,bb_auto_fixed_address_00cd20e0,auto,i64
 0x00cd2730,bb_auto_base_init_00cd2730,auto,void
