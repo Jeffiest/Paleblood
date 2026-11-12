@@ -5626,6 +5626,7 @@ address,replacement,system,returns
 0x013b9250,bb_auto_bind_vtable_013b9250,auto,void
 0x013b9280,bb_auto_bind_vtable_013b9280,auto,void
 0x013b92b0,bb_auto_copy_block_013b92b0,auto,void
+0x013b92f0,bb_misc_init_name_pair_013b92f0,misc,void
 0x013b94b0,bb_misc_destroy_name_pair_013b94b0,misc,i64
 0x013b9520,bb_misc_reset_name_pair_013b9520,misc,void
 0x013b95b0,bb_misc_name_pair_first_text_013b95b0,misc,i64
