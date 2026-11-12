@@ -11767,6 +11767,7 @@ address,size,name,system,status,notes
 0x018bdfe0,5,auto_delete_object_thunk_018bdfe0,auto,edge-verified,Same instructions as misc_delete_object_thunk with other addresses
 0x018be000,62,misc_copy_key_clone_record,misc,edge-verified,Fills a key clone record from the source key word in the given record or a new block; a failed block allocation throws and the record address is returned
 0x018be040,62,misc_copy_key_clone_record_alt,misc,edge-verified,Same copy as misc_copy_key_clone_record for the second key clone routine at 0x018be040
+0x018be080,21,misc_set_inner_setting,misc,edge-verified,Copies the source value into the inner setting block of the holder and sets its enabled byte; returns the block address
 0x018be0b0,41,misc_finish_record_alt2,misc,edge-verified,Same finish-and-release routine as misc_finish_record at 0x018be0b0
 0x018be0e0,1,auto_empty_018be0e0,auto,edge-verified,Generated from the empty template
 0x018be0f0,5,auto_delete_object_thunk_018be0f0,auto,edge-verified,Same instructions as misc_delete_object_thunk with other addresses
