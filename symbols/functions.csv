@@ -21765,6 +21765,8 @@ address,size,name,system,status,notes
 0x01e8bc00,164,misc_decrement_word_entry_01e8bc00,misc,edge-verified,Lowers the count of the shared table entry a stored word names and releases its slot when spent
 0x01e8bcb0,202,misc_move_word_release_old_01e8bcb0,misc,edge-verified,Replaces a stored word with the source word when they differ releasing the old word first
 0x01e8bd80,310,misc_count_source_release_stored_01e8bd80,misc,edge-verified,Counts up the source word entry lowers or releases the stored word entry then stores the source word
+0x01e8bed0,310,misc_assign_counted_word_01e8bed0,misc,edge-verified,Assigns one stored word from another moving the counts of the shared table entries the two words name
+0x01e8c020,305,misc_assign_counted_word_value_01e8c020,misc,edge-verified,Stores a word value in a stored word moving the counts of the shared table entries the two words name
 0x01e8c160,41,auto_bind_vtable_01e8c160,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
 0x01e8c190,41,auto_bind_vtable_01e8c190,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
 0x01e8c1c0,41,auto_bind_vtable_01e8c1c0,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
@@ -21781,6 +21783,12 @@ address,size,name,system,status,notes
 0x01e8d090,205,auto_initialize_static_wide_string_01e8d090,auto,edge-verified,Same instructions as engine_initialize_static_wide_string_018867e0 with other addresses
 0x01e8d160,49,auto_copy_block_01e8d160,auto,edge-verified,Same instructions as misc_copy_block_58b3240 with other addresses
 0x01e8d1a0,218,auto_push_value_by_reference_01e8d1a0,auto,edge-verified,Same instructions as misc_push_value_by_reference with other addresses
+0x01e8d280,251,misc_grow_word_storage_01e8d280,misc,edge-verified,Grows a list of 8-byte words to a new block for a count and moves the stored words across
+0x01e8d380,48,misc_start_word_cursor_01e8d380,misc,edge-verified,Starts a word cursor from a word clearing its block and passing a handler-tagged negative word on
+0x01e8d3c0,166,misc_fill_word_cursor_block_01e8d3c0,misc,edge-verified,Fills a word cursor block from a source with its flag bits its value and six entries
+0x01e8d470,15,misc_word_cursor_first_value_01e8d470,misc,edge-verified,Reads the first header value of a word cursor block or zero when the cursor has no block
+0x01e8d480,15,misc_word_cursor_second_value_01e8d480,misc,edge-verified,Reads the second header value of a word cursor block or zero when the cursor has no block
+0x01e8d490,21,misc_word_cursor_item_01e8d490,misc,edge-verified,Reads an item of a word cursor block at an index or all ones when the cursor has no block
 0x01e8e200,41,auto_bind_vtable_01e8e200,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
 0x01e8e230,41,auto_bind_vtable_01e8e230,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
 0x01e8e260,41,auto_bind_vtable_01e8e260,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
@@ -21815,6 +21823,11 @@ address,size,name,system,status,notes
 0x01e90960,41,auto_bind_vtable_01e90960,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
 0x01e90990,205,auto_initialize_static_wide_string_01e90990,auto,edge-verified,Same instructions as engine_initialize_static_wide_string_018867e0 with other addresses
 0x01e90a60,49,auto_copy_block_01e90a60,auto,edge-verified,Same instructions as misc_copy_block_58b3240 with other addresses
+0x01e90aa0,20,misc_build_counted_word_object_01e90aa0,misc,edge-verified,Builds a counted word object by setting its virtual table and its default mask
+0x01e90ac0,92,misc_reset_counted_word_object_01e90ac0,misc,edge-verified,Resets a counted word object by setting its virtual table and assigning the zero word to it releasing its count
+0x01e90b20,159,misc_assign_masked_counted_word_01e90b20,misc,edge-verified,Assigns a source word to a counted word object when its mask shares a bit with the value of the cursor block
+0x01e90bc0,92,misc_move_counted_word_01e90bc0,misc,edge-verified,Stores a counted word object word in a destination counting it then clears the object word
+0x01e90c20,267,misc_fill_counted_word_object_01e90c20,misc,edge-verified,Fills a counted word object mask from a source then checks three flags of the shared counter table
 0x01e915b0,41,auto_bind_vtable_01e915b0,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
 0x01e915e0,41,auto_bind_vtable_01e915e0,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
 0x01e91610,41,auto_bind_vtable_01e91610,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses

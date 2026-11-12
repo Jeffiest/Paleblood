@@ -21764,6 +21764,8 @@ address,replacement,system,returns
 0x01e8bc00,bb_misc_decrement_word_entry_01e8bc00,misc,void
 0x01e8bcb0,bb_misc_move_word_release_old_01e8bcb0,misc,i64
 0x01e8bd80,bb_misc_count_source_release_stored_01e8bd80,misc,i64
+0x01e8bed0,bb_misc_assign_counted_word_01e8bed0,misc,i64
+0x01e8c020,bb_misc_assign_counted_word_value_01e8c020,misc,i64
 0x01e8c160,bb_auto_bind_vtable_01e8c160,auto,void
 0x01e8c190,bb_auto_bind_vtable_01e8c190,auto,void
 0x01e8c1c0,bb_auto_bind_vtable_01e8c1c0,auto,void
@@ -21780,6 +21782,12 @@ address,replacement,system,returns
 0x01e8d090,bb_auto_initialize_static_wide_string_01e8d090,auto,void
 0x01e8d160,bb_auto_copy_block_01e8d160,auto,void
 0x01e8d1a0,bb_auto_push_value_by_reference_01e8d1a0,auto,void
+0x01e8d280,bb_misc_grow_word_storage_01e8d280,misc,i64
+0x01e8d380,bb_misc_start_word_cursor_01e8d380,misc,i64
+0x01e8d3c0,bb_misc_fill_word_cursor_block_01e8d3c0,misc,i64
+0x01e8d470,bb_misc_word_cursor_first_value_01e8d470,misc,i32
+0x01e8d480,bb_misc_word_cursor_second_value_01e8d480,misc,i32
+0x01e8d490,bb_misc_word_cursor_item_01e8d490,misc,i32
 0x01e8e200,bb_auto_bind_vtable_01e8e200,auto,void
 0x01e8e230,bb_auto_bind_vtable_01e8e230,auto,void
 0x01e8e260,bb_auto_bind_vtable_01e8e260,auto,void
@@ -21814,6 +21822,11 @@ address,replacement,system,returns
 0x01e90960,bb_auto_bind_vtable_01e90960,auto,void
 0x01e90990,bb_auto_initialize_static_wide_string_01e90990,auto,void
 0x01e90a60,bb_auto_copy_block_01e90a60,auto,void
+0x01e90aa0,bb_misc_build_counted_word_object_01e90aa0,misc,i64
+0x01e90ac0,bb_misc_reset_counted_word_object_01e90ac0,misc,void
+0x01e90b20,bb_misc_assign_masked_counted_word_01e90b20,misc,i64
+0x01e90bc0,bb_misc_move_counted_word_01e90bc0,misc,i64
+0x01e90c20,bb_misc_fill_counted_word_object_01e90c20,misc,void
 0x01e915b0,bb_auto_bind_vtable_01e915b0,auto,void
 0x01e915e0,bb_auto_bind_vtable_01e915e0,auto,void
 0x01e91610,bb_auto_bind_vtable_01e91610,auto,void
