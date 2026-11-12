@@ -45949,6 +45949,7 @@ misc_pool_cursor_allocate,edge,,10,10,0,0,2ce81dfdd5674204,2026-11-11
 misc_prepare_forward,edge,,6,6,0,0,543c3d001ccdac0f,2026-11-09
 misc_prepare_listed_values,edge,,11,11,0,0,a1127feac57f491a,2026-11-10
 misc_prepare_then_release,edge,,2,2,0,0,570c1836a2c4cd35,2026-11-11
+misc_process_element_range,edge,,9,9,0,0,f6fec42087e9d544,2026-11-12
 misc_push_front_locked,edge,,2,2,0,0,9ee01a0ba2aef23e,2026-11-11
 misc_push_value_by_reference,edge,,10,10,0,0,5632a92f56a053c6,2026-11-09
 misc_push_value_from_pointer,edge,,10,10,0,0,27f97f9617a02206,2026-11-09
@@ -46021,6 +46022,7 @@ misc_release_single_item,edge,,5,5,0,0,4befcfc97c2c868c,2026-11-11
 misc_release_slot_item,edge,,12,12,0,0,9ed33a859aceef50,2026-11-09
 misc_release_text_pair_names_013a4fc0,edge,,6,6,0,0,e23743b80a97cb92,2026-11-12
 misc_release_then_optional_delete,edge,,6,6,0,0,883d72bfef3a4d9e,2026-11-11
+misc_release_tracked_object,edge,,6,6,0,0,7a20df17de2dc03c,2026-11-12
 misc_release_two_base_member_tail,edge,,6,6,0,0,ee68f86b21921450,2026-11-11
 misc_release_two_base_object,edge,,6,6,0,0,fcd00c8e7dd3c9b3,2026-11-11
 misc_release_two_base_secondary,edge,,6,6,0,0,b5c608e5c70beddf,2026-11-11
@@ -46084,6 +46086,7 @@ misc_set_value_clear_link,edge,,5,5,0,0,7610e59d705c59ba,2026-11-09
 misc_set_value_word_130,edge,,6,6,0,0,91908f151b5f35ba,2026-11-09
 misc_set_value_word_148,edge,,6,6,0,0,cce399dab4b975f2,2026-11-09
 misc_set_vtable_after_call,edge,,8,8,0,0,c4c6902266a7825e,2026-11-10
+misc_setup_exit_record_table,edge,,7,7,0,0,e3b1fffb2889bc02,2026-11-12
 misc_setup_member_then_forward,edge,,2,2,0,0,9ffc1edaa7e23308,2026-11-12
 misc_setup_static_objects_02243d30,edge,,9,9,0,0,e197050175ebe8e3,2026-11-11
 misc_singleton_result_for_source,edge,,6,6,0,0,b9893fd0cd6a4097,2026-11-12
@@ -46164,6 +46167,7 @@ misc_take_pending_node,edge,,10,10,0,0,b0a3c6903ff808ee,2026-11-11
 misc_take_slot_item,edge,,13,13,0,0,4db22f8d952d6440,2026-11-09
 misc_task_object_construct,edge,,12,12,0,0,efc8da79a8db224e,2026-11-09
 misc_task_object_destroy,edge,,11,11,0,0,5768d850e8a7ebef,2026-11-09
+misc_teardown_probe_list,edge,,12,12,0,0,f1ac39b515f86c2d,2026-11-12
 misc_teardown_record,edge,,5,5,0,0,0184fcf7fc0c0e68,2026-11-11
 misc_teardown_record_entries,edge,,17,17,0,0,9a7680d046c2c465,2026-11-11
 misc_test_and_set_flag,edge,,6,6,0,0,7aa9c6c0213a07af,2026-11-09
