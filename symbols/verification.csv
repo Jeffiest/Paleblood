@@ -45708,6 +45708,7 @@ misc_find_record_index,edge,,14,14,0,0,751d3dfb822f3451,2026-11-09
 misc_find_slot_object_01e86fa0,edge,,9,9,0,0,6c06586ea78fd815,2026-11-11
 misc_find_third_link_index,edge,,7,7,0,0,c71e42ea97ed5e45,2026-11-10
 misc_finish_pending_block_offset,edge,,7,7,0,0,1a48d345aa161f68,2026-11-10
+misc_finish_text_request,edge,,9,9,0,0,8cb2e99c9204dc92,2026-11-12
 misc_finish_tracked_update,edge,,15,15,0,0,4c6bb3089d2ad90f,2026-11-11
 misc_flush_owner_once,edge,,5,5,0,0,45aa1a8e622f9bb7,2026-11-09
 misc_format_eight_words,edge,,4,4,0,0,75c7b88b2a345875,2026-11-11
