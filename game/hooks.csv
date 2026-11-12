@@ -2263,6 +2263,7 @@ address,replacement,system,returns
 0x00cc1420,bb_auto_held_member_object_free_00cc1420,auto,i64
 0x00cc7e20,bb_misc_resolve_run_handle,misc,i32
 0x00cc7f30,bb_misc_copy_snapshot,misc,void
+0x00cc7f50,bb_misc_append_counted_item,misc,i64
 0x00cd1720,bb_auto_fixed_address_00cd1720,auto,i64
 0x00cd1a20,bb_auto_fixed_address_00cd1a20,auto,i64
 0x00cd20e0,bb_auto_fixed_address_00cd20e0,auto,i64
