@@ -67,4 +67,45 @@ RT_GLOBAL(0x056c7670, forwarding_singleton_vtable, ForwardingSingletonVtable);
 /** The vtable the holder is given. */
 RT_GLOBAL(0x056c7620, forwarding_holder_vtable, uint8_t);
 
+namespace forwarding_singleton_calls {
+
+/** The one-time set-up the builder calls before it re-reads the singleton pointer. */
+RT_ORIGINAL(0x024ede50, lazy_setup, void());
+/** The constructor the builder runs on the singleton storage. */
+RT_ORIGINAL(0x024b6d00, construct, void(ForwardingSingleton *));
+/** The guard acquire: nonzero when the one-time guard must be released. */
+RT_ORIGINAL(0x02fbe538, guard_acquire, int32_t(uint8_t *));
+/** The guard release. */
+RT_ORIGINAL(0x02fbe558, guard_release, void(uint8_t *));
+
+}  // namespace forwarding_singleton_calls
+
+/**
+ *
+ * Returns the shared singleton, building it in its storage when the instance pointer is still null.
+ *
+ * The build clears the pending flag when it is set, runs the one-time guard when the guard byte is
+ * clear, constructs the singleton and then publishes it in the instance pointer.
+ */
+inline ForwardingSingleton *ensure_forwarding_singleton()
+{
+    ForwardingSingleton *singleton = forwarding_singleton_instance.get();
+    if (singleton != nullptr) return singleton;
+    forwarding_singleton_calls::lazy_setup();
+    singleton = forwarding_singleton_instance.get();
+    if (singleton != nullptr) return singleton;
+    if (forwarding_singleton_pending.get() != 0) forwarding_singleton_pending.get() = 0;
+    if (forwarding_singleton_guard.get() == 0
+        && forwarding_singleton_calls::guard_acquire(&forwarding_singleton_guard.get()) != 0) {
+        forwarding_singleton_calls::guard_release(&forwarding_singleton_guard.get());
+    }
+    ForwardingSingleton *built = forwarding_singleton_storage.address();
+    forwarding_singleton_calls::construct(built);
+    built->vtable = forwarding_singleton_vtable.address();
+    built->value_0x48 = 0;
+    built->value_0x40 = 0;
+    forwarding_singleton_instance.get() = built;
+    return built;
+}
+
 }  // namespace misc
