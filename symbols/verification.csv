@@ -45603,6 +45603,7 @@ misc_bounded_range_object_init,edge,,2,2,0,0,0cdb501f7c0fa1b2,2026-11-09
 misc_build_block_object_02244030,edge,,8,8,0,0,38e27fd9a7ca14d4,2026-11-09
 misc_build_counted_word_block_01e91810,edge,,3,3,0,0,f38284bd1a10d483,2026-11-12
 misc_build_counted_word_object_01e90aa0,edge,,2,2,0,0,c8ca5b1098088fc1,2026-11-12
+misc_build_name_table_01b1ef80,edge,,8,8,0,0,00c773c2c5ad4311,2026-11-12
 misc_build_object_block,edge,,5,5,0,0,a29a195f36f9bfda,2026-11-09
 misc_bump_allocate_block,edge,,11,11,0,0,51b5523399a9cd0b,2026-11-09
 misc_call_child_with_record,edge,,8,8,0,0,77e781488ef0a9c6,2026-11-10

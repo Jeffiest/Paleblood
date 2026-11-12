@@ -15893,6 +15893,7 @@ address,replacement,system,returns
 0x01b1ee00,bb_auto_bind_vtable_01b1ee00,auto,void
 0x01b1ee30,bb_auto_initialize_static_wide_string_01b1ee30,auto,void
 0x01b1ef00,bb_auto_init_rows_total_01b1ef00,auto,void
+0x01b1ef80,bb_misc_build_name_table_01b1ef80,misc,void
 0x01b1f190,bb_auto_bind_vtable_01b1f190,auto,void
 0x01b1f1c0,bb_auto_bind_vtable_01b1f1c0,auto,void
 0x01b1f1f0,bb_auto_bind_vtable_01b1f1f0,auto,void

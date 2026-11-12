@@ -15894,6 +15894,7 @@ address,size,name,system,status,notes
 0x01b1ee00,41,auto_bind_vtable_01b1ee00,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
 0x01b1ee30,205,auto_initialize_static_wide_string_01b1ee30,auto,edge-verified,Same instructions as engine_initialize_static_wide_string_018867e0 with other addresses
 0x01b1ef00,113,auto_init_rows_total_01b1ef00,auto,edge-verified,Same instructions as misc_init_rows_total_5944010 with other addresses
+0x01b1ef80,516,misc_build_name_table_01b1ef80,misc,edge-verified,Allocates a table of three empty wide-string names and points a handle at it then assigns empty text
 0x01b1f190,41,auto_bind_vtable_01b1f190,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
 0x01b1f1c0,41,auto_bind_vtable_01b1f1c0,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
 0x01b1f1f0,41,auto_bind_vtable_01b1f1f0,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
