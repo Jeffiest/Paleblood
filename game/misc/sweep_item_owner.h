@@ -43,7 +43,7 @@ static_assert(offsetof(SweepItem, vtable) == 0x00);
  */
 struct SweepItemManagerVtable {
     uint8_t unknown_0x0000[0x70];
-    void (*remove_item)(SweepItemManager *manager, SweepItem *item); /**< Slot at 0x70. */
+    uint64_t (*remove_item)(SweepItemManager *manager, SweepItem *item); /**< Slot at 0x70: its result is RAX. */
 };
 static_assert(offsetof(SweepItemManagerVtable, remove_item) == 0x70);
 

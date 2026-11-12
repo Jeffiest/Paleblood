@@ -28527,6 +28527,7 @@ address,replacement,system,returns
 0x0225aa30,bb_auto_fixed_address_0225aa30,auto,i64
 0x0225b540,bb_misc_reset_then_free_text_block,misc,i64
 0x0225b560,bb_misc_reset_text_block,misc,i64
+0x0225b670,bb_misc_dispose_and_remove_item,misc,i64
 0x0225b7d0,bb_misc_clear_pointer_slot,misc,void
 0x0225b7e0,bb_misc_copy_retained_reference,misc,i64
 0x0225b7f0,bb_misc_clear_and_forward_source,misc,i64
