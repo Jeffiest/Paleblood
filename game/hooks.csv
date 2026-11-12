@@ -35393,6 +35393,7 @@ address,replacement,system,returns
 0x02706bc0,bb_misc_throw_prebuilt_error,misc,void
 0x02707120,bb_misc_reserve_words_locked,misc,void
 0x027071a0,bb_auto_push_value_by_reference_027071a0,auto,void
+0x02707280,bb_misc_grow_word_block_02707280,misc,void
 0x02707380,bb_misc_throw_prebuilt_error_02707380,misc,void
 0x02707fd0,bb_auto_destroy_then_release_02707fd0,auto,i64
 0x02708780,bb_auto_destroy_then_release_02708780,auto,i64
