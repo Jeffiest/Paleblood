@@ -11607,6 +11607,7 @@ address,replacement,system,returns
 0x018a4160,bb_auto_call_member_with_flagged_record_018a4160,auto,void
 0x018a41d0,bb_auto_return_constant_018a41d0,auto,i8
 0x018a4310,bb_auto_destroy_then_release_018a4310,auto,i64
+0x018a9bd0,bb_misc_forward_when_ready,misc,i64
 0x018aa2d0,bb_auto_bind_vtable_018aa2d0,auto,void
 0x018aa300,bb_auto_bind_vtable_018aa300,auto,void
 0x018aa330,bb_auto_bind_vtable_018aa330,auto,void
