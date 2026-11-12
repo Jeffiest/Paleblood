@@ -35387,6 +35387,8 @@ address,replacement,system,returns
 0x026f6d10,bb_misc_forward_child_slot_40_6d10,misc,i64
 0x026f6d20,bb_misc_init_defaulted_record_6d20,misc,i64
 0x026f6da0,bb_auto_jump_thunk_026f6da0,auto,i64
+0x026f7720,bb_misc_reset_indexed_slot_record,misc,void
+0x026f7770,bb_misc_store_slot_word,misc,i64
 0x026f7780,bb_auto_bind_vtable_026f7780,auto,void
 0x026f77b0,bb_auto_bind_vtable_026f77b0,auto,void
 0x026f77e0,bb_auto_bind_vtable_026f77e0,auto,void
@@ -35435,6 +35437,8 @@ address,replacement,system,returns
 0x026fc660,bb_auto_bind_vtable_026fc660,auto,void
 0x026fc690,bb_auto_bind_vtable_026fc690,auto,void
 0x026fc6c0,bb_auto_copy_block_026fc6c0,auto,void
+0x026fc750,bb_misc_copy_word_triple,misc,i64
+0x026fc770,bb_misc_get_published_object_once,misc,i64
 0x026fc8c0,bb_auto_bind_vtable_026fc8c0,auto,void
 0x026fc8f0,bb_auto_bind_vtable_026fc8f0,auto,void
 0x026fc920,bb_auto_bind_vtable_026fc920,auto,void
@@ -35455,8 +35459,16 @@ address,replacement,system,returns
 0x027051e0,bb_auto_held_block_destroy_027051e0,auto,void
 0x02705230,bb_auto_held_block_delete_02705230,auto,i64
 0x02705560,bb_auto_push_value_by_reference_02705560,auto,void
+0x02705640,bb_misc_grow_full_element_storage,misc,void
+0x02705790,bb_misc_grow_element_storage_locked,misc,void
+0x02705900,bb_misc_push_walk_node,misc,void
 0x02705dd0,bb_auto_push_value_by_reference_02705dd0,auto,void
+0x02706ac0,bb_misc_grow_word_block,misc,void
+0x02706bc0,bb_misc_throw_prebuilt_error,misc,void
+0x02707120,bb_misc_reserve_words_locked,misc,void
 0x027071a0,bb_auto_push_value_by_reference_027071a0,auto,void
+0x02707280,bb_misc_grow_word_block_02707280,misc,void
+0x02707380,bb_misc_throw_prebuilt_error_02707380,misc,void
 0x02707fd0,bb_auto_destroy_then_release_02707fd0,auto,i64
 0x02708780,bb_auto_destroy_then_release_02708780,auto,i64
 0x027091d0,bb_auto_return_constant_027091d0,auto,i8

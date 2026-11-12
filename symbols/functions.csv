@@ -35388,6 +35388,8 @@ address,size,name,system,status,notes
 0x026f6d10,15,misc_forward_child_slot_40_6d10,misc,edge-verified,Forwards the reference child to the routine in its slot at +0x40 with a zero second argument and returns the result
 0x026f6d20,117,misc_init_defaulted_record_6d20,misc,edge-verified,Initializes the base then gives the record its vtable and sets its indices counts value scale and cleared words and returns the vtable
 0x026f6da0,5,auto_jump_thunk_026f6da0,auto,edge-verified,Same instructions as misc_jump_thunk with other addresses
+0x026f7720,71,misc_reset_indexed_slot_record,misc,edge-verified,Resets an indexed slot record: two empty slots default scale and cleared state words
+0x026f7770,7,misc_store_slot_word,misc,edge-verified,Stores a 32-bit value into the slot array of an indexed slot record at the given index and returns the index
 0x026f7780,41,auto_bind_vtable_026f7780,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
 0x026f77b0,41,auto_bind_vtable_026f77b0,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
 0x026f77e0,41,auto_bind_vtable_026f77e0,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
@@ -35436,6 +35438,8 @@ address,size,name,system,status,notes
 0x026fc660,41,auto_bind_vtable_026fc660,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
 0x026fc690,41,auto_bind_vtable_026fc690,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
 0x026fc6c0,49,auto_copy_block_026fc6c0,auto,edge-verified,Same instructions as misc_copy_block_58b3240 with other addresses
+0x026fc750,18,misc_copy_word_triple,misc,edge-verified,Copies three words from a source record into a target record and returns the last word read
+0x026fc770,322,misc_get_published_object_once,misc,edge-verified,Returns the published static object after building the first static object and the published object once
 0x026fc8c0,41,auto_bind_vtable_026fc8c0,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
 0x026fc8f0,41,auto_bind_vtable_026fc8f0,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
 0x026fc920,41,auto_bind_vtable_026fc920,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
@@ -35456,8 +35460,16 @@ address,size,name,system,status,notes
 0x027051e0,72,auto_held_block_destroy_027051e0,auto,edge-verified,Same instructions as misc_held_block_destroy_02242ee0 with other addresses
 0x02705230,52,auto_held_block_delete_02705230,auto,edge-verified,Same instructions as misc_held_block_delete_02242ea0 with other addresses
 0x02705560,218,auto_push_value_by_reference_02705560,auto,edge-verified,Same instructions as misc_push_value_by_reference with other addresses
+0x02705640,325,misc_grow_full_element_storage,misc,edge-verified,When a list of elements is full moves it into a block of about one and a half times its capacity and frees the old block
+0x02705790,368,misc_grow_element_storage_locked,misc,edge-verified,Grows a list of elements under the thread lock when its capacity is short and frees the old block
+0x02705900,187,misc_push_walk_node,misc,edge-verified,Appends a node to one of two value vectors of an owner choosing the second when its list holds a matching enabled entry
 0x02705dd0,218,auto_push_value_by_reference_02705dd0,auto,edge-verified,Same instructions as misc_push_value_by_reference with other addresses
+0x02706ac0,251,misc_grow_word_block,misc,edge-verified,Grows a list of 8-byte words to a new block for the requested count moving the stored words across and freeing the old block
+0x02706bc0,16,misc_throw_prebuilt_error,misc,edge-verified,Raises the prebuilt error object through the throw helper which never returns
+0x02707120,119,misc_reserve_words_locked,misc,edge-verified,Reserves room for 128 words in a word list under the thread lock when it holds at most 127 words
 0x027071a0,218,auto_push_value_by_reference_027071a0,auto,edge-verified,Same instructions as misc_push_value_by_reference with other addresses
+0x02707280,251,misc_grow_word_block_02707280,misc,edge-verified,Grows a list of 8-byte words to a new block for the requested count moving the stored words across and freeing the old block (second copy)
+0x02707380,16,misc_throw_prebuilt_error_02707380,misc,edge-verified,Raises the prebuilt error object through the throw helper which never returns (second copy)
 0x02707fd0,28,auto_destroy_then_release_02707fd0,auto,edge-verified,Same instructions as misc_destroy_then_release with other addresses
 0x02708780,28,auto_destroy_then_release_02708780,auto,edge-verified,Same instructions as misc_destroy_then_release with other addresses
 0x027091d0,3,auto_return_constant_027091d0,auto,edge-verified,Generated from the return constant template

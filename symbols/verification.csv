@@ -45669,6 +45669,7 @@ misc_copy_source_and_build_node,edge,,4,4,0,0,0431c8fa2d5e82f9,2026-11-12
 misc_copy_source_vector,edge,,8,8,0,0,474a5895f0db75fb,2026-11-11
 misc_copy_source_vector_pair,edge,,9,9,0,0,c7b2c171888a3a37,2026-11-11
 misc_copy_wide_clone_record,edge,,3,3,0,0,b5fde2e16670a7e5,2026-11-12
+misc_copy_word_triple,edge,,4,4,0,0,68c22a0614f82cf1,2026-11-12
 misc_count_keyed_entry_01e86dc0,edge,,10,10,0,0,303ec7bada4657e3,2026-11-11
 misc_count_source_release_stored_01e8bd80,edge,,14,14,0,0,e21235b56b1010ab,2026-11-11
 misc_count_subtree_leaves,edge,,10,10,0,0,76ae6fa4641c1b40,2026-11-09
@@ -45778,7 +45779,12 @@ misc_gated_clear_value,edge,,5,3,2,0,351aa0b611603a91,2026-11-09
 misc_gated_read_bit,edge,,8,8,0,0,c4e1e1c4f4b89dcc,2026-11-09
 misc_gated_store_value,edge,,6,6,0,0,df2446ff7fd5897a,2026-11-09
 misc_get_or_create_cached_object,edge,,5,5,0,0,9cfa376a0ac982f9,2026-11-12
+misc_get_published_object_once,edge,,8,8,0,0,3941489480cde471,2026-11-12
 misc_grow_element_storage,edge,,7,7,0,0,84b7519cc6c7baef,2026-11-11
+misc_grow_element_storage_locked,edge,,7,7,0,0,71cbdc4f6a1a03b7,2026-11-12
+misc_grow_full_element_storage,edge,,6,6,0,0,8f363789b9600c12,2026-11-12
+misc_grow_word_block,edge,,7,7,0,0,80a65077ff972d6e,2026-11-12
+misc_grow_word_block_02707280,edge,,7,7,0,0,bed2d5bd882ca547,2026-11-12
 misc_grow_word_storage,edge,,7,7,0,0,e2a59da545d2b482,2026-11-11
 misc_grow_word_storage_01e8d280,edge,,7,7,0,0,ca0729c0a2d5770f,2026-11-12
 misc_hand_off_two_arrays,edge,,8,8,0,0,f284d8f577cc65a9,2026-11-11
@@ -45890,6 +45896,7 @@ misc_push_front_locked,edge,,2,2,0,0,9ee01a0ba2aef23e,2026-11-11
 misc_push_value_by_reference,edge,,10,10,0,0,5632a92f56a053c6,2026-11-09
 misc_push_value_from_pointer,edge,,10,10,0,0,27f97f9617a02206,2026-11-09
 misc_push_value_to_vector,edge,,5,5,0,0,f5d4eb32773697fb,2026-11-09
+misc_push_walk_node,edge,,10,10,0,0,ad40d677c283fc8e,2026-11-12
 misc_quantized_span,edge,,23,23,0,0,65b2fa99ea28c42d,2026-11-11
 misc_query_each_table_item,edge,,8,8,0,0,31388ee2e4ae3036,2026-11-09
 misc_query_each_table_item_kind1,edge,,8,8,0,0,ae3bf906451f892b,2026-11-09
@@ -45961,7 +45968,9 @@ misc_replace_block_02242710,edge,,9,9,0,0,2542a31e7cc1b57d,2026-11-09
 misc_replace_holder_and_hand_off,edge,,11,11,0,0,9ce23107883dfdf5,2026-11-11
 misc_replace_holder_object,edge,,14,14,0,0,02ca5dfd7f563365,2026-11-11
 misc_report_member_text_013a3260,edge,,5,5,0,0,5e1fca2399bd319c,2026-11-11
+misc_reserve_words_locked,edge,,4,4,0,0,de4bd122cf6350e2,2026-11-12
 misc_reset_counted_word_object_01e90ac0,edge,,3,3,0,0,57a3a5a9729e3a24,2026-11-12
+misc_reset_indexed_slot_record,edge,,3,3,0,0,36cfe1f6a1ec4c99,2026-11-12
 misc_reset_listed_members,edge,,7,7,0,0,05d746a0ec655de6,2026-11-09
 misc_reset_text_block,edge,,12,12,0,0,95649ed2dfa945b5,2026-11-12
 misc_reset_then_free_text_block,edge,,4,4,0,0,0a6481cf7ab5759c,2026-11-12
@@ -46015,6 +46024,7 @@ misc_store_keyed_counter_record,edge,,5,5,0,0,0bde0aeb4580a20b,2026-11-12
 misc_store_keyed_record_locked,edge,,6,6,0,0,70599a9a1c1ed538,2026-11-12
 misc_store_pair,edge,,9,0,9,0,d8cc4e7f9a84080a,2026-11-09
 misc_store_request,edge,,14,14,0,0,109935e29a017c03,2026-11-11
+misc_store_slot_word,edge,,5,5,0,0,f43e1dbd478c9e4b,2026-11-12
 misc_store_snapshot_scale,edge,,3,3,0,0,558fd28df51fb0e9,2026-11-12
 misc_store_value_and_flags_on_first_accepting_item,edge,,13,13,0,0,4a1bfc042a1fc093,2026-11-11
 misc_store_word_and_count_01e8bae0,edge,,8,8,0,0,6adc27360a6cbe1b,2026-11-11
@@ -46031,6 +46041,8 @@ misc_task_object_destroy,edge,,11,11,0,0,5768d850e8a7ebef,2026-11-09
 misc_teardown_record,edge,,5,5,0,0,0184fcf7fc0c0e68,2026-11-11
 misc_teardown_record_entries,edge,,17,17,0,0,9a7680d046c2c465,2026-11-11
 misc_test_and_set_flag,edge,,6,6,0,0,7aa9c6c0213a07af,2026-11-09
+misc_throw_prebuilt_error,edge,,1,1,0,0,bef45346dae9022e,2026-11-12
+misc_throw_prebuilt_error_02707380,edge,,1,1,0,0,f5895846ee9c859c,2026-11-12
 misc_tick_timed_record,edge,,6,6,0,0,743b0b1baf111da8,2026-11-11
 misc_unpack_and_release,edge,,7,7,0,0,83111d910b68eca2,2026-11-11
 misc_unregister_range_then_finish,edge,,3,3,0,0,e67f51a3393529bc,2026-11-12
