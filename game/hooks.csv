@@ -11773,6 +11773,7 @@ address,replacement,system,returns
 0x018be110,bb_misc_release_record_base,misc,i64
 0x018be190,bb_misc_release_record_and_free,misc,i64
 0x018be210,bb_misc_release_record_base_alt,misc,i64
+0x018be290,bb_misc_release_record_and_free_alt,misc,i64
 0x018be310,bb_auto_jump_thunk_018be310,auto,i64
 0x018be320,bb_auto_destroy_then_release_018be320,auto,i64
 0x018be360,bb_auto_fixed_address_018be360,auto,i64
