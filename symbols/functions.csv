@@ -35560,6 +35560,7 @@ address,size,name,system,status,notes
 0x02713440,41,auto_bind_vtable_02713440,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
 0x02713470,41,auto_bind_vtable_02713470,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
 0x027134a0,49,auto_copy_block_027134a0,auto,edge-verified,Same instructions as misc_copy_block_58b3240 with other addresses
+0x027134e0,134,render_create_wind_objects,render,edge-verified,Takes a 0x110-byte block and a 0x1a0-byte block from the allocator initialising both through their callees and reports whether the first was taken
 0x027135f0,79,render_create_wind_part,render,edge-verified,Takes a 0x78-byte wind part block from the allocator and initialises it through two callees reporting whether the block was taken
 0x02713690,11,render_get_wind_system,render,edge-verified,Returns the wind system instance address from its global or null before the system exists
 0x027136a0,37,render_begin_wind_settle,render,edge-verified,Starts the wind system settling when a system exists and the request byte is one: sets the reset and settling flags and the count
