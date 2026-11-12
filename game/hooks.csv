@@ -21775,6 +21775,7 @@ address,replacement,system,returns
 0x01e90a60,bb_auto_copy_block_01e90a60,auto,void
 0x01e90aa0,bb_misc_build_counted_word_object_01e90aa0,misc,i64
 0x01e90ac0,bb_misc_reset_counted_word_object_01e90ac0,misc,void
+0x01e90bc0,bb_misc_move_counted_word_01e90bc0,misc,i64
 0x01e915b0,bb_auto_bind_vtable_01e915b0,auto,void
 0x01e915e0,bb_auto_bind_vtable_01e915e0,auto,void
 0x01e91610,bb_auto_bind_vtable_01e91610,auto,void
