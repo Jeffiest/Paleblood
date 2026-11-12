@@ -45925,6 +45925,7 @@ misc_scratch_value_48,edge,,15,15,0,0,dff84b1f7609e408,2026-11-11
 misc_scratch_value_50,edge,,15,15,0,0,15f64f8de1de7c44,2026-11-11
 misc_scratch_value_58,edge,,15,15,0,0,cb093e3aacbb5bda,2026-11-11
 misc_select_idle_pool_entry,edge,,15,15,0,0,904ad3c3bfeee9a3,2026-11-10
+misc_select_mode_then_call_013b5100,edge,,9,9,0,0,dbea1431382279e2,2026-11-12
 misc_select_pair_table_entry,edge,,12,12,0,0,5caa07ce9d354d3b,2026-11-09
 misc_select_probe_scaled,edge,,11,11,0,0,a2c6c96c7f32aaa6,2026-11-09
 misc_select_probe_value,edge,,8,8,0,0,c7955f2a8e547e8a,2026-11-09
