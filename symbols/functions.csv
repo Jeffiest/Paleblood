@@ -35393,6 +35393,7 @@ address,size,name,system,status,notes
 0x02706ac0,251,misc_grow_word_block,misc,edge-verified,Grows a list of 8-byte words to a new block for the requested count moving the stored words across and freeing the old block
 0x02706bc0,16,misc_throw_prebuilt_error,misc,edge-verified,Raises the prebuilt error object through the throw helper which never returns
 0x027071a0,218,auto_push_value_by_reference_027071a0,auto,edge-verified,Same instructions as misc_push_value_by_reference with other addresses
+0x02707380,16,misc_throw_prebuilt_error_02707380,misc,edge-verified,Raises the prebuilt error object through the throw helper which never returns (second copy)
 0x02707fd0,28,auto_destroy_then_release_02707fd0,auto,edge-verified,Same instructions as misc_destroy_then_release with other addresses
 0x02708780,28,auto_destroy_then_release_02708780,auto,edge-verified,Same instructions as misc_destroy_then_release with other addresses
 0x027091d0,3,auto_return_constant_027091d0,auto,edge-verified,Generated from the return constant template
