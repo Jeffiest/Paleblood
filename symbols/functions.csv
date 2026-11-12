@@ -35624,6 +35624,7 @@ address,size,name,system,status,notes
 0x027165f0,41,auto_bind_vtable_027165f0,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
 0x02716620,41,auto_bind_vtable_02716620,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
 0x02716650,41,auto_bind_vtable_02716650,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x02716770,62,misc_release_tracked_object,misc,edge-verified,Releases the object a record holds when its state word is set then clears the state and the two words after it; a clear state does nothing
 0x02717af0,41,auto_bind_vtable_02717af0,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
 0x02717b20,41,auto_bind_vtable_02717b20,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
 0x02717b50,41,auto_bind_vtable_02717b50,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses

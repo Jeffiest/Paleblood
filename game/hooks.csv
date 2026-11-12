@@ -35623,6 +35623,7 @@ address,replacement,system,returns
 0x027165f0,bb_auto_bind_vtable_027165f0,auto,void
 0x02716620,bb_auto_bind_vtable_02716620,auto,void
 0x02716650,bb_auto_bind_vtable_02716650,auto,void
+0x02716770,bb_misc_release_tracked_object,misc,void
 0x02717af0,bb_auto_bind_vtable_02717af0,auto,void
 0x02717b20,bb_auto_bind_vtable_02717b20,auto,void
 0x02717b50,bb_auto_bind_vtable_02717b50,auto,void
