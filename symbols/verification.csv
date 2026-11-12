@@ -45813,6 +45813,7 @@ misc_holder_search_fourth,edge,,4,4,0,0,2806de0558515fb4,2026-11-09
 misc_holder_search_second,edge,,4,4,0,0,8ea756833cdd18bc,2026-11-09
 misc_holder_search_third,edge,,4,4,0,0,e21c971d8e58be79,2026-11-09
 misc_id_owner_construct_02242df0,edge,,8,8,0,0,627eb0aab7bf21ee,2026-11-09
+misc_index_record_locked,edge,,6,6,0,0,667e2d21d4e068d8,2026-11-12
 misc_init_byte_record_or_allocate,edge,,7,7,0,0,ecdfef9dc6063fa2,2026-11-11
 misc_init_byte_record_or_allocate_0188e130,edge,,7,7,0,0,a4584cd97e2fd7aa,2026-11-11
 misc_init_child_holder,edge,,4,4,0,0,cd5fc9f4b2399ef0,2026-11-11

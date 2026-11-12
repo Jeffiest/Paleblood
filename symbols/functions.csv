@@ -100,6 +100,7 @@ address,size,name,system,status,notes
 0x004182c0,71,misc_run_locked_set_operation,misc,edge-verified,Runs a set operation on the object's set region under its lock and returns the result of releasing the lock
 0x00418310,168,misc_append_record_or_report,misc,edge-verified,Appends the record to the first array under the list lock when it has room and otherwise reports the overflow to the source sink
 0x004183c0,174,misc_append_counted_record_or_report,misc,edge-verified,Appends the record to the second array under the list lock when it has room and counts it and otherwise reports the overflow to the source sink
+0x00418470,246,misc_index_record_locked,misc,edge-verified,Looks a key up in the owner slot table and links the value to the slot payload under the owner lock when its level is low
 0x00418570,131,misc_set_lookup_locked,misc,edge-verified,Queries the list set with a key value and flags under the list lock when its level is low and returns the low byte of the query
 0x00418d80,8,auto_return_field_00418d80,auto,edge-verified,Generated from the return field template
 0x00419190,42,auto_prepare_forward_00419190,auto,edge-verified,Same instructions as misc_prepare_forward with other addresses
