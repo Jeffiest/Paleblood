@@ -2343,6 +2343,7 @@ address,size,name,system,status,notes
 0x00ce7690,59,misc_init_cleared_link_record,misc,edge-verified,Stores the virtual table at the address point of a link record then clears its four trailing link words
 0x00ce76d0,15,auto_base_init_00ce76d0,auto,edge-verified,Same instructions as misc_base_init_02242980 with other addresses
 0x00ce76e0,78,misc_init_sample_record,misc,edge-verified,Sets the index budget scale enabled flag and tolerance of a 0x70 byte sample record then clears its link words and two blocks
+0x00ce7730,193,misc_init_slot_record,misc,edge-verified,Empties four growable slots sets the budget and tolerance and enabled flag of a 0x98 byte slot record and clears its trailing words
 0x00ce7800,42,misc_clear_trailing_links,misc,edge-verified,Zeroes the four link words at the end of a 0x98 byte block and leaves its leading part untouched
 0x00cebc50,8,auto_fixed_address_00cebc50,auto,edge-verified,Same instructions as misc_plain_type_address with other addresses
 0x00cebc60,15,auto_base_init_00cebc60,auto,edge-verified,Same instructions as misc_base_init_02242980 with other addresses

@@ -45844,6 +45844,7 @@ misc_init_sample_record,edge,,3,3,0,0,764af214f483d835,2026-11-12
 misc_init_shared_record_once,edge,,8,8,0,0,fe59d1d70e36e671,2026-11-09
 misc_init_shared_record_once_guarded,edge,,8,8,0,0,49c2ae0e3fa7e7ec,2026-11-09
 misc_init_slot_pairs_013b51a0,edge,,2,2,0,0,077438bfa63e64bc,2026-11-12
+misc_init_slot_record,edge,,3,3,0,0,316f3d5f3b437f60,2026-11-12
 misc_init_slot_table_013b4e20,edge,,2,2,0,0,68b89dd15f9a035e,2026-11-12
 misc_init_sourced_item,edge,,4,4,0,0,57532081a1e17335,2026-11-12
 misc_init_stream_guards_58b9d5c,edge,,10,10,0,0,54331b61c4ab8c46,2026-11-10
