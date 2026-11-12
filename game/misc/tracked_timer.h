@@ -36,9 +36,9 @@ struct TrackedTimer {
     uint8_t unknown_0x00d0[0x08];
     float remaining;                /**< The time left on the timer, in seconds. */
     uint8_t unknown_0x00dc[0x48];
-    uint32_t reset_word;            /**< Cleared at the start of each label step. */
+    uint32_t counter;               /**< Counts steps toward a threshold; the tick routines clear it. */
 };
-static_assert(offsetof(TrackedTimer, reset_word) == 0x124);
+static_assert(offsetof(TrackedTimer, counter) == 0x124);
 static_assert(offsetof(TrackedTimer, vtable) == 0x00);
 static_assert(offsetof(TrackedTimer, hold_count) == 0x50);
 static_assert(offsetof(TrackedTimer, step_count) == 0x54);

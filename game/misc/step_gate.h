@@ -24,7 +24,10 @@ struct StepGate {
     uint32_t kind_word;             /**< The top byte selects the kind; kind 0x1d carries a value. */
     uint8_t unknown_0x0a7c[0x0c];
     uint64_t kind_value;            /**< The value handed to the track when the kind carries one. */
+    uint8_t unknown_0x0a90[0x84];
+    uint8_t mode_flags;             /**< Bit 1 selects the counted route of a counted range. */
 };
+static_assert(offsetof(StepGate, mode_flags) == 0xb14);
 static_assert(offsetof(StepGate, enabled) == 0x08);
 static_assert(offsetof(StepGate, suspended) == 0x9f6);
 static_assert(offsetof(StepGate, frozen) == 0x9f8);

@@ -28703,6 +28703,7 @@ address,replacement,system,returns
 0x0225f510,bb_auto_setup_static_objects_0225f510,auto,i64
 0x0225fac0,bb_misc_refresh_slot_copy,misc,i64
 0x0225faf0,bb_misc_tick_tracked_timer_label,misc,void
+0x0225fbf0,bb_misc_advance_counted_range,misc,i64
 0x02260410,bb_auto_empty_02260410,auto,void
 0x02260420,bb_auto_bind_vtable_02260420,auto,void
 0x02260450,bb_auto_bind_vtable_02260450,auto,void

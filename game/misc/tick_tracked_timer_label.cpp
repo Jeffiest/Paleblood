@@ -25,12 +25,12 @@ constexpr uint32_t label_hold_limit = 6;
 
 /**
  *
- * Clears the timer's reset word, runs its after-step hook, and counts the step. Once the hold count plus one
+ * Clears the timer counter, runs its after-step hook, and counts the step. Once the hold count plus one
  * passes the limit, a label is built in a temporary wide string on the default allocator and reported under its key.
  */
 extern "C" void bb_misc_tick_tracked_timer_label(misc::TrackedTimer *timer)
 {
-    timer->reset_word = 0;
+    timer->counter = 0;
     timer->vtable->after_step(timer);
     timer->step_count = static_cast<int32_t>(static_cast<uint32_t>(timer->step_count) + 1u);
 

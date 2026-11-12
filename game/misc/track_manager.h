@@ -12,10 +12,13 @@ namespace misc {
  *
  */
 struct TrackRecord {
-    uint8_t unknown_0x0000[0x920];
+    uint8_t unknown_0x0000[0x8b4];
+    uint32_t label_threshold;       /**< The counter value at which the counted range takes its second route. */
+    uint8_t unknown_0x08b8[0x68];
     uint32_t frames;                /**< The frame count a timer on this track is reloaded with. */
     uint32_t start_frames;          /**< The frame count a timer on this track starts with. */
 };
+static_assert(offsetof(TrackRecord, label_threshold) == 0x8b4);
 static_assert(offsetof(TrackRecord, frames) == 0x920);
 static_assert(offsetof(TrackRecord, start_frames) == 0x924);
 
