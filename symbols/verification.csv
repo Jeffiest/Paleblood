@@ -45684,6 +45684,7 @@ misc_dispatch_stages_0_to_8,edge,,8,8,0,0,fbe3ada8082f824e,2026-11-09
 misc_dispatch_to_target,edge,,8,8,0,0,061c6400933c91c9,2026-11-11
 misc_drain_object_queue,edge,,14,14,0,0,f3c9ae6403f1d04f,2026-11-10
 misc_drain_pool_entries,edge,,10,10,0,0,9f1284e0b27884a6,2026-11-10
+misc_dual_base_release,edge,,4,4,0,0,9e00a602b13352cd,2026-11-12
 misc_dual_held_member_object_free,edge,,6,6,0,0,7bcad02862fcb012,2026-11-10
 misc_dual_held_member_object_init,edge,,2,2,0,0,752fe02dae89e67f,2026-11-09
 misc_dual_held_member_object_release,edge,,9,9,0,0,a3923c2f8d574c42,2026-11-09

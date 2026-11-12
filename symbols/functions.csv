@@ -2284,6 +2284,7 @@ address,size,name,system,status,notes
 0x00cd3dd0,8,auto_fixed_address_00cd3dd0,auto,edge-verified,Same instructions as misc_plain_type_address with other addresses
 0x00cd3ec0,8,auto_fixed_address_00cd3ec0,auto,edge-verified,Same instructions as misc_plain_type_address with other addresses
 0x00cd3ed0,113,auto_register_plain_type_00cd3ed0,auto,edge-verified,Same instructions as misc_register_plain_type with other addresses
+0x00cd4280,118,misc_dual_base_release,misc,edge-verified,Sets both base vtables of a two-base object releases the item it holds and clears that item
 0x00cd4380,8,auto_fixed_address_00cd4380,auto,edge-verified,Same instructions as misc_plain_type_address with other addresses
 0x00cd4390,49,misc_setup_member_then_forward,misc,edge-verified,Prepares a forwarding pair object for an id stores the id in its sub-object and returns the member initialisation result
 0x00cd43d0,35,misc_destroy_member_then_forward,misc,edge-verified,Releases the member of a forwarding pair object then returns the next stage result for the object
