@@ -45695,6 +45695,7 @@ misc_enable_owner_target,edge,,6,6,0,0,ab5ba15acc4d6d73,2026-11-09
 misc_ensure_shared_instance_013a1850,edge,,4,4,0,0,3f58ac4e9e279812,2026-11-11
 misc_entry_for_key,edge,,9,9,0,0,05562ce18d85b046,2026-11-09
 misc_entry_ref_accept,edge,,15,15,0,0,be3be074b348091e,2026-11-10
+misc_fill_counted_word_object_01e90c20,edge,,6,6,0,0,499c0256e160b4b5,2026-11-12
 misc_fill_item_table,edge,,10,10,0,0,121719f0b60da0e7,2026-11-09
 misc_fill_word_cursor_block_01e8d3c0,edge,,8,8,0,0,569fa4cd327f58dd,2026-11-12
 misc_find_largest_value_at_most,edge,,12,12,0,0,3ea1d78637ccfe72,2026-11-11

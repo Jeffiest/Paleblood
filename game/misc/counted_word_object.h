@@ -25,6 +25,23 @@ struct CountedWordObject {
 static_assert(offsetof(CountedWordObject, vtable_0x00) == 0x0 && offsetof(CountedWordObject, mask_0x08) == 0x8);
 static_assert(offsetof(CountedWordObject, word_0x0c) == 0xc);
 
+/**
+ *
+ * The virtual table of a counted word source: its fill slot writes a 32-bit value to the pointer it is given.
+ *
+ */
+struct CountedWordSourceVtable {
+    uint8_t unknown_0x0000[0x20];
+    void (*fill_0x20)(struct CountedWordSource *source, uint32_t *out, int32_t kind); /**< Writes the value for the kind. */
+};
+static_assert(offsetof(CountedWordSourceVtable, fill_0x20) == 0x20);
+
+/** An object that supplies values to a counted word object through its virtual table. */
+struct CountedWordSource {
+    const CountedWordSourceVtable *vtable;  /**< Virtual table pointer. */
+};
+static_assert(offsetof(CountedWordSource, vtable) == 0x0);
+
 /** The mask a freshly built object holds: only its high bit is set. */
 constexpr uint32_t counted_word_default_mask = 0x80000000u;
 

@@ -21778,6 +21778,7 @@ address,size,name,system,status,notes
 0x01e90ac0,92,misc_reset_counted_word_object_01e90ac0,misc,edge-verified,Resets a counted word object by setting its virtual table and assigning the zero word to it releasing its count
 0x01e90b20,159,misc_assign_masked_counted_word_01e90b20,misc,edge-verified,Assigns a source word to a counted word object when its mask shares a bit with the value of the cursor block
 0x01e90bc0,92,misc_move_counted_word_01e90bc0,misc,edge-verified,Stores a counted word object word in a destination counting it then clears the object word
+0x01e90c20,267,misc_fill_counted_word_object_01e90c20,misc,edge-verified,Fills a counted word object mask from a source then checks three flags of the shared counter table
 0x01e915b0,41,auto_bind_vtable_01e915b0,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
 0x01e915e0,41,auto_bind_vtable_01e915e0,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
 0x01e91610,41,auto_bind_vtable_01e91610,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
