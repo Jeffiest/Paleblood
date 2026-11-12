@@ -12,6 +12,8 @@ namespace misc {
 
 /** The virtual table a counted block record holds while its block is being reset, in read-only data. */
 RT_GLOBAL(0x057362d0, counted_block_record_reset_vtable, const uint8_t);
+/** The reset table of a second kind of counted block record, in read-only data. */
+RT_GLOBAL(0x05736330, counted_block_record_alt_reset_vtable, const uint8_t);
 /** The virtual table a counted block record holds once its block is reset, in read-only data. */
 RT_GLOBAL(0x057997d0, counted_block_record_final_vtable, const uint8_t);
 
