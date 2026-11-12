@@ -45931,6 +45931,7 @@ misc_ref_holder_detach,edge,,9,9,0,0,8e46684ed109c170,2026-11-10
 misc_ref_holder_hold,edge,,7,7,0,0,6687a505ddc2329a,2026-11-09
 misc_ref_holder_release,edge,,10,10,0,0,a48afd36acf09017,2026-11-09
 misc_refresh_cached_indices,edge,,15,15,0,0,4d49a961e385be46,2026-11-10
+misc_refresh_slot_copy,edge,,11,11,0,0,2a3094139c144a9e,2026-11-12
 misc_register_field_type,edge,,2,2,0,0,dcbd039566b93358,2026-11-12
 misc_register_forwarding_type,edge,,2,2,0,0,072daa6f4470d195,2026-11-12
 misc_register_handle_record,edge,,4,4,0,0,b590850d06a3763b,2026-11-09
