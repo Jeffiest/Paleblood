@@ -45543,6 +45543,7 @@ misc_accepted_item_rank_flag_test,edge,,11,11,0,0,346acd65914268e9,2026-11-11
 misc_all_items_rank_above_three,edge,,12,12,0,0,f255bef9f46f31fc,2026-11-11
 misc_alloc_block_with_value,edge,,5,5,0,0,914c3b0cf0e6e450,2026-11-09
 misc_allocate_aligned_chain_node,edge,,11,11,0,0,652e20329bee5812,2026-11-09
+misc_allocate_capped_buffer_copy,edge,,4,4,0,0,8754ed4a4678f8f0,2026-11-12
 misc_allocate_chain_node,edge,,7,7,0,0,132f18c99de2b078,2026-11-10
 misc_allocated_block_holder_construct,edge,,4,4,0,0,b72a41b5cd20bcb7,2026-11-09
 misc_allocated_block_holder_destroy,edge,,5,5,0,0,9bb2172747dac4e4,2026-11-10

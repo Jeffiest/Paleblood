@@ -93,6 +93,7 @@ address,size,name,system,status,notes
 0x00416770,190,misc_copy_source_and_build_node,misc,edge-verified,Copies a source into a node build state and runs the slot builder on it then finishes the node when the state has one and returns the tail result
 0x00417e70,67,misc_finish_node_state,misc,edge-verified,Finishes the state's node by handing its inner object to one call and its link to another then returns the inner tail call result or nothing without a node
 0x00417fd0,56,misc_copy_capped_buffer,misc,edge-verified,Copies the view's buffer into a destination limited to the smaller of the count and the view's capacity and returns that limit
+0x00418010,80,misc_allocate_capped_buffer_copy,misc,edge-verified,Takes a buffer of the size from the view's allocator and when one is taken sets the capacity to the size and copies the source into it
 0x00418d80,8,auto_return_field_00418d80,auto,edge-verified,Generated from the return field template
 0x00419190,42,auto_prepare_forward_00419190,auto,edge-verified,Same instructions as misc_prepare_forward with other addresses
 0x00419700,42,auto_prepare_forward_00419700,auto,edge-verified,Same instructions as misc_prepare_forward with other addresses
