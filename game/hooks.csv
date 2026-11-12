@@ -21735,6 +21735,7 @@ address,replacement,system,returns
 0x01e8d1a0,bb_auto_push_value_by_reference_01e8d1a0,auto,void
 0x01e8d380,bb_misc_start_word_cursor_01e8d380,misc,i64
 0x01e8d470,bb_misc_word_cursor_first_value_01e8d470,misc,i32
+0x01e8d480,bb_misc_word_cursor_second_value_01e8d480,misc,i32
 0x01e8e200,bb_auto_bind_vtable_01e8e200,auto,void
 0x01e8e230,bb_auto_bind_vtable_01e8e230,auto,void
 0x01e8e260,bb_auto_bind_vtable_01e8e260,auto,void
