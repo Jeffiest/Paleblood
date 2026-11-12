@@ -28464,6 +28464,7 @@ address,replacement,system,returns
 0x022555b0,bb_misc_set_flag_on_first_accepting_item,misc,i8
 0x02255610,bb_misc_store_value_and_flags_on_first_accepting_item,misc,i8
 0x02255690,bb_misc_set_flag_on_first_accepting_item_8,misc,i8
+0x022556f0,bb_misc_update_and_drop_finished,misc,void
 0x02255870,bb_auto_bind_vtable_02255870,auto,void
 0x022558a0,bb_auto_bind_vtable_022558a0,auto,void
 0x022558d0,bb_auto_bind_vtable_022558d0,auto,void
