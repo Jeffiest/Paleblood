@@ -40033,6 +40033,7 @@ address,replacement,system,returns
 0x02b50b50,bb_auto_fixed_address_02b50b50,auto,i64
 0x02b50b60,bb_auto_fixed_address_02b50b60,auto,i64
 0x02b50b80,bb_misc_release_chain_member_02b50b80,misc,void
+0x02b50cd0,bb_misc_record_singleton_dispatch_02b50cd0,misc,i64
 0x02b50fd0,bb_auto_delete_object_thunk_02b50fd0,auto,void
 0x02b51110,bb_auto_fixed_address_02b51110,auto,i64
 0x02b512d0,bb_auto_delete_object_thunk_02b512d0,auto,void

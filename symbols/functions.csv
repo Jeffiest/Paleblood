@@ -40034,6 +40034,7 @@ address,size,name,system,status,notes
 0x02b50b50,8,auto_fixed_address_02b50b50,auto,edge-verified,Same instructions as misc_plain_type_address with other addresses
 0x02b50b60,8,auto_fixed_address_02b50b60,auto,edge-verified,Same instructions as misc_plain_type_address with other addresses
 0x02b50b80,319,misc_release_chain_member_02b50b80,misc,edge-verified,Releases the holder object when the pair singleton is on its chain then calls the object slot 0 and the target slot 0x70
+0x02b50cd0,411,misc_record_singleton_dispatch_02b50cd0,misc,edge-verified,Stores the dispatch holder vtable then takes the record singleton and tail-calls its slot 0x60 with the results of its slots 0x10 and 0x18
 0x02b50fd0,5,auto_delete_object_thunk_02b50fd0,auto,edge-verified,Same instructions as misc_delete_object_thunk with other addresses
 0x02b51110,8,auto_fixed_address_02b51110,auto,edge-verified,Same instructions as misc_plain_type_address with other addresses
 0x02b512d0,5,auto_delete_object_thunk_02b512d0,auto,edge-verified,Same instructions as misc_delete_object_thunk with other addresses
