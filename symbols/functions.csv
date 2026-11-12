@@ -35386,6 +35386,7 @@ address,size,name,system,status,notes
 0x027051e0,72,auto_held_block_destroy_027051e0,auto,edge-verified,Same instructions as misc_held_block_destroy_02242ee0 with other addresses
 0x02705230,52,auto_held_block_delete_02705230,auto,edge-verified,Same instructions as misc_held_block_delete_02242ea0 with other addresses
 0x02705560,218,auto_push_value_by_reference_02705560,auto,edge-verified,Same instructions as misc_push_value_by_reference with other addresses
+0x02705790,368,misc_grow_element_storage_locked,misc,edge-verified,Grows a list of elements under the thread lock when its capacity is short and frees the old block
 0x02705dd0,218,auto_push_value_by_reference_02705dd0,auto,edge-verified,Same instructions as misc_push_value_by_reference with other addresses
 0x027071a0,218,auto_push_value_by_reference_027071a0,auto,edge-verified,Same instructions as misc_push_value_by_reference with other addresses
 0x02707fd0,28,auto_destroy_then_release_02707fd0,auto,edge-verified,Same instructions as misc_destroy_then_release with other addresses
