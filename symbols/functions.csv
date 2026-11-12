@@ -2269,6 +2269,7 @@ address,size,name,system,status,notes
 0x00cc8210,107,misc_store_snapshot_scale,misc,edge-verified,Stores a new scale in a source and when the source has a target passes a snapshot of it on
 0x00cd1720,8,auto_fixed_address_00cd1720,auto,edge-verified,Same instructions as misc_plain_type_address with other addresses
 0x00cd1730,213,misc_register_field_type,misc,edge-verified,Fills the static record of a field then registers its type and returns the registration result
+0x00cd1810,511,misc_collect_path_values,misc,edge-verified,Collects the values along a path of nodes from the node of an id into a list and returns whether the whole path fit
 0x00cd1a20,8,auto_fixed_address_00cd1a20,auto,edge-verified,Same instructions as misc_plain_type_address with other addresses
 0x00cd1a50,175,misc_register_sized_type,misc,edge-verified,Registers a type with a 0x90 byte instance and fills its static descriptor then returns the descriptor address
 0x00cd1b00,129,misc_init_field_defaults,misc,edge-verified,Stores the field-copy vtable address point and the default values of a field-copy object
