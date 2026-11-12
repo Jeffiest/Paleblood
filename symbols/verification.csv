@@ -46044,6 +46044,7 @@ misc_small_type_address,edge,,1,1,0,0,d46fd6cde073b9c8,2026-11-09
 misc_span_end,edge,,9,9,0,0,9d09d4146689b0a5,2026-11-09
 misc_span_forward,edge,,8,8,0,0,ad8232bd25beb25a,2026-11-09
 misc_start_word_cursor_01e8d380,edge,,9,9,0,0,9304e918e3a92510,2026-11-12
+misc_step_tracked_timer,edge,,16,16,0,0,fb346bdd72a9c55f,2026-11-12
 misc_store_keyed_counter_record,edge,,5,5,0,0,0bde0aeb4580a20b,2026-11-12
 misc_store_keyed_record_locked,edge,,6,6,0,0,70599a9a1c1ed538,2026-11-12
 misc_store_pair,edge,,9,0,9,0,d8cc4e7f9a84080a,2026-11-09
