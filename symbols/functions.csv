@@ -4253,6 +4253,7 @@ address,size,name,system,status,notes
 0x012456b0,41,auto_bind_vtable_012456b0,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
 0x012456e0,41,auto_bind_vtable_012456e0,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
 0x01245710,41,auto_bind_vtable_01245710,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x01245d80,676,misc_merge_pending_listeners,misc,edge-verified,Expires countdown nodes running their callbacks then moves pending nodes onto the active list and tail-calls the owner
 0x01246380,41,auto_bind_vtable_01246380,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
 0x012463b0,41,auto_bind_vtable_012463b0,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
 0x012463e0,41,auto_bind_vtable_012463e0,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses

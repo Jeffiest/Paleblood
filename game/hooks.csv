@@ -4252,6 +4252,7 @@ address,replacement,system,returns
 0x012456b0,bb_auto_bind_vtable_012456b0,auto,void
 0x012456e0,bb_auto_bind_vtable_012456e0,auto,void
 0x01245710,bb_auto_bind_vtable_01245710,auto,void
+0x01245d80,bb_misc_merge_pending_listeners,misc,i64
 0x01246380,bb_auto_bind_vtable_01246380,auto,void
 0x012463b0,bb_auto_bind_vtable_012463b0,auto,void
 0x012463e0,bb_auto_bind_vtable_012463e0,auto,void
