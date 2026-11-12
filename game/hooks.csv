@@ -11755,6 +11755,7 @@ address,replacement,system,returns
 0x018bdc60,bb_auto_delete_object_thunk_018bdc60,auto,void
 0x018bdcb0,bb_auto_jump_thunk_018bdcb0,auto,i64
 0x018bdcc0,bb_auto_destroy_then_release_018bdcc0,auto,i64
+0x018bddd0,bb_misc_copy_wide_clone_record,misc,i64
 0x018bdea0,bb_auto_empty_018bdea0,auto,void
 0x018bdeb0,bb_auto_delete_object_thunk_018bdeb0,auto,void
 0x018bdfd0,bb_auto_empty_018bdfd0,auto,void
