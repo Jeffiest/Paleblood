@@ -28543,6 +28543,7 @@ address,replacement,system,returns
 0x0225bf50,bb_auto_setup_static_objects_0225bf50,auto,i64
 0x0225c130,bb_auto_setup_static_objects_0225c130,auto,i64
 0x0225c310,bb_auto_setup_static_objects_0225c310,auto,i64
+0x0225c4f0,bb_misc_construct_config_reader,misc,void
 0x0225cab0,bb_auto_bind_vtable_0225cab0,auto,void
 0x0225cae0,bb_auto_bind_vtable_0225cae0,auto,void
 0x0225cb10,bb_auto_bind_vtable_0225cb10,auto,void
