@@ -2272,8 +2272,18 @@ address,size,name,system,status,notes
 0x00cbf870,5,auto_jump_thunk_00cbf870,auto,edge-verified,Same instructions as misc_jump_thunk with other addresses
 0x00cc1220,8,auto_fixed_address_00cc1220,auto,edge-verified,Same instructions as misc_plain_type_address with other addresses
 0x00cc1420,75,auto_held_member_object_free_00cc1420,auto,edge-verified,Same instructions as misc_held_member_object_free with other addresses and constants
+0x00cc7e20,262,misc_resolve_run_handle,misc,edge-verified,Resolves an id through its run table segment then adds the tail offset to the range the lookup gives the id and returns -1 when there is no entry
+0x00cc7f30,30,misc_copy_snapshot,misc,edge-verified,Copies two words and the scale of a source object into a 0x18-byte snapshot and clears the snapshot last word
+0x00cc7f50,307,misc_append_counted_item,misc,edge-verified,Appends a counted item to a list then passes it on to the list target and returns the target result or zero
+0x00cc8090,369,misc_remove_counted_item,misc,edge-verified,Removes an item from a counted list by moving the last item into its slot and passes the removal on to the list target
+0x00cc8210,107,misc_store_snapshot_scale,misc,edge-verified,Stores a new scale in a source and when the source has a target passes a snapshot of it on
 0x00cd1720,8,auto_fixed_address_00cd1720,auto,edge-verified,Same instructions as misc_plain_type_address with other addresses
+0x00cd1730,213,misc_register_field_type,misc,edge-verified,Fills the static record of a field then registers its type and returns the registration result
+0x00cd1810,511,misc_collect_path_values,misc,edge-verified,Collects the values along a path of nodes from the node of an id into a list and returns whether the whole path fit
 0x00cd1a20,8,auto_fixed_address_00cd1a20,auto,edge-verified,Same instructions as misc_plain_type_address with other addresses
+0x00cd1a50,175,misc_register_sized_type,misc,edge-verified,Registers a type with a 0x90 byte instance and fills its static descriptor then returns the descriptor address
+0x00cd1b00,129,misc_init_field_defaults,misc,edge-verified,Stores the field-copy vtable address point and the default values of a field-copy object
+0x00cd1b90,56,misc_init_field_copy,misc,edge-verified,Stores the field-copy vtable address point in an object and when the flag is set copies four fields from its source object
 0x00cd20e0,8,auto_fixed_address_00cd20e0,auto,edge-verified,Same instructions as misc_plain_type_address with other addresses
 0x00cd2730,15,auto_base_init_00cd2730,auto,edge-verified,Same instructions as misc_base_init_02242980 with other addresses
 0x00cd33c0,15,auto_base_init_00cd33c0,auto,edge-verified,Same instructions as misc_base_init_02242980 with other addresses
@@ -2284,7 +2294,16 @@ address,size,name,system,status,notes
 0x00cd3dd0,8,auto_fixed_address_00cd3dd0,auto,edge-verified,Same instructions as misc_plain_type_address with other addresses
 0x00cd3ec0,8,auto_fixed_address_00cd3ec0,auto,edge-verified,Same instructions as misc_plain_type_address with other addresses
 0x00cd3ed0,113,auto_register_plain_type_00cd3ed0,auto,edge-verified,Same instructions as misc_register_plain_type with other addresses
+0x00cd4110,173,misc_delete_dual_base,misc,edge-verified,Releases a two-base object and hands its block to the thread releaser with the block size and returns the result
+0x00cd41c0,177,misc_delete_dual_base_secondary,misc,edge-verified,Releases a two-base object entered through its secondary base and hands its block to the thread releaser
+0x00cd4280,118,misc_dual_base_release,misc,edge-verified,Sets both base vtables of a two-base object releases the item it holds and clears that item
+0x00cd4300,118,misc_dual_base_release_secondary,misc,edge-verified,The same release as misc_dual_base_release entered through the secondary base of the object
 0x00cd4380,8,auto_fixed_address_00cd4380,auto,edge-verified,Same instructions as misc_plain_type_address with other addresses
+0x00cd4390,49,misc_setup_member_then_forward,misc,edge-verified,Prepares a forwarding pair object for an id stores the id in its sub-object and returns the member initialisation result
+0x00cd43d0,35,misc_destroy_member_then_forward,misc,edge-verified,Releases the member of a forwarding pair object then returns the next stage result for the object
+0x00cd4400,175,misc_register_forwarding_type,misc,edge-verified,Registers a type with a 0x270 byte instance and fills its static descriptor then returns the descriptor address
+0x00cd44b0,203,misc_init_sourced_item,misc,edge-verified,Makes a sourced item object with two vtables copies a 32-byte source record and holds a counted item with one more reference
+0x00cd4580,24,misc_copy_slot_record,misc,edge-verified,Copies a 16-byte block a qword and a byte from a source record into a target record
 0x00cd4720,75,auto_held_member_object_free_00cd4720,auto,edge-verified,Same instructions as misc_held_member_object_free with other addresses
 0x00cd4770,81,auto_bounded_range_object_free_secondary_00cd4770,auto,edge-verified,Same instructions as misc_bounded_range_object_free_secondary with other addresses and constants
 0x00cdce20,8,auto_fixed_address_00cdce20,auto,edge-verified,Same instructions as misc_plain_type_address with other addresses
