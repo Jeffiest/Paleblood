@@ -11610,6 +11610,7 @@ address,replacement,system,returns
 0x018a9bd0,bb_misc_forward_when_ready,misc,i64
 0x018a9c00,bb_misc_record_registry_flag,misc,i64
 0x018a9c60,bb_misc_attach_record_when_accepted,misc,void
+0x018a9d20,bb_misc_format_diagnostic_line,misc,void
 0x018aa2d0,bb_auto_bind_vtable_018aa2d0,auto,void
 0x018aa300,bb_auto_bind_vtable_018aa300,auto,void
 0x018aa330,bb_auto_bind_vtable_018aa330,auto,void
