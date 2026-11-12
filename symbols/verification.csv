@@ -45845,6 +45845,7 @@ misc_init_child_holder,edge,,4,4,0,0,cd5fc9f4b2399ef0,2026-11-11
 misc_init_cleared_link_record,edge,,3,3,0,0,f40fdc90d3c2b7d1,2026-11-12
 misc_init_defaulted_record_6d20,edge,,2,2,0,0,cea87a5dc22288d8,2026-11-11
 misc_init_empty_list_586d918,edge,,8,8,0,0,ceff7147774ef38f,2026-11-10
+misc_init_entry_table_state,edge,,4,0,4,0,cddd958b9f559e3b,2026-11-12
 misc_init_field_copy,edge,,5,5,0,0,c6990b1ca5cfae0d,2026-11-12
 misc_init_field_defaults,edge,,2,2,0,0,881b8ff3f83cb889,2026-11-12
 misc_init_flagged_payload_or_allocate,edge,,7,1,6,0,3ea2b13bc7ea1b15,2026-11-09

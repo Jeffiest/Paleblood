@@ -3275,6 +3275,7 @@ address,replacement,system,returns
 0x00f2b4d0,bb_auto_jump_thunk_00f2b4d0,auto,i64
 0x00f2b6d0,bb_auto_fixed_address_00f2b6d0,auto,i64
 0x00f2b6e0,bb_auto_register_plain_type_00f2b6e0,auto,void
+0x00f2b760,bb_misc_init_entry_table_state,misc,void
 0x00f2e000,bb_auto_sized_delete_00f2e000,auto,i64
 0x00f30470,bb_auto_fixed_address_00f30470,auto,i64
 0x00f30480,bb_auto_base_init_00f30480,auto,void
