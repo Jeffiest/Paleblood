@@ -2306,6 +2306,7 @@ address,size,name,system,status,notes
 0x00cd4580,24,misc_copy_slot_record,misc,edge-verified,Copies a 16-byte block a qword and a byte from a source record into a target record
 0x00cd4720,75,auto_held_member_object_free_00cd4720,auto,edge-verified,Same instructions as misc_held_member_object_free with other addresses
 0x00cd4770,81,auto_bounded_range_object_free_secondary_00cd4770,auto,edge-verified,Same instructions as misc_bounded_range_object_free_secondary with other addresses and constants
+0x00cdce00,30,misc_forward_embedded_context,misc,edge-verified,Forwards the context plus two arguments to a routine on the object at offset 0x114 and returns its result
 0x00cdce20,8,auto_fixed_address_00cdce20,auto,edge-verified,Same instructions as misc_plain_type_address with other addresses
 0x00cdd750,75,auto_held_member_object_free_00cdd750,auto,edge-verified,Same instructions as misc_held_member_object_free with other addresses and constants
 0x00cde4e0,88,auto_ref_holder_add_child_00cde4e0,auto,edge-verified,Same instructions as misc_ref_holder_add_child with other addresses and constants
