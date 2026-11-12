@@ -35386,6 +35386,7 @@ address,replacement,system,returns
 0x02705230,bb_auto_held_block_delete_02705230,auto,i64
 0x02705560,bb_auto_push_value_by_reference_02705560,auto,void
 0x02705790,bb_misc_grow_element_storage_locked,misc,void
+0x02705900,bb_misc_push_walk_node,misc,void
 0x02705dd0,bb_auto_push_value_by_reference_02705dd0,auto,void
 0x027071a0,bb_auto_push_value_by_reference_027071a0,auto,void
 0x02707fd0,bb_auto_destroy_then_release_02707fd0,auto,i64
