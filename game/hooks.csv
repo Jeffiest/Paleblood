@@ -12012,6 +12012,9 @@ address,replacement,system,returns
 0x018cc2d0,bb_auto_call_member_with_record_018cc2d0,auto,void
 0x018cc340,bb_auto_call_member_with_flagged_record_018cc340,auto,void
 0x018cc8a0,bb_auto_destroy_then_release_018cc8a0,auto,i64
+0x018cc8c0,bb_misc_streamed_record_release,misc,i64
+0x018cc980,bb_misc_streamed_record_read,misc,i64
+0x018ccaa0,bb_misc_streamed_block_record_read,misc,i64
 0x018cf500,bb_auto_return_member_address_018cf500,auto,i64
 0x018cf760,bb_auto_return_member_address_018cf760,auto,i64
 0x018cf770,bb_auto_return_member_address_018cf770,auto,i64
