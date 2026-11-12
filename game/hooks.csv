@@ -28795,6 +28795,7 @@ address,replacement,system,returns
 0x02264240,bb_auto_destroy_then_release_02264240,auto,i64
 0x02264260,bb_misc_teardown_owner_02264260,misc,i64
 0x02265bb0,bb_auto_jump_thunk_02265bb0,auto,i64
+0x02265c60,bb_misc_clear_record_tag_02265c60,misc,void
 0x02266600,bb_auto_bind_vtable_02266600,auto,void
 0x02266630,bb_auto_bind_vtable_02266630,auto,void
 0x02266660,bb_auto_bind_vtable_02266660,auto,void
