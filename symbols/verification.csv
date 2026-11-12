@@ -46038,6 +46038,7 @@ misc_replace_holder_object,edge,,14,14,0,0,02ca5dfd7f563365,2026-11-11
 misc_report_member_text_013a3260,edge,,5,5,0,0,5e1fca2399bd319c,2026-11-11
 misc_reserve_two_slots_then_visit,edge,,8,8,0,0,49d130aea36a5fc7,2026-11-12
 misc_reserve_words_locked,edge,,4,4,0,0,de4bd122cf6350e2,2026-11-12
+misc_reset_counted_block_record_01e93ad0,edge,,6,6,0,0,112d0b0923821d90,2026-11-12
 misc_reset_counted_word_block_01e91880,edge,,3,3,0,0,c6411aa9b1148835,2026-11-12
 misc_reset_counted_word_object_01e90ac0,edge,,3,3,0,0,57a3a5a9729e3a24,2026-11-12
 misc_reset_indexed_slot_record,edge,,3,3,0,0,36cfe1f6a1ec4c99,2026-11-12
