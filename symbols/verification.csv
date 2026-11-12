@@ -45549,6 +45549,7 @@ misc_allocated_block_holder_construct,edge,,4,4,0,0,b72a41b5cd20bcb7,2026-11-09
 misc_allocated_block_holder_destroy,edge,,5,5,0,0,9bb2172747dac4e4,2026-11-10
 misc_allocated_block_holder_release,edge,,4,4,0,0,4f05bc7fd72a8d1a,2026-11-10
 misc_append_counted_item,edge,,8,8,0,0,f53b99db650f20cc,2026-11-12
+misc_append_counted_record_or_report,edge,,10,10,0,0,03e703bdcb0f55e6,2026-11-12
 misc_append_indexed_node,edge,,8,8,0,0,657ea723fafdae02,2026-11-11
 misc_append_record_or_report,edge,,9,9,0,0,01a2475579b2247f,2026-11-12
 misc_append_vector_element,edge,,10,10,0,0,b2cbe77678865af7,2026-11-11

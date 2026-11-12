@@ -99,6 +99,7 @@ address,size,name,system,status,notes
 0x00418290,39,misc_find_list_entry_value,misc,edge-verified,Walks the object's list from its head and returns the value of the first entry whose 32-bit key matches or zero when none does
 0x004182c0,71,misc_run_locked_set_operation,misc,edge-verified,Runs a set operation on the object's set region under its lock and returns the result of releasing the lock
 0x00418310,168,misc_append_record_or_report,misc,edge-verified,Appends the record to the first array under the list lock when it has room and otherwise reports the overflow to the source sink
+0x004183c0,174,misc_append_counted_record_or_report,misc,edge-verified,Appends the record to the second array under the list lock when it has room and counts it and otherwise reports the overflow to the source sink
 0x00418d80,8,auto_return_field_00418d80,auto,edge-verified,Generated from the return field template
 0x00419190,42,auto_prepare_forward_00419190,auto,edge-verified,Same instructions as misc_prepare_forward with other addresses
 0x00419700,42,auto_prepare_forward_00419700,auto,edge-verified,Same instructions as misc_prepare_forward with other addresses
