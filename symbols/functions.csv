@@ -28656,6 +28656,7 @@ address,size,name,system,status,notes
 0x0225c130,472,auto_setup_static_objects_0225c130,auto,edge-verified,Same instructions as misc_setup_static_objects_02243d30 with other addresses
 0x0225c310,472,auto_setup_static_objects_0225c310,auto,edge-verified,Same instructions as misc_setup_static_objects_02243d30 with other addresses
 0x0225c4f0,463,misc_construct_config_reader,misc,edge-verified,Builds a config reader from a source opened through a global and a cursor whose first entry builds the member; an entry without its usable flag goes to the fatal report
+0x0225caa0,8,misc_set_field_minus_one,misc,edge-verified,Stores minus one in the 32-bit field at offset 0x54 of the object and returns nothing
 0x0225cab0,41,auto_bind_vtable_0225cab0,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
 0x0225cae0,41,auto_bind_vtable_0225cae0,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
 0x0225cb10,41,auto_bind_vtable_0225cb10,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
