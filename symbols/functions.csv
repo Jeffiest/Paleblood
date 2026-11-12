@@ -2285,6 +2285,7 @@ address,size,name,system,status,notes
 0x00cd3ec0,8,auto_fixed_address_00cd3ec0,auto,edge-verified,Same instructions as misc_plain_type_address with other addresses
 0x00cd3ed0,113,auto_register_plain_type_00cd3ed0,auto,edge-verified,Same instructions as misc_register_plain_type with other addresses
 0x00cd4110,173,misc_delete_dual_base,misc,edge-verified,Releases a two-base object and hands its block to the thread releaser with the block size and returns the result
+0x00cd41c0,177,misc_delete_dual_base_secondary,misc,edge-verified,Releases a two-base object entered through its secondary base and hands its block to the thread releaser
 0x00cd4280,118,misc_dual_base_release,misc,edge-verified,Sets both base vtables of a two-base object releases the item it holds and clears that item
 0x00cd4300,118,misc_dual_base_release_secondary,misc,edge-verified,The same release as misc_dual_base_release entered through the secondary base of the object
 0x00cd4380,8,auto_fixed_address_00cd4380,auto,edge-verified,Same instructions as misc_plain_type_address with other addresses

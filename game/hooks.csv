@@ -2284,6 +2284,7 @@ address,replacement,system,returns
 0x00cd3ec0,bb_auto_fixed_address_00cd3ec0,auto,i64
 0x00cd3ed0,bb_auto_register_plain_type_00cd3ed0,auto,void
 0x00cd4110,bb_misc_delete_dual_base,misc,i64
+0x00cd41c0,bb_misc_delete_dual_base_secondary,misc,i64
 0x00cd4280,bb_misc_dual_base_release,misc,void
 0x00cd4300,bb_misc_dual_base_release_secondary,misc,i64
 0x00cd4380,bb_auto_fixed_address_00cd4380,auto,i64
