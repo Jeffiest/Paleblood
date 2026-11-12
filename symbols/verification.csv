@@ -45846,6 +45846,7 @@ misc_init_shared_record_once,edge,,8,8,0,0,fe59d1d70e36e671,2026-11-09
 misc_init_shared_record_once_guarded,edge,,8,8,0,0,49c2ae0e3fa7e7ec,2026-11-09
 misc_init_slot_pairs_013b51a0,edge,,2,2,0,0,077438bfa63e64bc,2026-11-12
 misc_init_slot_table_013b4e20,edge,,2,2,0,0,68b89dd15f9a035e,2026-11-12
+misc_init_slot_table_object,edge,,4,4,0,0,ed5e5b3525c9e413,2026-11-12
 misc_init_sourced_item,edge,,4,4,0,0,57532081a1e17335,2026-11-12
 misc_init_stream_guards_58b9d5c,edge,,10,10,0,0,54331b61c4ab8c46,2026-11-10
 misc_init_tagged_record,edge,,7,7,0,0,9ef08d15b27d9f9d,2026-11-11
@@ -45939,12 +45940,14 @@ misc_ref_holder_release,edge,,10,10,0,0,a48afd36acf09017,2026-11-09
 misc_refresh_cached_indices,edge,,15,15,0,0,4d49a961e385be46,2026-11-10
 misc_register_field_type,edge,,2,2,0,0,dcbd039566b93358,2026-11-12
 misc_register_forwarding_type,edge,,2,2,0,0,072daa6f4470d195,2026-11-12
+misc_register_four_types,edge,,3,3,0,0,e358ac7c13c3d8bb,2026-11-12
 misc_register_handle_record,edge,,4,4,0,0,b590850d06a3763b,2026-11-09
 misc_register_plain_type,edge,,1,1,0,0,99a6735cfe801470,2026-11-09
 misc_register_sized_type,edge,,2,2,0,0,eda0e0ecfeebb39b,2026-11-12
 misc_register_three_types,edge,,2,2,0,0,78d8d69d148cd1ac,2026-11-11
 misc_register_type_descriptor,edge,,2,2,0,0,afb9924897c2a447,2026-11-09
 misc_register_type_pair,edge,,2,2,0,0,3496f52d7658b00a,2026-11-09
+misc_register_types_with_limits,edge,,3,3,0,0,de9401f68ec1e097,2026-11-12
 misc_registry_latch_answer,edge,,8,8,0,0,b9d51c137a66bbbc,2026-11-09
 misc_relay_member_call,edge,,9,9,0,0,ab12523ea4f974bd,2026-11-10
 misc_release_after_empty_call,edge,,6,6,0,0,545042d61ebb4e42,2026-11-09
@@ -46119,6 +46122,7 @@ misc_unpack_and_release,edge,,7,7,0,0,83111d910b68eca2,2026-11-11
 misc_unregister_range_then_finish,edge,,3,3,0,0,e67f51a3393529bc,2026-11-12
 misc_update_and_drop_finished,edge,,16,16,0,0,41639a6ba13a7bde,2026-11-12
 misc_update_owned_entries,edge,,11,11,0,0,5a57696d2430974b,2026-11-10
+misc_update_pose_records,edge,,12,12,0,0,a3421dc14beb2a10,2026-11-12
 misc_value_unless_flagged,edge,,10,10,0,0,0011306c9c7b9d5c,2026-11-11
 misc_word_cursor_first_value_01e8d470,edge,,4,4,0,0,cc04ca6bc9a461ed,2026-11-12
 misc_word_cursor_item_01e8d490,edge,,4,4,0,0,9ad8d2c73ffe71b5,2026-11-12

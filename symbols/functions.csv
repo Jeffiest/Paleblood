@@ -1351,6 +1351,7 @@ address,size,name,system,status,notes
 0x009f3370,8,auto_fixed_address_009f3370,auto,edge-verified,Same instructions as misc_plain_type_address with other addresses
 0x009f3380,5,auto_jump_thunk_009f3380,auto,edge-verified,Same instructions as misc_jump_thunk with other addresses
 0x009f35c0,8,auto_fixed_address_009f35c0,auto,edge-verified,Same instructions as misc_plain_type_address with other addresses
+0x009f3660,546,misc_init_slot_table_object,misc,edge-verified,Initialise a slot-table object: vtable and size word and 17 empty pointer slots and status and flags words; caller overwrites RAX.
 0x009f4870,75,auto_held_member_object_free_009f4870,auto,edge-verified,Same instructions as misc_held_member_object_free with other addresses and constants
 0x009f8c30,88,auto_ref_holder_add_child_009f8c30,auto,edge-verified,Same instructions as misc_ref_holder_add_child with other addresses and constants
 0x009f8cd0,88,auto_ref_holder_add_child_009f8cd0,auto,edge-verified,Same instructions as misc_ref_holder_add_child with other addresses and constants
@@ -2245,6 +2246,7 @@ address,size,name,system,status,notes
 0x00cb6de0,8,auto_fixed_address_00cb6de0,auto,edge-verified,Same instructions as misc_plain_type_address with other addresses
 0x00cb6df0,5,auto_jump_thunk_00cb6df0,auto,edge-verified,Same instructions as misc_jump_thunk with other addresses
 0x00cb6ee0,8,auto_fixed_address_00cb6ee0,auto,edge-verified,Same instructions as misc_plain_type_address with other addresses
+0x00cb6f00,755,misc_register_four_types,misc,edge-verified,Register four types with the registry and fill their static descriptors; two vtables come from record initialisers.
 0x00cb7810,75,auto_held_member_object_free_00cb7810,auto,edge-verified,Same instructions as misc_held_member_object_free with other addresses and constants
 0x00cbad20,15,auto_base_init_00cbad20,auto,edge-verified,Same instructions as misc_base_init_02242980 with other addresses
 0x00cbbf10,3,auto_return_constant_00cbbf10,auto,edge-verified,Generated from the return constant template
@@ -2988,6 +2990,7 @@ address,size,name,system,status,notes
 0x00e97190,8,auto_fixed_address_00e97190,auto,edge-verified,Same instructions as misc_plain_type_address with other addresses
 0x00e971b0,8,auto_fixed_address_00e971b0,auto,edge-verified,Same instructions as misc_plain_type_address with other addresses
 0x00e971c0,5,auto_jump_thunk_00e971c0,auto,edge-verified,Same instructions as misc_jump_thunk with other addresses
+0x00e971e0,766,misc_register_types_with_limits,misc,edge-verified,Fill three float limit blocks and register three types with their static descriptors; the third vtable comes from a record initialiser.
 0x00e976e0,75,auto_held_member_object_free_00e976e0,auto,edge-verified,Same instructions as misc_held_member_object_free with other addresses and constants
 0x00e97730,81,auto_bounded_range_object_free_secondary_00e97730,auto,edge-verified,Same instructions as misc_bounded_range_object_free_secondary with other addresses and constants
 0x00e97790,81,auto_bounded_range_object_free_secondary_00e97790,auto,edge-verified,Same instructions as misc_bounded_range_object_free_secondary with other addresses and constants
@@ -3209,6 +3212,7 @@ address,size,name,system,status,notes
 0x00f240a0,8,auto_fixed_address_00f240a0,auto,edge-verified,Same instructions as misc_plain_type_address with other addresses
 0x00f240b0,5,auto_jump_thunk_00f240b0,auto,edge-verified,Same instructions as misc_jump_thunk with other addresses
 0x00f24280,8,auto_fixed_address_00f24280,auto,edge-verified,Same instructions as misc_plain_type_address with other addresses
+0x00f24590,540,misc_update_pose_records,misc,edge-verified,Reset pool count then add five records built from a default and the measured length of a direction vector.
 0x00f24f00,8,auto_fixed_address_00f24f00,auto,edge-verified,Same instructions as misc_plain_type_address with other addresses
 0x00f24f10,15,auto_base_init_00f24f10,auto,edge-verified,Same instructions as misc_base_init_02242980 with other addresses
 0x00f24ff0,8,auto_fixed_address_00f24ff0,auto,edge-verified,Same instructions as misc_plain_type_address with other addresses
