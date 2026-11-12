@@ -11734,6 +11734,7 @@ address,replacement,system,returns
 0x018b43e0,bb_auto_setup_static_objects_018b43e0,auto,i64
 0x018b45c0,bb_auto_setup_static_objects_018b45c0,auto,i64
 0x018b47a0,bb_misc_dispose_then_finish,misc,i64
+0x018b47c0,bb_misc_unregister_range_then_finish,misc,void
 0x018badb0,bb_auto_return_constant_018badb0,auto,i8
 0x018bb610,bb_auto_bind_vtable_018bb610,auto,void
 0x018bb640,bb_auto_bind_vtable_018bb640,auto,void

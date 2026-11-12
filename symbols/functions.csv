@@ -11735,6 +11735,7 @@ address,size,name,system,status,notes
 0x018b43e0,472,auto_setup_static_objects_018b43e0,auto,edge-verified,Same instructions as misc_setup_static_objects_02243d30 with other addresses
 0x018b45c0,472,auto_setup_static_objects_018b45c0,auto,edge-verified,Same instructions as misc_setup_static_objects_02243d30 with other addresses
 0x018b47a0,29,misc_dispose_then_finish,misc,edge-verified,Disposes the object through its dispose slot then returns the result of the finish helper 0x018bf0e0 on the same object
+0x018b47c0,202,misc_unregister_range_then_finish,misc,edge-verified,Unregisters a registered object range through a temporary holder then releases the holder and finishes the object
 0x018badb0,3,auto_return_constant_018badb0,auto,edge-verified,Generated from the return constant template
 0x018bb610,41,auto_bind_vtable_018bb610,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
 0x018bb640,41,auto_bind_vtable_018bb640,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses

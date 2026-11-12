@@ -9,6 +9,7 @@ namespace misc {
 
 struct DisposableObject;
 struct RangeHolder;
+struct RangeIndex;
 
 /**
  *
