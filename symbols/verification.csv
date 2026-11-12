@@ -45947,6 +45947,7 @@ misc_register_sized_type,edge,,2,2,0,0,eda0e0ecfeebb39b,2026-11-12
 misc_register_three_types,edge,,2,2,0,0,78d8d69d148cd1ac,2026-11-11
 misc_register_type_descriptor,edge,,2,2,0,0,afb9924897c2a447,2026-11-09
 misc_register_type_pair,edge,,2,2,0,0,3496f52d7658b00a,2026-11-09
+misc_register_vtable_type_descriptor,edge,,2,2,0,0,2f7778b5861b3cb6,2026-11-12
 misc_registry_latch_answer,edge,,8,8,0,0,b9d51c137a66bbbc,2026-11-09
 misc_relay_member_call,edge,,9,9,0,0,ab12523ea4f974bd,2026-11-10
 misc_release_after_empty_call,edge,,6,6,0,0,545042d61ebb4e42,2026-11-09

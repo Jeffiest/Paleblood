@@ -2340,6 +2340,7 @@ address,size,name,system,status,notes
 0x00ce4c90,8,auto_fixed_address_00ce4c90,auto,edge-verified,Same instructions as misc_plain_type_address with other addresses
 0x00ce4ca0,5,auto_jump_thunk_00ce4ca0,auto,edge-verified,Same instructions as misc_jump_thunk with other addresses
 0x00ce73d0,8,auto_fixed_address_00ce73d0,auto,edge-verified,Same instructions as misc_plain_type_address with other addresses
+0x00ce7410,255,misc_register_vtable_type_descriptor,misc,edge-verified,Registers a type with a vtable and a 0x60 byte instance then fills its static descriptor with names methods vtable address point and size
 0x00ce7690,59,misc_init_cleared_link_record,misc,edge-verified,Stores the virtual table at the address point of a link record then clears its four trailing link words
 0x00ce76d0,15,auto_base_init_00ce76d0,auto,edge-verified,Same instructions as misc_base_init_02242980 with other addresses
 0x00ce76e0,78,misc_init_sample_record,misc,edge-verified,Sets the index budget scale enabled flag and tolerance of a 0x70 byte sample record then clears its link words and two blocks
