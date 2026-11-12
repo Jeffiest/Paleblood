@@ -35,4 +35,45 @@ struct WordCursor {
 static_assert(offsetof(WordCursor, word_0x00) == 0x0 && offsetof(WordCursor, block_0x08) == 0x8);
 static_assert(offsetof(WordCursor, index_0x10) == 0x10);
 
+/**
+ *
+ * The kind object a word cursor source names: its byte at +0x8c holds the two flag bits a block keeps.
+ *
+ */
+struct WordCursorSourceKind {
+    uint8_t unknown_0x00[0x8c];
+    uint8_t bits_0x8c;             /**< Bit zero and bit one: the flag bits, stored swapped in the block. */
+};
+static_assert(offsetof(WordCursorSourceKind, bits_0x8c) == 0x8c);
+
+/**
+ *
+ * One entry of a word cursor source: a value, and an item pointer that says whether the value is present.
+ *
+ */
+struct WordCursorSourceEntry {
+    uint32_t value_0x00;           /**< The value stored in the block when the item is present. */
+    uint8_t unknown_0x04[0x4];
+    const void *item_0x08;         /**< The item; null when the entry is absent. */
+};
+static_assert(sizeof(WordCursorSourceEntry) == 0x10);
+
+/** The number of entries a word cursor source holds, one per item of its block. */
+constexpr size_t kWordCursorSourceEntryCount = 6;
+
+/**
+ *
+ * The source a word cursor block is filled from: a kind object, a value and six entries.
+ *
+ */
+struct WordCursorSource {
+    uint8_t unknown_0x00[0x8];
+    const WordCursorSourceKind *kind_0x08; /**< The kind object whose flag bits are stored, or null for none. */
+    uint32_t value_0x10;                   /**< The second header value of the block. */
+    uint8_t unknown_0x14[0x4];
+    WordCursorSourceEntry entries_0x18[kWordCursorSourceEntryCount]; /**< One entry per item of the block. */
+};
+static_assert(offsetof(WordCursorSource, kind_0x08) == 0x8 && offsetof(WordCursorSource, value_0x10) == 0x10);
+static_assert(offsetof(WordCursorSource, entries_0x18) == 0x18);
+
 }  // namespace misc
