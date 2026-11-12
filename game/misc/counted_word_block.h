@@ -38,12 +38,14 @@ static_assert(sizeof(CountedWordBlock) == 0x60);
 
 /**
  *
- * The virtual table of a counted word object, whose first slot takes the object and the source it is applied from.
+ * The virtual table of a counted word object: two of its slots take the object and the source it is applied from.
  *
  */
 struct CountedWordObjectVtable {
     uint64_t (*apply_0x00)(CountedWordObject *object, const CountedWordSource *source); /**< Slot 0x00: applies the source. */
+    uint64_t (*apply_0x08)(CountedWordObject *object, const CountedWordSource *source); /**< Slot 0x08: applies the source. */
 };
 static_assert(offsetof(CountedWordObjectVtable, apply_0x00) == 0x0);
+static_assert(offsetof(CountedWordObjectVtable, apply_0x08) == 0x8);
 
 }  // namespace misc
