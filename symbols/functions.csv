@@ -13013,6 +13013,7 @@ address,size,name,system,status,notes
 0x019a82b0,41,auto_bind_vtable_019a82b0,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
 0x019a82e0,41,auto_bind_vtable_019a82e0,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
 0x019a8310,205,auto_initialize_static_wide_string_019a8310,auto,edge-verified,Same instructions as engine_initialize_static_wide_string_018867e0 with other addresses
+0x019a83e0,649,misc_setup_static_objects_019a83e0,misc,edge-verified,Fills a constant block then sets up two static objects once and tail-calls 0x024b7b10 on the published one
 0x019a8670,6,auto_return_constant_019a8670,auto,edge-verified,Generated from the return constant template
 0x019a8680,5,auto_jump_thunk_019a8680,auto,edge-verified,Same instructions as misc_jump_thunk with other addresses
 0x019a8690,28,auto_destroy_then_release_019a8690,auto,edge-verified,Same instructions as misc_destroy_then_release with other addresses

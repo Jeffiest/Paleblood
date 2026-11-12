@@ -46083,6 +46083,7 @@ misc_set_value_word_130,edge,,6,6,0,0,91908f151b5f35ba,2026-11-09
 misc_set_value_word_148,edge,,6,6,0,0,cce399dab4b975f2,2026-11-09
 misc_set_vtable_after_call,edge,,8,8,0,0,c4c6902266a7825e,2026-11-10
 misc_setup_member_then_forward,edge,,2,2,0,0,9ffc1edaa7e23308,2026-11-12
+misc_setup_static_objects_019a83e0,edge,,9,9,0,0,e52ffe5e7562e5fa,2026-11-12
 misc_setup_static_objects_02243d30,edge,,9,9,0,0,e197050175ebe8e3,2026-11-11
 misc_singleton_result_for_source,edge,,6,6,0,0,b9893fd0cd6a4097,2026-11-12
 misc_size_class_entry_fifth,edge,,12,12,0,0,08ae1defab1fc775,2026-11-10

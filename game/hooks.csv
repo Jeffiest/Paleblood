@@ -13012,6 +13012,7 @@ address,replacement,system,returns
 0x019a82b0,bb_auto_bind_vtable_019a82b0,auto,void
 0x019a82e0,bb_auto_bind_vtable_019a82e0,auto,void
 0x019a8310,bb_auto_initialize_static_wide_string_019a8310,auto,void
+0x019a83e0,bb_misc_setup_static_objects_019a83e0,misc,i64
 0x019a8670,bb_auto_return_constant_019a8670,auto,i32
 0x019a8680,bb_auto_jump_thunk_019a8680,auto,i64
 0x019a8690,bb_auto_destroy_then_release_019a8690,auto,i64
