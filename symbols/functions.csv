@@ -2459,6 +2459,7 @@ address,size,name,system,status,notes
 0x00d39200,5,auto_jump_thunk_00d39200,auto,edge-verified,Same instructions as misc_jump_thunk with other addresses
 0x00d39d50,276,misc_register_indexed_members,misc,edge-verified,Makes a keyed slot table from the thread allocator then registers the group indexed members in it and copies a source word into two fields
 0x00d39e70,75,auto_held_member_object_free_00d39e70,auto,edge-verified,Same instructions as misc_held_member_object_free with other addresses and constants
+0x00d3a550,131,misc_group_route_target,misc,edge-verified,Returns the head of the last record or the value of the member picked by the route slot or the first member
 0x00d3a5e0,66,misc_lookup_member_slot,misc,edge-verified,Looks up a nonzero slot in the group slot table else returns 0 or 0xffffffff by the first member state
 0x00d3b7f0,3,auto_return_constant_00d3b7f0,auto,edge-verified,Generated from the return constant template
 0x00d42310,75,auto_held_member_object_free_00d42310,auto,edge-verified,Same instructions as misc_held_member_object_free with other addresses and constants

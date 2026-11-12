@@ -45817,6 +45817,7 @@ misc_gated_read_bit,edge,,8,8,0,0,c4e1e1c4f4b89dcc,2026-11-09
 misc_gated_store_value,edge,,6,6,0,0,df2446ff7fd5897a,2026-11-09
 misc_get_or_create_cached_object,edge,,5,5,0,0,9cfa376a0ac982f9,2026-11-12
 misc_get_published_object_once,edge,,8,8,0,0,3941489480cde471,2026-11-12
+misc_group_route_target,edge,,13,13,0,0,e61704027db35e88,2026-11-12
 misc_grow_element_storage,edge,,7,7,0,0,84b7519cc6c7baef,2026-11-11
 misc_grow_element_storage_locked,edge,,7,7,0,0,71cbdc4f6a1a03b7,2026-11-12
 misc_grow_full_element_storage,edge,,6,6,0,0,8f363789b9600c12,2026-11-12
