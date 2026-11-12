@@ -35542,6 +35542,7 @@ address,replacement,system,returns
 0x0270d100,bb_auto_bind_vtable_0270d100,auto,void
 0x0270d130,bb_auto_copy_block_0270d130,auto,void
 0x0270ffc0,bb_misc_entry_address_1f88,misc,i64
+0x0270ffd0,bb_misc_entry_address_0120,misc,i64
 0x02710110,bb_auto_bind_vtable_02710110,auto,void
 0x02710140,bb_auto_bind_vtable_02710140,auto,void
 0x02710170,bb_auto_bind_vtable_02710170,auto,void
