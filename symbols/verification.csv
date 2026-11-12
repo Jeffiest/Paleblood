@@ -45553,6 +45553,7 @@ misc_apply_child_unless_flagged,edge,,10,10,0,0,0edb573c499dc1e9,2026-11-09
 misc_apply_each_slot,edge,,5,5,0,0,3e19a5a9de1ff003,2026-11-11
 misc_assign_text,edge,,12,12,0,0,ddaccfbbdbab2eda,2026-11-09
 misc_assign_text_narrow_capacity,edge,,13,13,0,0,d419eb7b851002d1,2026-11-09
+misc_attach_record_when_accepted,edge,,11,11,0,0,c5e2bb64887f370e,2026-11-12
 misc_attach_two_objects,edge,,6,6,0,0,013dec9a75a3c5ec,2026-11-09
 misc_base_delete_02242990,edge,,4,4,0,0,dd8d5ebd87ec20df,2026-11-10
 misc_base_delete_02242a40,edge,,4,4,0,0,cc28a6fc6de3ccb9,2026-11-10
