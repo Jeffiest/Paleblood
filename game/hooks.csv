@@ -2245,6 +2245,7 @@ address,replacement,system,returns
 0x00cb6de0,bb_auto_fixed_address_00cb6de0,auto,i64
 0x00cb6df0,bb_auto_jump_thunk_00cb6df0,auto,i64
 0x00cb6ee0,bb_auto_fixed_address_00cb6ee0,auto,i64
+0x00cb6f00,bb_misc_register_four_types,misc,void
 0x00cb7810,bb_auto_held_member_object_free_00cb7810,auto,i64
 0x00cbad20,bb_auto_base_init_00cbad20,auto,void
 0x00cbbf10,bb_auto_return_constant_00cbbf10,auto,i8

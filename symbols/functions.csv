@@ -2246,6 +2246,7 @@ address,size,name,system,status,notes
 0x00cb6de0,8,auto_fixed_address_00cb6de0,auto,edge-verified,Same instructions as misc_plain_type_address with other addresses
 0x00cb6df0,5,auto_jump_thunk_00cb6df0,auto,edge-verified,Same instructions as misc_jump_thunk with other addresses
 0x00cb6ee0,8,auto_fixed_address_00cb6ee0,auto,edge-verified,Same instructions as misc_plain_type_address with other addresses
+0x00cb6f00,755,misc_register_four_types,misc,edge-verified,Register four types with the registry and fill their static descriptors; two vtables come from record initialisers.
 0x00cb7810,75,auto_held_member_object_free_00cb7810,auto,edge-verified,Same instructions as misc_held_member_object_free with other addresses and constants
 0x00cbad20,15,auto_base_init_00cbad20,auto,edge-verified,Same instructions as misc_base_init_02242980 with other addresses
 0x00cbbf10,3,auto_return_constant_00cbbf10,auto,edge-verified,Generated from the return constant template
