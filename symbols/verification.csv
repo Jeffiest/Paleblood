@@ -45580,6 +45580,7 @@ misc_base_init_02242b90,edge,,3,3,0,0,3b091e7ae17c9d96,2026-11-11
 misc_begin_configure_holder,edge,,2,2,0,0,31069b81c2e464ab,2026-11-11
 misc_bind_counted_handle,edge,,14,14,0,0,3cd37e236f8d48c2,2026-11-10
 misc_bind_selected_pair,edge,,7,7,0,0,a3596a26df7332f9,2026-11-10
+misc_bind_slot_node_0043a7c0,edge,,109,109,0,0,156b5fedda1d4db7,2026-11-12
 misc_bind_vtable_56b47f0,edge,,14,14,0,0,01ad645b393e965f,2026-11-09
 misc_bind_vtable_56b47f0_0139bd40,edge,,14,14,0,0,2073add8ee1396a7,2026-11-09
 misc_bind_vtable_56b47f0_alt,edge,,14,14,0,0,05e23a5dd798d41a,2026-11-09
