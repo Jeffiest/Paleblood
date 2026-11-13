@@ -45798,6 +45798,7 @@ misc_forward_first_entry_013ba1b0,edge,,5,5,0,0,3eb3a66cf8c9adc8,2026-11-12
 misc_forward_first_entry_alt_013ba1d0,edge,,5,5,0,0,b73b234ad3ef780f,2026-11-12
 misc_forward_index_02242c30,edge,,11,11,0,0,7f0cf449db39903b,2026-11-09
 misc_forward_indexed_slot_call,edge,,3,3,0,0,e47a199387ee0f36,2026-11-12
+misc_forward_inner_pass_through,edge,,2,2,0,0,9e6e026dd305fd41,2026-11-12
 misc_forward_member_call,edge,,7,7,0,0,0844241ef3780559,2026-11-09
 misc_forward_member_call_alt,edge,,7,7,0,0,c24f1217b84b4d1a,2026-11-09
 misc_forward_object_slot_20,edge,,4,4,0,0,7114e35f2ad3deb4,2026-11-10

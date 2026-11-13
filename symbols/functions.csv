@@ -5694,6 +5694,7 @@ address,size,name,system,status,notes
 0x013bc250,41,auto_bind_vtable_013bc250,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
 0x013bc280,41,auto_bind_vtable_013bc280,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
 0x013bc2b0,49,auto_copy_block_013bc2b0,auto,edge-verified,Same instructions as misc_copy_block_58b3240 with other addresses
+0x013bc560,17,misc_forward_inner_pass_through,misc,edge-verified,Returns zero without an inner object otherwise tail passes all argument registers to the inner objects routine
 0x013bc5f0,24,auto_child_call_or_zero_013bc5f0,auto,edge-verified,Same instructions as misc_child_call_or_zero with other addresses and constants
 0x013bc660,41,auto_bind_vtable_013bc660,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
 0x013bc690,41,auto_bind_vtable_013bc690,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
