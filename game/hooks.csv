@@ -115,6 +115,7 @@ address,replacement,system,returns
 0x004194b0,bb_misc_store_value_locked,misc,i64
 0x00419510,bb_misc_build_member_from_pair,misc,void
 0x00419700,bb_auto_prepare_forward_00419700,auto,i64
+0x00419730,bb_misc_clear_holder_owner,misc,i64
 0x004198d0,bb_misc_set_holder_mode_finish_node,misc,i64
 0x00419940,bb_misc_sink_release_value_marked,misc,void
 0x00419a20,bb_misc_holder_value_if_accepted,misc,i64

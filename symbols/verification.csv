@@ -45637,6 +45637,7 @@ misc_clear_flagged_tag_alt,edge,,6,6,0,0,4324bfada71dd207,2026-11-09
 misc_clear_held_destroy_then_free,edge,,4,4,0,0,f2d9f6b518277e3c,2026-11-11
 misc_clear_held_then_chain_destroy,edge,,4,4,0,0,dcfd70af64a0d1b0,2026-11-11
 misc_clear_holder_finish_node,edge,,6,6,0,0,282efe5aa84a58a5,2026-11-12
+misc_clear_holder_owner,edge,,7,7,0,0,f1e170c31e18fa64,2026-11-12
 misc_clear_id_list_022430f0,edge,,5,5,0,0,8d14115bb7de3d16,2026-11-09
 misc_clear_node_lists,edge,,16,16,0,0,374c145b31891748,2026-11-11
 misc_clear_pending_four_keys,edge,,15,15,0,0,e408ac5368aed16d,2026-11-09

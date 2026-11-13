@@ -115,6 +115,7 @@ address,size,name,system,status,notes
 0x004194b0,94,misc_store_value_locked,misc,edge-verified,Stores the value into the store sub-object under the object lock and returns the unlock result
 0x00419510,486,misc_build_member_from_pair,misc,edge-verified,Makes a member from a pair source with a retained provided object and a counted handle that the pair target and the scratch service take part in
 0x00419700,42,auto_prepare_forward_00419700,auto,edge-verified,Same instructions as misc_prepare_forward with other addresses
+0x00419730,410,misc_clear_holder_owner,misc,edge-verified,Clears a holder owner: finishes and releases its node holder frees its keyed table entries releases the table and spare then passes the owner to the remove routine
 0x004198d0,99,misc_set_holder_mode_finish_node,misc,edge-verified,Stores the holder mode word then finishes the node the holder points at returning its tail call result when it has one
 0x00419940,210,misc_sink_release_value_marked,misc,edge-verified,Gives the holder accepted value to a sink descriptor reports the sink target done releases the value and marks the holder ready
 0x00419a20,73,misc_holder_value_if_accepted,misc,edge-verified,Returns the holder value when a check accepts it reading it under the second lock and zero otherwise
