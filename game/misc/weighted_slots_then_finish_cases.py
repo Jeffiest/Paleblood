@@ -66,6 +66,8 @@ CASES = [
     case('carry_stays_positive_across_slots', [(4, 100), (4, 100), (4, 100)] + [(0, 0)] * 9, 4, 0, scale=1,
          ret=0x7fffffff),
     case('finish_result_passed_back', [(9, 1)] + [(0, 0)] * 11, 9, 0, scale=None, ret=0xfedcba98),
+    case('carry_exactly_zero_stops', [(4, 3), (4, 100), (4, 100)] + [(0, 0)] * 9, 4, 0, scale=1),
+    case('total_exactly_zero_then_stops', [(4, 5), (4, 5), (4, 5)] + [(0, 0)] * 9, 4, -5, scale=0),
 ]
 
 
