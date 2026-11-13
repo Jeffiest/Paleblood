@@ -118,6 +118,7 @@ address,size,name,system,status,notes
 0x004198d0,99,misc_set_holder_mode_finish_node,misc,edge-verified,Stores the holder mode word then finishes the node the holder points at returning its tail call result when it has one
 0x00419940,210,misc_sink_release_value_marked,misc,edge-verified,Gives the holder accepted value to a sink descriptor reports the sink target done releases the value and marks the holder ready
 0x00419a20,73,misc_holder_value_if_accepted,misc,edge-verified,Returns the holder value when a check accepts it reading it under the second lock and zero otherwise
+0x00419a70,285,misc_path_tails_match,misc,edge-verified,Compares two path texts from their ends folding case and treating slash and backslash alike and checks a separator where one runs out
 0x0041a7d0,42,auto_prepare_forward_0041a7d0,auto,edge-verified,Same instructions as misc_prepare_forward with other addresses
 0x0041ca20,76,auto_init_identity_rows_0041ca20,auto,edge-verified,Same instructions as misc_init_identity_rows_5ac5540 with other addresses
 0x0041ca70,70,auto_init_identity_rows_0041ca70,auto,edge-verified,Same instructions as misc_init_identity_rows_5ac5570 with other addresses

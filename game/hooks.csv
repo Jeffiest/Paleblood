@@ -118,6 +118,7 @@ address,replacement,system,returns
 0x004198d0,bb_misc_set_holder_mode_finish_node,misc,i64
 0x00419940,bb_misc_sink_release_value_marked,misc,void
 0x00419a20,bb_misc_holder_value_if_accepted,misc,i64
+0x00419a70,bb_misc_path_tails_match,misc,i8
 0x0041a7d0,bb_auto_prepare_forward_0041a7d0,auto,i64
 0x0041ca20,bb_auto_init_identity_rows_0041ca20,auto,void
 0x0041ca70,bb_auto_init_identity_rows_0041ca70,auto,void
