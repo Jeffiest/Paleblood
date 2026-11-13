@@ -3280,6 +3280,7 @@ address,size,name,system,status,notes
 0x00f2b4d0,5,auto_jump_thunk_00f2b4d0,auto,edge-verified,Same instructions as misc_jump_thunk with other addresses
 0x00f2b6d0,8,auto_fixed_address_00f2b6d0,auto,edge-verified,Same instructions as misc_plain_type_address with other addresses
 0x00f2b6e0,113,auto_register_plain_type_00f2b6e0,auto,edge-verified,Same instructions as misc_register_plain_type with other addresses
+0x00f2b760,557,misc_init_entry_table_state,misc,edge-verified,Zero-initialises a 200-byte table with sentinels then fills its blocks via 0x00f2b990 and sets marker values
 0x00f2e000,75,auto_sized_delete_00f2e000,auto,edge-verified,Same instructions as misc_sized_delete_02242bb0 with other addresses
 0x00f30470,8,auto_fixed_address_00f30470,auto,edge-verified,Same instructions as misc_plain_type_address with other addresses
 0x00f30480,15,auto_base_init_00f30480,auto,edge-verified,Same instructions as misc_base_init_02242980 with other addresses
@@ -3366,6 +3367,7 @@ address,size,name,system,status,notes
 0x00f4f9f0,15,auto_base_init_00f4f9f0,auto,edge-verified,Same instructions as misc_base_init_02242980 with other addresses
 0x00f4fa10,8,auto_fixed_address_00f4fa10,auto,edge-verified,Same instructions as misc_plain_type_address with other addresses
 0x00f4fa20,15,auto_base_init_00f4fa20,auto,edge-verified,Same instructions as misc_base_init_02242980 with other addresses
+0x00f4fcf0,616,misc_init_slot_pool_with_lists,misc,edge-verified,Builds a slot pool: slot setup via 0x00f4ff60 then resizes a list array and gives each list a first zero item
 0x00f514b0,8,auto_fixed_address_00f514b0,auto,edge-verified,Same instructions as misc_plain_type_address with other addresses
 0x00f514d0,8,auto_fixed_address_00f514d0,auto,edge-verified,Same instructions as misc_plain_type_address with other addresses
 0x00f53b30,75,auto_held_member_object_free_00f53b30,auto,edge-verified,Same instructions as misc_held_member_object_free with other addresses and constants
@@ -3375,6 +3377,8 @@ address,size,name,system,status,notes
 0x00f63980,15,auto_base_init_00f63980,auto,edge-verified,Same instructions as misc_base_init_02242980 with other addresses
 0x00f64300,8,auto_fixed_address_00f64300,auto,edge-verified,Same instructions as misc_plain_type_address with other addresses
 0x00f64310,15,auto_base_init_00f64310,auto,edge-verified,Same instructions as misc_base_init_02242980 with other addresses
+0x00f6b990,790,misc_rebalance_cluster_centers,misc,edge-verified,Sums per-worker cluster totals into centers then folds the smallest cluster into the largest or splits the largest
+0x00f6bcb0,307,misc_nearest_point_search,misc,edge-verified,Finds the nearest point of a set to a position four points at a time and stores its index; returns the count
 0x00f6bf20,8,auto_fixed_address_00f6bf20,auto,edge-verified,Same instructions as misc_plain_type_address with other addresses
 0x00f6c030,8,auto_fixed_address_00f6c030,auto,edge-verified,Same instructions as misc_plain_type_address with other addresses
 0x00f6c060,8,auto_fixed_address_00f6c060,auto,edge-verified,Same instructions as misc_plain_type_address with other addresses
