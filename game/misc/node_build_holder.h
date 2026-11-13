@@ -40,7 +40,8 @@ struct NodeBuildHolder {
     uint64_t value;             /**< Cleared under the second lock. */
     uint8_t unknown_0x0028[0x20];
     uint8_t first_lock[holder_lock_size];   /**< The first lock; its address is given to the lock calls. */
-    uint8_t unknown_0x0050[0x8];
+    bool ready;                 /**< Set to true by the sink release path. */
+    uint8_t unknown_0x0051[0x7];
     uint64_t word;              /**< Cleared under the first lock. */
     uint8_t unknown_0x0060[0x18];
     uint8_t second_lock[holder_lock_size];  /**< The second lock; its address is given to the lock calls. */
@@ -54,6 +55,7 @@ struct NodeBuildHolder {
 static_assert(offsetof(NodeBuildHolder, context) == 0x18);
 static_assert(offsetof(NodeBuildHolder, value) == 0x20);
 static_assert(offsetof(NodeBuildHolder, first_lock) == 0x48);
+static_assert(offsetof(NodeBuildHolder, ready) == 0x50);
 static_assert(offsetof(NodeBuildHolder, word) == 0x58);
 static_assert(offsetof(NodeBuildHolder, second_lock) == 0x78);
 static_assert(offsetof(NodeBuildHolder, mode) == 0xa0);

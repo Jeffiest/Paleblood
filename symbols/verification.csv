@@ -46089,6 +46089,7 @@ misc_set_vtable_after_call,edge,,8,8,0,0,c4c6902266a7825e,2026-11-10
 misc_setup_member_then_forward,edge,,2,2,0,0,9ffc1edaa7e23308,2026-11-12
 misc_setup_static_objects_02243d30,edge,,9,9,0,0,e197050175ebe8e3,2026-11-11
 misc_singleton_result_for_source,edge,,6,6,0,0,b9893fd0cd6a4097,2026-11-12
+misc_sink_release_value_marked,edge,,2,2,0,0,1352fcf5e28a08ba,2026-11-12
 misc_size_class_entry_fifth,edge,,12,12,0,0,08ae1defab1fc775,2026-11-10
 misc_size_class_entry_first,edge,,12,12,0,0,ff3f9de0c3dd3710,2026-11-10
 misc_size_class_entry_fourth,edge,,12,12,0,0,a6361b112cfc981d,2026-11-10
