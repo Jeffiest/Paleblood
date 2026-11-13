@@ -2382,6 +2382,8 @@ address,replacement,system,returns
 0x00cec240,bb_auto_fixed_address_00cec240,auto,i64
 0x00cec250,bb_auto_jump_thunk_00cec250,auto,i64
 0x00cec270,bb_auto_fixed_address_00cec270,auto,i64
+0x00cec3e0,bb_misc_init_config_defaults,misc,void
+0x00cec450,bb_misc_clear_quad_record,misc,void
 0x00cf8c50,bb_auto_held_member_object_free_00cf8c50,auto,i64
 0x00cf9260,bb_auto_return_float_field_00cf9260,auto,f32
 0x00cf94d0,bb_auto_base_init_00cf94d0,auto,void
@@ -2467,7 +2469,11 @@ address,replacement,system,returns
 0x00d39110,bb_auto_fixed_address_00d39110,auto,i64
 0x00d391f0,bb_auto_fixed_address_00d391f0,auto,i64
 0x00d39200,bb_auto_jump_thunk_00d39200,auto,i64
+0x00d39d50,bb_misc_register_indexed_members,misc,void
 0x00d39e70,bb_auto_held_member_object_free_00d39e70,auto,i64
+0x00d3a380,bb_misc_count_set_track_items,misc,i32
+0x00d3a550,bb_misc_group_route_target,misc,i64
+0x00d3a5e0,bb_misc_lookup_member_slot,misc,i64
 0x00d3b7f0,bb_auto_return_constant_00d3b7f0,auto,i8
 0x00d42310,bb_auto_held_member_object_free_00d42310,auto,i64
 0x00d42c90,bb_auto_held_member_object_free_00d42c90,auto,i64
@@ -2498,6 +2504,12 @@ address,replacement,system,returns
 0x00d47a00,bb_auto_fixed_address_00d47a00,auto,i64
 0x00d47a10,bb_auto_base_init_00d47a10,auto,void
 0x00d47a30,bb_auto_fixed_address_00d47a30,auto,i64
+0x00d47a70,bb_misc_init_text_descriptors,misc,void
+0x00d47c20,bb_misc_construct_pair_object_fixed,misc,i64
+0x00d47c80,bb_misc_copy_pair_object,misc,i64
+0x00d47d30,bb_misc_delete_pair_object,misc,i64
+0x00d47e00,bb_misc_destroy_pair_object,misc,i64
+0x00d47e90,bb_misc_construct_pair_object_flagged,misc,i64
 0x00d480f0,bb_auto_return_constant_00d480f0,auto,i8
 0x00d48240,bb_auto_fixed_address_00d48240,auto,i64
 0x00d48270,bb_auto_fixed_address_00d48270,auto,i64
