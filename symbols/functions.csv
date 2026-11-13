@@ -2492,6 +2492,7 @@ address,size,name,system,status,notes
 0x00d47a00,8,auto_fixed_address_00d47a00,auto,edge-verified,Same instructions as misc_plain_type_address with other addresses
 0x00d47a10,15,auto_base_init_00d47a10,auto,edge-verified,Same instructions as misc_base_init_02242980 with other addresses
 0x00d47a30,8,auto_fixed_address_00d47a30,auto,edge-verified,Same instructions as misc_plain_type_address with other addresses
+0x00d47c20,94,misc_construct_pair_object_fixed,misc,edge-verified,Constructs a dual member object with the fixed base flag and returns its derived vtable address
 0x00d480f0,3,auto_return_constant_00d480f0,auto,edge-verified,Generated from the return constant template
 0x00d48240,8,auto_fixed_address_00d48240,auto,edge-verified,Same instructions as misc_plain_type_address with other addresses
 0x00d48270,8,auto_fixed_address_00d48270,auto,edge-verified,Same instructions as misc_plain_type_address with other addresses
