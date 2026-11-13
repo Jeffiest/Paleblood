@@ -27,7 +27,7 @@ FREE_RESULT = 0x4242
 UNREACHABLE = {'0x02276f00': ('taken', 'the child pointer was tested at 0x02276eda and the weak release cannot clear it')}
 
 
-def case(cid, child, weak=0, strong=0):
+def case(cid, child=False, weak=0, strong=0):
     buffers = {'holder': {'size': 0x10}, 'child': {'size': 0x40, 'bytes': 'ab' * 0x40}, 'child_vt': {'size': 0x10}}
     memory = []
     stubs = []

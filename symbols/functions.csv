@@ -28923,6 +28923,7 @@ address,size,name,system,status,notes
 0x02276da0,55,misc_release_owned_identity_02276da0,misc,edge-verified,Sets the object vtable releases its owned block then tail-calls an identity routine and returns its result
 0x02276de0,63,misc_release_owned_then_free_02276de0,misc,edge-verified,Sets the object vtable releases its owned block runs an identity routine then frees the object
 0x02276e20,30,auto_member_call_02276e20,auto,edge-verified,Same instructions as misc_member_call_02242a10 with other addresses and constants
+0x02276ec0,127,misc_release_counted_child_then_free_02276ec0,misc,edge-verified,Drops the weak and strong counts of a holder child then frees the holder and returns the free result
 0x02276f40,8,misc_tail_value_call_02276f40,misc,edge-verified,Passes the object 32-bit value and the other argument registers to a library routine and returns its result
 0x02277420,472,auto_setup_static_objects_02277420,auto,edge-verified,Same instructions as misc_setup_static_objects_02243d30 with other addresses
 0x02277600,472,auto_setup_static_objects_02277600,auto,edge-verified,Same instructions as misc_setup_static_objects_02243d30 with other addresses
