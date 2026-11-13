@@ -4362,6 +4362,7 @@ address,replacement,system,returns
 0x012551d0,bb_auto_bind_vtable_012551d0,auto,void
 0x01255200,bb_auto_bind_vtable_01255200,auto,void
 0x01255230,bb_auto_bind_vtable_01255230,auto,void
+0x01255c70,bb_misc_set_keyed_entry,misc,void
 0x01256dc0,bb_auto_bind_vtable_01256dc0,auto,void
 0x01256df0,bb_auto_bind_vtable_01256df0,auto,void
 0x01256e20,bb_auto_bind_vtable_01256e20,auto,void

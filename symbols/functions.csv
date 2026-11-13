@@ -4363,6 +4363,7 @@ address,size,name,system,status,notes
 0x012551d0,41,auto_bind_vtable_012551d0,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
 0x01255200,41,auto_bind_vtable_01255200,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
 0x01255230,41,auto_bind_vtable_01255230,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x01255c70,791,misc_set_keyed_entry,misc,edge-verified,Sets replaces or removes the counted object entry for a key in a list of 56-byte entries
 0x01256dc0,41,auto_bind_vtable_01256dc0,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
 0x01256df0,41,auto_bind_vtable_01256df0,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
 0x01256e20,41,auto_bind_vtable_01256e20,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
