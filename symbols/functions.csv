@@ -28795,6 +28795,7 @@ address,size,name,system,status,notes
 0x02263860,8,auto_fixed_address_02263860,auto,edge-verified,Same instructions as misc_plain_type_address with other addresses
 0x02264240,28,auto_destroy_then_release_02264240,auto,edge-verified,Same instructions as misc_destroy_then_release with other addresses
 0x02264260,505,misc_teardown_owner_02264260,misc,edge-verified,Tears down an owner: destroys its object and second list releases its single pointer then frees its first list and returns the last free result
+0x02265a80,170,misc_init_scratch_text_02265a80,misc,edge-verified,Builds a text object from a scratch record: takes its allocator and flag copies the text and frees a heap-held block
 0x02265b30,113,misc_remove_record_pointer_02265b30,misc,edge-verified,Removes the first matching record pointer from the step gate record set moving the rest down
 0x02265bb0,5,auto_jump_thunk_02265bb0,auto,edge-verified,Same instructions as misc_jump_thunk with other addresses
 0x02265bc0,72,misc_set_records_flag_02265bc0,misc,edge-verified,Sets the records flag bit of the step gate record set and returns the set address
