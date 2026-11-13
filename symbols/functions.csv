@@ -12121,6 +12121,19 @@ address,size,name,system,status,notes
 0x018dfbc0,1,auto_empty_018dfbc0,auto,edge-verified,Generated from the empty template
 0x018dfbd0,5,auto_delete_object_thunk_018dfbd0,auto,edge-verified,Same instructions as misc_delete_object_thunk with other addresses
 0x018dfbe0,57,auto_relay_member_call_018dfbe0,auto,edge-verified,Same instructions as misc_relay_member_call with other addresses
+0x018dffb0,120,misc_register_record_named,misc,edge-verified,Registers the record under a fixed name with the registry when one exists and does nothing otherwise
+0x018e0030,73,misc_read_header_pair,misc,edge-verified,Reads a 0x60-byte header block then a 4-byte trailer word through the reader vtable slot 0x20 and returns whether both reads were complete
+0x018e0080,71,misc_read_header_pair_narrow,misc,edge-verified,Reads a header block then a trailing word through the reader vtable slot 0x20 comparing only the low 32 bits of each count
+0x018e00d0,111,misc_copy_pair_record,misc,edge-verified,Copies the 0x68-byte block at 0x10 and the 32-bit word at 0x78 from the source record to the destination and returns the word zero-extended
+0x018e0140,131,misc_count_nonnegative_entries,misc,edge-verified,Counts the twelve 8-byte entries from offset 0x18 whose signed dword is not negative and returns the count
+0x018e01d0,16,misc_entry_address_by_index,misc,edge-verified,Returns the address of the entry at the index in a twelve-entry record or null when the unsigned index is above eleven
+0x018e01e0,213,misc_level_bucket_plus_chain_bytes,misc,edge-verified,Returns a level bucket of the target plus the byte values of the list nodes whose flags have no skip bits; a null list uses the target list
+0x018e02c0,367,misc_level_chain_minus_lookups,misc,edge-verified,Sums the weights twelve lookups find for the owner entries then returns the level bucket and chain byte sum of the owner target less that sum
+0x018e08d0,212,misc_weighted_slots_then_finish,misc,edge-verified,Sums the weights of the query key slots then adds a carried value to the positive extras of those slots and finishes through the original tail routine
+0x018e09c0,143,misc_store_lookup_scales,misc,edge-verified,Looks up each of twelve entry keys and stores three times the found scale or minus one beside the key; unfound entries are left alone
+0x018e0a50,264,misc_store_value_compact_reselect,misc,edge-verified,Stores a value at an index with the scale a lookup finds for it then compacts the occupied slots and reselects the selected key
+0x018e0b60,300,misc_select_slot_index,misc,edge-verified,Selects the slot index of a key by exact match else by a rotating choice among the distinct slot keys; writes minus one when none
+0x018e0c90,126,misc_compact_slots_reselect,misc,edge-verified,Empties the slot at the index moves later occupied slots forward into the gaps then reselects the selected key and returns true or false for an index past the end
 0x018e1800,41,auto_bind_vtable_018e1800,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
 0x018e1830,41,auto_bind_vtable_018e1830,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
 0x018e1860,41,auto_bind_vtable_018e1860,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
