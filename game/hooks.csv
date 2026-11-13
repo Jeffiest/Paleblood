@@ -16304,6 +16304,7 @@ address,replacement,system,returns
 0x01b6f190,bb_auto_destroy_then_release_01b6f190,auto,i64
 0x01b6f260,bb_auto_member_call_01b6f260,auto,i64
 0x01b6f300,bb_auto_member_call_01b6f300,auto,i64
+0x01b6f6c0,bb_misc_register_channel_tasks_01b6f6c0,misc,void
 0x01b72750,bb_auto_bind_vtable_01b72750,auto,void
 0x01b72780,bb_auto_bind_vtable_01b72780,auto,void
 0x01b727b0,bb_auto_bind_vtable_01b727b0,auto,void
