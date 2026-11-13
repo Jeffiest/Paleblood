@@ -46077,6 +46077,7 @@ misc_select_mode_then_call_013b5100,edge,,9,9,0,0,dbea1431382279e2,2026-11-12
 misc_select_pair_table_entry,edge,,12,12,0,0,5caa07ce9d354d3b,2026-11-09
 misc_select_probe_scaled,edge,,11,11,0,0,a2c6c96c7f32aaa6,2026-11-09
 misc_select_probe_value,edge,,8,8,0,0,c7955f2a8e547e8a,2026-11-09
+misc_select_slot_index,edge,,19,19,0,0,eff5defb7e902c60,2026-11-12
 misc_send_object_label,edge,,13,13,0,0,aea2b4bfd4cfca99,2026-11-11
 misc_set_active_flag_013b5350,edge,,4,4,0,0,c2a830f59e54458f,2026-11-12
 misc_set_alternate_flag_013b5360,edge,,4,4,0,0,9b6b1bdbb1b07f14,2026-11-12
