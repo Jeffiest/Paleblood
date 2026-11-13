@@ -45800,6 +45800,7 @@ misc_forward_index_02242c30,edge,,11,11,0,0,7f0cf449db39903b,2026-11-09
 misc_forward_indexed_slot_call,edge,,3,3,0,0,e47a199387ee0f36,2026-11-12
 misc_forward_inner_byte_flag,edge,,3,3,0,0,50799d7cb8d25a98,2026-11-12
 misc_forward_inner_pass_through,edge,,2,2,0,0,9e6e026dd305fd41,2026-11-12
+misc_forward_inner_when_second,edge,,3,3,0,0,a8d6bd18d544f275,2026-11-12
 misc_forward_member_call,edge,,7,7,0,0,0844241ef3780559,2026-11-09
 misc_forward_member_call_alt,edge,,7,7,0,0,c24f1217b84b4d1a,2026-11-09
 misc_forward_object_slot_20,edge,,4,4,0,0,7114e35f2ad3deb4,2026-11-10
