@@ -5678,6 +5678,7 @@ address,replacement,system,returns
 0x013ba580,bb_auto_bind_vtable_013ba580,auto,void
 0x013ba5b0,bb_auto_bind_vtable_013ba5b0,auto,void
 0x013ba5e0,bb_auto_copy_block_013ba5e0,auto,void
+0x013bb500,bb_misc_register_text_member_objects,misc,void
 0x013bbc80,bb_auto_forward_child_tail_013bbc80,auto,void
 0x013bbfc0,bb_auto_bind_vtable_013bbfc0,auto,void
 0x013bbff0,bb_auto_bind_vtable_013bbff0,auto,void

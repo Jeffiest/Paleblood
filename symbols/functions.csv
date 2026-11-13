@@ -5679,6 +5679,7 @@ address,size,name,system,status,notes
 0x013ba580,41,auto_bind_vtable_013ba580,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
 0x013ba5b0,41,auto_bind_vtable_013ba5b0,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
 0x013ba5e0,49,auto_copy_block_013ba5e0,auto,edge-verified,Same instructions as misc_copy_block_58b3240 with other addresses
+0x013bb500,455,misc_register_text_member_objects,misc,edge-verified,Registers a text member objects with the registry when the name is absent then sets up the object on thirty-three slot calls
 0x013bbc80,18,auto_forward_child_tail_013bbc80,auto,edge-verified,Same instructions as misc_forward_child_tail with other addresses and constants
 0x013bbfc0,41,auto_bind_vtable_013bbfc0,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
 0x013bbff0,41,auto_bind_vtable_013bbff0,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
