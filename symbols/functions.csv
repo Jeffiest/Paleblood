@@ -40202,6 +40202,7 @@ address,size,name,system,status,notes
 0x02ba99e0,5,auto_delete_object_thunk_02ba99e0,auto,edge-verified,Same instructions as misc_delete_object_thunk with other addresses
 0x02ba9b20,8,auto_fixed_address_02ba9b20,auto,edge-verified,Same instructions as misc_plain_type_address with other addresses
 0x02ba9d70,411,misc_alt_singleton_dispatch_02ba9d70,misc,edge-verified,Stores the dispatch holder vtable then takes the alternate singleton and tail-calls its slot 0x60 with the results of its slots 0x10 and 0x18
+0x02ba9f10,271,misc_pair_singleton_lookup_02ba9f10,misc,edge-verified,Fills a caller pair with the alternate singleton and a lookup entry or with zeros when the request mode is set
 0x02baa020,5,auto_delete_object_thunk_02baa020,auto,edge-verified,Same instructions as misc_delete_object_thunk with other addresses
 0x02baa040,126,misc_clear_record_tag_02baa040,misc,edge-verified,Clears the fifteen words of a 0x80 record from the last to the first then stores the first argument in the tag word and returns zero
 0x02baa0c0,126,misc_clear_record_tag_02baa0c0,misc,edge-verified,Clears the fifteen words of a 0x80 record from the last to the first then stores the first argument in the tag word and returns zero
