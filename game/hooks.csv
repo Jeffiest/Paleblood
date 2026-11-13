@@ -2492,6 +2492,7 @@ address,replacement,system,returns
 0x00d47a10,bb_auto_base_init_00d47a10,auto,void
 0x00d47a30,bb_auto_fixed_address_00d47a30,auto,i64
 0x00d47c20,bb_misc_construct_pair_object_fixed,misc,i64
+0x00d47e00,bb_misc_destroy_pair_object,misc,i64
 0x00d47e90,bb_misc_construct_pair_object_flagged,misc,i64
 0x00d480f0,bb_auto_return_constant_00d480f0,auto,i8
 0x00d48240,bb_auto_fixed_address_00d48240,auto,i64

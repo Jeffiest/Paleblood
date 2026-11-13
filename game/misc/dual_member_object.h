@@ -4,6 +4,8 @@
 #include <cstddef>
 #include <cstdint>
 
+#include "ref_item.h"
+
 namespace misc {
 
 /** The state byte an object takes when it is made with its flag set. */
@@ -26,7 +28,7 @@ struct DualMemberObject {
     uint64_t cleared_word_a;              /**< Cleared when the object is made. */
     uint8_t unknown_0x0080[0x08];
     uint8_t second_member[second_member_size];          /**< The second member block, set up by its initialiser. */
-    uint64_t cleared_word_b;              /**< Cleared when the object is made. */
+    RefItem *cleared_word_b;              /**< The reference-counted item the object holds; null when the object is made. */
 };
 static_assert(offsetof(DualMemberObject, vtable) == 0x00);
 static_assert(offsetof(DualMemberObject, state_byte) == 0x43);
