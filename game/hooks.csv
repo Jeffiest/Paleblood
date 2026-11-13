@@ -21966,6 +21966,12 @@ address,replacement,system,returns
 0x01e93780,bb_auto_bind_vtable_01e93780,auto,void
 0x01e937b0,bb_auto_initialize_static_wide_string_01e937b0,auto,void
 0x01e93880,bb_auto_copy_block_01e93880,auto,void
+0x01e938c0,bb_misc_build_counted_block_record_01e938c0,misc,void
+0x01e93a20,bb_misc_destroy_counted_block_record_01e93a20,misc,i64
+0x01e93ad0,bb_misc_reset_counted_block_record_01e93ad0,misc,void
+0x01e93bb0,bb_misc_visit_block_slot00_01e93bb0,misc,i64
+0x01e93c40,bb_misc_visit_block_slot08_01e93c40,misc,i64
+0x01e93ce0,bb_misc_visit_block_slot10_01e93ce0,misc,i64
 0x01e93e20,bb_auto_bind_vtable_01e93e20,auto,void
 0x01e93e50,bb_auto_bind_vtable_01e93e50,auto,void
 0x01e93e80,bb_auto_bind_vtable_01e93e80,auto,void
@@ -21976,6 +21982,12 @@ address,replacement,system,returns
 0x01e94850,bb_auto_bind_vtable_01e94850,auto,void
 0x01e94880,bb_auto_initialize_static_wide_string_01e94880,auto,void
 0x01e94950,bb_auto_copy_block_01e94950,auto,void
+0x01e94990,bb_misc_build_counted_block_record_01e94990,misc,void
+0x01e94af0,bb_misc_destroy_counted_block_record_01e94af0,misc,i64
+0x01e94ba0,bb_misc_reset_counted_block_record_01e94ba0,misc,void
+0x01e94c80,bb_misc_visit_block_slot00_01e94c80,misc,i64
+0x01e94d10,bb_misc_visit_block_slot08_01e94d10,misc,i64
+0x01e94db0,bb_misc_visit_block_slot10_01e94db0,misc,i64
 0x01e94ef0,bb_auto_bind_vtable_01e94ef0,auto,void
 0x01e94f20,bb_auto_bind_vtable_01e94f20,auto,void
 0x01e94f50,bb_auto_bind_vtable_01e94f50,auto,void
