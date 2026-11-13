@@ -28842,7 +28842,13 @@ address,size,name,system,status,notes
 0x02263850,8,auto_fixed_address_02263850,auto,edge-verified,Same instructions as misc_plain_type_address with other addresses
 0x02263860,8,auto_fixed_address_02263860,auto,edge-verified,Same instructions as misc_plain_type_address with other addresses
 0x02264240,28,auto_destroy_then_release_02264240,auto,edge-verified,Same instructions as misc_destroy_then_release with other addresses
+0x02264260,505,misc_teardown_owner_02264260,misc,edge-verified,Tears down an owner: destroys its object and second list releases its single pointer then frees its first list and returns the last free result
+0x02265a80,170,misc_init_scratch_text_02265a80,misc,edge-verified,Builds a text object from a scratch record: takes its allocator and flag copies the text and frees a heap-held block
+0x02265b30,113,misc_remove_record_pointer_02265b30,misc,edge-verified,Removes the first matching record pointer from the step gate record set moving the rest down
 0x02265bb0,5,auto_jump_thunk_02265bb0,auto,edge-verified,Same instructions as misc_jump_thunk with other addresses
+0x02265bc0,72,misc_set_records_flag_02265bc0,misc,edge-verified,Sets the records flag bit of the step gate record set and returns the set address
+0x02265c10,72,misc_clear_records_flag_02265c10,misc,edge-verified,Clears the records flag bit of the step gate record set and returns the set address
+0x02265c60,8,misc_clear_record_tag_02265c60,misc,edge-verified,Clears the record tag word at +0x78 of an owner reached through a vtable slot and returns nothing
 0x02266600,41,auto_bind_vtable_02266600,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
 0x02266630,41,auto_bind_vtable_02266630,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
 0x02266660,41,auto_bind_vtable_02266660,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
@@ -28959,7 +28965,14 @@ address,size,name,system,status,notes
 0x02276b60,41,auto_bind_vtable_02276b60,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
 0x02276b90,41,auto_bind_vtable_02276b90,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
 0x02276bc0,205,auto_initialize_static_wide_string_02276bc0,auto,edge-verified,Same instructions as engine_initialize_static_wide_string_018867e0 with other addresses
+0x02276cd0,123,misc_dispose_and_remove_item_02276cd0,misc,edge-verified,Disposes of a sweep item then removes it from its manager found in the thread cache or by lookup returns the remove result
+0x02276d50,18,misc_tail_value_vtable_call_02276d50,misc,edge-verified,Sets the object vtable then passes its 32-bit value and the other argument registers to a library routine
+0x02276d70,41,misc_value_vtable_then_free_02276d70,misc,edge-verified,Sets the object vtable passes its value to a library routine then frees the object and returns the free result
+0x02276da0,55,misc_release_owned_identity_02276da0,misc,edge-verified,Sets the object vtable releases its owned block then tail-calls an identity routine and returns its result
+0x02276de0,63,misc_release_owned_then_free_02276de0,misc,edge-verified,Sets the object vtable releases its owned block runs an identity routine then frees the object
 0x02276e20,30,auto_member_call_02276e20,auto,edge-verified,Same instructions as misc_member_call_02242a10 with other addresses and constants
+0x02276ec0,127,misc_release_counted_child_then_free_02276ec0,misc,edge-verified,Drops the weak and strong counts of a holder child then frees the holder and returns the free result
+0x02276f40,8,misc_tail_value_call_02276f40,misc,edge-verified,Passes the object 32-bit value and the other argument registers to a library routine and returns its result
 0x02277420,472,auto_setup_static_objects_02277420,auto,edge-verified,Same instructions as misc_setup_static_objects_02243d30 with other addresses
 0x02277600,472,auto_setup_static_objects_02277600,auto,edge-verified,Same instructions as misc_setup_static_objects_02243d30 with other addresses
 0x022777e0,472,auto_setup_static_objects_022777e0,auto,edge-verified,Same instructions as misc_setup_static_objects_02243d30 with other addresses
