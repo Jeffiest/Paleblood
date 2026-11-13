@@ -40206,6 +40206,7 @@ address,size,name,system,status,notes
 0x02baa040,126,misc_clear_record_tag_02baa040,misc,edge-verified,Clears the fifteen words of a 0x80 record from the last to the first then stores the first argument in the tag word and returns zero
 0x02baa0c0,126,misc_clear_record_tag_02baa0c0,misc,edge-verified,Clears the fifteen words of a 0x80 record from the last to the first then stores the first argument in the tag word and returns zero
 0x02baa140,8,auto_fixed_address_02baa140,auto,edge-verified,Same instructions as misc_plain_type_address with other addresses
+0x02baa150,137,misc_list_entry_from_pool_02baa150,misc,edge-verified,Allocates and fills a lookup entry from the request pool or the shared pool made on first use and returns it or zero
 0x02baa1e0,5,auto_jump_thunk_02baa1e0,auto,edge-verified,Same instructions as misc_jump_thunk with other addresses
 0x02baa1f0,28,auto_destroy_then_release_02baa1f0,auto,edge-verified,Same instructions as misc_destroy_then_release with other addresses
 0x02baa230,8,auto_fixed_address_02baa230,auto,edge-verified,Same instructions as misc_plain_type_address with other addresses

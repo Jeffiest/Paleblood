@@ -40205,6 +40205,7 @@ address,replacement,system,returns
 0x02baa040,bb_misc_clear_record_tag_02baa040,misc,i64
 0x02baa0c0,bb_misc_clear_record_tag_02baa0c0,misc,i64
 0x02baa140,bb_auto_fixed_address_02baa140,auto,i64
+0x02baa150,bb_misc_list_entry_from_pool_02baa150,misc,i64
 0x02baa1e0,bb_auto_jump_thunk_02baa1e0,auto,i64
 0x02baa1f0,bb_auto_destroy_then_release_02baa1f0,auto,i64
 0x02baa230,bb_auto_fixed_address_02baa230,auto,i64
