@@ -16505,6 +16505,7 @@ address,replacement,system,returns
 0x01b919d0,bb_auto_empty_01b919d0,auto,void
 0x01b919e0,bb_auto_delete_object_thunk_01b919e0,auto,void
 0x01b919f0,bb_auto_tail_call_offset_member_thunk_01b919f0,auto,i64
+0x01b91d50,bb_misc_resolve_mode_name_01b91d50,misc,i32
 0x01b91f90,bb_misc_mode_name_is_default_01b91f90,misc,i8
 0x01b92950,bb_auto_bind_vtable_01b92950,auto,void
 0x01b92980,bb_auto_bind_vtable_01b92980,auto,void

@@ -46051,6 +46051,7 @@ misc_reset_then_free_text_block,edge,,4,4,0,0,0a6481cf7ab5759c,2026-11-12
 misc_reset_then_release,edge,,4,4,0,0,69e09939e2f1c051,2026-11-09
 misc_resolve_either_key_slot,edge,,6,6,0,0,65d2cea0ad6c1707,2026-11-09
 misc_resolve_key_slot,edge,,5,5,0,0,8fde76650f8e15ca,2026-11-10
+misc_resolve_mode_name_01b91d50,edge,,28,28,0,0,c77fdb53051d0fc5,2026-11-12
 misc_resolve_request_target,edge,,7,7,0,0,ffb34c89938a235e,2026-11-11
 misc_resolve_run_handle,edge,,18,18,0,0,96951d1975b3ac47,2026-11-12
 misc_resolve_then_forward,edge,,9,9,0,0,273ab8e3d61d40cc,2026-11-11

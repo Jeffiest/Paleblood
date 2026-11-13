@@ -16506,6 +16506,7 @@ address,size,name,system,status,notes
 0x01b919d0,1,auto_empty_01b919d0,auto,edge-verified,Generated from the empty template
 0x01b919e0,5,auto_delete_object_thunk_01b919e0,auto,edge-verified,Same instructions as misc_delete_object_thunk with other addresses
 0x01b919f0,50,auto_tail_call_offset_member_thunk_01b919f0,auto,edge-verified,Same instructions as misc_tail_call_offset_member_thunk with other addresses and constants
+0x01b91d50,575,misc_resolve_mode_name_01b91d50,misc,edge-verified,Starts an objects mode then looks up its source name and sets a matched byte when it equals a fixed wide text
 0x01b91f90,540,misc_mode_name_is_default_01b91f90,misc,edge-verified,Looks up an object mode then reports whether its source name equals a fixed wide text
 0x01b92950,41,auto_bind_vtable_01b92950,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
 0x01b92980,41,auto_bind_vtable_01b92980,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
