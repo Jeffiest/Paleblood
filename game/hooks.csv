@@ -28918,6 +28918,7 @@ address,replacement,system,returns
 0x02276bc0,bb_auto_initialize_static_wide_string_02276bc0,auto,void
 0x02276d50,bb_misc_tail_value_vtable_call_02276d50,misc,i64
 0x02276d70,bb_misc_value_vtable_then_free_02276d70,misc,i64
+0x02276da0,bb_misc_release_owned_identity_02276da0,misc,i64
 0x02276e20,bb_auto_member_call_02276e20,auto,i64
 0x02276f40,bb_misc_tail_value_call_02276f40,misc,i64
 0x02277420,bb_auto_setup_static_objects_02277420,auto,i64
