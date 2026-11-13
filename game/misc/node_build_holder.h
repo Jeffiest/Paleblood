@@ -46,7 +46,9 @@ struct NodeBuildHolder {
     uint8_t second_lock[holder_lock_size];  /**< The second lock; its address is given to the lock calls. */
     uint8_t unknown_0x0080[0x20];
     uint32_t mode;              /**< The mode word, whose masked bits select the flag. */
-    uint8_t unknown_0x00a4[0x14];
+    uint8_t unknown_0x00a4[0x4];
+    NodeBuildNode *node;        /**< The node the holder finishes, or null. */
+    uint8_t unknown_0x00b0[0x8];
     bool flag;                  /**< Set when the masked mode is below the limit. */
 };
 static_assert(offsetof(NodeBuildHolder, context) == 0x18);
@@ -55,6 +57,7 @@ static_assert(offsetof(NodeBuildHolder, first_lock) == 0x48);
 static_assert(offsetof(NodeBuildHolder, word) == 0x58);
 static_assert(offsetof(NodeBuildHolder, second_lock) == 0x78);
 static_assert(offsetof(NodeBuildHolder, mode) == 0xa0);
+static_assert(offsetof(NodeBuildHolder, node) == 0xa8);
 static_assert(offsetof(NodeBuildHolder, flag) == 0xb8);
 
 }  // namespace misc

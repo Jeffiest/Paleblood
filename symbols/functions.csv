@@ -115,6 +115,7 @@ address,size,name,system,status,notes
 0x004194b0,94,misc_store_value_locked,misc,edge-verified,Stores the value into the store sub-object under the object lock and returns the unlock result
 0x00419510,486,misc_build_member_from_pair,misc,edge-verified,Makes a member from a pair source with a retained provided object and a counted handle that the pair target and the scratch service take part in
 0x00419700,42,auto_prepare_forward_00419700,auto,edge-verified,Same instructions as misc_prepare_forward with other addresses
+0x00419a20,73,misc_holder_value_if_accepted,misc,edge-verified,Returns the holder value when a check accepts it reading it under the second lock and zero otherwise
 0x0041a7d0,42,auto_prepare_forward_0041a7d0,auto,edge-verified,Same instructions as misc_prepare_forward with other addresses
 0x0041ca20,76,auto_init_identity_rows_0041ca20,auto,edge-verified,Same instructions as misc_init_identity_rows_5ac5540 with other addresses
 0x0041ca70,70,auto_init_identity_rows_0041ca70,auto,edge-verified,Same instructions as misc_init_identity_rows_5ac5570 with other addresses
