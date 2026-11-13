@@ -5694,6 +5694,7 @@ address,size,name,system,status,notes
 0x013bc250,41,auto_bind_vtable_013bc250,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
 0x013bc280,41,auto_bind_vtable_013bc280,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
 0x013bc2b0,49,auto_copy_block_013bc2b0,auto,edge-verified,Same instructions as misc_copy_block_58b3240 with other addresses
+0x013bc2f0,136,misc_insert_source_node,misc,edge-verified,Creates a node from a source word inserts it into the owners list and releases the held node after a failed insertion visit
 0x013bc380,234,misc_insert_value_node,misc,edge-verified,Links a new node holding a value in front of a chain lists first node and grows the count returning whether it did
 0x013bc560,17,misc_forward_inner_pass_through,misc,edge-verified,Returns zero without an inner object otherwise tail passes all argument registers to the inner objects routine
 0x013bc580,71,misc_visit_list_payloads,misc,edge-verified,Visits the payload of every node after the sentinel of a list in order passing the argument and skipping nodes without a payload

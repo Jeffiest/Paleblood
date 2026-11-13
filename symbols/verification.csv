@@ -45902,6 +45902,7 @@ misc_inline_text_reset,edge,,7,7,0,0,fe4cfbea3a7889f7,2026-11-09
 misc_insert_keyed_record,edge,,7,7,0,0,b8ab071e0b8376a8,2026-11-10
 misc_insert_scaled_entry,edge,,14,14,0,0,e3acf78e83086835,2026-11-11
 misc_insert_scaled_entry_alt,edge,,14,14,0,0,644e903626291129,2026-11-11
+misc_insert_source_node,edge,,3,1,2,0,6119848620811e4e,2026-11-12
 misc_insert_value_node,edge,,5,4,1,0,e4e682b87e922f1f,2026-11-12
 misc_int_queue_push_source,edge,,6,6,0,0,e8a2d1a264c83ce3,2026-11-09
 misc_invoke_callback,edge,,11,11,0,0,707f82bd276ea347,2026-11-10
