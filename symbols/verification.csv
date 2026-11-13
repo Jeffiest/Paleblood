@@ -45890,6 +45890,7 @@ misc_init_tagged_record,edge,,7,7,0,0,9ef08d15b27d9f9d,2026-11-11
 misc_init_tagged_record_alt,edge,,7,7,0,0,25431bc5c5e7a624,2026-11-11
 misc_init_tagged_record_second,edge,,7,7,0,0,f461650d8cd64ef0,2026-11-11
 misc_init_tagged_record_third,edge,,7,7,0,0,14935429504721b4,2026-11-11
+misc_init_text_descriptors,edge,,2,2,0,0,fb0158fbeda4870d,2026-11-12
 misc_init_text_pair_record_013a4ca0,edge,,10,10,0,0,0bc9c3faee677e40,2026-11-12
 misc_init_text_pair_record_params_013a4e30,edge,,10,10,0,0,207adcaeda213c02,2026-11-12
 misc_init_timed_record,edge,,2,2,0,0,815ca514d6a94123,2026-11-11

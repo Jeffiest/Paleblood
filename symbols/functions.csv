@@ -2492,6 +2492,7 @@ address,size,name,system,status,notes
 0x00d47a00,8,auto_fixed_address_00d47a00,auto,edge-verified,Same instructions as misc_plain_type_address with other addresses
 0x00d47a10,15,auto_base_init_00d47a10,auto,edge-verified,Same instructions as misc_base_init_02242980 with other addresses
 0x00d47a30,8,auto_fixed_address_00d47a30,auto,edge-verified,Same instructions as misc_plain_type_address with other addresses
+0x00d47a70,428,misc_init_text_descriptors,misc,edge-verified,Fills two static text descriptors after building two records with the record constructor and clearing a marker word
 0x00d47c20,94,misc_construct_pair_object_fixed,misc,edge-verified,Constructs a dual member object with the fixed base flag and returns its derived vtable address
 0x00d47c80,174,misc_copy_pair_object,misc,edge-verified,Copies a dual member object sharing the source held item with an added reference when counted and returns that item
 0x00d47d30,196,misc_delete_pair_object,misc,edge-verified,Deletes a dual member object by releasing its held item then destroying its members and base and handing its block to the releaser
