@@ -59,9 +59,11 @@ struct NodeBuildNode {
     uint8_t unknown_0x0000[0x10];
     uint8_t inner_0x0010[node_inner_size]; /**< The inner object, passed to the node calls. */
     uint8_t link_0x0038[node_link_size];   /**< The link, passed to the link call. */
+    bool finished;                         /**< Set to true when the node is finished by the release path. */
 };
 static_assert(offsetof(NodeBuildNode, inner_0x0010) == 0x10);
 static_assert(offsetof(NodeBuildNode, link_0x0038) == 0x38);
+static_assert(offsetof(NodeBuildNode, finished) == 0x40);
 
 /**
  *
