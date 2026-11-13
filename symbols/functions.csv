@@ -12107,6 +12107,7 @@ address,size,name,system,status,notes
 0x018e01e0,213,misc_level_bucket_plus_chain_bytes,misc,edge-verified,Returns a level bucket of the target plus the byte values of the list nodes whose flags have no skip bits; a null list uses the target list
 0x018e02c0,367,misc_level_chain_minus_lookups,misc,edge-verified,Sums the weights twelve lookups find for the owner entries then returns the level bucket and chain byte sum of the owner target less that sum
 0x018e09c0,143,misc_store_lookup_scales,misc,edge-verified,Looks up each of twelve entry keys and stores three times the found scale or minus one beside the key; unfound entries are left alone
+0x018e0a50,264,misc_store_value_compact_reselect,misc,edge-verified,Stores a value at an index with the scale a lookup finds for it then compacts the occupied slots and reselects the selected key
 0x018e0b60,300,misc_select_slot_index,misc,edge-verified,Selects the slot index of a key by exact match else by a rotating choice among the distinct slot keys; writes minus one when none
 0x018e0c90,126,misc_compact_slots_reselect,misc,edge-verified,Empties the slot at the index moves later occupied slots forward into the gaps then reselects the selected key and returns true or false for an index past the end
 0x018e1800,41,auto_bind_vtable_018e1800,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses

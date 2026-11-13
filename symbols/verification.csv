@@ -46120,6 +46120,7 @@ misc_store_request,edge,,14,14,0,0,109935e29a017c03,2026-11-11
 misc_store_slot_word,edge,,5,5,0,0,f43e1dbd478c9e4b,2026-11-12
 misc_store_snapshot_scale,edge,,3,3,0,0,558fd28df51fb0e9,2026-11-12
 misc_store_value_and_flags_on_first_accepting_item,edge,,13,13,0,0,4a1bfc042a1fc093,2026-11-11
+misc_store_value_compact_reselect,edge,,15,15,0,0,d684291b5995850e,2026-11-12
 misc_store_word_and_count_01e8bae0,edge,,8,8,0,0,6adc27360a6cbe1b,2026-11-11
 misc_store_word_and_count_01e8bb70,edge,,8,8,0,0,965af5e08d5fbb78,2026-11-11
 misc_streamed_block_record_read,edge,,17,17,0,0,b0fd699bfc4c5b4b,2026-11-12

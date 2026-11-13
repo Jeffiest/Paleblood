@@ -12106,6 +12106,7 @@ address,replacement,system,returns
 0x018e01e0,bb_misc_level_bucket_plus_chain_bytes,misc,i32
 0x018e02c0,bb_misc_level_chain_minus_lookups,misc,i32
 0x018e09c0,bb_misc_store_lookup_scales,misc,void
+0x018e0a50,bb_misc_store_value_compact_reselect,misc,i8
 0x018e0b60,bb_misc_select_slot_index,misc,void
 0x018e0c90,bb_misc_compact_slots_reselect,misc,i8
 0x018e1800,bb_auto_bind_vtable_018e1800,auto,void
