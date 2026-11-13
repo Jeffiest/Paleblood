@@ -45709,6 +45709,7 @@ misc_delete_derived_object,edge,,8,8,0,0,9a0f36e392ba0ca7,2026-11-11
 misc_delete_dual_base,edge,,7,7,0,0,1bd56aafb3e91bc3,2026-11-12
 misc_delete_dual_base_secondary,edge,,6,6,0,0,9595e681b0f73d4a,2026-11-12
 misc_delete_object_thunk,edge,,6,6,0,0,219308cbf84e73ff,2026-11-10
+misc_delete_pair_object,edge,,7,7,0,0,5482e7844e0010fa,2026-11-12
 misc_descriptor_type_address,edge,,1,1,0,0,43e00eb2669c1418,2026-11-09
 misc_destroy_chain_lists,edge,,2,2,0,0,b2173b0902b43ef2,2026-11-11
 misc_destroy_chain_node,edge,,8,8,0,0,a8be83c959ded117,2026-11-10
