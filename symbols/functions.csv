@@ -28918,6 +28918,7 @@ address,size,name,system,status,notes
 0x02276b90,41,auto_bind_vtable_02276b90,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
 0x02276bc0,205,auto_initialize_static_wide_string_02276bc0,auto,edge-verified,Same instructions as engine_initialize_static_wide_string_018867e0 with other addresses
 0x02276e20,30,auto_member_call_02276e20,auto,edge-verified,Same instructions as misc_member_call_02242a10 with other addresses and constants
+0x02276f40,8,misc_tail_value_call_02276f40,misc,edge-verified,Passes the object 32-bit value and the other argument registers to a library routine and returns its result
 0x02277420,472,auto_setup_static_objects_02277420,auto,edge-verified,Same instructions as misc_setup_static_objects_02243d30 with other addresses
 0x02277600,472,auto_setup_static_objects_02277600,auto,edge-verified,Same instructions as misc_setup_static_objects_02243d30 with other addresses
 0x022777e0,472,auto_setup_static_objects_022777e0,auto,edge-verified,Same instructions as misc_setup_static_objects_02243d30 with other addresses
