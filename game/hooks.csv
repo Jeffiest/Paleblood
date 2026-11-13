@@ -5693,6 +5693,7 @@ address,replacement,system,returns
 0x013bc250,bb_auto_bind_vtable_013bc250,auto,void
 0x013bc280,bb_auto_bind_vtable_013bc280,auto,void
 0x013bc2b0,bb_auto_copy_block_013bc2b0,auto,void
+0x013bc380,bb_misc_insert_value_node,misc,i8
 0x013bc560,bb_misc_forward_inner_pass_through,misc,i64
 0x013bc580,bb_misc_visit_list_payloads,misc,i64
 0x013bc5d0,bb_misc_forward_inner_byte_flag,misc,i64
