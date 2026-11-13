@@ -45549,6 +45549,8 @@ misc_allocate_chain_node,edge,,7,7,0,0,132f18c99de2b078,2026-11-10
 misc_allocated_block_holder_construct,edge,,4,4,0,0,b72a41b5cd20bcb7,2026-11-09
 misc_allocated_block_holder_destroy,edge,,5,5,0,0,9bb2172747dac4e4,2026-11-10
 misc_allocated_block_holder_release,edge,,4,4,0,0,4f05bc7fd72a8d1a,2026-11-10
+misc_alt_singleton_dispatch_02ba9070,edge,,7,7,0,0,26b1beba3266b8aa,2026-11-12
+misc_alt_singleton_dispatch_02ba9d70,edge,,7,7,0,0,c8923ca874343e59,2026-11-12
 misc_append_counted_item,edge,,8,8,0,0,f53b99db650f20cc,2026-11-12
 misc_append_counted_record_or_report,edge,,10,10,0,0,03e703bdcb0f55e6,2026-11-12
 misc_append_indexed_node,edge,,8,8,0,0,657ea723fafdae02,2026-11-11
@@ -45653,6 +45655,10 @@ misc_clear_record_tag_02b4e390,edge,,6,6,0,0,14b2f076db211669,2026-11-12
 misc_clear_record_tag_02b4e410,edge,,6,6,0,0,f93e97d7d3928f7d,2026-11-12
 misc_clear_record_tag_02b50940,edge,,6,6,0,0,90e186e7d0f7b6f3,2026-11-12
 misc_clear_record_tag_02b509c0,edge,,6,6,0,0,1117ddef7fb0e406,2026-11-12
+misc_clear_record_tag_02b53580,edge,,6,6,0,0,0e3fe2f62029c8fd,2026-11-12
+misc_clear_record_tag_02b53600,edge,,6,6,0,0,55ff5c9653591d9d,2026-11-12
+misc_clear_record_tag_02baa040,edge,,6,6,0,0,0af9d7683f26a7b8,2026-11-12
+misc_clear_record_tag_02baa0c0,edge,,6,6,0,0,5761baa42a8d0c8f,2026-11-12
 misc_clear_tagged_record,edge,,7,7,0,0,f5655c52bdf64aa8,2026-11-11
 misc_clear_tagged_record_alt,edge,,7,7,0,0,34d02c2ab699b2ba,2026-11-11
 misc_clear_trailing_links,edge,,3,3,0,0,5cc8d328d692be3b,2026-11-12
@@ -45890,6 +45896,8 @@ misc_init_slot_table_object,edge,,4,4,0,0,ed5e5b3525c9e413,2026-11-12
 misc_init_sourced_item,edge,,4,4,0,0,57532081a1e17335,2026-11-12
 misc_init_stream_guards_58b9d5c,edge,,10,10,0,0,54331b61c4ab8c46,2026-11-10
 misc_init_tagged_record,edge,,7,7,0,0,9ef08d15b27d9f9d,2026-11-11
+misc_init_tagged_record_02ba9400,edge,,7,7,0,0,3e50f177a991301a,2026-11-12
+misc_init_tagged_record_02ba9490,edge,,7,7,0,0,4eec6794c7875b90,2026-11-12
 misc_init_tagged_record_alt,edge,,7,7,0,0,25431bc5c5e7a624,2026-11-11
 misc_init_tagged_record_second,edge,,7,7,0,0,f461650d8cd64ef0,2026-11-11
 misc_init_tagged_record_third,edge,,7,7,0,0,14935429504721b4,2026-11-11
@@ -45917,6 +45925,7 @@ misc_linked_object_free,edge,,8,8,0,0,e4f391884bebee5f,2026-11-09
 misc_linked_object_init,edge,,5,5,0,0,1c8b766b4b95638e,2026-11-09
 misc_linked_object_release,edge,,5,5,0,0,c2999da8db24c3b6,2026-11-10
 misc_list_all_exceed_one,edge,,12,12,0,0,9d15f22d0f823a8a,2026-11-09
+misc_list_entry_from_pool_02baa150,edge,,9,9,0,0,495440c678002928,2026-11-12
 misc_lookup_entry_link,edge,,8,8,0,0,8815e3b313e4bb25,2026-11-10
 misc_lookup_entry_word,edge,,8,8,0,0,66fdf306fa1eec41,2026-11-10
 misc_lookup_record_payload,edge,,9,9,0,0,5169279261948fae,2026-11-11
@@ -45950,11 +45959,13 @@ misc_object_slot_28_is_set,edge,,5,5,0,0,f00d5f4ebc717566,2026-11-10
 misc_owned_list_delete,edge,,14,14,0,0,3a756aa48b924277,2026-11-10
 misc_owned_list_destroy,edge,,7,7,0,0,0f2ccedf84ca65ca,2026-11-10
 misc_owned_list_init,edge,,8,8,0,0,9a9880e1854665a5,2026-11-10
+misc_pair_list_lookup_02ba9210,edge,,25,25,0,0,027d519c2d3d274e,2026-11-12
 misc_pair_matches_022429e0,edge,,14,14,0,0,16f2f4af838336f9,2026-11-09
 misc_pair_matches_02242a90,edge,,14,14,0,0,63f385f7f3510e8f,2026-11-09
 misc_pair_matches_02242b40,edge,,14,14,0,0,ae2c1d3647d5244d,2026-11-09
 misc_pair_singleton_dispatch_02b50670,edge,,7,7,0,0,57d235daddd8cb10,2026-11-12
 misc_pair_singleton_for_source_02b50810,edge,,6,6,0,0,01ac4e9f26c48ce2,2026-11-12
+misc_pair_singleton_lookup_02ba9f10,edge,,11,11,0,0,0c67dff5cbac4a50,2026-11-12
 misc_plain_type_address,edge,,1,1,0,0,80a2e8f92ca741fa,2026-11-09
 misc_pool_append_node,edge,,10,10,0,0,4fef8c2f87a39ad3,2026-11-11
 misc_pool_cursor_allocate,edge,,10,10,0,0,2ce81dfdd5674204,2026-11-11
@@ -45983,6 +45994,7 @@ misc_record_link_address_00be6f70,edge,,7,7,0,0,f9025401889793d9,2026-11-11
 misc_record_probe_values,edge,,6,6,0,0,6e47fc1c63e208ea,2026-11-09
 misc_record_registry_flag,edge,,8,8,0,0,674bbd3717bdcd30,2026-11-12
 misc_record_singleton_dispatch_02b50cd0,edge,,7,7,0,0,2354c3835437b379,2026-11-12
+misc_record_singleton_dispatch_02b53250,edge,,7,7,0,0,c4b2c6a3dca81272,2026-11-12
 misc_ref_holder_add_child,edge,,6,6,0,0,f2af305194d9c70b,2026-11-10
 misc_ref_holder_attach,edge,,9,9,0,0,a5a70cc531c10f7f,2026-11-10
 misc_ref_holder_detach,edge,,9,9,0,0,8e46684ed109c170,2026-11-10

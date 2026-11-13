@@ -40131,7 +40131,10 @@ address,size,name,system,status,notes
 0x02b51410,8,auto_fixed_address_02b51410,auto,edge-verified,Same instructions as misc_plain_type_address with other addresses
 0x02b516f0,5,auto_delete_object_thunk_02b516f0,auto,edge-verified,Same instructions as misc_delete_object_thunk with other addresses
 0x02b51830,8,auto_fixed_address_02b51830,auto,edge-verified,Same instructions as misc_plain_type_address with other addresses
+0x02b53250,411,misc_record_singleton_dispatch_02b53250,misc,edge-verified,Stores the dispatch holder vtable then takes the record singleton and tail-calls its slot 0x60 with the results of its slots 0x10 and 0x18
 0x02b53560,5,auto_delete_object_thunk_02b53560,auto,edge-verified,Same instructions as misc_delete_object_thunk with other addresses
+0x02b53580,126,misc_clear_record_tag_02b53580,misc,edge-verified,Clears the fifteen words of a 0x80 record from the last to the first then stores the first argument in the tag word and returns zero
+0x02b53600,126,misc_clear_record_tag_02b53600,misc,edge-verified,Clears the fifteen words of a 0x80 record from the last to the first then stores the first argument in the tag word and returns zero
 0x02b53680,8,auto_fixed_address_02b53680,auto,edge-verified,Same instructions as misc_plain_type_address with other addresses
 0x02b53690,5,auto_jump_thunk_02b53690,auto,edge-verified,Same instructions as misc_jump_thunk with other addresses
 0x02b536a0,28,auto_destroy_then_release_02b536a0,auto,edge-verified,Same instructions as misc_destroy_then_release with other addresses
@@ -40218,14 +40221,23 @@ address,size,name,system,status,notes
 0x02ba8fe0,41,auto_bind_vtable_02ba8fe0,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
 0x02ba9010,41,auto_bind_vtable_02ba9010,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
 0x02ba9040,41,auto_bind_vtable_02ba9040,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x02ba9070,411,misc_alt_singleton_dispatch_02ba9070,misc,edge-verified,Stores the dispatch holder vtable then takes the alternate singleton and tail-calls its slot 0x60 with the results of its slots 0x10 and 0x18
+0x02ba9210,451,misc_pair_list_lookup_02ba9210,misc,edge-verified,Fills a caller pair with the pair singleton and a new lookup entry after a list walk when the flag bit is set otherwise with null
 0x02ba93e0,5,auto_delete_object_thunk_02ba93e0,auto,edge-verified,Same instructions as misc_delete_object_thunk with other addresses
+0x02ba9400,129,misc_init_tagged_record_02ba9400,misc,edge-verified,Zeroes the body of a tagged record and stores the tag word and the vtable pointer then returns zero
+0x02ba9490,129,misc_init_tagged_record_02ba9490,misc,edge-verified,Zeroes the body of a tagged record and stores the tag word and the vtable pointer then returns zero
 0x02ba9520,8,auto_fixed_address_02ba9520,auto,edge-verified,Same instructions as misc_plain_type_address with other addresses
 0x02ba95c0,5,auto_delete_object_thunk_02ba95c0,auto,edge-verified,Same instructions as misc_delete_object_thunk with other addresses
 0x02ba9700,8,auto_fixed_address_02ba9700,auto,edge-verified,Same instructions as misc_plain_type_address with other addresses
 0x02ba99e0,5,auto_delete_object_thunk_02ba99e0,auto,edge-verified,Same instructions as misc_delete_object_thunk with other addresses
 0x02ba9b20,8,auto_fixed_address_02ba9b20,auto,edge-verified,Same instructions as misc_plain_type_address with other addresses
+0x02ba9d70,411,misc_alt_singleton_dispatch_02ba9d70,misc,edge-verified,Stores the dispatch holder vtable then takes the alternate singleton and tail-calls its slot 0x60 with the results of its slots 0x10 and 0x18
+0x02ba9f10,271,misc_pair_singleton_lookup_02ba9f10,misc,edge-verified,Fills a caller pair with the alternate singleton and a lookup entry or with zeros when the request mode is set
 0x02baa020,5,auto_delete_object_thunk_02baa020,auto,edge-verified,Same instructions as misc_delete_object_thunk with other addresses
+0x02baa040,126,misc_clear_record_tag_02baa040,misc,edge-verified,Clears the fifteen words of a 0x80 record from the last to the first then stores the first argument in the tag word and returns zero
+0x02baa0c0,126,misc_clear_record_tag_02baa0c0,misc,edge-verified,Clears the fifteen words of a 0x80 record from the last to the first then stores the first argument in the tag word and returns zero
 0x02baa140,8,auto_fixed_address_02baa140,auto,edge-verified,Same instructions as misc_plain_type_address with other addresses
+0x02baa150,137,misc_list_entry_from_pool_02baa150,misc,edge-verified,Allocates and fills a lookup entry from the request pool or the shared pool made on first use and returns it or zero
 0x02baa1e0,5,auto_jump_thunk_02baa1e0,auto,edge-verified,Same instructions as misc_jump_thunk with other addresses
 0x02baa1f0,28,auto_destroy_then_release_02baa1f0,auto,edge-verified,Same instructions as misc_destroy_then_release with other addresses
 0x02baa230,8,auto_fixed_address_02baa230,auto,edge-verified,Same instructions as misc_plain_type_address with other addresses
