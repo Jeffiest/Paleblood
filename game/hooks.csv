@@ -21974,6 +21974,7 @@ address,replacement,system,returns
 0x01e94850,bb_auto_bind_vtable_01e94850,auto,void
 0x01e94880,bb_auto_initialize_static_wide_string_01e94880,auto,void
 0x01e94950,bb_auto_copy_block_01e94950,auto,void
+0x01e94990,bb_misc_build_counted_block_record_01e94990,misc,void
 0x01e94c80,bb_misc_visit_block_slot00_01e94c80,misc,i64
 0x01e94d10,bb_misc_visit_block_slot08_01e94d10,misc,i64
 0x01e94db0,bb_misc_visit_block_slot10_01e94db0,misc,i64
