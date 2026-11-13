@@ -5697,6 +5697,7 @@ address,size,name,system,status,notes
 0x013bc560,17,misc_forward_inner_pass_through,misc,edge-verified,Returns zero without an inner object otherwise tail passes all argument registers to the inner objects routine
 0x013bc5d0,19,misc_forward_inner_byte_flag,misc,edge-verified,Returns zero without an inner object otherwise passes the low byte of the second argument and the remaining registers to the inner routine
 0x013bc5f0,24,auto_child_call_or_zero_013bc5f0,auto,edge-verified,Same instructions as misc_child_call_or_zero with other addresses and constants
+0x013bc610,33,misc_call_inner_with_second,misc,edge-verified,Returns zero when the second argument or the inner object is missing otherwise calls the inner routine with the inner object and the second argument
 0x013bc640,20,misc_forward_inner_when_second,misc,edge-verified,Returns zero when the second argument is zero or no inner object otherwise tail passes all argument registers to the inner routine
 0x013bc660,41,auto_bind_vtable_013bc660,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
 0x013bc690,41,auto_bind_vtable_013bc690,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses

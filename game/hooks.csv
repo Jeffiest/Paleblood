@@ -5696,6 +5696,7 @@ address,replacement,system,returns
 0x013bc560,bb_misc_forward_inner_pass_through,misc,i64
 0x013bc5d0,bb_misc_forward_inner_byte_flag,misc,i64
 0x013bc5f0,bb_auto_child_call_or_zero_013bc5f0,auto,i64
+0x013bc610,bb_misc_call_inner_with_second,misc,i64
 0x013bc640,bb_misc_forward_inner_when_second,misc,i64
 0x013bc660,bb_auto_bind_vtable_013bc660,auto,void
 0x013bc690,bb_auto_bind_vtable_013bc690,auto,void

@@ -45608,6 +45608,7 @@ misc_build_counted_word_object_01e90aa0,edge,,2,2,0,0,c8ca5b1098088fc1,2026-11-1
 misc_build_object_block,edge,,5,5,0,0,a29a195f36f9bfda,2026-11-09
 misc_bump_allocate_block,edge,,11,11,0,0,51b5523399a9cd0b,2026-11-09
 misc_call_child_with_record,edge,,8,8,0,0,77e781488ef0a9c6,2026-11-10
+misc_call_inner_with_second,edge,,3,3,0,0,25b8679200abe582,2026-11-12
 misc_call_member_with_flagged_record,edge,,7,7,0,0,7710b7a6257eeef9,2026-11-10
 misc_call_member_with_record,edge,,7,7,0,0,5f28cf767d48e338,2026-11-10
 misc_call_member_with_text_record,edge,,6,6,0,0,7e9c43cf09e7a738,2026-11-09
