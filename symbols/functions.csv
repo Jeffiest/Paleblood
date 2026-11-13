@@ -4261,6 +4261,7 @@ address,size,name,system,status,notes
 0x012456b0,41,auto_bind_vtable_012456b0,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
 0x012456e0,41,auto_bind_vtable_012456e0,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
 0x01245710,41,auto_bind_vtable_01245710,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x01245d80,676,misc_merge_pending_listeners,misc,edge-verified,Expires countdown nodes running their callbacks then moves pending nodes onto the active list and tail-calls the owner
 0x01246380,41,auto_bind_vtable_01246380,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
 0x012463b0,41,auto_bind_vtable_012463b0,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
 0x012463e0,41,auto_bind_vtable_012463e0,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
@@ -4339,6 +4340,7 @@ address,size,name,system,status,notes
 0x0124f740,41,auto_bind_vtable_0124f740,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
 0x0124f770,41,auto_bind_vtable_0124f770,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
 0x0124f7a0,41,auto_bind_vtable_0124f7a0,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x0124faa0,538,misc_build_element_table,misc,edge-verified,Allocates an element table and a record buffer from a source description then fills the records through two lookup tables
 0x01250230,41,auto_bind_vtable_01250230,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
 0x01250260,41,auto_bind_vtable_01250260,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
 0x01250290,41,auto_bind_vtable_01250290,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
@@ -4346,6 +4348,9 @@ address,size,name,system,status,notes
 0x01251180,41,auto_bind_vtable_01251180,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
 0x012511b0,41,auto_bind_vtable_012511b0,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
 0x012511e0,41,auto_bind_vtable_012511e0,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x012516e0,329,misc_chain_bone_pose_copy_roots,misc,edge-verified,Chains each bone matrix onto its parent in the output pose copying roots from the source pose
+0x01251830,285,misc_chain_bone_pose_in_place,misc,edge-verified,Replaces each bone matrix with its product with the parent matrix in place leaving roots alone
+0x01251950,311,misc_chain_bone_pose_with_root,misc,edge-verified,Chains each local bone matrix onto its parent in the output pose or onto a given root matrix
 0x01251e00,41,auto_bind_vtable_01251e00,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
 0x01251e30,41,auto_bind_vtable_01251e30,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
 0x01251e60,41,auto_bind_vtable_01251e60,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
@@ -4366,6 +4371,7 @@ address,size,name,system,status,notes
 0x012551d0,41,auto_bind_vtable_012551d0,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
 0x01255200,41,auto_bind_vtable_01255200,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
 0x01255230,41,auto_bind_vtable_01255230,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
+0x01255c70,791,misc_set_keyed_entry,misc,edge-verified,Sets replaces or removes the counted object entry for a key in a list of 56-byte entries
 0x01256dc0,41,auto_bind_vtable_01256dc0,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
 0x01256df0,41,auto_bind_vtable_01256df0,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
 0x01256e20,41,auto_bind_vtable_01256e20,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses

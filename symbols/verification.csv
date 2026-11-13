@@ -45607,6 +45607,7 @@ misc_build_counted_block_record_01e938c0,edge,,8,8,0,0,7332b0cd5c4c5561,2026-11-
 misc_build_counted_block_record_01e94990,edge,,8,8,0,0,24d73f889f00bb42,2026-11-12
 misc_build_counted_word_block_01e91810,edge,,3,3,0,0,f38284bd1a10d483,2026-11-12
 misc_build_counted_word_object_01e90aa0,edge,,2,2,0,0,c8ca5b1098088fc1,2026-11-12
+misc_build_element_table,edge,,7,7,0,0,4a25c9e2cc3a4642,2026-11-12
 misc_build_object_block,edge,,5,5,0,0,a29a195f36f9bfda,2026-11-09
 misc_bump_allocate_block,edge,,11,11,0,0,51b5523399a9cd0b,2026-11-09
 misc_call_child_with_record,edge,,8,8,0,0,77e781488ef0a9c6,2026-11-10
@@ -45623,6 +45624,9 @@ misc_call_then_release_01888bd0,edge,,6,6,0,0,c522943d83802d1e,2026-11-09
 misc_call_with_counted_records_01e87f90,edge,,5,5,0,0,b6f83b6d947ac16e,2026-11-11
 misc_call_with_kind_three_013b5180,edge,,5,5,0,0,312b7eab93a77e29,2026-11-12
 misc_call_with_zero_kind_013b50f0,edge,,4,4,0,0,1fb1f82ef884608d,2026-11-12
+misc_chain_bone_pose_copy_roots,edge,,7,7,0,0,922944ad58add34f,2026-11-12
+misc_chain_bone_pose_in_place,edge,,7,7,0,0,1b247661e7695e2b,2026-11-12
+misc_chain_bone_pose_with_root,edge,,7,7,0,0,278c4a09bdf1e0c4,2026-11-12
 misc_chain_contains,edge,,9,9,0,0,8b4669a2c9b3075e,2026-11-09
 misc_chain_leaf_flag,edge,,6,6,0,0,1e265fb6c6640d38,2026-11-09
 misc_chain_ready_or_group_bit,edge,,29,29,0,0,47ee6d285c740872,2026-11-09
@@ -45935,6 +45939,7 @@ misc_member_object_013a3040,edge,,4,4,0,0,3f3ba2752e789970,2026-11-11
 misc_member_owner_delete_02243fc0,edge,,4,4,0,0,cc87480956e57b0d,2026-11-09
 misc_member_owner_destroy_02244000,edge,,4,4,0,0,5ea671407c763fa6,2026-11-09
 misc_member_text_fallback_013a2df0,edge,,5,5,0,0,35d732cc8a2f963f,2026-11-11
+misc_merge_pending_listeners,edge,,12,12,0,0,3c0c86b52745ad1c,2026-11-12
 misc_move_counted_word_01e90bc0,edge,,2,2,0,0,1ccb4ce10fa6c7d9,2026-11-12
 misc_move_word_release_old_01e8bcb0,edge,,9,9,0,0,c0e74330e5e9f217,2026-11-11
 misc_name_pair_first_text_013b95b0,edge,,6,6,0,0,dbb5452564711381,2026-11-12
@@ -46090,6 +46095,7 @@ misc_set_field_minus_one,edge,,5,5,0,0,eef84da2eca7fb7c,2026-11-12
 misc_set_flag_on_first_accepting_item,edge,,12,12,0,0,d9c19ce60f24237f,2026-11-11
 misc_set_flag_on_first_accepting_item_8,edge,,12,12,0,0,239deca0ede47810,2026-11-11
 misc_set_inner_setting,edge,,5,5,0,0,d3cb2bd71fb520df,2026-11-12
+misc_set_keyed_entry,edge,,21,21,0,0,b48288e888fc5fe6,2026-11-12
 misc_set_lookup_locked,edge,,8,8,0,0,a7dcb9deff8111a5,2026-11-12
 misc_set_u32_word_160,edge,,7,7,0,0,a3d04fc3eab470cc,2026-11-09
 misc_set_value_clear_link,edge,,5,5,0,0,7610e59d705c59ba,2026-11-09
