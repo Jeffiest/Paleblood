@@ -5703,11 +5703,18 @@ address,size,name,system,status,notes
 0x013ba1f0,23,misc_forward_second_entry_013ba1f0,misc,edge-verified,Passes a call for an entry of the second array to the library routine 0x014471e0 with the caller registers and returns its result
 0x013ba210,14,misc_second_entry_address_013ba210,misc,edge-verified,Returns the address of an entry of the second array of an entry array holder from the index scaled by the entry stride
 0x013ba220,23,misc_forward_second_entry_alt_013ba220,misc,edge-verified,Passes a call for an entry of the second array to the library routine 0x01447160 with the caller registers and returns its result
+0x013ba240,181,misc_assign_registry_value_to_slots,misc,edge-verified,Looks up a registry name and when absent looks up a value by key and hands it to each slot of a list
+0x013ba300,168,misc_finish_registry_slots_and_report,misc,edge-verified,Releases the slots of a registry list from last to first then reports the registry name through the holder
+0x013ba3b0,111,misc_release_two_slot_arrays,misc,edge-verified,Calls the slot routine on each slot of a first then a second slot array and returns the last call result or zero when both are empty
+0x013ba420,154,misc_run_slot_routines_on_pair,misc,edge-verified,Runs two slot routines and then a third on each slot of a pairs second then first slot array and returns the last third result
+0x013ba4c0,87,misc_assign_second_slot_source,misc,edge-verified,Makes the pairs second slot array hold an index by growing it when the index is at or past its count then passes the slot and a source to the assignment routine and returns its result
+0x013ba520,26,misc_forward_indexed_slot_call,misc,edge-verified,Passes a call for the slot at an index of a pairs second array to the slot routine with a 32-bit and a 64-bit argument and returns its result
 0x013ba540,8,auto_fixed_address_013ba540,auto,edge-verified,Same instructions as misc_plain_type_address with other addresses
 0x013ba550,41,auto_bind_vtable_013ba550,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
 0x013ba580,41,auto_bind_vtable_013ba580,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
 0x013ba5b0,41,auto_bind_vtable_013ba5b0,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
 0x013ba5e0,49,auto_copy_block_013ba5e0,auto,edge-verified,Same instructions as misc_copy_block_58b3240 with other addresses
+0x013bb500,455,misc_register_text_member_objects,misc,edge-verified,Registers a text member objects with the registry when the name is absent then sets up the object on thirty-three slot calls
 0x013bbc80,18,auto_forward_child_tail_013bbc80,auto,edge-verified,Same instructions as misc_forward_child_tail with other addresses and constants
 0x013bbfc0,41,auto_bind_vtable_013bbfc0,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
 0x013bbff0,41,auto_bind_vtable_013bbff0,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
@@ -5717,11 +5724,19 @@ address,size,name,system,status,notes
 0x013bc130,41,auto_bind_vtable_013bc130,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
 0x013bc160,41,auto_bind_vtable_013bc160,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
 0x013bc190,49,auto_copy_block_013bc190,auto,edge-verified,Same instructions as misc_copy_block_58b3240 with other addresses
+0x013bc1d0,35,misc_construct_base_set_vtable,misc,edge-verified,Runs the base construction routine on an object then stores the derived vtable in its first word
 0x013bc220,41,auto_bind_vtable_013bc220,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
 0x013bc250,41,auto_bind_vtable_013bc250,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
 0x013bc280,41,auto_bind_vtable_013bc280,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
 0x013bc2b0,49,auto_copy_block_013bc2b0,auto,edge-verified,Same instructions as misc_copy_block_58b3240 with other addresses
+0x013bc2f0,136,misc_insert_source_node,misc,edge-verified,Creates a node from a source word inserts it into the owners list and releases the held node after a failed insertion visit
+0x013bc380,234,misc_insert_value_node,misc,edge-verified,Links a new node holding a value in front of a chain lists first node and grows the count returning whether it did
+0x013bc560,17,misc_forward_inner_pass_through,misc,edge-verified,Returns zero without an inner object otherwise tail passes all argument registers to the inner objects routine
+0x013bc580,71,misc_visit_list_payloads,misc,edge-verified,Visits the payload of every node after the sentinel of a list in order passing the argument and skipping nodes without a payload
+0x013bc5d0,19,misc_forward_inner_byte_flag,misc,edge-verified,Returns zero without an inner object otherwise passes the low byte of the second argument and the remaining registers to the inner routine
 0x013bc5f0,24,auto_child_call_or_zero_013bc5f0,auto,edge-verified,Same instructions as misc_child_call_or_zero with other addresses and constants
+0x013bc610,33,misc_call_inner_with_second,misc,edge-verified,Returns zero when the second argument or the inner object is missing otherwise calls the inner routine with the inner object and the second argument
+0x013bc640,20,misc_forward_inner_when_second,misc,edge-verified,Returns zero when the second argument is zero or no inner object otherwise tail passes all argument registers to the inner routine
 0x013bc660,41,auto_bind_vtable_013bc660,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
 0x013bc690,41,auto_bind_vtable_013bc690,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
 0x013bc6c0,41,auto_bind_vtable_013bc6c0,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
