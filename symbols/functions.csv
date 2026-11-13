@@ -13076,6 +13076,7 @@ address,size,name,system,status,notes
 0x019a82b0,41,auto_bind_vtable_019a82b0,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
 0x019a82e0,41,auto_bind_vtable_019a82e0,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
 0x019a8310,205,auto_initialize_static_wide_string_019a8310,auto,edge-verified,Same instructions as engine_initialize_static_wide_string_018867e0 with other addresses
+0x019a83e0,649,misc_setup_static_objects_019a83e0,misc,edge-verified,Fills a constant block then sets up two static objects once and tail-calls 0x024b7b10 on the published one
 0x019a8670,6,auto_return_constant_019a8670,auto,edge-verified,Generated from the return constant template
 0x019a8680,5,auto_jump_thunk_019a8680,auto,edge-verified,Same instructions as misc_jump_thunk with other addresses
 0x019a8690,28,auto_destroy_then_release_019a8690,auto,edge-verified,Same instructions as misc_destroy_then_release with other addresses
@@ -15956,6 +15957,7 @@ address,size,name,system,status,notes
 0x01b1ee00,41,auto_bind_vtable_01b1ee00,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
 0x01b1ee30,205,auto_initialize_static_wide_string_01b1ee30,auto,edge-verified,Same instructions as engine_initialize_static_wide_string_018867e0 with other addresses
 0x01b1ef00,113,auto_init_rows_total_01b1ef00,auto,edge-verified,Same instructions as misc_init_rows_total_5944010 with other addresses
+0x01b1ef80,516,misc_build_name_table_01b1ef80,misc,edge-verified,Allocates a table of three empty wide-string names and points a handle at it then assigns empty text
 0x01b1f190,41,auto_bind_vtable_01b1f190,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
 0x01b1f1c0,41,auto_bind_vtable_01b1f1c0,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
 0x01b1f1f0,41,auto_bind_vtable_01b1f1f0,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
@@ -16210,6 +16212,7 @@ address,size,name,system,status,notes
 0x01b50f30,8,auto_fixed_address_01b50f30,auto,edge-verified,Same instructions as misc_plain_type_address with other addresses
 0x01b50f40,8,auto_fixed_address_01b50f40,auto,edge-verified,Same instructions as misc_plain_type_address with other addresses
 0x01b55110,44,auto_release_held_block_01b55110,auto,edge-verified,Same instructions as misc_release_held_block with other addresses and constants
+0x01b55140,679,misc_register_listener_tasks_01b55140,misc,edge-verified,Looks up a named list then offers it 75 tasks and attaches two more to each accepted one or destroys a refused one
 0x01b55d20,41,auto_bind_vtable_01b55d20,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
 0x01b55d50,41,auto_bind_vtable_01b55d50,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
 0x01b55d80,41,auto_bind_vtable_01b55d80,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
@@ -16365,6 +16368,7 @@ address,size,name,system,status,notes
 0x01b6f190,28,auto_destroy_then_release_01b6f190,auto,edge-verified,Same instructions as misc_destroy_then_release with other addresses
 0x01b6f260,30,auto_member_call_01b6f260,auto,edge-verified,Same instructions as misc_member_call_02242a10 with other addresses and constants
 0x01b6f300,30,auto_member_call_01b6f300,auto,edge-verified,Same instructions as misc_member_call_02242a10 with other addresses and constants
+0x01b6f6c0,652,misc_register_channel_tasks_01b6f6c0,misc,edge-verified,Finds a root node then offers 35 numbered tasks to one list and 89 tasks named from a value table to another
 0x01b72750,41,auto_bind_vtable_01b72750,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
 0x01b72780,41,auto_bind_vtable_01b72780,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
 0x01b727b0,41,auto_bind_vtable_01b727b0,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
@@ -16565,6 +16569,8 @@ address,size,name,system,status,notes
 0x01b919d0,1,auto_empty_01b919d0,auto,edge-verified,Generated from the empty template
 0x01b919e0,5,auto_delete_object_thunk_01b919e0,auto,edge-verified,Same instructions as misc_delete_object_thunk with other addresses
 0x01b919f0,50,auto_tail_call_offset_member_thunk_01b919f0,auto,edge-verified,Same instructions as misc_tail_call_offset_member_thunk with other addresses and constants
+0x01b91d50,575,misc_resolve_mode_name_01b91d50,misc,edge-verified,Starts an objects mode then looks up its source name and sets a matched byte when it equals a fixed wide text
+0x01b91f90,540,misc_mode_name_is_default_01b91f90,misc,edge-verified,Looks up an object mode then reports whether its source name equals a fixed wide text
 0x01b92950,41,auto_bind_vtable_01b92950,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
 0x01b92980,41,auto_bind_vtable_01b92980,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
 0x01b929b0,41,auto_bind_vtable_01b929b0,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses

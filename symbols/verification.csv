@@ -45613,6 +45613,7 @@ misc_build_counted_word_block_01e91810,edge,,3,3,0,0,f38284bd1a10d483,2026-11-12
 misc_build_counted_word_object_01e90aa0,edge,,2,2,0,0,c8ca5b1098088fc1,2026-11-12
 misc_build_element_table,edge,,7,7,0,0,4a25c9e2cc3a4642,2026-11-12
 misc_build_member_from_pair,edge,,7,7,0,0,14114f39596e4b71,2026-11-12
+misc_build_name_table_01b1ef80,edge,,8,8,0,0,00c773c2c5ad4311,2026-11-12
 misc_build_object_block,edge,,5,5,0,0,a29a195f36f9bfda,2026-11-09
 misc_bump_allocate_block,edge,,11,11,0,0,51b5523399a9cd0b,2026-11-09
 misc_call_child_with_record,edge,,8,8,0,0,77e781488ef0a9c6,2026-11-10
@@ -45985,6 +45986,7 @@ misc_member_owner_delete_02243fc0,edge,,4,4,0,0,cc87480956e57b0d,2026-11-09
 misc_member_owner_destroy_02244000,edge,,4,4,0,0,5ea671407c763fa6,2026-11-09
 misc_member_text_fallback_013a2df0,edge,,5,5,0,0,35d732cc8a2f963f,2026-11-11
 misc_merge_pending_listeners,edge,,12,12,0,0,3c0c86b52745ad1c,2026-11-12
+misc_mode_name_is_default_01b91f90,edge,,26,26,0,0,834b602284648c92,2026-11-12
 misc_move_counted_word_01e90bc0,edge,,2,2,0,0,1ccb4ce10fa6c7d9,2026-11-12
 misc_move_word_release_old_01e8bcb0,edge,,9,9,0,0,c0e74330e5e9f217,2026-11-11
 misc_name_pair_first_text_013b95b0,edge,,6,6,0,0,dbb5452564711381,2026-11-12
@@ -46041,12 +46043,14 @@ misc_ref_holder_hold,edge,,7,7,0,0,6687a505ddc2329a,2026-11-09
 misc_ref_holder_release,edge,,10,10,0,0,a48afd36acf09017,2026-11-09
 misc_refresh_cached_indices,edge,,15,15,0,0,4d49a961e385be46,2026-11-10
 misc_refresh_slot_copy,edge,,11,11,0,0,2a3094139c144a9e,2026-11-12
+misc_register_channel_tasks_01b6f6c0,edge,,11,11,0,0,7007049dd7693659,2026-11-12
 misc_register_field_type,edge,,2,2,0,0,dcbd039566b93358,2026-11-12
 misc_register_fixed_type_descriptor,edge,,2,2,0,0,b1c8e186dcc845a6,2026-11-12
 misc_register_forwarding_type,edge,,2,2,0,0,072daa6f4470d195,2026-11-12
 misc_register_four_types,edge,,3,3,0,0,e358ac7c13c3d8bb,2026-11-12
 misc_register_handle_record,edge,,4,4,0,0,b590850d06a3763b,2026-11-09
 misc_register_indexed_members,edge,,11,11,0,0,50250e8c4130b301,2026-11-12
+misc_register_listener_tasks_01b55140,edge,,7,7,0,0,3fe24013587e61c4,2026-11-12
 misc_register_plain_type,edge,,1,1,0,0,99a6735cfe801470,2026-11-09
 misc_register_record_named,edge,,2,2,0,0,6a3b0da84f853e1b,2026-11-12
 misc_register_sized_type,edge,,2,2,0,0,eda0e0ecfeebb39b,2026-11-12
@@ -46125,6 +46129,7 @@ misc_reset_then_free_text_block,edge,,4,4,0,0,0a6481cf7ab5759c,2026-11-12
 misc_reset_then_release,edge,,4,4,0,0,69e09939e2f1c051,2026-11-09
 misc_resolve_either_key_slot,edge,,6,6,0,0,65d2cea0ad6c1707,2026-11-09
 misc_resolve_key_slot,edge,,5,5,0,0,8fde76650f8e15ca,2026-11-10
+misc_resolve_mode_name_01b91d50,edge,,28,28,0,0,c77fdb53051d0fc5,2026-11-12
 misc_resolve_request_target,edge,,7,7,0,0,ffb34c89938a235e,2026-11-11
 misc_resolve_run_handle,edge,,18,18,0,0,96951d1975b3ac47,2026-11-12
 misc_resolve_then_forward,edge,,9,9,0,0,273ab8e3d61d40cc,2026-11-11
@@ -46167,6 +46172,7 @@ misc_set_value_word_148,edge,,6,6,0,0,cce399dab4b975f2,2026-11-09
 misc_set_vtable_after_call,edge,,8,8,0,0,c4c6902266a7825e,2026-11-10
 misc_setup_exit_record_table,edge,,7,7,0,0,e3b1fffb2889bc02,2026-11-12
 misc_setup_member_then_forward,edge,,2,2,0,0,9ffc1edaa7e23308,2026-11-12
+misc_setup_static_objects_019a83e0,edge,,9,9,0,0,e52ffe5e7562e5fa,2026-11-12
 misc_setup_static_objects_02243d30,edge,,9,9,0,0,e197050175ebe8e3,2026-11-11
 misc_singleton_result_for_source,edge,,6,6,0,0,b9893fd0cd6a4097,2026-11-12
 misc_sink_release_value_marked,edge,,2,2,0,0,1352fcf5e28a08ba,2026-11-12

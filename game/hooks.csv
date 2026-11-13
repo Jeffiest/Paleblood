@@ -13075,6 +13075,7 @@ address,replacement,system,returns
 0x019a82b0,bb_auto_bind_vtable_019a82b0,auto,void
 0x019a82e0,bb_auto_bind_vtable_019a82e0,auto,void
 0x019a8310,bb_auto_initialize_static_wide_string_019a8310,auto,void
+0x019a83e0,bb_misc_setup_static_objects_019a83e0,misc,i64
 0x019a8670,bb_auto_return_constant_019a8670,auto,i32
 0x019a8680,bb_auto_jump_thunk_019a8680,auto,i64
 0x019a8690,bb_auto_destroy_then_release_019a8690,auto,i64
@@ -15955,6 +15956,7 @@ address,replacement,system,returns
 0x01b1ee00,bb_auto_bind_vtable_01b1ee00,auto,void
 0x01b1ee30,bb_auto_initialize_static_wide_string_01b1ee30,auto,void
 0x01b1ef00,bb_auto_init_rows_total_01b1ef00,auto,void
+0x01b1ef80,bb_misc_build_name_table_01b1ef80,misc,void
 0x01b1f190,bb_auto_bind_vtable_01b1f190,auto,void
 0x01b1f1c0,bb_auto_bind_vtable_01b1f1c0,auto,void
 0x01b1f1f0,bb_auto_bind_vtable_01b1f1f0,auto,void
@@ -16209,6 +16211,7 @@ address,replacement,system,returns
 0x01b50f30,bb_auto_fixed_address_01b50f30,auto,i64
 0x01b50f40,bb_auto_fixed_address_01b50f40,auto,i64
 0x01b55110,bb_auto_release_held_block_01b55110,auto,void
+0x01b55140,bb_misc_register_listener_tasks_01b55140,misc,void
 0x01b55d20,bb_auto_bind_vtable_01b55d20,auto,void
 0x01b55d50,bb_auto_bind_vtable_01b55d50,auto,void
 0x01b55d80,bb_auto_bind_vtable_01b55d80,auto,void
@@ -16364,6 +16367,7 @@ address,replacement,system,returns
 0x01b6f190,bb_auto_destroy_then_release_01b6f190,auto,i64
 0x01b6f260,bb_auto_member_call_01b6f260,auto,i64
 0x01b6f300,bb_auto_member_call_01b6f300,auto,i64
+0x01b6f6c0,bb_misc_register_channel_tasks_01b6f6c0,misc,void
 0x01b72750,bb_auto_bind_vtable_01b72750,auto,void
 0x01b72780,bb_auto_bind_vtable_01b72780,auto,void
 0x01b727b0,bb_auto_bind_vtable_01b727b0,auto,void
@@ -16564,6 +16568,8 @@ address,replacement,system,returns
 0x01b919d0,bb_auto_empty_01b919d0,auto,void
 0x01b919e0,bb_auto_delete_object_thunk_01b919e0,auto,void
 0x01b919f0,bb_auto_tail_call_offset_member_thunk_01b919f0,auto,i64
+0x01b91d50,bb_misc_resolve_mode_name_01b91d50,misc,i32
+0x01b91f90,bb_misc_mode_name_is_default_01b91f90,misc,i8
 0x01b92950,bb_auto_bind_vtable_01b92950,auto,void
 0x01b92980,bb_auto_bind_vtable_01b92980,auto,void
 0x01b929b0,bb_auto_bind_vtable_01b929b0,auto,void
