@@ -40200,6 +40200,7 @@ address,replacement,system,returns
 0x02ba9700,bb_auto_fixed_address_02ba9700,auto,i64
 0x02ba99e0,bb_auto_delete_object_thunk_02ba99e0,auto,void
 0x02ba9b20,bb_auto_fixed_address_02ba9b20,auto,i64
+0x02ba9d70,bb_misc_alt_singleton_dispatch_02ba9d70,misc,i64
 0x02baa020,bb_auto_delete_object_thunk_02baa020,auto,void
 0x02baa040,bb_misc_clear_record_tag_02baa040,misc,i64
 0x02baa0c0,bb_misc_clear_record_tag_02baa0c0,misc,i64
