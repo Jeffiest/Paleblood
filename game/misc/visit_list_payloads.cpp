@@ -40,8 +40,9 @@ static_assert(offsetof(VisitList, sentinel) == 0x08);
  * Visits the payload of every node after the sentinel, in list order, passing the argument on. Nodes with no payload
  * are skipped. The sentinel is read again on each step, as a visit may change the list.
  *
+ * Returns the sentinel: the routine leaves it in the return register on every path.
  */
-extern "C" void bb_misc_visit_list_payloads(VisitList *list, uint64_t argument)
+extern "C" VisitNode *bb_misc_visit_list_payloads(VisitList *list, uint64_t argument)
 {
     VisitNode *node = list->sentinel->next;
     while (node != list->sentinel) {
@@ -51,4 +52,5 @@ extern "C" void bb_misc_visit_list_payloads(VisitList *list, uint64_t argument)
         }
         node = node->next;
     }
+    return list->sentinel;
 }

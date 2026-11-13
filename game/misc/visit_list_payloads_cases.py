@@ -50,7 +50,7 @@ def case(cid, payloads, argument=0x0123456789abcdef):
         else:
             memory.append({'addr': f'buf:{name}+16', 'bytes': word(0)})
     args = {'rdi': 'buf:list', 'rsi': hex(argument)}
-    return {'schema': 1, 'address': ADDRESS, 'id': cid, 'returns': 'void', 'args': args,
+    return {'schema': 1, 'address': ADDRESS, 'id': cid, 'returns': 'i64', 'args': args,
             'buffers': buffers, 'memory': memory, 'imports': [], 'stubs': stubs}
 
 
