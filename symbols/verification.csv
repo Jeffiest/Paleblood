@@ -45652,6 +45652,7 @@ misc_clear_two_words,edge,,4,4,0,0,fd76028ce27c1369,2026-11-09
 misc_collect_motion_types_02242f30,edge,,11,11,0,0,7482a6f201871db1,2026-11-09
 misc_collect_motion_types_02243010,edge,,11,11,0,0,4e01f73660e63ffd,2026-11-09
 misc_collect_path_values,edge,,11,11,0,0,74a7b7a09af70b7d,2026-11-12
+misc_compact_slots_reselect,edge,,18,18,0,0,91fefd2567ae7084,2026-11-12
 misc_compose_member_match_013a2c30,edge,,15,15,0,0,da5a02f0d90c06d5,2026-11-11
 misc_compose_member_text_013a2a40,edge,,12,12,0,0,9668139af77fdb74,2026-11-11
 misc_compose_member_value_013a2e50,edge,,16,16,0,0,4dd5198af4e62967,2026-11-11
