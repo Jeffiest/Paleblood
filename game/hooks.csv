@@ -5688,6 +5688,7 @@ address,replacement,system,returns
 0x013bc130,bb_auto_bind_vtable_013bc130,auto,void
 0x013bc160,bb_auto_bind_vtable_013bc160,auto,void
 0x013bc190,bb_auto_copy_block_013bc190,auto,void
+0x013bc1d0,bb_misc_construct_base_set_vtable,misc,void
 0x013bc220,bb_auto_bind_vtable_013bc220,auto,void
 0x013bc250,bb_auto_bind_vtable_013bc250,auto,void
 0x013bc280,bb_auto_bind_vtable_013bc280,auto,void

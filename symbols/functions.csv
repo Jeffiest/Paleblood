@@ -5689,6 +5689,7 @@ address,size,name,system,status,notes
 0x013bc130,41,auto_bind_vtable_013bc130,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
 0x013bc160,41,auto_bind_vtable_013bc160,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
 0x013bc190,49,auto_copy_block_013bc190,auto,edge-verified,Same instructions as misc_copy_block_58b3240 with other addresses
+0x013bc1d0,35,misc_construct_base_set_vtable,misc,edge-verified,Runs the base construction routine on an object then stores the derived vtable in its first word
 0x013bc220,41,auto_bind_vtable_013bc220,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
 0x013bc250,41,auto_bind_vtable_013bc250,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
 0x013bc280,41,auto_bind_vtable_013bc280,auto,edge-verified,Same instructions as misc_bind_vtable_56b4840 with other addresses
