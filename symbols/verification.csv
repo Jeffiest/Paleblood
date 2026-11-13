@@ -45684,6 +45684,7 @@ misc_copy_pair_00be9b40,edge,,8,8,0,0,23d1d33fef867cbe,2026-11-09
 misc_copy_pair_00be9bf0,edge,,8,8,0,0,1efa071d89e5e8c0,2026-11-09
 misc_copy_pair_00be9ca0,edge,,8,8,0,0,2f6daa90d9357fb9,2026-11-09
 misc_copy_pair_00be9d50,edge,,8,8,0,0,18426ff3f32717e0,2026-11-09
+misc_copy_pair_object,edge,,6,6,0,0,8173c3b115e1f40e,2026-11-12
 misc_copy_record_fields,edge,,22,22,0,0,45f11a89feb15210,2026-11-11
 misc_copy_retained_reference,edge,,4,4,0,0,adbde7061afafdfa,2026-11-12
 misc_copy_second_entry_locked,edge,,7,7,0,0,3325be646ac8b7af,2026-11-12
