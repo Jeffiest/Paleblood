@@ -46008,6 +46008,7 @@ misc_release_holder_child,edge,,9,9,0,0,491b51e0f159ead4,2026-11-09
 misc_release_holder_node,edge,,4,4,0,0,f2db049577f6331e,2026-11-09
 misc_release_owned_identity_02276da0,edge,,3,3,0,0,9dc0610ea504cf45,2026-11-12
 misc_release_owned_state,edge,,23,23,0,0,a8680e5b05667ce4,2026-11-10
+misc_release_owned_then_free_02276de0,edge,,3,3,0,0,0851fa2fa40d2af7,2026-11-12
 misc_release_owner_nodes,edge,,10,10,0,0,c6fdd3a722ed1f6e,2026-11-09
 misc_release_owner_slots,edge,,13,13,0,0,5aaa77c07f2c3d3f,2026-11-11
 misc_release_owner_with_holder,edge,,14,14,0,0,68b66dbc58e955be,2026-11-09
