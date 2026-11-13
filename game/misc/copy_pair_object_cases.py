@@ -56,6 +56,7 @@ CASES = [
     case('source_holds_nothing'),
     case('source_item_uncounted', held_word=0x0001),
     case('source_item_below_threshold', held_word=0xffff),
+    case('source_item_at_threshold_increments', held_word=0x10000),
     case('source_item_counted_increments', held_word=0x10002),
     case('source_count_wraps_keeps_flag', held_word=0x1ffff),
     case('zero_registers_counted', held_word=0x10001, registers={k: '0x0' for k in GARBAGE}),
